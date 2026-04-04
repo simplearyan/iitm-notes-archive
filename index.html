@@ -5,65 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IITM Notes Archive</title>
     
-    <!-- Load Tailwind CSS via Play CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Custom Tailwind Configuration -->
-    <style type="text/tailwindcss">
-        @layer components {
-            .nav-btn {
-                @apply flex items-start w-full text-left px-3 py-2 mb-1 rounded-xl text-[13px] font-medium text-slate-400 transition-all duration-200 border border-transparent bg-transparent;
-            }
-            .nav-btn:hover {
-                @apply bg-white/5 text-slate-200;
-            }
-            .nav-btn.active {
-                @apply bg-indigo-500/10 text-indigo-300 border-indigo-500/20 shadow-sm;
-            }
-            .nav-btn.active .icon-wrapper {
-                @apply text-indigo-400 !important;
-            }
-            
-            /* Collapsed state styles for desktop */
-            @media (min-width: 768px) {
-                #sidebar.is-collapsed {
-                    width: 72px;
-                }
-                #sidebar.is-collapsed .hide-on-collapse {
-                    display: none !important;
-                }
-                #sidebar.is-collapsed .nav-btn, #sidebar.is-collapsed .folder-header {
-                    justify-content: center;
-                    padding: 12px 0;
-                    margin-bottom: 8px;
-                }
-                #sidebar.is-collapsed .icon-wrapper, #sidebar.is-collapsed .folder-icon {
-                    margin: 0 !important;
-                    transform: scale(1.2);
-                }
-                #sidebar.is-collapsed .chevron-icon {
-                    display: none;
-                }
-                #sidebar.is-collapsed #desktop-toggle-container {
-                    justify-content: center;
-                    padding-left: 0;
-                    padding-right: 0;
-                }
-                #sidebar.is-collapsed .folder-content {
-                    margin-left: 0;
-                    padding-left: 0;
-                    border-left: none;
-                }
-            }
-            
-            .custom-scrollbar::-webkit-scrollbar {
-                width: 4px;
-            }
-            .custom-scrollbar::-webkit-scrollbar-thumb {
-                @apply bg-slate-600 rounded-full hover:bg-slate-500;
-            }
-        }
-    </style>
+    <!-- Link to statically compiled Tailwind CSS -->
+    <link href="assets/main.css" rel="stylesheet">
 </head>
 <body class="flex h-screen overflow-hidden bg-[#f8f9fb] font-sans antialiased text-slate-900 relative">
 
@@ -75,7 +18,7 @@
         
         <!-- Hamburger Toggle for Desktop -->
         <div class="hidden md:flex items-center px-6 pt-4 pb-2 transition-all duration-300" id="desktop-toggle-container">
-            <button onclick="toggleDesktopSidebar()" class="p-2 -ml-2 text-slate-400 hover:text-slate-200 hover:bg-white/10 rounded-lg transition-colors">
+            <button aria-label="Toggle Desktop Sidebar" onclick="toggleDesktopSidebar()" class="p-2 -ml-2 text-slate-400 hover:text-slate-200 hover:bg-white/10 rounded-lg transition-colors">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
         </div>
@@ -88,7 +31,7 @@
                 Back to Dashboard
             </button>
             <h2 id="sidebar-title" class="text-[20px] font-extrabold text-slate-100 leading-tight tracking-tight">IITM Archive</h2>
-            <p id="sidebar-subtitle" class="text-[11px] text-slate-500 mt-1 uppercase tracking-wider font-semibold">Offline Notes Viewer</p>
+            <p id="sidebar-subtitle" class="text-[11px] text-slate-400 mt-1 uppercase tracking-wider font-semibold">Offline Notes Viewer</p>
         </div>
 
         <!-- Scrollable Content Area -->
@@ -371,7 +314,7 @@
         
         <!-- Mobile Header (Only visible on small screens) -->
         <header class="md:hidden flex items-center px-4 py-3 border-b border-slate-200 bg-white shadow-sm z-30 relative">
-            <button onclick="toggleSidebar()" class="p-2 -ml-2 mr-3 text-slate-600 hover:bg-slate-100 hover:text-slate-900 rounded-lg transition-colors">
+            <button aria-label="Toggle Mobile Sidebar" onclick="toggleSidebar()" class="p-2 -ml-2 mr-3 text-slate-600 hover:bg-slate-100 hover:text-slate-900 rounded-lg transition-colors">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
             <h1 class="font-bold text-slate-800 text-sm truncate uppercase tracking-wider flex-1" id="mobile-title">Dashboard</h1>
@@ -382,7 +325,7 @@
             <div class="max-w-5xl mx-auto">
                 <div class="mb-10">
                     <h1 class="text-3xl md:text-4xl font-extrabold text-slate-800 tracking-tight mb-3">Welcome to your Notes Archive</h1>
-                    <p class="text-slate-500 text-lg">Select a term or course to filter your sidebar, or browse everything at once.</p>
+                    <p class="text-slate-400 text-lg">Select a term or course to filter your sidebar, or browse everything at once.</p>
                 </div>
                 
                 <div id="dashboard-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -543,10 +486,10 @@
             const sidebarContainer = document.getElementById('sidebar-content');
             sidebarContainer.innerHTML = `
                 <div class="text-center mt-12 px-4 hide-on-collapse">
-                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/5 mb-3 text-slate-500">
+                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/5 mb-3 text-slate-400">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                     </div>
-                    <p class="text-slate-400 text-sm">Please select a course from the dashboard.</p>
+                    <p class="text-slate-300 text-sm">Please select a course from the dashboard.</p>
                 </div>
             `;
 
@@ -575,7 +518,7 @@
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
                             </div>
                             <h3 class="text-lg font-bold text-slate-800 mb-1 truncate" title="${node.name}">${node.name}</h3>
-                            <p class="text-slate-500 text-sm">${itemCount} Modules / Weeks</p>
+                            <p class="text-slate-400 text-sm">${itemCount} Modules / Weeks</p>
                         </div>
                     `;
                 }
@@ -642,7 +585,7 @@
                 if (node.type === 'folder') {
                     html += `
                         <div class="folder-wrapper mb-2">
-                            <div class="folder-header flex justify-between items-center px-3 py-3 cursor-pointer text-slate-200 hover:bg-white/5 bg-[#242528] border border-white/5 rounded-xl transition-colors shadow-sm" onclick="toggleFolder(this)">
+                            <div role="button" tabindex="0" aria-label="Toggle Folder" role="button" tabindex="0" aria-label="Toggle Folder" class="folder-header flex justify-between items-center px-3 py-3 cursor-pointer text-slate-200 hover:bg-white/5 bg-[#242528] border border-white/5 rounded-xl transition-colors shadow-sm" onclick="toggleFolder(this)">
                                 <div class="flex items-center truncate pr-2">
                                     <svg class="folder-icon w-4 h-4 mr-3 flex-shrink-0 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
                                     <span class="text-[13px] font-extrabold tracking-wide truncate hide-on-collapse" title="${node.name}">${node.name}</span>
