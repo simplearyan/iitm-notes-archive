@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IITM Notes Archive</title>
+    
+    <!-- Load Tailwind CSS via Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Configuration to match the IITM Portal design -->
+    <style type="text/tailwindcss">
+        @layer components {
+            .nav-btn {
+                @apply flex items-start w-full text-left px-3 py-2 mb-1 rounded-xl text-[13px] font-medium text-slate-400 transition-all duration-200 border border-transparent bg-transparent;
+            }
+            .nav-btn:hover {
+                @apply bg-white/5 text-slate-200;
+            }
+            .nav-btn.active {
+                @apply bg-indigo-500/10 text-indigo-300 border-indigo-500/20 shadow-sm;
+            }
+            /* When active, force the inner SVG icon to be purple */
+            .nav-btn.active .icon-wrapper {
+                @apply text-indigo-400 !important;
+            }
+            
+            /* Collapsed state styles for desktop */
+            @media (min-width: 768px) {
+                #sidebar.is-collapsed {
+                    width: 72px;
+                }
+                #sidebar.is-collapsed .hide-on-collapse {
+                    display: none !important;
+                }
+                #sidebar.is-collapsed .nav-btn, #sidebar.is-collapsed .folder-header {
+                    justify-content: center;
+                    padding: 12px 0;
+                    margin-bottom: 8px;
+                }
+                #sidebar.is-collapsed .icon-wrapper, #sidebar.is-collapsed .folder-icon {
+                    margin: 0 !important;
+                    transform: scale(1.2);
+                }
+                #sidebar.is-collapsed .chevron-icon {
+                    display: none;
+                }
+                #sidebar.is-collapsed #desktop-toggle-container {
+                    justify-content: center;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                #sidebar.is-collapsed .folder-content {
+                    margin-left: 0;
+                    padding-left: 0;
+                    border-left: none;
+                }
+            }
+            
+            /* Clean custom scrollbar for the sidebar */
+            .custom-scrollbar::-webkit-scrollbar {
+                width: 4px;
+            }
+            .custom-scrollbar::-webkit-scrollbar-thumb {
+                @apply bg-slate-600 rounded-full hover:bg-slate-500;
+            }
+        }
+    </style>
+</head>
+<body class="flex h-screen overflow-hidden bg-[#f8f9fb] font-sans antialiased text-slate-900">
+
+    <!-- Mobile overlay background (blurred) -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-slate-900/40 z-40 hidden md:hidden backdrop-blur-sm transition-opacity" onclick="toggleSidebar()"></div>
+
+    <!-- Sidebar Container (Dark Theme Applied) -->
+    <aside id="sidebar" class="fixed inset-y-0 left-0 z-50 w-[320px] bg-[#1c1d1f] border-r border-[#2b2c2f] shadow-2xl md:shadow-none transform -translate-x-full md:relative md:translate-x-0 transition-all duration-300 ease-in-out flex flex-col">
+        
+        <!-- Hamburger Toggle for Desktop -->
+        <div class="hidden md:flex items-center px-6 pt-4 pb-2 transition-all duration-300" id="desktop-toggle-container">
+            <button onclick="toggleDesktopSidebar()" class="p-2 -ml-2 text-slate-400 hover:text-slate-200 hover:bg-white/10 rounded-lg transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <!-- Sidebar Header Area -->
+        <div class="px-6 pt-2 pb-2 hide-on-collapse">
+            <h2 class="text-[20px] font-extrabold text-slate-100 leading-tight tracking-tight">IITM Archive</h2>
+            <p class="text-[11px] text-slate-500 mt-1 uppercase tracking-wider font-semibold">Offline Notes Viewer</p>
+        </div>
+
+        <!-- Scrollable Content Area -->
+        <div class="flex-1 overflow-y-auto px-4 pb-6 custom-scrollbar mt-4" id="sidebar-content">
+            
+            <!-- DATA-START -->
+<script id="site-data" type="application/json">
+[
+    {
+        "type": "folder",
+        "name": "maths-2",
+        "children": [
+            {
+                "type": "file",
+                "name": "AQ1.1_ Activity Questions 1 - Not Graded",
+                "path": "content/maths-2/AQ1.1_%20Activity%20Questions%201%20-%20Not%20Graded%20_%20IITM%20Online%20Degree%20(3_4_2026%205_53_17%20pm).u.zip.html"
+            },
+            {
+                "type": "file",
+                "name": "Week 4 - Graded Assignment 4",
+                "path": "content/maths-2/Week%204%20-%20Graded%20Assignment%204%20_%20IITM%20Online%20Degree%20(3_4_2026%205_52_37%20pm).u.zip.html"
+            }
+        ]
+    },
+    {
+        "type": "folder",
+        "name": "Term-Feb-to-May",
+        "children": [
+            {
+                "type": "folder",
+                "name": "Mathematics-II",
+                "children": [
+                    {
+                        "type": "folder",
+                        "name": "Course Introduction",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "About the Course",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Course%20Introduction/About%20the%20Course%20_%20IITM%20Online%20Degree%20(4_4_2026%208_37_18%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Grading policy",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Course%20Introduction/Grading%20policy%20_%20IITM%20Online%20Degree%20(4_4_2026%208_37_40%20am).u.zip.html"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "Malpractice Rules",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "Punishment for malpractice_ 170_students_ U grade in all subjects AND 1 Term ban in course registration",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Malpractice%20Rules/Punishment%20for%20malpractice_%20170_students_%20U%20grade%20in%20all%20subjects%20AND%201%20Term%20ban%20in%20course%20registration%20_%20IITM%20Online%20Degree%20(4_4_2026%208_38_54%20am).u.zip.html"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "Week 0",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "Important Instructions & Links",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%200/Important%20Instructions%20&%20Links%20_%20IITM%20Online%20Degree%20(4_4_2026%208_38_27%20am).u.zip.html"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "Week 1",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "AQ1.1_ Activity Questions 1 - Not Graded",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/AQ1.1_%20Activity%20Questions%201%20-%20Not%20Graded%20_%20IITM%20Online%20Degree%20(4_4_2026%208_44_18%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "AQ1.2_ Activity Questions 2 - Not Graded",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/AQ1.2_%20Activity%20Questions%202%20-%20Not%20Graded%20_%20IITM%20Online%20Degree%20(4_4_2026%208_45_01%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "AQ1.3_ Activity Questions 3 - Not Graded",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/AQ1.3_%20Activity%20Questions%203%20-%20Not%20Graded%20_%20IITM%20Online%20Degree%20(4_4_2026%208_47_13%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "AQ1.4_ Activity Questions 4 - Not Graded",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/AQ1.4_%20Activity%20Questions%204%20-%20Not%20Graded%20_%20IITM%20Online%20Degree%20(4_4_2026%208_47_58%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "AQ1.5_ Activity Questions 5 - Not Graded",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/AQ1.5_%20Activity%20Questions%205%20-%20Not%20Graded%20_%20IITM%20Online%20Degree%20(4_4_2026%208_48_39%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "L1.1_ Vectors",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/L1.1_%20Vectors%20_%20IITM%20Online%20Degree%20(4_4_2026%208_43_49%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "L1.2_ Matrices",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/L1.2_%20Matrices%20_%20IITM%20Online%20Degree%20(4_4_2026%208_44_38%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "L1.3_ Systems of Linear Equations",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/L1.3_%20Systems%20of%20Linear%20Equations%20_%20IITM%20Online%20Degree%20(4_4_2026%208_45_19%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "L1.4_ Determinants (part 1)",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/L1.4_%20Determinants%20(part%201)%20_%20IITM%20Online%20Degree%20(4_4_2026%208_47_30%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "L1.5_ Determinants (part 2)",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/L1.5_%20Determinants%20(part%202)%20_%20IITM%20Online%20Degree%20(4_4_2026%208_48_14%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Practice assignment 1 - Not Graded",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/Practice%20assignment%201%20-%20Not%20Graded%20_%20IITM%20Online%20Degree%20(4_4_2026%208_51_49%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Solve with us 1.1 - Not Graded",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/Solve%20with%20us%201.1%20-%20Not%20Graded%20_%20IITM%20Online%20Degree%20(4_4_2026%208_51_23%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Week 01 - Tutorial 01",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/Week%2001%20-%20Tutorial%2001%20_%20IITM%20Online%20Degree%20(4_4_2026%208_49_01%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Week 01 - Tutorial 02",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/Week%2001%20-%20Tutorial%2002%20_%20IITM%20Online%20Degree%20(4_4_2026%208_49_14%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Week 01 - Tutorial 03",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/Week%2001%20-%20Tutorial%2003%20_%20IITM%20Online%20Degree%20(4_4_2026%208_49_32%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Week 01 - Tutorial 04",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/Week%2001%20-%20Tutorial%2004%20_%20IITM%20Online%20Degree%20(4_4_2026%208_49_46%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Week 01 - Tutorial 05",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/Week%2001%20-%20Tutorial%2005%20_%20IITM%20Online%20Degree%20(4_4_2026%208_50_00%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Week 01 - Tutorial 06",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/Week%2001%20-%20Tutorial%2006%20_%20IITM%20Online%20Degree%20(4_4_2026%208_50_19%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Week 01 - Tutorial 07",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/Week%2001%20-%20Tutorial%2007%20_%20IITM%20Online%20Degree%20(4_4_2026%208_50_32%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Week 01 - Tutorial 08",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/Week%2001%20-%20Tutorial%2008%20_%20IITM%20Online%20Degree%20(4_4_2026%208_50_51%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Week 1 - Graded Assignment 1",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/Week%201%20-%20Graded%20Assignment%201%20_%20IITM%20Online%20Degree%20(4_4_2026%208_52_18%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Week 1 - Question Bank",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%201/Week%201%20-%20Question%20Bank%20_%20IITM%20Online%20Degree%20(4_4_2026%208_52_35%20am).u.zip.html"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "Week 2",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "AQ2.1_ Activity Questions 1 - Not Graded",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%202/AQ2.1_%20Activity%20Questions%201%20-%20Not%20Graded%20_%20IITM%20Online%20Degree%20(4_4_2026%208_56_02%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "AQ2.2_ Activity Questions 2- Not Graded",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%202/AQ2.2_%20Activity%20Questions%202-%20Not%20Graded%20_%20IITM%20Online%20Degree%20(4_4_2026%208_57_13%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "AQ2.3_ Activity Questions 3 - Not Graded",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%202/AQ2.3_%20Activity%20Questions%203%20-%20Not%20Graded%20_%20IITM%20Online%20Degree%20(4_4_2026%208_58_02%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "AQ2.4_ Activity Questions 4 - Not Graded",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%202/AQ2.4_%20Activity%20Questions%204%20-%20Not%20Graded%20_%20IITM%20Online%20Degree%20(4_4_2026%208_58_59%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "AQ2.5_ Activity Questions 5- Not Graded",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%202/AQ2.5_%20Activity%20Questions%205-%20Not%20Graded%20_%20IITM%20Online%20Degree%20(4_4_2026%208_59_38%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "AQ2.6_ Activity Questions 6 - Not Graded",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%202/AQ2.6_%20Activity%20Questions%206%20-%20Not%20Graded%20_%20IITM%20Online%20Degree%20(4_4_2026%209_00_29%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "L2.1 Determinants (part 3)",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%202/L2.1%20Determinants%20(part%203)%20_%20IITM%20Online%20Degree%20(4_4_2026%208_55_38%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "L2.2 Cramer's Rule",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%202/L2.2%20Cramer's%20Rule%20_%20IITM%20Online%20Degree%20(4_4_2026%208_56_29%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "L2.3 Solutions to a system of linear equations with an invertible coefficient matrix",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%202/L2.3%20Solutions%20to%20a%20system%20of%20linear%20equations%20with%20an%20invertible%20coefficient%20matrix%20_%20IITM%20Online%20Degree%20(4_4_2026%208_57_33%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "L2.4 The echelon form",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%202/L2.4%20The%20echelon%20form%20_%20IITM%20Online%20Degree%20(4_4_2026%208_58_22%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "L2.5 Row reduction",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%202/L2.5%20Row%20reduction%20_%20IITM%20Online%20Degree%20(4_4_2026%208_59_13%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "L2.6 The Gaussian elimination method",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%202/L2.6%20The%20Gaussian%20elimination%20method%20_%20IITM%20Online%20Degree%20(4_4_2026%209_00_00%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Practice Assignment 2 - Not Graded",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%202/Practice%20Assignment%202%20-%20Not%20Graded%20_%20IITM%20Online%20Degree%20(4_4_2026%209_02_23%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Solve with us 2.1 - Not Graded",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%202/Solve%20with%20us%202.1%20-%20Not%20Graded%20_%20IITM%20Online%20Degree%20(4_4_2026%209_01_07%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Solve with us 2.2 - Not Graded",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%202/Solve%20with%20us%202.2%20-%20Not%20Graded%20_%20IITM%20Online%20Degree%20(4_4_2026%209_01_40%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Week 2 - Question bank",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%202/Week%202%20-%20Question%20bank%20_%20IITM%20Online%20Degree%20(4_4_2026%209_03_06%20am).u.zip.html"
+                            },
+                            {
+                                "type": "file",
+                                "name": "Week 2 Graded Assignment 2",
+                                "path": "content/Term-Feb-to-May/Mathematics-II/Week%202/Week%202%20Graded%20Assignment%202%20_%20IITM%20Online%20Degree%20(4_4_2026%209_02_47%20am).u.zip.html"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
+</script>
+<!-- DATA-END -->
+
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 flex flex-col h-screen overflow-hidden min-w-0 bg-white">
+        
+        <!-- Mobile Header (Only visible on small screens) -->
+        <header class="md:hidden flex items-center px-4 py-3 border-b border-slate-200 bg-white shadow-sm z-30">
+            <button onclick="toggleSidebar()" class="p-2 -ml-2 mr-3 text-slate-600 hover:bg-slate-100 hover:text-slate-900 rounded-lg transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+            <h1 class="font-bold text-slate-800 text-sm truncate uppercase tracking-wider flex-1" id="mobile-title">Dashboard</h1>
+        </header>
+
+        <!-- Iframe Container -->
+        <div class="flex-1 relative w-full h-full bg-[#f8f9fb]">
+            <!-- Added a blank placeholder so it doesn't try to load index.html recursively -->
+            <iframe id="viewer" title="Assignment Viewer" src="about:blank" class="absolute inset-0 w-full h-full border-none shadow-inner bg-white"></iframe>
+        </div>
+    </main>
+
+    <script>
+        // --- SMART ICON LOGIC ---
+        function getIconForFile(fileName) {
+            const lowerText = fileName.toLowerCase();
+            const docIcon = `<svg class="w-4 h-4 min-w-[16px]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"></path></svg>`;
+            const checkIcon = `<svg class="w-4 h-4 min-w-[16px]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>`;
+            const playIcon = `<svg class="w-4 h-4 min-w-[16px]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z"></path></svg>`;
+
+            let iconSvg = playIcon;
+            let iconColor = 'text-slate-400';
+
+            if (lowerText.includes('reading')) {
+                iconColor = 'text-emerald-400';
+                iconSvg = docIcon;
+            } else if (lowerText.includes('aq') || lowerText.includes('activity') || lowerText.includes('practice')) {
+                iconColor = 'text-orange-400';
+                iconSvg = checkIcon;
+            } else if (lowerText.includes('graded')) {
+                iconColor = 'text-rose-400';
+                iconSvg = checkIcon;
+            } else if (lowerText.includes('quiz') || lowerText.includes('exam')) {
+                iconColor = 'text-indigo-400';
+                iconSvg = checkIcon;
+            }
+
+            return { svg: iconSvg, color: iconColor };
+        }
+
+        // --- JSON TO UI BUILDER ---
+        function renderTree(nodes, isRoot = false) {
+            let html = '';
+            
+            nodes.forEach(node => {
+                if (node.type === 'folder') {
+                    // Start Folder
+                    html += `
+                        <div class="folder-wrapper mb-2">
+                            <div class="folder-header flex justify-between items-center px-3 py-3 cursor-pointer text-slate-200 hover:bg-white/5 bg-[#242528] border border-white/5 rounded-xl transition-colors shadow-sm" onclick="toggleFolder(this)">
+                                <div class="flex items-center truncate">
+                                    <svg class="folder-icon w-4 h-4 mr-3 flex-shrink-0 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                                    <span class="text-[13px] font-extrabold tracking-wide truncate hide-on-collapse">${node.name}</span>
+                                </div>
+                                <svg class="chevron-icon w-4 h-4 text-slate-400 transform transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+                            </div>
+                            <div class="folder-content hidden pl-1 pr-1 pt-2 border-l border-[#2b2c2f] ml-5 mt-1">
+                                ${renderTree(node.children)}
+                            </div>
+                        </div>
+                    `;
+                } else if (node.type === 'file') {
+                    // Create File Button
+                    const iconData = getIconForFile(node.name);
+                    // Handle undefined paths safely
+                    const safePath = node.path && node.path.trim() !== '' ? node.path : 'about:blank';
+                    
+                    html += `
+                        <button class="nav-btn file-btn group" onclick="loadPage('${safePath}', '${node.name.replace(/'/g, "\\'")}', this)" title="${node.name}">
+                            <div class="mr-3 mt-[2px] icon-wrapper ${iconData.color} transition-all duration-200 flex-shrink-0">
+                                ${iconData.svg}
+                            </div>
+                            <span class="leading-relaxed flex-1 hide-on-collapse whitespace-nowrap overflow-hidden text-ellipsis">${node.name}</span>
+                        </button>
+                    `;
+                }
+            });
+            return html;
+        }
+
+        // Initialize the UI from the JSON script block
+        function initSidebarData() {
+            const scriptTag = document.getElementById('site-data');
+            if (!scriptTag) return;
+
+            try {
+                const data = JSON.parse(scriptTag.textContent);
+                const sidebarContainer = document.getElementById('sidebar-content');
+                
+                // Clear the raw script text from the container and inject HTML
+                const generatedHtml = renderTree(data, true);
+                
+                // We keep the script tag intact in case the node script runs again, 
+                // but we add the UI elements below it.
+                sidebarContainer.innerHTML = scriptTag.outerHTML + generatedHtml;
+
+            } catch (e) {
+                console.error("Error parsing sidebar JSON: ", e);
+            }
+        }
+
+        // --- UI INTERACTION LOGIC ---
+
+        function toggleFolder(element) {
+            // Toggle the rotation of the chevron
+            const chevron = element.querySelector('.chevron-icon');
+            if (chevron) chevron.classList.toggle('rotate-180');
+            
+            // Toggle visibility of the content inside the folder
+            const content = element.nextElementSibling;
+            if (content && content.classList.contains('folder-content')) {
+                content.classList.toggle('hidden');
+            }
+
+            // If we are in desktop collapsed mode, temporarily expand sidebar to show contents
+            const sidebar = document.getElementById('sidebar');
+            if (window.innerWidth >= 768 && sidebar.classList.contains('is-collapsed')) {
+                toggleDesktopSidebar();
+            }
+        }
+
+        function loadPage(filePath, title, buttonElement) {
+            const viewer = document.getElementById('viewer');
+            
+            // SECURITY FIX: Don't load if path is empty, 'null', or pointing to the index file itself
+            if (!filePath || filePath === 'null' || filePath === 'about:blank' || filePath.includes('index.html')) {
+                console.warn("Invalid file path prevented from loading: ", filePath);
+                return;
+            }
+
+            // Change iframe source (Removed encodeURI to prevent double-encoding)
+            viewer.src = filePath;
+
+            // Manage active button states
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            if (buttonElement) buttonElement.classList.add('active');
+
+            // Update mobile header
+            document.getElementById('mobile-title').innerText = title;
+
+            // Automatically close the sidebar on mobile after clicking a link
+            if (window.innerWidth < 768) {
+                toggleSidebar();
+            }
+        }
+
+        function toggleDesktopSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('is-collapsed');
+        }
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('mobile-overlay');
+            sidebar.classList.toggle('-translate-x-full');
+            overlay.classList.toggle('hidden');
+        }
+
+        // --- INIT ---
+        window.onload = () => {
+            initSidebarData();
+            
+            // Expand the first folder automatically
+            const firstFolder = document.querySelector('.folder-header');
+            if (firstFolder) firstFolder.click();
+
+            // Auto-load the first valid file button
+            const firstBtn = document.querySelector('.nav-btn.file-btn');
+            if (firstBtn) {
+                firstBtn.click();
+            }
+        };
+    </script>
+</body>
+</html>

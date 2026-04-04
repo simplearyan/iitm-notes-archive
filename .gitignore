@@ -1,0 +1,15 @@
+Ignore overly long/corrupted Malpractice Rule files causing Git path length errors
+
+content/**/Malpractice Rules/*
+Punishment for malpractice.html
+Punishment_for_malpractice.html
+
+Ignore old UI versions
+
+versions/
+
+Standard ignores
+
+node_modules/
+.DS_Store
+Thumbs.db
