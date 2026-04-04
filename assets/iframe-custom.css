@@ -9,7 +9,9 @@
 }
 
 
-/* Premium Custom Scrollbar */
+
+/* Premium Custom Scrollbar (Desktop Only) */
+@media (min-width: 1024px) {
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -31,4 +33,5 @@
     background: #6366f1; /* indigo-500 */
     border: 2px solid transparent;
     background-clip: content-box;
+}
 }

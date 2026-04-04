@@ -1,16 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply font-sans antialiased text-slate-900;
+  }
+}
+
 @layer components {
     .nav-btn {
-        @apply flex items-start w-full text-left px-3 py-2 mb-1 rounded-xl text-[13px] font-medium text-slate-400 transition-all duration-200 border border-transparent bg-transparent;
+        @apply flex items-start w-full text-left px-3 py-2.5 mb-1.5 rounded-xl text-sm font-medium text-slate-400 transition-all duration-200 border border-transparent bg-transparent tracking-tight;
     }
     .nav-btn:hover {
-        @apply bg-white/5 text-slate-200;
+        @apply bg-white/5 text-slate-100;
     }
     .nav-btn.active {
-        @apply bg-indigo-500/10 text-indigo-300 border-indigo-500/20 shadow-sm;
+        @apply bg-indigo-500/10 text-indigo-300 border-indigo-500/20 shadow-md;
     }
     .nav-btn.active .icon-wrapper {
         @apply text-indigo-400 !important;
