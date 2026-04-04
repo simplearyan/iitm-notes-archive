@@ -350,7 +350,14 @@
 
         <!-- Iframe Container - Hidden by default to prevent flicker -->
         <div id="iframe-container" class="flex-1 relative w-full h-full bg-[#f8f9fb] hidden">
-            <iframe id="viewer" title="Assignment Viewer" src="about:blank" class="absolute inset-0 w-full h-full border-none shadow-inner bg-white"></iframe>
+            <!-- Loading Spinner -->
+            <div id="iframe-loader" class="absolute inset-0 z-10 flex items-center justify-center bg-slate-50/80 backdrop-blur-[2px] transition-opacity duration-300">
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 border-4 border-slate-200 border-t-indigo-600 rounded-full animate-spin mb-4"></div>
+                    <p class="text-slate-500 font-medium animate-pulse">Loading Module...</p>
+                </div>
+            </div>
+            <iframe id="viewer" title="Assignment Viewer" onload="hideLoader()" src="about:blank" class="absolute inset-0 w-full h-full border-none shadow-inner bg-white"></iframe>
         </div>
     </main>
 
@@ -430,6 +437,7 @@
             }
             
             // Load iframe using the raw encoded hash so the browser fetches it correctly
+            showLoader();
             document.getElementById('viewer').src = rawHash;
         }
 
@@ -637,6 +645,18 @@
             } catch (e) {
                 console.error("Error parsing sidebar JSON: ", e);
             }
+        }
+
+        
+        // --- LOADER LOGIC ---
+        function showLoader() {
+            const loader = document.getElementById('iframe-loader');
+            if (loader) loader.classList.remove('opacity-0', 'pointer-events-none');
+        }
+
+        function hideLoader() {
+            const loader = document.getElementById('iframe-loader');
+            if (loader) loader.classList.add('opacity-0', 'pointer-events-none');
         }
 
         // --- UI INTERACTION LOGIC ---
