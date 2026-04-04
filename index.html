@@ -388,8 +388,8 @@
             <h1 class="font-bold text-slate-800 text-sm truncate uppercase tracking-wider flex-1" id="mobile-title">Dashboard</h1>
         </header>
 
-        <!-- DASHBOARD HUB (Overlay) -->
-        <div id="home-dashboard" class="absolute inset-0 z-20 bg-slate-50 overflow-y-auto p-6 md:p-10 transition-opacity duration-300">
+        <!-- DASHBOARD HUB (Overlay) - Hidden by default to prevent flicker -->
+        <div id="home-dashboard" class="absolute inset-0 z-20 bg-slate-50 overflow-y-auto p-6 md:p-10 transition-opacity duration-300 hidden">
             <div class="max-w-5xl mx-auto">
                 <div class="mb-10">
                     <h1 class="text-3xl md:text-4xl font-extrabold text-slate-800 tracking-tight mb-3">Welcome to your Notes Archive</h1>
@@ -402,7 +402,7 @@
             </div>
         </div>
 
-        <!-- Iframe Container -->
+        <!-- Iframe Container - Hidden by default to prevent flicker -->
         <div id="iframe-container" class="flex-1 relative w-full h-full bg-[#f8f9fb] hidden">
             <iframe id="viewer" title="Assignment Viewer" src="about:blank" class="absolute inset-0 w-full h-full border-none shadow-inner bg-white"></iframe>
         </div>
@@ -721,20 +721,19 @@
             overlay.classList.toggle('hidden');
         }
 
-        // --- INIT ---
-        window.onload = () => {
-            initSidebarData();
-            
-            // Listen for Back/Forward browser navigation and manual URL changes
-            window.addEventListener('hashchange', handleHashChange);
-            
-            // Process initial load state
-            if (window.location.hash && window.location.hash !== '#dashboard') {
-                handleHashChange(); // Load specific file if URL contains a hash
-            } else {
-                showDashboard(); // Default to dashboard
-            }
-        };
+        // --- SYNCHRONOUS INIT ---
+        // Executes immediately as the HTML is parsed, avoiding any visual flicker
+        initSidebarData();
+        
+        // Setup listener for future navigations
+        window.addEventListener('hashchange', handleHashChange);
+        
+        // Process the very first frame correctly
+        if (window.location.hash && window.location.hash !== '#dashboard') {
+            handleHashChange(); // Go straight to the iframe file
+        } else {
+            showDashboard(); // Go straight to the dashboard
+        }
     </script>
 </body>
 </html>
