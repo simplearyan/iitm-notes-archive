@@ -10,8 +10,8 @@ function buildTree(currentPath, relativePath = '') {
     const stats = fs.statSync(currentPath);
     
     if (stats.isDirectory()) {
-        // Did we unzip a SingleFile archive here? Check for index.html + manifest
-        if (fs.existsSync(path.join(currentPath, 'index.html')) && fs.existsSync(path.join(currentPath, 'manifest.json'))) {
+        // Did we unzip a SingleFile archive here? Check for index.html only
+        if (fs.existsSync(path.join(currentPath, 'index.html'))) {
             let cleanName = path.basename(currentPath)
                 .replace(/_ IITM Online Degree.*$/, '')
                 .trim();

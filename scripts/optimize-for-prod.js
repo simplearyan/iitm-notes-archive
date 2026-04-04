@@ -24,9 +24,8 @@ function optimizeDir(currentPath) {
             }
 
             try {
-                // Use built-in unzip command (works on Linux/Mac/GitBash)
-                // -q: quiet, -o: overwrite existing, -d: extract directory
-                execSync(`unzip -q -o "${itemPath}" -d "${targetDir}"`);
+                // Use 7z command for vastly superior polyglot support (HTML + ZIP)
+                execSync(`7z x -y "${itemPath}" -o"${targetDir}"`);
                 
                 // Remove the bulky original file to save space
                 fs.unlinkSync(itemPath);
