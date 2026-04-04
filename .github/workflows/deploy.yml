@@ -30,6 +30,9 @@ jobs:
       - name: Generate Sidebar Route Map
         run: node scripts/generate-sidebar.js
 
+      - name: Build Tailwind CSS
+        run: npm install && npx tailwindcss -i ./src/input.css -o ./assets/main.css --minify
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:

@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-btn {
+        @apply flex items-start w-full text-left px-3 py-2 mb-1 rounded-xl text-[13px] font-medium text-slate-400 transition-all duration-200 border border-transparent bg-transparent;
+    }
+    .nav-btn:hover {
+        @apply bg-white/5 text-slate-200;
+    }
+    .nav-btn.active {
+        @apply bg-indigo-500/10 text-indigo-300 border-indigo-500/20 shadow-sm;
+    }
+    .nav-btn.active .icon-wrapper {
+        @apply text-indigo-400 !important;
+    }
+    
+    /* Collapsed state styles for desktop */
+    @media (min-width: 768px) {
+        #sidebar.is-collapsed {
+            width: 72px;
+        }
+        #sidebar.is-collapsed .hide-on-collapse {
+            display: none !important;
+        }
+        #sidebar.is-collapsed .nav-btn, #sidebar.is-collapsed .folder-header {
+            justify-content: center;
+            padding: 12px 0;
+            margin-bottom: 8px;
+        }
+        #sidebar.is-collapsed .icon-wrapper, #sidebar.is-collapsed .folder-icon {
+            margin: 0 !important;
+            transform: scale(1.2);
+        }
+        #sidebar.is-collapsed .chevron-icon {
+            display: none;
+        }
+        #sidebar.is-collapsed #desktop-toggle-container {
+            justify-content: center;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        #sidebar.is-collapsed .folder-content {
+            margin-left: 0;
+            padding-left: 0;
+            border-left: none;
+        }
+    }
+    
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        @apply bg-slate-600 rounded-full hover:bg-slate-500;
+    }
+}
