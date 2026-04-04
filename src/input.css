@@ -86,6 +86,6 @@
 
     /* Transition for toolbar show/hide */
     #anno-toolbar.hidden {
-        @apply translate-y-32 opacity-0 pointer-events-none;
+        display: none !important;
     }
 }
