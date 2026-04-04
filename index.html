@@ -11,6 +11,9 @@
     <!-- Link to statically compiled Tailwind CSS -->
     <link href="assets/main.css" rel="stylesheet">
 
+    <!-- Lucide Premium Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
     <!-- Annotation Engine -->
     <script src="libs/rough.js"></script>
     <script src="scripts/annotator.js"></script>
@@ -711,78 +714,115 @@
         }
     </script>
 
-    
-    
-        
-        <button class="anno-tool-btn text-rose-500 hover:bg-rose-50" onclick="clearAnno()" title="Clear All">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
-        </button>
-    </div>
 
-
-    
-
-
-    
-    
-
-
-    <!-- Premium Annotation System -->
     <div id="anno-toolbar" class="hidden">
-        <div class="flex items-center gap-1.5 p-1.5 max-w-[95vw] overflow-x-auto no-scrollbar scroll-smooth">
-            
-            <!-- Tool Selection -->
-            <button class="anno-tool-btn active-tool" data-tool="pen" onclick="setAnnoTool('pen')" title="Freehand Brush">
-                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3m5-5l1.5-7.5L2 2l3.5 14.5L13 18l5-5"></path></svg>
+        <div class="flex items-center gap-1 p-1.5 max-w-[95vw] overflow-x-auto no-scrollbar">
+
+            <button class="anno-tool-btn active-tool" data-tool="pen" onclick="setAnnoTool('pen')" title="Freehand">
+                <i data-lucide="pencil" class="w-[18px] h-[18px]"></i>
             </button>
-            <button class="anno-tool-btn" data-tool="line" onclick="setAnnoTool('line')" title="Straight Line">
-                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14"></path></svg>
+            <button class="anno-tool-btn" data-tool="line" onclick="setAnnoTool('line')" title="Line">
+                <i data-lucide="minus" class="w-[18px] h-[18px]"></i>
             </button>
             <button class="anno-tool-btn" data-tool="rect" onclick="setAnnoTool('rect')" title="Rectangle">
-                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
+                <i data-lucide="square" class="w-[18px] h-[18px]"></i>
             </button>
-            <button class="anno-tool-btn" data-tool="arrow" onclick="setAnnoTool('arrow')" title="Arrow Point">
-                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M13 5l7 7-7 7M5 12h14"></path></svg>
+            <button class="anno-tool-btn" data-tool="arrow" onclick="setAnnoTool('arrow')" title="Arrow">
+                <i data-lucide="arrow-right" class="w-[18px] h-[18px]"></i>
             </button>
 
             <div class="w-px h-6 bg-slate-200 mx-1 flex-shrink-0"></div>
 
-            <!-- Stroke Weight Dots -->
-            <div class="flex items-center gap-1 px-1 flex-shrink-0">
-                <button class="anno-weight-btn w-7 h-7 flex items-center justify-center rounded-lg" data-weight="2" onclick="setAnnoWeight(2)" title="Fine Stroke">
-                    <div class="w-1.5 h-1.5 bg-current rounded-full"></div>
-                </button>
-                <button class="anno-weight-btn active-weight w-8 h-8 flex items-center justify-center rounded-lg" data-weight="4" onclick="setAnnoWeight(4)" title="Medium Stroke">
-                    <div class="w-3 h-3 bg-current rounded-full"></div>
-                </button>
-                <button class="anno-weight-btn w-10 h-10 flex items-center justify-center rounded-lg" data-weight="8" onclick="setAnnoWeight(8)" title="Bold Stroke">
-                    <div class="w-5 h-5 bg-current rounded-full"></div>
-                </button>
-            </div>
+            <button class="anno-weight-btn w-8 h-8 rounded-xl flex items-center justify-center" data-weight="2" onclick="setAnnoWeight(2)" title="Fine">
+                <span class="w-1.5 h-1.5 rounded-full bg-current block"></span>
+            </button>
+            <button class="anno-weight-btn active-weight w-8 h-8 rounded-xl flex items-center justify-center" data-weight="4" onclick="setAnnoWeight(4)" title="Medium">
+                <span class="w-3 h-3 rounded-full bg-current block"></span>
+            </button>
+            <button class="anno-weight-btn w-8 h-8 rounded-xl flex items-center justify-center" data-weight="8" onclick="setAnnoWeight(8)" title="Bold">
+                <span class="w-5 h-5 rounded-full bg-current block"></span>
+            </button>
 
             <div class="w-px h-6 bg-slate-200 mx-1 flex-shrink-0"></div>
 
-            <!-- Color Palette -->
-            <div class="flex items-center gap-2 px-1 flex-shrink-0">
-                <button class="anno-color-btn bg-[#6366f1] ring-2 ring-[#6366f1] ring-offset-2" data-color="#6366f1" onclick="setAnnoColor('#6366f1')"></button>
-                <button class="anno-color-btn bg-[#10b981]" data-color="#10b981" onclick="setAnnoColor('#10b981')"></button>
-                <button class="anno-color-btn bg-[#f43f5e]" data-color="#f43f5e" onclick="setAnnoColor('#f43f5e')"></button>
-                <button class="anno-color-btn bg-[#f59e0b]" data-color="#f59e0b" onclick="setAnnoColor('#f59e0b')"></button>
-            </div>
+            <button class="anno-color-btn bg-[#6366f1] ring-2 ring-[#6366f1] ring-offset-2" data-color="#6366f1" onclick="setAnnoColor('#6366f1')"></button>
+            <button class="anno-color-btn bg-[#10b981]" data-color="#10b981" onclick="setAnnoColor('#10b981')"></button>
+            <button class="anno-color-btn bg-[#f43f5e]" data-color="#f43f5e" onclick="setAnnoColor('#f43f5e')"></button>
+            <button class="anno-color-btn bg-[#f59e0b]" data-color="#f59e0b" onclick="setAnnoColor('#f59e0b')"></button>
 
             <div class="w-px h-6 bg-slate-200 mx-1 flex-shrink-0"></div>
 
-            <!-- Actions -->
-            <button class="anno-tool-btn text-rose-500 hover:bg-rose-50 flex-shrink-0" onclick="clearAnno()" title="Clear Lesson Drawing">
-                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+            <button class="anno-tool-btn text-rose-400 hover:bg-rose-50 hover:text-rose-600" onclick="clearAnno()" title="Clear">
+                <i data-lucide="trash-2" class="w-[18px] h-[18px]"></i>
             </button>
         </div>
     </div>
 
-    <!-- Purple FAB Toggle -->
-    <button id="draw-toggle-btn" aria-label="Toggle Annotations" onclick="toggleAnno()" class="fixed bottom-6 right-6 z-[60] w-14 h-14 bg-[#6366f1] text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+    <button id="draw-toggle-btn" aria-label="Toggle Annotations" onclick="toggleAnno()" class="fixed bottom-6 right-6 z-[60] w-14 h-14 bg-[#6366f1] text-white rounded-full shadow-2xl shadow-indigo-200 flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300">
+        <i data-lucide="pencil" class="w-6 h-6"></i>
     </button>
+
+    <script>
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+    </script>
+
+    <!-- ANNOTATION SYSTEM: Toolbar + FAB -->
+
+    <!-- Floating Toolbar (centered, bottom) -->
+    <div id="anno-toolbar" class="hidden">
+        <div class="flex items-center gap-1 p-1.5 max-w-[95vw] overflow-x-auto no-scrollbar">
+
+            <button class="anno-tool-btn active-tool" data-tool="pen" onclick="setAnnoTool('pen')" title="Freehand">
+                <i data-lucide="pencil" class="w-[18px] h-[18px]"></i>
+            </button>
+            <button class="anno-tool-btn" data-tool="line" onclick="setAnnoTool('line')" title="Line">
+                <i data-lucide="minus" class="w-[18px] h-[18px]"></i>
+            </button>
+            <button class="anno-tool-btn" data-tool="rect" onclick="setAnnoTool('rect')" title="Rectangle">
+                <i data-lucide="square" class="w-[18px] h-[18px]"></i>
+            </button>
+            <button class="anno-tool-btn" data-tool="arrow" onclick="setAnnoTool('arrow')" title="Arrow">
+                <i data-lucide="arrow-right" class="w-[18px] h-[18px]"></i>
+            </button>
+
+            <div class="w-px h-6 bg-slate-200 mx-1 flex-shrink-0"></div>
+
+            <!-- Stroke Weights (3 dot sizes) -->
+            <button class="anno-weight-btn w-8 h-8 rounded-xl flex items-center justify-center" data-weight="2" onclick="setAnnoWeight(2)" title="Fine">
+                <span class="w-1.5 h-1.5 rounded-full bg-current block"></span>
+            </button>
+            <button class="anno-weight-btn active-weight w-8 h-8 rounded-xl flex items-center justify-center" data-weight="4" onclick="setAnnoWeight(4)" title="Medium">
+                <span class="w-3 h-3 rounded-full bg-current block"></span>
+            </button>
+            <button class="anno-weight-btn w-8 h-8 rounded-xl flex items-center justify-center" data-weight="8" onclick="setAnnoWeight(8)" title="Bold">
+                <span class="w-5 h-5 rounded-full bg-current block"></span>
+            </button>
+
+            <div class="w-px h-6 bg-slate-200 mx-1 flex-shrink-0"></div>
+
+            <!-- Color Palette -->
+            <button class="anno-color-btn bg-[#6366f1] ring-2 ring-[#6366f1] ring-offset-2" data-color="#6366f1" onclick="setAnnoColor('#6366f1')"></button>
+            <button class="anno-color-btn bg-[#10b981]" data-color="#10b981" onclick="setAnnoColor('#10b981')"></button>
+            <button class="anno-color-btn bg-[#f43f5e]" data-color="#f43f5e" onclick="setAnnoColor('#f43f5e')"></button>
+            <button class="anno-color-btn bg-[#f59e0b]" data-color="#f59e0b" onclick="setAnnoColor('#f59e0b')"></button>
+
+            <div class="w-px h-6 bg-slate-200 mx-1 flex-shrink-0"></div>
+
+            <!-- Clear -->
+            <button class="anno-tool-btn text-rose-400 hover:bg-rose-50 hover:text-rose-600" onclick="clearAnno()" title="Clear">
+                <i data-lucide="trash-2" class="w-[18px] h-[18px]"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- FAB Toggle (bottom-right) -->
+    <button id="draw-toggle-btn" aria-label="Toggle Annotations" onclick="toggleAnno()" class="fixed bottom-6 right-6 z-[60] w-14 h-14 bg-[#6366f1] text-white rounded-full shadow-2xl shadow-indigo-200 flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300">
+        <i data-lucide="pencil" class="w-6 h-6"></i>
+    </button>
+
+    <script>
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+    </script>
 
 </body>
 </html>

@@ -6,7 +6,7 @@
     let isDrawing = false;
     let currentTool = 'pen';
     let currentColor = '#6366f1'; 
-    let currentWeight = 3;
+    let currentWeight = 4;
     let elements = [];
     let tempElement = null;
     
@@ -168,7 +168,7 @@
         const angle = Math.atan2(y2 - y1, x2 - x1);
         const headlen = 15;
         rc.line(x2, y2, x2 - headlen * Math.cos(angle - Math.PI / 6), y2 - headlen * Math.sin(angle - Math.PI / 6), opts);
-        rc.line(x2, y2, x2 - headlen * Math.cos(angle + Math.PI / 6), y2 - headlen * Math.sin(angle + Math.PI /  headlen), opts);
+        rc.line(x2, y2, x2 - headlen * Math.cos(angle + Math.PI / 6), y2 - headlen * Math.sin(angle + Math.PI / 6), opts);
     }
 
     function clearAnnotations() {
