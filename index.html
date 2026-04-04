@@ -464,7 +464,7 @@
 
         // Triggered by clicking a file button
         function loadPage(filePath) {
-            if (!filePath || filePath === 'null' || filePath === 'about:blank' || filePath.includes('index.html')) {
+            if (!filePath || filePath === 'null' || filePath === 'about:blank' || filePath === 'index.html' || filePath === '/index.html') {
                 console.warn("Invalid file path prevented from loading: ", filePath);
                 return;
             }
