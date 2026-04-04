@@ -65,15 +65,20 @@
 
     /* Floating Annotation Toolbar Styles */
     #anno-toolbar {
-        @apply fixed bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-2 p-2 bg-white/80 backdrop-blur-md border border-slate-200 rounded-2xl shadow-2xl transition-all duration-500 z-[50];
+        @apply fixed bottom-24 left-1/2 -translate-x-1/2 flex items-center p-1.5 bg-white/90 backdrop-blur-lg border border-slate-200 rounded-2xl shadow-2xl transition-all duration-500 z-[50];
+        @apply max-w-[calc(100vw-2rem)] w-fit;
     }
 
     .anno-tool-btn {
-        @apply p-2.5 rounded-xl text-slate-500 hover:bg-slate-100 hover:text-indigo-600 transition-all flex items-center justify-center;
+        @apply p-2.5 rounded-xl text-slate-500 hover:bg-slate-100 hover:text-indigo-600 transition-all flex items-center justify-center flex-shrink-0;
     }
 
     .anno-tool-btn.active-tool {
         @apply bg-indigo-50 text-indigo-600 ring-2 ring-indigo-500/20 shadow-sm font-bold;
+    }
+
+    .anno-weight-btn.active-weight {
+        @apply text-indigo-600 bg-indigo-50 font-bold;
     }
 
     .anno-color-btn {
@@ -81,11 +86,21 @@
     }
 
     #draw-toggle-btn.active-draw {
-        @apply bg-indigo-600 text-white shadow-indigo-200;
+        @apply bg-rose-500 shadow-rose-200;
     }
 
     /* Transition for toolbar show/hide */
     #anno-toolbar.hidden {
+        @apply translate-y-32 opacity-0 pointer-events-none;
         display: none !important;
+    }
+
+    /* Hide scrollbar but allow scrolling */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 }

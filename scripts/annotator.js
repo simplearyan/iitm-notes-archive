@@ -1,20 +1,23 @@
 /**
- * IITM Archive Annotator - Core Logic
+ * IITM Archive Annotator - Advanced Logic (V1.1)
  */
 (function() {
     let isEnabled = false;
     let isDrawing = false;
     let currentTool = 'pen';
-    let currentColor = '#6366f1'; // Indigo-500
+    let currentColor = '#6366f1'; 
     let currentWeight = 3;
     let elements = [];
     let tempElement = null;
     
-    let container, canvasStatic, ctxStatic, rcStatic, canvasDynamic, ctxDynamic, rcDynamic, toolbar;
+    let container, canvasStatic, ctxStatic, rcStatic, canvasDynamic, ctxDynamic, rcDynamic;
 
     function init() {
         container = document.getElementById('iframe-container');
         if (!container) return;
+
+        // Check if canvases already exist to prevent duplicates
+        if (document.getElementById('anno-canvas-static')) return;
 
         // Create Canvas Layers
         canvasStatic = document.createElement('canvas');
@@ -33,15 +36,16 @@
         ctxDynamic = canvasDynamic.getContext('2d');
         rcDynamic = rough.canvas(canvasDynamic);
 
-        // Events
+        // Interaction on the TOP layer (Dynamic)
         canvasDynamic.addEventListener('pointerdown', handleDown);
         window.addEventListener('pointermove', handleMove);
         window.addEventListener('pointerup', handleUp);
         window.addEventListener('resize', resizeCanvas);
         
-        // Listen for lesson changes to reload annotations
         window.addEventListener('hashchange', () => {
-            if (isEnabled) loadAnnotations();
+            if (isEnabled) {
+                loadAnnotations();
+            }
         });
 
         resizeCanvas();
@@ -72,8 +76,10 @@
         if (!container || !canvasStatic) return;
         const rect = container.getBoundingClientRect();
         [canvasStatic, canvasDynamic].forEach(c => {
-            c.width = rect.width;
-            c.height = rect.height;
+            if (c.width !== rect.width || c.height !== rect.height) {
+                c.width = rect.width;
+                c.height = rect.height;
+            }
         });
         redraw();
     }
@@ -107,7 +113,6 @@
         if (currentTool === 'pen') {
             tempElement.points.push([pos.x, pos.y]);
         } else {
-            // Shapes use start and end points
             if (tempElement.points.length > 1) tempElement.points[1] = [pos.x, pos.y];
             else tempElement.points.push([pos.x, pos.y]);
         }
@@ -137,12 +142,16 @@
         const opts = { 
             stroke: el.stroke, 
             strokeWidth: el.strokeWidth, 
-            roughness: el.type === 'pen' ? 0.5 : 1.5,
+            roughness: el.type === 'pen' ? 0.5 : 1.2,
             seed: el.seed 
         };
 
         if (el.type === 'pen') {
             rc.linearPath(el.points, opts);
+        } else if (el.type === 'line') {
+            const [p1, p2] = el.points;
+            if (!p2) return;
+            rc.line(p1[0], p1[1], p2[0], p2[1], opts);
         } else if (el.type === 'rect') {
             const [p1, p2] = el.points;
             if (!p2) return;
@@ -159,11 +168,11 @@
         const angle = Math.atan2(y2 - y1, x2 - x1);
         const headlen = 15;
         rc.line(x2, y2, x2 - headlen * Math.cos(angle - Math.PI / 6), y2 - headlen * Math.sin(angle - Math.PI / 6), opts);
-        rc.line(x2, y2, x2 - headlen * Math.cos(angle + Math.PI / 6), y2 - headlen * Math.sin(angle + Math.PI / 6), opts);
+        rc.line(x2, y2, x2 - headlen * Math.cos(angle + Math.PI / 6), y2 - headlen * Math.sin(angle + Math.PI /  headlen), opts);
     }
 
     function clearAnnotations() {
-        if (confirm('Clear all drawings for this module?')) {
+        if (confirm('Delete all annotations for this lesson?')) {
             elements = [];
             saveAnnotations();
             redraw();
@@ -182,15 +191,27 @@
         redraw();
     }
 
-    // Toolbox Controls
+    // Toolbox Exposed Controls
     window.setAnnoTool = (tool) => {
         currentTool = tool;
-        document.querySelectorAll('.anno-tool-btn').forEach(b => b.classList.toggle('active-tool', b.dataset.tool === tool));
+        document.querySelectorAll('.anno-tool-btn').forEach(b => {
+            b.classList.toggle('active-tool', b.dataset.tool === tool);
+        });
     };
 
     window.setAnnoColor = (color) => {
         currentColor = color;
-        document.querySelectorAll('.anno-color-btn').forEach(b => b.classList.toggle('ring-2', b.dataset.color === color));
+        document.querySelectorAll('.anno-color-btn').forEach(b => {
+            b.classList.toggle('ring-offset-2', b.dataset.color === color);
+            b.classList.toggle('ring-2', b.dataset.color === color);
+        });
+    };
+
+    window.setAnnoWeight = (weight) => {
+        currentWeight = parseInt(weight);
+        document.querySelectorAll('.anno-weight-btn').forEach(b => {
+            b.classList.toggle('active-weight', parseInt(b.dataset.weight) === currentWeight);
+        });
     };
 
     window.clearAnno = clearAnnotations;

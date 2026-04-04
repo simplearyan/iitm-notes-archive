@@ -26,10 +26,7 @@
         
         <!-- Hamburger Toggle for Desktop -->
         <div class="hidden md:flex items-center px-6 pt-4 pb-2 transition-all duration-300" id="desktop-toggle-container">
-            <!-- Annotation Toggle -->
-            <button id="draw-toggle-btn" aria-label="Toggle Annotations" onclick="toggleAnno()" class="p-2 ml-auto text-slate-400 hover:text-indigo-600 hover:bg-white/10 rounded-lg transition-all">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
-            </button>
+            
             <button aria-label="Toggle Desktop Sidebar" onclick="toggleDesktopSidebar()" class="p-2 -ml-2 text-slate-400 hover:text-slate-200 hover:bg-white/10 rounded-lg transition-colors">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
@@ -742,6 +739,12 @@
             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
         </button>
     </div>
+
+
+    <!-- Annotation FAB (Bottom Right) -->
+    <button id="draw-toggle-btn" aria-label="Toggle Annotations" onclick="toggleAnno()" class="fixed bottom-6 right-6 z-[60] w-14 h-14 bg-indigo-600 text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+    </button>
 
 </body>
 </html>
