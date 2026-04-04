@@ -83,7 +83,7 @@
         <!-- Sidebar Header Area -->
         <div class="px-6 pt-4 pb-2 hide-on-collapse">
             <!-- Dynamic Back Button -->
-            <button id="back-to-dash" onclick="showDashboard()" class="hidden flex items-center text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-4 hover:text-slate-200 transition-colors">
+            <button id="back-to-dash" onclick="window.location.hash = 'dashboard'" class="hidden flex items-center text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-4 hover:text-slate-200 transition-colors">
                 <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
                 Back to Dashboard
             </button>
@@ -439,12 +439,112 @@
             return { svg: iconSvg, color: iconColor };
         }
 
-        // --- DASHBOARD & ROUTING ---
+        // --- HASH ROUTING & STATE MANAGEMENT ---
+        function handleHashChange() {
+            // Remove the # to get the raw file path
+            const rawHash = window.location.hash.substring(1);
+            
+            if (!rawHash || rawHash === 'dashboard') {
+                showDashboard();
+                return;
+            }
+
+            // Decode the hash to safely match against the data-path attribute (which handles spaces)
+            const decodedHash = decodeURIComponent(rawHash);
+            const safeQueryPath = decodedHash.replace(/"/g, '\\"');
+
+            // ALWAYS switch UI from Dashboard to Iframe Viewer
+            document.getElementById('home-dashboard').classList.add('hidden');
+            document.getElementById('iframe-container').classList.remove('hidden');
+            document.getElementById('back-to-dash').classList.remove('hidden');
+
+            // Try to find the button for this file in the currently rendered sidebar
+            let btn = document.querySelector(`.nav-btn[data-path="${safeQueryPath}"]`);
+            
+            // If the button isn't found (because we refreshed, or we're on the dashboard)
+            if (!btn) {
+                const rootIndex = findRootIndexForPath(decodedHash);
+                if (rootIndex !== -1) {
+                    loadSidebarMode('single', rootIndex, false); // Load the specific course
+                } else {
+                    loadSidebarMode('all', null, false); // Fallback: load everything
+                }
+                // Try finding the button again now that the sidebar is rendered
+                btn = document.querySelector(`.nav-btn[data-path="${safeQueryPath}"]`);
+            }
+
+            if (btn) {
+                // UI Updates
+                expandParents(btn);
+                
+                document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                document.getElementById('mobile-title').innerText = btn.getAttribute('title');
+            }
+            
+            // Load iframe using the raw encoded hash so the browser fetches it correctly
+            document.getElementById('viewer').src = rawHash;
+        }
+
+        // Helper: Find which top-level array index contains a specific file path
+        function findRootIndexForPath(targetPath) {
+            function pathExistsInNode(node) {
+                if (node.type === 'file' && node.path && decodeURIComponent(node.path) === targetPath) return true;
+                if (node.children) return node.children.some(child => pathExistsInNode(child));
+                return false;
+            }
+            
+            for(let i = 0; i < globalSiteData.length; i++) {
+                if (pathExistsInNode(globalSiteData[i])) return i;
+            }
+            return -1;
+        }
+
+        // Helper: Automatically expand all parent folders of a specific file
+        function expandParents(element) {
+            let parent = element.parentElement;
+            while (parent && parent.id !== 'sidebar-content') {
+                if (parent.classList.contains('folder-content')) {
+                    parent.classList.remove('hidden');
+                    const header = parent.previousElementSibling;
+                    if (header && header.classList.contains('folder-header')) {
+                        const chevron = header.querySelector('.chevron-icon');
+                        if (chevron && !chevron.classList.contains('rotate-180')) {
+                            chevron.classList.add('rotate-180');
+                        }
+                    }
+                }
+                parent = parent.parentElement;
+            }
+        }
+
+        // Triggered by clicking a file button
+        function loadPage(filePath) {
+            if (!filePath || filePath === 'null' || filePath === 'about:blank' || filePath.includes('index.html')) {
+                console.warn("Invalid file path prevented from loading: ", filePath);
+                return;
+            }
+
+            // Update URL (This will trigger handleHashChange automatically)
+            window.location.hash = filePath;
+
+            // Automatically close the sidebar on mobile after clicking a link
+            if (window.innerWidth < 768) {
+                const sidebar = document.getElementById('sidebar');
+                if (!sidebar.classList.contains('-translate-x-full')) {
+                    toggleSidebar();
+                }
+            }
+        }
+
+        // --- DASHBOARD RENDERING ---
         function showDashboard() {
             // UI Toggles
             document.getElementById('iframe-container').classList.add('hidden');
             document.getElementById('home-dashboard').classList.remove('hidden');
             document.getElementById('mobile-title').innerText = "Dashboard";
+            document.getElementById('viewer').src = 'about:blank';
             
             // Sidebar UI Reset
             document.getElementById('back-to-dash').classList.add('hidden');
@@ -465,9 +565,8 @@
             const grid = document.getElementById('dashboard-grid');
             let html = '';
             
-            // "View All" Card
             html += `
-                <div onclick="loadSidebarMode('all')" class="group cursor-pointer bg-gradient-to-br from-[#4d3cc9] to-indigo-500 rounded-2xl p-6 text-white shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 relative overflow-hidden">
+                <div onclick="clickDashboardCard('all')" class="group cursor-pointer bg-gradient-to-br from-[#4d3cc9] to-indigo-500 rounded-2xl p-6 text-white shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 relative overflow-hidden">
                     <div class="absolute -right-6 -top-6 text-white/10 group-hover:text-white/20 transition-colors">
                         <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 20 20"><path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"></path></svg>
                     </div>
@@ -478,14 +577,11 @@
                 </div>
             `;
 
-            // Dynamic Top-Level Folders (Courses/Terms)
             globalSiteData.forEach((node, index) => {
                 if (node.type === 'folder') {
-                    // Count items inside (rough estimate by children length)
                     const itemCount = node.children ? node.children.length : 0;
-                    
                     html += `
-                        <div onclick="loadSidebarMode('single', ${index})" class="cursor-pointer bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:border-indigo-300 transition-all transform hover:-translate-y-1">
+                        <div onclick="clickDashboardCard('single', ${index})" class="cursor-pointer bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:border-indigo-300 transition-all transform hover:-translate-y-1">
                             <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center mb-4">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
                             </div>
@@ -498,19 +594,20 @@
             
             grid.innerHTML = html;
 
-            // Ensure sidebar is open on mobile when returning to dash
+            // Ensure sidebar is closed on mobile when returning to dash
             if (window.innerWidth < 768) {
                 document.getElementById('sidebar').classList.add('-translate-x-full');
                 document.getElementById('mobile-overlay').classList.add('hidden');
             }
         }
 
-        function loadSidebarMode(mode, index = null) {
-            // UI Toggles
-            document.getElementById('home-dashboard').classList.add('hidden');
-            document.getElementById('iframe-container').classList.remove('hidden');
-            document.getElementById('back-to-dash').classList.remove('hidden');
-            
+        // Triggered by clicking a card on the dashboard
+        function clickDashboardCard(mode, index = null) {
+            // Render the targeted sidebar branch
+            loadSidebarMode(mode, index, true);
+        }
+
+        function loadSidebarMode(mode, index = null, autoClickFirst = false) {
             const sidebarContainer = document.getElementById('sidebar-content');
             let htmlToRender = '';
             
@@ -522,19 +619,25 @@
                 const selectedNode = globalSiteData[index];
                 document.getElementById('sidebar-title').innerText = selectedNode.name;
                 document.getElementById('sidebar-subtitle').innerText = "Course View";
-                // Render just the children of this specific folder
                 htmlToRender = renderTree(selectedNode.children || []);
             }
 
             sidebarContainer.innerHTML = htmlToRender;
-            document.getElementById('viewer').src = 'about:blank'; // Clear iframe
             
-            // Expand first folder automatically if available
-            const firstFolder = sidebarContainer.querySelector('.folder-header');
-            if (firstFolder) firstFolder.click();
+            if (autoClickFirst) {
+                // Expand first folder automatically if available
+                const firstFolder = sidebarContainer.querySelector('.folder-header');
+                if (firstFolder) firstFolder.click();
+
+                // Auto-load the first available file to trigger routing
+                const firstBtn = sidebarContainer.querySelector('.nav-btn.file-btn');
+                if (firstBtn) {
+                    window.location.hash = firstBtn.getAttribute('data-path');
+                }
+            }
 
             // Mobile management: Open sidebar so user can make a selection
-            if (window.innerWidth < 768) {
+            if (window.innerWidth < 768 && !autoClickFirst) {
                 const sidebar = document.getElementById('sidebar');
                 const overlay = document.getElementById('mobile-overlay');
                 sidebar.classList.remove('-translate-x-full');
@@ -548,7 +651,6 @@
             
             nodes.forEach(node => {
                 if (node.type === 'folder') {
-                    // Start Folder
                     html += `
                         <div class="folder-wrapper mb-2">
                             <div class="folder-header flex justify-between items-center px-3 py-3 cursor-pointer text-slate-200 hover:bg-white/5 bg-[#242528] border border-white/5 rounded-xl transition-colors shadow-sm" onclick="toggleFolder(this)">
@@ -564,12 +666,12 @@
                         </div>
                     `;
                 } else if (node.type === 'file') {
-                    // Create File Button
                     const iconData = getIconForFile(node.name);
                     const safePath = node.path && node.path.trim() !== '' ? node.path : 'about:blank';
+                    const decodedPath = safePath !== 'about:blank' ? decodeURIComponent(safePath) : 'about:blank';
                     
                     html += `
-                        <button class="nav-btn file-btn group" onclick="loadPage('${safePath}', '${node.name.replace(/'/g, "\\'")}', this)" title="${node.name}">
+                        <button class="nav-btn file-btn group" onclick="loadPage('${safePath}')" data-path="${decodedPath.replace(/"/g, '&quot;')}" title="${node.name}">
                             <div class="mr-3 mt-[2px] icon-wrapper ${iconData.color} transition-all duration-200 flex-shrink-0">
                                 ${iconData.svg}
                             </div>
@@ -581,14 +683,11 @@
             return html;
         }
 
-        // Initialize the UI
         function initSidebarData() {
             const scriptTag = document.getElementById('site-data');
             if (!scriptTag) return;
-
             try {
                 globalSiteData = JSON.parse(scriptTag.textContent);
-                showDashboard(); // Boot into Dashboard instead of Sidebar instantly
             } catch (e) {
                 console.error("Error parsing sidebar JSON: ", e);
             }
@@ -610,27 +709,6 @@
             }
         }
 
-        function loadPage(filePath, title, buttonElement) {
-            const viewer = document.getElementById('viewer');
-            
-            if (!filePath || filePath === 'null' || filePath === 'about:blank' || filePath.includes('index.html')) {
-                console.warn("Invalid file path prevented from loading: ", filePath);
-                return;
-            }
-
-            viewer.src = filePath;
-
-            const buttons = document.querySelectorAll('.nav-btn');
-            buttons.forEach(btn => btn.classList.remove('active'));
-            if (buttonElement) buttonElement.classList.add('active');
-
-            document.getElementById('mobile-title').innerText = title;
-
-            if (window.innerWidth < 768) {
-                toggleSidebar();
-            }
-        }
-
         function toggleDesktopSidebar() {
             const sidebar = document.getElementById('sidebar');
             sidebar.classList.toggle('is-collapsed');
@@ -646,6 +724,16 @@
         // --- INIT ---
         window.onload = () => {
             initSidebarData();
+            
+            // Listen for Back/Forward browser navigation and manual URL changes
+            window.addEventListener('hashchange', handleHashChange);
+            
+            // Process initial load state
+            if (window.location.hash && window.location.hash !== '#dashboard') {
+                handleHashChange(); // Load specific file if URL contains a hash
+            } else {
+                showDashboard(); // Default to dashboard
+            }
         };
     </script>
 </body>
