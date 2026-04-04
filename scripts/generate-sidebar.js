@@ -10,6 +10,19 @@ function buildTree(currentPath, relativePath = '') {
     const stats = fs.statSync(currentPath);
     
     if (stats.isDirectory()) {
+        // Did we unzip a SingleFile archive here? Check for index.html + manifest
+        if (fs.existsSync(path.join(currentPath, 'index.html')) && fs.existsSync(path.join(currentPath, 'manifest.json'))) {
+            let cleanName = path.basename(currentPath)
+                .replace(/_ IITM Online Degree.*$/, '')
+                .trim();
+            let webPath = 'content/' + relativePath.replace(/\\/g, '/') + '/index.html';
+            return {
+                type: 'file',
+                name: cleanName,
+                path: encodeURI(webPath)
+            };
+        }
+
         const children = fs.readdirSync(currentPath)
             .map(child => buildTree(path.join(currentPath, child), path.join(relativePath, child)))
             .filter(Boolean); // Remove null/empty folders
