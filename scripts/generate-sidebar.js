@@ -34,16 +34,19 @@ function buildTree(currentPath, relativePath = '') {
             name: path.basename(currentPath),
             children: children
         };
-    } else if (currentPath.endsWith('.html')) {
-        // Clean up the messy SingleFile name
-        let cleanName = path.basename(currentPath)
-            .replace(/_ IITM Online Degree.*\.html$/, '')
+    } else if (currentPath.endsWith('.zip.html')) {
+        // PREDICTIVE PATHING: Even if the folder doesn't exist locally, we know it will on the server
+        let folderName = path.basename(currentPath)
             .replace(/\.u\.zip\.html$/, '')
-            .replace(/\.html$/, '')
+            .replace(/\.zip\.html$/, '')
             .trim();
         
-        // Ensure web-safe forward slashes for the file path
-        let webPath = 'content/' + relativePath.replace(/\\/g, '/');
+        // Final name displayed in the UI (extra clean)
+        let cleanName = folderName.replace(/_ IITM Online Degree.*$/, '').trim();
+        
+        // Predictive web path: the folder will be at the same relative position
+        let folderRelativePath = path.dirname(relativePath);
+        let webPath = 'content/' + (folderRelativePath === '.' ? '' : folderRelativePath.replace(/\\/g, '/') + '/') + folderName + '/index.html';
         
         return {
             type: 'file',
