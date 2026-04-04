@@ -8,7 +8,7 @@
     <!-- Load Tailwind CSS via Play CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Custom Tailwind Configuration to match the IITM Portal design -->
+    <!-- Custom Tailwind Configuration -->
     <style type="text/tailwindcss">
         @layer components {
             .nav-btn {
@@ -20,7 +20,6 @@
             .nav-btn.active {
                 @apply bg-indigo-500/10 text-indigo-300 border-indigo-500/20 shadow-sm;
             }
-            /* When active, force the inner SVG icon to be purple */
             .nav-btn.active .icon-wrapper {
                 @apply text-indigo-400 !important;
             }
@@ -57,7 +56,6 @@
                 }
             }
             
-            /* Clean custom scrollbar for the sidebar */
             .custom-scrollbar::-webkit-scrollbar {
                 width: 4px;
             }
@@ -67,12 +65,12 @@
         }
     </style>
 </head>
-<body class="flex h-screen overflow-hidden bg-[#f8f9fb] font-sans antialiased text-slate-900">
+<body class="flex h-screen overflow-hidden bg-[#f8f9fb] font-sans antialiased text-slate-900 relative">
 
     <!-- Mobile overlay background (blurred) -->
     <div id="mobile-overlay" class="fixed inset-0 bg-slate-900/40 z-40 hidden md:hidden backdrop-blur-sm transition-opacity" onclick="toggleSidebar()"></div>
 
-    <!-- Sidebar Container (Dark Theme Applied) -->
+    <!-- Sidebar Container -->
     <aside id="sidebar" class="fixed inset-y-0 left-0 z-50 w-[320px] bg-[#1c1d1f] border-r border-[#2b2c2f] shadow-2xl md:shadow-none transform -translate-x-full md:relative md:translate-x-0 transition-all duration-300 ease-in-out flex flex-col">
         
         <!-- Hamburger Toggle for Desktop -->
@@ -83,13 +81,18 @@
         </div>
 
         <!-- Sidebar Header Area -->
-        <div class="px-6 pt-2 pb-2 hide-on-collapse">
-            <h2 class="text-[20px] font-extrabold text-slate-100 leading-tight tracking-tight">IITM Archive</h2>
-            <p class="text-[11px] text-slate-500 mt-1 uppercase tracking-wider font-semibold">Offline Notes Viewer</p>
+        <div class="px-6 pt-4 pb-2 hide-on-collapse">
+            <!-- Dynamic Back Button -->
+            <button id="back-to-dash" onclick="showDashboard()" class="hidden flex items-center text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-4 hover:text-slate-200 transition-colors">
+                <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+                Back to Dashboard
+            </button>
+            <h2 id="sidebar-title" class="text-[20px] font-extrabold text-slate-100 leading-tight tracking-tight">IITM Archive</h2>
+            <p id="sidebar-subtitle" class="text-[11px] text-slate-500 mt-1 uppercase tracking-wider font-semibold">Offline Notes Viewer</p>
         </div>
 
         <!-- Scrollable Content Area -->
-        <div class="flex-1 overflow-y-auto px-4 pb-6 custom-scrollbar mt-4" id="sidebar-content">
+        <div class="flex-1 overflow-y-auto px-4 pb-6 custom-scrollbar mt-2" id="sidebar-content">
             
             <!-- DATA-START -->
 <script id="site-data" type="application/json">
@@ -375,24 +378,40 @@
     </aside>
 
     <!-- Main Content Area -->
-    <main class="flex-1 flex flex-col h-screen overflow-hidden min-w-0 bg-white">
+    <main class="flex-1 flex flex-col h-screen overflow-hidden min-w-0 bg-white relative">
         
         <!-- Mobile Header (Only visible on small screens) -->
-        <header class="md:hidden flex items-center px-4 py-3 border-b border-slate-200 bg-white shadow-sm z-30">
+        <header class="md:hidden flex items-center px-4 py-3 border-b border-slate-200 bg-white shadow-sm z-30 relative">
             <button onclick="toggleSidebar()" class="p-2 -ml-2 mr-3 text-slate-600 hover:bg-slate-100 hover:text-slate-900 rounded-lg transition-colors">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
             <h1 class="font-bold text-slate-800 text-sm truncate uppercase tracking-wider flex-1" id="mobile-title">Dashboard</h1>
         </header>
 
+        <!-- DASHBOARD HUB (Overlay) -->
+        <div id="home-dashboard" class="absolute inset-0 z-20 bg-slate-50 overflow-y-auto p-6 md:p-10 transition-opacity duration-300">
+            <div class="max-w-5xl mx-auto">
+                <div class="mb-10">
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-slate-800 tracking-tight mb-3">Welcome to your Notes Archive</h1>
+                    <p class="text-slate-500 text-lg">Select a term or course to filter your sidebar, or browse everything at once.</p>
+                </div>
+                
+                <div id="dashboard-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Cards injected via JS -->
+                </div>
+            </div>
+        </div>
+
         <!-- Iframe Container -->
-        <div class="flex-1 relative w-full h-full bg-[#f8f9fb]">
-            <!-- Added a blank placeholder so it doesn't try to load index.html recursively -->
+        <div id="iframe-container" class="flex-1 relative w-full h-full bg-[#f8f9fb] hidden">
             <iframe id="viewer" title="Assignment Viewer" src="about:blank" class="absolute inset-0 w-full h-full border-none shadow-inner bg-white"></iframe>
         </div>
     </main>
 
     <script>
+        // Global state
+        let globalSiteData = [];
+
         // --- SMART ICON LOGIC ---
         function getIconForFile(fileName) {
             const lowerText = fileName.toLowerCase();
@@ -403,7 +422,7 @@
             let iconSvg = playIcon;
             let iconColor = 'text-slate-400';
 
-            if (lowerText.includes('reading')) {
+            if (lowerText.includes('reading') || lowerText.includes('notes')) {
                 iconColor = 'text-emerald-400';
                 iconSvg = docIcon;
             } else if (lowerText.includes('aq') || lowerText.includes('activity') || lowerText.includes('practice')) {
@@ -420,8 +439,111 @@
             return { svg: iconSvg, color: iconColor };
         }
 
+        // --- DASHBOARD & ROUTING ---
+        function showDashboard() {
+            // UI Toggles
+            document.getElementById('iframe-container').classList.add('hidden');
+            document.getElementById('home-dashboard').classList.remove('hidden');
+            document.getElementById('mobile-title').innerText = "Dashboard";
+            
+            // Sidebar UI Reset
+            document.getElementById('back-to-dash').classList.add('hidden');
+            document.getElementById('sidebar-title').innerText = "IITM Archive";
+            document.getElementById('sidebar-subtitle').innerText = "Select a course to begin";
+            
+            const sidebarContainer = document.getElementById('sidebar-content');
+            sidebarContainer.innerHTML = `
+                <div class="text-center mt-12 px-4 hide-on-collapse">
+                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/5 mb-3 text-slate-500">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <p class="text-slate-400 text-sm">Please select a course from the dashboard.</p>
+                </div>
+            `;
+
+            // Render Dashboard Cards
+            const grid = document.getElementById('dashboard-grid');
+            let html = '';
+            
+            // "View All" Card
+            html += `
+                <div onclick="loadSidebarMode('all')" class="group cursor-pointer bg-gradient-to-br from-[#4d3cc9] to-indigo-500 rounded-2xl p-6 text-white shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 relative overflow-hidden">
+                    <div class="absolute -right-6 -top-6 text-white/10 group-hover:text-white/20 transition-colors">
+                        <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 20 20"><path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"></path></svg>
+                    </div>
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-bold mb-2">Browse All Content</h3>
+                        <p class="text-indigo-100 text-sm">View the entire unfiltered archive tree.</p>
+                    </div>
+                </div>
+            `;
+
+            // Dynamic Top-Level Folders (Courses/Terms)
+            globalSiteData.forEach((node, index) => {
+                if (node.type === 'folder') {
+                    // Count items inside (rough estimate by children length)
+                    const itemCount = node.children ? node.children.length : 0;
+                    
+                    html += `
+                        <div onclick="loadSidebarMode('single', ${index})" class="cursor-pointer bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:border-indigo-300 transition-all transform hover:-translate-y-1">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center mb-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-800 mb-1 truncate" title="${node.name}">${node.name}</h3>
+                            <p class="text-slate-500 text-sm">${itemCount} Modules / Weeks</p>
+                        </div>
+                    `;
+                }
+            });
+            
+            grid.innerHTML = html;
+
+            // Ensure sidebar is open on mobile when returning to dash
+            if (window.innerWidth < 768) {
+                document.getElementById('sidebar').classList.add('-translate-x-full');
+                document.getElementById('mobile-overlay').classList.add('hidden');
+            }
+        }
+
+        function loadSidebarMode(mode, index = null) {
+            // UI Toggles
+            document.getElementById('home-dashboard').classList.add('hidden');
+            document.getElementById('iframe-container').classList.remove('hidden');
+            document.getElementById('back-to-dash').classList.remove('hidden');
+            
+            const sidebarContainer = document.getElementById('sidebar-content');
+            let htmlToRender = '';
+            
+            if (mode === 'all') {
+                document.getElementById('sidebar-title').innerText = "All Content";
+                document.getElementById('sidebar-subtitle').innerText = "Full Archive";
+                htmlToRender = renderTree(globalSiteData);
+            } else if (mode === 'single' && index !== null) {
+                const selectedNode = globalSiteData[index];
+                document.getElementById('sidebar-title').innerText = selectedNode.name;
+                document.getElementById('sidebar-subtitle').innerText = "Course View";
+                // Render just the children of this specific folder
+                htmlToRender = renderTree(selectedNode.children || []);
+            }
+
+            sidebarContainer.innerHTML = htmlToRender;
+            document.getElementById('viewer').src = 'about:blank'; // Clear iframe
+            
+            // Expand first folder automatically if available
+            const firstFolder = sidebarContainer.querySelector('.folder-header');
+            if (firstFolder) firstFolder.click();
+
+            // Mobile management: Open sidebar so user can make a selection
+            if (window.innerWidth < 768) {
+                const sidebar = document.getElementById('sidebar');
+                const overlay = document.getElementById('mobile-overlay');
+                sidebar.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+            }
+        }
+
         // --- JSON TO UI BUILDER ---
-        function renderTree(nodes, isRoot = false) {
+        function renderTree(nodes) {
             let html = '';
             
             nodes.forEach(node => {
@@ -430,21 +552,20 @@
                     html += `
                         <div class="folder-wrapper mb-2">
                             <div class="folder-header flex justify-between items-center px-3 py-3 cursor-pointer text-slate-200 hover:bg-white/5 bg-[#242528] border border-white/5 rounded-xl transition-colors shadow-sm" onclick="toggleFolder(this)">
-                                <div class="flex items-center truncate">
+                                <div class="flex items-center truncate pr-2">
                                     <svg class="folder-icon w-4 h-4 mr-3 flex-shrink-0 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
-                                    <span class="text-[13px] font-extrabold tracking-wide truncate hide-on-collapse">${node.name}</span>
+                                    <span class="text-[13px] font-extrabold tracking-wide truncate hide-on-collapse" title="${node.name}">${node.name}</span>
                                 </div>
-                                <svg class="chevron-icon w-4 h-4 text-slate-400 transform transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+                                <svg class="chevron-icon w-4 h-4 text-slate-400 transform transition-transform duration-200 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
                             </div>
                             <div class="folder-content hidden pl-1 pr-1 pt-2 border-l border-[#2b2c2f] ml-5 mt-1">
-                                ${renderTree(node.children)}
+                                ${renderTree(node.children || [])}
                             </div>
                         </div>
                     `;
                 } else if (node.type === 'file') {
                     // Create File Button
                     const iconData = getIconForFile(node.name);
-                    // Handle undefined paths safely
                     const safePath = node.path && node.path.trim() !== '' ? node.path : 'about:blank';
                     
                     html += `
@@ -460,41 +581,29 @@
             return html;
         }
 
-        // Initialize the UI from the JSON script block
+        // Initialize the UI
         function initSidebarData() {
             const scriptTag = document.getElementById('site-data');
             if (!scriptTag) return;
 
             try {
-                const data = JSON.parse(scriptTag.textContent);
-                const sidebarContainer = document.getElementById('sidebar-content');
-                
-                // Clear the raw script text from the container and inject HTML
-                const generatedHtml = renderTree(data, true);
-                
-                // We keep the script tag intact in case the node script runs again, 
-                // but we add the UI elements below it.
-                sidebarContainer.innerHTML = scriptTag.outerHTML + generatedHtml;
-
+                globalSiteData = JSON.parse(scriptTag.textContent);
+                showDashboard(); // Boot into Dashboard instead of Sidebar instantly
             } catch (e) {
                 console.error("Error parsing sidebar JSON: ", e);
             }
         }
 
         // --- UI INTERACTION LOGIC ---
-
         function toggleFolder(element) {
-            // Toggle the rotation of the chevron
             const chevron = element.querySelector('.chevron-icon');
             if (chevron) chevron.classList.toggle('rotate-180');
             
-            // Toggle visibility of the content inside the folder
             const content = element.nextElementSibling;
             if (content && content.classList.contains('folder-content')) {
                 content.classList.toggle('hidden');
             }
 
-            // If we are in desktop collapsed mode, temporarily expand sidebar to show contents
             const sidebar = document.getElementById('sidebar');
             if (window.innerWidth >= 768 && sidebar.classList.contains('is-collapsed')) {
                 toggleDesktopSidebar();
@@ -504,24 +613,19 @@
         function loadPage(filePath, title, buttonElement) {
             const viewer = document.getElementById('viewer');
             
-            // SECURITY FIX: Don't load if path is empty, 'null', or pointing to the index file itself
             if (!filePath || filePath === 'null' || filePath === 'about:blank' || filePath.includes('index.html')) {
                 console.warn("Invalid file path prevented from loading: ", filePath);
                 return;
             }
 
-            // Change iframe source (Removed encodeURI to prevent double-encoding)
             viewer.src = filePath;
 
-            // Manage active button states
             const buttons = document.querySelectorAll('.nav-btn');
             buttons.forEach(btn => btn.classList.remove('active'));
             if (buttonElement) buttonElement.classList.add('active');
 
-            // Update mobile header
             document.getElementById('mobile-title').innerText = title;
 
-            // Automatically close the sidebar on mobile after clicking a link
             if (window.innerWidth < 768) {
                 toggleSidebar();
             }
@@ -542,16 +646,6 @@
         // --- INIT ---
         window.onload = () => {
             initSidebarData();
-            
-            // Expand the first folder automatically
-            const firstFolder = document.querySelector('.folder-header');
-            if (firstFolder) firstFolder.click();
-
-            // Auto-load the first valid file button
-            const firstBtn = document.querySelector('.nav-btn.file-btn');
-            if (firstBtn) {
-                firstBtn.click();
-            }
         };
     </script>
 </body>
