@@ -1,0 +1,9 @@
+/* Overrides for IITM Course Content */
+.modules__content-head {
+    display: none !important;
+}
+
+/* Specifically hiding titles just in case they are outside the head container in some versions */
+.modules__content-head-title {
+    display: none !important;
+}
