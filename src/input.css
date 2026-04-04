@@ -63,10 +63,10 @@
         @apply bg-slate-600 rounded-full hover:bg-slate-500;
     }
 
-    /* Floating Annotation Toolbar Styles */
+    /* Premium Annotation Toolbar (Centered) */
     #anno-toolbar {
-        @apply fixed bottom-24 left-1/2 -translate-x-1/2 flex items-center p-1.5 bg-white/90 backdrop-blur-lg border border-slate-200 rounded-2xl shadow-2xl transition-all duration-500 z-[50];
-        @apply max-w-[calc(100vw-2rem)] w-fit;
+        @apply fixed bottom-8 left-1/2 -translate-x-1/2 flex items-center p-1.5 bg-white/80 backdrop-blur-md border border-slate-200/60 rounded-2xl shadow-2xl transition-all duration-500 z-[50];
+        @apply max-w-[95vw] w-fit;
     }
 
     .anno-tool-btn {
@@ -74,11 +74,16 @@
     }
 
     .anno-tool-btn.active-tool {
-        @apply bg-indigo-50 text-indigo-600 ring-2 ring-indigo-500/20 shadow-sm font-bold;
+        @apply bg-indigo-50 text-indigo-600 ring-4 ring-indigo-500/10 shadow-sm font-bold;
     }
 
+    /* Minimalist Dot Weights */
+    .anno-weight-btn {
+        @apply transition-all flex items-center justify-center hover:scale-110 active:scale-95 text-slate-300;
+    }
     .anno-weight-btn.active-weight {
-        @apply text-indigo-600 bg-indigo-50 font-bold;
+        @apply text-indigo-600;
+        filter: drop-shadow(0 0 4px rgba(99, 102, 241, 0.3));
     }
 
     .anno-color-btn {
@@ -89,13 +94,13 @@
         @apply bg-rose-500 shadow-rose-200;
     }
 
-    /* Transition for toolbar show/hide */
+    /* Smooth Slide-up hiding */
     #anno-toolbar.hidden {
         @apply translate-y-32 opacity-0 pointer-events-none;
         display: none !important;
     }
 
-    /* Hide scrollbar but allow scrolling */
+    /* Hide scrollbar but allow scrolling on small screens */
     .no-scrollbar::-webkit-scrollbar {
         display: none;
     }
