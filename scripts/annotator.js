@@ -1,11 +1,13 @@
 /**
- * IITM Archive Annotator - Advanced Logic (V1.1)
+ * IITM Archive Annotator - Premium Engine (V2.0)
+ * Optimized for High-Performance, Touch Support, and Keyboard Productivity.
  */
 (function() {
     let isEnabled = false;
     let isDrawing = false;
+    let activePointerId = null;
     let currentTool = 'pen';
-    let currentColor = '#6366f1'; 
+    let currentColor = '#4f46e5'; 
     let currentWeight = 4;
     let elements = [];
     let tempElement = null;
@@ -16,7 +18,6 @@
         container = document.getElementById('iframe-container');
         if (!container) return;
 
-        // Check if canvases already exist to prevent duplicates
         if (document.getElementById('anno-canvas-static')) return;
 
         // Create Canvas Layers
@@ -26,7 +27,7 @@
         
         canvasDynamic = document.createElement('canvas');
         canvasDynamic.id = 'anno-canvas-dynamic';
-        canvasDynamic.className = 'absolute inset-0 z-[2] pointer-events-none transition-opacity duration-300 opacity-0';
+        canvasDynamic.className = 'absolute inset-0 z-[2] transition-opacity duration-300 opacity-0 pointer-events-none';
         
         container.appendChild(canvasStatic);
         container.appendChild(canvasDynamic);
@@ -36,16 +37,15 @@
         ctxDynamic = canvasDynamic.getContext('2d');
         rcDynamic = rough.canvas(canvasDynamic);
 
-        // Interaction on the TOP layer (Dynamic)
+        // Interaction
         canvasDynamic.addEventListener('pointerdown', handleDown);
         window.addEventListener('pointermove', handleMove);
         window.addEventListener('pointerup', handleUp);
         window.addEventListener('resize', resizeCanvas);
+        window.addEventListener('keydown', handleKeyDown);
         
         window.addEventListener('hashchange', () => {
-            if (isEnabled) {
-                loadAnnotations();
-            }
+            if (isEnabled) loadAnnotations();
         });
 
         resizeCanvas();
@@ -58,17 +58,28 @@
         
         if (isEnabled) {
             canvasStatic.classList.remove('opacity-0', 'pointer-events-none');
-            canvasDynamic.classList.remove('opacity-0', 'pointer-events-none');
-            canvasDynamic.classList.add('cursor-crosshair');
+            canvasDynamic.classList.remove('opacity-0');
+            // Check current tool for pointer-events
+            updateCanvasInteractivity();
             toolbar.classList.remove('hidden');
             if (btn) btn.classList.add('active-draw');
             loadAnnotations();
         } else {
             canvasStatic.classList.add('opacity-0', 'pointer-events-none');
             canvasDynamic.classList.add('opacity-0', 'pointer-events-none');
-            canvasDynamic.classList.remove('cursor-crosshair');
             toolbar.classList.add('hidden');
             if (btn) btn.classList.remove('active-draw');
+        }
+    }
+
+    function updateCanvasInteractivity() {
+        if (!isEnabled) return;
+        if (currentTool === 'cursor') {
+            canvasDynamic.style.pointerEvents = 'none';
+            canvasDynamic.style.cursor = 'default';
+        } else {
+            canvasDynamic.style.pointerEvents = 'auto';
+            canvasDynamic.style.cursor = 'crosshair';
         }
     }
 
@@ -93,9 +104,16 @@
     }
 
     function handleDown(e) {
-        if (!isEnabled || e.button !== 0) return;
+        if (!isEnabled || !e.isPrimary || e.button !== 0 || currentTool === 'cursor') return;
+        
         isDrawing = true;
+        activePointerId = e.pointerId;
         const pos = getCoords(e);
+
+        if (currentTool === 'eraser') {
+            eraseAt(pos.x, pos.y);
+            return;
+        }
 
         tempElement = {
             type: currentTool,
@@ -107,9 +125,16 @@
     }
 
     function handleMove(e) {
-        if (!isDrawing || !tempElement) return;
+        if (!isDrawing || e.pointerId !== activePointerId) return;
         const pos = getCoords(e);
         
+        if (currentTool === 'eraser') {
+            eraseAt(pos.x, pos.y);
+            return;
+        }
+
+        if (!tempElement) return;
+
         if (currentTool === 'pen') {
             tempElement.points.push([pos.x, pos.y]);
         } else {
@@ -121,15 +146,44 @@
         drawElement(rcDynamic, tempElement);
     }
 
-    function handleUp() {
-        if (!isDrawing || !tempElement) return;
-        elements.push(tempElement);
-        tempElement = null;
+    function handleUp(e) {
+        if (!isDrawing || e.pointerId !== activePointerId) return;
+        
+        if (tempElement) {
+            elements.push(tempElement);
+            tempElement = null;
+        }
+        
         isDrawing = false;
+        activePointerId = null;
         
         ctxDynamic.clearRect(0, 0, canvasDynamic.width, canvasDynamic.height);
         saveAnnotations();
         redraw();
+    }
+
+    function eraseAt(x, y) {
+        const threshold = currentWeight * 2 + 10;
+        const initialCount = elements.length;
+        elements = elements.filter(el => {
+            if (el.type === 'pen') {
+                return !el.points.some(p => Math.hypot(p[0]-x, p[1]-y) < threshold);
+            } else {
+                return !el.points.some(p => Math.hypot(p[0]-x, p[1]-y) < threshold);
+            }
+        });
+        if (elements.length !== initialCount) {
+            saveAnnotations();
+            redraw();
+        }
+    }
+
+    function undo() {
+        if (elements.length > 0) {
+            elements.pop();
+            saveAnnotations();
+            redraw();
+        }
     }
 
     function redraw() {
@@ -142,7 +196,7 @@
         const opts = { 
             stroke: el.stroke, 
             strokeWidth: el.strokeWidth, 
-            roughness: el.type === 'pen' ? 0.5 : 1.2,
+            roughness: el.type === 'pen' ? 0.5 : 1,
             seed: el.seed 
         };
 
@@ -150,33 +204,52 @@
             rc.linearPath(el.points, opts);
         } else if (el.type === 'line') {
             const [p1, p2] = el.points;
-            if (!p2) return;
-            rc.line(p1[0], p1[1], p2[0], p2[1], opts);
+            if (p2) rc.line(p1[0], p1[1], p2[0], p2[1], opts);
         } else if (el.type === 'rect') {
             const [p1, p2] = el.points;
-            if (!p2) return;
-            rc.rectangle(Math.min(p1[0], p2[0]), Math.min(p1[1], p2[1]), Math.abs(p2[0]-p1[0]), Math.abs(p2[1]-p1[1]), opts);
-        } else if (el.type === 'arrow') {
+            if (p2) rc.rectangle(Math.min(p1[0], p2[0]), Math.min(p1[1], p2[1]), Math.abs(p2[0]-p1[0]), Math.abs(p2[1]-p1[1]), opts);
+        } else if (el.type === 'ellipse') {
             const [p1, p2] = el.points;
-            if (!p2) return;
-            drawArrow(rc, p1[0], p1[1], p2[0], p2[1], opts);
+            if (p2) {
+                const cx = (p1[0] + p2[0]) / 2;
+                const cy = (p1[1] + p2[1]) / 2;
+                rc.ellipse(cx, cy, Math.abs(p2[0]-p1[0]), Math.abs(p2[1]-p1[1]), opts);
+            }
+        } else if (el.type === 'triangle') {
+             const [p1, p2] = el.points;
+             if (p2) {
+                 const x1 = p1[0], y1 = p1[1];
+                 const x2 = p2[0], y2 = p2[1];
+                 rc.polygon([[x1 + (x2-x1)/2, y1], [x1, y2], [x2, y2]], opts);
+             }
         }
     }
 
-    function drawArrow(rc, x1, y1, x2, y2, opts) {
-        rc.line(x1, y1, x2, y2, opts);
-        const angle = Math.atan2(y2 - y1, x2 - x1);
-        const headlen = 15;
-        rc.line(x2, y2, x2 - headlen * Math.cos(angle - Math.PI / 6), y2 - headlen * Math.sin(angle - Math.PI / 6), opts);
-        rc.line(x2, y2, x2 - headlen * Math.cos(angle + Math.PI / 6), y2 - headlen * Math.sin(angle + Math.PI / 6), opts);
-    }
+    function handleKeyDown(e) {
+        if (!isEnabled) return;
+        const active = document.activeElement;
+        if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA' || active.isContentEditable)) return;
 
-    function clearAnnotations() {
-        if (confirm('Delete all annotations for this lesson?')) {
-            elements = [];
-            saveAnnotations();
-            redraw();
+        const key = e.key.toLowerCase();
+        const isCtrl = e.ctrlKey || e.metaKey;
+
+        if (isCtrl && key === 'z') { e.preventDefault(); undo(); return; }
+        if (key === 'escape') { toggleAnnotator(); return; }
+
+        const toolMap = { 'v':'cursor', 'a':'cursor', 'p':'pen', 'l':'line', 'r':'rect', 'o':'ellipse', 'c':'ellipse', 't':'triangle', 'e':'eraser' };
+        if (toolMap[key]) { setAnnoTool(toolMap[key]); return; }
+
+        const colorMap = { '1':'#4f46e5', '2':'#10b981', '3':'#ef4444', '4':'#f59e0b', '5':'#1e293b' };
+        if (colorMap[key]) { setAnnoColor(colorMap[key]); return; }
+
+        const weights = [2, 4, 8];
+        if (key === '[' || key === ']') {
+            const idx = weights.indexOf(currentWeight);
+            const nextIdx = key === '[' ? (idx - 1 + weights.length) % weights.length : (idx + 1) % weights.length;
+            setAnnoWeight(weights[nextIdx]);
         }
+
+        if (key === 'x' || (key === 'delete' && !isCtrl)) clearAnno();
     }
 
     function saveAnnotations() {
@@ -194,6 +267,7 @@
     // Toolbox Exposed Controls
     window.setAnnoTool = (tool) => {
         currentTool = tool;
+        updateCanvasInteractivity();
         document.querySelectorAll('.anno-tool-btn').forEach(b => {
             b.classList.toggle('active-tool', b.dataset.tool === tool);
         });
@@ -201,9 +275,8 @@
 
     window.setAnnoColor = (color) => {
         currentColor = color;
-        document.querySelectorAll('.anno-color-btn').forEach(b => {
-            b.classList.toggle('ring-offset-2', b.dataset.color === color);
-            b.classList.toggle('ring-2', b.dataset.color === color);
+        document.querySelectorAll('.anno-color-dot').forEach(b => {
+            b.classList.toggle('active-color', b.dataset.color === color);
         });
     };
 
@@ -214,13 +287,17 @@
         });
     };
 
-    window.clearAnno = clearAnnotations;
+    window.clearAnno = () => {
+        elements = [];
+        saveAnnotations();
+        redraw();
+    };
+
+    window.undoAnno = undo;
     window.toggleAnno = toggleAnnotator;
 
-    // Export to global for UI
     window.IITM_Annotator = { init, toggle: toggleAnnotator };
 
-    // Wait for DOM
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
     } else {
