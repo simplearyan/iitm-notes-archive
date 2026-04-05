@@ -9,10 +9,11 @@
     let currentTool = 'pen';
     let currentColor = '#4f46e5'; 
     let currentWeight = 4;
+    let isProMode = true; // Use Adaptive Viewport by default for mobile safety
     let elements = [];
     let tempElement = null;
     
-    let container, canvasStatic, ctxStatic, rcStatic, canvasDynamic, ctxDynamic, rcDynamic;
+    let container, iframe, canvasStatic, ctxStatic, rcStatic, canvasDynamic, ctxDynamic, rcDynamic;
 
     function init() {
         container = document.getElementById('iframe-container');
@@ -45,11 +46,42 @@
         window.addEventListener('resize', resizeCanvas);
         window.addEventListener('keydown', handleKeyDown);
         
+        iframe = document.getElementById('viewer');
+        
         window.addEventListener('hashchange', () => {
             if (isEnabled) loadAnnotations();
+            // Re-bind scroll listener to new content
+            setTimeout(bindIframeScroll, 1000); 
         });
 
+        // Initial bind
+        setTimeout(bindIframeScroll, 2000);
+
         resizeCanvas();
+    }
+
+    function bindIframeScroll() {
+        if (!iframe || !iframe.contentWindow) return;
+        iframe.contentWindow.addEventListener('scroll', () => {
+            if (isEnabled && isProMode) requestAnimationFrame(redraw);
+        }, { passive: true });
+    }
+
+    function toggleAnnoMode() {
+        isProMode = !isProMode;
+        const btn = document.getElementById('anno-mode-btn');
+        if (btn) {
+            btn.title = isProMode ? "Adaptive Performance Mode (⚡)" : "Natural Sticky Mode (🏝️)";
+            const icon = btn.querySelector('i');
+            if (icon) {
+                icon.setAttribute('data-lucide', isProMode ? 'zap' : 'monitor');
+                if (window.lucide) lucide.createIcons();
+            }
+            btn.classList.toggle('text-amber-500', isProMode);
+            btn.classList.toggle('text-emerald-500', !isProMode);
+        }
+        resizeCanvas();
+        redraw();
     }
 
     function toggleAnnotator() {
@@ -91,10 +123,23 @@
     function resizeCanvas() {
         if (!container || !canvasStatic) return;
         const rect = container.getBoundingClientRect();
+        let fullWidth = rect.width;
+        let fullHeight = rect.height;
+
+        // In Sticky Mode, we grow the canvas to the full document height
+        if (!isProMode && iframe && iframe.contentDocument) {
+            const body = iframe.contentDocument.body;
+            const html = iframe.contentDocument.documentElement;
+            if (body && html) {
+                fullHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+                fullWidth = Math.max(body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth);
+            }
+        }
+
         [canvasStatic, canvasDynamic].forEach(c => {
-            if (c.width !== rect.width || c.height !== rect.height) {
-                c.width = rect.width;
-                c.height = rect.height;
+            if (c.width !== fullWidth || c.height !== fullHeight) {
+                c.width = fullWidth;
+                c.height = fullHeight;
             }
         });
         redraw();
@@ -102,9 +147,13 @@
 
     function getCoords(e) {
         const rect = canvasDynamic.getBoundingClientRect();
+        const scrollY = (iframe && iframe.contentWindow) ? iframe.contentWindow.pageYOffset : 0;
+        const scrollX = (iframe && iframe.contentWindow) ? iframe.contentWindow.pageXOffset : 0;
         return {
-            x: e.clientX - rect.left,
-            y: e.clientY - rect.top
+            px: (e.clientX - rect.left), // Pointer X relative to canvas
+            py: (e.clientY - rect.top),  // Pointer Y relative to canvas
+            x: (e.clientX - rect.left) + scrollX, // Absolute X
+            y: (e.clientY - rect.top) + scrollY   // Absolute Y
         };
     }
 
@@ -148,7 +197,18 @@
         }
 
         ctxDynamic.clearRect(0, 0, canvasDynamic.width, canvasDynamic.height);
-        drawElement(rcDynamic, tempElement);
+        
+        // ⚡ Apply transform to dynamic layer if in Pro Mode
+        if (isProMode && iframe && iframe.contentWindow) {
+            const scrollX = iframe.contentWindow.pageXOffset;
+            const scrollY = iframe.contentWindow.pageYOffset;
+            ctxDynamic.save();
+            ctxDynamic.setTransform(1, 0, 0, 1, -scrollX, -scrollY);
+            drawElement(rcDynamic, tempElement);
+            ctxDynamic.restore();
+        } else {
+            drawElement(rcDynamic, tempElement);
+        }
     }
 
     function handleUp(e) {
@@ -194,7 +254,20 @@
     function redraw() {
         if (!ctxStatic) return;
         ctxStatic.clearRect(0, 0, canvasStatic.width, canvasStatic.height);
-        elements.forEach(el => drawElement(rcStatic, el));
+        
+        // 🚀 PRO MODE TRANSFORM 🚀
+        // We shift the entire context based on the current iframe scroll
+        if (isProMode && iframe && iframe.contentWindow) {
+            const scrollX = iframe.contentWindow.pageXOffset;
+            const scrollY = iframe.contentWindow.pageYOffset;
+            ctxStatic.save();
+            ctxStatic.setTransform(1, 0, 0, 1, -scrollX, -scrollY);
+            elements.forEach(el => drawElement(rcStatic, el));
+            ctxStatic.restore();
+        } else {
+            // Sticky Mode: Coordinate 0,0 is document top, so we draw normally
+            elements.forEach(el => drawElement(rcStatic, el));
+        }
     }
 
     function drawElement(rc, el) {
@@ -336,8 +409,9 @@
 
     window.undoAnno = undo;
     window.toggleAnno = toggleAnnotator;
+    window.toggleAnnoMode = toggleAnnoMode;
 
-    window.IITM_Annotator = { init, toggle: toggleAnnotator };
+    window.IITM_Annotator = { init, toggle: toggleAnnotator, toggleMode: toggleAnnoMode };
 
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
