@@ -922,7 +922,8 @@
 
         function toggleDesktopSidebar() {
             const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('is-collapsed');
+            const isCollapsed = sidebar.classList.toggle('is-collapsed');
+            localStorage.setItem('sidebar-collapsed', isCollapsed);
         }
 
         function toggleSidebar() {
@@ -934,6 +935,11 @@
 
         // --- SYNCHRONOUS INIT ---
         // Executes immediately as the HTML is parsed, avoiding any visual flicker
+        // Restore sidebar state
+        if (localStorage.getItem('sidebar-collapsed') === 'true') {
+            const sidebar = document.getElementById('sidebar');
+            if (sidebar) sidebar.classList.add('is-collapsed');
+        }
         initSidebarData();
         
         // Setup listener for future navigations
