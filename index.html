@@ -197,12 +197,14 @@
 
         .anno-color-dot.active-color {
             background: #f8fafc;
-            box-shadow: 0 0 0 2px white, 0 0 0 4px currentColor;
+            box-shadow: 0 0 0 1px white, 0 0 0 2px currentColor; /* Tight, small-radius ring */
         }
 
+
         .anno-color-dot.active-color::before {
-            transform: scale(1.25);
+            transform: scale(1.15); /* Slightly smaller inner dot */
         }
+
 
         #draw-toggle-btn {
             position: fixed;
@@ -991,12 +993,13 @@
 
             <!-- Colors -->
             <div id="anno-colors" class="flex items-center gap-1.5 px-1">
-                <div class="anno-color-dot active-color text-indigo-600" data-color="#4f46e5" onclick="setAnnoColor('#4f46e5')" title="Indigo (1)"></div>
-                <div class="anno-color-dot text-emerald-500" data-color="#10b981" onclick="setAnnoColor('#10b981')" title="Green (2)"></div>
-                <div class="anno-color-dot text-rose-500" data-color="#ef4444" onclick="setAnnoColor('#ef4444')" title="Red (3)"></div>
-                <div class="anno-color-dot text-amber-500" data-color="#f59e0b" onclick="setAnnoColor('#f59e0b')" title="Orange (4)"></div>
-                <div class="anno-color-dot text-slate-800" data-color="#1e293b" onclick="setAnnoColor('#1e293b')" title="Slate (5)"></div>
+                <div class="anno-color-dot active-color" style="color: #4f46e5;" data-color="#4f46e5" onclick="setAnnoColor('#4f46e5')" title="Indigo (1)"></div>
+                <div class="anno-color-dot" style="color: #10b981;" data-color="#10b981" onclick="setAnnoColor('#10b981')" title="Green (2)"></div>
+                <div class="anno-color-dot" style="color: #ef4444;" data-color="#ef4444" onclick="setAnnoColor('#ef4444')" title="Red (3)"></div>
+                <div class="anno-color-dot" style="color: #f59e0b;" data-color="#f59e0b" onclick="setAnnoColor('#f59e0b')" title="Orange (4)"></div>
+                <div class="anno-color-dot" style="color: #1e293b;" data-color="#1e293b" onclick="setAnnoColor('#1e293b')" title="Slate (5)"></div>
             </div>
+
 
             <div class="anno-divider"></div>
 
