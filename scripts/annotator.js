@@ -267,6 +267,28 @@
         }
 
         if (key === 'x' || (key === 'delete' && !isCtrl)) clearAnno();
+
+        // 🚀 NAVIGATION PROXY: Scroll the iframe even while drawing
+        const navigationKeys = ['arrowup', 'arrowdown', 'pageup', 'pagedown', 'home', 'end'];
+        if (navigationKeys.includes(key)) {
+            const iframe = document.querySelector('iframe');
+            if (iframe && iframe.contentWindow) {
+                const win = iframe.contentWindow;
+                const scrollAmount = 60;
+                const pageAmount = win.innerHeight * 0.8;
+
+                switch(key) {
+                    case 'arrowup': win.scrollBy({ top: -scrollAmount, behavior: 'auto' }); break;
+                    case 'arrowdown': win.scrollBy({ top: scrollAmount, behavior: 'auto' }); break;
+                    case 'pageup': win.scrollBy({ top: -pageAmount, behavior: 'smooth' }); break;
+                    case 'pagedown': win.scrollBy({ top: pageAmount, behavior: 'smooth' }); break;
+                    case 'home': win.scrollTo({ top: 0, behavior: 'smooth' }); break;
+                    case 'end': win.scrollTo({ top: win.document.body.scrollHeight, behavior: 'smooth' }); break;
+                }
+                // Don't preventDefault if it's the cursor tool (let native handle)
+                if (currentTool !== 'cursor') e.preventDefault();
+            }
+        }
     }
 
     function saveAnnotations() {
