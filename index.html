@@ -130,18 +130,49 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #cbd5e1;
+            color: #64748b; /* Higher contrast slate */
             transition: all 0.2s ease;
             border: none;
             background: transparent;
             cursor: pointer;
+            position: relative;
+        }
+
+        .anno-weight-btn:hover {
+            background: #f8fafc;
+            color: #334155;
         }
 
         .anno-weight-btn.active-weight {
             color: #4f46e5;
-            background: #eef2ff;
-            box-shadow: inset 0 0 0 1px #e0e7ff;
+            background: #f5f3ff;
         }
+
+        /* 💎 Improved Visibility: Explicit Sizes and Always-on contrast */
+        .weight-indicator {
+            border-radius: 9999px;
+            background: currentColor;
+            display: block;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+        }
+
+        .anno-weight-btn[data-weight="2"] .weight-indicator { width: 4px; height: 4px; }
+        .anno-weight-btn[data-weight="4"] .weight-indicator { width: 8px; height: 8px; }
+        .anno-weight-btn[data-weight="8"] .weight-indicator { width: 14px; height: 14px; }
+
+        /* Active highlight for weight */
+        .anno-weight-btn.active-weight::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            box-shadow: inset 0 0 0 2px #4f46e5;
+            opacity: 1;
+        }
+
+
 
         .anno-color-dot {
             width: 2rem;
@@ -945,14 +976,16 @@
 
             <!-- Stroke Weights -->
             <button class="anno-weight-btn" data-weight="2" onclick="setAnnoWeight(2)" title="Fine ([)">
-                <span class="w-1 h-1 rounded-full bg-current"></span>
+                <span class="weight-indicator"></span>
             </button>
             <button class="anno-weight-btn active-weight" data-weight="4" onclick="setAnnoWeight(4)" title="Medium">
-                <span class="w-2 h-2 rounded-full bg-current"></span>
+                <span class="weight-indicator"></span>
             </button>
             <button class="anno-weight-btn" data-weight="8" onclick="setAnnoWeight(8)" title="Bold (])">
-                <span class="w-3.5 h-3.5 rounded-full bg-current"></span>
+                <span class="weight-indicator"></span>
             </button>
+
+
 
             <div class="anno-divider"></div>
 
