@@ -15,6 +15,8 @@
     
     let container, iframe, canvasStatic, ctxStatic, rcStatic, canvasDynamic, ctxDynamic, rcDynamic;
 
+    console.log("IITM Annotator: Protocol Security Shield V1.0 (Ready)");
+
     function init() {
         container = document.getElementById('iframe-container');
         if (!container) return;
@@ -60,9 +62,44 @@
         resizeCanvas();
     }
 
+    // --- SECURITY SAFE HELPERS ---
+    function getSafeWindow() {
+        try {
+            if (iframe && iframe.contentWindow) {
+                // Try to access a property to trigger a security error if blocked
+                const test = iframe.contentWindow.location.href;
+                return iframe.contentWindow;
+            }
+        } catch (e) {}
+        return null;
+    }
+
+    function getSafeDoc() {
+        try {
+            if (iframe && iframe.contentDocument) return iframe.contentDocument;
+            const win = getSafeWindow();
+            if (win) return win.document;
+        } catch (e) {}
+        return null;
+    }
+
+    function getSafeScroll() {
+        const win = getSafeWindow();
+        if (win) {
+            try {
+                return { x: win.pageXOffset || 0, y: win.pageYOffset || 0 };
+            } catch (e) {}
+        }
+        return { x: 0, y: 0 };
+    }
+
     function bindIframeScroll() {
-        if (!iframe || !iframe.contentWindow) return;
-        iframe.contentWindow.addEventListener('scroll', () => {
+        const win = getSafeWindow();
+        if (!win) {
+            console.warn("IITM Annotator: Iframe scroll access is blocked by browser security (likely file:// protocol). Sticky/Adaptive scrolling will be disabled.");
+            return;
+        }
+        win.addEventListener('scroll', () => {
             if (isEnabled && isProMode) requestAnimationFrame(redraw);
         }, { passive: true });
     }
@@ -126,10 +163,11 @@
         let fullWidth = rect.width;
         let fullHeight = rect.height;
 
+        const doc = getSafeDoc();
         // In Sticky Mode, we grow the canvas to the full document height
-        if (!isProMode && iframe && iframe.contentDocument) {
-            const body = iframe.contentDocument.body;
-            const html = iframe.contentDocument.documentElement;
+        if (!isProMode && doc) {
+            const body = doc.body;
+            const html = doc.documentElement;
             if (body && html) {
                 fullHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
                 fullWidth = Math.max(body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth);
@@ -147,13 +185,12 @@
 
     function getCoords(e) {
         const rect = canvasDynamic.getBoundingClientRect();
-        const scrollY = (iframe && iframe.contentWindow) ? iframe.contentWindow.pageYOffset : 0;
-        const scrollX = (iframe && iframe.contentWindow) ? iframe.contentWindow.pageXOffset : 0;
+        const scroll = getSafeScroll();
         return {
-            px: (e.clientX - rect.left), // Pointer X relative to canvas
-            py: (e.clientY - rect.top),  // Pointer Y relative to canvas
-            x: (e.clientX - rect.left) + scrollX, // Absolute X
-            y: (e.clientY - rect.top) + scrollY   // Absolute Y
+            px: (e.clientX - rect.left), 
+            py: (e.clientY - rect.top),  
+            x: (e.clientX - rect.left) + scroll.x, 
+            y: (e.clientY - rect.top) + scroll.y   
         };
     }
 
@@ -198,12 +235,11 @@
 
         ctxDynamic.clearRect(0, 0, canvasDynamic.width, canvasDynamic.height);
         
+        const scroll = getSafeScroll();
         // ⚡ Apply transform to dynamic layer if in Pro Mode
-        if (isProMode && iframe && iframe.contentWindow) {
-            const scrollX = iframe.contentWindow.pageXOffset;
-            const scrollY = iframe.contentWindow.pageYOffset;
+        if (isProMode && (scroll.x > 0 || scroll.y > 0)) {
             ctxDynamic.save();
-            ctxDynamic.setTransform(1, 0, 0, 1, -scrollX, -scrollY);
+            ctxDynamic.setTransform(1, 0, 0, 1, -scroll.x, -scroll.y);
             drawElement(rcDynamic, tempElement);
             ctxDynamic.restore();
         } else {
@@ -255,17 +291,14 @@
         if (!ctxStatic) return;
         ctxStatic.clearRect(0, 0, canvasStatic.width, canvasStatic.height);
         
+        const scroll = getSafeScroll();
         // 🚀 PRO MODE TRANSFORM 🚀
-        // We shift the entire context based on the current iframe scroll
-        if (isProMode && iframe && iframe.contentWindow) {
-            const scrollX = iframe.contentWindow.pageXOffset;
-            const scrollY = iframe.contentWindow.pageYOffset;
+        if (isProMode && (scroll.x > 0 || scroll.y > 0)) {
             ctxStatic.save();
-            ctxStatic.setTransform(1, 0, 0, 1, -scrollX, -scrollY);
+            ctxStatic.setTransform(1, 0, 0, 1, -scroll.x, -scroll.y);
             elements.forEach(el => drawElement(rcStatic, el));
             ctxStatic.restore();
         } else {
-            // Sticky Mode: Coordinate 0,0 is document top, so we draw normally
             elements.forEach(el => drawElement(rcStatic, el));
         }
     }
@@ -346,9 +379,8 @@
         // 🚀 NAVIGATION PROXY: Scroll the iframe even while drawing
         const navigationKeys = ['arrowup', 'arrowdown', 'pageup', 'pagedown', 'home', 'end'];
         if (navigationKeys.includes(key)) {
-            const iframe = document.querySelector('iframe');
-            if (iframe && iframe.contentWindow) {
-                const win = iframe.contentWindow;
+            const win = getSafeWindow();
+            if (win) {
                 const scrollAmount = 60;
                 const pageAmount = win.innerHeight * 0.8;
 
@@ -360,7 +392,6 @@
                     case 'home': win.scrollTo({ top: 0, behavior: 'smooth' }); break;
                     case 'end': win.scrollTo({ top: win.document.body.scrollHeight, behavior: 'smooth' }); break;
                 }
-                // Don't preventDefault if it's the cursor tool (let native handle)
                 if (currentTool !== 'cursor') e.preventDefault();
             }
         }

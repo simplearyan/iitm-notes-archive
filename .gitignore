@@ -10,8 +10,8 @@ versions/
 
 # Ignore unzipped Course Content folders (Extraction happens on GitHub Actions)
 # This keeps the local repo clean of thousands of small files
-content/**/
-!content/**/*.zip.html
+
+
 
 Standard ignores
 
