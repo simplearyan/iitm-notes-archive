@@ -57,7 +57,7 @@
         const toolbar = document.getElementById('anno-toolbar');
         
         if (isEnabled) {
-            canvasStatic.classList.remove('opacity-0', 'pointer-events-none');
+            canvasStatic.classList.remove('opacity-0');
             canvasDynamic.classList.remove('opacity-0');
             // Check current tool for pointer-events
             updateCanvasInteractivity();
@@ -77,6 +77,9 @@
         if (currentTool === 'cursor') {
             canvasDynamic.style.pointerEvents = 'none';
             canvasDynamic.style.cursor = 'default';
+            // Focus the iframe so keyboard scrolling works immediately
+            const iframe = document.querySelector('iframe');
+            if (iframe) iframe.focus();
         } else {
             canvasDynamic.style.pointerEvents = 'auto';
             canvasDynamic.style.cursor = 'crosshair';
