@@ -28,17 +28,50 @@
             padding: 0.375rem;
             display: flex;
             align-items: center;
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            border-radius: 1rem;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 1.25rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
             z-index: 1000;
-            transition: all 0.5s ease;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             width: max-content;
             max-width: 95vw;
         }
+
+        @media (max-width: 640px) {
+            #anno-toolbar {
+                bottom: 1rem;
+                padding: 0.25rem;
+                border-radius: 1rem;
+            }
+            #anno-toolbar > div {
+                gap: 2px;
+            }
+            .anno-tool-btn {
+                min-width: 36px !important;
+                min-height: 36px !important;
+                padding: 0.5rem !important;
+            }
+            .anno-tool-btn i {
+                width: 1.1rem !important;
+                height: 1.1rem !important;
+            }
+            .anno-weight-btn {
+                width: 32px !important;
+                height: 32px !important;
+            }
+            .anno-color-dot {
+                width: 1.75rem !important;
+                height: 1.75rem !important;
+            }
+            .anno-divider {
+                height: 1.25rem !important;
+                margin: 0 0.25rem !important;
+            }
+        }
+
 
         #anno-toolbar.hidden {
             bottom: -5rem;
@@ -165,13 +198,21 @@
 
         #draw-toggle-btn.active-draw {
             background: #f43f5e;
-            animation: anno-pulse 2s infinite;
         }
 
-        @keyframes anno-pulse {
-            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.4); }
-            50%      { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(244, 63, 94, 0); }
+        /* 🚩 Position FAB above toolbar on mobile when active (Right Corner) */
+        @media (max-width: 640px) {
+            #anno-toolbar:not(.hidden) ~ #draw-toggle-btn {
+                bottom: 5.25rem;
+                right: 1.5rem;
+                transform: none;
+                width: 3.5rem;
+                height: 3.5rem;
+            }
         }
+
+
+
 
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
