@@ -8,30 +8,26 @@
     display: none !important;
 }
 
+/* Restore Normal Browser Scrollbar */
+html, body {
+    overflow: auto !important;
+    height: auto !important;
+    scrollbar-width: auto !important; /* Firefox: revert to default wide scrollbar */
+    -ms-overflow-style: auto !important; /* IE/Edge legacy */
+}
 
-
-/* Premium Custom Scrollbar (Desktop Only) */
-@media (min-width: 1024px) {
+/* For Google Chrome / Webkit: ensure scrollbars are not suppressed or customized */
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: initial !important;
+    height: initial !important;
+    display: block !important;
 }
 
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-
+::-webkit-scrollbar-track, 
 ::-webkit-scrollbar-thumb {
-    background: #e2e8f0; /* slate-200 */
-    border-radius: 10px;
-    border: 2px solid transparent;
-    background-clip: content-box;
-    transition: background 0.2s ease;
+    background: initial !important;
+    border: initial !important;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #6366f1; /* indigo-500 */
-    border: 2px solid transparent;
-    background-clip: content-box;
-}
-}
+
+
