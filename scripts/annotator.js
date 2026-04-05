@@ -41,6 +41,7 @@
         canvasDynamic.addEventListener('pointerdown', handleDown);
         window.addEventListener('pointermove', handleMove);
         window.addEventListener('pointerup', handleUp);
+        window.addEventListener('pointercancel', handleUp); // Handle touch interruptions
         window.addEventListener('resize', resizeCanvas);
         window.addEventListener('keydown', handleKeyDown);
         
@@ -83,6 +84,7 @@
         } else {
             canvasDynamic.style.pointerEvents = 'auto';
             canvasDynamic.style.cursor = 'crosshair';
+            canvasDynamic.style.touchAction = 'none'; // Prevent scrolling while drawing
         }
     }
 
