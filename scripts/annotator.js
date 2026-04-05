@@ -222,8 +222,22 @@
                  const x2 = p2[0], y2 = p2[1];
                  rc.polygon([[x1 + (x2-x1)/2, y1], [x1, y2], [x2, y2]], opts);
              }
+        } else if (el.type === 'arrow') {
+            const [p1, p2] = el.points;
+            if (p2) {
+                drawArrow(rc, p1[0], p1[1], p2[0], p2[1], opts);
+            }
         }
     }
+
+    function drawArrow(rc, x1, y1, x2, y2, opts) {
+        rc.line(x1, y1, x2, y2, opts);
+        const angle = Math.atan2(y2 - y1, x2 - x1);
+        const headlen = 15 + (opts.strokeWidth || 4) * 2;
+        rc.line(x2, y2, x2 - headlen * Math.cos(angle - Math.PI / 6), y2 - headlen * Math.sin(angle - Math.PI / 6), opts);
+        rc.line(x2, y2, x2 - headlen * Math.cos(angle + Math.PI / 6), y2 - headlen * Math.sin(angle + Math.PI / 6), opts);
+    }
+
 
     function handleKeyDown(e) {
         if (!isEnabled) return;
@@ -236,7 +250,7 @@
         if (isCtrl && key === 'z') { e.preventDefault(); undo(); return; }
         if (key === 'escape') { toggleAnnotator(); return; }
 
-        const toolMap = { 'v':'cursor', 'a':'cursor', 'p':'pen', 'l':'line', 'r':'rect', 'o':'ellipse', 'c':'ellipse', 't':'triangle', 'e':'eraser' };
+        const toolMap = { 'v':'cursor', 'a':'cursor', 'p':'pen', 'l':'line', 'r':'rect', 'o':'ellipse', 'c':'ellipse', 't':'triangle', 'e':'eraser', 'w':'arrow' };
         if (toolMap[key]) { setAnnoTool(toolMap[key]); return; }
 
         const colorMap = { '1':'#4f46e5', '2':'#10b981', '3':'#ef4444', '4':'#f59e0b', '5':'#1e293b' };
