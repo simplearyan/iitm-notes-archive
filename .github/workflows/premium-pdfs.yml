@@ -1,0 +1,74 @@
+name: 🎨 Premium Course PDF Generator 🚀
+
+# 🎨 Transform your HTML course pages into beautiful, print-ready PDFs! ✨
+# This workflow uses specialized CSS to hide UI clutter and fix duplicated math formulas.
+
+on:
+  workflow_dispatch:
+    inputs:
+      course:
+        description: '📘 Course Directory (e.g. Mathematics-II)'
+        required: true
+        default: 'Mathematics-II'
+        type: string
+      week:
+        description: '📅 Filter by Week (optional)'
+        required: false
+        default: ''
+        type: string
+      force:
+        description: '🔄 Re-render existing PDFs?'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  premium_convert:
+    name: 🎨 Premium Rendering Engine
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: 📦 Install Puppeteer & ZIP Tools
+        run: npm install puppeteer adm-zip
+
+      - name: 🎨 Run Premium PDF Converter
+        run: |
+          ARGS="--input ./content/Term-Feb-to-May/${{ github.event.inputs.course }} --output ./output/premium-pdf/${{ github.event.inputs.course }}"
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
+          if [ -n "${{ github.event.inputs.week }}" ]; then ARGS="$ARGS --week \"${{ github.event.inputs.week }}\""; fi
+          node scripts/premium-pdf.js $ARGS
+        env:
+          CI: 'true'
+
+      - name: 📤 Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: premium-pdfs-${{ github.event.inputs.course }}
+          path: output/premium-pdf/
+          retention-days: 14
+
+      - name: 🚀 Deploy to branch: gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output/premium-pdf
+          publish_branch: gh-pages
+          destination_dir: premium-pdf
+          commit_message: "🎨 premium-pdf: sync storage for ${{ github.event.inputs.course }} 🚀"
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          keep_files: true
