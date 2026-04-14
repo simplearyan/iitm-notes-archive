@@ -75,7 +75,9 @@ function optimizeDir(currentPath) {
 
             if (tryUnzip(itemPath, targetDir)) {
                 injectStyles(path.join(targetDir, 'index.html'));
-                fs.unlinkSync(itemPath);
+                if (!process.env.KEEP_ARCHIVES) {
+                    fs.unlinkSync(itemPath);
+                }
                 console.log(`🚀 Fully Processed: ${item}`);
             } else {
                 console.error(`❌ Could not unzip ${item}. Ensure 7-Zip or unzip is installed.`);

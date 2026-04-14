@@ -83,6 +83,9 @@ You can trigger these manually from the **Actions** tab:
 2. Click **Run workflow** and specify the course/week.
 3. Download the PDFs from the workflow summary or find them in the `gh-pages` branch inside their respective folders (`v3-pdf/` or `v4-pdf/`).
 
+### 🏰 Backup Vault
+A complete mirror of all raw assets, optimized modules, and PDF versions is maintained on the `backup-vault` branch. This is synchronized weekly or can be triggered manually via the **🏰 Multi-Content Sync & Backup 🛡️** action.
+
 ---
 
 ## ⚖️ Disclaimer

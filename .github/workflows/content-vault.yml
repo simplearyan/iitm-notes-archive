@@ -1,0 +1,52 @@
+name: "🏰 Multi-Content Sync & Backup 🛡️"
+
+# 🛡️ This workflow creates a unified "Master Vault" on the 'backup-vault' branch.
+# It includes raw archives, extracted modules, and all PDF versions.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0' # Weekly on Sunday midnight
+
+concurrency:
+  group: content-vault
+  cancel-in-progress: true
+
+jobs:
+  vault_backup:
+    name: 🏰 Construct Master Vault
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: 📦 Install Puppeteer & ZIP Tools
+        run: npm install puppeteer adm-zip
+
+      - name: 🏗️ Build Master Vault
+        run: node scripts/build-vault.js
+        env:
+          CI: 'true'
+
+      - name: "🛡️ Deploy to branch: backup-vault"
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist-vault
+          publish_branch: backup-vault
+          commit_message: "🏰 vault: sync master content archive [skip ci]"
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          keep_files: true

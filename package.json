@@ -12,7 +12,8 @@
     "v3-pdf": "node scripts/v3-pdf.js",
     "v3-pdf:force": "node scripts/v3-pdf.js --force",
     "v4-pdf": "node scripts/v4-pdf.js",
-    "v4-pdf:force": "node scripts/v4-pdf.js --force"
+    "v4-pdf:force": "node scripts/v4-pdf.js --force",
+    "vault": "node scripts/build-vault.js"
   },
   "repository": {
     "type": "git",
