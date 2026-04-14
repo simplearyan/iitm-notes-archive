@@ -56,6 +56,34 @@ Our custom `.github/workflows/deploy.yml` handles:
 
 ---
 
+## 🖨️ Automated PDF Conversion
+
+This project includes a built-in PDF factory to turn your course modules into printable handouts.
+
+### 🚀 Standard vs. 🎨 Premium
+- **Standard:** Quick batch conversion of every file in a course directory.
+- **Premium:** Academic-grade layout. Removes UI clutter, fix duplicated Math formulas (KaTeX), and optimizes page breaks.
+
+### 💻 Local Usage
+```bash
+# Generate Standard PDFs
+npm run pdf
+
+# Generate Premium PDFs (Recommended for Handouts)
+npm run premium-pdf
+
+# Target a specific course
+node scripts/premium-pdf.js --input "./content/Term-Feb-to-May/Statistics-II"
+```
+
+### ☁️ GitHub Actions Usage
+You can trigger these manually from the **Actions** tab:
+1. Select **📄 Standard Course PDF Generator 🛠️** or **🎨 Premium Course PDF Generator 🚀**.
+2. Click **Run workflow** and specify the course/week.
+3. Download the PDFs from the workflow summary or find them in the `gh-pages` branch.
+
+---
+
 ## ⚖️ Disclaimer
 
 This is an **unofficial, personal organization tool**. It is not affiliated with, endorsed by, or sponsored by the **Indian Institute of Technology Madras (IITM)**.

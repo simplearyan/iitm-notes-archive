@@ -1,4 +1,4 @@
-name: Generate PDFs from SingleFileZ HTML
+name: "📄 Standard Course PDF Generator 🛠️"
 
 # ─── Triggers ─────────────────────────────────────────────────────────────────
 on:
