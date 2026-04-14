@@ -1,8 +1,6 @@
 name: "🚀 v3 Ultra-High Quality PDF Generator ✨"
 
 # 🏰 Generate premium multi-page handouts with v3 Ultra-High Quality logic!
-# This version supports full document unrolling for long assignments.
-
 on:
   workflow_dispatch:
     inputs:
@@ -21,6 +19,11 @@ on:
         required: false
         default: 'false'
         type: boolean
+
+# Prevent multiple PDF jobs from clashing on the gh-pages branch
+concurrency:
+  group: pdf-storage
+  cancel-in-progress: false
 
 jobs:
   v3_convert:

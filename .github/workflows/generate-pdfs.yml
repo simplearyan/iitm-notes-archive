@@ -1,15 +1,13 @@
 name: "📄 Standard Course PDF Generator 🛠️"
 
-# ─── Triggers ─────────────────────────────────────────────────────────────────
+# 📄 Standard Course PDF Generator
 on:
-  # Run whenever new HTML archives are pushed to main
   push:
     branches: [main]
     paths:
       - 'content/**/*.u.zip.html'       # only when course content changes
       - 'scripts/html-to-pdf.js'        # or the script itself is updated
 
-  # Allow manual runs from the Actions tab (optionally force-regenerate)
   workflow_dispatch:
     inputs:
       force:
@@ -28,7 +26,11 @@ on:
         default: 'Mathematics-II'
         type: string
 
-# ─── Job ──────────────────────────────────────────────────────────────────────
+# Prevent multiple PDF jobs from clashing on the gh-pages branch
+concurrency:
+  group: pdf-storage
+  cancel-in-progress: false
+
 jobs:
   generate-pdfs:
     name: Convert HTML → PDF
@@ -38,21 +40,17 @@ jobs:
       contents: write          # needed to push the generated PDFs back
 
     steps:
-      # 1. Checkout full repo (not shallow — we need all content files)
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # 2. Node.js (matches local dev version)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: 'npm'
 
-      # 3. Install only puppeteer + adm-zip (skips tailwindcss etc.)
-      #    PUPPETEER_CACHE_DIR keeps Chromium across runs via cache step below
       - name: Cache Puppeteer Chromium
         id: cache-chromium
         uses: actions/cache@v4
@@ -65,44 +63,29 @@ jobs:
       - name: Install dependencies
         run: npm install puppeteer adm-zip
         env:
-          # If the Chromium cache was restored, skip re-downloading it
           PUPPETEER_SKIP_DOWNLOAD: ${{ steps.cache-chromium.outputs.cache-hit == 'true' && 'true' || 'false' }}
 
-      # 4. Determine script arguments from workflow_dispatch inputs or defaults
       - name: Build script arguments
         id: args
         run: |
           COURSE="${{ github.event.inputs.course || 'Mathematics-II' }}"
           ARGS="--input ./content/Term-Feb-to-May/${COURSE} --output ./output/pdf/${COURSE}"
-
-          if [ "${{ github.event.inputs.force }}" = "true" ]; then
-            ARGS="${ARGS} --force"
-          fi
-
-          if [ -n "${{ github.event.inputs.week }}" ]; then
-            ARGS="${ARGS} --week \"${{ github.event.inputs.week }}\""
-          fi
-
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then ARGS="${ARGS} --force"; fi
+          if [ -n "${{ github.event.inputs.week }}" ]; then ARGS="${ARGS} --week \"${{ github.event.inputs.week }}\""; fi
           echo "args=${ARGS}" >> $GITHUB_OUTPUT
           echo "course=${COURSE}" >> $GITHUB_OUTPUT
-          echo "📋 Script args: ${ARGS}"
 
-      # 5. Run the converter (CI=true → Puppeteer uses its bundled Chromium)
       - name: Generate PDFs
         run: node scripts/html-to-pdf.js ${{ steps.args.outputs.args }}
         env:
           CI: 'true'
 
-      # 6. Check whether any PDFs were actually produced
       - name: Count generated PDFs
         id: count
         run: |
           COUNT=$(find ./output/pdf -name '*.pdf' 2>/dev/null | wc -l)
           echo "count=${COUNT}" >> $GITHUB_OUTPUT
-          echo "📄 PDFs in output/: ${COUNT}"
 
-      # 7. Upload as a GitHub Actions artifact (downloadable from the run page)
-      #    Kept 30 days so you can grab them any time.
       - name: Upload PDF artifact
         if: steps.count.outputs.count > 0
         uses: actions/upload-artifact@v4
@@ -110,10 +93,7 @@ jobs:
           name: iitm-pdfs-${{ steps.args.outputs.course }}-${{ github.run_number }}
           path: output/pdf/
           retention-days: 30
-          if-no-files-found: warn
 
-      # 8. Store PDFs in gh-pages branch
-      #    This keeps the main branch history clean and avoids merge conflicts.
       - name: Deploy PDFs to gh-pages branch
         if: steps.count.outputs.count > 0
         uses: peaceiris/actions-gh-pages@v4
@@ -124,4 +104,4 @@ jobs:
           commit_message: "chore: update PDFs for ${{ steps.args.outputs.course }} [skip ci]"
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
-          keep_files: true  # Keep existing PDFs in the branch for other weeks/courses
+          keep_files: true

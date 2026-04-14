@@ -1,8 +1,6 @@
 name: "📐 v4 Compact Efficiency PDF Generator 📐"
 
 # 📐 Generate space-saving, textbook-style PDFs with v4 logic!
-# This version uses smart spacing and tight margins for efficiency.
-
 on:
   workflow_dispatch:
     inputs:
@@ -21,6 +19,11 @@ on:
         required: false
         default: 'false'
         type: boolean
+
+# Prevent multiple PDF jobs from clashing on the gh-pages branch
+concurrency:
+  group: pdf-storage
+  cancel-in-progress: false
 
 jobs:
   v4_convert:
