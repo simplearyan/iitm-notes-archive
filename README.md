@@ -60,27 +60,28 @@ Our custom `.github/workflows/deploy.yml` handles:
 
 This project includes a built-in PDF factory to turn your course modules into printable handouts.
 
-### 🚀 Standard vs. 🎨 Premium
+### 🚀 Standard vs. ✨ v3 Ultra vs. 📐 v4 Compact
 - **Standard:** Quick batch conversion of every file in a course directory.
-- **Premium:** Academic-grade layout. Removes UI clutter, fix duplicated Math formulas (KaTeX), and optimizes page breaks.
+- **v3 Ultra:** High-fidelity multi-page rendering. Supports long assignments with full layout unrolling.
+- **v4 Compact:** Academic-grade efficiency. Removes UI clutter, fixes KaTeX math doubling, and optimizes spacing for printable handouts.
 
 ### 💻 Local Usage
 ```bash
 # Generate Standard PDFs
 npm run pdf
 
-# Generate Premium PDFs (Recommended for Handouts)
-npm run premium-pdf
+# Generate v3 Ultra PDFs
+npm run v3-pdf
 
-# Target a specific course
-node scripts/premium-pdf.js --input "./content/Term-Feb-to-May/Statistics-II"
+# Generate v4 Compact PDFs (Recommended for Handouts)
+npm run v4-pdf
 ```
 
 ### ☁️ GitHub Actions Usage
 You can trigger these manually from the **Actions** tab:
-1. Select **📄 Standard Course PDF Generator 🛠️** or **🎨 Premium Course PDF Generator 🚀**.
+1. Select **📄 Standard Course PDF Generator 🛠️**, **🚀 v3 Ultra-High Quality PDF Generator ✨**, or **📐 v4 Compact Efficiency PDF Generator 📐**.
 2. Click **Run workflow** and specify the course/week.
-3. Download the PDFs from the workflow summary or find them in the `gh-pages` branch.
+3. Download the PDFs from the workflow summary or find them in the `gh-pages` branch inside their respective folders (`v3-pdf/` or `v4-pdf/`).
 
 ---
 

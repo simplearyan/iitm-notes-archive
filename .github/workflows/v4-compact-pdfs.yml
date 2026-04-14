@@ -1,7 +1,7 @@
-name: "🚀 v3 Ultra-High Quality PDF Generator ✨"
+name: "📐 v4 Compact Efficiency PDF Generator 📐"
 
-# 🏰 Generate premium multi-page handouts with v3 Ultra-High Quality logic!
-# This version supports full document unrolling for long assignments.
+# 📐 Generate space-saving, textbook-style PDFs with v4 logic!
+# This version uses smart spacing and tight margins for efficiency.
 
 on:
   workflow_dispatch:
@@ -23,8 +23,8 @@ on:
         type: boolean
 
 jobs:
-  v3_convert:
-    name: 🚀 v3 Ultra Rendering Engine
+  v4_convert:
+    name: 📐 v4 Compact Rendering Engine
     runs-on: ubuntu-latest
     
     permissions:
@@ -45,30 +45,30 @@ jobs:
       - name: 📦 Install Puppeteer & ZIP Tools
         run: npm install puppeteer adm-zip
 
-      - name: 🚀 Run v3 Ultra PDF Converter
+      - name: 📐 Run v4 Compact PDF Converter
         run: |
-          ARGS="--input ./content/Term-Feb-to-May/${{ github.event.inputs.course }} --output ./output/v3-pdf/${{ github.event.inputs.course }}"
+          ARGS="--input ./content/Term-Feb-to-May/${{ github.event.inputs.course }} --output ./output/v4-pdf/${{ github.event.inputs.course }}"
           if [ "${{ github.event.inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
           if [ -n "${{ github.event.inputs.week }}" ]; then ARGS="$ARGS --week \"${{ github.event.inputs.week }}\""; fi
-          node scripts/v3-pdf.js $ARGS
+          node scripts/v4-pdf.js $ARGS
         env:
           CI: 'true'
 
       - name: 📤 Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: v3-ultra-pdfs-${{ github.event.inputs.course }}
-          path: output/v3-pdf/
+          name: v4-compact-pdfs-${{ github.event.inputs.course }}
+          path: output/v4-pdf/
           retention-days: 14
 
       - name: "🚀 Deploy to branch: gh-pages"
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output/v3-pdf
+          publish_dir: ./output/v4-pdf
           publish_branch: gh-pages
-          destination_dir: v3-pdf
-          commit_message: "🚀 v3-pdf: sync storage for ${{ github.event.inputs.course }} ✨"
+          destination_dir: v4-pdf
+          commit_message: "📐 v4-pdf: sync storage for ${{ github.event.inputs.course }} 📐"
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
           keep_files: true
