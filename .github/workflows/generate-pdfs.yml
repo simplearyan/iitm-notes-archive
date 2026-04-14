@@ -112,14 +112,16 @@ jobs:
           retention-days: 30
           if-no-files-found: warn
 
-      # 8. Optional: commit & push the PDFs back into the repo
-      #    (comment out this step if you prefer artifact-only delivery)
-      - name: Commit generated PDFs
+      # 8. Store PDFs in gh-pages branch
+      #    This keeps the main branch history clean and avoids merge conflicts.
+      - name: Deploy PDFs to gh-pages branch
         if: steps.count.outputs.count > 0
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/pdf/
-          git diff --staged --quiet && echo "Nothing to commit" || \
-            git commit -m "chore: generate PDFs for ${{ steps.args.outputs.course }} [skip ci]"
-          git push
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output/pdf
+          publish_branch: gh-pages
+          commit_message: "chore: update PDFs for ${{ steps.args.outputs.course }} [skip ci]"
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          keep_files: true  # Keep existing PDFs in the branch for other weeks/courses
