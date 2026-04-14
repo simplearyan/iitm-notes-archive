@@ -8,7 +8,11 @@
     "pdf": "node scripts/html-to-pdf.js",
     "pdf:force": "node scripts/html-to-pdf.js --force",
     "premium-pdf": "node scripts/premium-pdf.js",
-    "premium-pdf:force": "node scripts/premium-pdf.js --force"
+    "premium-pdf:force": "node scripts/premium-pdf.js --force",
+    "v3-pdf": "node scripts/v3-pdf.js",
+    "v3-pdf:force": "node scripts/v3-pdf.js --force",
+    "v4-pdf": "node scripts/v4-pdf.js",
+    "v4-pdf:force": "node scripts/v4-pdf.js --force"
   },
   "repository": {
     "type": "git",
