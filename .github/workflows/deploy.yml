@@ -45,6 +45,9 @@ jobs:
       - name: Generate Markdown Index
         run: node --max-old-space-size=2048 scripts/generate-markdown-index.js
 
+      - name: Inject Markdown Index into HTML
+        run: node scripts/inject-markdown-index.js
+
       - name: Build Tailwind CSS
         run: npx tailwindcss -i ./src/input.css -o ./assets/main.css --minify
 
