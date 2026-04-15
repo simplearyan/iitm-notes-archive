@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: read
+      contents: write
       pages: write
       id-token: write
 
@@ -54,6 +54,18 @@ jobs:
 
       - name: Inject Index (Legacy Support)
         run: node scripts/inject-markdown-index.js
+
+      - name: "🚀 Sync Reading Vault to gh-pages"
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./markdown
+          publish_branch: gh-pages
+          destination_dir: markdown
+          commit_message: "🚀 Auto-update Markdown Vault [skip ci]"
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          keep_files: true
 
       - name: Build Tailwind CSS
         run: npx tailwindcss -i ./src/input.css -o ./assets/main.css --minify
