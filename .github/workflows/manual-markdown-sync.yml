@@ -51,8 +51,9 @@ jobs:
 
       - name: 🔓 Bypass Ignore Rules
         run: |
-          echo "🔓 Removing .gitignore files to expose generated content..."
+          echo "🔓 Neutralizing .gitignore barriers..."
           rm -f .gitignore
+          echo "" > markdown/.gitignore
           rm -f markdown/extracted/.gitkeep
 
       - name: 🕵️ Final Inspection (Verification Log)
