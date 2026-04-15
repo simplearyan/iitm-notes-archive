@@ -2,7 +2,7 @@
 # These are regenerated on each build, so don't commit them
 
 # Auto-generated index
-/index.json
+!/index.json
 
 # Extracted assets and markdown
 /extracted/**/*.md

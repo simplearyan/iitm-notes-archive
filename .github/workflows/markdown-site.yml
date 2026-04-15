@@ -46,6 +46,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add markdown/extracted/ markdown/index.json
+          git add -f markdown/extracted/ markdown/index.json
           git commit -m "🚀 Auto-update Markdown Vault [skip ci]" || echo "No changes to commit"
           git push

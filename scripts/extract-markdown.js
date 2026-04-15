@@ -59,7 +59,12 @@ function processMathInDoc(doc) {
  * Extract images from ZIP and return updated content paths
  * Stream to disk immediately to minimize memory usage
  */
-function extractImages(zipBuffer, outputDir) {
+/**
+ * Extract images from ZIP and return updated content paths
+ * Stream to disk immediately to minimize memory usage
+ * Adds a prefix to filenames to prevent collisions (e.g., Course_File_image.png)
+ */
+function extractImages(zipBuffer, outputDir, prefix = '') {
   const imageMap = {};
   let imageCount = 0;
   
@@ -76,8 +81,13 @@ function extractImages(zipBuffer, outputDir) {
       try {
         // Extract to markdown/extracted/assets/ - stream immediately
         const basename = path.basename(entry.name);
-        const outputPath = path.join(outputDir, basename);
-        const assetRelativePath = `assets/${basename}`;
+        
+        // ✨ NEW: Prefix filename with archive name to prevent collisions
+        const safePrefix = prefix.replace(/[^a-z0-9]/gi, '_').substring(0, 50);
+        const uniqueName = safePrefix ? `${safePrefix}_${basename}` : basename;
+        
+        const outputPath = path.join(outputDir, uniqueName);
+        const assetRelativePath = `assets/${uniqueName}`;
         
         // Write to disk immediately to free memory
         fs.writeFileSync(outputPath, entry.getData());
@@ -281,7 +291,7 @@ function processArchive(filePath, relativePath) {
     ensureDir(outputDir);
     
     // Extract images first and free buffer memory
-    const imageMap = extractImages(fileData, ASSETS_DIR);
+    const imageMap = extractImages(fileData, ASSETS_DIR, fileName);
     
     try {
       // Extract HTML content - this creates the largest memory footprint
