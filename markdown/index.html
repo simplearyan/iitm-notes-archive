@@ -160,7 +160,7 @@
         // ========== Configuration ==========
         const CONFIG = {
             basePath: '/iitm-notes-archive/markdown/',
-            API_BASE: '../markdown/', // relative to page
+            API_BASE: '.', // Same directory as index.html
         };
         
         // ========== Global State ==========
@@ -328,8 +328,15 @@
         
         async function loadMarkdownFile(filePath) {
             try {
-                const response = await fetch(`${CONFIG.API_BASE}/${filePath}.md`);
-                if (!response.ok) throw new Error('File not found');
+                // Normalize path - remove leading/trailing slashes and construct URL
+                const cleanPath = filePath.replace(/^\/+|\/+$/g, '');
+                const url = `${CONFIG.API_BASE}/${cleanPath}.md`.replace(/\/+/g, '/');
+                
+                console.log('Fetching:', url);
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: File not found`);
+                }
                 
                 const content = await response.text();
                 renderMarkdown(content, filePath);
@@ -337,7 +344,7 @@
                 updateBreadcrumb(filePath);
             } catch (err) {
                 console.error('Error loading file:', err);
-                showError(`Failed to load: ${filePath}`);
+                showError(`Failed to load: ${filePath}<br><small>${err.message}</small>`);
             }
         }
         
