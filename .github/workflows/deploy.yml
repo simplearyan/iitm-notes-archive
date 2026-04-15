@@ -40,7 +40,7 @@ jobs:
         run: node scripts/generate-sidebar.js
 
       - name: Extract Markdown from Archives
-        run: node --expose-gc --max-old-space-size=4096 scripts/extract-markdown.js
+        run: node --expose-gc --max-old-space-size=6144 scripts/extract-markdown.js
 
       - name: Generate Markdown Index
         run: node --max-old-space-size=2048 scripts/generate-markdown-index.js

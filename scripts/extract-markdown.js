@@ -58,14 +58,15 @@ function extractMath(html) {
 
 /**
  * Extract images from ZIP and return updated content paths
+ * Stream to disk immediately to minimize memory usage
  */
 function extractImages(zipBuffer, outputDir) {
   const imageMap = {};
+  let imageCount = 0;
   
   try {
     const zip = new AdmZip(zipBuffer);
     const entries = zip.getEntries();
-    let imageCount = 0;
     
     for (const entry of entries) {
       if (entry.isDirectory) continue;
@@ -74,22 +75,21 @@ function extractImages(zipBuffer, outputDir) {
       if (!/\.(jpg|jpeg|png|gif|webp|svg)$/i.test(fileName)) continue;
       
       try {
-        // Extract to markdown/extracted/assets/
+        // Extract to markdown/extracted/assets/ - stream immediately
         const basename = path.basename(entry.name);
         const outputPath = path.join(outputDir, basename);
         const assetRelativePath = `assets/${basename}`;
         
+        // Write to disk immediately to free memory
         fs.writeFileSync(outputPath, entry.getData());
-        imageMap[entry.name] = assetRelativePath;
-        imageMap[basename] = assetRelativePath;
         
-        // Also map without extension variations
-        const withoutExt = basename.replace(/\.[^.]+$/, '');
-        imageMap[withoutExt] = assetRelativePath;
+        // Store only essential mappings to reduce memory usage
+        imageMap[basename] = assetRelativePath;
+        imageMap[entry.name] = assetRelativePath;
         
         imageCount++;
       } catch (err) {
-        // Skip individual image extraction errors
+        // Skip individual image errors
         continue;
       }
     }
@@ -265,12 +265,15 @@ function convertTable(tableElement) {
 }
 
 /**
- * Process a single .u.zip.html file
+ * Process a single .u.zip.html file with optimized memory management
  */
 function processArchive(filePath, relativePath) {
+  let dom = null;
+  let fileData = null;
+  
   try {
     // Read ZIP buffer from embedded file
-    const fileData = fs.readFileSync(filePath);
+    fileData = fs.readFileSync(filePath);
     
     // Determine output path
     const fileName = path.basename(filePath, '.u.zip.html');
@@ -278,38 +281,84 @@ function processArchive(filePath, relativePath) {
     const outputDir = path.join(MARKDOWN_EXTRACTED, dirName);
     ensureDir(outputDir);
     
-    // Extract images
+    // Extract images first and free buffer memory
     const imageMap = extractImages(fileData, ASSETS_DIR);
     
-    // Extract HTML content
-    const dom = new JSDOM(fileData.toString('utf-8'), {
-      pretendToBeVisual: false,
-      beforeParse(window) {
-        // Disable resource loading to save memory
-        window.fetch = () => {};
+    try {
+      // Extract HTML content - this creates the largest memory footprint
+      dom = new JSDOM(fileData.toString('utf-8'), {
+        pretendToBeVisual: false,
+        beforeParse(window) {
+          // Disable resource loading to save memory
+          window.fetch = () => {};
+        }
+      });
+      
+      const htmlContent = dom.window.document.body.innerHTML;
+      
+      // Close and clear DOM to free memory immediately
+      try {
+        dom.window.close?.();
+      } catch (e) {
+        // Ignore cleanup errors
       }
-    });
-    const htmlContent = dom.window.document.body.innerHTML;
-    
-    // Convert to markdown
-    const withMath = extractMath(htmlContent);
-    const markdown = htmlToMarkdown(withMath, imageMap);
-    
-    // Create output markdown file
-    const outputPath = path.join(outputDir, `${fileName}.md`);
-    const frontmatter = `---\ntitle: ${fileName.replace(/_/g, ' ')}\ndate: ${new Date().toISOString()}\n---\n\n`;
-    
-    fs.writeFileSync(outputPath, frontmatter + markdown);
-    
-    console.log(`✅ ${relativePath} → ${path.relative(MARKDOWN_EXTRACTED, outputPath)}`);
-    processedCount++;
-    
-    // Explicitly clean up DOM to free memory
-    dom.window.close?.();
+      dom = null;
+      
+      // Convert to markdown
+      const withMath = extractMath(htmlContent);
+      const markdown = htmlToMarkdown(withMath, imageMap);
+      
+      // Create output markdown file
+      const outputPath = path.join(outputDir, `${fileName}.md`);
+      const frontmatter = `---\ntitle: ${fileName.replace(/_/g, ' ')}\ndate: ${new Date().toISOString()}\n---\n\n`;
+      
+      fs.writeFileSync(outputPath, frontmatter + markdown);
+      
+      console.log(`✅ ${relativePath} → ${path.relative(MARKDOWN_EXTRACTED, outputPath)}`);
+      processedCount++;
+      
+    } catch (parseErr) {
+      console.warn(`⚠️  Could not parse HTML for ${relativePath}: ${parseErr.message}`);
+      console.log(`  → Switching to fallback HTML processing`);
+      
+      try {
+        // Fallback: use raw HTML without JSDOM parsing to reduce memory
+        const rawHtml = fileData.toString('utf-8');
+        const markdown = htmlToMarkdown(rawHtml, {});
+        
+        const outputPath = path.join(outputDir, `${fileName}.md`);
+        const frontmatter = `---\ntitle: ${fileName.replace(/_/g, ' ')}\ndate: ${new Date().toISOString()}\n---\n\n`;
+        
+        fs.writeFileSync(outputPath, frontmatter + markdown);
+        console.log(`✅ ${relativePath} (fallback) → ${path.relative(MARKDOWN_EXTRACTED, outputPath)}`);
+        processedCount++;
+      } catch (fallbackErr) {
+        console.error(`❌ Error processing ${relativePath}: ${fallbackErr.message}`);
+        errorCount++;
+      }
+    } finally {
+      // Ensure DOM is always cleaned up
+      if (dom) {
+        try {
+          dom.window.close?.();
+        } catch (e) {
+          // Ignore cleanup errors
+        }
+        dom = null;
+      }
+    }
     
   } catch (err) {
-    console.error(`❌ Error processing ${relativePath}: ${err.message}`);
+    console.error(`❌ Failed to read ${relativePath}: ${err.message}`);
     errorCount++;
+  } finally {
+    // Clear references for garbage collection
+    fileData = null;
+    
+    // Trigger garbage collection after each file
+    if (global.gc) {
+      global.gc();
+    }
   }
 }
 
