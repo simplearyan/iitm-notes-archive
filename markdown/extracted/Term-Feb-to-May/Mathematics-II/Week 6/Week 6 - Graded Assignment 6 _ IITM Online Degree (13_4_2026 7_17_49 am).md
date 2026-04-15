@@ -211,7 +211,7 @@ $A=\begin{bmatrix}
  
  Match the linear transformations and sets of vectors in column A with the images of those sets under the linear transformation in column B and the geometric representations of both sets in column C. 
 
-![image](../../../assets/img_ecsp21v7l.jpg)
+![image](../../../assets/img_ecl09znli.jpg)
 
 Choose the correct option from the following.
 

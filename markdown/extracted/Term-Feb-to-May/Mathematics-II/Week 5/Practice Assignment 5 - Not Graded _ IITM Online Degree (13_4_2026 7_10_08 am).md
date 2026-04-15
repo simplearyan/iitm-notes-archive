@@ -470,7 +470,7 @@ Score: 0
 Ayesha, Pritha, Sabya, and Wang went on a trip to Manali and Kasol. Accommodation costs **₹**1500 per day in Manali and **₹**800 per day in Kasol. The total food cost is **₹**2000 per day in Manali and **₹**1200 per day in Kasol. They plan to spend 2 days in Manali and 2 days in Kasol. The first and second rows of the Table M2W5P1 shows the percentage of contribution by each of them for the accomodation at Manali and Kasol, respectively. Similarly, the first and the second row of the Table M2W5P2 shows the percentage of contribution by each of them for the food at Manali and Kasol, respectively.
 
                                  
-![image](../../../assets/img_vjxhb76wk.jpg)
+![image](../../../assets/img_v5vyitciv.jpg)
 
 Suppose $T(x,y)$ denotes the contribution of a person for accommodation per day, where the first variable $x$ denotes the percentage of contribution by that person for accommodation in Manali and the second variable $y$ denotes the percentage of contribution by that person for accommodation in Kasol. (i.e., if $a$ and $b$ denote the costs for accommodation per day at Manali and Kasol, respectively, then $T(x,y)=\frac{1}{100}(ax+by)$). Similarly, $T'(v,w)$ denotes the contribution by a person for food per day, where the first variable $v$ denotes the percentage of contribution for food in Manali and the second variable $w$ denotes the percentage of contribution for food in Kasol.
 Answer the following questions based on the given information. 

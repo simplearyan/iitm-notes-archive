@@ -31,7 +31,7 @@ f. $\begin{bmatrix}
 
  Solution:
 
-![image](../../../assets/img_bk0q0zx14.jpg)
+![image](../../../assets/img_s4ul5zrt9.jpg)
 
 Observe that, in question, you are asked to find the matrix representation of $T$ with respect to the standard ordered bases of $\mathbb{R}^3$ for both domain and range. So you have to find the image of each element of the standard ordered basis of $\mathbb{R}^2$ via the linear transformation $T$. 
 

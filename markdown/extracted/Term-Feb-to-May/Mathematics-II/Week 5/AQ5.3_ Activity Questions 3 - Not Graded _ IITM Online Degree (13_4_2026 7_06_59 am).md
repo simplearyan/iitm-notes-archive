@@ -4,7 +4,7 @@
 A book shop is organizing an year end sale. Price of any Bengali, Hindi, Tamil, and Urdu book is fixed as **₹**200, **₹**180, **₹**230, and **₹**250, respectively. Let $T(x,y,z,w)$ denote the total price of $x$ number of Bengali books, $y$ number of Hindi books, $z$ number of Tamil books, and $w$ number of Urdu books. Table M2W5AQ1 shows the numbers of books of different languages purchased by some customers.
 
                                                         
-![image](../../../assets/img_jnxh0pomz.jpg)
+![image](../../../assets/img_1sadapkgg.jpg)
 
 Answer Questions 1 to 8 from the given data.
 

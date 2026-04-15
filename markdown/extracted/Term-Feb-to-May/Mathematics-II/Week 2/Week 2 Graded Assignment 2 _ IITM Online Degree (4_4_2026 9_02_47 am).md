@@ -853,7 +853,7 @@ The network in Figure: M2W2GA1 shows a proposed plan for flow of traffic around 
 park. All the streets are assumed to be one-way and the arrows denote the direction of flow of traffic. The plan calls for a computerized traffic light at the South Street. Let $2x_1, 3x_2, 2x_3, \text{ and } x_4$ denote the average number (per hour) of vehicles expected to pass through the connecting streets (e.g., $2x_1$ denote the average number (per hour) of vehicles expected to pass through the street connecting the North Street and West Street as shown in Figure: M2W2GA1). 400, 1000, 900, and $c$ denote the average number (per hour) of vehicles expected to pass through West, North, East, and South Streets respectively. 
 
                                               
-![image](../../../assets/img_g7q13qvqj.jpg)
+![image](../../../assets/img_xd671jzxz.jpg)
 
     
 
@@ -1058,7 +1058,7 @@ Score: 1
  
  Match the names of the street in Column A with the maximum and minimum number of vehicles expected to pass through the street on an average (per hour) in Column B and Column C, respectively; in Table M2W2GA1.
 
-![image](../../../assets/img_4wh1e8eyp.jpg)
+![image](../../../assets/img_97ftz969h.jpg)
 
  
  
