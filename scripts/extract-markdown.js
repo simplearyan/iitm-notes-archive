@@ -13,8 +13,14 @@ const AdmZip = require('adm-zip');
 const { JSDOM } = require('jsdom');
 
 // ============ Configuration ============
+const IS_CI = process.env.GITHUB_ACTIONS === 'true';
 const CONTENT_ROOT = path.join(__dirname, '..', 'content');
-const MARKDOWN_EXTRACTED = path.join(__dirname, '..', 'markdown', 'extracted');
+
+// Dynamic Output: Locally use 'handouts/', in CI use 'markdown/extracted/' for web sync
+const MARKDOWN_EXTRACTED = IS_CI 
+  ? path.join(__dirname, '..', 'markdown', 'extracted')
+  : path.join(__dirname, '..', 'handouts');
+
 const ASSETS_DIR = path.join(MARKDOWN_EXTRACTED, 'assets');
 
 // File patterns to process
