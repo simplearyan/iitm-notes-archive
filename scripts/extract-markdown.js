@@ -65,26 +65,38 @@ function extractImages(zipBuffer, outputDir) {
   try {
     const zip = new AdmZip(zipBuffer);
     const entries = zip.getEntries();
+    let imageCount = 0;
     
-    entries.forEach(entry => {
-      if (entry.isDirectory) return;
+    for (const entry of entries) {
+      if (entry.isDirectory) continue;
       
       const fileName = entry.name.toLowerCase();
-      if (!/\.(jpg|jpeg|png|gif|webp|svg)$/i.test(fileName)) return;
+      if (!/\.(jpg|jpeg|png|gif|webp|svg)$/i.test(fileName)) continue;
       
-      // Extract to markdown/extracted/assets/
-      const basename = path.basename(entry.name);
-      const outputPath = path.join(outputDir, basename);
-      const assetRelativePath = `assets/${basename}`;
-      
-      fs.writeFileSync(outputPath, entry.getData());
-      imageMap[entry.name] = assetRelativePath;
-      imageMap[basename] = assetRelativePath;
-      
-      // Also map without extension variations
-      const withoutExt = basename.replace(/\.[^.]+$/, '');
-      imageMap[withoutExt] = assetRelativePath;
-    });
+      try {
+        // Extract to markdown/extracted/assets/
+        const basename = path.basename(entry.name);
+        const outputPath = path.join(outputDir, basename);
+        const assetRelativePath = `assets/${basename}`;
+        
+        fs.writeFileSync(outputPath, entry.getData());
+        imageMap[entry.name] = assetRelativePath;
+        imageMap[basename] = assetRelativePath;
+        
+        // Also map without extension variations
+        const withoutExt = basename.replace(/\.[^.]+$/, '');
+        imageMap[withoutExt] = assetRelativePath;
+        
+        imageCount++;
+      } catch (err) {
+        // Skip individual image extraction errors
+        continue;
+      }
+    }
+    
+    if (imageCount > 0) {
+      console.log(`  📦 Extracted ${imageCount} images`);
+    }
   } catch (err) {
     console.warn(`⚠️  Could not extract images from ZIP: ${err.message}`);
   }
@@ -270,10 +282,16 @@ function processArchive(filePath, relativePath) {
     const imageMap = extractImages(fileData, ASSETS_DIR);
     
     // Extract HTML content
-    const dom = new JSDOM(fileData.toString('utf-8'));
+    const dom = new JSDOM(fileData.toString('utf-8'), {
+      pretendToBeVisual: false,
+      beforeParse(window) {
+        // Disable resource loading to save memory
+        window.fetch = () => {};
+      }
+    });
     const htmlContent = dom.window.document.body.innerHTML;
     
-    // Extract math and convert to markdown
+    // Convert to markdown
     const withMath = extractMath(htmlContent);
     const markdown = htmlToMarkdown(withMath, imageMap);
     
@@ -285,6 +303,10 @@ function processArchive(filePath, relativePath) {
     
     console.log(`✅ ${relativePath} → ${path.relative(MARKDOWN_EXTRACTED, outputPath)}`);
     processedCount++;
+    
+    // Explicitly clean up DOM to free memory
+    dom.window.close?.();
+    
   } catch (err) {
     console.error(`❌ Error processing ${relativePath}: ${err.message}`);
     errorCount++;
@@ -307,6 +329,11 @@ function walkDirectory(dirPath, relativeBase = '') {
       walkDirectory(fullPath, relativePath);
     } else if (ARCHIVE_PATTERN.test(entry.name)) {
       processArchive(fullPath, relativePath);
+      
+      // Trigger garbage collection after each file to free memory
+      if (global.gc) {
+        global.gc();
+      }
     }
   }
 }
@@ -319,6 +346,11 @@ ensureDir(MARKDOWN_EXTRACTED);
 ensureDir(ASSETS_DIR);
 
 walkDirectory(CONTENT_ROOT);
+
+// Final garbage collection
+if (global.gc) {
+  global.gc();
+}
 
 console.log(`\n✨ Extraction complete:`);
 console.log(`  ✅ Processed: ${processedCount}`);

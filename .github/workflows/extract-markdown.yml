@@ -32,10 +32,10 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y p7zip-full
 
       - name: Extract Markdown from Archives
-        run: node scripts/extract-markdown.js
+        run: node --expose-gc --max-old-space-size=4096 scripts/extract-markdown.js
 
       - name: Generate Markdown Index
-        run: node scripts/generate-markdown-index.js
+        run: node --max-old-space-size=2048 scripts/generate-markdown-index.js
 
       - name: Check for changes
         id: check_changes
