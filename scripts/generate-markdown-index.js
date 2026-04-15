@@ -196,19 +196,70 @@ function buildSearchIndex(searchDocs) {
 
 // ============ Main Execution ============
 
-console.log('🔍 Generating markdown index...');
-console.log(`📁 Scanning Extracted: ${EXTRACTED_DIR}`);
+console.log('🔍 Generating consolidated navigation index...');
 
-const { items: extractedItems, searchDocs: extractedDocs } = scanDirectory(EXTRACTED_DIR, '', 'extracted');
+// 1. Load Pre-indexed data from the Extractor (Unified Step 1)
+let consolidatedDocs = [];
+const TEMP_INDEX_PATH = path.resolve(MARKDOWN_ROOT, 'extracted-index.tmp.json');
 
-console.log(`📁 Scanning Manual: ${MANUAL_DIR}`);
+if (fs.existsSync(TEMP_INDEX_PATH)) {
+  console.log('📦 Loading pre-indexed course materials...');
+  const tempData = JSON.parse(fs.readFileSync(TEMP_INDEX_PATH, 'utf-8'));
+  consolidatedDocs = tempData.extractedDocs || [];
+} else {
+  console.log('⚠️ No pre-indexed course materials found. Scanning directory manually as fallback...');
+  const { searchDocs: fallbackDocs } = scanDirectory(EXTRACTED_DIR, '', 'extracted');
+  consolidatedDocs = fallbackDocs;
+}
+
+// 2. Scan Manual Study Notes
+console.log('📁 Scanning Manual Study Notes...');
 const { items: manualItems, searchDocs: manualDocs } = scanDirectory(MANUAL_DIR, '', 'manual');
 
-// Merge both sources directly for a flatter structure
-const allItems = [...extractedItems, ...manualItems];
+// 3. Reconstruct Navigation Tree from Consolidated Docs
+// This ensures that the navigation matches the search index perfectly
+function reconstructNav(docs) {
+    const root = [];
+    const folderMap = {};
+
+    docs.forEach(doc => {
+        const parts = doc.id.split('/');
+        let currentLevel = root;
+        let currentPath = '';
+
+        for (let i = 0; i < parts.length - 1; i++) {
+            const folderName = parts[i];
+            currentPath = currentPath ? `${currentPath}/${folderName}` : folderName;
+
+            if (!folderMap[currentPath]) {
+                const newFolder = {
+                    type: 'folder',
+                    name: folderName,
+                    path: currentPath,
+                    children: []
+                };
+                folderMap[currentPath] = newFolder;
+                currentLevel.push(newFolder);
+            }
+            currentLevel = folderMap[currentPath].children;
+        }
+
+        currentLevel.push({
+            type: 'file',
+            name: doc.title,
+            path: doc.path,
+            source: doc.source
+        });
+    });
+
+    return root;
+}
+
+const allItems = reconstructNav([...consolidatedDocs, ...manualDocs]);
+const searchDocsFlat = [...consolidatedDocs, ...manualDocs];
 
 const breadcrumbs = buildBreadcrumbMap(allItems);
-const searchIndex = buildSearchIndex([...extractedDocs, ...manualDocs]);
+const searchIndex = buildSearchIndex(searchDocsFlat);
 
 // Build final output
 const output = {

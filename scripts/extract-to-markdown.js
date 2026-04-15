@@ -81,11 +81,19 @@ function htmlToMd(node) {
 
 // ─── PROCESSOR ───────────────────────────────────────────────────────────────
 
+// ─── INDEXING TRACKER ────────────────────────────────────────────────────────
+const navItems = [];
+const searchDocs = [];
+
 async function processArchive(filePath) {
   const rel = path.relative(INPUT_DIR, filePath);
   const outDir = path.join(OUTPUT_DIR, path.dirname(rel));
   const baseName = path.basename(filePath, '.u.zip.html').replace(/[<>:"/\\|?*]/g, '_');
   const outFile = path.join(outDir, `${baseName}.md`);
+  
+  // Navigation Path (e.g., extracted/Course/Week/File)
+  const entryRelative = path.relative(OUTPUT_DIR, outFile).replace(/\\/g, '/');
+  const pathWithoutExt = entryRelative.replace(/\.md$/, '');
 
   console.log(`📖 Processing: ${rel}`);
   
@@ -101,7 +109,6 @@ async function processArchive(filePath) {
     const document = dom.window.document;
 
     // 1. MATH CONVERSION: KaTeX -> LaTeX
-    // We target the annotation tag which holds the raw TeX source
     const katexBlocks = document.querySelectorAll('.katex');
     katexBlocks.forEach(k => {
       const annotation = k.querySelector('annotation[encoding="application/x-tex"]');
@@ -109,8 +116,6 @@ async function processArchive(filePath) {
         const tex = annotation.textContent.trim();
         const isDisplay = k.closest('.katex-display') !== null;
         const replacement = isDisplay ? `\n$$\n${tex}\n$$\n` : `$${tex}$`;
-        
-        // Replace the whole KaTeX block with the TeX string
         const span = document.createElement('span');
         span.textContent = replacement;
         k.parentNode.replaceChild(span, k);
@@ -122,17 +127,12 @@ async function processArchive(filePath) {
     images.forEach(img => {
       const src = img.getAttribute('src');
       if (src && !src.startsWith('data:') && !src.startsWith('http')) {
-        // Try to find the image in the zip
         const imgEntry = zip.getEntry(src) || zip.getEntry(`frames/0/${src}`);
         if (imgEntry) {
           const imgExt = path.extname(src);
           const imgName = `img_${Math.random().toString(36).substr(2, 9)}${imgExt}`;
           const imgPath = path.join(ASSETS_DIR, imgName);
-          
           fs.writeFileSync(imgPath, imgEntry.getData());
-          
-          // Update the src in HTML to be relative to the markdown file
-          // Handouts are in course/week/, assets are in ../../assets/
           const relativeAssetPath = path.relative(outDir, ASSETS_DIR).replace(/\\/g, '/') + '/' + imgName;
           img.setAttribute('src', relativeAssetPath);
         }
@@ -140,31 +140,30 @@ async function processArchive(filePath) {
     });
 
     // 3. CONTENT EXTRACTION
-    // We focus on the assessment body or the main content
     const contentArea = document.querySelector('.gcb-assessment-body') || 
                         document.querySelector('.assignment-content') ||
                         document.querySelector('content') ||
                         document.body;
 
-    // Remove unwanted UI junk before conversion
     const trash = contentArea.querySelectorAll('button, .mat-icon, script, style, .sr-only, .qt-warning');
     trash.forEach(t => t.remove());
 
-    // Convert to Markdown
     let markdown = `# ${baseName}\n\n`;
-    
-    // Process top-level children of the content area
-    contentArea.childNodes.forEach(child => {
-      markdown += htmlToMd(child);
-    });
-
-    // Final cleanup of markdown spacing
+    contentArea.childNodes.forEach(child => { markdown += htmlToMd(child); });
     markdown = markdown.replace(/\n{3,}/g, '\n\n').trim();
 
     fs.writeFileSync(outFile, markdown);
-    console.log(`✅ Extracted to Markdown: ${path.basename(outFile)}`);
+    
+    // Add to real-time index
+    searchDocs.push({
+      id: entryRelative,
+      title: baseName,
+      snippet: markdown.substring(0, 150).replace(/\n/g, ' ') + '...',
+      source: 'extracted',
+      path: pathWithoutExt
+    });
 
-    // CRITICAL: Close the window to release memory
+    console.log(`✅ Extracted & Indexed: ${baseName}`);
     dom.window.close();
 
   } catch (err) {
@@ -175,7 +174,7 @@ async function processArchive(filePath) {
 // ─── RUNNER ───────────────────────────────────────────────────────────────────
 
 (async () => {
-  console.log('\n📝 Launching IITM Question-to-Markdown Extractor...\n');
+  console.log('\n📝 Launching Unified IITM Extractor & Indexer...\n');
   
   const files = collectFiles(INPUT_DIR);
   if (!files.length) return console.log('No files found.');
@@ -184,7 +183,16 @@ async function processArchive(filePath) {
     await processArchive(f);
   }
   
-  console.log(`\n✨ Extraction Complete!`);
-  console.log(`📁 Files processed: ${files.length}`);
-  console.log(`🏠 Output: ${OUTPUT_DIR}\n`);
+  // Save Temporary Index for the next step to merge
+  const tempIndex = {
+    timestamp: new Date().toISOString(),
+    extractedDocs: searchDocs,
+    stats: { extractedCount: searchDocs.length }
+  };
+  
+  const indexPath = path.resolve(OUTPUT_DIR, '../extracted-index.tmp.json');
+  fs.writeFileSync(indexPath, JSON.stringify(tempIndex, null, 2));
+
+  console.log(`\n✨ Unified Step 1 Complete!`);
+  console.log(`📊 Extracted and Indexed: ${searchDocs.length} documents\n`);
 })().catch(err => { console.error(err); process.exit(1); });

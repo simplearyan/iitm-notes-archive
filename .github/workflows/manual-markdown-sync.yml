@@ -41,23 +41,12 @@ jobs:
           fi
           mkdir -p markdown/extracted/assets
 
-      - name: 📦 Extract Markdown Content
+      - name: 📦 Step 1: Extract & Pre-Index Course Materials
         run: node --expose-gc --max-old-space-size=6144 scripts/extract-to-markdown.js
         env:
           NODE_OPTIONS: "--expose-gc"
 
-      - name: 🕵️ Inspect Extraction
-        run: |
-          echo "📂 Verifying extracted files before indexing..."
-          if [ -d "markdown/extracted" ]; then
-            echo "📊 Total files found: $(find markdown/extracted -type f | wc -l)"
-            ls -R markdown/extracted | head -n 100
-          else
-            echo "❌ ERROR: markdown/extracted folder missing!"
-            exit 1
-          fi
-
-      - name: 🔍 Generate Navigation Index
+      - name: 🔍 Step 2: Consolidate Navigation Index
         run: node --max-old-space-size=2048 scripts/generate-markdown-index.js
 
       - name: 🔓 Bypass Ignore Rules
