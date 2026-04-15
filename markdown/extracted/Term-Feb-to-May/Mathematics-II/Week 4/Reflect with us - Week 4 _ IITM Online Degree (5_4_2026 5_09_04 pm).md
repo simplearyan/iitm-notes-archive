@@ -13,7 +13,7 @@ Find the dimension of the vector space
 
 $\textbf{Solution:}$
 
-![image](../../../assets/img_95evmz5lj.jpg)
+![image](../../../assets/img_ibm0hxral.jpg)
 
 Observe that, in question, you are asked to find the dimension of the vector space . So first you have to find a basis of the vector space.
 $\textbf{Note:}$ Consider the system of linear equations 

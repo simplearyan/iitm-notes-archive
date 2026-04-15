@@ -20,7 +20,7 @@
  
  Match the matrices in Column A with their inverses in Column B.
 
-![image](../../../assets/img_08zsuseco.jpg)
+![image](../../../assets/img_r5946a4u7.jpg)
 
  
  

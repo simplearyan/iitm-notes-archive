@@ -113,7 +113,7 @@ Consider the following set $S=\lbrace(x,y)\mid x+y=1, x,y \in \mathbb{R}\rbrace$
 In column A the matrix representation of some linear transformations are given with respect to the standard ordered bases. Match the entries in column A with the set $T(S)$ given in column B and the geometric representations of $S$ and $T(S)$ in column C.
  
 
-![image](../../../assets/img_fkwtajvvo.jpg)
+![image](../../../assets/img_isuw7f4ut.jpg)
 
  
  
@@ -581,7 +581,7 @@ R}^3$ consisting of these vectors. It is known that the ranking of a YouTube vid
 The following data in Table M2W6P2 shows the correlation between comments, shares, and views - with YouTube rankings of a video.
 
                              
-![image](../../../assets/img_82epglpty.jpg)
+![image](../../../assets/img_b5s7q5iih.jpg)
 
 Use the above information to answer questions 8, 9 and 10.
 

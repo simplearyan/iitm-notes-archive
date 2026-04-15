@@ -31,7 +31,7 @@ Multiple Select Questions (MSQ):
  
  Match the matrices in column A with their properties in column B and answer the following question.
 
-![image](../../../assets/img_q493yraxe.jpg)
+![image](../../../assets/img_qdxre5dh5.jpg)
 
 Which of the following are true?
 
@@ -150,7 +150,7 @@ d) $\rightarrow$ ii)
  
  Match the systems of linear equations in Column A with their number of solutions in column B and their geometric representation in Column C and answer the following question.
 
-![image](../../../assets/img_6z1t4foix.jpg)
+![image](../../../assets/img_00wova0s6.jpg)
 
 Which of the following are true?
 

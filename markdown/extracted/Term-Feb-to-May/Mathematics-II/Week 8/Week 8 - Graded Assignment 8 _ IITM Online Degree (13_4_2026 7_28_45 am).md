@@ -37,7 +37,7 @@ An inner product on $\mathbb{R}^3$ is defined as:
 
 Match the sets of vectors in column A with their properties of orthogonality or orthonormality in column B with respect to the above inner product.
 
-![image](../../../assets/img_4d0mrszqw.jpg)
+![image](../../../assets/img_xcqyj9ai8.jpg)
 
 Choose the set of correct options. 
 

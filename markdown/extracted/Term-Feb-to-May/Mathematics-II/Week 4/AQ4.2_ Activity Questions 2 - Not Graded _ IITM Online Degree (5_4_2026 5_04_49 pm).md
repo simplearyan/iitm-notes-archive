@@ -31,7 +31,7 @@
  
 Match the vector spaces (with the usual scalar multiplication and vector addition as in $M_{3\times 3}(\mathbb{R})$ ) in column A with their bases in column B in Table : M2W4AQ2.
 
-![image](../../../assets/img_td8d03c2w.jpg)
+![image](../../../assets/img_6xkfeoboj.jpg)
 
 Choose the correct option.
  

@@ -586,7 +586,7 @@ where, $A=\begin{bmatrix}
 Let the matrix
 
                                        
-![image](../../../assets/img_hupwxyjd4.jpg)
+![image](../../../assets/img_t2q41gl0a.jpg)
 
 denote the reduced row echelon form of the augmented matrix corresponding to the system of linear equations above. Which of the following option(s) is (are) correct?
 

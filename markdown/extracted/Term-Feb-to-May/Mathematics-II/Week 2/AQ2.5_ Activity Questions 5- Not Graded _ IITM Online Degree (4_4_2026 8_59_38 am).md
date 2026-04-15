@@ -33,7 +33,7 @@
 given) in Column B, and their corresponding reduced row Echelon forms in Column C
 of Table M2W2AQ2.
 
-![image](../../../assets/img_3sgcql7zr.jpg)
+![image](../../../assets/img_s2eywrerh.jpg)
 
 Find the correct option.
  

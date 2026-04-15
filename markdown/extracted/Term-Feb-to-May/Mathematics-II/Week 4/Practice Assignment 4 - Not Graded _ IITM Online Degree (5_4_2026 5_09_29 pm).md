@@ -30,7 +30,7 @@ Multiple Select Questions (MSQ)
  
 Match the vector spaces (with the usual scalar multiplication and vector addition as in $M_{3\times 3}(\mathbb{R})$ ) in column A with their bases in column B in Table : M2W4P1.
 
-![image](../../../assets/img_hgkt9tzdy.jpg)
+![image](../../../assets/img_9k461v9ht.jpg)
 
 Choose the correct option.
 
@@ -113,7 +113,7 @@ c $\rightarrow$ i
  
  Match the sets of vectors in column A with their properties of linear dependence or independence in column B and the dimension of the vector spaces in column C spanned by the sets.
 
-![image](../../../assets/img_m69uok6fy.jpg)
+![image](../../../assets/img_do83s9v0e.jpg)
 
  
  

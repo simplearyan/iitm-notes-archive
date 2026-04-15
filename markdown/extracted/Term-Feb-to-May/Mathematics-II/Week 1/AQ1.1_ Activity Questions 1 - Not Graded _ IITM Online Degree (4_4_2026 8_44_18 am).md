@@ -37,7 +37,7 @@ of order $2$ or $3$.
  
  Choose the set of correct options using Figure M2W1AQ1.
 
-![image](../../../assets/img_9i5w5yat7.jpg)
+![image](../../../assets/img_iv1gzhn3v.jpg)
 
 [Hint: Recall that, vector addition and scalar multiplication are done coordinatewise.]
  
@@ -166,7 +166,7 @@ $(2,3)=0V_1+2V_2+ 3V_3$
  
  
 
-![image](../../../assets/img_1n2ip054j.jpg)
+![image](../../../assets/img_58o3uoif1.jpg)
 
 The marks obtained by Karthika, Romy and Farzana in Quiz 1, Quiz 2 and End sem (with
 the maximum marks for each exam being 100) are shown in Table M2W1AQ1.
@@ -604,7 +604,7 @@ $(a,0,c)= aV_1+0V_2+cV_3$
  
 Consider vectors $A(-1, 2)$ and $B(2, -2)$ in $\mathbb{R}^2$ as shown in Figure M2W1AQ2.
 
-![image](../../../assets/img_nh11sfgoo.jpg)
+![image](../../../assets/img_2xi6d2hsn.jpg)
 
 Choose the set of correct options.
 

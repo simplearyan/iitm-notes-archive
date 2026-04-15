@@ -33,7 +33,7 @@ Multiple Select Questions (MSQ):
 The marks obtained by Karthika, Romy and Farzana in Quiz 1, Quiz 2 and End sem (with the maximum marks for each exam being 100) are shown in Table M2W5G1.
 
                      
-![image](../../../assets/img_4hefrnpxr.jpg)
+![image](../../../assets/img_fw34szhlj.jpg)
 
 If $x_1 \%$ of Quiz 1, $x_2 \%$ of Quiz 2, and $x_3 \%$ of End sem is taken to calculate the total marks $T_1(x_1,x_2,x_3), T_2(x_1,x_2,x_3), \text{ and } T_3(x_1,x_2,x_3)$ of Karthika, Romy, and Farzana, respectively, then choose the correct set of options. 
  
@@ -660,7 +660,7 @@ Score: 1
 $\textbf{Example:}$
  Table M2W5G2 shows an example of the rating given by the customers mentioned above as: Shubham gave 2-stars rating, Poulami gave 1-star rating, Asrifa gave 1-star rating, Raphael gave 5-stars rating, and Vicky did not give any rating.
 
-![image](../../../assets/img_j48ywi4r6.jpg)
+![image](../../../assets/img_wtj66qlgv.jpg)
 
 Based on the above information answer the following questions.
 

@@ -108,7 +108,7 @@ If $A$ and $B$ are $n \times n$ matrices of rank $n$, then $AB$ has rank $n$.
  
  Match the vector spaces (with the usual scalar multiplication and vector addition as in $M_{3\times 3}(\mathbb{R})$ ) in column A with their bases in column B and the dimensions of the vector spaces in column C in Table : M2W4GA1.
 
-![image](../../../assets/img_6kaldxs4q.jpg)
+![image](../../../assets/img_49vdwzvmb.jpg)
 
 Choose the correct option.
 
