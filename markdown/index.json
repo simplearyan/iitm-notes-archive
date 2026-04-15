@@ -1,0 +1,70 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-04-15T10:04:18.293Z",
+  "stats": {
+    "totalFiles": 1,
+    "extractedFiles": 0,
+    "manualFiles": 1
+  },
+  "navigation": [
+    {
+      "type": "folder",
+      "name": "Study Notes",
+      "path": "manual",
+      "children": [
+        {
+          "type": "file",
+          "name": "Getting Started with Markdown",
+          "path": "GETTING_STARTED",
+          "source": "manual"
+        }
+      ]
+    }
+  ],
+  "search": {
+    "version": "2",
+    "fields": [
+      {
+        "fieldName": "title",
+        "boost": 10
+      },
+      {
+        "fieldName": "content",
+        "boost": 1
+      },
+      {
+        "fieldName": "tags",
+        "boost": 5
+      }
+    ],
+    "fieldVectors": {},
+    "invertedIndex": {},
+    "documents": [
+      {
+        "id": "GETTING_STARTED",
+        "title": "Getting Started with Markdown",
+        "path": "GETTING_STARTED",
+        "source": "manual",
+        "content": "\n\n# Getting Started with Markdown Format\n\nWelcome to the IITM Markdown Archive! This guide will help you understand how to use and contribute to the markdown documentation system.\n\n## Overview\n\nThis site provides:\n- **Extracted Markdown**: Automatically converted from course HTML archives\n- **Manual Notes**: Hand-written markdown files for study notes\n- **Full-text Search**: Quick access to all course materials\n- **Organized Navigation**: Hierarchical sidebar for easy browsing\n\n## Browsing Content\n\n### Using the Sidebar\n1. Click on course folders to expand them\n2. Select a document to view it in the main content area\n3. Use breadcrumbs at the top to navigate back\n\n### Searching\n1. Type in the search box (top of sidebar)\n2. Results appear as you type\n3. Click a result to jump to that document\n\n### Navigation\n- **Back Button**: Click \"Home\" in breadcrumbs to return to dashboard\n- **Mobile**: Tap the hamburger menu (☰) to toggle sidebar\n\n## Understanding the Structure\n\n```\nmarkdown/\n├── extracted/          ← Auto-extracted from archives\n│   └── Term-Feb-to-May/\n│       ├── Mathematics-II/\n│       │   ├── Week 1/\n│       │   └── Week 2/\n│       └── Statistics-II/\n│\n├── manual/             ← Hand-written study notes\n│   ├── Quick-Notes/\n│   └── Tutorials/\n│\n└── assets/             ← Shared images and resources\n    └── (auto-populated)\n```\n\n## Creating Manual Markdown Files\n\n### File Format\nEach markdown file should start with YAML frontmatter:\n\n```markdown\n---\ntitle: Your Document Title\ndate: 2024-01-01\ntags: topic1, topic2, topic3\n---\n\n# Document Title\n\nYour content here...\n```\n\n### Organization Tips\n- **Mirror extracted structure** for consistency\n- **Use descriptive titles** that appear in search\n- **Add relevant tags** for better discoverability\n- **Keep files under 500 lines** for readability\n\n### Markdown Syntax Support\n\n#### Math\n- **Inline**: Wrap in single dollars $E = mc^2$\n- **Display**: Wrap in double dollars $$E = mc^2$$\n\n#### Code\nUse triple backticks with language identifier:\n\n```python\ndef hello_world():\n    print(\"Hello, World!\")\n```\n\n#### Tables\n```markdown\n| Header 1 | Header 2 |\n|----------|----------|\n| Cell 1   | Cell 2   |\n```\n\n#### Images\n```markdown\n![Description](path/to/image.png)\n```\n\n*Note: relative paths are resolved from the document location*\n\n## Building the Site Locally\n\n### Step 1: Install Dependencies\n```bash\nnpm install\n```\n\n### Step 2: Extract Markdown\n```bash\nnpm run markdown:extract\n```\n\n### Step 3: Generate Index\n```bash\nnpm run markdown:index\n```\n\n### Step 4: Open in Browser\nOpen `/markdown/index.html` in your browser (use a local server)\n\n## GitHub Actions Automation\n\n### Automatic Deployment\nEvery push to `main` automatically:\n1. ✅ Extracts markdown from all archives\n2. ✅ Regenerates the search index\n3. ✅ Injects updated data into the SPA\n4. ✅ Deploys to `/markdown/` on GitHub Pages\n\n### Manual Markdown Extraction\nTrigger the extraction workflow from the Actions tab for on-demand extraction of specific courses.\n\n## Viewing the Live Site\n\n- **Markdown Archive**: https://simplearyan.github.io/iitm-notes-archive/markdown/\n- **Main Archive**: https://simplearyan.github.io/iitm-notes-archive/\n\n## Tips & Best Practices\n\n### Writing\n- Use clear, descriptive headings\n- Break content into logical sections\n- Include code examples where relevant\n- Add proper formatting (bold, italic, etc.)\n\n### Organization\n- Keep related topics in the same folder\n- Use consistent naming conventions\n- Create index files for folder navigation (optional)\n\n### Math & Formulas\n- Use LaTeX syntax within $ delimiters\n- Test complex formulas in a math renderer\n- Keep formulas concise and readable\n\n## Troubleshooting\n\n### Search Not Working\n- Ensure `markdown/index.json` exists\n- Check browser console (F12) for errors\n- Rebuild index: `npm run markdown:index`\n\n### Images Not Displaying\n- Check relative paths in markdown\n- Verify images are in `markdown/extracted/assets/`\n- Use forward slashes (/) in paths, not backslashes\n\n### Math not rendering\n- Use correct LaTeX syntax\n- Check for missing $ delimiters\n- Ensure KaTeX library loads properly\n\n## Additional Resources\n\n- [Markdown Syntax Guide](https://www.markdownguide.org/)\n- [KaTeX Function Support](https://katex.org/docs/support_table.html)\n- [Prism.js Supported Languages](https://prismjs.com/#supported-languages)\n\n---\n\n**Have questions?** Check the main repository README or open an issue on GitHub.\n",
+        "snippet": "",
+        "tags": [
+          "guide",
+          "markdown",
+          "documentation"
+        ]
+      }
+    ],
+    "pipelineFunctions": [
+      "stemmer"
+    ]
+  },
+  "breadcrumbs": {
+    "manual": [
+      "Study Notes"
+    ],
+    "GETTING_STARTED": [
+      "Study Notes",
+      "Getting Started with Markdown"
+    ]
+  }
+}

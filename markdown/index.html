@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Vault | IITM Archive</title>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Tailwind CSS (via CDN for high customization) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Markdown Renderer & Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    
+    <!-- Prism Engine (Modular) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+        :root {
+            --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        body { font-family: var(--font-main); }
+        code, pre { font-family: var(--font-mono) !important; }
+
+        /* Custom Scrollbar */
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { 
+            background: rgba(203, 213, 225, 0.2); 
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(203, 213, 225, 0.4); }
+
+        /* Typography Optimizations */
+        .prose {
+            color: #334155;
+            line-height: 1.75;
+            font-size: 1.125rem;
+        }
+        .prose h1, .prose h2, .prose h3 { color: #1e293b; font-weight: 800; margin-top: 2.5rem; margin-bottom: 1.25rem; }
+        .prose h1 { font-size: 2.25rem; }
+        .prose h2 { font-size: 1.75rem; border-bottom: 1px solid #f1f5f9; padding-bottom: 0.5rem; }
+        .prose a { color: #4f46e5; text-decoration: underline; font-weight: 500; }
+        .prose img { border-radius: 1rem; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); margin: 2rem 0; }
+        .prose blockquote { border-left: 4px solid #e2e8f0; padding-left: 1.5rem; color: #64748b; font-style: italic; }
+        
+        .katex-display { margin: 1.5rem 0; overflow-x: auto; padding: 1rem 0; }
+
+        /* Nav Animations */
+        .nav-link { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+        .nav-link.active { 
+            background-color: #f5f3ff;
+            color: #4f46e5;
+            font-weight: 600;
+            box-shadow: inset 4px 0 0 -1px #4f46e5;
+        }
+    </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 overflow-hidden h-screen flex flex-col md:flex-row">
+
+    <!-- Mobile Header -->
+    <header class="md:hidden flex items-center justify-between px-6 py-4 bg-white border-b border-slate-200 z-50">
+        <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white">
+                <i data-lucide="book-open" class="w-5 h-5"></i>
+            </div>
+            <span class="font-extrabold text-slate-800 uppercase tracking-tighter">Markdown Vault</span>
+        </div>
+        <button id="mobile-toggle" class="p-2 text-slate-500 hover:bg-slate-50 rounded-lg">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <aside id="sidebar" class="fixed inset-y-0 left-0 z-40 w-80 bg-white border-r border-slate-200 transform -translate-x-full md:relative md:translate-x-0 transition-transform duration-300 flex flex-col">
+        <div class="p-8 pb-4">
+            <div class="flex items-center justify-between mb-8 overflow-hidden">
+                <a href="../" class="flex items-center group">
+                    <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-white mr-4 group-hover:bg-indigo-600 transition-colors shadow-lg">
+                        <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-black text-xl text-slate-900 tracking-tighter leading-none">IITM PORTAL</h2>
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1 inline-block">Study Archive</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Search -->
+            <div class="relative group">
+                <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 group-focus-within:text-indigo-500 transition-colors"></i>
+                <input id="search-bar" type="text" placeholder="Search notes... (Ctrl+K)" 
+                    class="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all">
+            </div>
+        </div>
+
+        <nav id="nav-tree" class="flex-1 overflow-y-auto custom-scrollbar px-4 py-4">
+            <div class="flex flex-col items-center justify-center h-full text-slate-300 opacity-50" id="nav-loader">
+                <div class="w-8 h-8 border-2 border-slate-200 border-t-indigo-500 rounded-full animate-spin mb-4"></div>
+            </div>
+        </nav>
+
+        <div class="p-6 border-t border-slate-100 bg-slate-50/50">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 text-xs font-bold">V1</div>
+                <div>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Storage Status</p>
+                    <p class="text-xs font-bold text-slate-700" id="stats-label">Loading Index...</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Overlay -->
+    <div id="sidebar-overlay" class="fixed inset-0 bg-slate-900/10 backdrop-blur-sm z-30 hidden"></div>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 overflow-y-auto custom-scrollbar bg-white md:bg-[#f8fafc] flex flex-col relative">
+        
+        <!-- Reading Header (Desktop) -->
+        <header id="reading-header" class="hidden md:flex sticky top-0 bg-white/80 backdrop-blur-xl border-b border-slate-200 px-12 py-4 items-center justify-between z-20">
+            <div class="flex items-center gap-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest" id="breadcrumb">
+                <i data-lucide="home" class="w-3 h-3 cursor-pointer" onclick="location.hash=''"></i>
+                <span>/</span>
+                <span>Select a module</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <button onclick="window.print()" class="p-2 text-slate-500 hover:bg-slate-100 rounded-lg transition-colors" title="Print/Save as PDF">
+                    <i data-lucide="printer" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Markdown Container -->
+        <article class="flex-1 max-w-5xl mx-auto w-full px-6 md:px-20 py-12 md:py-24">
+            
+            <!-- Dashboard View (Empty State) -->
+            <div id="empty-state" class="flex flex-col items-center justify-center min-h-[60vh]">
+                <div class="w-24 h-24 mb-8 text-indigo-100">
+                    <i data-lucide="file-text" class="w-full h-full stroke-[1]"></i>
+                </div>
+                <h1 class="text-3xl font-black text-slate-900 tracking-tight mb-4 text-center">Your Personal Knowledge Vault</h1>
+                <p class="text-slate-400 text-lg max-w-md text-center mb-10">Select a course material from the sidebar to begin your reading session. Everything is offline-ready and optimized for focus.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                            <i data-lucide="zap" class="w-4 h-4 text-amber-500"></i> High Performance
+                        </h3>
+                        <p class="text-sm text-slate-500">Static markdown rendering ensures instantaneous page loads and low memory usage.</p>
+                    </div>
+                    <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                            <i data-lucide="sigma" class="w-4 h-4 text-indigo-500"></i> Math Support
+                        </h3>
+                        <p class="text-sm text-slate-500">Full KaTeX integration for high-fidelity mathematical notation rendering.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="md-viewer" class="prose hidden animate-in fade-in slide-in-from-bottom-4 duration-500">
+                <!-- Content injected here -->
+            </div>
+
+            <!-- Page Meta -->
+            <footer id="md-footer" class="mt-20 pt-12 border-t border-slate-100 hidden">
+                <div class="flex items-center justify-between text-[10px] font-bold text-slate-300 uppercase tracking-wider">
+                    <span id="footer-path">PATH/TO/DOC.MD</span>
+                    <span id="footer-date">LOADED JUST NOW</span>
+                </div>
+            </footer>
+        </article>
+
+        <!-- TOC Sidebar (Optional) -->
+        <div class="hidden xl:block fixed right-8 top-32 w-48" id="toc-container"></div>
+    </main>
+
+    <script>
+        /**
+         * IITM Markdown Vault Core Engine
+         * ─────────────────────────────────────────────────────────────────────────────
+         */
+        (function() {
+            'use strict';
+
+            const MD_CONFIG = {
+                INDEX_FILE: 'index.json',
+                ASSET_ROOT: 'extracted/assets/'
+            };
+
+            const STATE = {
+                index: null,
+                currentPath: null,
+                isSidebarOpen: false
+            };
+
+            // Initialize
+            document.addEventListener('DOMContentLoaded', init);
+
+            async function init() {
+                if (typeof lucide !== 'undefined') lucide.createIcons();
+                setupEventListeners();
+                await loadIndex();
+                handleRouting();
+            }
+
+            function setupEventListeners() {
+                // Mobile Toggles
+                const toggle = document.getElementById('mobile-toggle');
+                const overlay = document.getElementById('sidebar-overlay');
+                
+                const toggleSidebar = () => {
+                    STATE.isSidebarOpen = !STATE.isSidebarOpen;
+                    document.getElementById('sidebar').classList.toggle('-translate-x-full');
+                    overlay.classList.toggle('hidden');
+                };
+
+                toggle?.addEventListener('click', toggleSidebar);
+                overlay?.addEventListener('click', toggleSidebar);
+
+                // Search
+                document.getElementById('search-bar')?.addEventListener('input', (e) => handleSearch(e.target.value));
+
+                // Shortcuts
+                document.addEventListener('keydown', (e) => {
+                    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                        e.preventDefault();
+                        document.getElementById('search-bar')?.focus();
+                    }
+                });
+
+                window.addEventListener('hashchange', handleRouting);
+            }
+
+            async function loadIndex() {
+                try {
+                    // Force fresh index load after every deployment
+                    const bust = `?v=${new Date().getTime()}`;
+                    const res = await fetch(MD_CONFIG.INDEX_FILE + bust);
+                    if (!res.ok) throw new Error("Index file missing");
+                    STATE.index = await res.json();
+                    
+                    document.getElementById('stats-label').innerText = `${STATE.index.stats.totalFiles} Documents Loaded`;
+                    renderNav(STATE.index.navigation);
+                } catch (err) {
+                    console.error("Critical Load Error:", err);
+                    document.getElementById('nav-loader').innerHTML = `
+                        <p class="text-xs text-rose-400 font-bold">FAILED TO LOAD INDEX</p>
+                        <p class="text-[9px] text-slate-400 mt-2">Run 'npm run markdown:all'</p>
+                    `;
+                }
+            }
+
+            function handleRouting() {
+                const rawHash = window.location.hash.substring(1);
+                if (!rawHash) {
+                    showDashboard();
+                    return;
+                }
+                
+                const safePath = decodeURIComponent(rawHash);
+                loadDocument(safePath);
+            }
+
+            function showDashboard() {
+                document.getElementById('empty-state').classList.remove('hidden');
+                document.getElementById('md-viewer').classList.add('hidden');
+                document.getElementById('md-footer').classList.add('hidden');
+                document.getElementById('reading-header').classList.add('md:hidden');
+                
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+            }
+
+            async function loadDocument(filePath) {
+                const node = findNodeByPath(STATE.index.navigation, filePath);
+                if (!node) {
+                    showError("Document not found in index.");
+                    return;
+                }
+
+                const fetchUrl = `${node.source}/${node.path}.md`;
+                console.log("Fetching:", fetchUrl);
+
+                try {
+                    const res = await fetch(fetchUrl);
+                    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                    
+                    const text = await res.text();
+                    renderMarkdown(text, node);
+                    
+                    STATE.currentPath = filePath;
+                    updateUIForNewDoc(node);
+                    
+                } catch (err) {
+                    console.error("MD Fetch Error:", err);
+                    showError(`Failed to load content for: ${node.name}. Ensure 'markdown/${node.source}' exists.`);
+                }
+            }
+
+            function renderMarkdown(raw, node) {
+                const content = raw.replace(/^---[\s\S]*?---/, '').trim();
+                const renderer = new marked.Renderer();
+                
+                renderer.image = (token) => {
+                    let src = token.href;
+                    if (!src.startsWith('http')) {
+                        src = `extracted/assets/${src.split('/').pop()}`;
+                    }
+                    return `<div class="my-10 flex flex-col items-center">
+                        <img src="${src}" alt="${token.text || 'Image'}" class="max-w-full">
+                        <p class="text-xs text-slate-400 mt-3 font-medium uppercase tracking-widest">${token.text || ''}</p>
+                    </div>`;
+                };
+
+                renderer.code = (token) => {
+                    const lang = token.lang || 'plaintext';
+                    const highlighted = Prism.highlight(token.text, Prism.languages[lang] || Prism.languages.plaintext, lang);
+                    return `<div class="relative my-8 group">
+                        <div class="absolute right-4 top-4 text-[9px] font-bold text-slate-500 uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">${lang}</div>
+                        <pre class="bg-slate-900 !rounded-2xl !p-6 !text-sm overflow-x-auto"><code class="language-${lang}">${highlighted}</code></pre>
+                    </div>`;
+                };
+
+                marked.setOptions({ renderer, gfm: true, breaks: true });
+                const html = marked.parse(content);
+
+                const viewer = document.getElementById('md-viewer');
+                viewer.innerHTML = html;
+
+                renderMath(viewer);
+
+                viewer.classList.remove('hidden');
+                document.getElementById('empty-state').classList.add('hidden');
+                document.getElementById('md-footer').classList.remove('hidden');
+                document.getElementById('reading-header').classList.remove('md:hidden');
+                
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            function renderMath(container) {
+                const walk = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
+                let node;
+                const matches = [];
+
+                while (node = walk.nextNode()) {
+                    if (node.textContent.includes('$')) matches.push(node);
+                }
+
+                matches.forEach(node => {
+                    const text = node.textContent;
+                    const frag = document.createDocumentFragment();
+                    let lastIdx = 0;
+                    const parser = /\$\$([\s\S]+?)\$\$|\$([^\n$]+?)\$/g;
+                    let m;
+
+                    while ((m = parser.exec(text)) !== null) {
+                        if (m.index > lastIdx) {
+                            frag.appendChild(document.createTextNode(text.slice(lastIdx, m.index)));
+                        }
+                        const math = m[1] || m[2];
+                        const isDisplay = !!m[1];
+                        const span = document.createElement('span');
+                        try {
+                            katex.render(math, span, { displayMode: isDisplay, throwOnError: false });
+                        } catch (e) {
+                            span.textContent = m[0];
+                        }
+                        frag.appendChild(span);
+                        lastIdx = parser.lastIndex;
+                    }
+
+                    if (lastIdx < text.length) {
+                        frag.appendChild(document.createTextNode(text.slice(lastIdx)));
+                    }
+                    node.parentNode.replaceChild(frag, node);
+                });
+            }
+
+            function renderNav(items, parentEl = document.getElementById('nav-tree'), level = 0) {
+                if (level === 0) parentEl.innerHTML = '';
+                items.forEach(item => {
+                    if (item.type === 'folder') {
+                        const folder = createFolderEl(item, level);
+                        parentEl.appendChild(folder.el);
+                        if (item.children) renderNav(item.children, folder.contentEl, level + 1);
+                    } else {
+                        const file = createFileEl(item, level);
+                        parentEl.appendChild(file);
+                    }
+                });
+            }
+
+            function createFolderEl(item, level) {
+                const div = document.createElement('div');
+                div.className = 'mb-1';
+                const btn = document.createElement('button');
+                btn.className = `flex items-center w-full px-4 py-2 text-left rounded-lg text-xs font-bold text-slate-500 hover:text-slate-900 hover:bg-slate-100 transition-all group`;
+                btn.style.paddingLeft = `${(level + 1) * 1}rem`;
+                btn.innerHTML = `
+                    <i data-lucide="chevron-right" class="w-3.5 h-3.5 mr-2 transition-transform chevron"></i>
+                    <i data-lucide="folder" class="w-3.5 h-3.5 mr-2 opacity-40"></i>
+                    <span class="truncate">${item.name}</span>
+                `;
+                const content = document.createElement('div');
+                content.className = 'hidden flex flex-col mt-0.5';
+                btn.onclick = () => {
+                    const isHidden = content.classList.toggle('hidden');
+                    btn.querySelector('.chevron').classList.toggle('rotate-90', !isHidden);
+                };
+                div.appendChild(btn);
+                div.appendChild(content);
+                setTimeout(() => lucide.createIcons({ scope: div }), 0);
+                return { el: div, contentEl: content };
+            }
+
+            function createFileEl(item, level) {
+                const btn = document.createElement('a');
+                btn.href = `#${encodeURIComponent(item.path)}`;
+                btn.className = `nav-link flex items-center w-full px-4 py-1.5 text-xs text-slate-500 hover:bg-slate-50 rounded-lg group truncate`;
+                btn.style.paddingLeft = `${(level + 1.5) * 1}rem`;
+                btn.setAttribute('data-path', item.path);
+                btn.innerHTML = `
+                    <i data-lucide="file-text" class="w-3 h-3 mr-2.5 opacity-30 group-hover:opacity-100 transition-opacity"></i>
+                    <span class="truncate">${item.name}</span>
+                `;
+                btn.onclick = (e) => {
+                    if (window.innerWidth < 768) {
+                        document.getElementById('sidebar').classList.add('-translate-x-full');
+                        document.getElementById('sidebar-overlay').classList.add('hidden');
+                    }
+                };
+                setTimeout(() => lucide.createIcons({ scope: btn }), 0);
+                return btn;
+            }
+
+            function findNodeByPath(nodes, targetPath) {
+                for (const n of nodes) {
+                    if (n.type === 'file' && n.path === targetPath) return n;
+                    if (n.children) {
+                        const found = findNodeByPath(n.children, targetPath);
+                        if (found) return found;
+                    }
+                }
+                return null;
+            }
+
+            function updateUIForNewDoc(node) {
+                document.getElementById('breadcrumb').innerHTML = `
+                    <i data-lucide="home" class="w-3 h-3 cursor-pointer" onclick="location.hash=''"></i>
+                    <span class="mx-1">/</span>
+                    <span class="text-indigo-600">${node.name}</span>
+                `;
+                document.getElementById('footer-path').innerText = `${node.source}/${node.path}.md`;
+                document.getElementById('footer-date').innerText = `MODIFIED 2026-04-15`;
+                document.querySelectorAll('.nav-link').forEach(l => {
+                    l.classList.toggle('active', l.getAttribute('data-path') === node.path);
+                });
+                if (typeof lucide !== 'undefined') lucide.createIcons();
+            }
+
+            function handleSearch(query) {
+                if (!query) {
+                    renderNav(STATE.index.navigation);
+                    return;
+                }
+                const q = query.toLowerCase();
+                const filtered = [];
+                function search(nodes) {
+                    nodes.forEach(n => {
+                        if (n.type === 'file' && (n.name.toLowerCase().includes(q) || n.path.toLowerCase().includes(q))) {
+                            filtered.push(n);
+                        }
+                        if (n.children) search(n.children);
+                    });
+                }
+                search(STATE.index.navigation);
+                renderNav(filtered);
+            }
+
+            function showError(msg) {
+                const viewer = document.getElementById('md-viewer');
+                viewer.innerHTML = `<div class="bg-rose-50 border border-rose-100 rounded-2xl p-8 text-center">
+                    <i data-lucide="alert-circle" class="w-12 h-12 text-rose-400 mx-auto mb-4"></i>
+                    <h3 class="font-bold text-rose-900 mb-2">Error Loading Document</h3>
+                    <p class="text-sm text-rose-600">${msg}</p>
+                </div>`;
+                viewer.classList.remove('hidden');
+                lucide.createIcons({ scope: viewer });
+            }
+        })();
+    </script>
+</body>
+</html>
