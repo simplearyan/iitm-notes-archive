@@ -50,6 +50,7 @@ jobs:
         run: |
           echo "📂 Verifying extracted files before indexing..."
           if [ -d "markdown/extracted" ]; then
+            echo "📊 Total files found: $(find markdown/extracted -type f | wc -l)"
             ls -R markdown/extracted | head -n 100
           else
             echo "❌ ERROR: markdown/extracted folder missing!"

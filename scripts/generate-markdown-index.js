@@ -14,10 +14,11 @@ const fs = require('fs');
 const path = require('path');
 
 // ============ Configuration ============
-const MARKDOWN_ROOT = path.join(__dirname, '..', 'markdown');
-const EXTRACTED_DIR = path.join(MARKDOWN_ROOT, 'extracted');
-const MANUAL_DIR = path.join(MARKDOWN_ROOT, 'manual');
-const OUTPUT_PATH = path.join(MARKDOWN_ROOT, 'index.json');
+const CWD = process.cwd();
+const MARKDOWN_ROOT = path.resolve(CWD, 'markdown');
+const EXTRACTED_DIR = path.resolve(MARKDOWN_ROOT, 'extracted');
+const MANUAL_DIR = path.resolve(MARKDOWN_ROOT, 'manual');
+const OUTPUT_PATH = path.resolve(MARKDOWN_ROOT, 'index.json');
 
 // Folders to skip during traversal
 const SKIP_FOLDERS = ['.git', '.github', 'node_modules', 'assets'];
@@ -112,6 +113,8 @@ function scanDirectory(dirPath, relativePath = '', source = 'extracted') {
       // Get file name without .md extension
       const fileTitle = frontmatter.title || title || entry.name.replace(/\.md$/, '');
       const pathWithoutExt = entryRelative.replace(/\.md$/, ''); // Remove .md from path
+      
+      console.log(`✅  [${source}] Found: ${entryRelative}`);
       
       items.push({
         type: 'file',
