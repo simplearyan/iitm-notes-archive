@@ -20,5 +20,9 @@ node_modules/
 Thumbs.db
 
 lighthouse-results/
+
 # binary PDFs are large; the GitHub Actions workflow will commit them back automatically with [skip ci] after each CI run
 output/ 
+
+# extracted markdown files
+handouts/
