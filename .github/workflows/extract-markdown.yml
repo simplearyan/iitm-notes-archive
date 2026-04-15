@@ -37,6 +37,28 @@ jobs:
       - name: Generate Markdown Index
         run: node --max-old-space-size=2048 scripts/generate-markdown-index.js
 
+      - name: Inject Markdown Index into HTML
+        run: node scripts/inject-markdown-index.js
+
+      - name: Upload Markdown Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: extracted-markdown-${{ github.run_id }}
+          path: markdown/
+          retention-days: 14
+
+      - name: Deploy Markdown to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./markdown
+          publish_branch: gh-pages
+          destination_dir: markdown
+          commit_message: "📝 markdown: sync extracted content and index"
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          keep_files: true
+
       - name: Check for changes
         id: check_changes
         run: |
@@ -55,12 +77,14 @@ jobs:
           body: |
             Automated markdown extraction and index generation.
             
+            📦 **Artifacts**: Available in workflow run for 14 days
+            📝 **gh-pages**: https://simplearyan.github.io/iitm-notes-archive/markdown/
+            
             Changes:
             - Extracted/updated markdown files from SingleFileZ archives
-            - Regenerated search index
+            - Regenerated search index with all documents
+            - Injected index into markdown site HTML
             - Updated sidebar navigation tree
-          branch: markdown-extraction-${GITHUB_RUN_ID}
-          delete-branch: true
 
       - name: Commit and push
         if: steps.check_changes.outputs.has_changes == 'true'

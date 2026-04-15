@@ -33,27 +33,26 @@ function ensureDir(dirPath) {
 }
 
 /**
- * Extract KaTeX/LaTeX math from HTML
+ * Extract KaTeX/LaTeX math from HTML using DOM manipulation
  */
-function extractMath(html) {
-  const dom = new JSDOM(html);
-  const doc = dom.window.document;
-  let content = html;
-  
+function processMathInDoc(doc) {
   // Find all .katex elements with math annotations
   const mathElements = doc.querySelectorAll('.katex');
   mathElements.forEach(el => {
     const annotation = el.querySelector('annotation[encoding="application/x-tex"]');
     if (annotation) {
       const latex = annotation.textContent;
-      // Determine if inline or display math based on context
-      const isDisplay = el.classList.contains('display') || el.parentElement?.classList.contains('math-display');
-      const tex = isDisplay ? `$$${latex}$$` : `$${latex}$`;
-      content = content.replace(el.outerHTML, tex);
+      const isDisplay = el.classList.contains('display') || 
+                        el.parentElement?.classList.contains('math-display') ||
+                        el.closest('.math-display') !== null;
+      
+      const tex = isDisplay ? `\n\n$$${latex}$$\n\n` : `$${latex}$`;
+      
+      // Replace the element with a text node
+      const texNode = doc.createTextNode(tex);
+      el.parentNode.replaceChild(texNode, el);
     }
   });
-  
-  return content;
 }
 
 /**
@@ -286,15 +285,12 @@ function processArchive(filePath, relativePath) {
     
     try {
       // Extract HTML content - this creates the largest memory footprint
-      dom = new JSDOM(fileData.toString('utf-8'), {
-        pretendToBeVisual: false,
-        beforeParse(window) {
-          // Disable resource loading to save memory
-          window.fetch = () => {};
-        }
-      });
+      const doc = dom.window.document;
       
-      const htmlContent = dom.window.document.body.innerHTML;
+      // Process math in-place in the DOM
+      processMathInDoc(doc);
+      
+      const htmlContent = doc.body.innerHTML;
       
       // Close and clear DOM to free memory immediately
       try {
@@ -305,8 +301,7 @@ function processArchive(filePath, relativePath) {
       dom = null;
       
       // Convert to markdown
-      const withMath = extractMath(htmlContent);
-      const markdown = htmlToMarkdown(withMath, imageMap);
+      const markdown = htmlToMarkdown(htmlContent, imageMap);
       
       // Create output markdown file
       const outputPath = path.join(outputDir, `${fileName}.md`);
