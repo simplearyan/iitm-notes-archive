@@ -46,6 +46,16 @@ jobs:
         env:
           NODE_OPTIONS: "--expose-gc"
 
+      - name: 🕵️ Inspect Extraction
+        run: |
+          echo "📂 Verifying extracted files before indexing..."
+          if [ -d "markdown/extracted" ]; then
+            ls -R markdown/extracted | head -n 100
+          else
+            echo "❌ ERROR: markdown/extracted folder missing!"
+            exit 1
+          fi
+
       - name: 🔍 Generate Navigation Index
         run: node --max-old-space-size=2048 scripts/generate-markdown-index.js
 

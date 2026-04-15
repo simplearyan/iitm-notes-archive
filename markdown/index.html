@@ -249,6 +249,9 @@
                     if (!res.ok) throw new Error("Index file missing");
                     STATE.index = await res.json();
                     
+                    // Diagnostic Log
+                    console.log("📂 Reading Vault Index Loaded:", STATE.index);
+                    
                     document.getElementById('stats-label').innerText = `${STATE.index.stats.totalFiles} Documents Loaded`;
                     renderNav(STATE.index.navigation);
                 } catch (err) {

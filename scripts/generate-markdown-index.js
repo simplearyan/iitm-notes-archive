@@ -194,28 +194,15 @@ function buildSearchIndex(searchDocs) {
 // ============ Main Execution ============
 
 console.log('🔍 Generating markdown index...');
+console.log(`📁 Scanning Extracted: ${EXTRACTED_DIR}`);
 
 const { items: extractedItems, searchDocs: extractedDocs } = scanDirectory(EXTRACTED_DIR, '', 'extracted');
+
+console.log(`📁 Scanning Manual: ${MANUAL_DIR}`);
 const { items: manualItems, searchDocs: manualDocs } = scanDirectory(MANUAL_DIR, '', 'manual');
 
-// Merge both sources
-const allItems = [];
-if (extractedItems.length > 0) {
-  allItems.push({
-    type: 'folder',
-    name: 'Course Materials',
-    path: 'extracted',
-    children: extractedItems,
-  });
-}
-if (manualItems.length > 0) {
-  allItems.push({
-    type: 'folder',
-    name: 'Study Notes',
-    path: 'manual',
-    children: manualItems,
-  });
-}
+// Merge both sources directly for a flatter structure
+const allItems = [...extractedItems, ...manualItems];
 
 const breadcrumbs = buildBreadcrumbMap(allItems);
 const searchIndex = buildSearchIndex([...extractedDocs, ...manualDocs]);
