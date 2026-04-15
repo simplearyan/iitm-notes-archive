@@ -26,3 +26,5 @@ output/
 
 # extracted markdown files
 handouts/
+markdown/extracted/
+markdown/index.json

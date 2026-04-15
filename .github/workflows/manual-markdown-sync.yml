@@ -53,7 +53,6 @@ jobs:
         run: |
           echo "🔓 Removing .gitignore files to expose generated content..."
           rm -f .gitignore
-          rm -f markdown/.gitignore
           rm -f markdown/extracted/.gitkeep
 
       - name: 🕵️ Final Inspection (Verification Log)

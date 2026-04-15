@@ -53,9 +53,7 @@ jobs:
         run: node --max-old-space-size=2048 scripts/generate-markdown-index.js
 
       - name: Prep Deployment Artifact (Bypass ignores)
-        run: |
-          rm -f .gitignore
-          rm -f markdown/.gitignore
+        run: rm -f .gitignore
 
       - name: "🚀 Sync Reading Vault to gh-pages"
         uses: peaceiris/actions-gh-pages@v4
