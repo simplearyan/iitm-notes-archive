@@ -179,5 +179,7 @@ async function processArchive(filePath) {
     await processArchive(f);
   }
   
-  console.log('\n✨ Extraction Complete! Check the "/handouts" directory. 🌈\n');
+  console.log(`\n✨ Extraction Complete!`);
+  console.log(`📁 Files processed: ${files.length}`);
+  console.log(`🏠 Output: ${OUTPUT_DIR}\n`);
 })().catch(err => { console.error(err); process.exit(1); });

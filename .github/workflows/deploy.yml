@@ -52,8 +52,10 @@ jobs:
       - name: Generate Reading Vault Index
         run: node --max-old-space-size=2048 scripts/generate-markdown-index.js
 
-      - name: Inject Index (Legacy Support)
-        run: node scripts/inject-markdown-index.js
+      - name: Prep Deployment Artifact (Bypass ignores)
+        run: |
+          rm -f .gitignore
+          rm -f markdown/.gitignore
 
       - name: "🚀 Sync Reading Vault to gh-pages"
         uses: peaceiris/actions-gh-pages@v4
@@ -69,11 +71,6 @@ jobs:
 
       - name: Build Tailwind CSS
         run: npx tailwindcss -i ./src/input.css -o ./assets/main.css --minify
-
-      - name: Prep Deployment Artifact (Bypass ignores)
-        run: |
-          rm -f .gitignore
-          rm -f markdown/.gitignore
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
