@@ -19,9 +19,9 @@ const { JSDOM } = require('jsdom');
 
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
 
-const INPUT_DIR = path.resolve(__dirname, '../content/Term-Feb-to-May');
-const OUTPUT_DIR = path.resolve(__dirname, '../handouts');
-const ASSETS_DIR = path.join(OUTPUT_DIR, 'assets/extracted-images');
+const INPUT_DIR = path.resolve(__dirname, '../content');
+const OUTPUT_DIR = path.resolve(__dirname, '../markdown/extracted');
+const ASSETS_DIR = path.join(OUTPUT_DIR, 'assets');
 
 // Ensure directories exist
 [OUTPUT_DIR, ASSETS_DIR].forEach(d => {

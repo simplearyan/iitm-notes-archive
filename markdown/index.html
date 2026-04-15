@@ -243,7 +243,9 @@
 
             async function loadIndex() {
                 try {
-                    const res = await fetch(MD_CONFIG.INDEX_FILE);
+                    // Force fresh index load after every deployment
+                    const bust = `?v=${new Date().getTime()}`;
+                    const res = await fetch(MD_CONFIG.INDEX_FILE + bust);
                     if (!res.ok) throw new Error("Index file missing");
                     STATE.index = await res.json();
                     

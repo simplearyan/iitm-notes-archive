@@ -45,7 +45,7 @@ jobs:
           mkdir -p markdown/extracted/assets
 
       - name: Extract Markdown Reading Vault
-        run: node --expose-gc --max-old-space-size=6144 scripts/extract-markdown.js
+        run: node --expose-gc --max-old-space-size=6144 scripts/extract-to-markdown.js
         env:
           NODE_OPTIONS: "--expose-gc"
 
