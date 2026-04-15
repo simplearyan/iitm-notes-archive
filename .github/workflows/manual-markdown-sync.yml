@@ -1,0 +1,81 @@
+name: "🛠️ Manual Markdown Vault Sync"
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_clean:
+        description: '🧹 Delete existing extracted folder first?'
+        required: false
+        default: 'true'
+        type: boolean
+
+concurrency:
+  group: markdown-storage
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: 🏗️ Logic & Sync Engine
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 Checkout Code
+        uses: actions/checkout@v4
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: 📦 Install Dependencies
+        run: npm install
+
+      - name: 🧹 Prep Environment
+        run: |
+          if [ "${{ github.event.inputs.force_clean }}" = "true" ]; then
+            rm -rf markdown/extracted/*
+          fi
+          mkdir -p markdown/extracted/assets
+
+      - name: 📦 Extract Markdown Content
+        run: node --expose-gc --max-old-space-size=6144 scripts/extract-to-markdown.js
+        env:
+          NODE_OPTIONS: "--expose-gc"
+
+      - name: 🔍 Generate Navigation Index
+        run: node --max-old-space-size=2048 scripts/generate-markdown-index.js
+
+      - name: 🔓 Bypass Ignore Rules
+        run: |
+          echo "🔓 Removing .gitignore files to expose generated content..."
+          rm -f .gitignore
+          rm -f markdown/.gitignore
+          rm -f markdown/extracted/.gitkeep
+
+      - name: 🕵️ Final Inspection (Verification Log)
+        run: |
+          echo "📂 --- PRE-DEPLOYMENT FILE CHECK ---"
+          if [ -d "markdown/extracted" ]; then
+            echo "✅ 'extracted' folder exists."
+            find markdown/extracted -maxdepth 2
+          else
+            echo "❌ 'extracted' folder is MISSING!"
+          fi
+          echo "📄 index.json Status:"
+          ls -lh markdown/index.json || echo "❌ index.json MISSING!"
+
+      - name: "🚀 Deploy to gh-pages branch"
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./markdown
+          publish_branch: gh-pages
+          destination_dir: markdown
+          commit_message: "🛠️ Manual: Sync Markdown Vault Content [skip ci]"
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          keep_files: true
