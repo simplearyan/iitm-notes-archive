@@ -328,11 +328,12 @@
         
         async function loadMarkdownFile(filePath) {
             try {
-                // Normalize path - remove leading/trailing slashes and construct URL
-                const cleanPath = filePath.replace(/^\/+|\/+$/g, '');
+                // Normalize path - remove .md extension if already present, then re-add it
+                let cleanPath = filePath.replace(/^\/+|\/+$/g, ''); // Remove leading/trailing slashes
+                cleanPath = cleanPath.replace(/\.md$/, ''); // Remove .md extension if present
                 const url = `${CONFIG.API_BASE}/${cleanPath}.md`.replace(/\/+/g, '/');
                 
-                console.log('Fetching:', url);
+                console.log('Loading file:', filePath, '→ URL:', url);
                 const response = await fetch(url);
                 if (!response.ok) {
                     throw new Error(`HTTP ${response.status}: File not found`);

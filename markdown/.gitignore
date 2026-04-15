@@ -13,11 +13,17 @@
 /extracted/**/*.webp
 /extracted/**/*.svg
 
-# Assets folder (populated by extraction)
-/assets/**
+# Auto-extracted images only (keep CSS files)
+/assets/**/*.png
+/assets/**/*.jpg
+/assets/**/*.jpeg
+/assets/**/*.gif
+/assets/**/*.webp
+/assets/**/*.svg
 
-# But DO track folder structure and empty placeholders
+# But DO track folder structure, CSS files, and empty placeholders
 !/extracted/.gitkeep
 !/manual/
 !/manual/**/*.md
 !/assets/.gitkeep
+!/assets/**/*.css

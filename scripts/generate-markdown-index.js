@@ -111,19 +111,20 @@ function scanDirectory(dirPath, relativePath = '', source = 'extracted') {
       
       // Get file name without .md extension
       const fileTitle = frontmatter.title || title || entry.name.replace(/\.md$/, '');
+      const pathWithoutExt = entryRelative.replace(/\.md$/, ''); // Remove .md from path
       
       items.push({
         type: 'file',
         name: fileTitle,
-        path: entryRelative,
+        path: pathWithoutExt,
         source: source,
       });
       
       // Add to search index
       searchDocs.push({
-        id: entryRelative,
+        id: pathWithoutExt,
         title: fileTitle,
-        path: entryRelative,
+        path: pathWithoutExt,
         source: source,
         content: content.replace(/^---[\s\S]*?---/, ''), // content without frontmatter
         snippet: snippet,
