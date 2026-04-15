@@ -19,7 +19,15 @@
 
     function init() {
         container = document.getElementById('iframe-container');
-        if (!container) return;
+        if (!container) {
+            console.log("IITM Annotator: Iframe container not found (skipping initialization).");
+            return;
+        }
+
+        if (typeof rough === 'undefined') {
+            console.warn("IITM Annotator: Rough.js not found. Annotation features will be disabled.");
+            return;
+        }
 
         if (document.getElementById('anno-canvas-static')) return;
 

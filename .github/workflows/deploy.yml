@@ -58,6 +58,11 @@ jobs:
       - name: Build Tailwind CSS
         run: npx tailwindcss -i ./src/input.css -o ./assets/main.css --minify
 
+      - name: Prep Deployment Artifact (Bypass ignores)
+        run: |
+          rm -f .gitignore
+          rm -f markdown/.gitignore
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
