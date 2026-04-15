@@ -39,13 +39,20 @@ jobs:
       - name: Generate Sidebar Route Map
         run: node scripts/generate-sidebar.js
 
-      - name: Extract Markdown from Archives
-        run: node --expose-gc --max-old-space-size=6144 scripts/extract-markdown.js
+      - name: Clear Markdown Cache
+        run: |
+          rm -rf markdown/extracted/*
+          mkdir -p markdown/extracted/assets
 
-      - name: Generate Markdown Index
+      - name: Extract Markdown Reading Vault
+        run: node --expose-gc --max-old-space-size=6144 scripts/extract-markdown.js
+        env:
+          NODE_OPTIONS: "--expose-gc"
+
+      - name: Generate Reading Vault Index
         run: node --max-old-space-size=2048 scripts/generate-markdown-index.js
 
-      - name: Inject Markdown Index into HTML
+      - name: Inject Index (Legacy Support)
         run: node scripts/inject-markdown-index.js
 
       - name: Build Tailwind CSS
