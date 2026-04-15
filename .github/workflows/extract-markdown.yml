@@ -1,0 +1,69 @@
+name: "📝 Extract Markdown from Archives"
+
+on:
+  workflow_dispatch:
+    inputs:
+      course_path:
+        description: 'Course folder path (e.g., Term-Feb-to-May/Mathematics-II)'
+        required: false
+        default: ''
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install extraction utility (7z)
+        run: sudo apt-get update && sudo apt-get install -y p7zip-full
+
+      - name: Extract Markdown from Archives
+        run: node scripts/extract-markdown.js
+
+      - name: Generate Markdown Index
+        run: node scripts/generate-markdown-index.js
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet markdown/; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Pull Request
+        if: steps.check_changes.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: 'chore: update extracted markdown files'
+          title: 'chore: update extracted markdown from archives'
+          body: |
+            Automated markdown extraction and index generation.
+            
+            Changes:
+            - Extracted/updated markdown files from SingleFileZ archives
+            - Regenerated search index
+            - Updated sidebar navigation tree
+          branch: markdown-extraction-${GITHUB_RUN_ID}
+          delete-branch: true
+
+      - name: Commit and push
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add markdown/
+          git commit -m "chore: update extracted markdown files"
+          git push

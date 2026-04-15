@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Archive | IITM</title>
+    <link rel="stylesheet" href="../assets/main.css">
+    <link rel="stylesheet" href="assets/markdown.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.366.0"></script>
+    
+    <!-- Markdown Renderer: marked.js -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <!-- Math Support: KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    
+    <!-- Code Highlighting: Prism.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+    
+    <!-- Full-text Search: Lunr.js -->
+    <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+    
+    <style>
+        body {
+            --color-primary: #6366f1;
+            --color-accent: #f59e0b;
+            --color-bg: #0f172a;
+            --color-surface: #1e293b;
+            --color-border: #334155;
+            --color-text: #e2e8f0;
+            --color-text-muted: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100">
+    <!-- Mobile Overlay -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-black/50 z-40 md:hidden opacity-0 pointer-events-none transition-opacity duration-200"></div>
+    
+    <!-- Sidebar -->
+    <aside id="sidebar" class="fixed left-0 top-0 h-screen w-80 bg-slate-900/95 border-r border-slate-700/50 backdrop-blur-md overflow-y-auto custom-scrollbar transition-transform duration-300 -translate-x-full md:translate-x-0 md:z-30 z-50">
+        <!-- Sidebar Header -->
+        <div class="sticky top-0 bg-slate-900/95 backdrop-blur-md border-b border-slate-700/50 z-10">
+            <div class="p-4 flex items-center justify-between">
+                <h1 class="text-lg font-bold text-indigo-300">📚 Markdown Docs</h1>
+                <button id="sidebar-close-btn" class="md:hidden p-2 hover:bg-white/5 rounded-lg transition-colors">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Search Input -->
+            <div class="px-4 pb-4">
+                <input 
+                    id="search-input" 
+                    type="text" 
+                    placeholder="🔍 Search notes..." 
+                    class="w-full px-3 py-2 rounded-lg bg-slate-800/50 border border-slate-600/50 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all text-sm"
+                >
+            </div>
+        </div>
+        
+        <!-- Navigation Tree -->
+        <nav id="sidebar-nav" class="p-4 space-y-1">
+            <!-- Will be populated by JavaScript -->
+        </nav>
+        
+        <!-- Search Results (hidden by default) -->
+        <div id="search-results" class="hidden p-4 border-t border-slate-700/50">
+            <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-3">Search Results</h3>
+            <div id="search-results-list" class="space-y-2">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="md:ml-80 min-h-screen bg-slate-950 flex flex-col">
+        <!-- Mobile Header -->
+        <header class="md:hidden sticky top-0 bg-slate-900/95 border-b border-slate-700/50 backdrop-blur-md z-20">
+            <div class="flex items-center justify-between p-4">
+                <button id="sidebar-open-btn" class="p-2 hover:bg-white/5 rounded-lg transition-colors">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <h1 class="text-lg font-semibold" id="page-title">Markdown Archive</h1>
+                <div class="w-10"></div>
+            </div>
+        </header>
+        
+        <!-- Breadcrumb & Content Header -->
+        <div id="content-header" class="hidden md:block sticky top-0 bg-slate-900/50 border-b border-slate-700/50 backdrop-blur-md p-6 z-10">
+            <nav id="breadcrumb" class="flex items-center space-x-2 text-sm text-slate-400 mb-3">
+                <a href="#" class="hover:text-indigo-300 transition-colors">Home</a>
+            </nav>
+            <h1 id="content-title" class="text-3xl font-bold text-slate-100"></h1>
+        </div>
+        
+        <!-- Content Area -->
+        <div class="flex-1 flex overflow-hidden">
+            <article id="content-main" class="flex-1 overflow-y-auto custom-scrollbar p-6 md:p-8">
+                <!-- Dashboard (default view) -->
+                <div id="dashboard" class="hidden">
+                    <div class="max-w-4xl">
+                        <h2 class="text-3xl font-bold mb-2 text-slate-100">Welcome to Markdown Archive</h2>
+                        <p class="text-slate-400 mb-6">Select a document from the sidebar to get started, or use the search feature to find specific topics.</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                            <div class="p-4 rounded-lg bg-slate-800/30 border border-slate-700/50 hover:border-indigo-500/50 transition-colors cursor-pointer" onclick="document.querySelector('#sidebar-nav a')?.click()">
+                                <h3 class="font-semibold text-indigo-300 mb-1">📖 Browse Materials</h3>
+                                <p class="text-slate-400 text-sm">Explore course materials organized by week and topic</p>
+                            </div>
+                            <div class="p-4 rounded-lg bg-slate-800/30 border border-slate-700/50 hover:border-indigo-500/50 transition-colors">
+                                <h3 class="font-semibold text-indigo-300 mb-1">🔍 Quick Search</h3>
+                                <p class="text-slate-400 text-sm">Use the search box above to find notes on any topic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Markdown Content (hidden by default) -->
+                <div id="markdown-content" class="hidden max-w-4xl prose-invert">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+                
+                <!-- Empty State -->
+                <div id="empty-state" class="hidden text-center py-12 text-slate-400">
+                    <p class="text-lg">📭 No document selected</p>
+                    <p class="text-sm mt-2">Choose a document from the sidebar to view it here</p>
+                </div>
+            </article>
+        </div>
+    </main>
+    
+    <!-- Index Data (injected by build process) -->
+    <script id="site-index" type="application/json">
+    {
+        "version": "1.0",
+        "timestamp": "2024-01-01T00:00:00Z",
+        "stats": {"totalFiles": 0, "extractedFiles": 0, "manualFiles": 0},
+        "navigation": [],
+        "search": {"version": "2", "fields": [], "documents": []},
+        "breadcrumbs": {}
+    }
+    </script>
+    
+    <!-- Main Application Script -->
+    <script>
+        // ========== Configuration ==========
+        const CONFIG = {
+            basePath: '/iitm-notes-archive/markdown/',
+            API_BASE: '../markdown/', // relative to page
+        };
+        
+        // ========== Global State ==========
+        let siteIndex = null;
+        let lunrIndex = null;
+        let currentFile = null;
+        let navigationTree = null;
+        
+        // ========== Initialization ==========
+        document.addEventListener('DOMContentLoaded', async () => {
+            await initializeIndex();
+            setupEventListeners();
+            initializeRouting();
+        });
+        
+        async function initializeIndex() {
+            // Try to load from index.json first
+            try {
+                const response = await fetch('index.json');
+                if (response.ok) {
+                    siteIndex = await response.json();
+                } else {
+                    // Fall back to embedded data
+                    loadEmbeddedIndex();
+                }
+            } catch (err) {
+                console.warn('Could not load index.json, using embedded data:', err);
+                loadEmbeddedIndex();
+            }
+            
+            navigationTree = siteIndex.navigation || [];
+            console.log('Index loaded:', siteIndex.stats);
+            
+            // Render sidebar navigation
+            renderNavigation();
+            
+            if (!navigationTree || navigationTree.length === 0) {
+                console.warn('⚠️ No content found. Run: npm run markdown:extract && npm run markdown:index');
+                document.getElementById('empty-state').classList.remove('hidden');
+                document.getElementById('empty-state').innerHTML = `
+                    <p class="text-lg">📭 No content available</p>
+                    <p class="text-sm mt-2">Run the extraction and index generation scripts:<br><code class="text-xs bg-slate-800 px-2 py-1 rounded inline-block mt-2">npm run markdown:extract && npm run markdown:index</code></p>
+                `;
+            }
+        }
+        
+        function loadEmbeddedIndex() {
+            const indexElement = document.getElementById('site-index');
+            const raw = indexElement.textContent || indexElement.innerText;
+            try {
+                siteIndex = JSON.parse(raw);
+            } catch (err) {
+                console.error('Error parsing embedded index:', err);
+                siteIndex = {
+                    version: '1.0',
+                    timestamp: '2024-01-01T00:00:00Z',
+                    stats: { totalFiles: 0, extractedFiles: 0, manualFiles: 0 },
+                    navigation: [],
+                    search: { version: '2', fields: [], documents: [] },
+                    breadcrumbs: {}
+                };
+            }
+        }
+        
+        function setupEventListeners() {
+            // Mobile sidebar toggle
+            document.getElementById('sidebar-open-btn')?.addEventListener('click', () => {
+                document.getElementById('sidebar').classList.remove('-translate-x-full');
+                document.getElementById('mobile-overlay').classList.remove('opacity-0', 'pointer-events-none');
+            });
+            
+            document.getElementById('sidebar-close-btn')?.addEventListener('click', closeSidebar);
+            document.getElementById('mobile-overlay')?.addEventListener('click', closeSidebar);
+            
+            // Search
+            const searchInput = document.getElementById('search-input');
+            searchInput.addEventListener('input', throttle(handleSearch, 300));
+            
+            // Keyboard shortcuts
+            document.addEventListener('keydown', (e) => {
+                if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                    e.preventDefault();
+                    searchInput.focus();
+                }
+            });
+        }
+        
+        // ========== Sidebar Navigation ==========
+        
+        function renderNavigation() {
+            const navEl = document.getElementById('sidebar-nav');
+            navEl.innerHTML = '';
+            
+            navigationTree.forEach(item => {
+                const el = createNavElement(item, []);
+                navEl.appendChild(el);
+            });
+        }
+        
+        function createNavElement(item, breadcrail) {
+            const div = document.createElement('div');
+            
+            if (item.type === 'folder') {
+                const folder = document.createElement('button');
+                folder.className = 'nav-btn group w-full flex items-center justify-between';
+                folder.innerHTML = `
+                    <span class="flex items-center flex-1">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mr-2 opacity-60">
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <span class="truncate text-left">${escapeHtml(item.name)}</span>
+                    </span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chevron transition-transform ml-2 flex-shrink-0">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                `;
+                
+                folder.addEventListener('click', () => {
+                    const folderChildren = div.querySelector('.nav-children');
+                    const isOpen = folderChildren?.classList.contains('hidden');
+                    
+                    if (isOpen !== undefined) {
+                        folderChildren.classList.toggle('hidden');
+                        folder.querySelector('.chevron').style.transform = isOpen ? 'rotate(0deg)' : 'rotate(-180deg)';
+                    }
+                });
+                
+                const childrenContainer = document.createElement('div');
+                childrenContainer.className = 'nav-children ml-4 space-y-1 hidden mt-1';
+                
+                if (item.children && item.children.length > 0) {
+                    item.children.forEach(child => {
+                        const childEl = createNavElement(child, [...breadcrail, item.name]);
+                        childrenContainer.appendChild(childEl);
+                    });
+                }
+                
+                div.appendChild(folder);
+                div.appendChild(childrenContainer);
+            } else if (item.type === 'file') {
+                const file = document.createElement('button');
+                file.className = 'nav-btn !text-slate-300 hover:!text-indigo-300 text-sm';
+                file.innerHTML = `
+                    <span class="flex items-center w-full">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mr-2 opacity-50">
+                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                            <polyline points="13 2 13 9 20 9"></polyline>
+                        </svg>
+                        <span class="truncate">${escapeHtml(item.name)}</span>
+                    </span>
+                `;
+                
+                file.addEventListener('click', () => {
+                    loadMarkdownFile(item.path);
+                    closeSidebar();
+                });
+                
+                div.appendChild(file);
+            }
+            
+            return div;
+        }
+        
+        // ========== File Loading ==========
+        
+        async function loadMarkdownFile(filePath) {
+            try {
+                const response = await fetch(`${CONFIG.API_BASE}/${filePath}.md`);
+                if (!response.ok) throw new Error('File not found');
+                
+                const content = await response.text();
+                renderMarkdown(content, filePath);
+                currentFile = filePath;
+                updateBreadcrumb(filePath);
+            } catch (err) {
+                console.error('Error loading file:', err);
+                showError(`Failed to load: ${filePath}`);
+            }
+        }
+        
+        function renderMarkdown(content, filePath) {
+            // Extract frontmatter
+            const match = content.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)/);
+            const frontmatter = {};
+            let body = content;
+            
+            if (match) {
+                match[1].split('\n').forEach(line => {
+                    const [key, ...val] = line.split(':');
+                    if (key) frontmatter[key.trim()] = val.join(':').trim();
+                });
+                body = match[2];
+            }
+            
+            // Extract title from frontmatter or first heading
+            let title = frontmatter.title;
+            if (!title) {
+                const titleMatch = body.match(/^#+\s+(.+?)$/m);
+                title = titleMatch ? titleMatch[1] : filePath;
+            }
+            
+            // Render markdown
+            const renderer = new marked.Renderer();
+            
+            // Custom renderer for images (fix relative paths)
+            renderer.image = function(token) {
+                let src = token.href;
+                if (!src.startsWith('http') && !src.startsWith('/')) {
+                    const basePath = CONFIG.API_BASE + filePath.split('/').slice(0, -1).join('/') + '/';
+                    src = basePath + src;
+                }
+                return `<img src="${src}" alt="${token.text}" class="max-w-full rounded-lg border border-slate-700 my-4">`;
+            };
+            
+            // Custom renderer for code blocks (Prism.js)
+            renderer.code = function(token) {
+                const lang = token.lang || 'plaintext';
+                const code = Prism.highlight(token.text, Prism.languages[lang] || Prism.languages.plaintext, lang);
+                return `<pre class="bg-slate-800 rounded-lg p-4 overflow-x-auto my-4"><code class="language-${lang}">${code}</code></pre>`;
+            };
+            
+            // Use marked default preprocessing for math
+            marked.setOptions({
+                breaks: true,
+                gfm: true,
+                renderer: renderer,
+            });
+            
+            const html = marked.parse(body);
+            
+            // Render KaTeX for inline and display math
+            const contentEl = document.getElementById('markdown-content');
+            contentEl.innerHTML = html;
+            renderMathInElement(contentEl);
+            
+            // Update UI
+            document.getElementById('dashboard').classList.add('hidden');
+            document.getElementById('empty-state').classList.add('hidden');
+            document.getElementById('markdown-content').classList.remove('hidden');
+            document.getElementById('content-title').textContent = title;
+            document.getElementById('page-title').textContent = title;
+        }
+        
+        function renderMathInElement(element) {
+            // Find and render all math delimiters
+            const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+            const nodesToReplace = [];
+            
+            let node;
+            while (node = walker.nextNode()) {
+                const text = node.textContent;
+                if (text.includes('$$') || text.includes('$')) {
+                    nodesToReplace.push(node);
+                }
+            }
+            
+            nodesToReplace.forEach(node => {
+                const span = document.createElement('span');
+                let remaining = node.textContent;
+                
+                // Handle display math ($$...$$)  and inline ($...$)
+                remaining = remaining.replace(/\$\$([^$]+)\$\$/g, (match, tex) => {
+                    try {
+                        return katex.renderToString(tex, { displayMode: true });
+                    } catch (e) {
+                        return match;
+                    }
+                });
+                
+                remaining = remaining.replace(/\$([^$]+)\$/g, (match, tex) => {
+                    try {
+                        return katex.renderToString(tex, { displayMode: false });
+                    } catch (e) {
+                        return match;
+                    }
+                });
+                
+                span.innerHTML = remaining;
+                node.parentNode.replaceChild(span, node);
+            });
+        }
+        
+        function updateBreadcrumb(filePath) {
+            const breadcrumb = document.getElementById('breadcrumb');
+            const parts = filePath.split('/').filter(p => p);
+            
+            let html = '<a href="#" onclick="event.preventDefault(); showDashboard()" class="hover:text-indigo-300 transition-colors">Home</a>';
+            let path = '';
+            
+            parts.slice(0, -1).forEach((part, idx) => {
+                path += '/' + part;
+                html += ` / <span class="text-slate-500">${escapeHtml(part)}</span>`;
+            });
+            
+            html += ` / <span class="text-indigo-300">${escapeHtml(parts[parts.length - 1])}</span>`;
+            breadcrumb.innerHTML = html;
+        }
+        
+        // ========== Search ==========
+        
+        function handleSearch(e) {
+            const query = e.target.value.trim().toLowerCase();
+            const resultsContainer = document.getElementById('search-results');
+            const resultsList = document.getElementById('search-results-list');
+            
+            if (query.length < 2) {
+                resultsContainer.classList.add('hidden');
+                return;
+            }
+            
+            // Simple full-text search through documents
+            const documents = siteIndex.search.documents || [];
+            const matches = documents.filter(doc => 
+                doc.title.toLowerCase().includes(query) || 
+                doc.content.toLowerCase().includes(query)
+            ).slice(0, 10);
+            
+            if (matches.length === 0) {
+                resultsContainer.classList.remove('hidden');
+                resultsList.innerHTML = '<p class="text-slate-400 text-xs">No results found</p>';
+                return;
+            }
+            
+            resultsList.innerHTML = matches.map(doc => `
+                <button class="block w-full text-left p-2 rounded-lg hover:bg-slate-800/50 transition-colors text-xs group" onclick="loadMarkdownFile('${doc.path}')">
+                    <div class="font-medium text-indigo-300 group-hover:text-indigo-200 truncate mb-1">${escapeHtml(doc.title)}</div>
+                    <div class="text-slate-400 text-xs line-clamp-2">${escapeHtml(doc.snippet)}</div>
+                </button>
+            `).join('');
+            
+            resultsContainer.classList.remove('hidden');
+        }
+        
+        // ========== Routing ==========
+        
+        function initializeRouting() {
+            if (window.location.hash) {
+                loadMarkdownFile(window.location.hash.substring(1));
+            } else {
+                showDashboard();
+            }
+            
+            window.addEventListener('hashchange', () => {
+                const path = window.location.hash.substring(1);
+                if (path) {
+                    loadMarkdownFile(path);
+                } else {
+                    showDashboard();
+                }
+            });
+        }
+        
+        function showDashboard() {
+            document.getElementById('dashboard').classList.remove('hidden');
+            document.getElementById('markdown-content').classList.add('hidden');
+            document.getElementById('empty-state').classList.add('hidden');
+            document.getElementById('content-title').textContent = '';
+            document.getElementById('page-title').textContent = 'Markdown Archive';
+        }
+        
+        // ========== Utilities ==========
+        
+        function closeSidebar() {
+            document.getElementById('sidebar').classList.add('-translate-x-full');
+            document.getElementById('mobile-overlay').classList.add('opacity-0', 'pointer-events-none');
+        }
+        
+        function showError(message) {
+            document.getElementById('markdown-content').classList.add('hidden');
+            document.getElementById('empty-state').classList.remove('hidden');
+            document.getElementById('empty-state').innerHTML = `<p class="text-red-400">${escapeHtml(message)}</p>`;
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        function throttle(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+    </script>
+</body>
+</html>

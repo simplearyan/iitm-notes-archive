@@ -88,6 +88,47 @@ A complete mirror of all raw assets, optimized modules, and PDF versions is main
 
 ---
 
+## 📚 Markdown Archive Module
+
+A dedicated markdown documentation site with full-text search, sidebar navigation, and responsive design. Perfect for study notes and organized course materials.
+
+### 🎯 Features
+- **Auto-Extraction:** Converts course HTML archives to clean markdown
+- **Full-Text Search:** Client-side search with Lunr.js
+- **Dual Sources:** Auto-extracted markdown + hand-written study notes
+- **Math Support:** KaTeX for LaTeX equations
+- **Code Highlighting:** Prism.js syntax highlighting
+- **Mobile Responsive:** Touch-friendly off-canvas navigation
+
+### 🚀 Quick Start
+```bash
+# Extract markdown from archives
+npm run markdown:extract
+
+# Generate search index
+npm run markdown:index
+
+# View locally
+open markdown/index.html
+```
+
+### 📁 Structure
+```
+markdown/
+├── extracted/    ← Auto-extracted from course archives
+├── manual/       ← Hand-written study notes
+└── index.html    ← Responsive SPA
+```
+
+### 📖 Documentation
+See [`markdown/README.md`](markdown/README.md) for complete guide or [`markdown/manual/GETTING_STARTED.md`](markdown/manual/GETTING_STARTED.md) for user guide.
+
+### 🔗 Live Site
+- **Markdown Archive:** https://simplearyan.github.io/iitm-notes-archive/markdown/
+- **Main Archive:** https://simplearyan.github.io/iitm-notes-archive/
+
+---
+
 ## ⚖️ Disclaimer
 
 This is an **unofficial, personal organization tool**. It is not affiliated with, endorsed by, or sponsored by the **Indian Institute of Technology Madras (IITM)**.

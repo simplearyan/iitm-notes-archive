@@ -14,7 +14,9 @@
     "v4-pdf": "node scripts/v4-pdf.js",
     "v4-pdf:force": "node scripts/v4-pdf.js --force",
     "vault": "node scripts/build-vault.js",
-    "extract": "node scripts/extract-to-markdown.js"
+    "extract": "node scripts/extract-to-markdown.js",
+    "markdown:extract": "node scripts/extract-markdown.js",
+    "markdown:index": "node scripts/generate-markdown-index.js"
   },
   "repository": {
     "type": "git",

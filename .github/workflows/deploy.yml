@@ -36,6 +36,12 @@ jobs:
       - name: Generate Sidebar Route Map
         run: node scripts/generate-sidebar.js
 
+      - name: Extract Markdown from Archives
+        run: node scripts/extract-markdown.js
+
+      - name: Generate Markdown Index
+        run: node scripts/generate-markdown-index.js
+
       - name: Build Tailwind CSS
         run: npm install && npx tailwindcss -i ./src/input.css -o ./assets/main.css --minify
 
