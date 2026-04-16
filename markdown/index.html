@@ -100,15 +100,15 @@
         <div class="p-8 pb-4">
             <div class="flex items-center justify-between mb-8">
                 <a href="../" class="flex items-center group">
-                    <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-white mr-4 group-hover:bg-indigo-600 transition-colors shadow-lg">
-                        <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                    <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-white mr-4 group-hover:bg-indigo-600 transition-all duration-300 shadow-indigo-200/50 shadow-lg group-hover:shadow-indigo-500/40">
+                        <i data-lucide="shield-check" class="w-5 h-5"></i>
                     </div>
                     <div>
-                        <h2 class="font-black text-xl text-slate-900 tracking-tighter leading-none uppercase">IITM ARCHIVE</h2>
-                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1 inline-block italic">Knowledge Engine</span>
+                        <h2 class="font-black text-lg text-slate-900 tracking-tight leading-none uppercase">IITM VAULT</h2>
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mt-1.5 inline-block opacity-70">Knowledge Engine</span>
                     </div>
                 </a>
-                <button id="sidebar-close" class="md:hidden p-2 text-slate-400 hover:bg-slate-50 rounded-full">
+                <button id="sidebar-close" class="md:hidden p-2 text-slate-400 hover:bg-slate-50 rounded-full transition-colors">
                     <i data-lucide="x" class="w-5 h-5"></i>
                 </button>
             </div>
@@ -151,16 +151,20 @@
     <main id="main-content" class="flex-1 overflow-y-auto custom-scrollbar bg-white md:bg-[#f8fafc] flex flex-col relative">
         
         <!-- Reading Header (Desktop) -->
-        <header id="reading-header" class="hidden md:flex sticky top-0 bg-white/90 backdrop-blur-xl border-b border-slate-200 px-12 py-4 items-center justify-between z-20 smart-header">
+        <header id="reading-header" class="hidden md:flex sticky top-0 bg-white/90 backdrop-blur-xl border-b border-slate-200 px-12 py-5 items-center justify-between z-20 smart-header shadow-sm shadow-slate-200/20">
             <div id="desktop-progress" class="progress-bar w-0"></div>
-            <div class="flex items-center gap-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest" id="breadcrumb">
-                <i data-lucide="home" class="w-3 h-3 cursor-pointer" onclick="location.hash=''"></i>
-                <span>/</span>
-                <span>Select a module</span>
+            <div class="flex items-center gap-3 text-[10px] font-bold text-slate-400 uppercase tracking-widest" id="breadcrumb">
+                <div class="w-6 h-6 rounded bg-slate-100 flex items-center justify-center hover:bg-indigo-100 hover:text-indigo-600 transition-colors cursor-pointer" onclick="location.hash=''">
+                    <i data-lucide="home" class="w-3 h-3"></i>
+                </div>
+                <i data-lucide="chevron-right" class="w-3 h-3 opacity-30"></i>
+                <span class="text-slate-500 font-extrabold">Reading Mode</span>
             </div>
             <div class="flex items-center gap-4">
-                <button onclick="window.print()" class="p-2 text-slate-500 hover:bg-slate-100 rounded-lg transition-colors" title="Print/Save as PDF">
-                    <i data-lucide="printer" class="w-4 h-4"></i>
+                <div class="h-6 w-px bg-slate-200 mx-2"></div>
+                <button onclick="window.print()" class="flex items-center gap-2 px-4 py-2 bg-slate-900 text-white rounded-lg text-[10px] font-bold uppercase tracking-widest hover:bg-indigo-600 transition-all shadow-lg shadow-slate-900/10 active:scale-95" title="Print/Save as PDF">
+                    <i data-lucide="printer" class="w-3.5 h-3.5"></i>
+                    Save as PDF
                 </button>
             </div>
         </header>
@@ -213,9 +217,9 @@
     <script id="vault-data" type="application/json">
     {
   "stats": {
-    "buildId": "VAULT-1776310660297",
-    "totalFiles": 177,
-    "timestamp": "2026-04-16T03:37:40.297Z"
+    "buildId": "VAULT-1776311363872",
+    "totalFiles": 141,
+    "timestamp": "2026-04-16T03:49:23.872Z"
   },
   "navigation": [
     {
@@ -312,36 +316,6 @@
                   "type": "file",
                   "name": "AQ1.5: Activity Questions 5 - Not Graded :: IITM Online Degree",
                   "path": "Term-Feb-to-May/Mathematics-II/Week 1/AQ1.5_ Activity Questions 5 - Not Graded _ IITM Online Degree (4_4_2026 8_48_39 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L1.1: Vectors :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 1/L1.1_ Vectors _ IITM Online Degree (4_4_2026 8_43_49 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L1.2: Matrices :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 1/L1.2_ Matrices _ IITM Online Degree (4_4_2026 8_44_38 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L1.3: Systems of Linear Equations :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 1/L1.3_ Systems of Linear Equations _ IITM Online Degree (4_4_2026 8_45_19 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L1.4: Determinants (part 1) :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 1/L1.4_ Determinants (part 1) _ IITM Online Degree (4_4_2026 8_47_30 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L1.5: Determinants (part 2) :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 1/L1.5_ Determinants (part 2) _ IITM Online Degree (4_4_2026 8_48_14 am)",
                   "source": "extracted"
                 },
                 {
@@ -461,42 +435,6 @@
                 },
                 {
                   "type": "file",
-                  "name": "L2.1 Determinants (part 3) :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 2/L2.1 Determinants (part 3) _ IITM Online Degree (4_4_2026 8_55_38 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L2.2 Cramer's Rule :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 2/L2.2 Cramer's Rule _ IITM Online Degree (4_4_2026 8_56_29 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L2.3 Solutions to a system of linear equations with an invertible coefficient matrix :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 2/L2.3 Solutions to a system of linear equations with an invertible coefficient matrix _ IITM Online Degree (4_4_2026 8_57_33 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L2.4 The echelon form :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 2/L2.4 The echelon form _ IITM Online Degree (4_4_2026 8_58_22 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L2.5 Row reduction :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 2/L2.5 Row reduction _ IITM Online Degree (4_4_2026 8_59_13 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L2.6 The Gaussian elimination method :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 2/L2.6 The Gaussian elimination method _ IITM Online Degree (4_4_2026 9_00_00 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
                   "name": "Practice Assignment 2 - Not Graded :: IITM Online Degree",
                   "path": "Term-Feb-to-May/Mathematics-II/Week 2/Practice Assignment 2 - Not Graded _ IITM Online Degree (4_4_2026 9_02_23 am)",
                   "source": "extracted"
@@ -560,36 +498,6 @@
                   "type": "file",
                   "name": "AQ3.5: Activity Questions 5 - Not Graded :: IITM Online Degree",
                   "path": "Term-Feb-to-May/Mathematics-II/Week 3/AQ3.5_ Activity Questions 5 - Not Graded _ IITM Online Degree (5_4_2026 4_36_12 pm)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L3.1 Introduction to vector spaces :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 3/L3.1 Introduction to vector spaces _ IITM Online Degree (5_4_2026 4_32_24 pm)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L3.2 Some properties of vector spaces :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 3/L3.2 Some properties of vector spaces _ IITM Online Degree (5_4_2026 4_33_14 pm)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L3.3 Linear dependence :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 3/L3.3 Linear dependence _ IITM Online Degree (5_4_2026 4_34_04 pm)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L3.4 Linear independence - Part 1 :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 3/L3.4 Linear independence - Part 1 _ IITM Online Degree (5_4_2026 4_34_48 pm)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L3.5 Linear independence - Part 2 :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 3/L3.5 Linear independence - Part 2 _ IITM Online Degree (5_4_2026 4_35_43 pm)",
                   "source": "extracted"
                 },
                 {
@@ -669,24 +577,6 @@
                   "type": "file",
                   "name": "AQ4.4: Activity Questions 4 - Not Graded :: IITM Online Degree",
                   "path": "Term-Feb-to-May/Mathematics-II/Week 4/AQ4.4_ Activity Questions 4 - Not Graded _ IITM Online Degree (5_4_2026 5_07_41 pm)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L4.2 Finding bases for vector spaces :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 4/L4.2 Finding bases for vector spaces _ IITM Online Degree (5_4_2026 5_04_32 pm)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L4.3: What is the rank/dimension for a vector space :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 4/L4.3_ What is the rank_dimension for a vector space _ IITM Online Degree (5_4_2026 5_05_04 pm)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L4.4: Rank and dimension using Gaussian elimination :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 4/L4.4_ Rank and dimension using Gaussian elimination _ IITM Online Degree (5_4_2026 5_07_06 pm)",
                   "source": "extracted"
                 },
                 {
@@ -776,36 +666,6 @@
                 },
                 {
                   "type": "file",
-                  "name": "L5.1: The null space of a matrix : finding nullity and a basis - Part 1 :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 5/L5.1_ The null space of a matrix _ finding nullity and a basis - Part 1 _ IITM Online Degree (13_4_2026 7_05_31 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L5.2: The null space of a matrix : finding nullity and a basis - Part 2 :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 5/L5.2_ The null space of a matrix _ finding nullity and a basis - Part 2 _ IITM Online Degree (13_4_2026 7_06_06 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L5.3: What is a linear mapping - Part 1 :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 5/L5.3_ What is a linear mapping - Part 1 _ IITM Online Degree (13_4_2026 7_06_38 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L5.4: What is a linear mapping - Part 2 :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 5/L5.4_ What is a linear mapping - Part 2 _ IITM Online Degree (13_4_2026 7_07_13 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L5.5: What is a linear transformation :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 5/L5.5_ What is a linear transformation _ IITM Online Degree (13_4_2026 7_07_50 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
                   "name": "Modules :: IITM Online Degree",
                   "path": "Term-Feb-to-May/Mathematics-II/Week 5/Modules _ IITM Online Degree (13_4_2026 7_10_35 am)",
                   "source": "extracted"
@@ -869,24 +729,6 @@
                   "type": "file",
                   "name": "AQ6.3: Activity Questions 3 - Not Graded :: IITM Online Degree",
                   "path": "Term-Feb-to-May/Mathematics-II/Week 6/AQ6.3_ Activity Questions 3 - Not Graded _ IITM Online Degree (13_4_2026 7_14_30 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L6.1: Linear transformations, ordered bases and matrices :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 6/L6.1_ Linear transformations, ordered bases and matrices _ IITM Online Degree (13_4_2026 7_11_29 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L6.2: Image and kernel of linear transformations :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 6/L6.2_ Image and kernel of linear transformations _ IITM Online Degree (13_4_2026 7_13_04 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L6.3: Examples of finding bases for the kernel and image of a linear transformation :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 6/L6.3_ Examples of finding bases for the kernel and image of a linear transformation _ IITM Online Degree (13_4_2026 7_14_00 am)",
                   "source": "extracted"
                 },
                 {
@@ -976,30 +818,6 @@
                 },
                 {
                   "type": "file",
-                  "name": "L7.1: Equivalence and similarity of matrices :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 7/L7.1_ Equivalence and similarity of matrices _ IITM Online Degree (13_4_2026 7_18_42 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L7.2: Affine subspaces and affine mappings :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 7/L7.2_ Affine subspaces and affine mappings _ IITM Online Degree (13_4_2026 7_19_19 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L7.3: Lengths and angles :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 7/L7.3_ Lengths and angles _ IITM Online Degree (13_4_2026 7_19_33 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L7.4: Inner products and norms on a vector space :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 7/L7.4_ Inner products and norms on a vector space _ IITM Online Degree (13_4_2026 7_20_57 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
                   "name": "Practice Assignment 7 - Not Graded :: IITM Online Degree",
                   "path": "Term-Feb-to-May/Mathematics-II/Week 7/Practice Assignment 7 - Not Graded _ IITM Online Degree (13_4_2026 7_22_52 am)",
                   "source": "extracted"
@@ -1069,36 +887,6 @@
                   "type": "file",
                   "name": "AQ8.5: Activity Questions 5 - Not Graded :: IITM Online Degree",
                   "path": "Term-Feb-to-May/Mathematics-II/Week 8/AQ8.5_ Activity Questions 5 - Not Graded _ IITM Online Degree (13_4_2026 7_26_52 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L8.1: Orthgonality and linear independence :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 8/L8.1_ Orthgonality and linear independence _ IITM Online Degree (13_4_2026 7_23_35 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L8.2: What is an orthonormal basis? :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 8/L8.2_ What is an orthonormal basis_ _ IITM Online Degree (13_4_2026 7_24_44 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L8.3: Projections using inner products :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 8/L8.3_ Projections using inner products _ IITM Online Degree (13_4_2026 7_25_22 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L8.4: The Gram-Schmidt process :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 8/L8.4_ The Gram-Schmidt process _ IITM Online Degree (13_4_2026 7_26_03 am)",
-                  "source": "extracted"
-                },
-                {
-                  "type": "file",
-                  "name": "L8.5: Orthogonal transformations and rotations :: IITM Online Degree",
-                  "path": "Term-Feb-to-May/Mathematics-II/Week 8/L8.5_ Orthogonal transformations and rotations _ IITM Online Degree (13_4_2026 7_26_35 am)",
                   "source": "extracted"
                 },
                 {
@@ -1489,36 +1277,6 @@
       "Week 1",
       "AQ1.5: Activity Questions 5 - Not Graded :: IITM Online Degree"
     ],
-    "Term-Feb-to-May/Mathematics-II/Week 1/L1.1_ Vectors _ IITM Online Degree (4_4_2026 8_43_49 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 1",
-      "L1.1: Vectors :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 1/L1.2_ Matrices _ IITM Online Degree (4_4_2026 8_44_38 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 1",
-      "L1.2: Matrices :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 1/L1.3_ Systems of Linear Equations _ IITM Online Degree (4_4_2026 8_45_19 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 1",
-      "L1.3: Systems of Linear Equations :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 1/L1.4_ Determinants (part 1) _ IITM Online Degree (4_4_2026 8_47_30 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 1",
-      "L1.4: Determinants (part 1) :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 1/L1.5_ Determinants (part 2) _ IITM Online Degree (4_4_2026 8_48_14 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 1",
-      "L1.5: Determinants (part 2) :: IITM Online Degree"
-    ],
     "Term-Feb-to-May/Mathematics-II/Week 1/Practice assignment 1 - Not Graded _ IITM Online Degree (4_4_2026 8_51_49 am)": [
       "Term-Feb-to-May",
       "Mathematics-II",
@@ -1632,42 +1390,6 @@
       "Week 2",
       "AQ2.6: Activity Questions 6 - Not Graded :: IITM Online Degree"
     ],
-    "Term-Feb-to-May/Mathematics-II/Week 2/L2.1 Determinants (part 3) _ IITM Online Degree (4_4_2026 8_55_38 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 2",
-      "L2.1 Determinants (part 3) :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 2/L2.2 Cramer's Rule _ IITM Online Degree (4_4_2026 8_56_29 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 2",
-      "L2.2 Cramer's Rule :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 2/L2.3 Solutions to a system of linear equations with an invertible coefficient matrix _ IITM Online Degree (4_4_2026 8_57_33 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 2",
-      "L2.3 Solutions to a system of linear equations with an invertible coefficient matrix :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 2/L2.4 The echelon form _ IITM Online Degree (4_4_2026 8_58_22 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 2",
-      "L2.4 The echelon form :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 2/L2.5 Row reduction _ IITM Online Degree (4_4_2026 8_59_13 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 2",
-      "L2.5 Row reduction :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 2/L2.6 The Gaussian elimination method _ IITM Online Degree (4_4_2026 9_00_00 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 2",
-      "L2.6 The Gaussian elimination method :: IITM Online Degree"
-    ],
     "Term-Feb-to-May/Mathematics-II/Week 2/Practice Assignment 2 - Not Graded _ IITM Online Degree (4_4_2026 9_02_23 am)": [
       "Term-Feb-to-May",
       "Mathematics-II",
@@ -1732,36 +1454,6 @@
       "Mathematics-II",
       "Week 3",
       "AQ3.5: Activity Questions 5 - Not Graded :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 3/L3.1 Introduction to vector spaces _ IITM Online Degree (5_4_2026 4_32_24 pm)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 3",
-      "L3.1 Introduction to vector spaces :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 3/L3.2 Some properties of vector spaces _ IITM Online Degree (5_4_2026 4_33_14 pm)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 3",
-      "L3.2 Some properties of vector spaces :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 3/L3.3 Linear dependence _ IITM Online Degree (5_4_2026 4_34_04 pm)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 3",
-      "L3.3 Linear dependence :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 3/L3.4 Linear independence - Part 1 _ IITM Online Degree (5_4_2026 4_34_48 pm)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 3",
-      "L3.4 Linear independence - Part 1 :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 3/L3.5 Linear independence - Part 2 _ IITM Online Degree (5_4_2026 4_35_43 pm)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 3",
-      "L3.5 Linear independence - Part 2 :: IITM Online Degree"
     ],
     "Term-Feb-to-May/Mathematics-II/Week 3/Modules _ IITM Online Degree (5_4_2026 4_39_09 pm)": [
       "Term-Feb-to-May",
@@ -1839,24 +1531,6 @@
       "Mathematics-II",
       "Week 4",
       "AQ4.4: Activity Questions 4 - Not Graded :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 4/L4.2 Finding bases for vector spaces _ IITM Online Degree (5_4_2026 5_04_32 pm)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 4",
-      "L4.2 Finding bases for vector spaces :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 4/L4.3_ What is the rank_dimension for a vector space _ IITM Online Degree (5_4_2026 5_05_04 pm)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 4",
-      "L4.3: What is the rank/dimension for a vector space :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 4/L4.4_ Rank and dimension using Gaussian elimination _ IITM Online Degree (5_4_2026 5_07_06 pm)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 4",
-      "L4.4: Rank and dimension using Gaussian elimination :: IITM Online Degree"
     ],
     "Term-Feb-to-May/Mathematics-II/Week 4/Modules _ IITM Online Degree (5_4_2026 5_03_54 pm)": [
       "Term-Feb-to-May",
@@ -1941,36 +1615,6 @@
       "Week 5",
       "AQ5.5: Activity Questions 5 - Not Graded :: IITM Online Degree"
     ],
-    "Term-Feb-to-May/Mathematics-II/Week 5/L5.1_ The null space of a matrix _ finding nullity and a basis - Part 1 _ IITM Online Degree (13_4_2026 7_05_31 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 5",
-      "L5.1: The null space of a matrix : finding nullity and a basis - Part 1 :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 5/L5.2_ The null space of a matrix _ finding nullity and a basis - Part 2 _ IITM Online Degree (13_4_2026 7_06_06 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 5",
-      "L5.2: The null space of a matrix : finding nullity and a basis - Part 2 :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 5/L5.3_ What is a linear mapping - Part 1 _ IITM Online Degree (13_4_2026 7_06_38 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 5",
-      "L5.3: What is a linear mapping - Part 1 :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 5/L5.4_ What is a linear mapping - Part 2 _ IITM Online Degree (13_4_2026 7_07_13 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 5",
-      "L5.4: What is a linear mapping - Part 2 :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 5/L5.5_ What is a linear transformation _ IITM Online Degree (13_4_2026 7_07_50 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 5",
-      "L5.5: What is a linear transformation :: IITM Online Degree"
-    ],
     "Term-Feb-to-May/Mathematics-II/Week 5/Modules _ IITM Online Degree (13_4_2026 7_10_35 am)": [
       "Term-Feb-to-May",
       "Mathematics-II",
@@ -2035,24 +1679,6 @@
       "Mathematics-II",
       "Week 6",
       "AQ6.3: Activity Questions 3 - Not Graded :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 6/L6.1_ Linear transformations, ordered bases and matrices _ IITM Online Degree (13_4_2026 7_11_29 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 6",
-      "L6.1: Linear transformations, ordered bases and matrices :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 6/L6.2_ Image and kernel of linear transformations _ IITM Online Degree (13_4_2026 7_13_04 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 6",
-      "L6.2: Image and kernel of linear transformations :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 6/L6.3_ Examples of finding bases for the kernel and image of a linear transformation _ IITM Online Degree (13_4_2026 7_14_00 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 6",
-      "L6.3: Examples of finding bases for the kernel and image of a linear transformation :: IITM Online Degree"
     ],
     "Term-Feb-to-May/Mathematics-II/Week 6/Modules _ IITM Online Degree (13_4_2026 7_18_17 am)": [
       "Term-Feb-to-May",
@@ -2137,30 +1763,6 @@
       "Week 7",
       "AQ7.4: Activity Questions 4 - Not Graded :: IITM Online Degree"
     ],
-    "Term-Feb-to-May/Mathematics-II/Week 7/L7.1_ Equivalence and similarity of matrices _ IITM Online Degree (13_4_2026 7_18_42 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 7",
-      "L7.1: Equivalence and similarity of matrices :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 7/L7.2_ Affine subspaces and affine mappings _ IITM Online Degree (13_4_2026 7_19_19 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 7",
-      "L7.2: Affine subspaces and affine mappings :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 7/L7.3_ Lengths and angles _ IITM Online Degree (13_4_2026 7_19_33 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 7",
-      "L7.3: Lengths and angles :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 7/L7.4_ Inner products and norms on a vector space _ IITM Online Degree (13_4_2026 7_20_57 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 7",
-      "L7.4: Inner products and norms on a vector space :: IITM Online Degree"
-    ],
     "Term-Feb-to-May/Mathematics-II/Week 7/Practice Assignment 7 - Not Graded _ IITM Online Degree (13_4_2026 7_22_52 am)": [
       "Term-Feb-to-May",
       "Mathematics-II",
@@ -2231,36 +1833,6 @@
       "Mathematics-II",
       "Week 8",
       "AQ8.5: Activity Questions 5 - Not Graded :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 8/L8.1_ Orthgonality and linear independence _ IITM Online Degree (13_4_2026 7_23_35 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 8",
-      "L8.1: Orthgonality and linear independence :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 8/L8.2_ What is an orthonormal basis_ _ IITM Online Degree (13_4_2026 7_24_44 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 8",
-      "L8.2: What is an orthonormal basis? :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 8/L8.3_ Projections using inner products _ IITM Online Degree (13_4_2026 7_25_22 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 8",
-      "L8.3: Projections using inner products :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 8/L8.4_ The Gram-Schmidt process _ IITM Online Degree (13_4_2026 7_26_03 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 8",
-      "L8.4: The Gram-Schmidt process :: IITM Online Degree"
-    ],
-    "Term-Feb-to-May/Mathematics-II/Week 8/L8.5_ Orthogonal transformations and rotations _ IITM Online Degree (13_4_2026 7_26_35 am)": [
-      "Term-Feb-to-May",
-      "Mathematics-II",
-      "Week 8",
-      "L8.5: Orthogonal transformations and rotations :: IITM Online Degree"
     ],
     "Term-Feb-to-May/Mathematics-II/Week 8/Practice assignment 8 - Not Graded _ IITM Online Degree (13_4_2026 7_28_27 am)": [
       "Term-Feb-to-May",
