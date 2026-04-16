@@ -1,15 +1,248 @@
 ---
-title: ""
+title: "Practice Assignment 4 - Not Graded :: IITM Online Degree"
 ---
 
-# 
+# Practice Assignment 4 - Not Graded :: IITM Online Degree
 
-Please wait...
+Practice Assignment 4 - Not Graded
 
-**Error**: Cannot open the page from the filesystem.
+# Practice Assignment 4 - Not Graded
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+This assignment will not be graded and is only for practice.
 
-rFYAAA==,GgAAAEwBAABeAgAA/QIAAHkDAAC2AwAAbQQAAM8EAAD+BAAAuwUAAL4FAADRBQAAwAYAAGUIAACwCAAAUQkAAM0JAADdCQAApAoAANsKAADwCgAAvwsAAP0MAAChDQAAehEAAFISAAC0EwAAYRQAAHwUAABPFQAAshcAALQYAAC+GAAAXxkAADoaAACXGgAA5hsAAHAcAAA2HgAAmCAAAGYhAAB/IQAAuiIAAIwjAAAaJAAAdyQAALAlAADhJQAAqyoAAKYsAAA3LQAACC4AAEcuAAD1MAAADzIAACgzAADDMwAA2zMAAAI0AABtNQAAVzYAAF42AABhNgAAujYAAE43AABXNwAAejcAAEM4AABYOQAAtDoAALo+AACtQAAAa0IAAHBEAAB6RAAAB0UAABFHAABySAAAfUgAAKJIAAC5SAAAXUkAAF5JAACySQAAuUkAAIFKAACnSgAAm04AABRQAABuUQAAcVEAAKNRAADfUgAAXlMAALBTAABhVQAA5VgAAPlYAADHWgAAA1sAAGRbAAD1WwAAEFwAAA5dAABBXQAA32AAADdhAAAMYwAALWMAAPRkAAAUZQAAbWUAAOVlAAAPZgAABmcAACpnAADJZwAATGkAANJpAADzaQAA/2oAAPJrAACHbAAADG0AADNwAACRcQAAR3IAAE1zAACRcwAAjnQAAIN1AAA1dgAA5nYAAJR5AABcegAAhXoAAAR8AABMfAAAd4MAAMqDAAAihAAAHIUAAKSFAABJhwAAL4oAAIWKAABriwAAg4sAAEeMAADtjAAAjI0AAJiNAACljwAAz5IAAPSSAADfkwAA+JUAAG+WAACPlgAAVZcAAGaXAABlmQAAL5oAAEedAACunQAAFKEAAEGhAAAfpwAAF6gAAE+oAADLqAAAB6oAADmrAAD+qwAAFK4AABmvAAAbsAAAbbAAAOKxAABEswAAWbMAAAi1AAAQtgAAkLYAAOC2AAD6twAANbkAABK6AADovAAA6L0AAPW+AAA4vwAAX78AAK/BAAD0wQAAIcMAAIbEAAAdyAAAWMkAACLKAAB6ywAAsswAAOTNAADPzgAAds8AALfPAADP0QAAztUAAO/VAAD/1QAAUdcAAGnXAABn2AAAgNgAAMbYAAB32gAAKN0AADjeAACh3gAA2d4AABjfAACM3wAAaeAAAIPgAAA44QAAkOQAAMLkAADR5AAAfeUAAKDoAAAi6QAAvuoAAAvrAACa7QAAne0AAIzuAABy8QAAsfEAAA3yAAAH8wAAV/MAAOzzAACU9QAAv/YAAP74AAAd+QAAxvkAAA76AABq+gAA+/oAANH7AACq/AAAIv0AAGD9AAAfAgEAIQMBAI0DAQAzBAEAiwQBAJEEAQAqBQEAdQUBAIwHAQBcCQEA2wkBACAKAQAICwEAEAsBAF4LAQBzCwEAYAwBAHMMAQCMDQEAkA4BAJkOAQCZEAEAABEBAGQRAQCXEwEAvxQBAKgXAQDAGgEAGhsBADQcAQB3HAEAuhwBAPMcAQAuHgEAYB4BAIoeAQBsHwEAtSABABUhAQA/IQEAXiEBABkiAQC/IgEACCMBAC4kAQB4JAEApyQBAPwkAQDRKQEAqSoBAFcrAQAxLAEACzABAJAwAQAkMwEAYTMBAJEzAQCmMwEA9jMBAIw0AQDuNwEAXjkBAJ85AQBIOgEApjoBANY6AQBTOwEAgjsBAOI7AQAVPAEADz0BAJk9AQC6PgEAq0ABAItBAQDOQQEAZ0IBAL5CAQApRAEATkQBAElFAQABRgEAGkYBAH5GAQC4RgEAjEgBADJJAQA2SQEAZkoBAKFLAQBoTAEAz0wBAKJNAQDWTgEAlk8BAARQAQAMUAEAllABAJJTAQAnVAEAL1QBAL1UAQABVQEAB1UBAG1VAQDTVQEAVVYBAGFWAQD4VgEAuVcBAKJYAQAKWQEAWVkBAGNZAQASXgEABV8BAPJfAQBXYQEAjGEBAG5iAQCLYgEAGmMBAJNjAQB6ZAEAnmYBAJNnAQAiagEAhmoBAElsAQDybAEATG0BAHRuAQA8bwEAFXEBAIVxAQAScgEAinMBACB1AQBHdQEAdXYBAJp2AQCgdgEA93YBAG13AQA+eAEA7HgBADB6AQC+egEAxnsBAA58AQCGfAEAfX8BAKZ/AQC5gQEAUoIBAN2CAQAphAEAOYQBAOSEAQDvhAEACoUBAIKFAQCLhgEA84gBAGeJAQBhigEAzIoBAAKMAQASjQEA8pABAOmRAQARkwEAY5UBAKyVAQDIlwEA45cBALSYAQDnmAEAWpkBAIubAQCongEAo58BAKCgAQDHoAEAnaEBAGuiAQB0ogEApaMBAKajAQCApQEAhqYBAIOnAQDUqAEAvqsBACSsAQBArAEA+awBAHivAQCHrwEAsLABAMOwAQDIsQEAJ7MBALazAQAPtQEAlLUBAOC1AQBitgEAgLYBACa3AQBjtwEAYbgBAK+7AQAZvAEASL0BAFO9AQD8vQEA474BAOq+AQAfwQEAC8MBAA3EAQCtxAEAMcUBAOXGAQBuxwEAfccBAJ/HAQDpxwEAQ8gBAAXJAQDfyQEAUssBADLMAQD+zAEAR84BAIbOAQDp0AEAwdIBAP/UAQBf1QEAWtYBAFzWAQB72AEA4NkBAFraAQAJ2wEAJd4BAFbeAQBW3wEAceEBAGPkAQDA5gEAvucBAE3oAQBC6QEAv+kBANrpAQAi7QEAQ+4BALnvAQDm7wEAwfABAMbwAQDF8QEAn/MBABj0AQDU9AEAgvUBAFr2AQCG9gEAI/cBADj3AQCD+QEA2/kBAM36AQDz+wEAn/wBAMn8AQBS/QEAp/0BAMX9AQBv/wEA9wACAJgDAgATBQIASggCAKcLAgC1DAIAOA0CAMUNAgATDgIArA4CAEgRAgBxEQIAOhICAEIUAgABFQIAKRUCAHkWAgCqFgIAbRcCAHYYAgCNGAIAOBkCAKYZAgDKGwIAXxwCAFYeAgBYHgIArx8CAG0gAgCEIgIAFyQCAGclAgBaJwIAoSgCANQpAgDfKgIAny0CAOMvAgA8MAIASjECAH4xAgCNMwIArTMCAOg0AgBaNgIAtTYCAMM2AgAMNwIAnTkCAOA5AgBhOgIAnjoCAPQ7AgDmPgIAKj8CAJdCAgDoQgIAi0QCAG9FAgCaRgIAsUYCAL1GAgCbRwIA40kCAP5KAgBBSwIA+U0CACFPAgA8UAIAaFACAONQAgBZUQIAp1ICALtVAgDkVQIAzVYCAJJXAgBuWQIArVoCAHpbAgAhXwIAQGACABViAgBwYgIAlmMCAD9kAgBAZQIAZGUCAMRmAgDQZwIApm0CAI5uAgAVbwIAp28CAG1xAgCCcQIArHECAGVzAgAxdQIAtXYCACt3AgBPdwIAWXcCAA14AgC2eAIA/XgCAJN8AgARfQIA030CAIJ+AgCYfgIAm34CACF/AgBegQIACoICAPSDAgCHhQIAmoUCANCFAgA3hgIAh4cCAMuHAgDBiAIA+I0CAFKPAgCAjwIAzI8CAMCQAgCEkQIAVZICAG2SAgDckgIAM5QCADuUAgCPlAIAG5YCACiWAgBflgIAfpkCAMGaAgAGmwIAiJsCAKqbAgCVnAIAL50CAJKfAgBOoAIA/qACAD2hAgC5oQIAbqUCABamAgDYpgIA7KYCAGGoAgCcqQIA5qkCAMirAgClrQIAHq4CACKuAgBMrgIATq4CALWxAgAKsgIAgLUCAKW1AgDdtwIAXL0CAG29AgB+vQIAQL8CAO7BAgBEwwIA5sYCAE/KAgDVygIAg8sCAOjLAgAbzQIAts0CADzOAgDYzgIAS88CANHPAgAw0AIAyNACALrRAgAU0gIAANMCAIbTAgCq1AIAptUCALnVAgDT1QIAB9YCAMrXAgCS2AIAttkCAPbbAgDU3AIAM94CALLfAgA/4QIAK+MCAKTkAgBX5QIAf+YCAFvnAgCv5wIAH+kCAHPpAgCk6gIAs+oCAITrAgBn7gIAsvACAN3wAgAq8gIAW/ICAGLyAgB59gIAI/gCAPn7AgCP/AIAMf4CAND+AgCA/wIAi/8CAJH/AgD4/wIAcgADAAkCAwCPAwMA8wsDAGcNAwB3DwMAEhIDABcSAwDTEwMAYxQDAGQUAwAcGQMAvBoDAEwcAwAmHQMALR0DAHcdAwD8HgMAPh8DABskAwD6JAMAdyUDAGQmAwBJKgMAayoDAMcqAwCGLQMAsC8DAN0yAwD/MwMAEjgDAEo4AwABOQMA2T4DAGY/AwChSQMA90oDAOxNAwBXUAMA0FEDAN1UAwBgVQMAnFUDAC9WAwAdVwMA3FcDAH1YAwBuWgMAzF0DACFfAwD8XwMAsmEDAARjAwARYwMAuGMDAA1lAwBVZQMAemYDAOdmAwCFaAMAIWsDAG1sAwA9bwMAwG8DAIVwAwB0cQMAb3MDACl1AwC9dwMAZXoDAJx9AwCOfwMAcYMDAOWHAwAjiQMAG4oDALKKAwDJiwMAsIwDAL+MAwBfjgMA2I4DANyOAwAGjwMACI8DAPCRAwCXkgMAD5YDABuWAwDUlgMAxJcDANCXAwA9mAMAw5gDAM+YAwB2mgMAyZsDAJudAwCnnQMAnZ4DAP6gAwAUoQMAz6MDAIqkAwCepgMAyqcDAPqnAwDkqgMAOKsDADasAwA8rQMAP60DACSvAwBhrwMAh68DAMmvAwAdsQMAqLIDABezAwDstAMAfbgDAIm6AwDSvAMAOb0DAKy9AwAUvgMAer4DAMS+AwDfvgMAPL8DANa/AwD3vwMAVsADAIvBAwASwgMAZMIDACnFAwBdxQMABMYDAHfGAwDCyAMAKsoDAPDMAwD4zQMAZM4DAIbOAwCgzgMAF9ADADzQAwBx0AMAf9ADALTQAwDC0AMARtEDACDTAwDn2gMAqdsDAKPcAwDg3AMAI90DACvdAwDK3QMAqd4DAErgAwAw4QMAQeEDAMfjAwA+5QMABecDAFHoAwDX6AMAJukDAEPqAwDo6gMAAesDAGfsAwC17AMAX+0DAILuAwAG8wMARPMDADH0AwDN9gMAOfcDABT4AwAwAQQAEQMEAAwJBAAnCgQAQwsEAJQLBAC6CwQAogwEAKQMBAB+DQQADw8EAF8PBACeDwQAPRAEAG8QBAC5EAQAKREEAJgSBACYEwQAjBQEABMVBAA9FgQAkBcEACwZBAATGgQAkRoEAM4eBACbIwQAHicEAHUpBADZKgQA3yoEAMUtBAAaLgQAgC4EAKsuBADKLgQADy8EAFgvBAA4MAQAnTIEANQyBAAtNQQAijcEALQ3BABoOAQADTkEALU5BABgPAQA+j0EAJo+BADyPgQAh0EEAAZDBADMQwQA0UMEAOtDBADGRQQA1lEEAMVTBABWVAQAjVQEAKFVBAApVwQAtVcEAF5YBAAHWgQAlloEAMFaBADXWgQAcVsEAP5dBACRYAQAuGAEAC1hBABFYwQAg2UEADxmBAD3ZgQAa2cEANdnBABncQQAj3QEAJh0BADzdAQAcXgEAG56BAD1egQACnsEAPh8BAC9fgQAxX8EADOCBADvggQAJYMEAAGEBADbhAQA9oQEANuGBAAViQQAYIkEANSKBACiiwQAh44EAO2OBABQjwQAJpAEAEWQBAA4lQQAZJUEACyXBABZlwQASpgEANOZBAA7mgQA+JoEALGbBABsnAQAJZ0EAO6dBADXoQQAb6IEACKjBAA=
+  
+Multiple Select Questions (MSQ)  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Match the vector spaces (with the usual scalar multiplication and vector addition as in M3×3(R)M\_{3\\times 3}(\\mathbb{R})M3×3​(R) ) in column A with their bases in column B in Table : M2W4P1.  
+  
+![](assets/Term-Feb-to-May_Mathematics-II_Week4_PracticeAssignment4-NotGraded_IITMOnlineDegree5_4_20265_09_29pm_18.jpg)  
+Choose the correct option.  
+
+a →\\rightarrow→ i
+
+a →\\rightarrow→ ii
+
+b →\\rightarrow→ iii
+
+c →\\rightarrow→ iii
+
+c →\\rightarrow→ i
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+a →\\rightarrow→ ii
+
+b →\\rightarrow→ iii
+
+c →\\rightarrow→ i
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Match the sets of vectors in column A with their properties of linear dependence or independence in column B and the dimension of the vector spaces in column C spanned by the sets.  
+  
+![](assets/Term-Feb-to-May_Mathematics-II_Week4_PracticeAssignment4-NotGraded_IITMOnlineDegree5_4_20265_09_29pm_19.jpg)  
+
+a →\\rightarrow→ ii →\\rightarrow→ 4, b →\\rightarrow→ i →\\rightarrow→ 3
+
+c →\\rightarrow→ iv →\\rightarrow→ 1, d →\\rightarrow→ iii →\\rightarrow→ 2
+
+c →\\rightarrow→ iv →\\rightarrow→ 2, d →\\rightarrow→ iii →\\rightarrow→ 1
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+a →\\rightarrow→ ii →\\rightarrow→ 4, b →\\rightarrow→ i →\\rightarrow→ 3
+
+c →\\rightarrow→ iv →\\rightarrow→ 1, d →\\rightarrow→ iii →\\rightarrow→ 2
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Which of the following options are true?
+
+ The number of linearly independent vectors in a vector space can be more than the dimension of the vector space.
+
+Dimension of the vector space spanned by the vectors \[1−111\]\\begin{bmatrix} 1 & -1\\\\ 1 & 1 \\end{bmatrix}\[11​−11​\], \[−11−11\]\\begin{bmatrix} -1 & 1\\\\ -1 & 1 \\end{bmatrix} \[−1−1​11​\], and \[−1111\] \\begin{bmatrix} -1 & 1\\\\ 1 & 1 \\end{bmatrix}\[−11​11​\] is 2.
+
+Dimension of the vector space spanned by the vectors \[1−111\]\\begin{bmatrix} 1 & -1\\\\ 1 & 1 \\end{bmatrix}\[11​−11​\],\[−11−1−1\] \\begin{bmatrix} -1 & 1\\\\ -1 & -1 \\end{bmatrix}\[−1−1​1−1​\], and \[−22−2−2\] \\begin{bmatrix} -2 & 2\\\\ -2 & -2 \\end{bmatrix}\[−2−2​2−2​\] is 1.
+
+ The number of spanning vectors can be more than the dimension of the vector space.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Dimension of the vector space spanned by the vectors \[1−111\]\\begin{bmatrix} 1 & -1\\\\ 1 & 1 \\end{bmatrix}\[11​−11​\],\[−11−1−1\] \\begin{bmatrix} -1 & 1\\\\ -1 & -1 \\end{bmatrix}\[−1−1​1−1​\], and \[−22−2−2\] \\begin{bmatrix} -2 & 2\\\\ -2 & -2 \\end{bmatrix}\[−2−2​2−2​\] is 1.
+
+The number of spanning vectors can be more than the dimension of the vector space.
+
+  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Let AAA be a nonzero 2×22 \\times 22×2 matrix. Which of the following options are true?
+
+The rank of AAA must be strictly less than 222.
+
+If the rank of the matrix is 2, then the dimension of the vector space spanned by the vectors corresponding to each column of AAA, must be 2.
+
+The rank of AAA must be at least 1.
+
+The rank of AAA may be 0.
+
+If the rank of the matrix is 2−12-12−1, then there exists one vector corresponding to a column of AAA, which can be expressed as a linear combination of the vectors corresponding to each of the remaining columns of AAA.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+If the rank of the matrix is 2, then the dimension of the vector space spanned by the vectors corresponding to each column of AAA, must be 2.
+
+The rank of AAA must be at least 1.
+
+If the rank of the matrix is 2−12-12−1, then there exists one vector corresponding to a column of AAA, which can be expressed as a linear combination of the vectors corresponding to each of the remaining columns of AAA.
+
+  
+  
+Numerical Answer Type (NAT)  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+Suppose A\=(8−m  2  430  0m  m−2)A=\\begin{pmatrix} 8-m & \\ \\ 2 & \\ \\ 4 \\\\ 3 & 0 & \\ \\ 0 \\\\ m & \\ \\ m & -2 \\end{pmatrix}A\=​8−m3m​  20  m​  4  0−2​​. For what value of mmm is the rank of AAA at most 2?
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) -1.0
+
+_1 point_
+
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+If rank of the matrix \[0−1a20−43−9−6\]\\begin{bmatrix} 0 & -1 & a \\\\ 2 & 0 & -4\\\\ 3 & -9 & -6 \\end{bmatrix}​023​−10−9​a−4−6​​ is 2 then find the value of aaa.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 0
+
+_1 point_
+
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+Find out the value of aaa for which the matrix \[a−50−1\]\\begin{bmatrix} a & -5 \\\\0 & -1 \\end{bmatrix}\[a0​−5−1​\] will be in the spanning set of the matrices \[100−1\]\\begin{bmatrix} 1 & 0 \\\\ 0 & -1 \\end{bmatrix}\[10​0−1​\] and \[0100\]\\begin{bmatrix} 0 & 1 \\\\ 0 & 0 \\end{bmatrix}\[00​10​\] in M2×2(R)M\_{2 \\times 2}(\\mathbb{R})M2×2​(R) with usual matrix addition and scalar multiplication.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 1
+
+_1 point_
+
+  
+  
+Comprehension Type Question:  
+  
+Suppose in a village there are four farmers A, B, C and D, each owning 1 acre of land. They cultivate paddy, pulses and/or sugarcane in their lands as follows: Farmer A uses 50% of his land for paddy, 30% for pulses and the remaining for sugarcane. Farmer B uses 40% of her land for paddy and she divides her remaining land equally for pulses and sugarcane. Farmer C uses the whole land for paddy only, and Farmer D uses 30% for paddy, 30% for pulses and the remaining for sugarcane. Using the above information, answer the following questions.  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Suppose the area used by a farmer for different crops is denoted by a row vector. Let S be the span of the resulting four row vectors . Choose the correct set of options.
+
+ The row vectors corresponding to the area used for different crops by Farmer D can be obtained as a linear combination of the row vectors corresponding to the area used for different crops by Farmers A, B, and C.
+
+ The row vectors corresponding to the area used for different crops by Farmer D can be obtained as a linear combination of the row vectors corresponding to the area used for different crops by Farmer A and Farmer B.
+
+ The row vectors corresponding to the area used for different crops by Farmer C can be obtained as a linear combination of the row vectors corresponding to the area used for different crops by Farmer A and Farmer B.
+
+ The row vectors corresponding to the area used for different crops by Farmer D can be obtained as a linear combination of the row vectors corresponding to the area used for different crops by Farmer A and Farmer C.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+The row vectors corresponding to the area used for different crops by Farmer D can be obtained as a linear combination of the row vectors corresponding to the area used for different crops by Farmers A, B, and C.
+
+The row vectors corresponding to the area used for different crops by Farmer D can be obtained as a linear combination of the row vectors corresponding to the area used for different crops by Farmer A and Farmer B.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Let SSS be the vectors space defined in the previous question, with the usual addition and scalar multiplication on R3\\mathbb{R}^3R3. Which of the following sets will not be a basis of SSS?
+
+{(5,3,2)}\\lbrace (5,3,2) \\rbrace{(5,3,2)}
+
+{(5,3,2),(4,3,3)}\\lbrace (5,3,2),(4,3,3) \\rbrace{(5,3,2),(4,3,3)}
+
+{(5,3,2),(4,3,3),(10,0,0)}\\lbrace (5,3,2),(4,3,3), (10,0,0) \\rbrace{(5,3,2),(4,3,3),(10,0,0)}
+
+{(5,3,2),(4,3,3),(3,3,4)}\\lbrace (5,3,2),(4,3,3), (3,3,4) \\rbrace{(5,3,2),(4,3,3),(3,3,4)}
+
+{(5,3,2),(4,3,3),(10,0,0),(3,3,4)}\\lbrace (5,3,2),(4,3,3), (10,0,0), (3,3,4) \\rbrace{(5,3,2),(4,3,3),(10,0,0),(3,3,4)}
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+{(5,3,2)}\\lbrace (5,3,2) \\rbrace{(5,3,2)}
+
+{(5,3,2),(4,3,3)}\\lbrace (5,3,2),(4,3,3) \\rbrace{(5,3,2),(4,3,3)}
+
+{(5,3,2),(4,3,3),(3,3,4)}\\lbrace (5,3,2),(4,3,3), (3,3,4) \\rbrace{(5,3,2),(4,3,3),(3,3,4)}
+
+{(5,3,2),(4,3,3),(10,0,0),(3,3,4)}\\lbrace (5,3,2),(4,3,3), (10,0,0), (3,3,4) \\rbrace{(5,3,2),(4,3,3),(10,0,0),(3,3,4)}
+
+  
+
+Check Answers
+
+Your score is: 0/9
+
+Please enable JavaScript to continue using this application.

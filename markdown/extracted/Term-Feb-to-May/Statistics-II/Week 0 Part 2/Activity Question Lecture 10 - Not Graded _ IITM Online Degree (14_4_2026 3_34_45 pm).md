@@ -1,15 +1,104 @@
 ---
-title: ""
+title: "Activity Question Lecture 10 - Not Graded :: IITM Online Degree"
 ---
 
-# 
+# Activity Question Lecture 10 - Not Graded :: IITM Online Degree
 
-Please wait...
+Activity Question Lecture 10 - Not Graded
 
-**Error**: Cannot open the page from the filesystem.
+# Activity Question Lecture 10 - Not Graded
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+This assignment will not be graded and is only for practice.
 
-2I0BAA==,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
+**Note : This activity is only for practice purpose and it will not be counted towards the Final score  
+  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+During an IITM online exam, Shalini answered only 222 questions and her answers can either be correct or incorrect with equal probability. The correctness of the two answers are independent. What is the probability that both of her answers are correct, given that at least one is correct?
+
+23\\displaystyle\\frac{2}{3}32​
+
+13\\displaystyle\\frac{1}{3}31​
+
+12\\displaystyle\\frac{1}{2}21​
+
+14\\displaystyle\\frac{1}{4}41​
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+13\\displaystyle\\frac{1}{3}31​
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+In mini IPL auction held recently, a total of 202020 overseas players got sold to different IPL teams. Out of that 202020 overseas players 101010 are from Australia, 666 from England and 444 from New Zealand. Three different overseas players are chosen randomly one after the other. What is the probability that the three selected players are from Australia, New Zealand and Australia again in order?
+
+118\\displaystyle\\frac{1}{18}181​
+
+119\\displaystyle\\frac{1}{19}191​
+
+219\\displaystyle\\frac{2}{19}192​
+
+19\\displaystyle\\frac{1}{9}91​
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+119\\displaystyle\\frac{1}{19}191​
+
+JavaScript should be enabled to grade this question.
+
+In an Indian cricket team squad, 808080% play T20, 404040% play both T20 and Test cricket. What is the probablity that T20 player is also a Test player? Answer your question correct upto two decimal points.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 0.5
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+If PPP and QQQ are independent and uniform in {1,2,...,101,2,...,101,2,...,10}, find the probability that the roots of the equation x2+P×x+Q\=0.x^{2} + P × x + Q = 0.x2+P×x+Q\=0. are real?(Answer the question correct to two decimal points.)
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Range) 0.60,0.65
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+Each set of a 333\-set badminton match between Himanshu and Hari is won with equal probability by either player. What is the conditional probability that Himanshu wins more sets than Hari given that Himanshu wins the first set? (Answer the question cor- rect to two decimal points.)
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 0.75
+
+_1 point_
+
+Check Answers
+
+Your score is: 0/5
+
+Please enable JavaScript to continue using this application.

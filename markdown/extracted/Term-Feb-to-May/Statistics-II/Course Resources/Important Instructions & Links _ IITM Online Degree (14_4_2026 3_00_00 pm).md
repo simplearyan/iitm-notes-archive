@@ -1,15 +1,31 @@
 ---
-title: ""
+title: "Important Instructions & Links :: IITM Online Degree"
 ---
 
-# 
+# Important Instructions & Links :: IITM Online Degree
 
-Please wait...
+Important Instructions & Links
 
-**Error**: Cannot open the page from the filesystem.
+# Course Resources
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+## Policy & Guidelines Documents
 
-,GgAAAAEBAAAIAQAAPQMAACkFAAArBgAAywYAAE8HAAADCQAAjAkAAJsJAAC9CQAABwoAAGEKAAAjCwAA/QsAAHANAABQDgAAHA8AAGUQAACkEAAABxMAAN8UAAAdFwAAfRcAAHgYAAB6GAAAmRoAAP4bAAB4HAAAJx0AAEMgAAB0IAAAdCEAAI8jAACBJgAA3igAANwpAABrKgAAYCsAAN0rAAD4KwAAQC8AAGEwAADXMQAABDIAAN8yAADkMgAA4zMAAL01AAA2NgAA8jYAAKA3AAB4OAAApDgAAEE5AABWOQAAoTsAAPk7AADrPAAAET4AAL0+AADnPgAAcD8AAMU/AADjPwAAjUEAABVDAAC2RQAAMUcAAGhKAADFTQAA004AAFZPAADjTwAAMVAAADNRAACEUgAA51QAABpWAABJVgAAnVYAALZWAADMVwAAF1gAAEJYAAB2WAAA4lgAAHtZAACKWQAAuloAACxbAAC/XAAA7V8AALpiAACQYwAAI2UAAMhmAACuaQAABGoAAOpqAAACawAAxmsAAGxsAAALbQAAF20AACRvAABOcgAAc3IAAF5zAAB3dQAA7nUAAA52AADUdgAA5XYAAOR4AACueQAAxnwAAC19AACTgAAAwIAAAJ6GAACWhwAAzocAAEqIAACGiQAAuIoAAH2LAACTjQAAmI4AAJqPAADsjwAAYZEAAMOSAADYkgAAh5QAAI+VAAAPlgAAX5YAAHmXAAC0mAAAkZkAAGecAABnnQAAdJ4AALeeAADengAALqEAAHOhAACgogAABaQAAJynAADXqAAAoakAAPmqAAAxrAAAY60AAE6uAAD1rgAANq8AAE6xAABNtQAAbrUAAH61AADQtgAA6LYAAOa3AAD/twAARbgAAPa5AACnvAAAt70AACC+AABYvgAAl74AAAu/AADovwAAAsAAALfAAAAPxAAAQcQAAFDEAAD8xAAAH8gAAKHIAAA9ygAAisoAABnNAAAczQAAC84AAPHQAAAw0QAAjNEAAIbSAADW0gAAa9MAABPVAAA+1gAAfdgAAJzYAABF2QAAjdkAAOnZAAB62gAAUNsAACncAACh3AAA39wAAJ7hAACg4gAADOMAALLjAAAK5AAAEOQAAKnkAAD05AAAC+cAANvoAABa6QAAn+kAAIfqAACP6gAA3eoAAPLqAADf6wAA8usAAAvtAAAP7gAAGO4AABjwAAB/8AAA4/AAABbzAAA+9AAAJ/cAAD/6AACZ+gAAs/sAAPb7AAA5/AAAcvwAAK39AADf/QAACf4AAOv+AAA0AAEAlAABAL4AAQDdAAEAmAEBAD4CAQCHAgEArQMBAPcDAQAmBAEAewQBAFAJAQAoCgEA1goBALALAQDBEAEA8xIBADMUAQD/FAEAGhUBADMVAQBVGAEAnxgBAKsaAQAhGwEARhsBADQdAQBaHgEAvx8BAEYgAQCsIAEA2CABANkhAQBIIgEA3yIBALEjAQAgJgEAeiYBACgnAQAwJwEAZycBAFUoAQB3KQEALyoBAN0qAQBVLQEAXS4BAMswAQCHMQEAvTEBAJkyAQBzMwEAjjMBAHM1AQCtNwEA+DcBAGw5AQA6OgEAHz0BAIU9AQDoPQEAvj4BAN0+AQDQQwEA/EMBAMRFAQDxRQEA4kYBAGpIAQDSSAEAj0kBAA==
+*   [Grading Document](https://docs.google.com/document/d/e/2PACX-1vSUvKzH7yIXNVwUgRYSIT8M0x1jhFSkslEtj9UPo3dtWI_sJ38Hh_PzbBygpF0vIOo8K7lTy-uYkqdu/pub#h.35nkun2) Assignment deadlines and eligibility rules.
+*   [Student Handbook](https://docs.google.com/document/d/e/2PACX-1vRxGnnDCVAO3KX2CGtMIcJQuDrAasVk2JHbDxkjsGrTP5ShhZK8N6ZSPX89lexKx86QPAUswSzGLsOA/pub) Program structure, academic guidelines, and progression.
+
+## Communication & Calendar
+
+*   [Announcement Group](https://groups.google.com/a/study.iitm.ac.in/group/26t1-ma1004-announce) Updates: content releases, deadlines, exam notifications.
+*   [Course Calendar](https://calendar.google.com/calendar/u/0/r?cid=Y180Y2wxN3AxZXRuYTNnYmJlaXZvdjBwNW1rb0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t) Schedule for live sessions, events, and deadlines.  
+    ▶️ [How to add Calendar](https://youtu.be/s3YJTM1UTlU)
+*   **Discourse Forum** Platform for discussions between students and instructors (link to be shared).
+
+## Orientations, Playlist 
+
+*   [Course Playlist](https://www.youtube.com/playlist?list=PLZ2ps__7DhBbLZ6RdNTIXvFdaMpvqagt0) Weekly recorded course content.
+*   [Course Orientation](https://www.youtube.com/live/LeFtHkCB4D8?si=Di9Dh2lXizBIkKYa) Overview of the course structure.
+*   [Jan 2026 Level Orientation](https://youtube.com/live/KgyehGij16o?feature=share)
+*   [Level Orientation  
+    ](https://youtu.be/vLQQi5RgmPs)Specific level including structure, timelines, and expectations.
+
+Please enable JavaScript to continue using this application.

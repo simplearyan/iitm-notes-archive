@@ -1,15 +1,120 @@
 ---
-title: ""
+title: "Activity Question Lecture 3 - Not Graded :: IITM Online Degree"
 ---
 
-# 
+# Activity Question Lecture 3 - Not Graded :: IITM Online Degree
 
-Please wait...
+Activity Question Lecture 3 - Not Graded
 
-**Error**: Cannot open the page from the filesystem.
+# Activity Question Lecture 3 - Not Graded
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+This assignment will not be graded and is only for practice.
 
-JrMBAA==,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
+**Note : This activity is only for practice purpose and it will not be counted towards the Final score  
+  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider the experiment of selecting a student randomly from a school where both boys and girls study. Let A A A be the event that a 10th grade student is selected. Let B B B be the event that a boy student is selected. Are A A A and B B B disjoint?
+
+ No
+
+ Yes
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+No
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Are PPP = {3,8,93, 8, 93,8,9} QQQ = {9,10,119, 10, 119,10,11} disjoint event?
+
+ No
+
+ Yes
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+No
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Let AAA = { 1,2,3,4,5,6,71, 2, 3, 4, 5, 6, 71,2,3,4,5,6,7 } and BBB = { 6,76, 76,7 } are two sets. The difference of set AAA and set BBB is given by
+
+{1,2,3,41 , 2, 3, 41,2,3,4}
+
+{1,2,3,4,51, 2, 3, 4, 51,2,3,4,5}
+
+{4,5,6,74, 5, 6, 74,5,6,7}
+
+{1,2,4,51, 2, 4, 51,2,4,5}
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+{1,2,3,4,51, 2, 3, 4, 51,2,3,4,5}
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Let SSS = { 2,4,6,8,10,12,142, 4, 6, 8, 10, 12, 142,4,6,8,10,12,14 }be the sample space, and let AAA = { 2,4,62, 4, 62,4,6 }be an event. Then compliment of event AAA equals
+
+{2,4,62, 4, 62,4,6}
+
+{10,12,1410, 12, 1410,12,14}
+
+{8,10,12,148, 10, 12, 148,10,12,14}
+
+{6,10,12,146, 10, 12, 146,10,12,14}
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+{8,10,12,148, 10, 12, 148,10,12,14}
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider the experiment of throwing a fair die. Let AAAbe the event that an odd number is thrown. Let BBB denote the event of getting an even number other than 2. Then, find A∪BA \\cup BA∪B.
+
+{1,2,3,4,5,61, 2, 3, 4, 5, 61,2,3,4,5,6}
+
+{1,3,5,4,61, 3, 5, 4, 61,3,5,4,6}
+
+{1,3,51, 3, 51,3,5}
+
+{4,64, 64,6}
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+{1,3,5,4,61, 3, 5, 4, 61,3,5,4,6}
+
+Check Answers
+
+Your score is: 0/5
+
+Please enable JavaScript to continue using this application.

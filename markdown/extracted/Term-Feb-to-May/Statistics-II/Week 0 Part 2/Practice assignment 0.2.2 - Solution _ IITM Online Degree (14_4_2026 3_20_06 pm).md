@@ -1,15 +1,11 @@
 ---
-title: ""
+title: "Practice assignment 0.2.2 - Solution :: IITM Online Degree"
 ---
 
-# 
+# Practice assignment 0.2.2 - Solution :: IITM Online Degree
 
-Please wait...
+Practice assignment 0.2.2 - Solution
 
-**Error**: Cannot open the page from the filesystem.
+[Click here to view the Practice assignment Solution PDF](https://drive.google.com/file/d/16noVR4MsrGUJ_FD2Ki2OS4GRFeSVHbNf/view?usp=sharing)
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
-
-,GgAAADEAAAC/AQAApQQAAPsEAADhBQAA+QUAAL0GAABjBwAAAggAAA4IAAAbCgAARQ0AAGoNAABVDgAAbhAAAOUQAAAFEQAAyxEAANwRAADbEwAApRQAAL0XAAAkGAAAihsAALcbAACVIQAAjSIAAMUiAABBIwAAfSQAAK8lAAB0JgAAiigAAI8pAACRKgAA4yoAAFgsAAC6LQAAzy0AAH4vAACGMAAABjEAAFYxAABwMgAAqzMAAIg0AABeNwAAXjgAAGs5AACuOQAA1TkAACU8AABqPAAAlz0AAPw+AACTQgAAzkMAAJhEAADwRQAAKEcAAFpIAABFSQAA7EkAAC1KAABFTAAARFAAAGVQAAB1UAAAx1EAAN9RAADdUgAA9lIAADxTAADtVAAAnlcAAK5YAAAXWQAAT1kAAI5ZAAACWgAA31oAAPlaAACuWwAABl8AADhfAABHXwAA818AABZjAACYYwAANGUAAIFlAAAQaAAAE2gAAAJpAADoawAAJ2wAAINsAAB9bQAAzW0AAGJuAAAKcAAANXEAAHRzAACTcwAAPHQAAIR0AADgdAAAcXUAAEd2AAAgdwAAmHcAANZ3AACVfAAAl30AAAN+AACpfgAAAX8AAAd/AACgfwAA638AAAKCAADSgwAAUYQAAJaEAAB+hQAAhoUAANSFAADphQAA1oYAAOmGAAACiAAABokAAA+JAAAPiwAAdosAANqLAAANjgAANY8AAB6SAAA2lQAAkJUAAKqWAADtlgAAMJcAAGmXAACkmAAA1pgAAACZAADimQAAK5sAAIubAAC1mwAA1JsAAI+cAAA1nQAAfp0AAKSeAADungAAHZ8AAHKfAABHpAAAH6UAAM2lAACnpgAAGKkAAHupAAAIqgAAp6sAAOSuAAA+sQAAe7EAABmzAABztAAAkLQAAMW0AABptQAAirUAAF24AACfuAAAYbkAAHi5AADPugAAELsAAJy7AAA2vAAATbwAAB29AAAkvQAAWb8AAEXBAABHwgAA58IAAGvDAAAfxQAAqMUAALfFAADZxQAAI8YAAH3GAAA/xwAAGcgAAIzJAABsygAAOMsAAIHMAADAzAAAI88AAPvQAAA50wAAmdMAAJTUAACW1AAAtdYAABrYAACU2AAAQ9kAAF/cAACQ3AAAkN0AAKvfAACd4gAA+uQAAPjlAACH5gAAfOcAAPnnAAAU6AAAXOsAAH3sAADz7QAAIO4AAPvuAAAA7wAA/+8AANnxAABS8gAADvMAALzzAACU9AAAwPQAAF31AABy9QAAvfcAABX4AAAH+QAALfoAANn6AAAD+wAAjPsAAOH7AAD/+wAAqf0AADH/AADSAQEATQMBAIQGAQDhCQEA7woBAHILAQD/CwEATQwBAAANAQAeDgEAgw8BAGIQAQC5EgEA8xIBAMAYAQDKGQEAxxoBAJ4bAQD2HQEAUx4BAK4eAQD8HwEAIyABAFkhAQBDIgEAFyYBAIUmAQDAJgEAjScBADspAQBDKgEAsSwBAG0tAQCjLQEAfy4BAFkvAQB0LwEAWTEBAJMzAQDeMwEAUjUBACA2AQAFOQEAazkBAM45AQCkOgEAwzoBALY/AQDiPwEAqkEBANdBAQDIQgEAz0MBAFBEAQB1RAEAuEQBAN1EAQB1RQEAmkUBAFhGAQDDRgEALkcBAJlHAQAESAEAb0gBANZIAQA=
+Please enable JavaScript to continue using this application.

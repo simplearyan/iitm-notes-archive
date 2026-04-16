@@ -1,15 +1,255 @@
 ---
-title: ""
+title: "AQ3.5: Activity Questions 5 - Not Graded :: IITM Online Degree"
 ---
 
-# 
+# AQ3.5: Activity Questions 5 - Not Graded :: IITM Online Degree
 
-Please wait...
+AQ3.5: Activity Questions 5 - Not Graded
 
-**Error**: Cannot open the page from the filesystem.
+# AQ3.5: Activity Questions 5 - Not Graded
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+This assignment will not be graded and is only for practice.
 
-bh8CAA==,GgAAAC8DAADZAwAA9wMAAMQEAADyBAAAXwUAALoFAABMBgAAKQcAANAIAACVCQAA4AkAAGEKAACHCwAAwBEAAMsTAAD2FAAAHhYAAIYaAAAFGwAAQxsAAKcdAACLIAAAuCIAAGAjAAAEJAAAMCYAAE0nAACVJwAA5SgAABspAADZKwAA3ysAAP8rAABzLAAAey0AAB0uAACtMAAAEjEAAEMxAAA9MgAAoDIAAJ0zAADLNAAABjUAAFY1AADMNgAAHjcAAGw3AADDNwAAKjgAAGQ4AABtOAAASzkAAKk5AABjOgAAFD0AAGs9AAB6PQAAI0AAAHNAAABRQQAAhEEAAOFBAACJQgAAzEIAAAdEAAAbRAAA8kQAAClFAADxSAAArUkAAEVKAACxSgAAlU0AANZNAABwTgAAhlAAADZSAABHVAAAplUAAIhWAACCWAAANVkAAHxZAAA1WwAApVsAAOtcAADAXQAAG14AABlfAACYYQAAo2EAAKthAADEYgAAzWUAAOFlAACvZgAA42YAAF1nAADWaQAA0WoAAMptAAA+bgAAeXAAALpwAAAVcgAAE3QAAFV1AADJdQAA1XUAANp1AABqdgAApXYAAG14AAAKeQAAOHkAAEZ5AABeeQAAnnkAANF7AAA3fQAAV30AABN+AAAHfwAAzYAAANSAAABlgQAAH4IAACiCAAC6ggAASYQAAHmEAABxhQAA54UAANKGAAB1hwAAeYcAAHmIAACFjAAAbI0AACSOAAAIkQAAW5EAANCSAADhlQAAWZYAADeXAAAAmAAACpgAAA2ZAACvnAAAmZ4AAK2eAADQngAA9Z4AAJygAAACogAAp6MAAI2mAADjpgAAyacAAOGnAAClqAAAS6kAAOqpAAD2qQAAA6wAAC2vAABSrwAAPbAAAFayAADNsgAA7bIAALOzAADEswAAw7UAAI22AACluQAADLoAAHK9AACfvQAAfcMAAHXEAACtxAAAKcUAAGXGAACXxwAAXMgAAHLKAAB3ywAAecwAAMvMAABAzgAAos8AALfPAABm0QAAbtIAAO7SAAA+0wAAWNQAAJPVAABw1gAARtkAAEbaAABT2wAAltsAAL3bAAAN3gAAUt4AAH/fAADk4AAAe+QAALblAACA5gAA2OcAABDpAABC6gAALesAANTrAAAV7AAALe4AACzyAABN8gAAXfIAAK/zAADH8wAAxfQAAN70AAAk9QAA1fYAAIb5AACW+gAA//oAADf7AAB2+wAA6vsAAMf8AADh/AAAlv0AAO4AAQAgAQEALwEBANsBAQD+BAEAgAUBABwHAQBpBwEA+AkBAPsJAQDqCgEA0A0BAA8OAQBrDgEAZQ8BALUPAQBKEAEA8hEBAB0TAQBcFQEAexUBACQWAQBsFgEAyBYBAFkXAQAvGAEACBkBAIAZAQC+GQEAfR4BAH8fAQDrHwEAkSABAOkgAQDvIAEAiCEBANMhAQDqIwEAuiUBADkmAQB+JgEAZicBAG4nAQC8JwEA0ScBAL4oAQDRKAEA6ikBAO4qAQD3KgEA9ywBAF4tAQDCLQEA9S8BAB0xAQAGNAEAHjcBAHg3AQCSOAEA1TgBABg5AQBROQEAjDoBAL46AQDoOgEAyjsBABM9AQBzPQEAnT0BALw9AQB3PgEAHT8BAGY/AQCMQAEA1kABAAVBAQBaQQEAL0YBAAdHAQC1RwEAj0gBAOZKAQDcTAEAw00BAMpNAQD/TwEA61EBAO1SAQCNUwEAEVQBAMVVAQBOVgEAXVYBAH9WAQDJVgEAI1cBAOVXAQC/WAEAMloBABJbAQDeWwEAJ10BAGZdAQDJXwEAoWEBAN9jAQA/ZAEAOmUBADxlAQBbZwEAwGgBADppAQDpaQEABW0BADZtAQA2bgEAUXABAENzAQCgdQEAnnYBAC13AQAieAEAn3gBALp4AQACfAEAI30BAJl+AQDGfgEAoX8BAKZ/AQClgAEAf4IBAPiCAQC0gwEAYoQBADqFAQBmhQEAA4YBABiGAQBjiAEAu4gBAK2JAQDTigEAf4sBAKmLAQAyjAEAh4wBAKWMAQBPjgEA148BAHiSAQDzkwEAKpcBAIeaAQCVmwEAGJwBAKWcAQDznAEAjJ0BACigAQBRoAEAGqEBACKjAQDhowEACaQBAFmlAQCKpQEATaYBAFanAQBtpwEAGKgBAIaoAQCqqgEAP6sBADatAQA4rQEAj64BAE2vAQBksQEA97IBAEe0AQA6tgEAgbcBALS4AQC/uQEAf7wBAMO+AQAcvwEAKsABAF7AAQBtwgEAjcIBAMjDAQA6xQEAlcUBAKPFAQDsxQEAfcgBAMDIAQBByQEAfskBANTKAQDGzQEACs4BAHfRAQDI0QEAa9MBAE/UAQB61QEAkdUBAJ3VAQB71gEAw9gBAN7ZAQAh2gEA2dwBAAHeAQAc3wEASN8BAMPfAQA54AEAh+EBAJvkAQDE5AEAreUBAHLmAQBO6AEAjekBAFrqAQAB7gEAIO8BAPXwAQBQ8QEAdvIBAB/zAQAg9AEARPQBAKT1AQCw9gEAhvwBAG79AQD1/QEAh/4BAE0AAgBiAAIAjAACAEUCAgARBAIAlQUCAAsGAgAvBgIAOQYCAO0GAgCWBwIA3QcCAHMLAgAyDQIAPA0CAMkNAgDTDwIANBECAD8RAgBkEQIAexECAB8SAgAgEgIAdBICAHsSAgBDEwIAaRMCAF0XAgDWGAIAMBoCADMaAgBlGgIAoRsCACAcAgByHAIAIx4CAKchAgC7IQIAiSMCAMUjAgAmJAIAtyQCANIkAgDQJQIAAyYCAKEpAgD5KQIAzisCAO8rAgC2LQIA1i0CAC8uAgCnLgIA0S4CAMgvAgDsLwIAizACAA4yAgCUMgIAtTICAMEzAgC0NAIASTUCAM41AgD1OAIAUzoCAAk7AgAPPAIAUzwCAFA9AgBFPgIA9z4CAKg/AgBWQgIAHkMCAEdDAgDGRAIADkUCADlMAgD6TAIA400CAEtOAgCaTgIApE4CAFNTAgBGVAIAM1UCAJhWAgDNVgIAr1cCAMxXAgBbWAIA1FgCALtZAgDfWwIA1FwCAGNfAgDHXwIAimECADNiAgCNYgIAtWMCAH1kAgBWZgIAxmYCAFNnAgDLaAIAYWoCAIhqAgC2awIA22sCAOFrAgA4bAIArmwCAH9tAgAtbgIAcW8CAP9vAgAHcQIAT3ECAMdxAgC+dAIA53QCAPp2AgCTdwIAHngCAGp5AgB6eQIAJXoCADB6AgBLegIAw3oCAMx7AgA0fgIAqH4CAKJ/AgANgAIAQ4ECAFOCAgAzhgIAKocCAFKIAgCkigIA7YoCAAmNAgAkjQIA9Y0CACiOAgCbjgIAzJACAOmTAgDklAIA4ZUCAAiWAgDelgIArJcCALWXAgDmmAIA55gCAMGaAgDHmwIAxJwCABWeAgD/oAIAZaECAIGhAgA6ogIAuaQCAMikAgDxpQIABKYCAAmnAgBoqAIA96gCAFCqAgDVqgIAIasCAKOrAgDBqwIAZ6wCAKSsAgCirQIA8LACAFqxAgCJsgIAlLICAD2zAgBvtAIAgbUCACC2AgCctgIA2bYCAJC3AgDytwIAIbgCAN64AgDhuAIA9LgCAOO5AgCIuwIA07sCAHS8AgDwvAIAAL0CAMe9AgD+vQIAE74CAOK+AgAgwAIAxMACAJ3EAgB1xQIA18YCAITHAgCfxwIAcsgCANXKAgDXywIA4csCAILMAgBdzQIAus0CAAnPAgCTzwIAWdECALvTAgCJ1AIAotQCAN3VAgCv1gIAPdcCAJrXAgDT2AIABNkCAM7dAgDJ3wIAWuACACvhAgBq4QIAGOQCADLlAgBL5gIA5uYCAP7mAgAl5wIAkOgCAHrpAgCB6QIAhOkCAN3pAgBx6gIAeuoCAJ3qAgBm6wIAe+wCANftAgDd8QIA0PMCAI71AgCs+AIABvoCADT6AgCA+gIAdPsCADj8AgAJ/QIAIf0CAJD9AgDn/gIA7/4CAEP/AgDPAAMA3AADABMBAwAyBAMAdQUDALoFAwA8BgMAXgYDAEkHAwDjBwMARgoDAAILAwCyCwMA8QsDAG0MAwAiEAMAyhADAIwRAwCgEQMAzhUDALwWAwD6FgMACBgDALUYAwApGQMASxkDACIcAwC4HAMAmh0DAKQfAwC1HwMA7SADAEAiAwB8IgMABCMDADsjAwCoIwMAOiYDAIcmAwALJwMAYCcDAAopAwCcKgMAOysDAForAwCvLQMAsi0DANkuAwAyMAMAZTEDAH8yAwCDMgMACzYDACo2AwC2NgMAKDcDAKU3AwCZOAMAtjgDAL04AwDAOAMANzkDAIY5AwCXOQMAIz0DALI9AwBoPgMAxT4DADU/AwCIQAMAx0EDAMRCAwC1QwMA/UUDAMJHAwDKSAMAOEsDAPRLAwAqTAMABk0DAOBNAwD7TQMA4E8DABpSAwBlUgMA2VMDAKdUAwCMVwMA8lcDAFVYAwArWQMASlkDAD1eAwBpXgMAMWADAF5gAwBPYQMA12IDAD9jAwD8YwMAuWQDAHRlAwAtZgMA5mYDANxqAwA=
+**Level 1  
+  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Choose the set of correct options.
+
+The set {(1,2,3),(4,5,6),(7,8,9)}\\lbrace (1,2,3),(4,5,6), (7,8,9)\\rbrace{(1,2,3),(4,5,6),(7,8,9)} is linearly dependent.
+
+The set {(1,2,3),(4,5,6),(5,7,9)}\\lbrace (1,2,3),(4,5,6), (5,7,9)\\rbrace{(1,2,3),(4,5,6),(5,7,9)} is linearly independent.
+
+The set {(1,2,3),(0,5,6),(0,0,9)}\\lbrace (1,2,3),(0,5,6), (0,0,9)\\rbrace{(1,2,3),(0,5,6),(0,0,9)} is linearly independent.
+
+The set {(1,2,3),(0,0,6),(0,0,9)}\\lbrace (1,2,3),(0,0,6), (0,0,9)\\rbrace{(1,2,3),(0,0,6),(0,0,9)} is linearly independent.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+The set {(1,2,3),(4,5,6),(7,8,9)}\\lbrace (1,2,3),(4,5,6), (7,8,9)\\rbrace{(1,2,3),(4,5,6),(7,8,9)} is linearly dependent.
+
+The set {(1,2,3),(0,5,6),(0,0,9)}\\lbrace (1,2,3),(0,5,6), (0,0,9)\\rbrace{(1,2,3),(0,5,6),(0,0,9)} is linearly independent.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+If ad−bc\=0ad-bc=0ad−bc\=0 then which of the following options are true?
+
+The set {(a,b),(c,d)}\\lbrace (a,b),(c,d) \\rbrace{(a,b),(c,d)} is linearly dependent in R2\\mathbb{R}^2R2.
+
+The set {(a,c),(b,d)}\\lbrace (a,c),(b,d) \\rbrace{(a,c),(b,d)} is linearly dependent in R2\\mathbb{R}^2R2.
+
+The set {(1,0,0),(0,a,b),(0,c,d)}\\lbrace (1,0,0),(0,a,b),(0,c,d) \\rbrace{(1,0,0),(0,a,b),(0,c,d)} is linearly dependent in R3\\mathbb{R}^3R3.
+
+The set {(1,0,0),(0,a,c),(0,b,d)}\\lbrace (1,0,0), (0,a,c),(0,b,d) \\rbrace{(1,0,0),(0,a,c),(0,b,d)} is linearly dependent in R3\\mathbb{R}^3R3.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+The set {(a,b),(c,d)}\\lbrace (a,b),(c,d) \\rbrace{(a,b),(c,d)} is linearly dependent in R2\\mathbb{R}^2R2.
+
+The set {(a,c),(b,d)}\\lbrace (a,c),(b,d) \\rbrace{(a,c),(b,d)} is linearly dependent in R2\\mathbb{R}^2R2.
+
+The set {(1,0,0),(0,a,b),(0,c,d)}\\lbrace (1,0,0),(0,a,b),(0,c,d) \\rbrace{(1,0,0),(0,a,b),(0,c,d)} is linearly dependent in R3\\mathbb{R}^3R3.
+
+The set {(1,0,0),(0,a,c),(0,b,d)}\\lbrace (1,0,0), (0,a,c),(0,b,d) \\rbrace{(1,0,0),(0,a,c),(0,b,d)} is linearly dependent in R3\\mathbb{R}^3R3.
+
+JavaScript should be enabled to grade this question.
+
+For c∈Zc\\in \\mathbb{Z}c∈Z, consider the set of three vectors S\={(1,c,0),(c,0,c),(2c,3c,4c)}S=\\lbrace (1, c, 0), (c,0,c), (2c,3c,4c) \\rbraceS\={(1,c,0),(c,0,c),(2c,3c,4c)} in R3\\mathbb{R}^3R3 with usual addition and scalar multiplication. Find the value of ccc such that the given set is linearly dependent.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 0
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Assume the set {(a1,b1,c1),(a2,b2,c2),(a3,b3,c3)}\\lbrace (a\_1, b\_1, c\_1), (a\_2,b\_2,c\_2), (a\_3,b\_3,c\_3)\\rbrace{(a1​,b1​,c1​),(a2​,b2​,c2​),(a3​,b3​,c3​)} is given to be linearly independent and consider the following system of linear equations  
+  
+                               a1x+b1y+c1z\=1a2x+b2y+c2z\=2a3x+b2y+c3z\=3.\\begin{aligned} a\_1 x+b\_1 y +c\_1 z =1 \\\\ a\_2 x+b\_2 y +c\_2 z =2 \\\\ a\_3 x+b\_2 y +c\_3 z =3. \\end{aligned}a1​x+b1​y+c1​z\=1a2​x+b2​y+c2​z\=2a3​x+b2​y+c3​z\=3.​  
+  
+If AX\=bAX = bAX\=b is matrix representation of the above system of linear equations, where X\=\[xyz\]X = \\begin{bmatrix} x\\\\y\\\\z\\end{bmatrix}X\=​xyz​​, then which of the following option(s) is(are) true?
+
+ The system of linear equations has a unique solution.
+
+ The system of linear equations has no solution.
+
+ The system of linear equations have infinitely many solutions.
+
+The coefficient matrix AAA is invertible.
+
+The coefficient matrix AAA is not invertible.
+
+ Any one of the above options cannot be concluded using the given information.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+The system of linear equations has a unique solution.
+
+The coefficient matrix AAA is invertible.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+  
+Assume the set {(a1,b1,c1),(a2,b2,c2),(a3,b3,c3)}\\lbrace (a\_1, b\_1, c\_1), (a\_2,b\_2,c\_2), (a\_3,b\_3,c\_3)\\rbrace{(a1​,b1​,c1​),(a2​,b2​,c2​),(a3​,b3​,c3​)} is given to be linearly dependent and consider the following system of linear equations  
+  
+                                a1x+b1y+c1z\=1a2x+b2y+c2z\=2a3x+b2y+c3z\=3. \\begin{aligned} a\_1 x+b\_1 y +c\_1 z =1 \\\\ a\_2 x+b\_2 y +c\_2 z =2 \\\\ a\_3 x+b\_2 y +c\_3 z =3. \\end{aligned}a1​x+b1​y+c1​z\=1a2​x+b2​y+c2​z\=2a3​x+b2​y+c3​z\=3.​  
+  
+ If AX\=bAX = bAX\=b is matrix representation of the above system of linear equations, where X\=\[xyz\]X = \\begin{bmatrix} x\\\\y\\\\z\\end{bmatrix}X\=​xyz​​, then which of the following option(s) is(are) true?
+
+ Either the system of linear equations has a unique solution or no solution.
+
+ Either the system of linear equations has no solution or infinitely many solutions.
+
+ Either the system of linear equations have infinitely many solutions or a unique solution.
+
+ The system of linear equations has a unique solution.
+
+The coefficient matrix AAA is invertible.
+
+The coefficient matrix AAA is not invertible.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Either the system of linear equations has no solution or infinitely many solutions.
+
+The coefficient matrix AAA is not invertible.
+
+JavaScript should be enabled to grade this question.
+
+If SSS is a linearly independent set in vector space R3\\mathbb{R}^3R3 with respect to usual addition and scalar multiplication, then find the maximum possible cardinality of SSS.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 3
+
+_1 point_
+
+  
+**Level 2  
+  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Let the set {(a,b),(c,d)}\\lbrace (a,b), (c,d)\\rbrace{(a,b),(c,d)} be a linearly independent subset of R2\\mathbb{R}^2R2. Choose the set of correct options.
+
+{(a,b,0),(c,d,0)}\\lbrace (a,b,0),(c,d,0)\\rbrace{(a,b,0),(c,d,0)} must be a linearly independent subset of R3\\mathbb{R}^3R3.
+
+{(a,b,0),(c,d,0),(0,0,1)}\\lbrace (a,b,0),(c,d,0),(0,0,1)\\rbrace{(a,b,0),(c,d,0),(0,0,1)} must be a linearly independent subset of R3\\mathbb{R}^3R3.
+
+{(a,b,0),(c,d,0),(1,0,0)}\\lbrace (a,b,0),(c,d,0),(1,0,0)\\rbrace{(a,b,0),(c,d,0),(1,0,0)} must be a linearly independent subset of R3\\mathbb{R}^3R3.
+
+{(a,b,0),(c,d,0),(0,1,0)}\\lbrace (a,b,0),(c,d,0),(0,1,0)\\rbrace{(a,b,0),(c,d,0),(0,1,0)} must be a linearly independent subset of R3\\mathbb{R}^3R3.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+{(a,b,0),(c,d,0)}\\lbrace (a,b,0),(c,d,0)\\rbrace{(a,b,0),(c,d,0)} must be a linearly independent subset of R3\\mathbb{R}^3R3.
+
+{(a,b,0),(c,d,0),(0,0,1)}\\lbrace (a,b,0),(c,d,0),(0,0,1)\\rbrace{(a,b,0),(c,d,0),(0,0,1)} must be a linearly independent subset of R3\\mathbb{R}^3R3.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Each column of an n×nn \\times n n×n matrix AAA can be thought of as vectors in Rn\\mathbb{R}^nRn. If a set SSS consists of all the column vectors of AAA, then which of the following is(are) true?
+
+SSS is always linearly independent.
+
+SSS is linearly independent if det(A)≠0det(A)\\neq 0det(A)\=0.
+
+SSS is linearly independent if det(A)\=0det(A)= 0det(A)\=0.
+
+If det(A)\=1det(A)=1det(A)\=1, then SSS is linearly independent.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+SSS is linearly independent if det(A)≠0det(A)\\neq 0det(A)\=0.
+
+If det(A)\=1det(A)=1det(A)\=1, then SSS is linearly independent.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Suppose it is known that the three vectors v1\=\[abc\],v2\=\[def\],v3\=\[ghi\]v\_1=\\begin{bmatrix} a \\\\ b \\\\ c \\end{bmatrix}, v\_2=\\begin{bmatrix} d \\\\ e \\\\ f \\end{bmatrix}, v\_3=\\begin{bmatrix} g \\\\ h \\\\ i \\end{bmatrix}v1​\=​abc​​,v2​\=​def​​,v3​\=​ghi​​ are linearly dependent in R3\\mathbb{R}^3R3. Which of the following is correct?
+
+Some linear combination of a,b,ca, b, ca,b,c must be 0.
+
+Some linear combination of a,d,ga, d, g a,d,g must be 0.
+
+Some linear combination of d,e,fd, e, fd,e,f must be 0.
+
+Some linear combination of c,f,ic, f, ic,f,i must be 0.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Some linear combination of a,b,ca, b, ca,b,c must be 0.
+
+Some linear combination of a,d,ga, d, g a,d,g must be 0.
+
+Some linear combination of d,e,fd, e, fd,e,f must be 0.
+
+Some linear combination of c,f,ic, f, ic,f,i must be 0.
+
+JavaScript should be enabled to grade this question.
+
+If vectors (2x,4,−6),(−6,−3x,2x),(−1,x−3,x+2)(2x, 4, -6), (-6, -3x, 2x), (-1, x-3, x+2)(2x,4,−6),(−6,−3x,2x),(−1,x−3,x+2) from the vector space R3\\mathbb{R}^3R3 with usual addition and scalar multiplication, are linearly dependent and x∈\[2,5\]x \\in \[2, 5\]x∈\[2,5\], then find the value of xxx.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 2
+
+_1 point_
+
+Check Answers
+
+Your score is: 0/10
+
+Please enable JavaScript to continue using this application.

@@ -1,15 +1,330 @@
 ---
-title: ""
+title: "Activity Question Lecture 16 - Not Graded :: IITM Online Degree"
 ---
 
-# 
+# Activity Question Lecture 16 - Not Graded :: IITM Online Degree
 
-Please wait...
+Activity Question Lecture 16 - Not Graded
 
-**Error**: Cannot open the page from the filesystem.
+# Activity Question Lecture 16 - Not Graded
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+This assignment will not be graded and is only for practice.
 
-hbABAA==,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
+JavaScript should be enabled to grade this question.
+
+Toss a fair coin three times.  
+What is the probability of getting two or more than two tails?  
+Each outcome is equally likely.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Feedback:
+
+Experiment: Tossing a coin  
+Sample space: S = {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}  
+Event A: getting two or more than two tails.  
+\=> A = {HTT, THT, TTH, TTT}  
+P(A) = (no of elements in A) / (no of elements in S)  
+\= 4 / 8 = 1 / 2
+
+### Accepted Answers:
+
+(Type: String) 0.5
+
+_1 point_
+
+  
+
+JavaScript should be enabled to grade this question.
+
+Toss a fair coin three times.  
+What is the probability of getting tail in the first toss?  
+Each outcome is equally likely.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Feedback:
+
+Experiment: Tossing a coin  
+Sample space: S = {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}  
+Event B: getting tail in the first toss.  
+\=> B = {THH, THT, TTH, TTT}  
+P(B) = (no of elements in B) / (no of elements in S)  
+\= 4 / 8 = 1 / 2
+
+### Accepted Answers:
+
+(Type: String) 0.5
+
+_1 point_
+
+**  
+Key Concepts:**  
+(Conditional Probability Space Given B)  
+Sample space: B  
+Events: A ⋂ B for every event A in original space  
+Probability function: P(A ⋂ B) / P(B) (denoted P(A | B) and called conditional probability of A given B) i.e.  
+  
+P(A | B) = P(A∩B)P(B)\\frac{P(A \\cap B)}{P(B)}P(B)P(A∩B)​  
+  
+
+JavaScript should be enabled to grade this question.
+
+Consider the experiment of tossing a fair coin three times.  
+Find the probability of getting at least two tails among the three tosses given that the first toss was a tail.
+
+Hint
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Feedback:
+
+Event A: getting at least two tails among the three tosses or we can define two or more than two tails among the three tosses.  
+  
+
+A = {HTT, THT, TTH, TTT}  
+  
+
+Event B: getting tail in the first toss.  
+  
+
+B = {THH, THT, TTH, TTT}  
+  
+
+A ∩ B = {THT,TTH,TTT}
+
+  
+P(A|B) = P(A ∩ B) / P(B)  
+  
+            = (3/8) / (1/2)  
+           
+            = 0.75
+
+  
+
+  
+
+### Accepted Answers:
+
+(Type: String) 0.75
+
+_1 point_
+
+  
+  
+**Key Concepts:**  
+  
+**Law of total probability**  
+P(A)\=P(A∩B)+P(A∩Bc)\=P(A∣B)P(B)+P(A∣Bc)P(Bc) P(A) = P(A \\cap B) + P(A \\cap B^c) = P(A | B) P(B) + P(A | B^c) P(B^c) P(A)\=P(A∩B)+P(A∩Bc)\=P(A∣B)P(B)+P(A∣Bc)P(Bc)  
+
+JavaScript should be enabled to grade this question.
+
+In a population, 40% are female and 60% are male. Among all the females, 10% are left-handed and among all the males, 12% are left-handed. A person is randomly chosen from the population.  
+What is the probability that the person is not left-handed?
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Feedback:
+
+**Step I:** Incorporate all possibilities and write out event  
+  
+Not Left-handed = (Male and Not Left-handed)  
+  
+or  
+  
+(Female and Not Left-handed)  
+  
+In short, NL = (M and NL) or (F and NL)  
+  
+**Step II**: Apply the law of total probability for the event  
+  
+P(not Event) = 1 - P(Event)  
+  
+P(NL) = P(M) P(NL | M) + P(F) P(NL | F)  
+  
+\= 0.60 x (1 - 0.12) + 0.40 x (1 - 0.10)  
+  
+\= 0.888
+
+### Accepted Answers:
+
+(Type: Range) 0.85,0.91
+
+_1 point_
+
+  
+  
+  
+**Key Concepts:  
+**  
+A, B: events with P(A) > 0, P(B) > 0  
+P(A ⋂ B) = P(B) P(A | B) = P(A) P(B | A)  
+P(B | A) = P(B) P(A | B) / P(A)  
+
+JavaScript should be enabled to grade this question.
+
+In a population, 40% are female and 60% are male. Among all the females, 10% are left-handed and among all the males 12% are left-handed. A person is randomly chosen from the population.  
+If the person is left-handed, what is the (conditional) probability that the person is male?
+
+Hint
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Feedback:
+
+P(Event1 and Event2) = P(Event1) P(Event2 | Event1) = P(Event2) P(Event1 | Event2)  
+  
+Question asks for P(Male | Left-handed). Put Event1 = Male (M) and  
+  
+Event2 = Left-handed (L) in Bayes’ rule.  
+  
+P(M) P(L | M) = P(L) P(M | L)  
+  
+P(M) = 0.6, P(L | M) = 0.12, P(L) = ?  
+  
+P(L) = 1 - P(NL)  
+  
+\= 1 - 0.888 (from previous question)  
+  
+\= 0.112  
+  
+So, P(M | L) = P(M) P(L | M) / P(L)  
+  
+\= 0.60 x 0.12 / 0.112  
+  
+\= 0.6428
+
+### Accepted Answers:
+
+(Type: Range) 0.62,0.66
+
+_1 point_
+
+  
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Suppose we have 3 bags that each contain 200 balls:  
+
+*   Bag 1 has 50 red, 60 blue and 90 green balls
+*   Bag 2 has 70 red, 80 blue and 50 green balls
+*   Bag 3 has 65 red, 75 blue and 60 green balls
+
+A bag is selected at random. From that bag a ball is selected at random.  
+  
+What is the probability that the chosen ball is green?
+
+ 1/4
+
+ 1/3
+
+ 1/2
+
+ 1/6
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+1/3
+
+  
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Suppose we have 3 bags that each contain 200 balls:  
+
+*   Bag 1 has 50 red, 60 blue and 90 green balls
+*   Bag 2 has 70 red, 80 blue and 50 green balls
+*   Bag 3 has 65 red, 75 blue and 60 green balls
+
+A bag is selected at random. From that bag a ball is selected at random.  
+  
+What is the conditional probability that bag 1 was chosen given that the chosen ball is green?
+
+ 0.25
+
+ 0.45
+
+ 0.5
+
+ 0.33
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+0.45
+
+  
+  
+**Key Concepts:**  
+**Independence of two events** Two events A and B are independent if  
+P(A ⋂ B) = P(A) P(B)  
+i.e. When Event 1 and Event 2 are independent,  
+P(Event 1 and Event 2) = P(Event 1) P(Event 2)  
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Roll a ten-sided die. Let A be the event that the outcome is less than 7 and B be the event that the outcome is an even number.  
+Assume that each outcome is equally likely.  
+Are A and B independent?
+
+ Yes
+
+ No
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Yes
+
+  
+
+JavaScript should be enabled to grade this question.
+
+There are two events such that P(A) = 0.5 and P(B) = 0.3.  
+Events A and B are independent.  
+Find P(A ∪ B).
+
+Hint
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Feedback:
+
+Event A and B are independent.  
+And P(A) = 0.5, P(B) = 0.3  
+\=> P(A ⋂ B) = P(A) P(B) = 0.5 \* 0.3 = 0.15  
+  
+P(A ∪ B) = 0.5 + 0.3 - 0.15 = 0.65
+
+### Accepted Answers:
+
+(Type: Numeric) 0.65
+
+_1 point_
+
+  
+
+Check Answers
+
+Your score is: 0/9
+
+Please enable JavaScript to continue using this application.

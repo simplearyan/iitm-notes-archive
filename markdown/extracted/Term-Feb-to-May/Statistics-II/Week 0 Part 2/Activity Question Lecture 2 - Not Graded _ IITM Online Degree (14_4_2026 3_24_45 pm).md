@@ -1,15 +1,144 @@
 ---
-title: ""
+title: "Activity Question Lecture 2 - Not Graded :: IITM Online Degree"
 ---
 
-# 
+# Activity Question Lecture 2 - Not Graded :: IITM Online Degree
 
-Please wait...
+Activity Question Lecture 2 - Not Graded
 
-**Error**: Cannot open the page from the filesystem.
+# Activity Question Lecture 2 - Not Graded
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+This assignment will not be graded and is only for practice.
 
-0xUAAA==,GgAAAHEAAACrAAAAAgIAAJcDAAChAwAALgQAADgGAACZBwAApAcAAMkHAADgBwAAhAgAAIUIAADZCAAA4AgAAKgJAADOCQAAwg0AADsPAACVEAAAmBAAAMoQAAAGEgAAhRIAANcSAACIFAAADBgAACAYAADuGQAAKhoAAIsaAAAcGwAANxsAADUcAABoHAAABiAAAF4gAAAzIgAAVCIAABskAAA7JAAAlCQAAAwlAAA2JQAALSYAAFEmAADwJgAAcygAAPkoAAAaKQAAJioAABkrAACuKwAAMywAAFovAAC4MAAAbjEAAHQyAAC4MgAAtTMAAKo0AABcNQAADTYAALs4AACDOQAArDkAACs7AABzOwAAnkIAAF9DAABIRAAAsEQAAP9EAAAJRQAAuEkAAKtKAACYSwAA/UwAADJNAAAUTgAAMU4AAMBOAAA5TwAAIFAAAERSAAA5UwAAyFUAACxWAADvVwAAmFgAAPJYAAAaWgAA4loAALtcAAArXQAAuF0AADBfAADGYAAA7WAAABtiAABAYgAARmIAAJ1iAAATYwAA5GMAAJJkAADWZQAAZGYAAGxnAAC0ZwAALGgAACNrAABMawAAX20AAPhtAACDbgAAz28AAN9vAACKcAAAlXAAALBwAAAocQAAMXIAAJl0AAANdQAAB3YAAHJ2AACodwAAuHgAAJh8AACPfQAAt34AAAmBAABSgQAAboMAAImDAABahAAAjYQAAACFAAAxhwAATooAAEmLAABGjAAAbYwAAEONAAARjgAAGo4AAEuPAABMjwAAJpEAACySAAApkwAAepQAAGSXAADKlwAA5pcAAJ+YAAAemwAALZsAAFacAABpnAAAbp0AAM2eAABcnwAAtaAAADqhAACGoQAACKIAACaiAADMogAACaMAAAekAABVpwAAv6cAAO6oAAD5qAAAoqkAALesAABhrQAAf60AAEyuAAB6rgAA564AAEKvAADUrwAAsbAAAFiyAAAdswAAaLMAAOmzAAAPtQAASLsAAFO9AAB+vgAApr8AAA7EAACNxAAAy8QAAC/HAAATygAAQMwAAOjMAACMzQAAuM8AANXQAAAd0QAAbdIAAKPSAABh1QAAZ9UAAIfVAAD71QAAA9cAAKXXAAA12gAAmtoAAMvaAADF2wAAKNwAACXdAABT3gAAjt4AAN7eAABU4AAA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
+**Note : This activity is only for practice purpose and it will not be counted towards the Final score  
+  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+The subset of sample space of any experiment is termed as
+
+ Event
+
+ Total outcome
+
+ Subset
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Event
+
+  
+
+**Use the below information for Question (2, 3 and 4)  
+**  
+  
+
+In the game of cricket, one legal delivery is played by a batsman. Assume that 1 to 6 runs can be scored off the delivery. Let E1E\_1E1​ be the event that less than 4 runs are scored. Let E2E\_2E2​ be the event that an even number of runs are scored. Let E3E\_3E3​ be the event that an odd number of runs are scored. Find the following events.  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+E1E\_1E1​ or E2E\_2E2​ or E3E\_3E3​
+
+{1,2,3,4,51, 2, 3, 4, 51,2,3,4,5}
+
+{1,2,3,4,5,61, 2, 3, 4, 5, 61,2,3,4,5,6}
+
+{1,3,4,51, 3, 4, 51,3,4,5}
+
+{1,5,61, 5, 61,5,6}
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+{1,2,3,4,5,61, 2, 3, 4, 5, 61,2,3,4,5,6}
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+E1E\_1E1​ and E2E\_2E2​ and E3E\_3E3​
+
+{222}
+
+∅\\emptyset∅
+
+{444}
+
+{000}
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+∅\\emptyset∅
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+E1E\_1E1​but not E3E\_3E3​
+
+∅\\emptyset∅
+
+{222}
+
+{444}
+
+{000}
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+{222}
+
+  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+If AAA = {xxx | 3<x<9;x3 < x < 9; x3<x<9;x is an integer} and BBB = {xxx | 5<x<12;x5 < x < 12; x 5<x<12;x is an integer}, then which of the following will represent A∪B?A ∪ B?A∪B?
+
+{6,7,86 , 7, 86,7,8}
+
+{4,5,6,7,8,9,10,114, 5, 6, 7, 8, 9, 10, 114,5,6,7,8,9,10,11}
+
+{4,5,9,10,114, 5, 9, 10, 114,5,9,10,11}
+
+{9,10,119, 10, 119,10,11}
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+{4,5,6,7,8,9,10,114, 5, 6, 7, 8, 9, 10, 114,5,6,7,8,9,10,11}
+
+  
+
+Check Answers
+
+Your score is: 0/5
+
+Please enable JavaScript to continue using this application.

@@ -1,15 +1,61 @@
 ---
-title: ""
+title: "Grading policy :: IITM Online Degree"
 ---
 
-# 
+# Grading policy :: IITM Online Degree
 
-Please wait...
+Grading policy
 
-**Error**: Cannot open the page from the filesystem.
+## Mathematics for data science 2
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+## 
 
-,zgAAAHMCAABZBQAArwUAAJUGAACtBgAAcQcAABcIAAC2CAAAwggAAM8KAAD5DQAAHg4AAAkPAAAiEQAAmREAALkRAAB/EgAAkBIAAI8UAABZFQAAcRgAANgYAAA+HAAAaxwAAEkiAABBIwAAeSMAAPUjAAAxJQAAYyYAACgnAAA+KQAAQyoAAEUrAACXKwAADC0AAG4uAACDLgAAMjAAADoxAAC6MQAACjIAACQzAABfNAAAPDUAABI4AAASOQAAHzoAAGI6AACJOgAA2TwAAB49AABLPgAAsD8AAEdDAACCRAAATEUAAKRGAADcRwAADkkAAPlJAACgSgAA4UoAAPlMAAD4UAAAGVEAAClRAAB7UgAAk1IAAJFTAACqUwAA8FMAAKFVAABSWAAAYlkAAMtZAAADWgAAQloAALZaAACTWwAArVsAAGJcAAC6XwAA7F8AAPtfAACnYAAAymMAAExkAADoZQAANWYAAMRoAADHaAAAtmkAAJxsAADbbAAAN20AADFuAACBbgAAFm8AAL5wAADpcQAAKHQAAEd0AADwdAAAOHUAAJR1AAAldgAA+3YAANR3AABMeAAAingAAEl9AABLfgAAt34AAF1/AAC1fwAAu38AAFSAAACfgAAAtoIAAIaEAAAFhQAASoUAADKGAAA6hgAAiIYAAJ2GAACKhwAAnYcAALaIAAC6iQAAw4kAAMOLAAAqjAAAjowAAMGOAADpjwAA0pIAAOqVAABElgAAXpcAAKGXAADklwAAHZgAAFiZAACKmQAAtJkAAJaaAADfmwAAP5wAAGmcAACInAAAQ50AAOmdAAAyngAAWJ8AAKKfAADRnwAAJqAAAPukAADTpQAAgaYAAFunAACyqQAAOKsAAB+sAAAmrAAAW64AAEewAABJsQAA6bEAAG2yAAAhtAAAqrQAALm0AADbtAAAJbUAAH+1AABBtgAAG7cAAI64AABuuQAAOroAAIO7AADCuwAAJb4AAP2/AAA7wgAAm8IAAJbDAACYwwAAt8UAABzHAACWxwAARcgAAGHLAACSywAAkswAAK3OAACf0QAA/NMAAPrUAACJ1QAAftYAAPvWAAAW1wAAXtoAAH/bAAD13AAAIt0AAP3dAAAC3gAAAd8AANvgAABU4QAAEOIAAL7iAACW4wAAwuMAAF/kAAB05AAAv+YAABfnAAAJ6AAAL+kAANvpAAAF6gAAjuoAAOPqAAAB6wAAq+wAADPuAADU8AAAT/IAAIb1AADj+AAA8fkAAHT6AAAB+wAAT/sAAGL9AACt/wAACgEBAMACAQAXAwEANQYBAF4GAQASBwEAFgcBAC0IAQAECQEAOAkBAHsJAQDjCQEAIwoBABoLAQA2CwEASwsBAF8LAQCQDAEAPw0BAHsOAQDSDgEAoQ8BAGQQAQCEEAEA2xIBAMMTAQABFAEATxUBADwWAQCLFgEAnBgBAFkZAQA3GgEARBoBAFsbAQB0HAEAoxwBACYdAQAEHgEAmB4BAEMfAQCuHwEAxR8BAEggAQCwIAEAxCABAEEiAQDWIgEA6iUBACUmAQChJgEAzSgBAEspAQA/KgEADy0BABcuAQCFMAEAQTEBAHcxAQBTMgEALTMBAEgzAQAtNQEAZzcBALI3AQAmOQEA9DkBANk8AQA/PQEAoj0BAHg+AQCXPgEAikMBALZDAQB+RQEAq0UBAJxGAQAjSAEAi0gBAEZJAQA=
+Quiz 1: March 15 2026          Quiz 2: April 12 2026                End term:  May 10 2026
+
+Above to be attended in person at designated centres.
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weeks of weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+The calculation of Final course Score T for eligible students is as follows:
+
+        Qz1 = score in Quiz I (0, if not attempted)
+
+        Qz2 = score in Quiz II (0, if not attempted)
+
+        F = score in final exam
+
+        B = Bonus marks for course specific activity (out of 6)
+
+       T = max(0.6F + 0.3max(Qz1, Qz2), 0.45F + 0.25Qz1 + 0.3Qz2) + B — capped to 100.
+
+Bonus marks for course specific activity: 6 marks in total: 3 assignments of 2 marks each. The assignments will be available on the portal on the following dates.
+
+Extra Activity for Mathematics-II Assignment Deadline:
+
+Release Date for Extra activity
+
+Assignment Submission Deadline
+
+Extra Activity 1
+
+Friday, February 20, 2026
+
+Wednesday, March 4, 2026
+
+Extra Activity 2
+
+Friday, March 13, 2026
+
+Wednesday, March 25, 2026
+
+Extra Activity 3
+
+Friday, April 3, 2026
+
+Friday, April 17, 2026
+
+(W11/W12 contents will be included for the final exam. Hence, please practice and submit W11/W12 assignment).
+
+Please enable JavaScript to continue using this application.

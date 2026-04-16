@@ -1,15 +1,45 @@
 ---
-title: ""
+title: "Modules :: IITM Online Degree"
 ---
 
-# 
+# Modules :: IITM Online Degree
 
-Please wait...
+Overview Question Test Cases Code
 
-**Error**: Cannot open the page from the filesystem.
+## Instructions for Extended Match Questions
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+[Use this slide to understand how to answer an EMQ](https://slides.com/ishaanpod/how-to-answer-emq)  
+  
+**_Instructions:  
+_**1. For each question, enter all the options which you find is the answer to that question as "**comma separated values**".  
+2. Enter the options in **ascending order** of option number.  
+3. An option can also be an answer to more than one question, or may not be an answer to any of the questions.  
+4. [Please click here to view a sample template file for answering.](https://backend.seek.study.iitm.ac.in/22q1_ma1002/assets/img/EMQ_sample_file.txt)  
+5. Please note that if you give an incorrect answer there will be a negative marking for the incorrect option.  
+  
+**_List of Options:  
+_**1. TTT is is one to one.  
+2. TTT is onto.  
+3. TTT is an isomorphism.  
+4. Nullspace(T)\={(t,t,t)∣t∈R}Nullspace(T)=\\{ (t,t,t) \\mid t \\in \\mathbb{R}\\}Nullspace(T)\={(t,t,t)∣t∈R}  
+5. Nullspace(T)\={(t,t,s)∣t,s∈R}Nullspace(T)=\\{ (t,t,s) \\mid t,s \\in \\mathbb{R} \\}Nullspace(T)\={(t,t,s)∣t,s∈R}  
+6. Nullspace(T)\={(0,0,0)}Nullspace(T)=\\{ (0,0,0) \\}Nullspace(T)\={(0,0,0)}  
+7. A basis of Nullspace(T)\={(1,1,1)}Nullspace(T)=\\{ (1,1,1) \\}Nullspace(T)\={(1,1,1)}  
+8. A basis of Nullspace(T)\={(1,1,0),(0,0,1)}Nullspace(T)=\\{(1,1,0), (0,0,1)\\}Nullspace(T)\={(1,1,0),(0,0,1)}  
+9. nullity(T)\=1nullity(T)=1nullity(T)\=1  
+10. nullity(T)\=2nullity(T)=2nullity(T)\=2  
+  
+  
+**_List of Questions:  
+_**  
+**Q1** Consider the linear transformation T:R3→R3T: \\mathbb{R}^3 \\rightarrow \\mathbb{R}^3T:R3→R3 defined by T(x,y,z)\=(x−y,y−z,0)T(x,y,z)=(x-y,y-z,0)T(x,y,z)\=(x−y,y−z,0). Which of the above options are true for TTT?  
+  
+**Q2** Consider the linear transformation T:R3→R2T: \\mathbb{R}^3 \\rightarrow \\mathbb{R}^2T:R3→R2 defined by T(x,y,z)\=(x−y,y−z)T(x,y,z)=(x-y,y-z)T(x,y,z)\=(x−y,y−z). Which of the above options are true for TTT?  
+  
+**Q3** Consider the linear transformation T:R3→R3T: \\mathbb{R}^3 \\rightarrow \\mathbb{R}^3T:R3→R3 defined by T(x,y,z)\=(x−y,y−z,z−x)T(x,y,z)=(x-y,y-z,z-x)T(x,y,z)\=(x−y,y−z,z−x).Which of the above options are true for TTT?  
+  
+**Q4** Consider the linear transformation T:R3→R3T: \\mathbb{R}^3 \\rightarrow \\mathbb{R}^3T:R3→R3 defined by T(x,y,z)\=(x−y,0,0)T(x,y,z)=(x-y,0,0)T(x,y,z)\=(x−y,0,0).Which of the above options are true for TTT?  
+  
+**Q5** Consider the linear transformation T:R3→R3T: \\mathbb{R}^3 \\rightarrow \\mathbb{R}^3T:R3→R3 defined by T(x,y,z)\=(x,x+y,x+y+z)T(x,y,z)=(x,x+y,x+y+z)T(x,y,z)\=(x,x+y,x+y+z).Which of the above options are true for TTT?  
 
-/BgCAA==,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
+Please enable JavaScript to continue using this application.

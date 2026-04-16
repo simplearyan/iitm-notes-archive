@@ -1,15 +1,305 @@
 ---
-title: ""
+title: "AQ2.5: Activity Questions 5- Not Graded :: IITM Online Degree"
 ---
 
-# 
+# AQ2.5: Activity Questions 5- Not Graded :: IITM Online Degree
 
-Please wait...
+AQ2.5: Activity Questions 5- Not Graded
 
-**Error**: Cannot open the page from the filesystem.
+# AQ2.5: Activity Questions 5- Not Graded
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+This assignment will not be graded and is only for practice.
 
-gA0BADx+AwAEgwMAkRUEAA==,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
+**Level 1:** 
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Match the matrices in Column A with their row operation steps (in the exact sequence given) in Column B, and their corresponding reduced row Echelon forms in Column C of Table M2W2AQ2.  
+  
+  
+![](assets/Term-Feb-to-May_Mathematics-II_Week2_AQ25_ActivityQuestions5-NotGraded_IITMOnlineDegree4_4_20268_59_38am_25.jpg)  
+  
+  
+Find the correct option.
+
+ Applying (b) on (i) gives (2).
+
+ Applying (a) on (ii) gives (1).
+
+ Applying (a) on (i) gives (2).
+
+ Applying (b) on (ii) gives (1).
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Applying (a) on (i) gives (2).
+
+Applying (b) on (ii) gives (1).
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Choose the correct set of options.
+
+If two matrices AAA and BBB have the same reduced row echelon form, then AAA must be equal to BBB.
+
+If two matrices AAA and BBB have the same row echelon form, then AAA must be equal to BBB.
+
+ The reduced row echelom form of a diagonal matrix with non-zero diagonal entries must be the identity matrix.
+
+ The reduced row echelon form of a non-zero scalar matrix must be the identity matrix.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+The reduced row echelom form of a diagonal matrix with non-zero diagonal entries must be the identity matrix.
+
+The reduced row echelon form of a non-zero scalar matrix must be the identity matrix.
+
+  
+(Answer questions 3 and 4 based on the below information.)  
+The three different types of elementary row operations that can be performed on a matrix are:  
+  
+
+*   Type 1: \\textbf{Type 1:}Type 1: Interchanging two rows.
+*   Type 2: \\textbf{Type 2:}Type 2: Multiplying a row by some constant.
+*    Type 3:\\textbf{Type 3:}Type 3: Adding a scalar multiple of a row to another row
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider the four matrices given below:  
+  
+   A\=\[1−1101−1−1−11\]A = \\begin{bmatrix} 1 & -1 & 1\\\\ 0 & 1 & -1\\\\ -1 & -1 & 1 \\end{bmatrix}A\=​10−1​−11−1​1−11​​, B\=\[−1−1101−11−11\]B = \\begin{bmatrix} -1 & -1 & 1\\\\ 0 & 1 & -1\\\\ 1 & -1 & 1 \\end{bmatrix}B\=​−101​−11−1​1−11​​, C\=\[1−110−11−1−11\]C = \\begin{bmatrix} 1 & -1 & 1\\\\ 0 & -1 & 1\\\\ -1 & -1 & 1 \\end{bmatrix}C\=​10−1​−1−1−1​111​​ and D\=\[1−110−111−33\]D = \\begin{bmatrix} 1 & -1 & 1\\\\ 0 & -1 & 1\\\\ 1 & -3 & 3 \\end{bmatrix}D\=​101​−1−1−3​113​​.  
+ Choose the set of correct options.
+
+Matrix BBB is obtained from matrix AAA by an elementary row operation of Type 1.
+
+Matrix CCC is obtained from matrix AAA by an elementary row operation of Type 1.
+
+Matrix DDD is obtained from matrix CCC by an elementary row operation of Type 3.
+
+Matrix AAA is obtained from matrix CCC by an elementary row operation of Type 2.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Matrix BBB is obtained from matrix AAA by an elementary row operation of Type 1.
+
+Matrix DDD is obtained from matrix CCC by an elementary row operation of Type 3.
+
+Matrix AAA is obtained from matrix CCC by an elementary row operation of Type 2.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Let AAA and BBB be square matrices of order 3. Consider the three equations below.  
+  
+
+*   Equation 1:  det(A)\=−det(B) \\textbf{Equation 1:}\\,\\,det(A) = -det(B)Equation 1:det(A)\=−det(B)
+
+*   Equation 2:  det(A)\=−c det(B),c∈R \\textbf{Equation 2:}\\,\\,det(A) = -c~det(B), c \\in \\mathbb{R}Equation 2:det(A)\=−c det(B),c∈R
+
+*   Equation 3:  det(A)\=det(B)\\textbf{Equation 3:} \\,\\,det(A) = det(B) Equation 3:det(A)\=det(B)  
+      
+      Choose the set of correct options.
+
+If matrix BBB is obtained from matrix AAA by an elementary row operation of type 1, then equation 1 is satisfied.
+
+If matrix BBB is obtained from matrix AAA by an elementary row operation of type 1 followed by an elementary operation of type 2, then equation 2 is satisfied for some ccc.
+
+If matrix BBB is obtained from AAA by an elementary row operation of type 2, then equation 3 is satisfied.
+
+If matrix BBB is obtained from AAA by an elementary row operation of type 3, then equation 3 is satisfied.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+If matrix BBB is obtained from matrix AAA by an elementary row operation of type 1, then equation 1 is satisfied.
+
+If matrix BBB is obtained from matrix AAA by an elementary row operation of type 1 followed by an elementary operation of type 2, then equation 2 is satisfied for some ccc.
+
+If matrix BBB is obtained from AAA by an elementary row operation of type 3, then equation 3 is satisfied.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Let A\=\[1−11011−101\]A = \\begin{bmatrix} 1 & -1 & 1\\\\ 0 & 1 & 1\\\\ -1 & 0 & 1 \\end{bmatrix}A\=​10−1​−110​111​​ be a square matrix of order 333. Which of the statements below are true for matrix AAA?
+
+AAA can be transformed via elementary row operations into the matrix \[1−11011001\] \\begin{bmatrix} 1 & -1 & 1\\\\ 0 & 1 & 1\\\\ 0 & 0 & 1 \\end{bmatrix}​100​−110​111​​ which is in row echelon form.
+
+The reduced row echelon form of matrix AAA is \[101010001\]\\begin{bmatrix} 1 & 0 & 1\\\\ 0 & 1 & 0\\\\ 0 & 0 & 1 \\end{bmatrix}​100​010​101​​.
+
+The reduced row echelon form of matrix AAA is \[100010001\] \\begin{bmatrix} 1 & 0 & 0\\\\ 0 & 1 & 0\\\\ 0 & 0 & 1 \\end{bmatrix}​100​010​001​​.
+
+AAA can be transformed via elementary row operations into the matrix \[100010001\] \\begin{bmatrix} 1 & 0 & 0\\\\ 0 & 1 & 0\\\\ 0 & 0 & 1 \\end{bmatrix}​100​010​001​​ which is in row echelon form.
+
+AAA can be transformed via elementary row operations into the matrix \[1−11010001\] \\begin{bmatrix} 1 & -1 & 1\\\\ 0 & 1 & 0\\\\ 0 & 0 & 1 \\end{bmatrix}​100​−110​101​​ which is in row echelon form.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+AAA can be transformed via elementary row operations into the matrix \[1−11011001\] \\begin{bmatrix} 1 & -1 & 1\\\\ 0 & 1 & 1\\\\ 0 & 0 & 1 \\end{bmatrix}​100​−110​111​​ which is in row echelon form.
+
+The reduced row echelon form of matrix AAA is \[100010001\] \\begin{bmatrix} 1 & 0 & 0\\\\ 0 & 1 & 0\\\\ 0 & 0 & 1 \\end{bmatrix}​100​010​001​​.
+
+AAA can be transformed via elementary row operations into the matrix \[100010001\] \\begin{bmatrix} 1 & 0 & 0\\\\ 0 & 1 & 0\\\\ 0 & 0 & 1 \\end{bmatrix}​100​010​001​​ which is in row echelon form.
+
+AAA can be transformed via elementary row operations into the matrix \[1−11010001\] \\begin{bmatrix} 1 & -1 & 1\\\\ 0 & 1 & 0\\\\ 0 & 0 & 1 \\end{bmatrix}​100​−110​101​​ which is in row echelon form.
+
+  
+**Level 2:  
+**  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+Let the reduced row echelon form of a matrix AAA be \[10−1011\]. \\begin{bmatrix} 1 & 0 & -1 \\\\ 0 & 1 & 1 \\end{bmatrix}.\[10​01​−11​\].   
+Suppose the first and third columns of AAA are \[−11\]\\begin{bmatrix} -1\\\\ 1 \\end{bmatrix}\[−11​\], \[2−1\]\\begin{bmatrix} 2\\\\ -1 \\end{bmatrix}\[2−1​\] respectively. If the second column of the matrix AAA is given by \[m1m2\]\\begin{bmatrix} m\_1 \\\\ m\_2 \\end{bmatrix}\[m1​m2​​\], then what is the value of m1+m2m\_1+m\_2m1​+m2​.  
+ \[Hint: Start with an arbitrary column \[ab\]\\begin{bmatrix} a \\\\ b \\end{bmatrix}\[ab​\] as the second column of AAA.\]
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 1
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Let the different types of elementary row operations be defined as follows:  
+  
+
+*   Type 1:\\textbf{Type 1:}Type 1: Interchanging two rows.
+
+*   Type 2:\\textbf{Type 2:}Type 2: Multiplying a row by some constant.
+
+*   Type 3: \\textbf{Type 3:}Type 3: Adding a scalar multiple of a row to another row.
+
+  
+ Which of the following statements are true?
+
+If matrix AAA is obtained from matrix BBB by a finite number of elementary row operations, then matrix BBB can also be obtained from matrix AAA by a finite number of elementary row operations.
+
+ The reduced row echelon form of a matrix cannot be the identity matrix.
+
+ An upper triangular matrix, with value of all the diagonal elements equal to 1, is in row echelon form.
+
+ Identity matrix is in reduced row echelon form.
+
+ The reduced row echelon form of a scalar matrix (other than identity matrix) can be obtained by applying only elementary row operations of type 1.
+
+ The reduced row echelon form of a diagonal matrix (other than identity matrix) can be obtained by applying only elementary row operations of type 2.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+If matrix AAA is obtained from matrix BBB by a finite number of elementary row operations, then matrix BBB can also be obtained from matrix AAA by a finite number of elementary row operations.
+
+An upper triangular matrix, with value of all the diagonal elements equal to 1, is in row echelon form.
+
+Identity matrix is in reduced row echelon form.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Let AAA be a 3×33 × 33×3 real matrix whose sum of entries of each column is 555 and sum of first two elements of each column is 333. Which of the following statements is (are) true?  
+  
+\[Hint: Row operation: adding one row to other row.\]
+
+The determinant of matrix AAA is a multiple of 555.
+
+The determinant of matrix AAA is a multiple of 333.
+
+The determinant of matrix AAA is a multiple of 151515.
+
+The determinant of matrix AAA is a multiple of 222.
+
+The determinant of matrix AAA is a multiple of 888.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+The determinant of matrix AAA is a multiple of 555.
+
+The determinant of matrix AAA is a multiple of 333.
+
+The determinant of matrix AAA is a multiple of 151515.
+
+The determinant of matrix AAA is a multiple of 222.
+
+The determinant of matrix AAA is a multiple of 888.
+
+  
+  
+Let A\=\[0131021−1−1\]A = \\begin{bmatrix} 0 & 1 & 3\\\\ 1 & 0 & 2\\\\ 1 & -1 & -1 \\end{bmatrix}A\=​011​10−1​32−1​​ be a matrix (where the first row denotes the top most row, and the ordering of the rows is from top to bottom). Consider the system of linear equations given by Ax\=bAx=bAx\=b where x\=\[x1x2x3\]x=\\begin{bmatrix} x\_1 \\\\ x\_2 \\\\ x\_3 \\end{bmatrix}x\=​x1​x2​x3​​​, and b\=\[43−1\]b=\\begin{bmatrix} 4 \\\\3 \\\\ -1 \\end{bmatrix}b\=​43−1​​. Answer the following questions.  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+If RRR be the reduced row echelon form of AAA, then find the number of non-zero rows of RRR.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 2
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+If x1\=0x\_1=0x1​\=0 is given, then find out the value of x2x\_2x2​.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) -0.5
+
+_1 point_
+
+  
+  
+  
+
+Check Answers
+
+Your score is: 0/10
+
+Please enable JavaScript to continue using this application.

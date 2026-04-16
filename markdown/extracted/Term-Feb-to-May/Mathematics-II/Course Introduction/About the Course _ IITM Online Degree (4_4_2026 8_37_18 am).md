@@ -1,15 +1,53 @@
 ---
-title: ""
+title: "About the Course :: IITM Online Degree"
 ---
 
-# 
+# About the Course :: IITM Online Degree
 
-Please wait...
+About the Course
 
-**Error**: Cannot open the page from the filesystem.
+                              **Mathematics for Data Science II**
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+  
 
-,GgAAANIAAAACAQAAQgEAAHkBAAAAAwAANwUAAF0GAABGBwAAcgcAAG4IAAD5CAAAJQoAAHkMAACsDAAAMg0AAGcNAADbDgAAvREAAN0SAAAKFQAAzBUAAHEXAABXGgAArRoAAJMbAACrGwAAbxwAABUdAAC0HQAAwB0AAM0fAAD3IgAAHCMAAAckAAAgJgAAlyYAALcmAAB9JwAAjicAAI0pAABXKgAAby0AANYtAAA8MQAAaTEAAEc3AAA/OAAAdzgAAPM4AAAvOgAAYTsAACY8AAA8PgAAQT8AAENAAACVQAAACkIAAGxDAACBQwAAMEUAADhGAAC4RgAACEcAACJIAABdSQAAOkoAABBNAAAQTgAAHU8AAGBPAACHTwAA11EAABxSAABJUwAArlQAAEVYAACAWQAASloAAKJbAADaXAAADF4AAPdeAACeXwAA318AAPdhAAD2ZQAAF2YAACdmAAB5ZwAAkWcAAI9oAACoaAAA7mgAAJ9qAABQbQAAYG4AAMluAAABbwAAQG8AALRvAACRcAAAq3AAAGBxAAC4dAAA6nQAAPl0AACldQAAyHgAAEp5AADmegAAM3sAAMJ9AADFfQAAtH4AAJqBAADZgQAANYIAAC+DAAB/gwAAFIQAALyFAADnhgAAJokAAEWJAADuiQAANooAAJKKAAAjiwAA+YsAANKMAABKjQAAiI0AAEeSAABJkwAAtZMAAFuUAACzlAAAuZQAAFKVAACdlQAAtJcAAISZAAADmgAASJoAADCbAAA4mwAAhpsAAJubAACInAAAm5wAALSdAAC4ngAAwZ4AAMGgAAAooQAAjKEAAL+jAADnpAAA0KcAAOiqAABCqwAAXKwAAJ+sAADirAAAG60AAFauAACIrgAAsq4AAJSvAADdsAAAPbEAAGexAACGsQAAQbIAAOeyAAAwswAAVrQAAKC0AADPtAAAJLUAAPm5AADRugAAf7sAAFm8AACwvgAAl78AAJ6/AADTwQAAv8MAAMHEAABhxQAA5cUAAJnHAAAiyAAAMcgAAFPIAACdyAAA98gAALnJAACTygAABswAAObMAACyzQAA+84AADrPAACd0QAAddMAALPVAAAT1gAADtcAABDXAAAv2QAAlNoAAA7bAAC92wAA2d4AAArfAAAK4AAAJeIAABflAAB05wAAcugAAAHpAAD26QAAc+oAAI7qAADW7QAA9+4AAG3wAACa8AAAdfEAAHrxAAB58gAAU/QAAMz0AACI9QAANvYAAA73AAA69wAA1/cAAOz3AAA3+gAAj/oAAIH7AACn/AAAU/0AAH39AAAG/gAAW/4AAHn+AAAjAAEAqwEBAEwEAQDHBQEA/ggBAFsMAQBpDQEA7A0BAHkOAQDHDgEANxMBAD8UAQCtFgEAaRcBAJ8XAQB7GAEAVRkBAHAZAQBVGwEAjx0BANodAQBOHwEAHCABAAEjAQBnIwEAyiMBAKAkAQC/JAEAsikBAN4pAQCmKwEA0ysBAMQsAQAmLwEABTABAFwyAQCWMgEAYzgBAG05AQBqOgEAQTsBAJk9AQD2PQEAUT4BAJ8/AQDGPwEA/EABAOZBAQA6RQEAzkUBAPlGAQC/RwEAJ0gBAORIAQCXSQEA
+Course ID: BSMA1003
+
+  
+
+Course Credits: 4
+
+  
+
+Course Type: Foundational
+
+  
+
+Pre-requisites: BSMA1001 -  Mathematics for Data Science I
+
+  
+Faculty:  
+Dr. Sarang S Sane  
+Assistant Professor, Department of Mathematics, IIT Madras  
+  
+Course instructors:  
+
+Dr. Prerak  
+Dr. Lavanya  
+Abhilasha  
+  
+
+**Prescribed Books:**  
+The primary study material will be the videos and the assignments posted on the course portal.  
+One may also refer to:  
+  
+Title: Mathematics for Machine Learning Author: Marc Peter Deisenroth, A. Aldo Faisal, and Cheng Soon Ong. Publisher: Cambridge University Press ISBN: 9781108455145  
+(The PDF of this book is currently available freely at [https://mml-book.github.io/book/mml-book.pdf](https://mml-book.github.io/book/mml-book.pdf))  
+  
+Title: Vector Calculus (By Michael Corral) (Available freely online)  
+  
+The learners are advised to make best use of the interaction sessions with the course support members to clarify their doubts.  
+Suggested way to attempt the assignments: 1. Watch the lectures. 2. Attempt solve with us assignment. 3. Attempt Activity questions of each lecture. 4. Attempt practice assignments. 5. Attempt graded assignment.  
+  
+**Course Website Link:** [Click here](https://study.iitm.ac.in/ds/course_pages/BSMA1003.html)
+
+Please enable JavaScript to continue using this application.

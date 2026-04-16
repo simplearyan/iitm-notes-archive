@@ -1,15 +1,266 @@
 ---
-title: ""
+title: "Practice assignment 8 - Not Graded :: IITM Online Degree"
 ---
 
-# 
+# Practice assignment 8 - Not Graded :: IITM Online Degree
 
-Please wait...
+Practice assignment 8 - Not Graded
 
-**Error**: Cannot open the page from the filesystem.
+# Practice assignment 8 - Not Graded
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+This assignment will not be graded and is only for practice.
 
-cnEBADp2AQADCQQAzTwEAEtZBAA=,GgAAAOgCAADrAgAAFAQAAGQEAAB5BAAAbgYAAB0HAABFCgAAZwwAAOkNAABVDgAAog4AADsQAABNEAAAyBEAAOoRAAAuEgAAjBUAADYWAAAwGAAA2BoAALsdAACnHwAAMyAAAN8hAABGIgAA9iUAAOsoAAAAKwAAqCsAAJQtAACwMQAACzIAABgyAAAEMwAA/DcAAOQ4AAB6PAAABT0AAPM9AADGPwAAz0AAAF5CAAC5QgAATUMAABVEAAAPRQAAVkUAAGtIAAAVSQAAM0kAAABKAAAuSgAAm0oAAPZKAACISwAAZUwAAAxOAADRTgAAHE8AAJ1PAADDUAAA/FYAAAdZAAAyWgAAWlsAAMJfAABBYAAAf2AAAONiAADHZQAA9GcAAJxoAABAaQAAbGsAAIlsAADRbAAAIW4AAFduAAAVcQAAG3EAADtxAACvcQAAt3IAAFlzAADpdQAATnYAAH92AAB5dwAA3HcAANl4AAAHegAAQnoAAJJ6AAAIfAAAWnwAAKh8AAD/fAAAZn0AAKB9AACpfQAAh34AAOV+AACffwAAUIIAAKeCAAC2ggAAX4UAAK+FAACNhgAAwIYAAB2HAADFhwAACIgAAEOJAABXiQAALooAAGWKAAAtjgAA6Y4AAIGPAADtjwAA0ZIAABKTAACskwAAwpUAAHKXAACDmQAA4poAAMSbAAC+nQAAcZ4AALieAABxoAAA4aAAACeiAAD8ogAAV6MAAFWkAADUpgAA36YAAOemAAAAqAAACasAAB2rAADrqwAAH6wAAJmsAAASrwAADbAAAAazAAB6swAAtbUAAPa1AABRtwAAT7kAAJG6AAAFuwAAEbsAABa7AACmuwAA4bsAAKm9AABGvgAAdL4AAIK+AACavgAA2r4AAA3BAABzwgAAk8IAAE/DAABDxAAACcYAABDGAAChxgAAW8cAAGTHAAD2xwAAhckAALXJAACtygAAI8sAAA7MAACxzAAAtcwAALXNAADB0QAAqNIAAGDTAABE1gAAl9YAAAzYAAAd2wAAldsAAHPcAAA83QAARt0AAEneAADr4QAA1eMAAOnjAAAM5AAAMeQAANjlAADS5wAAuusAALvrAADX7QAAO+8AAADwAAAK8gAAhfIAAK7yAAAE8wAArfMAABL1AACM9QAAQPcAAGj3AADn9wAA2/gAAM/5AAAd+gAA0foAAEL7AACW+wAALfwAAIr9AACj/QAAoP8AAD4BAQCvAQEAzwEBAEgDAQDJAwEA3QMBABoEAQAsBAEAvgcBAIQIAQCMCQEAtAkBABQKAQCMCgEA9woBAC8MAQANDgEALQ8BABwQAQDxEQEA9BEBAFsSAQBeEgEA/xIBAG8TAQBxEwEAmBYBAOkWAQCpFwEA3xcBABkYAQBEGQEATBkBAPoZAQAYHAEACh8BAOkhAQDOJwEALykBAOwpAQDjKwEAXi0BAGctAQAPLwEAjTMBAF41AQCjNQEANjYBAFE3AQBUNwEAsjgBANs4AQDoOAEAhToBANI7AQDkOwEA7TwBAAs9AQBOPQEAIj8BAPs/AQCNQQEAVEIBAHRCAQDRQgEAmUMBAD1EAQBqRQEACUYBAAhIAQB7SQEAOksBAO5MAQCLTQEAgk4BAN1OAQDmTgEAnFEBAN1RAQCJUgEAdFMBAJxTAQDKVQEAv1gBAM5aAQDsWgEAWlsBACFcAQB+XAEAzFwBAIhdAQAFXgEAcl4BAHxgAQBKZQEA9mUBABlmAQAOZwEAIGgBACFoAQA0aQEApmoBAAprAQCaawEA2msBAOhrAQDyawEAo2wBAMJtAQBCbgEAVG4BAKBuAQARbwEAG28BAC1wAQBXcQEAXXEBAC1zAQB0dgEAZncBAIt4AQDIeAEAn3kBAFx6AQDmewEAK3wBAFt8AQCpfAEAyHwBAHt9AQD7fgEAbn8BABiAAQBbggEAsoQBAM2FAQBthwEAqIcBAEmKAQCVigEAA4sBAAaMAQB/jAEAcY8BAFqQAQDCkAEAEZEBABuRAQDKlQEAvZYBAKqXAQAPmQEARJkBACaaAQBDmgEA0poBAEubAQAynAEAVp4BAEufAQDaoQEAPqIBAAGkAQCqpAEABKUBACymAQD0pgEAzagBAD2pAQDKqQEAQqsBANisAQD/rAEALa4BAFKuAQBYrgEAr64BACWvAQD2rwEApLABAOixAQB2sgEAfrMBAMazAQA+tAEANbcBAF63AQBxuQEACroBAJW6AQDhuwEA8bsBAJy8AQCnvAEAwrwBADq9AQBDvgEAq8ABAB/BAQAZwgEAhMIBALrDAQDKxAEAqsgBAKHJAQDJygEAG80BAGTNAQCAzwEAm88BAGzQAQCf0AEAEtEBAEPTAQBg1gEAW9cBAFjYAQB/2AEAVdkBACPaAQAs2gEAXdsBAF7bAQA43QEAPt4BADvfAQCM4AEAduMBANzjAQD44wEAseQBADDnAQA/5wEAaOgBAHvoAQCA6QEA3+oBAG7rAQDH7AEATO0BAJjtAQAa7gEAOO4BAN7uAQAb7wEAGfABAGfzAQDR8wEAAPUBAAv1AQDn9gEA+fcBAJj4AQAU+QEAUfkBAAj6AQBq+gEAmfoBAFb7AQBZ+wEAbPsBAFv8AQAA/gEAS/4BAOz+AQBo/wEAeP8BAD8AAgB2AAIAiwACAFoBAgCYAgIAPAMCABUHAgDtBwIATwkCAPwJAgAXCgIA6goCAE0NAgBPDgIAWQ4CAPoOAgDVDwIAMhACAIERAgALEgIA0RMCADMWAgABFwIAGhcCAFUYAgAnGQIAtRkCABIaAgBLGwIAfBsCAEYgAgBBIgIA0iICAKMjAgDiIwIAkCYCAKonAgDDKAIAXikCAHYpAgCdKQIACCsCAPIrAgD5KwIA/CsCAFUsAgDpLAIA8iwCABUtAgDeLQIA8y4CAE8wAgBVNAIASDYCAAY4AgB1OAIAETsCADo7AgADPAIACz4CAMo+AgDyPgIAQkACAHNAAgA2QQIAP0ICAFZCAgABQwIAb0MCAJNFAgAoRgIAH0gCACFIAgB4SQIANkoCAE1MAgDgTQIAME8CACNRAgBqUgIAnVMCAKhUAgBoVwIArFkCAAVaAgATWwIAR1sCAFZdAgB2XQIAsV4CACNgAgB+YAIAjGACANVgAgBmYwIAqWMCACpkAgBnZAIAvWUCAK9oAgDzaAIAYGwCALFsAgBUbgIAOG8CAGNwAgB6cAIAhnACAGRxAgCscwIAx3QCAAp1AgDCdwIA6ngCAAV6AgAxegIArHoCACJ7AgBwfAIAhH8CAK1/AgCWgAIAW4ECADeDAgB2hAIAQ4UCAOqIAgAJigIA3osCADmMAgBfjQIACI4CAAmPAgAtjwIAjZACAJmRAgBvlwIAV5gCAN6YAgBwmQIANpsCAEubAgB1mwIALp0CAPqeAgB+oAIA9KACABihAgAioQIA1qECAH+iAgDGogIAXKYCAIWmAgAqqAIAEKsCAGarAgBMrAIAZKwCACitAgDOrQIAba4CAHmuAgCGsAIAsLMCANWzAgDAtAIA2bYCAFC3AgBwtwIANrgCAEe4AgBGugIAELsCACi+AgCPvgIA9cECACLCAgAAyAIA+MgCADDJAgCsyQIA6MoCABrMAgDfzAIA9c4CAPrPAgD80AIATtECAMPSAgAl1AIAOtQCAOnVAgDx1gIAcdcCAMHXAgDb2AIAFtoCAPPaAgDJ3QIAyd4CANbfAgAZ4AIAQOACAJDiAgDV4gIAAuQCAGflAgD+6AIAOeoCAAPrAgBb7AIAk+0CAMXuAgCw7wIAV/ACAJjwAgCw8gIAr/YCAND2AgDg9gIAMvgCAEr4AgBI+QIAYfkCAKf5AgBY+wIACf4CABn/AgCC/wIAuv8CAPn/AgBtAAMASgEDAGQBAwAZAgMAcQUDAKMFAwCyBQMAXgYDAIEJAwADCgMAnwsDAOwLAwB7DgMAfg4DAG0PAwBTEgMAkhIDAO4SAwDoEwMAOBQDAM0UAwB1FgMAoBcDAN8ZAwD+GQMApxoDAO8aAwBLGwMA3BsDALIcAwCLHQMAAx4DAEEeAwAAIwMAAiQDAG4kAwAUJQMAbCUDAHIlAwALJgMAViYDAG0oAwA9KgMAvCoDAAErAwDpKwMA8SsDAD8sAwBULAMAQS0DAFQtAwBtLgMAcS8DAHovAwB6MQMA4TEDAEUyAwB4NAMAoDUDAIk4AwChOwMA+zsDABU9AwBYPQMAmz0DANQ9AwAPPwMAQT8DAGs/AwBNQAMAlkEDAPZBAwAgQgMAP0IDAPpCAwCgQwMA6UMDAA9FAwBZRQMAiEUDAN1FAwCySgMAiksDADhMAwASTQMAaU8DAFBQAwBXUAMAjFIDAHhUAwB6VQMAGlYDAJ5WAwBSWAMA21gDAOpYAwAMWQMAVlkDALBZAwByWgMATFsDAL9cAwCfXQMAa14DALRfAwDzXwMAVmIDAC5kAwBsZgMAzGYDAMdnAwDJZwMA6GkDAE1rAwDHawMAdmwDAJJvAwDDbwMAw3ADAN5yAwDQdQMALXgDACt5AwC6eQMAr3oDACx7AwBHewMAj34DALB/AwAmgQMAU4EDAC6CAwAzggMAMoMDAAyFAwCFhQMAQYYDAO+GAwDHhwMA84cDAJCIAwCliAMA8IoDAEiLAwA6jAMAYI0DAAyOAwA2jgMAv44DABSPAwAyjwMA3JADAGSSAwAFlQMAgJYDALeZAwAUnQMAIp4DAKWeAwAynwMAgJ8DAH6gAwDLoAMAnKEDAPyhAwAgowMAGKQDAKCkAwDEpQMA56UDAAamAwCsqQMATqoDAFyqAwAtqwMA/asDAFCsAwBUrAMAc6wDAHGtAwAYrgMAia8DAJewAwCrsQMASbIDAIqzAwDDswMA0LMDAFC0AwBatwMA0rgDAAq5AwC6uQMASbsDAMi7AwDavQMA3L0DAGq+AwCcvwMA3b8DACXAAwC5wAMAxMADAEbCAwAcxAMA6MQDAAXGAwB4xgMAbscDADjIAwBlyAMAJMoDAAXNAwBOzgMAac4DAPrOAwA0zwMACdEDAAzRAwDu1QMAz9YDAPXWAwDX2AMA5NgDAGvZAwAZ2wMAGtsDAAneAwCk3gMAdd8DAL7fAwD03wMAMuADADnhAwA04gMAb+MDAC7lAwBD5QMAT+UDAJ7mAwC55gMAf+kDAHPqAwCm6wMAxesDAEHsAwCM7AMAle0DAF/uAwCx7gMAVe8DAA/xAwAT8gMAx/YDANH2AwBe9wMAaPkDAMn6AwDU+gMA+foDABD7AwC0+wMAtfsDAAn8AwAQ/AMA2PwDAP78AwDyAAQAawIEAMUDBADIAwQA+gMEADYFBAC1BQQABwYEALgHBAA8CwQAUAsEAB4NBABaDQQAuw0EAEwOBABnDgQAZQ8EAJgPBAA2EwQAjhMEAGMVBACEFQQASxcEAGsXBADEFwQAPBgEAGYYBABdGQQAgRkEACAaBACjGwQAKRwEAEocBABWHQQASR4EAN4eBABjHwQAiiIEAOgjBACeJAQApCUEAOglBADlJgQA2icEAIwoBAA9KQQA6ysEALMsBADcLAQAWy4EAKMuBADUNwQAXjsEANA7BAAHPAQARDwEAGc8BACLPAQA1DwEAJI/BAD0PwQA9T8EAPY/BADeQAQAX0EEAEVCBAACQwQA40UEAJBKBACuSgQAzUoEAKZLBACETgQAtlEEABVTBAAWUwQAVFMEAFVTBABqUwQAvlQEAG9VBABZVgQAZFYEAHNWBACGVgQA5VsEAFdcBADsXAQA7VwEAO5cBABHYAQA/WMEADBnBABsZwQAPWkEAMlsBADsbAQA7WwEAEFuBADBbgQAA3IEANRyBAAqdgQAzHgEANN4BACEeQQAwHkEAO56BADvegQA8HoEADJ7BADCewQAV3wEAMN/BADKfwQA04AEAP2BBADaggQAAIMEAEGGBABXhgQA54YEAHeHBAAZjQQAMo8EAKqPBABWkQQA6pEEAASSBAAlkgQAJpIEACeSBAAllQQAV5UEAK+WBADGlwQAQJgEAA+ZBAA1mgQAxJwEAB6eBAArngQAsZ4EAOuhBADsoQQACqQEANCkBAA6pQQANaYEADamBAAjpwQAV6cEAIWsBABmrQQA460EADmvBACFrwQAmrIEAO+yBABbtQQAMbcEACu4BAAsuAQA5LoEABe8BACnwQQAA8IEAOLCBADjwgQA5MIEAGrDBACHwwQAz8MEAPjDBABsxAQAcMQEAILFBAAXxgQAK8YEABXHBAAJyAQAMsgEAIvIBACMyAQAjcgEACHLBAC6zQQAEM8EANPPBADu0QQA+dEEAL/SBABA2AQAI9kEAJHZBADl2gQA1dwEANbcBADX3AQAat0EAIHdBADF3QQAJ+MEACTkBACh5AQA3+UEAFfnBABY5wQA+egEAALpBABZ6gQAnOsEAB3tBABA7gQAKu8EAC/wBACd8AQAFfUEAI/1BADR9QQA7vUEAO/1BADw9QQA9vUEABL4BAB3+QQAgP0EAAr/BAC+/wQAv/8EAP0BBQDCAwUAygQFADgHBQD0BwUAKggFAAYJBQDgCQUA+wkFAOALBQAaDgUAZQ4FANkPBQCnEAUAjBMFAPITBQBVFAUAKxUFAEoVBQA9GgUAaRoFADEcBQBeHAUATx0FANgeBQBAHwUA/R8FALogBQB3IQUAMiIFAOsiBQAxKAUAESkFAKkpBQA=
+Note:\\textbf{Note:}Note: Suppose W1 and W2W\_1 \\textbf{ and } W\_2W1​ and W2​ are subspaces of a vector space VVV. Then sum of two subspaces is defined as:  
+  
+               W1+W2\={w1+w2∣w1∈W1,w2∈W2}.W\_1 + W\_2 = \\{w\_1 + w\_2 \\mid w\_1\\in W\_1, w\_2 \\in W\_2\\}.W1​+W2​\={w1​+w2​∣w1​∈W1​,w2​∈W2​}.  
+  
+One can verify that W1+W2W\_1 + W\_2W1​+W2​ is a subspace of VVV.  
+  
+Multiple Choice Questions (MCQ):  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+An inner product on R3\\mathbb{R}^3R3 is defined as:  
+  
+          ⟨.,.⟩\\langle ., . \\rangle⟨.,.⟩: R3×R3 \\mathbb{R}^3 \\times \\mathbb{R}^3 R3×R3 →R \\rightarrow \\mathbb{R} →R  
+  
+          ⟨(x1,x2,x3),(y1,y2,y3)⟩ \\langle (x\_1,x\_2,x\_3), (y\_1,y\_2,y\_3)\\rangle⟨(x1​,x2​,x3​),(y1​,y2​,y3​)⟩ = x1y1+x2y2+x3y3x\_1y\_1+x\_2y\_2+x\_3y\_3x1​y1​+x2​y2​+x3​y3​.  
+  
+ Match a set SSS in Column A with the set TTT given in column B, so that T⊂Span(S)⊥T \\subset Span(S)^{\\perp}T⊂Span(S)⊥. Match a set in column B with the property it satisfies in column C.  
+  
+  
+  
+![](assets/Term-Feb-to-May_Mathematics-II_Week8_Practiceassignment8-NotGraded_IITMOnlineDegree13_4_20267_28_27am_23.png)  
+Which of the following option are true?  
+  
+
+d→\\rightarrow→ ii →\\rightarrow→ 3
+
+d→\\rightarrow→ iii →\\rightarrow→ 4
+
+c →\\rightarrow→ ii →\\rightarrow→ 4
+
+a →\\rightarrow→ iv →\\rightarrow→ 1
+
+a →\\rightarrow→ ii →\\rightarrow→ 3
+
+b →\\rightarrow→ iv →\\rightarrow→ 2
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+d→\\rightarrow→ iii →\\rightarrow→ 4
+
+a →\\rightarrow→ ii →\\rightarrow→ 3
+
+JavaScript should be enabled to grade this question.
+
+Suppose W1 and W2W\_1 \\text{ and } W\_2W1​ and W2​ are subspaces of a vector space VVV. Let PW1 and PW2P\_{W\_1} \\text{ and } P\_{W\_2}PW1​​ and PW2​​ denote the projection from VVV to W1W\_1W1​ and VVV to W2W\_2W2​ respectively and consider the following statements:   
+
+*    **Statement P**: If PW1+PW2P\_{W\_1}+ P\_{W\_2}PW1​​+PW2​​ is a projection from VVV to W1+W2W\_1 + W\_2W1​+W2​, then PW1∘PW2+PW2∘PW1\=0.P\_{W\_1}\\circ P\_{W\_2} + P\_{W\_2} \\circ P\_{W\_1} = 0.PW1​​∘PW2​​+PW2​​∘PW1​​\=0.
+
+  
+
+*    **Statement Q**: PW12:\=PW1∘PW1P\_{W\_1}^2 := P\_{W\_1} \\circ P\_{W\_1}PW1​2​:=PW1​​∘PW1​​ is not a projection from VVV to W1W\_1W1​. 
+
+  
+
+*   **Statement R:** If AAA is the matrix representation of PW2P\_{W\_2}PW2​​, then AAA can not be a symmetric matrix.
+
+  
+
+*   **Statement S**: PW1−PW2P\_{W\_1}- P\_{W\_2}PW1​​−PW2​​ is a projection from VVV to W1+W2W\_1 + W\_2W1​+W2​. 
+
+  
+ Find the number of correct statements  
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 1
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Which of the followings option(s) is (are) true?
+
+Let u,v, and wu, v, \\text{ and } wu,v, and w be three vectors in R2 \\mathbb{R}^2R2 and ⟨.,.⟩\\langle ., .\\rangle ⟨.,.⟩ be an inner product on R2\\mathbb{R}^2R2. If ⟨u,v⟩\=⟨u,w⟩\\langle u, v\\rangle = \\langle u, w \\rangle ⟨u,v⟩\=⟨u,w⟩, then v\=wv = wv\=w
+
+Let VV V be an inner product space. If ⟨u,v⟩\=0\\langle u, v \\rangle = 0⟨u,v⟩\=0 for all u∈Vu \\in Vu∈V, then v\=0v = 0v\=0
+
+Let VV V be an inner product space and u,v∈Vu,v \\in Vu,v∈V. If ⟨u+v,u−v⟩\=0\\langle u+v,u- v \\rangle = 0⟨u+v,u−v⟩\=0, then ∥u∥≠∥v∥\\|u\\| \\neq \\|v\\|∥u∥\=∥v∥
+
+Let VV V be an inner product space. If S⊂VS\\subset VS⊂V then S⊥\=(span(S))⊥S^\\perp = (span(S))^\\perpS⊥\=(span(S))⊥
+
+Suppose {u1,u2,…um}\\{u\_1, u\_2, \\ldots u\_m\\}{u1​,u2​,…um​} be an orthogonal set of vectors in an inner product space VVV, then ∥u1+u2+…+um∥2\=∥u1∥2+∥u2∥2+…+∥um∥2\\| u\_1 + u\_2 + \\ldots + u\_m\\|^2 = \\|u\_1\\|^2+ \\|u\_2\\|^2 + \\ldots + \\|u\_m\\|^2∥u1​+u2​+…+um​∥2\=∥u1​∥2+∥u2​∥2+…+∥um​∥2.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Let VV V be an inner product space. If ⟨u,v⟩\=0\\langle u, v \\rangle = 0⟨u,v⟩\=0 for all u∈Vu \\in Vu∈V, then v\=0v = 0v\=0
+
+Let VV V be an inner product space. If S⊂VS\\subset VS⊂V then S⊥\=(span(S))⊥S^\\perp = (span(S))^\\perpS⊥\=(span(S))⊥
+
+Suppose {u1,u2,…um}\\{u\_1, u\_2, \\ldots u\_m\\}{u1​,u2​,…um​} be an orthogonal set of vectors in an inner product space VVV, then ∥u1+u2+…+um∥2\=∥u1∥2+∥u2∥2+…+∥um∥2\\| u\_1 + u\_2 + \\ldots + u\_m\\|^2 = \\|u\_1\\|^2+ \\|u\_2\\|^2 + \\ldots + \\|u\_m\\|^2∥u1​+u2​+…+um​∥2\=∥u1​∥2+∥u2​∥2+…+∥um​∥2.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Which of the following option(s) is/are true?
+
+Let AAA and BBB be orthogonal matrices of order 3. Then A and BA \\text{ and } BA and B are equivalent matrices.
+
+Let AAA and BBB be orthogonal matrices. Then A and BA \\text{ and } BA and B are similar matrices.
+
+Let AAA be a rotation matrix corresponding to the anti-clock wise rotation of the XY-plane about the Z-axis with angle θ\\theta θ. Then nullity of the matrix AAA is 0.
+
+Let AAA be a rotation matrix corresponding to the anti-clock wise rotation of the XY-plane about the Z-axis with angle θ\\theta θ and BBB be a rotation matrix corresponding to the anti- clock wise rotation of the YZ-plane about the X -axis with angle β\\beta β. Then AAA and BBB are equivalent matrices.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Let AAA and BBB be orthogonal matrices of order 3. Then A and BA \\text{ and } BA and B are equivalent matrices.
+
+Let AAA be a rotation matrix corresponding to the anti-clock wise rotation of the XY-plane about the Z-axis with angle θ\\theta θ. Then nullity of the matrix AAA is 0.
+
+Let AAA be a rotation matrix corresponding to the anti-clock wise rotation of the XY-plane about the Z-axis with angle θ\\theta θ and BBB be a rotation matrix corresponding to the anti- clock wise rotation of the YZ-plane about the X -axis with angle β\\beta β. Then AAA and BBB are equivalent matrices.
+
+  
+  
+Numerical Answer Type:  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+Let u\=(1,2,1)u=(1,2,1)u\=(1,2,1) and v\=(1,2,3)v= (1,2,3)v\=(1,2,3) be the vectors of the inner product space R3\\mathbb{R}^3R3 with usual inner product. Let T:R3→R3T: \\mathbb{R}^3 \\to \\mathbb{R}^3T:R3→R3 be an orthogonal linear transformation. If θ\\theta θ is an angle between T(u)T(u)T(u) and T(v)T(v)T(v), then find the value of ∣∣T(u)∣∣∣∣T(v)∣∣cos⁡θ||T(u)||||T(v)||\\cos{\\theta}∣∣T(u)∣∣∣∣T(v)∣∣cosθ.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 8
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+Consider a set W\={(1,1,1)}W = \\{ (1,1,1)\\}W\={(1,1,1)} from the inner product space R3\\mathbb{R}^3R3. Find the dimension of the subspace W⊥W^\\perpW⊥, where W⊥W^\\perpW⊥ is the collection of the vectors which are orthogonal to the vector (1,1,1).
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 2
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+Let v\=(3,1,2)v= (3,1,2)v\=(3,1,2) be a vector in R3\\mathbb{R}^3R3. If (a,b,c)(a, b, c)(a,b,c) is the vector obtained from vvv after the anti- clock wise rotation of ZX-plane with angle 45∘45^\\circ45∘ about the Y- axis, then find the value of 2(a+b+c−1)\\sqrt{2}(a+b+c-1)2​(a+b+c−1).
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 6
+
+_1 point_
+
+  
+  
+Comprehension Type Question:  
+  
+With a particular frame of reference (in R2\\mathbb{R}^2R2) the position of Rahul's house is at the point (8,1). There are two roads Road 1 and Road 2 along the lines y\=2x and y\=−2x y = 2x \\text{ and } y = -2xy\=2x and y\=−2x respectively on the XY−XY-XY−plane.  
+ Answer questions 8,9 and 10 using the given information.  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Which of the following option(s) is (are) true?
+
+ If Rahul wants to travel the minimum distance from his house to Road 1, then he will meet Road 1 at (2,4).
+
+If Rahul wants to travel the minimum distance from his house to Road 1, then he will meet Road 1 at 65(1,−2)\\frac{6}{5}(1,-2)56​(1,−2).
+
+If Rahul wants to travel the minimum distance from his house to Road 2, then he will meet Road 2 at 65(1,−2)\\frac{6}{5}(1,-2)56​(1,−2).
+
+ If Rahul wants to travel the minimum distance from his house to Road 2, then he will meet Road 2 at (2,4).
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+If Rahul wants to travel the minimum distance from his house to Road 1, then he will meet Road 1 at (2,4).
+
+If Rahul wants to travel the minimum distance from his house to Road 2, then he will meet Road 2 at 65(1,−2)\\frac{6}{5}(1,-2)56​(1,−2).
+
+JavaScript should be enabled to grade this question.
+
+Let θ\\thetaθ be the acute angle between Road 1 and Road 2, then what will be the value of 5cos⁡(θ)5 \\cos(\\theta)5cos(θ)?
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 3
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Let ⟨.,.⟩\\langle . , . \\rangle ⟨.,.⟩ denote the standard inner product on R2\\mathbb{R}^2R2, i.e., ⟨(x1,x2),(y1,y2)⟩\=x1y1+x2y2\\langle (x\_1,x\_2), (y\_1,y\_2) \\rangle= x\_1y\_1+x\_2y\_2⟨(x1​,x2​),(y1​,y2​)⟩\=x1​y1​+x2​y2​. Suppose W1\={(x,y)∣y\=2x}W\_1 = \\{(x,y)\\mid y = 2x\\}W1​\={(x,y)∣y\=2x} and W2\={(x,y)∣y\=−2x}W\_2 = \\{(x,y)\\mid y = -2x\\}W2​\={(x,y)∣y\=−2x} are two subspaces of R2\\mathbb{R}^2R2. Which of the following options is correct?
+
+W1⊥\={(x,y)∣2y\=x}W\_1^\\perp = \\{(x,y)\\mid 2y = x\\}W1⊥​\={(x,y)∣2y\=x}
+
+W2⊥\={(x,y)∣2y\=−x}W\_2^\\perp = \\{(x,y)\\mid 2y = -x\\}W2⊥​\={(x,y)∣2y\=−x}
+
+W1⊥\={(x,y)∣2y\=−x}W\_1^\\perp = \\{(x,y)\\mid 2y = -x\\}W1⊥​\={(x,y)∣2y\=−x}
+
+W2⊥\={(x,y)∣2y\=x}W\_2^\\perp = \\{(x,y)\\mid 2y = x\\}W2⊥​\={(x,y)∣2y\=x}
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+W1⊥\={(x,y)∣2y\=−x}W\_1^\\perp = \\{(x,y)\\mid 2y = -x\\}W1⊥​\={(x,y)∣2y\=−x}
+
+W2⊥\={(x,y)∣2y\=x}W\_2^\\perp = \\{(x,y)\\mid 2y = x\\}W2⊥​\={(x,y)∣2y\=x}
+
+  
+
+Check Answers
+
+Your score is: 0/10
+
+Please enable JavaScript to continue using this application.
