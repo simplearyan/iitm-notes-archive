@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
     <script src="https://unpkg.com/roughjs@latest/bundled/rough.js"></script>
-    <script src="annotator.js?v=12"></script>
+    <script src="annotator.js?v=13"></script>
     
     <!-- Prism Engine (Modular) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
@@ -184,7 +184,6 @@
 
     <!-- Main Content Area -->
     <main id="main-content" class="flex-1 overflow-y-auto bg-white md:bg-[#f8fafc] flex flex-col relative">
-        <svg id="annotation-layer"></svg>
         
         <!-- Reading Header (Desktop) -->
         <header id="reading-header" class="hidden md:flex bg-white/90 backdrop-blur-xl border-b border-slate-200 px-12 py-5 items-center justify-between z-20 smart-header sticky top-0 shrink-0 shadow-sm shadow-slate-200/20">
@@ -206,6 +205,7 @@
 
         <!-- Markdown Container -->
         <article class="flex-1 max-w-5xl mx-auto w-full px-6 md:px-20 py-12 md:py-24 relative overflow-visible">
+            <svg id="annotation-layer"></svg>
             
             <!-- Dashboard View (Empty State) -->
             <div id="empty-state" class="flex flex-col items-center justify-center min-h-[60vh]">
@@ -301,9 +301,9 @@
     <script id="vault-data" type="application/json">
     {
   "stats": {
-    "buildId": "VAULT-1776317775381",
+    "buildId": "VAULT-1776318120856",
     "totalFiles": 125,
-    "timestamp": "2026-04-16T05:36:15.381Z"
+    "timestamp": "2026-04-16T05:42:00.856Z"
   },
   "navigation": [
     {
@@ -2015,7 +2015,7 @@
 }
     </script>
     <!-- SIDEBAR-DATA-END -->
-    <script src="annotator.js?v=12"></script>
+    <script src="annotator.js?v=13"></script>
 
     <script>
         /**
