@@ -22,38 +22,38 @@ _1 point_
 
 Which of the following sets with the given addition and scalar multiplication (scalars are real numbers in every case) form vector spaces?  
   
-V1\={(x,y,z)∣x,y,z∈R}Addition: (x1,y1,z1)+(x2,y2,z2)\=(x1+x2,y1+y2,z1+z2);(x1,y1,z1),(x2,y2,z2)∈V1Scalar multiplication: \\begin{aligned} & V\_1 = \\lbrace (x,y,z) \\mid x,y,z\\in \\mathbb{R} \\rbrace \\\\ & \\textit{Addition: } (x\_1,y\_1,z\_1)+(x\_2,y\_2,z\_2)=(x\_1+x\_2, y\_1+y\_2,z\_1+z\_2);\\\\ &\\hspace{5cm} (x\_1,y\_1,z\_1), (x\_2,y\_2,z\_2)\\in V\_1 \\\\ & \\textit{Scalar multiplication: } \\end{aligned}​V1​\={(x,y,z)∣x,y,z∈R}Addition: (x1​,y1​,z1​)+(x2​,y2​,z2​)\=(x1​+x2​,y1​+y2​,z1​+z2​);(x1​,y1​,z1​),(x2​,y2​,z2​)∈V1​Scalar multiplication: ​  
+$\\begin{aligned} & V\_1 = \\lbrace (x,y,z) \\mid x,y,z\\in \\mathbb{R} \\rbrace \\\\ & \\textit{Addition: } (x\_1,y\_1,z\_1)+(x\_2,y\_2,z\_2)=(x\_1+x\_2, y\_1+y\_2,z\_1+z\_2);\\\\ &\\hspace{5cm} (x\_1,y\_1,z\_1), (x\_2,y\_2,z\_2)\\in V\_1 \\\\ & \\textit{Scalar multiplication: } \\end{aligned}$  
   
- c(x,y,z)\={(0,0,0)c\=0(cx,cy,zc)c≠0(x,y,z)∈V1, c∈R c(x,y,z)= \\left\\{ \\begin{array}{ll} (0,0,0) & c = 0 \\\\ (cx,cy,\\frac{z}{c}) & c\\neq 0 \\end{array}\\hspace{5mm} (x,y,z)\\in V\_1, ~ c\\in \\mathbb{R} \\right. c(x,y,z)\={(0,0,0)(cx,cy,cz​)​c\=0c\=0​(x,y,z)∈V1​, c∈R  
+ $c(x,y,z)= \\left\\{ \\begin{array}{ll} (0,0,0) & c = 0 \\\\ (cx,cy,\\frac{z}{c}) & c\\neq 0 \\end{array}\\hspace{5mm} (x,y,z)\\in V\_1, ~ c\\in \\mathbb{R} \\right.$  
   
-V2\={(x,y,z)∣x,y,z∈R}Addition: (x1,y1,z1)+(x2,y2,z2)\=(x1+x2,y1+y2,z1z2);(x1,y1,z1),(x2,y2,z2)∈V2Scalar multiplication: c(x,y,z)\=(cx,cy,cz); (x,y,z)∈V2, c∈R\\begin{aligned} & V\_2 = \\lbrace (x,y,z) \\mid x,y,z\\in \\mathbb{R} \\rbrace \\\\ & \\textit{Addition: } (x\_1,y\_1,z\_1)+(x\_2,y\_2,z\_2)=(x\_1+x\_2, y\_1+y\_2,z\_1z\_2); \\\\ &\\hspace{5cm} (x\_1,y\_1,z\_1), (x\_2,y\_2,z\_2)\\in V\_2 \\\\ & \\textit{Scalar multiplication: } c(x,y,z)=(cx,cy,cz);~ (x,y,z)\\in V\_2, ~ c\\in \\mathbb{R} \\end{aligned}​V2​\={(x,y,z)∣x,y,z∈R}Addition: (x1​,y1​,z1​)+(x2​,y2​,z2​)\=(x1​+x2​,y1​+y2​,z1​z2​);(x1​,y1​,z1​),(x2​,y2​,z2​)∈V2​Scalar multiplication: c(x,y,z)\=(cx,cy,cz); (x,y,z)∈V2​, c∈R​  
+$\\begin{aligned} & V\_2 = \\lbrace (x,y,z) \\mid x,y,z\\in \\mathbb{R} \\rbrace \\\\ & \\textit{Addition: } (x\_1,y\_1,z\_1)+(x\_2,y\_2,z\_2)=(x\_1+x\_2, y\_1+y\_2,z\_1z\_2); \\\\ &\\hspace{5cm} (x\_1,y\_1,z\_1), (x\_2,y\_2,z\_2)\\in V\_2 \\\\ & \\textit{Scalar multiplication: } c(x,y,z)=(cx,cy,cz);~ (x,y,z)\\in V\_2, ~ c\\in \\mathbb{R} \\end{aligned}$  
   
-V3\={(x,y,z)∣x,y,z∈R}Addition: (x1,y1,z1)+(x2,y2,z2)\=(x1+x2,y1+y2,z1+z2);(x1,y1,z1),(x2,y2,z2)∈V3Scalar multiplication: c(x,y,z)\=(cx,cy,z); (x,y,z)∈V3, c∈R\\begin{aligned} & V\_3 = \\lbrace (x,y,z) \\mid x,y,z\\in \\mathbb{R} \\rbrace \\\\ & \\textit{Addition: } (x\_1,y\_1,z\_1)+(x\_2,y\_2,z\_2)=(x\_1+x\_2, y\_1+y\_2,z\_1+z\_2); \\\\ &\\hspace{5cm} (x\_1,y\_1,z\_1), (x\_2,y\_2,z\_2)\\in V\_3 \\\\ & \\textit{Scalar multiplication: } c(x,y,z)=(cx,cy,z);~ (x,y,z)\\in V\_3, ~ c\\in \\mathbb{R} \\end{aligned}​V3​\={(x,y,z)∣x,y,z∈R}Addition: (x1​,y1​,z1​)+(x2​,y2​,z2​)\=(x1​+x2​,y1​+y2​,z1​+z2​);(x1​,y1​,z1​),(x2​,y2​,z2​)∈V3​Scalar multiplication: c(x,y,z)\=(cx,cy,z); (x,y,z)∈V3​, c∈R​  
+$\\begin{aligned} & V\_3 = \\lbrace (x,y,z) \\mid x,y,z\\in \\mathbb{R} \\rbrace \\\\ & \\textit{Addition: } (x\_1,y\_1,z\_1)+(x\_2,y\_2,z\_2)=(x\_1+x\_2, y\_1+y\_2,z\_1+z\_2); \\\\ &\\hspace{5cm} (x\_1,y\_1,z\_1), (x\_2,y\_2,z\_2)\\in V\_3 \\\\ & \\textit{Scalar multiplication: } c(x,y,z)=(cx,cy,z);~ (x,y,z)\\in V\_3, ~ c\\in \\mathbb{R} \\end{aligned}$  
   
-V4\={(x,y,z)∣x,y,z∈R,x+y+z\=1}Addition: (x1,y1,z1)+(x2,y2,z2)\=(x1+x2,y1+y2,z1+z2);(x1,y1,z1),(x2,y2,z2)∈V4Scalar multiplication: c(x,y,z)\=(cx,cy,cz); (x,y,z)∈V4, c∈R\\begin{aligned} & V\_4 = \\lbrace (x,y,z) \\mid x,y,z\\in \\mathbb{R}, x+y+z = 1 \\rbrace \\\\ & \\textit{Addition: } (x\_1,y\_1,z\_1)+(x\_2,y\_2,z\_2)=(x\_1+x\_2, y\_1+y\_2,z\_1+z\_2); \\\\ &\\hspace{5cm} (x\_1,y\_1,z\_1), (x\_2,y\_2,z\_2)\\in V\_4 \\\\ & \\textit{Scalar multiplication: } c(x,y,z)=(cx,cy,cz);~ (x,y,z)\\in V\_4, ~ c\\in \\mathbb{R} \\end{aligned}​V4​\={(x,y,z)∣x,y,z∈R,x+y+z\=1}Addition: (x1​,y1​,z1​)+(x2​,y2​,z2​)\=(x1​+x2​,y1​+y2​,z1​+z2​);(x1​,y1​,z1​),(x2​,y2​,z2​)∈V4​Scalar multiplication: c(x,y,z)\=(cx,cy,cz); (x,y,z)∈V4​, c∈R​  
+$\\begin{aligned} & V\_4 = \\lbrace (x,y,z) \\mid x,y,z\\in \\mathbb{R}, x+y+z = 1 \\rbrace \\\\ & \\textit{Addition: } (x\_1,y\_1,z\_1)+(x\_2,y\_2,z\_2)=(x\_1+x\_2, y\_1+y\_2,z\_1+z\_2); \\\\ &\\hspace{5cm} (x\_1,y\_1,z\_1), (x\_2,y\_2,z\_2)\\in V\_4 \\\\ & \\textit{Scalar multiplication: } c(x,y,z)=(cx,cy,cz);~ (x,y,z)\\in V\_4, ~ c\\in \\mathbb{R} \\end{aligned}$  
   
-V5\={(x,y)∣x,y∈R,x+2y\=0}Addition: (x1,y1)+(x2,y2)\=(x1+x2,y1+y2);(x1,y1),(x2,y2)∈V5Scalar multiplication: c(x,y)\=(cx,cy); (x,y)∈V5, c∈R\\begin{aligned} & V\_5 = \\lbrace (x,y) \\mid x,y\\in \\mathbb{R}, x+2y=0 \\rbrace \\\\ & \\textit{Addition: } (x\_1,y\_1)+(x\_2,y\_2)=(x\_1+x\_2, y\_1+y\_2); \\\\ &\\hspace{5cm} (x\_1,y\_1), (x\_2,y\_2)\\in V\_5 \\\\ & \\textit{Scalar multiplication: } c(x,y)=(cx,cy);~ (x,y)\\in V\_5, ~ c\\in \\mathbb{R} \\end{aligned}​V5​\={(x,y)∣x,y∈R,x+2y\=0}Addition: (x1​,y1​)+(x2​,y2​)\=(x1​+x2​,y1​+y2​);(x1​,y1​),(x2​,y2​)∈V5​Scalar multiplication: c(x,y)\=(cx,cy); (x,y)∈V5​, c∈R​  
+$\\begin{aligned} & V\_5 = \\lbrace (x,y) \\mid x,y\\in \\mathbb{R}, x+2y=0 \\rbrace \\\\ & \\textit{Addition: } (x\_1,y\_1)+(x\_2,y\_2)=(x\_1+x\_2, y\_1+y\_2); \\\\ &\\hspace{5cm} (x\_1,y\_1), (x\_2,y\_2)\\in V\_5 \\\\ & \\textit{Scalar multiplication: } c(x,y)=(cx,cy);~ (x,y)\\in V\_5, ~ c\\in \\mathbb{R} \\end{aligned}$  
   
-\[Hint:\\textbf{Hint:}Hint: Check the axioms related to scalar multiplication in V1V\_1V1​.\]
+\[$\\textbf{Hint:}$ Check the axioms related to scalar multiplication in $V\_1$.\]
 
-V1V\_1V1​ is a vector space.
+$V\_1$ is a vector space.
 
-V2V\_2V2​ is a vector space.
+$V\_2$ is a vector space.
 
-V3V\_3V3​ is not a vector space.
+$V\_3$ is not a vector space.
 
-V4V\_4V4​ is a vector space.
+$V\_4$ is a vector space.
 
-V5V\_5V5​ is a vector space.
+$V\_5$ is a vector space.
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-V3V\_3V3​ is not a vector space.
+$V\_3$ is not a vector space.
 
-V5V\_5V5​ is a vector space.
+$V\_5$ is a vector space.
 
 JavaScript should be enabled to grade this question.
 
@@ -63,9 +63,9 @@ The marks obtained by Karthika, Romy and Farzana in Quiz 1, Quiz 2 and End sem (
   
                 ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week3_PracticeAssignment3-NotGraded_IITMOnlineDegree5_4_20264_38_21pm_25.jpg)  
 
-If Farzana obtained 90 marks in End sem (i.e c\=90c = 90c\=90), then the marks in Quiz 1, Quiz 2 and End sem represent linearly independent vectors.
+If Farzana obtained 90 marks in End sem (i.e $c = 90$), then the marks in Quiz 1, Quiz 2 and End sem represent linearly independent vectors.
 
-If Farzana obtained 80 marks in End sem (i.e c\=80c = 80c\=80), then the marks in Quiz 1, Quiz 2 and End sem represent linearly independent vectors.
+If Farzana obtained 80 marks in End sem (i.e $c = 80$), then the marks in Quiz 1, Quiz 2 and End sem represent linearly independent vectors.
 
  If 20% of Quiz 1, 30% of Quiz 2, and 50% of End sem are used to obtain total marks, then the vector representing the total marks is a linear combination of vectors representing the marks of Quiz 1, Quiz 2 and End sem.
 
@@ -76,7 +76,7 @@ Score: 0
 
 ### Accepted Answers:
 
-If Farzana obtained 80 marks in End sem (i.e c\=80c = 80c\=80), then the marks in Quiz 1, Quiz 2 and End sem represent linearly independent vectors.
+If Farzana obtained 80 marks in End sem (i.e $c = 80$), then the marks in Quiz 1, Quiz 2 and End sem represent linearly independent vectors.
 
 If 20% of Quiz 1, 30% of Quiz 2, and 50% of End sem are used to obtain total marks, then the vector representing the total marks is a linear combination of vectors representing the marks of Quiz 1, Quiz 2 and End sem.
 
@@ -92,9 +92,9 @@ Choose the set of correct options.
 
  Any subset of any linearly dependent set of vectors is linearly independent.
 
-Any set of 3 vectors in R3\\mathbb{R}^3R3 is linearly independent.
+Any set of 3 vectors in $\\mathbb{R}^3$ is linearly independent.
 
-Any set of 4 vectors in R3\\mathbb{R}^3R3 is linearly dependent.
+Any set of 4 vectors in $\\mathbb{R}^3$ is linearly dependent.
 
 ### No, the answer is incorrect.  
 Score: 0
@@ -103,7 +103,7 @@ Score: 0
 
 Any subset of any linearly independent set of vectors is linearly independent.
 
-Any set of 4 vectors in R3\\mathbb{R}^3R3 is linearly dependent.
+Any set of 4 vectors in $\\mathbb{R}^3$ is linearly dependent.
 
   
   
@@ -114,13 +114,13 @@ JavaScript should be enabled to grade this question.
 
 JavaScript should be enabled to grade this question.
 
-Consider the set V\={(−1,x,−y)∣x,y∈R}⊆R3V = \\lbrace (-1, x, -y) \\mid x,y\\in \\mathbb{R} \\rbrace \\subseteq \\mathbb{R}^3V\={(−1,x,−y)∣x,y∈R}⊆R3 with the usual addition and scalar multiplication as in R3\\mathbb{R}^3R3 and associated statements given below.  
+Consider the set $V = \\lbrace (-1, x, -y) \\mid x,y\\in \\mathbb{R} \\rbrace \\subseteq \\mathbb{R}^3$ with the usual addition and scalar multiplication as in $\\mathbb{R}^3$ and associated statements given below.  
   
 
-*   P:\\textbf{P:}P: VVV is not closed under addition.
-*   Q:\\textbf{Q:}Q: VVV is not closed under scalar multiplication.
-*   R:\\textbf{R:}R: VVV has a zero element with respect to addition.i.e., there exists some element www such that v+w\=vv+w=vv+w\=v, for all v∈Vv\\in Vv∈V.
-*   S:\\textbf{S:}S: VVV is a vector space.
+*   $\\textbf{P:}$ $V$ is not closed under addition.
+*   $\\textbf{Q:}$ $V$ is not closed under scalar multiplication.
+*   $\\textbf{R:}$ $V$ has a zero element with respect to addition.i.e., there exists some element $w$ such that $v+w=v$, for all $v\\in V$.
+*   $\\textbf{S:}$ $V$ is a vector space.
 
   
 Find out the number of true statements.
@@ -141,7 +141,7 @@ JavaScript should be enabled to grade this question.
 
 JavaScript should be enabled to grade this question.
 
-Consider the set of three vectors S\={(1,18,16),(1,c−2,16),(1,18,c−4)}S=\\lbrace (1, 18, 16), (1,c-2,16), (1,18,c-4) \\rbraceS\={(1,18,16),(1,c−2,16),(1,18,c−4)} in R3\\mathbb{R}^3R3 with usual addition and scalar multiplication. Find the value of ccc, so that the above set SSS will be linearly dependent?
+Consider the set of three vectors $S=\\lbrace (1, 18, 16), (1,c-2,16), (1,18,c-4) \\rbrace$ in $\\mathbb{R}^3$ with usual addition and scalar multiplication. Find the value of $c$, so that the above set $S$ will be linearly dependent?
 
 ### No, the answer is incorrect.  
 Score: 0
@@ -157,7 +157,7 @@ _1 point_
 
 JavaScript should be enabled to grade this question.
 
-For how many values of aaa is the set {(1,2,a),(a,0,a,),(−1,a2,8),(0,1,−3a)}\\lbrace (1,2,a), (a,0,a,),(-1,a^2,8),(0,1,-3a) \\rbrace {(1,2,a),(a,0,a,),(−1,a2,8),(0,1,−3a)} linearly independent?
+For how many values of $a$ is the set $\\lbrace (1,2,a), (a,0,a,),(-1,a^2,8),(0,1,-3a) \\rbrace$ linearly independent?
 
 ### No, the answer is incorrect.  
 Score: 0
@@ -204,13 +204,13 @@ JavaScript should be enabled to grade this question.
 
 Suppose Farmer B buys the same amount of land (1 acre) and uses it in the same ratio for different crops as she was using for her land earlier. Consider the following statements.  
   
-Statement 1:\\textbf{Statement 1:}Statement 1: Farmer A sells his whole land to Farmer D, and Farmer D uses the land she bought from Farmer A, in the same ratio for different crops as Farmer A was using earlier. In this new scenario, Farmer B is using more amount of area of land for pulses than Farmer D.  
+$\\textbf{Statement 1:}$ Farmer A sells his whole land to Farmer D, and Farmer D uses the land she bought from Farmer A, in the same ratio for different crops as Farmer A was using earlier. In this new scenario, Farmer B is using more amount of area of land for pulses than Farmer D.  
   
-Statement 2:\\textbf{Statement 2:}Statement 2: Farmer A sells his whole land to Farmer D, and Farmer D uses the land she bought from Farmer A, in the same ratio for different crops as Farmer A was using earlier. In this new scenario, Farmer B and Farmer D are using the same amount of area of land for paddy.  
+$\\textbf{Statement 2:}$ Farmer A sells his whole land to Farmer D, and Farmer D uses the land she bought from Farmer A, in the same ratio for different crops as Farmer A was using earlier. In this new scenario, Farmer B and Farmer D are using the same amount of area of land for paddy.  
   
-Statement 3:\\textbf{Statement 3:}Statement 3: Farmer A sells his whole land to Farmer C, and Farmer C uses the land she bought from Farmer A, in the same ratio for different crops as Farmer A was using earlier. In this new scenario, Farmer B and Farmer C are using the same amount of area of land for paddy.  
+$\\textbf{Statement 3:}$ Farmer A sells his whole land to Farmer C, and Farmer C uses the land she bought from Farmer A, in the same ratio for different crops as Farmer A was using earlier. In this new scenario, Farmer B and Farmer C are using the same amount of area of land for paddy.  
   
-Statement 4:\\textbf{Statement 4:}Statement 4: Farmer A sells his whole land to Farmer C, and Farmer C uses the land she bought from Farmer A, in the same ratio for different crops as Farmer A was using earlier. In this new scenario, Farmer B is using more amount of area of land for paddy than Farmer C.  
+$\\textbf{Statement 4:}$ Farmer A sells his whole land to Farmer C, and Farmer C uses the land she bought from Farmer A, in the same ratio for different crops as Farmer A was using earlier. In this new scenario, Farmer B is using more amount of area of land for paddy than Farmer C.  
   
 Write down the number corresponding to the correct statement. (If Statement 2 is right, the answer would be 2.)
 

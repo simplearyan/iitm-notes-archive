@@ -20,31 +20,31 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Match the vector spaces (with the usual scalar multiplication and vector addition as in M3×3(R)M\_{3\\times 3}(\\mathbb{R})M3×3​(R) ) in column A with their bases in column B in Table : M2W4P1.  
+Match the vector spaces (with the usual scalar multiplication and vector addition as in $M\_{3\\times 3}(\\mathbb{R})$ ) in column A with their bases in column B in Table : M2W4P1.  
   
 ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week4_PracticeAssignment4-NotGraded_IITMOnlineDegree5_4_20265_09_29pm_18.jpg)  
 Choose the correct option.  
 
-a →\\rightarrow→ i
+a $\\rightarrow$ i
 
-a →\\rightarrow→ ii
+a $\\rightarrow$ ii
 
-b →\\rightarrow→ iii
+b $\\rightarrow$ iii
 
-c →\\rightarrow→ iii
+c $\\rightarrow$ iii
 
-c →\\rightarrow→ i
+c $\\rightarrow$ i
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-a →\\rightarrow→ ii
+a $\\rightarrow$ ii
 
-b →\\rightarrow→ iii
+b $\\rightarrow$ iii
 
-c →\\rightarrow→ i
+c $\\rightarrow$ i
 
 JavaScript should be enabled to grade this question.
 
@@ -54,20 +54,20 @@ Match the sets of vectors in column A with their properties of linear dependence
   
 ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week4_PracticeAssignment4-NotGraded_IITMOnlineDegree5_4_20265_09_29pm_19.jpg)  
 
-a →\\rightarrow→ ii →\\rightarrow→ 4, b →\\rightarrow→ i →\\rightarrow→ 3
+a $\\rightarrow$ ii $\\rightarrow$ 4, b $\\rightarrow$ i $\\rightarrow$ 3
 
-c →\\rightarrow→ iv →\\rightarrow→ 1, d →\\rightarrow→ iii →\\rightarrow→ 2
+c $\\rightarrow$ iv $\\rightarrow$ 1, d $\\rightarrow$ iii $\\rightarrow$ 2
 
-c →\\rightarrow→ iv →\\rightarrow→ 2, d →\\rightarrow→ iii →\\rightarrow→ 1
+c $\\rightarrow$ iv $\\rightarrow$ 2, d $\\rightarrow$ iii $\\rightarrow$ 1
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-a →\\rightarrow→ ii →\\rightarrow→ 4, b →\\rightarrow→ i →\\rightarrow→ 3
+a $\\rightarrow$ ii $\\rightarrow$ 4, b $\\rightarrow$ i $\\rightarrow$ 3
 
-c →\\rightarrow→ iv →\\rightarrow→ 1, d →\\rightarrow→ iii →\\rightarrow→ 2
+c $\\rightarrow$ iv $\\rightarrow$ 1, d $\\rightarrow$ iii $\\rightarrow$ 2
 
 JavaScript should be enabled to grade this question.
 
@@ -77,9 +77,9 @@ Which of the following options are true?
 
  The number of linearly independent vectors in a vector space can be more than the dimension of the vector space.
 
-Dimension of the vector space spanned by the vectors \[1−111\]\\begin{bmatrix} 1 & -1\\\\ 1 & 1 \\end{bmatrix}\[11​−11​\], \[−11−11\]\\begin{bmatrix} -1 & 1\\\\ -1 & 1 \\end{bmatrix} \[−1−1​11​\], and \[−1111\] \\begin{bmatrix} -1 & 1\\\\ 1 & 1 \\end{bmatrix}\[−11​11​\] is 2.
+Dimension of the vector space spanned by the vectors $\\begin{bmatrix} 1 & -1\\\\ 1 & 1 \\end{bmatrix}$, $\\begin{bmatrix} -1 & 1\\\\ -1 & 1 \\end{bmatrix}$, and $\\begin{bmatrix} -1 & 1\\\\ 1 & 1 \\end{bmatrix}$ is 2.
 
-Dimension of the vector space spanned by the vectors \[1−111\]\\begin{bmatrix} 1 & -1\\\\ 1 & 1 \\end{bmatrix}\[11​−11​\],\[−11−1−1\] \\begin{bmatrix} -1 & 1\\\\ -1 & -1 \\end{bmatrix}\[−1−1​1−1​\], and \[−22−2−2\] \\begin{bmatrix} -2 & 2\\\\ -2 & -2 \\end{bmatrix}\[−2−2​2−2​\] is 1.
+Dimension of the vector space spanned by the vectors $\\begin{bmatrix} 1 & -1\\\\ 1 & 1 \\end{bmatrix}$,$\\begin{bmatrix} -1 & 1\\\\ -1 & -1 \\end{bmatrix}$, and $\\begin{bmatrix} -2 & 2\\\\ -2 & -2 \\end{bmatrix}$ is 1.
 
  The number of spanning vectors can be more than the dimension of the vector space.
 
@@ -88,7 +88,7 @@ Score: 0
 
 ### Accepted Answers:
 
-Dimension of the vector space spanned by the vectors \[1−111\]\\begin{bmatrix} 1 & -1\\\\ 1 & 1 \\end{bmatrix}\[11​−11​\],\[−11−1−1\] \\begin{bmatrix} -1 & 1\\\\ -1 & -1 \\end{bmatrix}\[−1−1​1−1​\], and \[−22−2−2\] \\begin{bmatrix} -2 & 2\\\\ -2 & -2 \\end{bmatrix}\[−2−2​2−2​\] is 1.
+Dimension of the vector space spanned by the vectors $\\begin{bmatrix} 1 & -1\\\\ 1 & 1 \\end{bmatrix}$,$\\begin{bmatrix} -1 & 1\\\\ -1 & -1 \\end{bmatrix}$, and $\\begin{bmatrix} -2 & 2\\\\ -2 & -2 \\end{bmatrix}$ is 1.
 
 The number of spanning vectors can be more than the dimension of the vector space.
 
@@ -101,28 +101,28 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Let AAA be a nonzero 2×22 \\times 22×2 matrix. Which of the following options are true?
+Let $A$ be a nonzero $2 \\times 2$ matrix. Which of the following options are true?
 
-The rank of AAA must be strictly less than 222.
+The rank of $A$ must be strictly less than $2$.
 
-If the rank of the matrix is 2, then the dimension of the vector space spanned by the vectors corresponding to each column of AAA, must be 2.
+If the rank of the matrix is 2, then the dimension of the vector space spanned by the vectors corresponding to each column of $A$, must be 2.
 
-The rank of AAA must be at least 1.
+The rank of $A$ must be at least 1.
 
-The rank of AAA may be 0.
+The rank of $A$ may be 0.
 
-If the rank of the matrix is 2−12-12−1, then there exists one vector corresponding to a column of AAA, which can be expressed as a linear combination of the vectors corresponding to each of the remaining columns of AAA.
+If the rank of the matrix is $2-1$, then there exists one vector corresponding to a column of $A$, which can be expressed as a linear combination of the vectors corresponding to each of the remaining columns of $A$.
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-If the rank of the matrix is 2, then the dimension of the vector space spanned by the vectors corresponding to each column of AAA, must be 2.
+If the rank of the matrix is 2, then the dimension of the vector space spanned by the vectors corresponding to each column of $A$, must be 2.
 
-The rank of AAA must be at least 1.
+The rank of $A$ must be at least 1.
 
-If the rank of the matrix is 2−12-12−1, then there exists one vector corresponding to a column of AAA, which can be expressed as a linear combination of the vectors corresponding to each of the remaining columns of AAA.
+If the rank of the matrix is $2-1$, then there exists one vector corresponding to a column of $A$, which can be expressed as a linear combination of the vectors corresponding to each of the remaining columns of $A$.
 
   
   
@@ -133,7 +133,7 @@ JavaScript should be enabled to grade this question.
 
 JavaScript should be enabled to grade this question.
 
-Suppose A\=(8−m  2  430  0m  m−2)A=\\begin{pmatrix} 8-m & \\ \\ 2 & \\ \\ 4 \\\\ 3 & 0 & \\ \\ 0 \\\\ m & \\ \\ m & -2 \\end{pmatrix}A\=​8−m3m​  20  m​  4  0−2​​. For what value of mmm is the rank of AAA at most 2?
+Suppose $A=\\begin{pmatrix} 8-m & \\ \\ 2 & \\ \\ 4 \\\\ 3 & 0 & \\ \\ 0 \\\\ m & \\ \\ m & -2 \\end{pmatrix}$. For what value of $m$ is the rank of $A$ at most 2?
 
 ### No, the answer is incorrect.  
 Score: 0
@@ -150,7 +150,7 @@ JavaScript should be enabled to grade this question.
 
 JavaScript should be enabled to grade this question.
 
-If rank of the matrix \[0−1a20−43−9−6\]\\begin{bmatrix} 0 & -1 & a \\\\ 2 & 0 & -4\\\\ 3 & -9 & -6 \\end{bmatrix}​023​−10−9​a−4−6​​ is 2 then find the value of aaa.
+If rank of the matrix $\\begin{bmatrix} 0 & -1 & a \\\\ 2 & 0 & -4\\\\ 3 & -9 & -6 \\end{bmatrix}$ is 2 then find the value of $a$.
 
 ### No, the answer is incorrect.  
 Score: 0
@@ -167,7 +167,7 @@ JavaScript should be enabled to grade this question.
 
 JavaScript should be enabled to grade this question.
 
-Find out the value of aaa for which the matrix \[a−50−1\]\\begin{bmatrix} a & -5 \\\\0 & -1 \\end{bmatrix}\[a0​−5−1​\] will be in the spanning set of the matrices \[100−1\]\\begin{bmatrix} 1 & 0 \\\\ 0 & -1 \\end{bmatrix}\[10​0−1​\] and \[0100\]\\begin{bmatrix} 0 & 1 \\\\ 0 & 0 \\end{bmatrix}\[00​10​\] in M2×2(R)M\_{2 \\times 2}(\\mathbb{R})M2×2​(R) with usual matrix addition and scalar multiplication.
+Find out the value of $a$ for which the matrix $\\begin{bmatrix} a & -5 \\\\0 & -1 \\end{bmatrix}$ will be in the spanning set of the matrices $\\begin{bmatrix} 1 & 0 \\\\ 0 & -1 \\end{bmatrix}$ and $\\begin{bmatrix} 0 & 1 \\\\ 0 & 0 \\end{bmatrix}$ in $M\_{2 \\times 2}(\\mathbb{R})$ with usual matrix addition and scalar multiplication.
 
 ### No, the answer is incorrect.  
 Score: 0
@@ -214,30 +214,30 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Let SSS be the vectors space defined in the previous question, with the usual addition and scalar multiplication on R3\\mathbb{R}^3R3. Which of the following sets will not be a basis of SSS?
+Let $S$ be the vectors space defined in the previous question, with the usual addition and scalar multiplication on $\\mathbb{R}^3$. Which of the following sets will not be a basis of $S$?
 
-{(5,3,2)}\\lbrace (5,3,2) \\rbrace{(5,3,2)}
+$\\lbrace (5,3,2) \\rbrace$
 
-{(5,3,2),(4,3,3)}\\lbrace (5,3,2),(4,3,3) \\rbrace{(5,3,2),(4,3,3)}
+$\\lbrace (5,3,2),(4,3,3) \\rbrace$
 
-{(5,3,2),(4,3,3),(10,0,0)}\\lbrace (5,3,2),(4,3,3), (10,0,0) \\rbrace{(5,3,2),(4,3,3),(10,0,0)}
+$\\lbrace (5,3,2),(4,3,3), (10,0,0) \\rbrace$
 
-{(5,3,2),(4,3,3),(3,3,4)}\\lbrace (5,3,2),(4,3,3), (3,3,4) \\rbrace{(5,3,2),(4,3,3),(3,3,4)}
+$\\lbrace (5,3,2),(4,3,3), (3,3,4) \\rbrace$
 
-{(5,3,2),(4,3,3),(10,0,0),(3,3,4)}\\lbrace (5,3,2),(4,3,3), (10,0,0), (3,3,4) \\rbrace{(5,3,2),(4,3,3),(10,0,0),(3,3,4)}
+$\\lbrace (5,3,2),(4,3,3), (10,0,0), (3,3,4) \\rbrace$
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-{(5,3,2)}\\lbrace (5,3,2) \\rbrace{(5,3,2)}
+$\\lbrace (5,3,2) \\rbrace$
 
-{(5,3,2),(4,3,3)}\\lbrace (5,3,2),(4,3,3) \\rbrace{(5,3,2),(4,3,3)}
+$\\lbrace (5,3,2),(4,3,3) \\rbrace$
 
-{(5,3,2),(4,3,3),(3,3,4)}\\lbrace (5,3,2),(4,3,3), (3,3,4) \\rbrace{(5,3,2),(4,3,3),(3,3,4)}
+$\\lbrace (5,3,2),(4,3,3), (3,3,4) \\rbrace$
 
-{(5,3,2),(4,3,3),(10,0,0),(3,3,4)}\\lbrace (5,3,2),(4,3,3), (10,0,0), (3,3,4) \\rbrace{(5,3,2),(4,3,3),(10,0,0),(3,3,4)}
+$\\lbrace (5,3,2),(4,3,3), (10,0,0), (3,3,4) \\rbrace$
 
   
 

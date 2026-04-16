@@ -21,9 +21,9 @@ JavaScript should be enabled to grade this question.
 Consider the following statements:  
   
 
-*   Statement 1:\\textbf{Statement 1:}Statement 1: 0(0,0)+0(1,1)\=(0,0)0(0,0)+0(1,1)=(0,0)0(0,0)+0(1,1)\=(0,0) implies that the set {(0,0),(1,1)}\\lbrace (0,0),(1,1)\\rbrace{(0,0),(1,1)} is a linearly independent subset of R2\\mathbb{R}^2R2.
-*   Statement 2:\\textbf{Statement 2:}Statement 2: 2(1,0)+2(0,1)\=(2,2)2(1,0)+2(0,1)=(2,2)2(1,0)+2(0,1)\=(2,2) implies that the set {(1,0),(0,1),(2,2)}\\lbrace (1,0),(0,1),(2,2)\\rbrace{(1,0),(0,1),(2,2)} is a linearly dependent subset of R2\\mathbb{R}^2R2.
-*   Statement 3:\\textbf{Statement 3:}Statement 3: 2(1,0)+2(0,1)\=(2,2)2(1,0)+2(0,1)=(2,2)2(1,0)+2(0,1)\=(2,2) implies that the set {(1,0),(2,2)}\\lbrace (1,0) ,(2,2)\\rbrace{(1,0),(2,2)} is a linearly dependent subset of R2\\mathbb{R}^2R2.
+*   $\\textbf{Statement 1:}$ $0(0,0)+0(1,1)=(0,0)$ implies that the set $\\lbrace (0,0),(1,1)\\rbrace$ is a linearly independent subset of $\\mathbb{R}^2$.
+*   $\\textbf{Statement 2:}$ $2(1,0)+2(0,1)=(2,2)$ implies that the set $\\lbrace (1,0),(0,1),(2,2)\\rbrace$ is a linearly dependent subset of $\\mathbb{R}^2$.
+*   $\\textbf{Statement 3:}$ $2(1,0)+2(0,1)=(2,2)$ implies that the set $\\lbrace (1,0) ,(2,2)\\rbrace$ is a linearly dependent subset of $\\mathbb{R}^2$.
 
   
  Find the number of correct statements.
@@ -41,80 +41,80 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-If α(1,1,0)+β(0,1,1)+γ(1,0,1)\=v\\alpha (1,1,0)+\\beta (0,1,1)+\\gamma (1,0,1)= vα(1,1,0)+β(0,1,1)+γ(1,0,1)\=v for some α,β,γ∈R\\alpha, \\beta, \\gamma \\in \\mathbb{R}α,β,γ∈R and v∈R3v\\in \\mathbb{R}^3v∈R3, then choose the set of correct options.
+If $\\alpha (1,1,0)+\\beta (0,1,1)+\\gamma (1,0,1)= v$ for some $\\alpha, \\beta, \\gamma \\in \\mathbb{R}$ and $v\\in \\mathbb{R}^3$, then choose the set of correct options.
 
-If v\=(0,0,0)v=(0,0,0)v\=(0,0,0), then one of the possible solutions of α,β, and γ\\alpha, \\beta, \\text{ and } \\gamma α,β, and γ is α\=12\=γ\\alpha=\\frac{1}{2}=\\gammaα\=21​\=γ, and β\=−12\\beta=-\\frac{1}{2}β\=−21​.
+If $v=(0,0,0)$, then one of the possible solutions of $\\alpha, \\beta, \\text{ and } \\gamma$ is $\\alpha=\\frac{1}{2}=\\gamma$, and $\\beta=-\\frac{1}{2}$.
 
-If v\=(0,0,0)v=(0,0,0)v\=(0,0,0), then one of the possible solutions of α,β, and γ\\alpha, \\beta, \\text{ and } \\gamma α,β, and γ is α\=β\=γ\=0\\alpha=\\beta=\\gamma=0α\=β\=γ\=0.
+If $v=(0,0,0)$, then one of the possible solutions of $\\alpha, \\beta, \\text{ and } \\gamma$ is $\\alpha=\\beta=\\gamma=0$.
 
-If v\=(0,0,0)v=(0,0,0)v\=(0,0,0), then the possible solution of α,β, and γ\\alpha, \\beta, \\text{ and } \\gamma α,β, and γ is unique.
+If $v=(0,0,0)$, then the possible solution of $\\alpha, \\beta, \\text{ and } \\gamma$ is unique.
 
-If v\=(1,0,0)v=(1,0,0)v\=(1,0,0), then one of the possible solutions of α,β, and γ\\alpha, \\beta, \\text{ and } \\gamma α,β, and γ is α\=12\=γ\\alpha=\\frac{1}{2}=\\gammaα\=21​\=γ, and β\=−12\\beta=-\\frac{1}{2}β\=−21​.
+If $v=(1,0,0)$, then one of the possible solutions of $\\alpha, \\beta, \\text{ and } \\gamma$ is $\\alpha=\\frac{1}{2}=\\gamma$, and $\\beta=-\\frac{1}{2}$.
 
-The set {(1,1,0),(0,1,1),(1,0,1)}\\lbrace (1,1,0),(0,1,1),(1,0,1)\\rbrace{(1,1,0),(0,1,1),(1,0,1)} is linearly independent.
+The set $\\lbrace (1,1,0),(0,1,1),(1,0,1)\\rbrace$ is linearly independent.
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-If v\=(0,0,0)v=(0,0,0)v\=(0,0,0), then one of the possible solutions of α,β, and γ\\alpha, \\beta, \\text{ and } \\gamma α,β, and γ is α\=β\=γ\=0\\alpha=\\beta=\\gamma=0α\=β\=γ\=0.
+If $v=(0,0,0)$, then one of the possible solutions of $\\alpha, \\beta, \\text{ and } \\gamma$ is $\\alpha=\\beta=\\gamma=0$.
 
-If v\=(0,0,0)v=(0,0,0)v\=(0,0,0), then the possible solution of α,β, and γ\\alpha, \\beta, \\text{ and } \\gamma α,β, and γ is unique.
+If $v=(0,0,0)$, then the possible solution of $\\alpha, \\beta, \\text{ and } \\gamma$ is unique.
 
-If v\=(1,0,0)v=(1,0,0)v\=(1,0,0), then one of the possible solutions of α,β, and γ\\alpha, \\beta, \\text{ and } \\gamma α,β, and γ is α\=12\=γ\\alpha=\\frac{1}{2}=\\gammaα\=21​\=γ, and β\=−12\\beta=-\\frac{1}{2}β\=−21​.
+If $v=(1,0,0)$, then one of the possible solutions of $\\alpha, \\beta, \\text{ and } \\gamma$ is $\\alpha=\\frac{1}{2}=\\gamma$, and $\\beta=-\\frac{1}{2}$.
 
-The set {(1,1,0),(0,1,1),(1,0,1)}\\lbrace (1,1,0),(0,1,1),(1,0,1)\\rbrace{(1,1,0),(0,1,1),(1,0,1)} is linearly independent.
+The set $\\lbrace (1,1,0),(0,1,1),(1,0,1)\\rbrace$ is linearly independent.
 
 JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Consider a set of vectors S\={(1,2),(−1,2),(3,1),(−3,1)}S = \\{(1, 2) ,(-1, 2), (3, 1), (-3, 1)\\}S\={(1,2),(−1,2),(3,1),(−3,1)} in R2\\mathbb{R}^2R2. Choose the set of correct options.
+Consider a set of vectors $S = \\{(1, 2) ,(-1, 2), (3, 1), (-3, 1)\\}$ in $\\mathbb{R}^2$. Choose the set of correct options.
 
-{(1,2),(−1,2)} \\{ (1, 2) ,(-1, 2) \\}{(1,2),(−1,2)} is a linearly dependent set.
+$\\{ (1, 2) ,(-1, 2) \\}$ is a linearly dependent set.
 
-{(−1,2),(−3,1)} \\{ (-1, 2) ,(-3, 1) \\}{(−1,2),(−3,1)} is a linearly independent set.
+$\\{ (-1, 2) ,(-3, 1) \\}$ is a linearly independent set.
 
-{(−3,1),(−1,2),(3,1)}\\{ (-3, 1) ,(-1, 2), (3, 1) \\}{(−3,1),(−1,2),(3,1)} is a linearly dependent set.
+$\\{ (-3, 1) ,(-1, 2), (3, 1) \\}$ is a linearly dependent set.
 
-{(3,1),(−3,1)} \\{ (3, 1) ,(-3, 1) \\}{(3,1),(−3,1)} is a linearly dependent set.
+$\\{ (3, 1) ,(-3, 1) \\}$ is a linearly dependent set.
 
-{(3,1),(1,2),(−3,1)} \\{ (3, 1) ,(1, 2), (-3, 1) \\}{(3,1),(1,2),(−3,1)} is a linearly dependent set.
+$\\{ (3, 1) ,(1, 2), (-3, 1) \\}$ is a linearly dependent set.
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-{(−1,2),(−3,1)} \\{ (-1, 2) ,(-3, 1) \\}{(−1,2),(−3,1)} is a linearly independent set.
+$\\{ (-1, 2) ,(-3, 1) \\}$ is a linearly independent set.
 
-{(−3,1),(−1,2),(3,1)}\\{ (-3, 1) ,(-1, 2), (3, 1) \\}{(−3,1),(−1,2),(3,1)} is a linearly dependent set.
+$\\{ (-3, 1) ,(-1, 2), (3, 1) \\}$ is a linearly dependent set.
 
-{(3,1),(1,2),(−3,1)} \\{ (3, 1) ,(1, 2), (-3, 1) \\}{(3,1),(1,2),(−3,1)} is a linearly dependent set.
+$\\{ (3, 1) ,(1, 2), (-3, 1) \\}$ is a linearly dependent set.
 
 JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Let VVV be a vector space and non zero vectors v1,v2,v3, and v4∈Vv\_1, v\_2, v\_3, \\text{ and } v\_4 \\in Vv1​,v2​,v3​, and v4​∈V. If v1v\_1v1​ is a linear combination of viv\_ivi​, for i\=2,3,4i=2,3,4i\=2,3,4, then which of the following is (are) correct?
+Let $V$ be a vector space and non zero vectors $v\_1, v\_2, v\_3, \\text{ and } v\_4 \\in V$. If $v\_1$ is a linear combination of $v\_i$, for $i=2,3,4$, then which of the following is (are) correct?
 
-The set {v1,v2,v3,v4}\\lbrace v\_1, v\_2, v\_3, v\_4 \\rbrace{v1​,v2​,v3​,v4​} cannot be linearly independent.
+The set $\\lbrace v\_1, v\_2, v\_3, v\_4 \\rbrace$ cannot be linearly independent.
 
-The set {v2,v3,v4}\\lbrace v\_2, v\_3, v\_4 \\rbrace{v2​,v3​,v4​} must be linearly dependent.
+The set $\\lbrace v\_2, v\_3, v\_4 \\rbrace$ must be linearly dependent.
 
-The set {v2,v3,v4}\\lbrace v\_2, v\_3, v\_4 \\rbrace{v2​,v3​,v4​} must be linearly independent.
+The set $\\lbrace v\_2, v\_3, v\_4 \\rbrace$ must be linearly independent.
 
-The set {v1}\\lbrace v\_1 \\rbrace{v1​} must be linearly independent.
+The set $\\lbrace v\_1 \\rbrace$ must be linearly independent.
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-The set {v1,v2,v3,v4}\\lbrace v\_1, v\_2, v\_3, v\_4 \\rbrace{v1​,v2​,v3​,v4​} cannot be linearly independent.
+The set $\\lbrace v\_1, v\_2, v\_3, v\_4 \\rbrace$ cannot be linearly independent.
 
-The set {v1}\\lbrace v\_1 \\rbrace{v1​} must be linearly independent.
+The set $\\lbrace v\_1 \\rbrace$ must be linearly independent.
 
 JavaScript should be enabled to grade this question.
 
@@ -141,7 +141,7 @@ Non-empty intersection of two linearly independent sets must be linearly indepen
 
 JavaScript should be enabled to grade this question.
 
-If vectors v1,v2,v3v\_1, v\_2, v\_3v1​,v2​,v3​ are linearly independent and αv1+βv2+γv3\=0\\alpha v\_1 +\\beta v\_2 + \\gamma v\_3 = 0αv1​+βv2​+γv3​\=0, then find the value of α+β+γ\\alpha + \\beta + \\gammaα+β+γ.
+If vectors $v\_1, v\_2, v\_3$ are linearly independent and $\\alpha v\_1 +\\beta v\_2 + \\gamma v\_3 = 0$, then find the value of $\\alpha + \\beta + \\gamma$.
 
 ### No, the answer is incorrect.  
 Score: 0
@@ -154,7 +154,7 @@ _1 point_
 
 JavaScript should be enabled to grade this question.
 
-Consider the set of matrices S\={\[123\],\[456\],\[78x\]}⊂M3×1(R)S= \\left\\{ \\begin{bmatrix} 1\\\\2\\\\3 \\end{bmatrix} , \\begin{bmatrix} 4\\\\5\\\\6 \\end{bmatrix} , \\begin{bmatrix} 7\\\\ 8\\\\ x \\end{bmatrix} \\right\\} \\subset M\_{3 \\times 1}(\\mathbb{R})S\=⎩⎨⎧​​123​​,​456​​,​78x​​⎭⎬⎫​⊂M3×1​(R). If x∈{9,4,2,0}x \\in \\{ 9, 4, 2, 0\\}x∈{9,4,2,0}, then find the maximum value of xxx so that SSS is linearly independent.
+Consider the set of matrices $S= \\left\\{ \\begin{bmatrix} 1\\\\2\\\\3 \\end{bmatrix} , \\begin{bmatrix} 4\\\\5\\\\6 \\end{bmatrix} , \\begin{bmatrix} 7\\\\ 8\\\\ x \\end{bmatrix} \\right\\} \\subset M\_{3 \\times 1}(\\mathbb{R})$. If $x \\in \\{ 9, 4, 2, 0\\}$, then find the maximum value of $x$ so that $S$ is linearly independent.
 
 ### No, the answer is incorrect.  
 Score: 0
@@ -176,82 +176,82 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Let SSS be a linearly independent subset of R3\\mathbb{R}^3R3. Choose the correct set of options.
+Let $S$ be a linearly independent subset of $\\mathbb{R}^3$. Choose the correct set of options.
 
-S∪{(1,0,0)}S\\cup \\lbrace (1,0,0) \\rbraceS∪{(1,0,0)} must be linearly independent.
+$S\\cup \\lbrace (1,0,0) \\rbrace$ must be linearly independent.
 
-S∪{v}S\\cup \\lbrace v \\rbrace S∪{v} must be linearly independent for any v∈R3v\\in \\mathbb{R}^3v∈R3.
+$S\\cup \\lbrace v \\rbrace$ must be linearly independent for any $v\\in \\mathbb{R}^3$.
 
-S∖{v}S\\setminus \\lbrace v \\rbrace S∖{v} must be linearly independent for any v∈R3v\\in \\mathbb{R}^3v∈R3.
+$S\\setminus \\lbrace v \\rbrace$ must be linearly independent for any $v\\in \\mathbb{R}^3$.
 
-There may exist some v∈R3v\\in \\mathbb{R}^3v∈R3, such that S∪{v}S\\cup \\lbrace v \\rbrace S∪{v} is still linearly independent.
+There may exist some $v\\in \\mathbb{R}^3$, such that $S\\cup \\lbrace v \\rbrace$ is still linearly independent.
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-S∖{v}S\\setminus \\lbrace v \\rbrace S∖{v} must be linearly independent for any v∈R3v\\in \\mathbb{R}^3v∈R3.
+$S\\setminus \\lbrace v \\rbrace$ must be linearly independent for any $v\\in \\mathbb{R}^3$.
 
-There may exist some v∈R3v\\in \\mathbb{R}^3v∈R3, such that S∪{v}S\\cup \\lbrace v \\rbrace S∪{v} is still linearly independent.
+There may exist some $v\\in \\mathbb{R}^3$, such that $S\\cup \\lbrace v \\rbrace$ is still linearly independent.
 
 JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Consider a set of vectors S\={(1,1,−1),(−1,1,1),(0,12,0),(0,1,−2),(1,0,−2)}S = \\{(1, 1, -1), (-1, 1, 1), (0, \\frac{1}{2} ,0), (0, 1, -2), (1, 0 ,-2) \\}S\={(1,1,−1),(−1,1,1),(0,21​,0),(0,1,−2),(1,0,−2)}. Choose the set of correct options.
+Consider a set of vectors $S = \\{(1, 1, -1), (-1, 1, 1), (0, \\frac{1}{2} ,0), (0, 1, -2), (1, 0 ,-2) \\}$. Choose the set of correct options.
 
-The singleton set {(0,1,−2)}\\lbrace (0, 1, -2) \\rbrace{(0,1,−2)} is linearly dependent.
+The singleton set $\\lbrace (0, 1, -2) \\rbrace$ is linearly dependent.
 
-If α,β∈S\\alpha, \\beta \\in Sα,β∈S and α,β\\alpha, \\betaα,β are distinct then {α,β}\\{\\alpha, \\beta \\} {α,β} is a linearly independent set of vectors.
+If $\\alpha, \\beta \\in S$ and $\\alpha, \\beta$ are distinct then $\\{\\alpha, \\beta \\}$ is a linearly independent set of vectors.
 
-The set {(−1,1,1),(0,12,0),(0,1,−2)}\\{(-1, 1, 1), (0, \\frac{1}{2}, 0),(0, 1, -2)\\}{(−1,1,1),(0,21​,0),(0,1,−2)} is a linearly independent set of vectors.
+The set $\\{(-1, 1, 1), (0, \\frac{1}{2}, 0),(0, 1, -2)\\}$ is a linearly independent set of vectors.
 
-The set SSS is a linearly independent set of vectors.
+The set $S$ is a linearly independent set of vectors.
 
-The set {α,β,γ}\\{\\alpha, \\beta, \\gamma \\} {α,β,γ} is a linearly dependent set of vectors for any α,β,γ∈S\\alpha, \\beta, \\gamma \\in Sα,β,γ∈S, where all the three are distinct vectors.
+The set $\\{\\alpha, \\beta, \\gamma \\}$ is a linearly dependent set of vectors for any $\\alpha, \\beta, \\gamma \\in S$, where all the three are distinct vectors.
 
-The set {α,β,γ,δ}\\{\\alpha, \\beta, \\gamma, \\delta \\} {α,β,γ,δ} is a linearly independent set of vectors for any α,β,γ,δ∈S\\alpha, \\beta, \\gamma, \\delta \\in Sα,β,γ,δ∈S, where all the four are distinct vectors.
+The set $\\{\\alpha, \\beta, \\gamma, \\delta \\}$ is a linearly independent set of vectors for any $\\alpha, \\beta, \\gamma, \\delta \\in S$, where all the four are distinct vectors.
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-If α,β∈S\\alpha, \\beta \\in Sα,β∈S and α,β\\alpha, \\betaα,β are distinct then {α,β}\\{\\alpha, \\beta \\} {α,β} is a linearly independent set of vectors.
+If $\\alpha, \\beta \\in S$ and $\\alpha, \\beta$ are distinct then $\\{\\alpha, \\beta \\}$ is a linearly independent set of vectors.
 
-The set {(−1,1,1),(0,12,0),(0,1,−2)}\\{(-1, 1, 1), (0, \\frac{1}{2}, 0),(0, 1, -2)\\}{(−1,1,1),(0,21​,0),(0,1,−2)} is a linearly independent set of vectors.
+The set $\\{(-1, 1, 1), (0, \\frac{1}{2}, 0),(0, 1, -2)\\}$ is a linearly independent set of vectors.
 
 JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Let SSS be the solution set of a system of homogeneous linear equations with 3 variables and 3 equations, whose matrix representation is as follows:  
+Let $S$ be the solution set of a system of homogeneous linear equations with 3 variables and 3 equations, whose matrix representation is as follows:  
   
-                                                    Ax\=0 Ax=0 Ax\=0  
+                                                    $Ax=0$  
   
-where AAA is the 3×33\\times 33×3 coefficient matrix and xxx denotes the column vector \[x1x2x3\]\\begin{bmatrix} x\_1\\\\ x\_2 \\\\ x\_3 \\end{bmatrix}​x1​x2​x3​​​. Choose the set of correct options.
+where $A$ is the $3\\times 3$ coefficient matrix and $x$ denotes the column vector $\\begin{bmatrix} x\_1\\\\ x\_2 \\\\ x\_3 \\end{bmatrix}$. Choose the set of correct options.
 
-If v1v\_1v1​ and v2v\_2v2​ are in SSS, then any linear combination of v1v\_1v1​ and v2v\_2v2​ will also be in SSS.
+If $v\_1$ and $v\_2$ are in $S$, then any linear combination of $v\_1$ and $v\_2$ will also be in $S$.
 
-The set SSS will be a subspace of R3\\mathbb{R}^3R3, with respect to usual addition and scalar multiplication as in R3\\mathbb{R}^3R3.
+The set $S$ will be a subspace of $\\mathbb{R}^3$, with respect to usual addition and scalar multiplication as in $\\mathbb{R}^3$.
 
-The set {v1,v2,v1−v2}\\lbrace v\_1,v\_2, v\_1-v\_2 \\rbrace{v1​,v2​,v1​−v2​} is a linearly dependent subset in SSS.
+The set $\\lbrace v\_1,v\_2, v\_1-v\_2 \\rbrace$ is a linearly dependent subset in $S$.
 
-The set {v1,v2}\\lbrace v\_1,v\_2 \\rbrace{v1​,v2​} is a linearly independent subset in SSS if v1v\_1v1​ is not a scalar multiple of v2v\_2v2​.
+The set $\\lbrace v\_1,v\_2 \\rbrace$ is a linearly independent subset in $S$ if $v\_1$ is not a scalar multiple of $v\_2$.
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-If v1v\_1v1​ and v2v\_2v2​ are in SSS, then any linear combination of v1v\_1v1​ and v2v\_2v2​ will also be in SSS.
+If $v\_1$ and $v\_2$ are in $S$, then any linear combination of $v\_1$ and $v\_2$ will also be in $S$.
 
-The set SSS will be a subspace of R3\\mathbb{R}^3R3, with respect to usual addition and scalar multiplication as in R3\\mathbb{R}^3R3.
+The set $S$ will be a subspace of $\\mathbb{R}^3$, with respect to usual addition and scalar multiplication as in $\\mathbb{R}^3$.
 
-The set {v1,v2,v1−v2}\\lbrace v\_1,v\_2, v\_1-v\_2 \\rbrace{v1​,v2​,v1​−v2​} is a linearly dependent subset in SSS.
+The set $\\lbrace v\_1,v\_2, v\_1-v\_2 \\rbrace$ is a linearly dependent subset in $S$.
 
-The set {v1,v2}\\lbrace v\_1,v\_2 \\rbrace{v1​,v2​} is a linearly independent subset in SSS if v1v\_1v1​ is not a scalar multiple of v2v\_2v2​.
+The set $\\lbrace v\_1,v\_2 \\rbrace$ is a linearly independent subset in $S$ if $v\_1$ is not a scalar multiple of $v\_2$.
 
 Check Answers
 

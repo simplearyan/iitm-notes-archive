@@ -23,18 +23,18 @@ _**1. For each question, enter all the options which you find is the answer to t
 _**1.Linearly independent set.  
 2.Linearly dependent set.  
 3.If we remove any one of the vectors from the set, then it will be linearly independent.  
-4.If we put the vector (1,1,1)(1,1,1)(1,1,1) in the set, then it will be linearly dependent.  
+4.If we put the vector $(1,1,1)$ in the set, then it will be linearly dependent.  
 5.There exist one vector in the set, if we remove that vector from the set, then it will be linearly independent.  
 6.If we remove any two vectors from the set, then the set will be linearly independent.  
   
   
 **_List of Questions:  
 _**  
-**Q1.**Consider the set S1\={(1,0,1),(1,0,0),(1,1,0),(0,1,0)}S\_1=\\{(1,0,1), (1,0,0), (1,1,0), (0,1,0)\\}S1​\={(1,0,1),(1,0,0),(1,1,0),(0,1,0)}. Which of the above options is(are) true for S1S\_1S1​?  
+**Q1.**Consider the set $S\_1=\\{(1,0,1), (1,0,0), (1,1,0), (0,1,0)\\}$. Which of the above options is(are) true for $S\_1$?  
   
-**Q2.**Consider the set S2\={(1,1,0),(1,1,0)+(0,1,1),(1,1,0)−(0,1,0)}S\_2=\\{(1,1,0), (1,1,0)+(0,1,1), (1,1,0)-(0,1,0) \\}S2​\={(1,1,0),(1,1,0)+(0,1,1),(1,1,0)−(0,1,0)} with usual coordinate-wise addition and scalar multiplication. Which of the above options is(are) true for S2S\_2S2​?  
+**Q2.**Consider the set $S\_2=\\{(1,1,0), (1,1,0)+(0,1,1), (1,1,0)-(0,1,0) \\}$ with usual coordinate-wise addition and scalar multiplication. Which of the above options is(are) true for $S\_2$?  
   
-**Q3.**Consider the set of all points on XXX\-axis, each one treated as a different vectors in R3\\mathbb{R}^3R3, with usual addition and scalar multiplication. Which of the above options is(are) true for this set  
+**Q3.**Consider the set of all points on $X$\-axis, each one treated as a different vectors in $\\mathbb{R}^3$, with usual addition and scalar multiplication. Which of the above options is(are) true for this set  
   
 
 Please enable JavaScript to continue using this application.

@@ -22,7 +22,7 @@ _1 point_
 
 Which of the following are true?
 
-The sum of the probabilities of an event and its complement is 111.
+The sum of the probabilities of an event and its complement is $1$.
 
  The probability of an impossible event is zero.
 
@@ -35,7 +35,7 @@ Score: 0
 
 ### Accepted Answers:
 
-The sum of the probabilities of an event and its complement is 111.
+The sum of the probabilities of an event and its complement is $1$.
 
 The probability of an impossible event is zero.
 
@@ -45,43 +45,43 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-What is the probability of getting a black card or a 555 from a deck of 525252 cards?
+What is the probability of getting a black card or a $5$ from a deck of $52$ cards?
 
-913\\displaystyle\\frac{9}{13}139​
+$\\displaystyle\\frac{9}{13}$
 
-713\\displaystyle\\frac{7}{13}137​
+$\\displaystyle\\frac{7}{13}$
 
-813\\displaystyle\\frac{8}{13}138​
+$\\displaystyle\\frac{8}{13}$
 
-1013\\displaystyle\\frac{10}{13}1310​
+$\\displaystyle\\frac{10}{13}$
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-713\\displaystyle\\frac{7}{13}137​
+$\\displaystyle\\frac{7}{13}$
 
 JavaScript should be enabled to grade this question.
 
 _1 point_
 
-What is the probability of getting a 111 or a 222 when a die is rolled?
+What is the probability of getting a $1$ or a $2$ when a die is rolled?
 
-23\\displaystyle\\frac{2}{3}32​
+$\\displaystyle\\frac{2}{3}$
 
-13\\displaystyle\\frac{1}{3}31​
+$\\displaystyle\\frac{1}{3}$
 
-16\\displaystyle\\frac{1}{6}61​
+$\\displaystyle\\frac{1}{6}$
 
-25\\displaystyle\\frac{2}{5}52​
+$\\displaystyle\\frac{2}{5}$
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-13\\displaystyle\\frac{1}{3}31​
+$\\displaystyle\\frac{1}{3}$
 
 JavaScript should be enabled to grade this question.
 
@@ -89,20 +89,20 @@ _1 point_
 
 A letter is chosen randomly from ’PROBABILITY’ and another is chosen randomly from ’STATISTICS’. Find the probability that the chosen letter is same.
 
-9110\\displaystyle\\frac{9}{110}1109​
+$\\displaystyle\\frac{9}{110}$
 
-8110\\displaystyle\\frac{8}{110}1108​
+$\\displaystyle\\frac{8}{110}$
 
-7110\\displaystyle\\frac{7}{110}1107​
+$\\displaystyle\\frac{7}{110}$
 
-10110\\displaystyle\\frac{10}{110}11010​
+$\\displaystyle\\frac{10}{110}$
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-8110\\displaystyle\\frac{8}{110}1108​
+$\\displaystyle\\frac{8}{110}$
 
 Check Answers
 

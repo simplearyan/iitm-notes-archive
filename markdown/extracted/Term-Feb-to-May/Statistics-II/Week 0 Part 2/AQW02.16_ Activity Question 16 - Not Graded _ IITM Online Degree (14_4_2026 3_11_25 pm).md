@@ -17,7 +17,7 @@ JavaScript should be enabled to grade this question.
 
 JavaScript should be enabled to grade this question.
 
-Suppose that the number of runs scored of a delivery is uniform in {1,2,3,4,5,61, 2, 3, 4, 5, 61,2,3,4,5,6} independent of what happens in other deliveries. A batsman needs to bat till he hits a six. What is the probability that he needs fewer than 6 66 deliveries to do so? (Answer the question correct to two decimal points.)
+Suppose that the number of runs scored of a delivery is uniform in {$1, 2, 3, 4, 5, 6$} independent of what happens in other deliveries. A batsman needs to bat till he hits a six. What is the probability that he needs fewer than $6$ deliveries to do so? (Answer the question correct to two decimal points.)
 
 ### No, the answer is incorrect.  
 Score: 0
@@ -38,9 +38,9 @@ none of the teams has scored a single goal so the match referee decided to go fo
 
 shoot. From Argentina, Messi will go for penalty all the time and from Portugal, Ronaldo  
 
-will go for penalty each time. There is 404040% chance that Messi can convert penalty into
+will go for penalty each time. There is $40$% chance that Messi can convert penalty into
 
-goal whereas 707070% chance that Ronaldo can convert penalty into goal. Each penalty
+goal whereas $70$% chance that Ronaldo can convert penalty into goal. Each penalty
 
 shoot is totally independent of previous one. The two player will go for penalty shoot
 
@@ -80,7 +80,7 @@ _1 point_
 
 JavaScript should be enabled to grade this question.
 
-In Ludo, Prashant needs to repeatedly throw a unbiased die till he gets a 666. What is the probability than he needs fewer than 444 throws? (Answer the question correct upto two decimal points.)
+In Ludo, Prashant needs to repeatedly throw a unbiased die till he gets a $6$. What is the probability than he needs fewer than $4$ throws? (Answer the question correct upto two decimal points.)
 
 ### No, the answer is incorrect.  
 Score: 0

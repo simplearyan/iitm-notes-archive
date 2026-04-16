@@ -18,7 +18,7 @@ JavaScript should be enabled to grade this question.
 
 JavaScript should be enabled to grade this question.
 
-What is the value of P(A∣A)P(A|A)P(A∣A)?
+What is the value of $P(A|A)$?
 
 ### No, the answer is incorrect.  
 Score: 0
@@ -33,24 +33,24 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Given that events A1A\_{1}A1​ and A2A\_{2}A2​ are disjoint, which of the following is equal to P((A1∪A2)∣B)P((A1 ∪ A2)|B)P((A1∪A2)∣B)?
+Given that events $A\_{1}$ and $A\_{2}$ are disjoint, which of the following is equal to $P((A1 ∪ A2)|B)$?
 
-P(A1∣B)+P(A2∣B)P(A\_{1} |B) + P(A\_{2}|B)P(A1​∣B)+P(A2​∣B)
+$P(A\_{1} |B) + P(A\_{2}|B)$
 
-P(A1∣B)∗P(A2∣B)P(A\_{1}|B) ∗ P(A\_{2}|B)P(A1​∣B)∗P(A2​∣B)
+$P(A\_{1}|B) ∗ P(A\_{2}|B)$
 
-P(A1∣B)−P(A2∣B)P(A\_{1}|B) − P(A\_{2}|B)P(A1​∣B)−P(A2​∣B)
+$P(A\_{1}|B) − P(A\_{2}|B)$
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-P(A1∣B)+P(A2∣B)P(A\_{1} |B) + P(A\_{2}|B)P(A1​∣B)+P(A2​∣B)
+$P(A\_{1} |B) + P(A\_{2}|B)$
 
 JavaScript should be enabled to grade this question.
 
-Given 2P(A)\=P(B)\=5132P(A) = P(B) = \\frac{5}{13} 2P(A)\=P(B)\=135​, P(A∣B)\=25P(A|B) = \\frac{2}{5} P(A∣B)\=52​, evaluate P(A∪B)P(A∪B)P(A∪B). (Answer the question correct upto two decimal points.)
+Given $2P(A) = P(B) = \\frac{5}{13}$, $P(A|B) = \\frac{2}{5}$, evaluate $P(A∪B)$. (Answer the question correct upto two decimal points.)
 
 ### No, the answer is incorrect.  
 Score: 0
@@ -63,7 +63,7 @@ _1 point_
 
 JavaScript should be enabled to grade this question.
 
-Dhoni played two balls in a cricket match. In each ball, he is equally likely to score any number of runs between 111 and 666. The runs scored in the two balls are independent. What is the probability that the product of the runs scored by Dhoni is a perfect square? (Answer the question correct upto two decimal points.)
+Dhoni played two balls in a cricket match. In each ball, he is equally likely to score any number of runs between $1$ and $6$. The runs scored in the two balls are independent. What is the probability that the product of the runs scored by Dhoni is a perfect square? (Answer the question correct upto two decimal points.)
 
 ### No, the answer is incorrect.  
 Score: 0

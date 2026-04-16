@@ -20,7 +20,7 @@ _1 point_
 
 Consider the following systems of equations and choose the correct option.  
   
-System I:−x+2y−2z\=22x+z\=−1x−3y+z\=3System II:−2x+y+z\=032x+2y−z\=−23x+4y−2z\=5System III:x+3z\=−5−25x−15y−2z\=32x+y+10z\=−15 \\begin{aligned} \\text{System I:} & &-x + 2y - 2z = 2 \\\\ & & 2x + z = -1 \\\\ & & x - 3y + z = 3 \\\\ & & \\\\ \\text{System II:} & & -2x + y + z = 0 \\\\ & & \\frac{3}{2} x + 2y - z = -2 \\\\ & & 3x + 4y - 2z = 5 \\\\ & & \\\\ \\text{System III:} & & x + 3z = -5 \\\\ & & -\\frac{2}{5} x -\\frac{1}{5}y - 2z = 3 \\\\ & & 2x + y + 10z = -15 \\end{aligned}System I:System II:System III:​​−x+2y−2z\=22x+z\=−1x−3y+z\=3−2x+y+z\=023​x+2y−z\=−23x+4y−2z\=5x+3z\=−5−52​x−51​y−2z\=32x+y+10z\=−15​
+$\\begin{aligned} \\text{System I:} & &-x + 2y - 2z = 2 \\\\ & & 2x + z = -1 \\\\ & & x - 3y + z = 3 \\\\ & & \\\\ \\text{System II:} & & -2x + y + z = 0 \\\\ & & \\frac{3}{2} x + 2y - z = -2 \\\\ & & 3x + 4y - 2z = 5 \\\\ & & \\\\ \\text{System III:} & & x + 3z = -5 \\\\ & & -\\frac{2}{5} x -\\frac{1}{5}y - 2z = 3 \\\\ & & 2x + y + 10z = -15 \\end{aligned}$
 
  System I has a unique solution.
 
@@ -43,7 +43,7 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-There are two laptop manufacturers, one is at Adyar and the other is at Tambaram. Suppose the production costs ( in crore of ₹) at Adyar and Tambaram are represented by the equations A(x)\=a1x2+b1x+c1A(x)= a\_1x^2+b\_1x+c\_1A(x)\=a1​x2+b1​x+c1​ and T(x)\=a2x+c2T(x)=a\_2x+c\_2T(x)\=a2​x+c2​, respectively, where xxx represents the number (in hundreds) of laptops produced. At Adyar, the initial investment is known to be ₹3 crore, and the production costs for manufacturing 100 (i.e., x\=1x=1x\=1) and 300 laptops (i.e., x\=3x=3x\=3) are ₹4 crore and ₹12 crore, respectively. At Tambaram, the production costs for manufacturing 100 and 200 laptops are ₹6 crore and ₹7 crore, respectively. Suppose, Parveena and Amenla need new laptops for their start up companies. Parveena needs 500 laptops and Amenla needs 150 laptops. Both of them want their laptops with minimum production cost. Choose the correct option from the given set of options below.
+There are two laptop manufacturers, one is at Adyar and the other is at Tambaram. Suppose the production costs ( in crore of ₹) at Adyar and Tambaram are represented by the equations $A(x)= a\_1x^2+b\_1x+c\_1$ and $T(x)=a\_2x+c\_2$, respectively, where $x$ represents the number (in hundreds) of laptops produced. At Adyar, the initial investment is known to be ₹3 crore, and the production costs for manufacturing 100 (i.e., $x=1$) and 300 laptops (i.e., $x=3$) are ₹4 crore and ₹12 crore, respectively. At Tambaram, the production costs for manufacturing 100 and 200 laptops are ₹6 crore and ₹7 crore, respectively. Suppose, Parveena and Amenla need new laptops for their start up companies. Parveena needs 500 laptops and Amenla needs 150 laptops. Both of them want their laptops with minimum production cost. Choose the correct option from the given set of options below.
 
  Cost of production of 200 laptops at each Adyar and Tambaram is ₹7 crore.
 
@@ -68,24 +68,24 @@ _1 point_
 
 Choose the set of correct options.
 
-If AA A is an upper triangular 3×33 \\times 33×3 matrix, then the adjoint matrix of AAA is also an upper triangular matrix.
+If $A$ is an upper triangular $3 \\times 3$ matrix, then the adjoint matrix of $A$ is also an upper triangular matrix.
 
-If AA A is an invertible upper triangular 3×33 \\times 33×3 matrix, then the inverse matrix of AAA is also an upper triangular matrix.
+If $A$ is an invertible upper triangular $3 \\times 3$ matrix, then the inverse matrix of $A$ is also an upper triangular matrix.
 
-Let AAA be an arbitrary real 3×33\\times 33×3 matrix. If CCC is the adjoint matrix of AAA, then CCC is also the adjoint matrix of ATA^TAT.
+Let $A$ be an arbitrary real $3\\times 3$ matrix. If $C$ is the adjoint matrix of $A$, then $C$ is also the adjoint matrix of $A^T$.
 
-CjkC\_{jk}Cjk​ denotes the cofactor with respect to the jjj\-th row and the kkk\-th column of a 3×33\\times 33×3 matrix AAA. If another matrix BBB is obtained from AAA by replacing the jjj\-th row of AAA with \[300\]\\begin{bmatrix} 3 & 0 & 0 \\end{bmatrix} \[3​0​0​\], then det(B)\=3Cjkdet(B) = 3C\_{jk}det(B)\=3Cjk​
+$C\_{jk}$ denotes the cofactor with respect to the $j$\-th row and the $k$\-th column of a $3\\times 3$ matrix $A$. If another matrix $B$ is obtained from $A$ by replacing the $j$\-th row of $A$ with $\\begin{bmatrix} 3 & 0 & 0 \\end{bmatrix}$, then $det(B) = 3C\_{jk}$
 
-If AAA is an invertible 3×33\\times33×3 matrix and C\=adj(adj(A))C = adj(adj(A))C\=adj(adj(A)), then det(C)\=det(A)9det(C) = det(A)^9det(C)\=det(A)9
+If $A$ is an invertible $3\\times3$ matrix and $C = adj(adj(A))$, then $det(C) = det(A)^9$
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-If AA A is an upper triangular 3×33 \\times 33×3 matrix, then the adjoint matrix of AAA is also an upper triangular matrix.
+If $A$ is an upper triangular $3 \\times 3$ matrix, then the adjoint matrix of $A$ is also an upper triangular matrix.
 
-If AA A is an invertible upper triangular 3×33 \\times 33×3 matrix, then the inverse matrix of AAA is also an upper triangular matrix.
+If $A$ is an invertible upper triangular $3 \\times 3$ matrix, then the inverse matrix of $A$ is also an upper triangular matrix.
 
 JavaScript should be enabled to grade this question.
 
@@ -97,25 +97,25 @@ Choose the correct set of options based on the matrices given in Table M2W2PT1.
   
   
 
-A1A\_1A1​ and B3B\_3B3​ are inverses to each other.
+$A\_1$ and $B\_3$ are inverses to each other.
 
-A1A\_1A1​ and B1B\_1B1​ are inverses to each other.
+$A\_1$ and $B\_1$ are inverses to each other.
 
-A2A\_2A2​ and B1B\_1B1​ are inverses to each other.
+$A\_2$ and $B\_1$ are inverses to each other.
 
-A3A\_3A3​ and B4B\_4B4​ are inverses to each other.
+$A\_3$ and $B\_4$ are inverses to each other.
 
-A2 A\_2A2​ and B3B\_3B3​ are inverses to each other.
+$A\_2$ and $B\_3$ are inverses to each other.
 
-A3A\_3A3​ and B2B\_2B2​ are inverses to each other.
+$A\_3$ and $B\_2$ are inverses to each other.
 
-A4A\_4A4​ and B4B\_4B4​ are inverses to each other.
+$A\_4$ and $B\_4$ are inverses to each other.
 
-A4A\_4A4​ and B2B\_2B2​ are inverses to each other.
+$A\_4$ and $B\_2$ are inverses to each other.
 
-A2A\_2A2​ and A3A\_3A3​ have different reduced row echelon form.
+$A\_2$ and $A\_3$ have different reduced row echelon form.
 
-A1A\_1A1​ and A2A\_2A2​ have different reduced row echelon form.
+$A\_1$ and $A\_2$ have different reduced row echelon form.
 
  All the matrices in column A have the same reduced row echelon form and that is the identity matrix of order 3.
 
@@ -126,13 +126,13 @@ Score: 0
 
 ### Accepted Answers:
 
-A1A\_1A1​ and B3B\_3B3​ are inverses to each other.
+$A\_1$ and $B\_3$ are inverses to each other.
 
-A2A\_2A2​ and B1B\_1B1​ are inverses to each other.
+$A\_2$ and $B\_1$ are inverses to each other.
 
-A3A\_3A3​ and B4B\_4B4​ are inverses to each other.
+$A\_3$ and $B\_4$ are inverses to each other.
 
-A4A\_4A4​ and B2B\_2B2​ are inverses to each other.
+$A\_4$ and $B\_2$ are inverses to each other.
 
 All the matrices in column A have the same reduced row echelon form and that is the identity matrix of order 3.
 
@@ -145,7 +145,7 @@ JavaScript should be enabled to grade this question.
 
 JavaScript should be enabled to grade this question.
 
-The sum of the diagonal entries of the row reduced echelon form of the matrix \[−99001200−1200\]\\begin{bmatrix} -99 & 0 & 0 \\\\ 1 & 20 & 0\\\\ -1 & 20 & 0 \\end{bmatrix} ​−991−1​02020​000​​ is
+The sum of the diagonal entries of the row reduced echelon form of the matrix $\\begin{bmatrix} -99 & 0 & 0 \\\\ 1 & 20 & 0\\\\ -1 & 20 & 0 \\end{bmatrix}$ is
 
 ### No, the answer is incorrect.  
 Score: 0
@@ -163,7 +163,7 @@ JavaScript should be enabled to grade this question.
 
 JavaScript should be enabled to grade this question.
 
-A gym trainer suggested Pranjal to include banana, mozzarella cheese, and avocado in his daily diet, for his fitness. In 1 banana, there are 101010 units of protein, 50 units of carbohydrate, and 000 unit of fat. In 12\\frac{1}{2}21​ cup mozzarella cheese, there are 1 units of protein, 20 units of carbohydrate and 1 unit of fat. In 1 avocado there are 3 units of protein, 10 units of carbohydrate, and 10 units of fat. Suppose the calories intake from 1 banana, 12\\frac{1}{2}21​ cup mozzarella cheese, and 1 avocado are 105, 90 and 115, respectively. If the gym trainer suggested Pranjal to take 18 units of protein, 110 units of carbohydrate, and 22 units of fat by taking only these three items, then find out the calories intake by Pranjal each day from these three items only.
+A gym trainer suggested Pranjal to include banana, mozzarella cheese, and avocado in his daily diet, for his fitness. In 1 banana, there are $10$ units of protein, 50 units of carbohydrate, and $0$ unit of fat. In $\\frac{1}{2}$ cup mozzarella cheese, there are 1 units of protein, 20 units of carbohydrate and 1 unit of fat. In 1 avocado there are 3 units of protein, 10 units of carbohydrate, and 10 units of fat. Suppose the calories intake from 1 banana, $\\frac{1}{2}$ cup mozzarella cheese, and 1 avocado are 105, 90 and 115, respectively. If the gym trainer suggested Pranjal to take 18 units of protein, 110 units of carbohydrate, and 22 units of fat by taking only these three items, then find out the calories intake by Pranjal each day from these three items only.
 
 ### No, the answer is incorrect.  
 Score: 0
@@ -176,7 +176,7 @@ _1 point_
 
 JavaScript should be enabled to grade this question.
 
-Consider the system of linear equations Ax\=bAx=bAx\=b, where A\=\[2a3a−2−1−1a0\]A=\\begin{bmatrix} 2 & a & 3 \\\\ a & -2 & -1 \\\\ -1 & a & 0 \\end{bmatrix}A\=​2a−1​a−2a​3−10​​, x\=\[x154x3\]x=\\begin{bmatrix} x\_1 \\\\ \\frac{5}{4} \\\\ x\_3 \\end{bmatrix}x\=​x1​45​x3​​​ and b\=\[1a1\]b=\\begin{bmatrix} 1 \\\\ a \\\\ 1 \\end{bmatrix}b\=​1a1​​. The solution xxx is partially known. What is the value of aaa if a\>1a>1a\>1 is given?
+Consider the system of linear equations $Ax=b$, where $A=\\begin{bmatrix} 2 & a & 3 \\\\ a & -2 & -1 \\\\ -1 & a & 0 \\end{bmatrix}$, $x=\\begin{bmatrix} x\_1 \\\\ \\frac{5}{4} \\\\ x\_3 \\end{bmatrix}$ and $b=\\begin{bmatrix} 1 \\\\ a \\\\ 1 \\end{bmatrix}$. The solution $x$ is partially known. What is the value of $a$ if $a>1$ is given?
 
 ### No, the answer is incorrect.  
 Score: 0
@@ -195,8 +195,8 @@ In genetics, a classic example of dominance is the inheritance of seed shape (pe
   
                                                          ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week2_PracticeAssignment2-NotGraded_IITMOnlineDegree4_4_20269_02_23am_18.jpg)  
   
-The matrix representing this observation is given by P\=\[11/2001/21000\]P=\\begin{bmatrix} 1 & 1/2 & 0 \\\\ 0 & 1/2 & 1 \\\\ 0 & 0 & 0 \\end{bmatrix}P\=​100​1/21/20​010​​. Let the probabilities of RR, Rr, and rr in the initial (i.e., at t\=0t=0t\=0) sample space be X01,X02, and X03X\_0^1, X\_0^2, \\text{ and } X\_0^3X01​,X02​, and X03​, respectively. This is represented by the initial distribution vector (3×13\\times 13×1 matrix) is denoted by X0\=\[X01X02X03\]X\_0=\\begin{bmatrix} X\_0^1\\\\ X\_0^2\\\\ X\_0^3 \\end{bmatrix}X0​\=​X01​X02​X03​​​.  
-For any positive integer nnn, the distribution vector after nnn generations (i.e., at t\=nt=nt\=n) is denoted by XnX\_nXn​ and given by the equation PXn−1\=XnPX\_{n-1}=X\_nPXn−1​\=Xn​.  
+The matrix representing this observation is given by $P=\\begin{bmatrix} 1 & 1/2 & 0 \\\\ 0 & 1/2 & 1 \\\\ 0 & 0 & 0 \\end{bmatrix}$. Let the probabilities of RR, Rr, and rr in the initial (i.e., at $t=0$) sample space be $X\_0^1, X\_0^2, \\text{ and } X\_0^3$, respectively. This is represented by the initial distribution vector ($3\\times 1$ matrix) is denoted by $X\_0=\\begin{bmatrix} X\_0^1\\\\ X\_0^2\\\\ X\_0^3 \\end{bmatrix}$.  
+For any positive integer $n$, the distribution vector after $n$ generations (i.e., at $t=n$) is denoted by $X\_n$ and given by the equation $PX\_{n-1}=X\_n$.  
 Using the above information answer the following questions.  
   
 
@@ -208,32 +208,32 @@ _1 point_
 
 Find out the correct set of options from the following.
 
-The row reduced echelon form of PPP and P2P^2P2 are different in this case.
+The row reduced echelon form of $P$ and $P^2$ are different in this case.
 
-The row reduced echelon form of PPP and P2P^2P2 are same in this case.
+The row reduced echelon form of $P$ and $P^2$ are same in this case.
 
-The row reduced echelon form of PPP is \[10−1012000\]\\begin{bmatrix} 1 & 0 & -1 \\\\ 0 & 1 & 2 \\\\ 0 & 0 & 0 \\end{bmatrix}​100​010​−120​​
+The row reduced echelon form of $P$ is $\\begin{bmatrix} 1 & 0 & -1 \\\\ 0 & 1 & 2 \\\\ 0 & 0 & 0 \\end{bmatrix}$
 
-The row reduced echelon form of PPP is \[10−1012001\]\\begin{bmatrix} 1 & 0 & -1 \\\\ 0 & 1 & 2 \\\\ 0 & 0 & 1 \\end{bmatrix}​100​010​−121​​
+The row reduced echelon form of $P$ is $\\begin{bmatrix} 1 & 0 & -1 \\\\ 0 & 1 & 2 \\\\ 0 & 0 & 1 \\end{bmatrix}$
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-The row reduced echelon form of PPP and P2P^2P2 are same in this case.
+The row reduced echelon form of $P$ and $P^2$ are same in this case.
 
-The row reduced echelon form of PPP is \[10−1012000\]\\begin{bmatrix} 1 & 0 & -1 \\\\ 0 & 1 & 2 \\\\ 0 & 0 & 0 \\end{bmatrix}​100​010​−120​​
+The row reduced echelon form of $P$ is $\\begin{bmatrix} 1 & 0 & -1 \\\\ 0 & 1 & 2 \\\\ 0 & 0 & 0 \\end{bmatrix}$
 
 JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Suppose after 2 years the distribution vector i.e., X2X\_2X2​ is calculated to be \[3/41/40\]\\begin{bmatrix} 3/4\\\\ 1/4\\\\ 0 \\end{bmatrix}​3/41/40​​, and the initial distribution of RR is 13\\frac{1}{3}31​. Find out the initial distibution of Rr and rr.
+Suppose after 2 years the distribution vector i.e., $X\_2$ is calculated to be $\\begin{bmatrix} 3/4\\\\ 1/4\\\\ 0 \\end{bmatrix}$, and the initial distribution of RR is $\\frac{1}{3}$. Find out the initial distibution of Rr and rr.
 
-The initial distibution of Rr is : 13\\frac{1}{3}31​.
+The initial distibution of Rr is : $\\frac{1}{3}$.
 
-The initial distibution of rr is 000.
+The initial distibution of rr is $0$.
 
  The initial distibutions of Rr and rr are equal.
 
@@ -244,7 +244,7 @@ Score: 0
 
 ### Accepted Answers:
 
-The initial distibution of Rr is : 13\\frac{1}{3}31​.
+The initial distibution of Rr is : $\\frac{1}{3}$.
 
 The initial distibutions of Rr and rr are equal.
 
@@ -252,28 +252,28 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Suppose after 3 generations the distribution vector i.e., X3X\_3X3​ is calculated to be \[100\]\\begin{bmatrix} 1 \\\\ 0 \\\\ 0 \\end{bmatrix}​100​​, and recall that 0≤X01,X02,X03≤10 \\leq X\_0^1 , X\_0^2 , X\_0^3 \\leq 1 0≤X01​,X02​,X03​≤1. Find out the correct set of options.
+Suppose after 3 generations the distribution vector i.e., $X\_3$ is calculated to be $\\begin{bmatrix} 1 \\\\ 0 \\\\ 0 \\end{bmatrix}$, and recall that $0 \\leq X\_0^1 , X\_0^2 , X\_0^3 \\leq 1$. Find out the correct set of options.
 
-X0\=\[100\]X\_0=\\begin{bmatrix} 1 \\\\ 0 \\\\ 0 \\end{bmatrix}X0​\=​100​​
+$X\_0=\\begin{bmatrix} 1 \\\\ 0 \\\\ 0 \\end{bmatrix}$
 
-X0\=\[131313\]X\_0=\\begin{bmatrix} \\frac{1}{3} \\\\ \\frac{1}{3} \\\\ \\frac{1}{3} \\end{bmatrix}X0​\=​31​31​31​​​
+$X\_0=\\begin{bmatrix} \\frac{1}{3} \\\\ \\frac{1}{3} \\\\ \\frac{1}{3} \\end{bmatrix}$
 
-X0\=\[001\]X\_0=\\begin{bmatrix} 0 \\\\ 0 \\\\ 1 \\end{bmatrix}X0​\=​001​​
+$X\_0=\\begin{bmatrix} 0 \\\\ 0 \\\\ 1 \\end{bmatrix}$
 
-X0X\_0X0​ cannot be determined from the given information.
+$X\_0$ cannot be determined from the given information.
 
-X0\=XnX\_0=X\_nX0​\=Xn​ for all positive integer nnn.
+$X\_0=X\_n$ for all positive integer $n$.
 
-There can be some positive integer nnn for which X0≠XnX\_0\\neq X\_nX0​\=Xn​.
+There can be some positive integer $n$ for which $X\_0\\neq X\_n$.
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-X0\=\[100\]X\_0=\\begin{bmatrix} 1 \\\\ 0 \\\\ 0 \\end{bmatrix}X0​\=​100​​
+$X\_0=\\begin{bmatrix} 1 \\\\ 0 \\\\ 0 \\end{bmatrix}$
 
-X0\=XnX\_0=X\_nX0​\=Xn​ for all positive integer nnn.
+$X\_0=X\_n$ for all positive integer $n$.
 
   
 

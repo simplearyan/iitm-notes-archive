@@ -20,22 +20,22 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Suppose that the number of runs scored of a delivery is uniform in {1,2,3,4,5,61, 2, 3, 4, 5, 61,2,3,4,5,6} independent of what happens in other deliveries. Find the probability of hitting at least 222 sixes while playing 444 deliveries.
+Suppose that the number of runs scored of a delivery is uniform in {$1, 2, 3, 4, 5, 6$} independent of what happens in other deliveries. Find the probability of hitting at least $2$ sixes while playing $4$ deliveries.
 
-19144\\displaystyle\\frac{19}{144} 14419​
+$\\displaystyle\\frac{19}{144}$
 
-332\\displaystyle\\frac{3}{32} 323​
+$\\displaystyle\\frac{3}{32}$
 
-532\\displaystyle\\frac{5}{32} 325​
+$\\displaystyle\\frac{5}{32}$
 
-732\\displaystyle\\frac{7}{32} 327​
+$\\displaystyle\\frac{7}{32}$
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-19144\\displaystyle\\frac{19}{144} 14419​
+$\\displaystyle\\frac{19}{144}$
 
 JavaScript should be enabled to grade this question.
 
@@ -54,22 +54,22 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-In an examination conducted by IITM on the topic Statistics, there are 555 multiple select questions (one or more options can be correct) and each question has four options. Aman decided to mark the answer at random. Find the probability that he gets exactly two questions correct (assume that the answer of each question is independent of the other questions).
+In an examination conducted by IITM on the topic Statistics, there are $5$ multiple select questions (one or more options can be correct) and each question has four options. Aman decided to mark the answer at random. Find the probability that he gets exactly two questions correct (assume that the answer of each question is independent of the other questions).
 
-5!2!×3!(115)2×(1415)3\\displaystyle\\frac{5!}{2! \\times 3!} ( \\frac{1}{ 15 } ) ^{2} \\times ( \\frac{14}{ 15 } ) ^{3} 2!×3!5!​(151​)2×(1514​)3
+$\\displaystyle\\frac{5!}{2! \\times 3!} ( \\frac{1}{ 15 } ) ^{2} \\times ( \\frac{14}{ 15 } ) ^{3}$
 
-5!2!×3!(1415)2×(115)3\\displaystyle\\frac{5!}{2! \\times 3!} ( \\frac{14}{ 15 } ) ^{2} \\times ( \\frac{1}{ 15 } ) ^{3} 2!×3!5!​(1514​)2×(151​)3
+$\\displaystyle\\frac{5!}{2! \\times 3!} ( \\frac{14}{ 15 } ) ^{2} \\times ( \\frac{1}{ 15 } ) ^{3}$
 
-5!2!×3!(15)2×(45)3\\displaystyle\\frac{5!}{2! \\times 3!} ( \\frac{1}{ 5 } ) ^{2} \\times ( \\frac{4}{ 5 } ) ^{3} 2!×3!5!​(51​)2×(54​)3
+$\\displaystyle\\frac{5!}{2! \\times 3!} ( \\frac{1}{ 5 } ) ^{2} \\times ( \\frac{4}{ 5 } ) ^{3}$
 
-5!2!×3!(45)2×(15)3\\displaystyle\\frac{5!}{2! \\times 3!} ( \\frac{4}{ 5 } ) ^{2} \\times ( \\frac{1}{ 5 } ) ^{3} 2!×3!5!​(54​)2×(51​)3
+$\\displaystyle\\frac{5!}{2! \\times 3!} ( \\frac{4}{ 5 } ) ^{2} \\times ( \\frac{1}{ 5 } ) ^{3}$
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-5!2!×3!(115)2×(1415)3\\displaystyle\\frac{5!}{2! \\times 3!} ( \\frac{1}{ 15 } ) ^{2} \\times ( \\frac{14}{ 15 } ) ^{3} 2!×3!5!​(151​)2×(1514​)3
+$\\displaystyle\\frac{5!}{2! \\times 3!} ( \\frac{1}{ 15 } ) ^{2} \\times ( \\frac{14}{ 15 } ) ^{3}$
 
 Check Answers
 

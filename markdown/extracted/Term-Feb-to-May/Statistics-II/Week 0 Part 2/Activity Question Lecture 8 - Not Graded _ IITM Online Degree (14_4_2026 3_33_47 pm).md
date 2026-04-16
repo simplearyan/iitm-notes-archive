@@ -20,28 +20,28 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-The hats of 555 persons are identical and they get mixed up. Each person picks a hat at random. What is the probability that none of them will get their own hat?
+The hats of $5$ persons are identical and they get mixed up. Each person picks a hat at random. What is the probability that none of them will get their own hat?
 
-22120\\displaystyle\\frac{22}{120}12022​
+$\\displaystyle\\frac{22}{120}$
 
-44120\\displaystyle\\frac{44}{120}12044​
+$\\displaystyle\\frac{44}{120}$
 
-66120\\displaystyle\\frac{66}{120}12066​
+$\\displaystyle\\frac{66}{120}$
 
-11120\\displaystyle\\frac{11}{120}12011​
+$\\displaystyle\\frac{11}{120}$
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-44120\\displaystyle\\frac{44}{120}12044​
+$\\displaystyle\\frac{44}{120}$
 
 JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Shelly forgot her mobile password and called customer care for help to unlock her phone. The customer care told her that with the assistance of a machine learning techniques they have developed 505050 passwords to unlock her phone out of which only one is correct. Can we describe the outcomes and sample space as a uniform distribution?
+Shelly forgot her mobile password and called customer care for help to unlock her phone. The customer care told her that with the assistance of a machine learning techniques they have developed $50$ passwords to unlock her phone out of which only one is correct. Can we describe the outcomes and sample space as a uniform distribution?
 
  Yes
 
@@ -58,22 +58,22 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Find the probability of getting a numbered card (some number should be mentioned on that card) when one card is drawn at random from a pack of 525252 cards.
+Find the probability of getting a numbered card (some number should be mentioned on that card) when one card is drawn at random from a pack of $52$ cards.
 
-413\\displaystyle\\frac{4}{13}134​
+$\\displaystyle\\frac{4}{13}$
 
-913\\displaystyle\\frac{9}{13}139​
+$\\displaystyle\\frac{9}{13}$
 
-2652\\displaystyle\\frac{26}{52}5226​
+$\\displaystyle\\frac{26}{52}$
 
-1352\\displaystyle\\frac{13}{52}5213​
+$\\displaystyle\\frac{13}{52}$
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-913\\displaystyle\\frac{9}{13}139​
+$\\displaystyle\\frac{9}{13}$
 
 Check Answers
 

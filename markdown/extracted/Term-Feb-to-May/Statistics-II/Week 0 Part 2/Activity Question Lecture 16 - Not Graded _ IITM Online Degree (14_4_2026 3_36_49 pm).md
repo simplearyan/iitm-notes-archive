@@ -67,7 +67,7 @@ Sample space: B
 Events: A ⋂ B for every event A in original space  
 Probability function: P(A ⋂ B) / P(B) (denoted P(A | B) and called conditional probability of A given B) i.e.  
   
-P(A | B) = P(A∩B)P(B)\\frac{P(A \\cap B)}{P(B)}P(B)P(A∩B)​  
+P(A | B) = $\\frac{P(A \\cap B)}{P(B)}$  
   
 
 JavaScript should be enabled to grade this question.
@@ -118,7 +118,7 @@ _1 point_
 **Key Concepts:**  
   
 **Law of total probability**  
-P(A)\=P(A∩B)+P(A∩Bc)\=P(A∣B)P(B)+P(A∣Bc)P(Bc) P(A) = P(A \\cap B) + P(A \\cap B^c) = P(A | B) P(B) + P(A | B^c) P(B^c) P(A)\=P(A∩B)+P(A∩Bc)\=P(A∣B)P(B)+P(A∣Bc)P(Bc)  
+$P(A) = P(A \\cap B) + P(A \\cap B^c) = P(A | B) P(B) + P(A | B^c) P(B^c)$  
 
 JavaScript should be enabled to grade this question.
 

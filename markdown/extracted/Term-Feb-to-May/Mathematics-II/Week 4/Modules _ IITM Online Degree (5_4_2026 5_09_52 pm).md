@@ -21,20 +21,20 @@ _**1. For each question, enter all the options which you find is the answer to t
 5. Please note that if you give an incorrect answer there will be a negative marking for the incorrect option.  
   
 **_List of Options:  
-_**1.dim(V)\=1dim(V)=1dim(V)\=1  
-2.dim(V)\=2dim(V)=2dim(V)\=2  
-3.dim(V)\=3dim(V)=3dim(V)\=3  
-4.VVV is not a vector space  
-5.VVV a vector subspace of R3\\mathbb{R}^3R3  
-6.{(1,0,1),(0,1,1)}\\{(1,0,1),(0,1,1)\\}{(1,0,1),(0,1,1)} is a basis of VVV.  
-7.{(1,0,1),(0,1,−1)}\\{(1,0,1),(0,1,-1)\\}{(1,0,1),(0,1,−1)} is a basis of VVV.  
-8.{(1,1,0),(1,0,1)}\\{(1,1,0),(1,0,1)\\}{(1,1,0),(1,0,1)} is a basis of VVV.  
-9.{(−1,1,0),(1,0,1)}\\{(-1,1,0),(1,0,1)\\}{(−1,1,0),(1,0,1)} is a basis of VVV.  
+_**1.$dim(V)=1$  
+2.$dim(V)=2$  
+3.$dim(V)=3$  
+4.$V$ is not a vector space  
+5.$V$ a vector subspace of $\\mathbb{R}^3$  
+6.$\\{(1,0,1),(0,1,1)\\}$ is a basis of $V$.  
+7.$\\{(1,0,1),(0,1,-1)\\}$ is a basis of $V$.  
+8.$\\{(1,1,0),(1,0,1)\\}$ is a basis of $V$.  
+9.$\\{(-1,1,0),(1,0,1)\\}$ is a basis of $V$.  
   
 **_List of Questions:  
 _**  
-**Q1.**Consider the set V\={(a,b,c)∣a+b\=c and a,b,c∈R}V=\\{(a,b,c) \\mid a+b =c \\text{ and } a,b, c \\in \\mathbb{R}\\} V\={(a,b,c)∣a+b\=c and a,b,c∈R} with usual coordinate-wise addition and scalar multiplication. Which of the above options is(are) true for VVV?  
-**Q2.**Consider the set V\={(a,b,c)∣a\=b+c and a,b,c∈R}V=\\{(a,b,c) \\mid a =b+c \\text{ and } a,b, c \\in \\mathbb{R}\\} V\={(a,b,c)∣a\=b+c and a,b,c∈R} with usual coordinate-wise addition and scalar multiplication. Which of the above options is(are) true for VVV?  
-**Q3.**Consider the set V\={(a,b,c)∣a+b\=1−c and a,b,c∈R}V=\\{(a,b,c) \\mid a+b =1-c \\text{ and } a,b, c \\in \\mathbb{R}\\} V\={(a,b,c)∣a+b\=1−c and a,b,c∈R} with usual coordinate-wise addition and scalar multiplication. Which of the above options is(are) true for VVV?  
+**Q1.**Consider the set $V=\\{(a,b,c) \\mid a+b =c \\text{ and } a,b, c \\in \\mathbb{R}\\}$ with usual coordinate-wise addition and scalar multiplication. Which of the above options is(are) true for $V$?  
+**Q2.**Consider the set $V=\\{(a,b,c) \\mid a =b+c \\text{ and } a,b, c \\in \\mathbb{R}\\}$ with usual coordinate-wise addition and scalar multiplication. Which of the above options is(are) true for $V$?  
+**Q3.**Consider the set $V=\\{(a,b,c) \\mid a+b =1-c \\text{ and } a,b, c \\in \\mathbb{R}\\}$ with usual coordinate-wise addition and scalar multiplication. Which of the above options is(are) true for $V$?  
 
 Please enable JavaScript to continue using this application.

@@ -18,28 +18,28 @@ _**1. For each question, enter all the options which you find is the answer to t
 5. Please note that if you give an incorrect answer there will be a negative marking for the incorrect option.  
   
 **_List of Options:  
-_**1. TTT is is one to one.  
-2. TTT is onto.  
-3. TTT is an isomorphism.  
-4. Nullspace(T)\={(t,t,t)∣t∈R}Nullspace(T)=\\{ (t,t,t) \\mid t \\in \\mathbb{R}\\}Nullspace(T)\={(t,t,t)∣t∈R}  
-5. Nullspace(T)\={(t,t,s)∣t,s∈R}Nullspace(T)=\\{ (t,t,s) \\mid t,s \\in \\mathbb{R} \\}Nullspace(T)\={(t,t,s)∣t,s∈R}  
-6. Nullspace(T)\={(0,0,0)}Nullspace(T)=\\{ (0,0,0) \\}Nullspace(T)\={(0,0,0)}  
-7. A basis of Nullspace(T)\={(1,1,1)}Nullspace(T)=\\{ (1,1,1) \\}Nullspace(T)\={(1,1,1)}  
-8. A basis of Nullspace(T)\={(1,1,0),(0,0,1)}Nullspace(T)=\\{(1,1,0), (0,0,1)\\}Nullspace(T)\={(1,1,0),(0,0,1)}  
-9. nullity(T)\=1nullity(T)=1nullity(T)\=1  
-10. nullity(T)\=2nullity(T)=2nullity(T)\=2  
+_**1. $T$ is is one to one.  
+2. $T$ is onto.  
+3. $T$ is an isomorphism.  
+4. $Nullspace(T)=\\{ (t,t,t) \\mid t \\in \\mathbb{R}\\}$  
+5. $Nullspace(T)=\\{ (t,t,s) \\mid t,s \\in \\mathbb{R} \\}$  
+6. $Nullspace(T)=\\{ (0,0,0) \\}$  
+7. A basis of $Nullspace(T)=\\{ (1,1,1) \\}$  
+8. A basis of $Nullspace(T)=\\{(1,1,0), (0,0,1)\\}$  
+9. $nullity(T)=1$  
+10. $nullity(T)=2$  
   
   
 **_List of Questions:  
 _**  
-**Q1** Consider the linear transformation T:R3→R3T: \\mathbb{R}^3 \\rightarrow \\mathbb{R}^3T:R3→R3 defined by T(x,y,z)\=(x−y,y−z,0)T(x,y,z)=(x-y,y-z,0)T(x,y,z)\=(x−y,y−z,0). Which of the above options are true for TTT?  
+**Q1** Consider the linear transformation $T: \\mathbb{R}^3 \\rightarrow \\mathbb{R}^3$ defined by $T(x,y,z)=(x-y,y-z,0)$. Which of the above options are true for $T$?  
   
-**Q2** Consider the linear transformation T:R3→R2T: \\mathbb{R}^3 \\rightarrow \\mathbb{R}^2T:R3→R2 defined by T(x,y,z)\=(x−y,y−z)T(x,y,z)=(x-y,y-z)T(x,y,z)\=(x−y,y−z). Which of the above options are true for TTT?  
+**Q2** Consider the linear transformation $T: \\mathbb{R}^3 \\rightarrow \\mathbb{R}^2$ defined by $T(x,y,z)=(x-y,y-z)$. Which of the above options are true for $T$?  
   
-**Q3** Consider the linear transformation T:R3→R3T: \\mathbb{R}^3 \\rightarrow \\mathbb{R}^3T:R3→R3 defined by T(x,y,z)\=(x−y,y−z,z−x)T(x,y,z)=(x-y,y-z,z-x)T(x,y,z)\=(x−y,y−z,z−x).Which of the above options are true for TTT?  
+**Q3** Consider the linear transformation $T: \\mathbb{R}^3 \\rightarrow \\mathbb{R}^3$ defined by $T(x,y,z)=(x-y,y-z,z-x)$.Which of the above options are true for $T$?  
   
-**Q4** Consider the linear transformation T:R3→R3T: \\mathbb{R}^3 \\rightarrow \\mathbb{R}^3T:R3→R3 defined by T(x,y,z)\=(x−y,0,0)T(x,y,z)=(x-y,0,0)T(x,y,z)\=(x−y,0,0).Which of the above options are true for TTT?  
+**Q4** Consider the linear transformation $T: \\mathbb{R}^3 \\rightarrow \\mathbb{R}^3$ defined by $T(x,y,z)=(x-y,0,0)$.Which of the above options are true for $T$?  
   
-**Q5** Consider the linear transformation T:R3→R3T: \\mathbb{R}^3 \\rightarrow \\mathbb{R}^3T:R3→R3 defined by T(x,y,z)\=(x,x+y,x+y+z)T(x,y,z)=(x,x+y,x+y+z)T(x,y,z)\=(x,x+y,x+y+z).Which of the above options are true for TTT?  
+**Q5** Consider the linear transformation $T: \\mathbb{R}^3 \\rightarrow \\mathbb{R}^3$ defined by $T(x,y,z)=(x,x+y,x+y+z)$.Which of the above options are true for $T$?  
 
 Please enable JavaScript to continue using this application.

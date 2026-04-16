@@ -22,62 +22,62 @@ _1 point_
 
 How many outcomes are possible for a Bernoulli trial?
 
-Exactly 333
+Exactly $3$
 
-Exactly 111
+Exactly $1$
 
-Exactly 222
+Exactly $2$
 
-Exactly 444
+Exactly $4$
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-Exactly 222
+Exactly $2$
 
 JavaScript should be enabled to grade this question.
 
 _1 point_
 
-A fair coin is tossed 121212 times independently. What is the probability of getting 777 tails?
+A fair coin is tossed $12$ times independently. What is the probability of getting $7$ tails?
 
-0.190.190.19
+$0.19$
 
-0.820.820.82
+$0.82$
 
-0.570.570.57
+$0.57$
 
-0.380.380.38
+$0.38$
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-0.190.190.19
+$0.19$
 
 JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Upcoming T20 series between India and England consists of 555 matches. Here only two outcomes are possible either one team will win or the other team. Assuming both team are having equal chance of winning each game, what is the probability that India will whitewash(Win all the matches) England?
+Upcoming T20 series between India and England consists of $5$ matches. Here only two outcomes are possible either one team will win or the other team. Assuming both team are having equal chance of winning each game, what is the probability that India will whitewash(Win all the matches) England?
 
-132\\displaystyle\\frac{1}{32} 321​
+$\\displaystyle\\frac{1}{32}$
 
-332\\displaystyle\\frac{3}{32} 323​
+$\\displaystyle\\frac{3}{32}$
 
-532\\displaystyle\\frac{5}{32} 325​
+$\\displaystyle\\frac{5}{32}$
 
-732\\displaystyle\\frac{7}{32} 327​
+$\\displaystyle\\frac{7}{32}$
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-132\\displaystyle\\frac{1}{32} 321​
+$\\displaystyle\\frac{1}{32}$
 
 Check Answers
 

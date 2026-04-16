@@ -20,25 +20,25 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-An urn contains 222 Red, 333 Blue, and 111 Green marbles. We draw two marbles without replacement and record the colors of the marbles in order. Denote Red, Blue, and Green marbles by RRR, BBB, and GGG respectively.  
+An urn contains $2$ Red, $3$ Blue, and $1$ Green marbles. We draw two marbles without replacement and record the colors of the marbles in order. Denote Red, Blue, and Green marbles by $R$, $B$, and $G$ respectively.  
   
   
 What is the sample space?
 
-{R,B,G}\\{R, B, G\\}{R,B,G}
+$\\{R, B, G\\}$
 
-{RR,RB,RG,BR,BB,BG}\\{RR, RB, RG, BR, BB, BG\\}{RR,RB,RG,BR,BB,BG}
+$\\{RR, RB, RG, BR, BB, BG\\}$
 
-{RR,RB,RG,BR,BB,BG,GR,GB,GG}\\{RR, RB, RG, BR, BB, BG, GR, GB, GG\\}{RR,RB,RG,BR,BB,BG,GR,GB,GG}
+$\\{RR, RB, RG, BR, BB, BG, GR, GB, GG\\}$
 
-{RR,RB,RG,BR,BB,BG,GR,GB}\\{RR, RB, RG, BR, BB, BG, GR, GB\\}{RR,RB,RG,BR,BB,BG,GR,GB}
+$\\{RR, RB, RG, BR, BB, BG, GR, GB\\}$
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-{RR,RB,RG,BR,BB,BG,GR,GB}\\{RR, RB, RG, BR, BB, BG, GR, GB\\}{RR,RB,RG,BR,BB,BG,GR,GB}
+$\\{RR, RB, RG, BR, BB, BG, GR, GB\\}$
 
   
 
@@ -46,18 +46,18 @@ JavaScript should be enabled to grade this question.
 
 Concepts covered:  
   
-Event: An event is a subset of the sample space. For two events AAA and BBB,  
+Event: An event is a subset of the sample space. For two events $A$ and $B$,  
 
-*   One event can be contained in another, i.e. A⊆BA ⊆ BA⊆B
-*   Complement of an event AAA, denoted AcA^cAc\={outcomes in S not in A} = (S \\ A)
+*   One event can be contained in another, i.e. $A ⊆ B$
+*   Complement of an event $A$, denoted $A^c$\={outcomes in S not in A} = (S \\ A)
 
 JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Consider the previous experiment, Let A1A1A1 be the event that 1st marble is of Red color.A2A2A2 be the event that both the marbles are of same color.A3A3A3 be the event that 2nd marble is of Green color.  
+Consider the previous experiment, Let $A1$ be the event that 1st marble is of Red color.$A2$ be the event that both the marbles are of same color.$A3$ be the event that 2nd marble is of Green color.  
   
-What is A1cA1^cA1c?
+What is $A1^c$?
 
  2nd marble is red in color.
 
@@ -78,15 +78,15 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-What is A2cA2^cA2c?
+What is $A2^c$?
 
  At least one marble is green in color.
 
  Both marbles have different colors.
 
-{RG,BG,GR,GB}\\{RG, BG, GR, GB\\}{RG,BG,GR,GB}
+$\\{RG, BG, GR, GB\\}$
 
-{RB,RG,BR,BG,GR,GB}\\{RB, RG, BR, BG, GR, GB\\}{RB,RG,BR,BG,GR,GB}
+$\\{RB, RG, BR, BG, GR, GB\\}$
 
 ### No, the answer is incorrect.  
 Score: 0
@@ -95,13 +95,13 @@ Score: 0
 
 Both marbles have different colors.
 
-{RB,RG,BR,BG,GR,GB}\\{RB, RG, BR, BG, GR, GB\\}{RB,RG,BR,BG,GR,GB}
+$\\{RB, RG, BR, BG, GR, GB\\}$
 
 JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Is A2⊆A1A2 ⊆ A1A2⊆A1?
+Is $A2 ⊆ A1$?
 
  Yes
 
@@ -118,7 +118,7 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Is A3⊆A2A3 ⊆ A2A3⊆A2?
+Is $A3 ⊆ A2$?
 
  Yes
 
@@ -138,22 +138,22 @@ JavaScript should be enabled to grade this question.
 **Concepts covered:  
   
   
-**For two events AAA and BBB:  
+**For two events $A$ and $B$:  
   
-A∪BA∪BA∪B: Either AAA occurs or BBB occurs or both occurs.  
-A⋂BA⋂BA⋂B: AAA and BBB occurs.  
+$A∪B$: Either $A$ occurs or $B$ occurs or both occurs.  
+$A⋂B$: $A$ and $B$ occurs.  
   
  De Morgan’s laws:  
-(A∪B)c(A ∪ B)^c(A∪B)c = Ac⋂Bcand(A⋂B)c\=Ac∪BcA^c ⋂ B^c and (A ⋂ B)^c = A^c ∪ B^cAc⋂Bcand(A⋂B)c\=Ac∪Bc
+$(A ∪ B)^c$ = $A^c ⋂ B^c and (A ⋂ B)^c = A^c ∪ B^c$
 
 JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Consider the previous experiment. Let A1A1A1 be the event that 1st marble is Green. A2A2A2 be the event that 2nd marble is Green. A3A3A3 be the event that both marbles are of same color. A4A4A4 be the event that at least one marble is of Green color.  
+Consider the previous experiment. Let $A1$ be the event that 1st marble is Green. $A2$ be the event that 2nd marble is Green. $A3$ be the event that both marbles are of same color. $A4$ be the event that at least one marble is of Green color.  
   
   
-What is A1∩A2A1 \\cap A2A1∩A2?
+What is $A1 \\cap A2$?
 
  Both the marbles are of same color.
 
@@ -176,7 +176,7 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-What is A1∪A2A1\\cup A2A1∪A2?
+What is $A1\\cup A2$?
 
  Both the marbles are of green color.
 
@@ -199,7 +199,7 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-What is A3∩A4A3\\cap A4A3∩A4?
+What is $A3\\cap A4$?
 
  Both the marbles are of green color.
 
@@ -222,7 +222,7 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Is A1∩A2\=A3∩A4A1\\cap A2 = A3\\cap A4A1∩A2\=A3∩A4?
+Is $A1\\cap A2 = A3\\cap A4$?
 
  Yes
 
@@ -239,7 +239,7 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-What is (A1∪A4)C(A1\\cup A4)^C(A1∪A4)C?
+What is $(A1\\cup A4)^C$?
 
  At most one marble is of green color.
 
@@ -260,7 +260,7 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-What is A1c∩A4A1^c\\cap A4A1c∩A4?
+What is $A1^c\\cap A4$?
 
  Neither of the marbles are of green color.
 
@@ -283,7 +283,7 @@ JavaScript should be enabled to grade this question.
 
 JavaScript should be enabled to grade this question.
 
-Five horses numbered from 1 to 51\\, \\text{to}\\, 51to5 are taking part in a race. Suppose we are interested in top three positions. Assume that there will be no tie and all the horses have finished their race. How many points will be there in the sample space?
+Five horses numbered from $1\\, \\text{to}\\, 5$ are taking part in a race. Suppose we are interested in top three positions. Assume that there will be no tie and all the horses have finished their race. How many points will be there in the sample space?
 
 ### No, the answer is incorrect.  
 Score: 0
@@ -302,18 +302,18 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Consider the previous experiment. Let AAA be the event that top three positions are occupied by horses numbered from 333 to 555. BBB be the event that winner of the race is an odd numbered horse.CCC be the event that 1st and 2nd positions are occupied by odd numbered horses.  
+Consider the previous experiment. Let $A$ be the event that top three positions are occupied by horses numbered from $3$ to $5$. $B$ be the event that winner of the race is an odd numbered horse.$C$ be the event that 1st and 2nd positions are occupied by odd numbered horses.  
   
   
-What is BcB^cBc?
+What is $B^c$?
 
  Winner of the race is an even numbered horse.
 
-Horse numbered 222 wins the race.
+Horse numbered $2$ wins the race.
 
  Winner of the race is an odd numbered horse.
 
-No horse numbered from 111 to 333 wins the race.
+No horse numbered from $1$ to $3$ wins the race.
 
 ### No, the answer is incorrect.  
 Score: 0
@@ -326,7 +326,7 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Is C⊆AC\\subseteq AC⊆A?
+Is $C\\subseteq A$?
 
  Yes
 
@@ -343,11 +343,11 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Which is correct: B⊆CB\\subseteq CB⊆C or C⊆BC\\subseteq B C⊆B?
+Which is correct: $B\\subseteq C$ or $C\\subseteq B$?
 
-B⊆CB\\subseteq CB⊆C
+$B\\subseteq C$
 
-C⊆BC\\subseteq B C⊆B
+$C\\subseteq B$
 
  None of the above
 
@@ -356,7 +356,7 @@ Score: 0
 
 ### Accepted Answers:
 
-C⊆BC\\subseteq B C⊆B
+$C\\subseteq B$
 
   
 
@@ -366,10 +366,10 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Consider the previous experiment. Let AAA be the event that an even numbered horse wins the race. BBB be the event that last two positions are occupied by horses numbered from 111 to 444. CCC be the event that at least one even numbered horse comes in top three. DDD be the event that no even numbered horse comes in top two.  
+Consider the previous experiment. Let $A$ be the event that an even numbered horse wins the race. $B$ be the event that last two positions are occupied by horses numbered from $1$ to $4$. $C$ be the event that at least one even numbered horse comes in top three. $D$ be the event that no even numbered horse comes in top two.  
   
   
-What is A∩CA \\cap CA∩C?
+What is $A \\cap C$?
 
  Even numbered horse wins the race.
 
@@ -392,7 +392,7 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-What is Ac∩CA^c \\cap CAc∩C?
+What is $A^c \\cap C$?
 
  At least one even numbered horse comes in top 3.
 
@@ -413,7 +413,7 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-What is (A∪C)c(A\\cup C)^c(A∪C)c?
+What is $(A\\cup C)^c$?
 
  At least one even numbered horse comes in top 3.
 
@@ -434,7 +434,7 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-What is C∩DC\\cap DC∩D?
+What is $C\\cap D$?
 
  At least one even numbered horse comes in top three.
 
@@ -455,11 +455,11 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-What is Cc∩DC^c\\cap DCc∩D?
+What is $C^c\\cap D$?
 
-Event CCC
+Event $C$
 
-Event CCC^CCC
+Event $C^C$
 
  Event D
 
@@ -470,7 +470,7 @@ Score: 0
 
 ### Accepted Answers:
 
-Event CCC^CCC
+Event $C^C$
 
   
 

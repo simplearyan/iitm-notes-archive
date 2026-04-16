@@ -89,26 +89,26 @@ JavaScript should be enabled to grade this question.
 
 _1 point_
 
-Suppose there are N1N\_1N1​ doors to enter a stadium and N2N\_2N2​doors to exit the same stadium. One can enter the stadium through an entry gate and exit from an exit gate only. In an experiment, let the outcomes be the gate of entry and gate of exit. Then, what will be the cardinality of the sample space?
+Suppose there are $N\_1$ doors to enter a stadium and $N\_2$doors to exit the same stadium. One can enter the stadium through an entry gate and exit from an exit gate only. In an experiment, let the outcomes be the gate of entry and gate of exit. Then, what will be the cardinality of the sample space?
 
-N1+N2N\_1 + N\_2N1​+N2​
+$N\_1 + N\_2$
 
-N1×N2N\_1 \\times N\_2N1​×N2​
+$N\_1 \\times N\_2$
 
-N1−N2N\_1 - N\_2N1​−N2​
+$N\_1 - N\_2$
 
-N2−N1N\_2 - N\_1N2​−N1​
+$N\_2 - N\_1$
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-N1×N2N\_1 \\times N\_2N1​×N2​
+$N\_1 \\times N\_2$
 
 JavaScript should be enabled to grade this question.
 
-Consider the experiment of possibilities of runs scored by a batsman on facing pair of balls. How many sample points are there in the sample space when a pair of balls is being faced by a batsman(Assuming any run from 000 to 666 can be scored of a single ball)?
+Consider the experiment of possibilities of runs scored by a batsman on facing pair of balls. How many sample points are there in the sample space when a pair of balls is being faced by a batsman(Assuming any run from $0$ to $6$ can be scored of a single ball)?
 
 ### No, the answer is incorrect.  
 Score: 0
