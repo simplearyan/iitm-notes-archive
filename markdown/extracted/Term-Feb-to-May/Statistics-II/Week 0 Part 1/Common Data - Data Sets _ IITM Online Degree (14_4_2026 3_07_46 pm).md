@@ -1,15 +1,16 @@
 ---
-title: ""
+title: "Common Data - Data Sets :: IITM Online Degree"
 ---
 
-# 
+# Common Data - Data Sets :: IITM Online Degree
 
-Please wait...
+Common Data - Data Sets
 
-**Error**: Cannot open the page from the filesystem.
+  
+  
+  
+  
+  
+[Click here to view the common Data for Week 0 part 1](https://drive.google.com/drive/folders/1139n1wXv6eUSIlIkEn8cvBjiSFblgZki?usp=sharing)
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
-
-,GgAAAHkAAAA2AQAAQgEAAJcCAAByAwAAqQMAAOUDAAB3BAAApAQAANgFAADxBQAA9gUAAIEGAADLCAAAjwkAAJsJAABwDQAADw8AAB8PAAAwDwAAWA8AAJoRAACBEgAAiBIAAL0UAACpFgAAqxcAAEsYAADPGAAAgxoAAAwbAAAbGwAAPRsAAIcbAADhGwAAoxwAAH0dAADwHgAA0B8AAJwgAADlIQAAJCIAAIckAABfJgAAnSgAAP0oAAD4KQAA+ikAABksAAB+LQAA+C0AAKcuAADDMQAA9DEAAPQyAAAPNQAAATgAAF46AABcOwAA6zsAAOA8AABdPQAAeD0AAMBAAADhQQAAV0MAAIRDAABfRAAAZEQAAGNFAAA9RwAAtkcAAHJIAAAgSQAA+EkAACRKAADBSgAA1koAACFNAAB5TQAAa04AAJFPAAA9UAAAZ1AAAPBQAABFUQAAY1EAAA1TAACVVAAANlcAALFYAADoWwAARV8AAFNgAADWYAAAY2EAALFhAABKYgAA72MAANVmAAArZwAAEWgAACloAADtaAAAk2kAADJqAAA+agAAS2wAAHVvAACabwAAhXAAAJ5yAAAVcwAANXMAAPtzAAAMdAAAC3YAANV2AADteQAAVHoAALp9AADnfQAAxYMAAL2EAAD1hAAAcYUAAK2GAADfhwAApIgAALqKAAC/iwAAwYwAABONAACIjgAA6o8AAP+PAACukQAAtpIAADaTAACGkwAAoJQAANuVAAC4lgAAjpkAAI6aAACbmwAA3psAAAWcAABVngAAmp4AAMefAAAsoQAAw6QAAP6lAADIpgAAIKgAAFipAACKqgAAdasAABysAABdrAAAda4AAHSyAACVsgAApbIAAPezAAAPtAAADbUAACa1AABstQAAHbcAAM65AADeugAAR7sAAH+7AAC+uwAAMrwAAA+9AAApvQAA3r0AADbBAABowQAAd8EAACPCAABGxQAAyMUAAGTHAACxxwAAQMoAAEPKAAAyywAAGM4AAFfOAACzzgAArc8AAP3PAACS0AAAOtIAAGXTAACk1QAAw9UAAGzWAAC01gAAENcAAKHXAAB32AAAUNkAAMjZAAAG2gAAxd4AAMffAAAz4AAA2eAAADHhAAA34QAA0OEAABviAAAy5AAAAuYAAIHmAADG5gAArucAALbnAAAE6AAAGegAAAbpAAAZ6QAAMuoAADbrAAA/6wAAP+0AAKbtAAAK7gAAPfAAAGXxAABO9AAAZvcAAMD3AADa+AAAHfkAAGD5AACZ+QAA1PoAAAb7AAAw+wAAEvwAAFv9AAC7/QAA5f0AAAT+AAC//gAAZf8AAK7/AADUAAEAHgEBAE0BAQCiAQEAdwYBAE8HAQD9BwEA1wgBAIoLAQB5DgEAgQ8BAO8RAQCrEgEA4RIBAL0TAQCXFAEAshQBAJcWAQDRGAEAHBkBAJAaAQBeGwEAQx4BAKkeAQAMHwEA4h8BAAEgAQD0JAEAICUBAOgmAQAVJwEABigBAGgqAQBHKwEAni0BANgtAQClMwEArzQBAKw1AQCDNgEA2zgBADg5AQCTOQEA4ToBAAg7AQA+PAEAKD0BAPxAAQBqQQEApUEBAB9EAQCHRAEAREUBACVIAQA=
+Please enable JavaScript to continue using this application.

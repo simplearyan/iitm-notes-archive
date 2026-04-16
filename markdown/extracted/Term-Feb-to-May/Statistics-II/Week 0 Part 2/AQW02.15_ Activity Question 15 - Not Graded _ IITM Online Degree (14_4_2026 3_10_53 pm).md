@@ -1,15 +1,78 @@
 ---
-title: ""
+title: "AQW02.15: Activity Question 15 - Not Graded :: IITM Online Degree"
 ---
 
-# 
+# AQW02.15: Activity Question 15 - Not Graded :: IITM Online Degree
 
-Please wait...
+AQW02.15: Activity Question 15 - Not Graded
 
-**Error**: Cannot open the page from the filesystem.
+# AQW02.15: Activity Question 15 - Not Graded
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+This assignment will not be graded and is only for practice.
 
-,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
+**Note : This activity is only for practice purpose and it will not be counted towards the Final score  
+  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Suppose that the number of runs scored of a delivery is uniform in {1,2,3,4,5,61, 2, 3, 4, 5, 61,2,3,4,5,6} independent of what happens in other deliveries. Find the probability of hitting at least 222 sixes while playing 444 deliveries.
+
+19144\\displaystyle\\frac{19}{144} 14419​
+
+332\\displaystyle\\frac{3}{32} 323​
+
+532\\displaystyle\\frac{5}{32} 325​
+
+732\\displaystyle\\frac{7}{32} 327​
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+19144\\displaystyle\\frac{19}{144} 14419​
+
+JavaScript should be enabled to grade this question.
+
+A fair die is thrown three times independently. What is the probability that an even number is obtained at least twice? (Answer the question correct to two decimal points.)
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 0.5
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+In an examination conducted by IITM on the topic Statistics, there are 555 multiple select questions (one or more options can be correct) and each question has four options. Aman decided to mark the answer at random. Find the probability that he gets exactly two questions correct (assume that the answer of each question is independent of the other questions).
+
+5!2!×3!(115)2×(1415)3\\displaystyle\\frac{5!}{2! \\times 3!} ( \\frac{1}{ 15 } ) ^{2} \\times ( \\frac{14}{ 15 } ) ^{3} 2!×3!5!​(151​)2×(1514​)3
+
+5!2!×3!(1415)2×(115)3\\displaystyle\\frac{5!}{2! \\times 3!} ( \\frac{14}{ 15 } ) ^{2} \\times ( \\frac{1}{ 15 } ) ^{3} 2!×3!5!​(1514​)2×(151​)3
+
+5!2!×3!(15)2×(45)3\\displaystyle\\frac{5!}{2! \\times 3!} ( \\frac{1}{ 5 } ) ^{2} \\times ( \\frac{4}{ 5 } ) ^{3} 2!×3!5!​(51​)2×(54​)3
+
+5!2!×3!(45)2×(15)3\\displaystyle\\frac{5!}{2! \\times 3!} ( \\frac{4}{ 5 } ) ^{2} \\times ( \\frac{1}{ 5 } ) ^{3} 2!×3!5!​(54​)2×(51​)3
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+5!2!×3!(115)2×(1415)3\\displaystyle\\frac{5!}{2! \\times 3!} ( \\frac{1}{ 15 } ) ^{2} \\times ( \\frac{14}{ 15 } ) ^{3} 2!×3!5!​(151​)2×(1514​)3
+
+Check Answers
+
+Your score is: 0/3
+
+Please enable JavaScript to continue using this application.

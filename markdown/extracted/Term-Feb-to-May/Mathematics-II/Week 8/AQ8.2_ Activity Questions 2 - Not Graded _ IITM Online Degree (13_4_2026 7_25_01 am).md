@@ -1,15 +1,230 @@
 ---
-title: ""
+title: "AQ8.2: Activity Questions 2 - Not Graded :: IITM Online Degree"
 ---
 
-# 
+# AQ8.2: Activity Questions 2 - Not Graded :: IITM Online Degree
 
-Please wait...
+AQ8.2: Activity Questions 2 - Not Graded
 
-**Error**: Cannot open the page from the filesystem.
+# AQ8.2: Activity Questions 2 - Not Graded
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+This assignment will not be graded and is only for practice.
 
-58kCAA==,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
+**Level 1  
+  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Which of these sets form an orthonormal basis of R3\\mathbb{R}^3R3 with respect to the dot product as the inner product in R3\\mathbb{R}^3R3?
+
+{(1,0,0),(0,1,0)}\\lbrace (1,0,0), (0,1,0) \\rbrace{(1,0,0),(0,1,0)}
+
+{(2,0,0),(0,2,0),(0,0,2)}\\lbrace (2,0,0), (0,2,0), (0,0,2) \\rbrace{(2,0,0),(0,2,0),(0,0,2)}
+
+{(16,16,26),(−311,111,111),(166,766,−466)}\\lbrace (\\frac{1}{\\sqrt{6}}, \\frac{1}{\\sqrt{6}}, \\frac{2}{\\sqrt{6}}), (\\frac{-3}{\\sqrt{11}}, \\frac{1}{\\sqrt{11}}, \\frac{1}{\\sqrt{11}}), (\\frac{1}{\\sqrt{66}}, \\frac{7}{\\sqrt{66}}, \\frac{-4}{\\sqrt{66}}) \\rbrace {(6​1​,6​1​,6​2​),(11​−3​,11​1​,11​1​),(66​1​,66​7​,66​−4​)}
+
+{(2,1,−1),(−1,−1,1),(1,2,−2)}\\lbrace (2,1,-1), (-1,-1,1), (1,2,-2) \\rbrace{(2,1,−1),(−1,−1,1),(1,2,−2)}
+
+{(12,0,−12),(0,1,0),(12,0,12)}\\lbrace (\\frac{1}{\\sqrt{2}}, 0, \\frac{-1}{\\sqrt{2}}), (0, 1, 0), (\\frac{1}{\\sqrt{2}}, 0, \\frac{1}{\\sqrt{2}}) \\rbrace {(2​1​,0,2​−1​),(0,1,0),(2​1​,0,2​1​)}
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+{(16,16,26),(−311,111,111),(166,766,−466)}\\lbrace (\\frac{1}{\\sqrt{6}}, \\frac{1}{\\sqrt{6}}, \\frac{2}{\\sqrt{6}}), (\\frac{-3}{\\sqrt{11}}, \\frac{1}{\\sqrt{11}}, \\frac{1}{\\sqrt{11}}), (\\frac{1}{\\sqrt{66}}, \\frac{7}{\\sqrt{66}}, \\frac{-4}{\\sqrt{66}}) \\rbrace {(6​1​,6​1​,6​2​),(11​−3​,11​1​,11​1​),(66​1​,66​7​,66​−4​)}
+
+{(12,0,−12),(0,1,0),(12,0,12)}\\lbrace (\\frac{1}{\\sqrt{2}}, 0, \\frac{-1}{\\sqrt{2}}), (0, 1, 0), (\\frac{1}{\\sqrt{2}}, 0, \\frac{1}{\\sqrt{2}}) \\rbrace {(2​1​,0,2​−1​),(0,1,0),(2​1​,0,2​1​)}
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider two orthogonal vectors a,ba,ba,b in R2\\mathbb{R}^2R2. If a+ba+ba+b and a−ba-ba−b are orthogonal, then choose the correct option.
+
+∥a∥\=∥b∥\=1\\left \\| a \\right \\| = \\left \\| b \\right \\| = 1∥a∥\=∥b∥\=1
+
+∥a∥\=∥b∥\\left \\| a \\right \\| = \\left \\| b \\right \\|∥a∥\=∥b∥
+
+∥a∥\=2∥b∥\\left \\| a \\right \\| = 2 \\left \\| b \\right \\|∥a∥\=2∥b∥
+
+2∥a∥\=∥b∥2 \\left \\| a \\right \\| = \\left \\| b \\right \\|2∥a∥\=∥b∥
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+∥a∥\=∥b∥\\left \\| a \\right \\| = \\left \\| b \\right \\|∥a∥\=∥b∥
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider a\=(1,1),b\=(1,−1)a=(1,1), b=(1,-1)a\=(1,1),b\=(1,−1). Let V\=Span{a,b}V = Span\\{ a,b \\}V\=Span{a,b}. Choose the correct options by considering the standard inner product (dot product).
+
+Vectors a,ba,ba,b form an orthogonal basis for VVV.
+
+Vectors a,ba,ba,b form an orthonormal basis for VVV.
+
+There exist scalar multiples of a,ba, ba,b which form an orthonormal basis
+
+There do not exist scalar multiples of a,ba, ba,b which form an orthonormal basis
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Vectors a,ba,ba,b form an orthogonal basis for VVV.
+
+There exist scalar multiples of a,ba, ba,b which form an orthonormal basis
+
+**Level 2  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Choose the set of correct statements.
+
+The determinant of a matrix formed by 333 orthonormal vectors in R3\\mathbb{R}^3R3 is ±1\\pm 1±1.
+
+The determinant of a matrix formed by 333 orthonormal vectors in R3\\mathbb{R}^3R3 is 0 00.
+
+The determinant of a matrix formed by 222 orthonormal vectors in R2\\mathbb{R}^2R2 is ±1\\pm 1±1.
+
+The determinant of a matrix formed by 222 orthonormal vectors in R2\\mathbb{R}^2R2 is 000.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+The determinant of a matrix formed by 333 orthonormal vectors in R3\\mathbb{R}^3R3 is ±1\\pm 1±1.
+
+The determinant of a matrix formed by 222 orthonormal vectors in R2\\mathbb{R}^2R2 is ±1\\pm 1±1.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider a system of linear equations:  
+  
+    2x1+2x2+7x3\=b1 2x\_1 + 2x\_2 + 7x\_3 = b\_12x1​+2x2​+7x3​\=b1​  
+  
+    2x1+x2−10x3\=b22x\_1 + x\_2 -10x\_3 = b\_22x1​+x2​−10x3​\=b2​  
+  
+   3x1−2x2+2x3\=b3.3x\_1 - 2x\_2 + 2x\_3 = b\_3. 3x1​−2x2​+2x3​\=b3​.  
+  
+Let AAA be the coefficient matrix of the given system of linear equations. Let a matrix BBB contain the column vectors of AAA, which are normalized by their respective norms, as its columns (i.e. first column vector of AAA normalized by its norm is the first column of BBB). Which of the following statements are true ?
+
+The determinant of BBTBB^TBBT is 111.
+
+BBTBB^TBBT is an identity matrix.
+
+BBTBB^TBBT is a scalar matrix.
+
+BBTBB^TBBT is a diagonal matrix.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+The determinant of BBTBB^TBBT is 111.
+
+BBTBB^TBBT is an identity matrix.
+
+BBTBB^TBBT is a scalar matrix.
+
+BBTBB^TBBT is a diagonal matrix.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Choose the correct option(s).
+
+ The vectors in an orthonormal set are linearly independent.
+
+ A set of linearly dependent vectors can be orthonormal.
+
+ A set of linearly independent vectors is always orthonormal.
+
+ A set of linearly independent vectors is always orthogonal but not orthonormal.
+
+ The vectors in an orthogonal set are linearly independent.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+The vectors in an orthonormal set are linearly independent.
+
+The vectors in an orthogonal set are linearly independent.
+
+  
+
+JavaScript should be enabled to grade this question.
+
+Consider the inner product ⟨u,v⟩\=3u1v1+2u2v2\\langle u,v \\rangle = 3u\_1 v\_1 + 2u\_2 v\_2⟨u,v⟩\=3u1​v1​+2u2​v2​ where u\=(u1,u2),v\=(v1,v2)u=(u\_1,u\_2),v=(v\_1,v\_2)u\=(u1​,u2​),v\=(v1​,v2​) are vectors in R2\\mathbb{R}^2R2. Answer questions 7 and 8 based on this information.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Which of the following is an orthonormal basis with respect to the inner product defined above?
+
+{(2,3),(−4,4)}\\lbrace (2,3), (-4,4) \\rbrace{(2,3),(−4,4)}
+
+{130(2,3),180(−4,4)}\\lbrace \\frac{1}{\\sqrt{30}}(2,3),\\frac{1}{\\sqrt{80}}(-4,4)\\rbrace{30​1​(2,3),80​1​(−4,4)}
+
+{113(2,3),132(−4,4)}\\lbrace \\frac{1}{\\sqrt{13}}(2,3),\\frac{1}{\\sqrt{32}}(-4,4)\\rbrace{13​1​(2,3),32​1​(−4,4)}
+
+{(2,3),(−3,2)}\\lbrace (2,3), (-3,2) \\rbrace{(2,3),(−3,2)}
+
+{113(2,3),113(−3,2)}\\lbrace \\frac{1}{\\sqrt{13}}(2,3),\\frac{1}{\\sqrt{13}}(-3,2)\\rbrace{13​1​(2,3),13​1​(−3,2)}
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+{130(2,3),180(−4,4)}\\lbrace \\frac{1}{\\sqrt{30}}(2,3),\\frac{1}{\\sqrt{80}}(-4,4)\\rbrace{30​1​(2,3),80​1​(−4,4)}
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Use the orthonormal basis {u,v}\\{ u, v \\}{u,v} obtained in question 7 with respect to the defined inner product. Express the vector (4,0)(4,0)(4,0) as a linear combination of the basis vectors uuu and vvv, as (4,0)\=c1u+c2v(4,0)=c\_1u+c\_2v(4,0)\=c1​u+c2​v. Which of the following gives the coefficients of the linear combination?
+
+c1\=2430,c2\=−4880c\_1 = \\frac{24}{\\sqrt{30}}, c\_2= \\frac{-48}{\\sqrt{80}}c1​\=30​24​,c2​\=80​−48​
+
+c1\=2413,c2\=−4832c\_1 = \\frac{24}{\\sqrt{13}}, c\_2= \\frac{-48}{\\sqrt{32}}c1​\=13​24​,c2​\=32​−48​
+
+c1\=813,c2\=−1632c\_1 = \\frac{8}{\\sqrt{13}}, c\_2= \\frac{-16}{\\sqrt{32}}c1​\=13​8​,c2​\=32​−16​
+
+c1\=2430,c2\=4880c\_1 = \\frac{24}{\\sqrt{30}}, c\_2= \\frac{48}{\\sqrt{80}}c1​\=30​24​,c2​\=80​48​
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+c1\=2430,c2\=−4880c\_1 = \\frac{24}{\\sqrt{30}}, c\_2= \\frac{-48}{\\sqrt{80}}c1​\=30​24​,c2​\=80​−48​
+
+Check Answers
+
+Your score is: 0/8
+
+Please enable JavaScript to continue using this application.

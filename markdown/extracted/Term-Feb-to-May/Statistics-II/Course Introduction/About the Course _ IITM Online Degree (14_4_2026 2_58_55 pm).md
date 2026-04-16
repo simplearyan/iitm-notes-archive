@@ -1,15 +1,61 @@
 ---
-title: ""
+title: "About the Course :: IITM Online Degree"
 ---
 
-# 
+# About the Course :: IITM Online Degree
 
-Please wait...
+About the Course
 
-**Error**: Cannot open the page from the filesystem.
+                                                     **Statistics for Data Science II**  
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+Course ID: BSMA1004
 
-,GgAAAAEBAAAIAQAAPQMAACkFAAArBgAAywYAAE8HAAADCQAAjAkAAJsJAAC9CQAABwoAAGEKAAAjCwAA/QsAAHANAABQDgAAHA8AAGUQAACkEAAABxMAAN8UAAAdFwAAfRcAAHgYAAB6GAAAmRoAAP4bAAB4HAAAJx0AAEMgAAB0IAAAdCEAAI8jAACBJgAA3igAANwpAABrKgAAYCsAAN0rAAD4KwAAQC8AAGEwAADXMQAABDIAAN8yAADkMgAA4zMAAL01AAA2NgAA8jYAAKA3AAB4OAAApDgAAEE5AABWOQAAoTsAAPk7AADrPAAAET4AAL0+AADnPgAAcD8AAMU/AADjPwAAjUEAABVDAAC2RQAAMUcAAGhKAADFTQAA004AAFZPAADjTwAAMVAAAIpRAACWUgAAxlIAAFJTAAASVQAAYFUAAH9VAACDVQAAQ1YAACdXAACFVwAAh1kAAINaAACGWgAADlsAAJtbAAABXAAAclwAAKtcAAC/XAAA+F0AANpeAAD3XgAAGV8AADlfAADqXwAAg2EAAAdiAAC/YgAAFmMAAGNjAACjYwAAp2MAALdjAAAVZAAAm2QAAEBmAAAmaQAAfGkAAGJqAAB6agAAPmsAAORrAACDbAAAj2wAAJxuAADGcQAA63EAANZyAADvdAAAZnUAAIZ1AABMdgAAXXYAAFx4AAAmeQAAPnwAAKV8AAALgAAAOIAAABaGAAAOhwAARocAAMKHAAD+iAAAMIoAAPWKAAALjQAAEI4AABKPAABkjwAA2ZAAADuSAABQkgAA/5MAAAeVAACHlQAA15UAAPGWAAAsmAAACZkAAN+bAADfnAAA7J0AAC+eAABWngAApqAAAOugAAAYogAAfaMAABSnAABPqAAAGakAAHGqAACpqwAA26wAAMatAABtrgAArq4AAMawAADFtAAA5rQAAPa0AABItgAAYLYAAF63AAB3twAAvbcAAG65AAAfvAAAL70AAJi9AADQvQAAD74AAIO+AABgvwAAer8AAC/AAACHwwAAucMAAMjDAAB0xAAAl8cAABnIAAC1yQAAAsoAAJHMAACUzAAAg80AAGnQAACo0AAABNEAAP7RAABO0gAA49IAAIvUAAC21QAA9dcAABTYAAC92AAABdkAAGHZAADy2QAAyNoAAKHbAAAZ3AAAV9wAABbhAAAY4gAAhOIAACrjAACC4wAAiOMAACHkAABs5AAAg+YAAFPoAADS6AAAF+kAAP/pAAAH6gAAVeoAAGrqAABX6wAAausAAIPsAACH7QAAkO0AAJDvAAD37wAAW/AAAI7yAAC28wAAn/YAALf5AAAR+gAAK/sAAG77AACx+wAA6vsAACX9AABX/QAAgf0AAGP+AACs/wAADAABADYAAQBVAAEAEAEBALYBAQD/AQEAJQMBAG8DAQCeAwEA8wMBAMgIAQCgCQEATgoBACgLAQDbDQEAKBMBADAUAQCeFgEAWhcBAJAXAQBsGAEARhkBAGEZAQBGGwEAgB0BAMsdAQA/HwEADSABAPIiAQBYIwEAuyMBAJEkAQCwJAEAoykBAM8pAQCXKwEAxCsBALUsAQCJLwEAJzIBAGMzAQCMMwEAADUBAAM3AQBYOQEAkTkBAMA5AQDXOgEABzsBAM88AQAePgEA8T4BAJM/AQC6PwEA8EABANpBAQBeRQEAKEYBAL5HAQAmSAEA40gBAA==
+  
+
+Course Credits: 4
+
+  
+
+Course Type: Foundational
+
+  
+
+Pre-requisites: BSMA1002 -  Statistics for Data Science I BSMA1001 -  Mathematics for Data Science I
+
+  
+
+Co-requisites: BSMA1003 -  Mathematics for Data Science II  
+  
+
+Faculty:  
+Dr. Andrew Thangaraj,  
+Professor, Electrical Engineering Department, IIT Madras  
+  
+Course instructors:
+
+1)Prerna Gupta  
+2) Swathy S Sajeev  
+3) Srikanth Venkatesan  
+  
+**Course TAs:  
+**1)Tarang Jhaveri  
+2) Agrim Srivastava  
+  
+
+  
+
+Study Material:  
+The primary study material for this course is the set of videos and assignments posted on the course page.  
+The prescribed textbook for this course is:  
+Probability and Statistics with Examples using R, by Siva Athreya, Deepayan Sarkar, and Steve Tanner.  
+Probability & Statistics for Engineers & Scientists (Global Edition) by Ronald E. Walpole.  
+  
+The learners are advised to make best use of the interaction sessions with the course support members to clarify their doubts.
+
+  
+
+**To know more about course syllabus, Instructors and Prescribed Books:**  
+
+[https://study.iitm.ac.in/ds/course\_pages/BSMA1004.html](https://study.iitm.ac.in/ds/course_pages/BSMA1004.html)
+
+Please enable JavaScript to continue using this application.

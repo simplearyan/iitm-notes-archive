@@ -1,15 +1,391 @@
 ---
-title: ""
+title: "Week 2 Graded Assignment 2 :: IITM Online Degree"
 ---
 
-# 
+# Week 2 Graded Assignment 2 :: IITM Online Degree
 
-Please wait...
+Week 2 Graded Assignment 2
 
-**Error**: Cannot open the page from the filesystem.
+# Week 2 Graded Assignment 2
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+**The due date for submitting this assignment has passed.**
 
-w28AALh5AQDG7gEAjvMBAA==,GgAAAKIBAAAbAgAA3QQAABkFAACIBgAAnwYAALwGAADhCgAAUQwAAL4MAADIDAAApg0AALMNAACEDwAADxAAAIIQAAALEQAA2RIAAAcTAACbEwAADBQAAA0UAABAFQAAVRUAAIcVAACPFQAACxcAACwYAADxGgAAkxsAAAUcAAAOHAAAOxwAAHAcAADiHAAA6h0AAEYeAAB8HgAAzB4AAAwfAABdHwAAxB8AAOMfAAD3HwAAIyAAAPcgAAB5JwAAiicAAAwoAABpKAAAICoAAEAqAADZKgAAdysAAJYrAACVLAAAriwAAOksAACtLQAAHS4AACMuAABILgAAEzAAAEIwAABmMQAAdDEAANYxAABEMwAAlDUAAD02AAAFNwAABzcAAH85AADDOQAAWToAALk6AADQPAAAlj8AAKA/AACAQAAAOEIAAK1CAADpRAAA9EgAAGpJAAB/SQAAQkoAAGxLAAAzTAAARU4AAOBOAACITwAA0lAAAN1QAAAMUQAAO1EAAKVRAAAnUgAA+1MAAJdUAAAoVgAA9VcAADBYAABtWAAA5lgAAGZZAAD1WQAA/lwAABZdAAB2XQAAJV4AAKdfAAC4YAAAAWEAAPZhAAAZYgAAOWIAAKdiAADsYgAAiGQAABJlAAA3ZQAAdWUAAOZlAADXZgAAGmcAAPxoAACtagAAu2oAANhqAACyawAAv2sAAMNrAACJbAAAhm0AAJNuAACwbgAA+W4AAO1vAAC2cAAATnMAAGN2AAANdwAAK3cAAPh3AAAmeAAAk3gAAO54AACAeQAAXXoAAAR8AADJfAAAFH0AAJV9AAC7fgAA9IQAAP+GAAAqiAAAUokAALqNAAA5jgAAd44AANuQAAC/kwAA7JUAAJSWAAA4lwAAZJkAAIGaAADJmgAAGZwAAE+cAAANnwAAE58AADOfAACnnwAAr6AAAFGhAADhowAARqQAAHekAABxpQAA1KUAANGmAAD/pwAAOqgAAIqoAAAAqgAAUqoAAKCqAAD3qgAAXqsAAJirAAChqwAAf6wAAN2sAACXrQAASLAAAJ+wAACusAAAV7MAAKezAACFtAAAuLQAABW1AAC9tQAAALYAADu3AABPtwAAJrgAAF24AAAlvAAA4bwAAHm9AADlvQAAycAAAArBAACkwQAAusMAAGrFAAB7xwAA2sgAALzJAAC2ywAAacwAALDMAABpzgAA2c4AAB/QAAD00AAAT9EAAE3SAADM1AAA19QAAN/UAAD41QAAAdkAABXZAADj2QAAF9oAAJHaAAAK3QAABd4AAP7gAABy4QAAreMAAO7jAABJ5QAAR+cAAInoAAD96AAACekAAA7pAACe6QAA2ekAAKHrAAA+7AAAbOwAAHrsAACS7AAA0uwAAAXvAABr8AAAi/AAAEfxAAA78gAAAfQAAAj0AACZ9AAAU/UAAFz1AADu9QAAffcAAK33AACl+AAAG/kAAAb6AACp+gAArfoAAK37AAC5/wAAoAABAFgBAQA8BAEAjwQBAAQGAQAVCQEAjQkBAGsKAQA0CwEAPgsBAEEMAQDjDwEAzREBAOERAQAEEgEAKRIBANATAQA2FQEAHRYBACQWAQBZGAEARRoBAEcbAQDnGwEAaxwBAB8eAQCoHgEAtx4BANkeAQAjHwEAfR8BAD8gAQAZIQEAjCIBAGwjAQA4JAEAgSUBAMAlAQAjKAEA+ykBADksAQCZLAEAlC0BAJYtAQC1LwEAGjEBAJQxAQBDMgEAXzUBAJA1AQCQNgEAqzgBAJ07AQD6PQEA+D4BAIc/AQB8QAEA+UABABRBAQBcRAEAfUUBAPNGAQAgRwEA+0cBAABIAQD/SAEA2UoBAFJLAQAOTAEAvEwBAJRNAQDATQEAXU4BAHJOAQC9UAEAFVEBAAdSAQAtUwEA2VMBAANUAQCMVAEA4VQBAP9UAQCpVgEAMVgBANJaAQBNXAEAhF8BAOFiAQDvYwEAcmQBAP9kAQBNZQEAfGcBAIZnAQATaAEAHWoBAH5rAQCJawEArmsBAMVrAQBpbAEAamwBAL5sAQDFbAEAjW0BALNtAQCncQEAIHMBAHp0AQB9dAEAr3QBAOt1AQBqdgEAvHYBAG14AQDxewEABXwBANN9AQAPfgEAcH4BAAF/AQAcfwEAGoABAE2AAQDrgwEAQ4QBABiGAQA5hgEAAIgBACCIAQB5iAEA8YgBABuJAQASigEANooBANWKAQBYjAEA3owBAP+MAQALjgEA/o4BAJOPAQAYkAEAP5MBAJ2UAQBTlQEAWZYBAJ2WAQCalwEAj5gBAEGZAQDymQEAoJwBAGidAQCRnQEAEJ8BAFifAQCDpgEAQKcBADepAQCyqgEAu6oBAGOsAQDhsAEAsrIBAPeyAQCKswEApbQBAKi0AQAGtgEAL7YBADy2AQDZtwEAJrkBADi5AQBBugEAX7oBAKK6AQB2vAEAT70BAOG+AQCovwEAyL8BACXAAQDtwAEAkcEBAL7CAQBdwwEAXMUBAM/GAQCOyAEAQsoBAN/KAQDWywEAMcwBADrMAQDwzgEAMc8BAN3PAQDI0AEA8NABAB7TAQAT1gEAItgBAEDYAQCu2AEAddkBANLZAQAg2gEA3NoBAFnbAQDG2wEA0N0BAJ7iAQBK4wEAbeMBAGLkAQB05QEAdeUBAIjmAQD65wEAXugBAO7oAQAu6QEAPOkBAEbpAQD36QEAFusBAJbrAQCo6wEA9OsBAGXsAQBv7AEAge0BAKvuAQCx7gEAgfABAMjzAQC69AEA3/UBABz2AQDz9gEAsPcBADr5AQB/+QEAr/kBAP35AQAc+gEAz/oBAE/8AQDC/AEAbP0BAK//AQAGAgIAIQMCAMEEAgD8BAIAnQcCAOkHAgBXCAIAWgkCANMJAgAhCgIAAQwCAJQMAgB8EAIAfRACAJkSAgD9EwIAwhQCAMwWAgBHFwIAcBcCAMYXAgBvGAIA1BkCAE4aAgACHAIAKhwCAKkcAgCdHQIAkR4CAN8eAgCTHwIABCACAFggAgDvIAIATCICAGUiAgBiJAIAACYCAHEmAgCRJgIACigCAIsoAgCfKAIA3CgCAO4oAgCALAIARi0CAE4uAgB2LgIA1i4CAE4vAgC5LwIA8TACAM8yAgDvMwIA3jQCALM2AgC2NgIAHTcCACA3AgDBNwIAMTgCADM4AgBaOwIAqzsCAGs8AgChPAIA2zwCAAY+AgAOPgIAvD4CANpAAgDMQwIAq0YCAJBMAgAkTwIANlACANVQAgBRUQIAjlECAEVSAgCnUgIA1lICAJNTAgCWUwIAqVMCAJhUAgA9VgIAiFYCAClXAgClVwIAtVcCAHxYAgCzWAIAyFgCAJdZAgDVWgIAeVsCAFJfAgAqYAIAjGECADliAgBUYgIAJ2MCAIplAgCMZgIAlmYCADdnAgASaAIAb2gCAL5pAgBIagIADmwCAHBuAgA+bwIAV28CAJJwAgBkcQIA8nECAE9yAgCIcwIAuXMCAIN4AgB+egIAD3sCAOB7AgAffAIAzX4CAOd/AgAAgQIAm4ECALOBAgDagQIARYMCAC+EAgA2hAIAOYQCAJKEAgAmhQIAL4UCAFKFAgAbhgIAMIcCAIyIAgCSjAIAhY4CAEOQAgB0kQIAXZICAMWSAgAUkwIAHpMCAM2XAgDAmAIArZkCABKbAgBHmwIAKZwCAEacAgDVnAIATp0CADWeAgBZoAIATqECAN2jAgBBpAIABKYCAK2mAgAHpwIAL6gCAPeoAgDQqgIAQKsCAM2rAgBFrQIA264CAAKvAgAwsAIAVbACAFuwAgCysAIAKLECAPmxAgCnsgIA67MCAHm0AgCBtQIAybUCAEG2AgA4uQIAYbkCAHS7AgANvAIAmLwCAOS9AgD0vQIAn74CAKq+AgDFvgIAPb8CAEbAAgCuwgIAIsMCABzEAgCHxAIAvcUCAM3GAgCtygIApMsCAMzMAgAezwIAZ88CAIPRAgCe0QIAb9ICAKLSAgAV0wIARtUCAGPYAgBe2QIAW9oCAILaAgBY2wIAJtwCAC/cAgBg3QIAYd0CADvfAgBB4AIAPuECAI/iAgB55QIA3+UCAPvlAgC05gIAM+kCAELpAgBr6gIAfuoCAIPrAgDi7AIAce0CAMruAgBP7wIAm+8CAB3wAgA78AIA4fACAB7xAgAc8gIAavUCANT1AgAD9wIADvcCALf3AgBc+QIAQvwCAJj8AgB+/QIAlv0CAFr+AgAA/wIAn/8CAKv/AgC4AQMA4gQDAAcFAwDyBQMACwgDAIIIAwCiCAMAaAkDAHkJAwB4CwMAQgwDAFoPAwDBDwMAJxMDAFQTAwAyGQMAKhoDAGIaAwDeGgMAGhwDAEwdAwARHgMAJyADACwhAwAuIgMAgCIDAPUjAwBXJQMAbCUDABsnAwAjKAMAoygDAPMoAwANKgMASCsDACUsAwD7LgMA+y8DAAgxAwBLMQMAcjEDAMIzAwAHNAMANDUDAJk2AwAwOgMAazsDADU8AwCNPQMAxT4DAPc/AwDiQAMAiUEDAMpBAwDiQwMA4UcDAAJIAwASSAMAZEkDAHxJAwB6SgMAk0oDANlKAwCKTAMAO08DAEtQAwC0UAMA7FADACtRAwCfUQMAfFIDAJZSAwBLUwMAo1YDANVWAwDkVgMAkFcDALNaAwA1WwMA0VwDAB5dAwCtXwMAsF8DAJ9gAwCFYwMAxGMDACBkAwAaZQMAamUDAP9lAwCnZwMA0mgDABFrAwAwawMA2WsDACFsAwB9bAMADm0DAORtAwC9bgMANW8DAHNvAwAydAMANHUDAKB1AwBGdgMAnnYDAKR2AwA9dwMAiHcDAJ95AwBvewMA7nsDADN8AwAbfQMAI30DAHF9AwCGfQMAc34DAIZ+AwCffwMAo4ADAKyAAwCsggMAE4MDAHeDAwCqhQMA0oYDALuJAwDTjAMALY0DAEeOAwCKjgMAzY4DAAaPAwBBkAMAc5ADAJ2QAwB/kQMAyJIDACiTAwBSkwMAcZMDACyUAwDSlAMAG5UDAEGWAwCLlgMAupYDAA+XAwDkmwMAvJwDAGqdAwBEngMAkqQDAM+lAwCPpgMAaqwDAJOsAwBirQMA260DAH+wAwCNsAMA/LADADSxAwDDsgMAY7MDAF20AwDktQMAlbgDACa6AwCAuwMArb8DAL+/AwAEwAMAKsADADvAAwAuwQMA7MEDAPDCAwBcwwMAmsMDAKfDAwDTxQMAGsYDAErGAwCxxgMAVcoDAKzNAwAq0AMAh9IDABbTAwCN0wMAjdQDAJ3UAwDY1AMALdUDAPTVAwBW1gMAftcDALnXAwBs2AMAgt0DAKnfAwDa4AMAFuIDAEDmAwBf5wMA7+kDAPPqAwB/6wMAau0DAHDtAwB27QMAze8DAPfwAwA28QMAnPEDAKryAwDM8gMAhPMDANvzAwBY9QMAw/UDAAn2AwBV9wMAg/wDAJD8AwDT/QMAMwAEAFsABADGAAQAMgEEAAUEBACEBwQAlgcEAIEIBABnCQQAzAkEAAQKBABGCgQA7AoEANgMBADyDAQAMg4EAOsOBAAmEAQAKBAEAHYQBAB4EgQAahMEACIUBAADFQQACxUEAEsXBACpFwQAAhgEAAoYBACHGAQA6hkEAEkaBADRGwQAAB8EAOchBAAyIgQAjiIEAA8kBABQJAQAoiQEABslBAAfJQQASSUEAEslBAA7KAQAfCoEAMYqBAB2KwQASi8EAJIvBADWLwQAVDIEAIQzBAApNAQAUDQEAKY0BAA1NgQANzcEANw4BADoOAQA5jkEAOU6BAAuOwQA0jsEAAU9BACzPgQAZ0EEAEVCBACgQwQAuUMEALtDBAD9RwQA/kgEADNJBAAPTAQAJUwEANpOBADlTgQABE8EACRPBAA8TwQAJ1AEABpSBAAnUgQAllMEAKhUBACaVQQA3lYEAFtYBADgWAQASlkEAIJZBACDWgQAs1sEALRbBADLWwQAnVwEALteBAC+XgQA118EAExgBAByYAQATGIEAItiBACkYgQAzWIEAMhjBAAKZAQAKmQEADZmBAA5ZgQAbWYEADloBACBaQQAimkEAIdqBACYagQA4WsEANxsBADxbAQAKm4EALluBADAbwQA8nIEAN10BACLeAQAm3gEAP54BAAPegQALXoEABV8BADafQQA4n4EAFCBBAAMggQAQoIEAB6DBAD4gwQAE4QEAPiFBAAyiAQAfYgEAPGJBAC/igQApI0EAAqOBABtjgQAQ48EAGKPBABVlAQAgZQEAEmWBAB2lgQAZ5cEAEqYBADDmAQAx5gEAPGYBADzmAQACaIEAEWjBAC7pQQABaYEALSmBADhpgQADqkEAEOpBAAsqgQAaqoEACqsBACGrQQAH64EAJSyBADqswQAC7UEAFG2BABrtwQAA7kEADq5BAB3ugQA7roEACm8BADevAQAMb0EACm+BABUvgQA78UEAEHGBABmxgQAP8cEAGbHBACLxwQAMckEAKLJBAB7ywQAys0EAG7PBACCzwQAzM8EAPPQBACa0gQAY9QEADvVBADh1gQAWNcEAF/XBABE2AQAltgEANDZBABW2gQAat0EALzdBADx3QQAYt4EAL/fBADk4AQAG+EEAFzhBAAR4gQATeMEAG/lBADv5QQAHuYEAEfmBACO5gQAqusEAMTsBAAe7QQAY+4EAMTuBAAG8AQAP/EEAJH0BADE9AQAoPUEALb1BAAG9wQAx/kEABv6BAAk+gQA6fsEAKj8BABi/QQAbv4EAEX/BADlAgUAdgMFAGsGBQD0BwUAHwgFALsJBQBzCgUAgwsFANMLBQDmDQUA7g0FAP0TBQAmFAUAFhYFAMwWBQA4GQUAURkFAIEZBQD1GQUAHBwFALgdBQCmHgUASyEFAFshBQD/IgUAhiMFAK4kBQBYJQUAJCYFACMsBQA2LAUAOiwFAL8uBQDRLgUA3S8FAA8wBQA5MAUAuDIFANcyBQC/MwUAnjQFAK40BQDNNAUALTUFANE1BQDaNgUA3zkFANE7BQBEPgUAN0AFANtCBQDNRgUAp0gFANlJBQAgSgUAZ0oFAGxKBQC7SgUAM00FAFxNBQAqTwUAAVYFAGRWBQBtVwUAc1cFALNYBQB9WgUA/lsFAI1dBQACYAUAM2AFAERgBQBWYAUAAGEFAJRhBQA0YwUAJ2UFAAhmBQCcZgUAdmcFAABoBQCtaAUA2GgFAF5rBQDwbAUAbm4FAGVvBQB/cgUAcHMFAHJzBQBSdwUAX3cFAI53BQDWdwUAJ3gFAHh4BQDJeAUAGnkFAGt5BQDjeQUAaXoFALt6BQANewUAX3sFALF7BQADfAUAvH8FAGuCBQDxggUA6oMFAE2FBQBThQUApoUFAPyFBQD/iAUAZ4kFACSKBQDhigUAnosFABONBQDKjQUAOpMFANKTBQCElAUA
+Due on 2026-02-25, 23:59 IST.
+
+You may submit any number of times before the due date. The final submission will be considered for grading.
+
+### You have last submitted on: 2026-02-25, 08:53 IST
+
+Note: This assignment will be evaluated after the deadline passes. You will get your score 48 hrs after the deadline. Until then the score will be shown as Zero.  
+  
+Multiple Select Questions (MSQ)  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+In a particular year, the profit (in lakhs of **₹**) of Star Fish company is given by the polynomial P(x)\=ax2+bx+cP(x) = ax^2+bx+cP(x)\=ax2+bx+c where xxx denotes the number of months since the beginning of the year (i.e., x\=1x=1x\=1 denotes January, x\=2x=2x\=2 denotes February, and so on). In January and February the company made a loss of **₹**45(in lakhs), and **₹**19(in lakhs) respectively, and in March the company made a profit of **₹**3(in lakhs). Let the loss be represented by negative of profit. Choose the correct set of options based on the given information.
+
+ The maximum profit will be in the month of May.
+
+ The maximum profit will be in the month of August.
+
+ The maximum monthly profit amount is **₹**53 lakh.
+
+ The maximum monthly profit amount is **₹**35 lakh.
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+The maximum profit will be in the month of August.
+
+The maximum monthly profit amount is **₹**53 lakh.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+If AAA be a 3×43\\times43×4 matrix and bbb be a 3×13\\times13×1 matrix, then choose the set of correct options.
+
+If (A∣b)(A|b)(A∣b) be the augmented matrix and (A′∣b′)(A'|b')(A′∣b′) be the matrix obtained from (A∣b)(A|b)(A∣b) after a finite number of elementary row operations then the system Ax\=bAx = bAx\=b and the system A′x\=b′A'x = b'A′x\=b′ have the same set of solutions.
+
+If (A′∣b′)(A'|b')(A′∣b′) is the reduced row echelon form of (A∣b)(A|b)(A∣b) then the system A′x\=b′A'x = b'A′x\=b′ has at least one solution.
+
+If (A′∣b′)(A'|b')(A′∣b′) is the reduced row echelon form of (A∣b)(A|b)(A∣b), then A′A'A′ is also in reduced row echelon form.
+
+If (A′∣b′)(A'|b')(A′∣b′) is the reduced row echelon form of (A∣b)(A|b)(A∣b) and there is no row such that the only non zero entry lies in the last column of (A′∣b′)(A'|b')(A′∣b′) then the system Ax\=bAx = bAx\=b has at least one solution.
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+If (A∣b)(A|b)(A∣b) be the augmented matrix and (A′∣b′)(A'|b')(A′∣b′) be the matrix obtained from (A∣b)(A|b)(A∣b) after a finite number of elementary row operations then the system Ax\=bAx = bAx\=b and the system A′x\=b′A'x = b'A′x\=b′ have the same set of solutions.
+
+If (A′∣b′)(A'|b')(A′∣b′) is the reduced row echelon form of (A∣b)(A|b)(A∣b), then A′A'A′ is also in reduced row echelon form.
+
+If (A′∣b′)(A'|b')(A′∣b′) is the reduced row echelon form of (A∣b)(A|b)(A∣b) and there is no row such that the only non zero entry lies in the last column of (A′∣b′)(A'|b')(A′∣b′) then the system Ax\=bAx = bAx\=b has at least one solution.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Choose the set of correct options
+
+If the sum of all the elements of each row of a matrix AAA is 0, then AAA is not invertible.
+
+If EEE is a matrix of order 3×33\\times 33×3 obtained from the identity matrix by a finite number of elementary row operations then EEE is invertible.
+
+ Any system of linear equations has at least one solution.
+
+If AAA is a matrix of order 3×33\\times33×3 and det(A)\=3det(A) = 3det(A)\=3 then det(Adj(A))\=3det(Adj(A)) = 3det(Adj(A))\=3.
+
+If AAA is a matrix of order 3×33\\times33×3 and det(A)\=3det(A) = 3det(A)\=3 then det(Adj(A))\=9det(Adj(A)) = 9det(Adj(A))\=9.
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+If the sum of all the elements of each row of a matrix AAA is 0, then AAA is not invertible.
+
+If EEE is a matrix of order 3×33\\times 33×3 obtained from the identity matrix by a finite number of elementary row operations then EEE is invertible.
+
+If AAA is a matrix of order 3×33\\times33×3 and det(A)\=3det(A) = 3det(A)\=3 then det(Adj(A))\=9det(Adj(A)) = 9det(Adj(A))\=9.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Ramya bought 1 comic book, 2 horror books, and 1 novel from a bookshop which cost her **₹**1000\. Romy bought 2 comic books, 5 horror books, and 1 novel which cost him **₹**2000\. Farjana bought 4 comic books, 5 horror books, and ccc novels from a shop which cost her **₹**ddd. If x1,x2, and x3x\_1, x\_2, \\text{ and } x\_3 x1​,x2​, and x3​ represent the price of each comic book, horror book, and novel, respectively, then choose the set of correct options.
+
+The matrix representation to find x1,x2x\_1, x\_2x1​,x2​ and x3x\_3x3​ is \[12125145c\]\[x1x2x3\]\=\[10002000d\]\\begin{bmatrix} 1 & 2 & 1 \\\\ 2 & 5 & 1 \\\\ 4 & 5 & c \\end{bmatrix} \\begin{bmatrix} x\_1 \\\\ x\_2\\\\ x\_3 \\end{bmatrix}=\\begin{bmatrix} 1000 \\\\ 2000\\\\ d \\end{bmatrix}​124​255​11c​​​x1​x2​x3​​​\=​10002000d​​
+
+The matrix representation to find x1,x2x\_1, x\_2x1​,x2​ and x3x\_3x3​ is \[x1x2x3\]\[12425511c\]\=\[10002000d\] \\begin{bmatrix} x\_1 & x\_2 & x\_3 \\end{bmatrix}\\begin{bmatrix} 1 & 2 & 4 \\\\ 2 & 5 & 5 \\\\ 1 & 1 & c \\end{bmatrix}=\\begin{bmatrix} 1000 & 2000 & d \\end{bmatrix}\[x1​​x2​​x3​​\]​121​251​45c​​\=\[1000​2000​d​\]
+
+The matrix representation to find x1,x2x\_1, x\_2x1​,x2​ and x3x\_3x3​ is \[12425511c\]\[x1x2x3\]\=\[10002000d\] \\begin{bmatrix} 1 & 2 & 4 \\\\ 2 & 5 & 5 \\\\ 1 & 1 & c \\end{bmatrix}\\begin{bmatrix} x\_1 & x\_2 & x\_3 \\end{bmatrix}=\\begin{bmatrix} 1000 & 2000 & d \\end{bmatrix}​121​251​45c​​\[x1​​x2​​x3​​\]\=\[1000​2000​d​\]
+
+If Farjana tries to find x1,x2, and x3x\_1, x\_2, \\text{ and } x\_3x1​,x2​, and x3​ using appropriate matrix representation by taking c\=2c=2c\=2 and d\=4000d=4000d\=4000, then the price of each comic book that she thus arrives at, will not be unique.
+
+If c\=7c = 7c\=7 and d\=4000d = 4000d\=4000, then the price of each comic book cannot be determined from this data.
+
+If c\=7c=7c\=7 and d\=3000d=3000d\=3000, then the shopkeeper has made a mistake.
+
+If c\=2c=2c\=2 and d\=3000d=3000d\=3000, then the price of each comic book can be determined from the data.
+
+### Partially Correct.  
+Score: 0.8
+
+### Accepted Answers:
+
+The matrix representation to find x1,x2x\_1, x\_2x1​,x2​ and x3x\_3x3​ is \[12125145c\]\[x1x2x3\]\=\[10002000d\]\\begin{bmatrix} 1 & 2 & 1 \\\\ 2 & 5 & 1 \\\\ 4 & 5 & c \\end{bmatrix} \\begin{bmatrix} x\_1 \\\\ x\_2\\\\ x\_3 \\end{bmatrix}=\\begin{bmatrix} 1000 \\\\ 2000\\\\ d \\end{bmatrix}​124​255​11c​​​x1​x2​x3​​​\=​10002000d​​
+
+The matrix representation to find x1,x2x\_1, x\_2x1​,x2​ and x3x\_3x3​ is \[x1x2x3\]\[12425511c\]\=\[10002000d\] \\begin{bmatrix} x\_1 & x\_2 & x\_3 \\end{bmatrix}\\begin{bmatrix} 1 & 2 & 4 \\\\ 2 & 5 & 5 \\\\ 1 & 1 & c \\end{bmatrix}=\\begin{bmatrix} 1000 & 2000 & d \\end{bmatrix}\[x1​​x2​​x3​​\]​121​251​45c​​\=\[1000​2000​d​\]
+
+If c\=7c = 7c\=7 and d\=4000d = 4000d\=4000, then the price of each comic book cannot be determined from this data.
+
+If c\=7c=7c\=7 and d\=3000d=3000d\=3000, then the shopkeeper has made a mistake.
+
+If c\=2c=2c\=2 and d\=3000d=3000d\=3000, then the price of each comic book can be determined from the data.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Let A be an m × n matrix such that m < n. How many solutions does Ax = 0 have?
+
+ Exactly one solution.
+
+ Infinitely many solutions.
+
+ No solution.
+
+ Insufficient data. This depends on the entries of A.
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+Infinitely many solutions.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Let A be an n×n matrix such that ∑j\=1naij\=0 for all i. How many solutions does Ax\=0 have?\\text{Let } A \\text{ be an } n \\times n \\text{ matrix such that } \\sum\_{j=1}^n a\_{ij} = 0 \\text{ for all } i. \\text{ How many solutions does } A\\mathbf{x} = \\mathbf{0} \\text{ have?}Let A be an n×n matrix such that ∑j\=1n​aij​\=0 for all i. How many solutions does Ax\=0 have?
+
+ Exactly one solution.
+
+ Infinitely many solutions.
+
+ No solution.
+
+ Insufficient data. This depends on the entries of A.
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+Infinitely many solutions.
+
+  
+  
+Numerical Answer Type (NAT):  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+How many solutions does the following system have? Enter 1 if there is only one solution, 0 if there are no solutions and -1 if there are infinitely many solutions. The coefficient matrix AAA and the vector bbb are given below:
+
+A\=\[10−111−121−2\],b\=\[134\] A = \\begin{bmatrix} 1 & 0 & -1\\\\ 1 & 1 & -1\\\\ 2 & 1 & -2 \\end{bmatrix}, b = \\begin{bmatrix} 1\\\\ 3\\\\ 4 \\end{bmatrix} A\=​112​011​−1−1−2​​,b\=​134​​
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+(Type: Numeric) -1
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+Let the reduced row echelon form of a matrix AAA be \[100−12010−1600116\]. \\begin{bmatrix} 1 & 0 & 0 & -\\frac{1}{2} \\\\ 0 & 1 & 0 & -\\frac{1}{6} \\\\ 0 & 0 & 1 & \\frac{1}{6} \\end{bmatrix}.​100​010​001​−21​−61​61​​​. The first, second, third and fourth columns of AAA are \[10−1\]\\begin{bmatrix} 1\\\\ 0\\\\ -1 \\end{bmatrix}​10−1​​, \[321\]\\begin{bmatrix} 3\\\\ 2\\\\ 1 \\end{bmatrix}​321​​, \[abc\]\\begin{bmatrix} a\\\\ b\\\\ c \\end{bmatrix}​abc​​ and \[−100\]\\begin{bmatrix} -1\\\\ 0\\\\ 0 \\end{bmatrix}​−100​​, respectively. The value of a+b+ca+b+ca+b+c is
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 0
+
+_1 point_
+
+  
+  
+
+JavaScript should be enabled to grade this question.
+
+  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+AAA is the reduced row echelon form of the matrix \[13004155227913900\].\\begin{bmatrix}1 & 3 & 0 & 0 \\\\ 4 & 1 & 5 & 5 \\\\ 2 & 2 & 7 & 91 \\\\ 3 & 9 & 0 & 0\\end{bmatrix}.​1423​3129​0570​05910​​. Then determinant of AAA is
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+(Type: Numeric) 0
+
+_1 point_
+
+  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+If \[xyz\] \\begin{bmatrix} x \\\\ y \\\\ z \\end{bmatrix}​xyz​​ is a solution of the system of equations  
+7x+2y+z\=83y−z\=2−3x+4y−2z\=5 \\begin{aligned} 7x+ 2y + z &= 8 \\\\ 3y-z &= 2 \\\\ -3x+4y-2z &= 5 \\end{aligned}7x+2y+z3y−z−3x+4y−2z​\=8\=2\=5​, then the value of x+y+zx+y+zx+y+z is
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+(Type: Numeric) 121
+
+_1 point_
+
+  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+Let A\=\[1 7 2 9\]A = \[1~7~2~9\]A\=\[1 7 2 9\] and MMM denote the reduced row echelon form of ATAA^TAATA. The number of non-zero rows of MMM is
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+(Type: Numeric) 1
+
+_1 point_
+
+  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+Consider the curve corresponding to the function f(x)\=ax3+bx2+cx+df(x) = ax^3 + bx^2 + cx + df(x)\=ax3+bx2+cx+d. The following points lie on the curve: (1,1),(2,7),(−1,−5),(3,23)(1, 1), (2, 7), (-1, -5), (3, 23)(1,1),(2,7),(−1,−5),(3,23). Find the value of a−b+c−da - b + c - da−b+c−d.
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+(Type: Numeric) 5
+
+_1 point_
+
+  
+  
+Comprehension Type Question:  
+  
+The network in Figure: M2W2GA1 shows a proposed plan for flow of traffic around a park. All the streets are assumed to be one-way and the arrows denote the direction of flow of traffic. The plan calls for a computerized traffic light at the South Street. Let 2x1,3x2,2x3, and x42x\_1, 3x\_2, 2x\_3, \\text{ and } x\_42x1​,3x2​,2x3​, and x4​ denote the average number (per hour) of vehicles expected to pass through the connecting streets (e.g., 2x12x\_12x1​ denote the average number (per hour) of vehicles expected to pass through the street connecting the North Street and West Street as shown in Figure: M2W2GA1). 400, 1000, 900, and ccc denote the average number (per hour) of vehicles expected to pass through West, North, East, and South Streets respectively.  
+  
+                                              ![](images/23.jpg)  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Which of the following options are correct?
+
+The system of equations corresponding to the flow of expected traffic according to the given data above, will be  
+  
+                                                         2x1+3x2\=10003x2+2x3\=9002x3+x4\=c2x1+x4\=400\\begin{aligned} 2x\_1+ 3x\_2 &= 1000\\\\ 3x\_2 +2x\_3 &= 900\\\\ 2x\_3 + x\_4 &= c\\\\ 2x\_1 + x\_4 &= 400 \\end{aligned}2x1​+3x2​3x2​+2x3​2x3​+x4​2x1​+x4​​\=1000\=900\=c\=400​
+
+The system of equations corresponding to the flow of expected traffic according to the given data above, will be  
+  
+                                               2x1+3x2\=9003x2+2x3\=10002x3+x4\=4002x1+x4\=c\\begin{aligned} 2x\_1+ 3x\_2 &= 900\\\\ 3x\_2 +2x\_3 &= 1000\\\\ 2x\_3 + x\_4 &= 400\\\\ 2x\_1 + x\_4 &= c \\end{aligned}2x1​+3x2​3x2​+2x3​2x3​+x4​2x1​+x4​​\=900\=1000\=400\=c​
+
+The matrix representation of the system of equations corresponding to the flow of expected traffic according to the given data above is  
+  
+                                  \[2300032000212001\]\[x1x2x3x4\]\=\[9001000400c\]\\begin{bmatrix} 2 & 3 & 0 & 0\\\\ 0 & 3 & 2 & 0 \\\\ 0 & 0 & 2 & 1 \\\\ 2 & 0 & 0 & 1 \\end{bmatrix} \\begin{bmatrix} x\_1 \\\\ x\_2\\\\ x\_3 \\\\ x\_4 \\end{bmatrix}=\\begin{bmatrix} 900 \\\\ 1000\\\\ 400 \\\\ c \\end{bmatrix}​2002​3300​0220​0011​​​x1​x2​x3​x4​​​\=​9001000400c​​
+
+The matrix representation of the system of equations corresponding to the flow of expected traffic according to the given data above is  
+  
+                                   \[2300032000212001\]\[x1x2x3x4\]\=\[1000900c400\]\\begin{bmatrix} 2 & 3 & 0 & 0\\\\ 0 & 3 & 2 & 0 \\\\ 0 & 0 & 2 & 1 \\\\ 2 & 0 & 0 & 1 \\end{bmatrix} \\begin{bmatrix} x\_1 \\\\ x\_2\\\\ x\_3 \\\\ x\_4 \\end{bmatrix}=\\begin{bmatrix} 1000 \\\\ 900\\\\ c \\\\ 400 \\end{bmatrix}​2002​3300​0220​0011​​​x1​x2​x3​x4​​​\=​1000900c400​​
+
+### Partially Correct.  
+Score: 0.5
+
+### Accepted Answers:
+
+The system of equations corresponding to the flow of expected traffic according to the given data above, will be  
+  
+                                                         2x1+3x2\=10003x2+2x3\=9002x3+x4\=c2x1+x4\=400\\begin{aligned} 2x\_1+ 3x\_2 &= 1000\\\\ 3x\_2 +2x\_3 &= 900\\\\ 2x\_3 + x\_4 &= c\\\\ 2x\_1 + x\_4 &= 400 \\end{aligned}2x1​+3x2​3x2​+2x3​2x3​+x4​2x1​+x4​​\=1000\=900\=c\=400​
+
+The matrix representation of the system of equations corresponding to the flow of expected traffic according to the given data above is  
+  
+                                   \[2300032000212001\]\[x1x2x3x4\]\=\[1000900c400\]\\begin{bmatrix} 2 & 3 & 0 & 0\\\\ 0 & 3 & 2 & 0 \\\\ 0 & 0 & 2 & 1 \\\\ 2 & 0 & 0 & 1 \\end{bmatrix} \\begin{bmatrix} x\_1 \\\\ x\_2\\\\ x\_3 \\\\ x\_4 \\end{bmatrix}=\\begin{bmatrix} 1000 \\\\ 900\\\\ c \\\\ 400 \\end{bmatrix}​2002​3300​0220​0011​​​x1​x2​x3​x4​​​\=​1000900c400​​
+
+JavaScript should be enabled to grade this question.
+
+How many vehicles are expected to pass through the South Street per hour on an average?
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+(Type: Numeric) 300
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Match the names of the street in Column A with the maximum and minimum number of vehicles expected to pass through the street on an average (per hour) in Column B and Column C, respectively; in Table M2W2GA1.  
+  
+![](images/24.jpg)  
+  
+
+d →\\rightarrow→ i →\\rightarrow→ 2
+
+b →\\rightarrow→ iii →\\rightarrow→ 3.
+
+b →\\rightarrow→ iv →\\rightarrow→ 3.
+
+d →\\rightarrow→ ii →\\rightarrow→ 1.
+
+a →\\rightarrow→ iii →\\rightarrow→ 2.
+
+a →\\rightarrow→ iii →\\rightarrow→ 4.
+
+c →\\rightarrow→ i →\\rightarrow→ 4.
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+b →\\rightarrow→ iv →\\rightarrow→ 3.
+
+d →\\rightarrow→ ii →\\rightarrow→ 1.
+
+a →\\rightarrow→ iii →\\rightarrow→ 2.
+
+c →\\rightarrow→ i →\\rightarrow→ 4.
+
+  
+  
+NOTE FOR OPTION-2 IN QUESTION-3: \[For elementary row operation of type-2 (scaling rows by a constant), the constant has to be non-zero. Scaling a row by zero is not permitted\] Please answer this question keeping this in mind.  
+  
+
+Please enable JavaScript to continue using this application.

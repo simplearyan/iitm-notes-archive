@@ -1,15 +1,206 @@
 ---
-title: ""
+title: "AQ4.4: Activity Questions 4 - Not Graded :: IITM Online Degree"
 ---
 
-# 
+# AQ4.4: Activity Questions 4 - Not Graded :: IITM Online Degree
 
-Please wait...
+AQ4.4: Activity Questions 4 - Not Graded
 
-**Error**: Cannot open the page from the filesystem.
+# AQ4.4: Activity Questions 4 - Not Graded
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+This assignment will not be graded and is only for practice.
 
-hAYBAA==,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
+**Level 1  
+  
+**
+
+JavaScript should be enabled to grade this question.
+
+Find the rank of the following matrix: \[013110013203\]\\begin{bmatrix} 0 & 1 & 3 & 1 \\\\ 1 & 0 & 0 & 1 \\\\ 3 & 2 & 0 & 3 \\end{bmatrix}​013​102​300​113​​
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 3
+
+_1 point_
+
+  
+
+JavaScript should be enabled to grade this question.
+
+Consider the following set of vectors SSS in R3\\mathbb{R}^3R3 to answer the questions 2, 3 and 4.  
+S\=S=S\= {(1,2,0),(0,3,1),(3,3,−1),(3,0,−2)(1,2,0), (0,3,1), (3,3,-1), (3,0,-2) (1,2,0),(0,3,1),(3,3,−1),(3,0,−2)}.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Let VVV be the vector space spanned by the vectors (1,2,0) and (0,3,1)(1,2,0) \\text{ and } (0,3,1)(1,2,0) and (0,3,1). Which one of the following is correct?
+
+V\={(a,2a+3b,b)∣a,b∈R}V=\\lbrace (a, 2a+3b, b) \\mid a,b \\in \\mathbb{R} \\rbraceV\={(a,2a+3b,b)∣a,b∈R}
+
+V\={(0,2a−3b,b)∣a,b∈R}V=\\lbrace (0, 2a-3b, b) \\mid a,b \\in \\mathbb{R} \\rbraceV\={(0,2a−3b,b)∣a,b∈R}
+
+V\={(−a,2a+3b,0)∣a,b∈R}V=\\lbrace (-a, 2a+3b, 0) \\mid a,b \\in \\mathbb{R} \\rbraceV\={(−a,2a+3b,0)∣a,b∈R}
+
+V\={(0,2a+3b,0)∣a,b∈R}V=\\lbrace (0, 2a+3b, 0) \\mid a,b \\in \\mathbb{R} \\rbraceV\={(0,2a+3b,0)∣a,b∈R}
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+V\={(a,2a+3b,b)∣a,b∈R}V=\\lbrace (a, 2a+3b, b) \\mid a,b \\in \\mathbb{R} \\rbraceV\={(a,2a+3b,b)∣a,b∈R}
+
+JavaScript should be enabled to grade this question.
+
+If the vectors in SSS are written as the columns of a matrix AAA, then what will be the rank of AAA?
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 2
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+What will the dimension of the vector space spanned by SSS be?
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 2
+
+_1 point_
+
+  
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Choose the set of correct options from the following.
+
+ Row rank and column rank of a matrix is always the same.
+
+ The rank of a zero matrix is always 0.
+
+ The rank of a matrix, all of whose entries are the same non-zero real number, must be 1.
+
+Rank of the n×nn\\times nn×n identity matrix is 1 for any n∈Nn\\in \\mathbb{N}n∈N.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Row rank and column rank of a matrix is always the same.
+
+The rank of a zero matrix is always 0.
+
+The rank of a matrix, all of whose entries are the same non-zero real number, must be 1.
+
+  
+**Level 2  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider the following upper triangular matrix to choose the correct options.  
+  
+                                      \[abc0de00f\]\\begin{bmatrix} a & b & c \\\\ 0 & d & e \\\\ 0 & 0 & f \\end{bmatrix}​a00​bd0​cef​​  
+  
+where a,b,c,d,e,f∈Ra,b,c,d,e,f \\in \\mathbb{R}a,b,c,d,e,f∈R. 
+
+If f\=0f=0f\=0, then the rank of the matrix must be less than or equal to 2.
+
+If f\=0f=0f\=0, then the rank of the matrix must be exactly 2.
+
+If a,b,c,d,e,fa,b,c,d,e,fa,b,c,d,e,f are all non-zero then the rank of the matrix must be 3.
+
+If a,d,fa,d,fa,d,f are non-zero then the rank of the matrix must be 3.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+If f\=0f=0f\=0, then the rank of the matrix must be less than or equal to 2.
+
+If a,b,c,d,e,fa,b,c,d,e,fa,b,c,d,e,f are all non-zero then the rank of the matrix must be 3.
+
+If a,d,fa,d,fa,d,f are non-zero then the rank of the matrix must be 3.
+
+JavaScript should be enabled to grade this question.
+
+If rank of the matrix \[2−3401−21−3a\]\\begin{bmatrix} 2 & -3 & 4 \\\\ 0 & 1 & -2\\\\ 1 & -3 & a \\end{bmatrix}​201​−31−3​4−2a​​ is 2 then find the value of aaa.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 5
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+Find the rank of the matrix AAA, where A\=\[aij\]A = \[a\_{ij}\]A\=\[aij​\] is of order 3×33\\times 33×3 and ai,j\=min{i,j}a\_{i,j} = \\text{min}\\{i, j\\}ai,j​\=min{i,j}, i,j\=1,2,3i, j = 1, 2, 3i,j\=1,2,3.  
+
+\[Hint: Write down the matrix and apply row operations to derive it’s reduced row echelon
+
+form.\]
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 3
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+What is the rank of the matrix A\=\[111xyzx2y2z2\]A=\\begin{bmatrix} 1 & 1 & 1 \\\\ x & y & z \\\\ x^2 & y^2 & z^2 \\end{bmatrix}A\=​1xx2​1yy2​1zz2​​, where x,y,zx,y,zx,y,z are distinct non-zero integers?
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 3
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+Rank of a 3×33\\times 33×3 matrix AAA is 3 and another 3×33\\times 33×3 matrix BBB is 2. What is the minimum possible value for the rank of ABABAB?
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 2
+
+_1 point_
+
+Check Answers
+
+Your score is: 0/10
+
+Please enable JavaScript to continue using this application.

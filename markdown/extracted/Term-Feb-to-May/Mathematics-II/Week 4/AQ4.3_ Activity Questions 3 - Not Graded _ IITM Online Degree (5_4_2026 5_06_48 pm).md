@@ -1,15 +1,245 @@
 ---
-title: ""
+title: "AQ4.3: Activity Questions 3 - Not Graded :: IITM Online Degree"
 ---
 
-# 
+# AQ4.3: Activity Questions 3 - Not Graded :: IITM Online Degree
 
-Please wait...
+AQ4.3: Activity Questions 3 - Not Graded
 
-**Error**: Cannot open the page from the filesystem.
+# AQ4.3: Activity Questions 3 - Not Graded
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+This assignment will not be graded and is only for practice.
 
-oMsAADyHAwA=,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
+**Level 1  
+  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+The dimension of a vector space is the :
+
+ Cardinality of any spanning set.
+
+ Cardinality of a basis.
+
+ Cardinality of minimal spanning set.
+
+ Cardinality of maximal linearly independent set.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Cardinality of a basis.
+
+Cardinality of minimal spanning set.
+
+Cardinality of maximal linearly independent set.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Match the sets of vectors in column A with their properties of linear dependence or independence in column B and the dimension of the vector spaces in column C spanned by the sets.  
+  
+![](images/19.jpg)  
+
+a →\\rightarrow→ ii →\\rightarrow→ 3, b →\\rightarrow→ iii →\\rightarrow→ 2
+
+c →\\rightarrow→ iii →\\rightarrow→ 2, d →\\rightarrow→ iv →\\rightarrow→ 1
+
+a →\\rightarrow→ ii →\\rightarrow→ 4, b →\\rightarrow→ i →\\rightarrow→ 3
+
+c →\\rightarrow→ iv →\\rightarrow→ 1, d →\\rightarrow→ iii →\\rightarrow→ 2
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+a →\\rightarrow→ ii →\\rightarrow→ 4, b →\\rightarrow→ i →\\rightarrow→ 3
+
+c →\\rightarrow→ iv →\\rightarrow→ 1, d →\\rightarrow→ iii →\\rightarrow→ 2
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Choose the set of correct options.
+
+The dimension of the vector space M1×2(R)M\_{1 \\times2} (\\mathbb{R})M1×2​(R) is 2.
+
+The dimension of the vector space M2×1(R)M\_{2 \\times1} (\\mathbb{R})M2×1​(R) is 1.
+
+The dimension of the vector space M3×3(R)M\_{3 \\times3} (\\mathbb{R})M3×3​(R) is 3.
+
+A basis of M2×2(R)M\_{2 \\times2} (\\mathbb{R})M2×2​(R) is the set {\[1000\]\\left \\{\\begin{bmatrix} 1 & 0\\\\ 0 & 0 \\end{bmatrix}\\right .{\[10​00​\], \[0100\]\\begin{bmatrix} 0 & 1\\\\ 0 & 0 \\end{bmatrix}\[00​10​\], \[0010\]\\begin{bmatrix} 0 & 0\\\\ 1 & 0 \\end{bmatrix}\[01​00​\], \[0001\]}\\left .\\begin{bmatrix} 0 & 0\\\\ 0 & 1 \\end{bmatrix}\\right \\}\[00​01​\]}
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+The dimension of the vector space M1×2(R)M\_{1 \\times2} (\\mathbb{R})M1×2​(R) is 2.
+
+A basis of M2×2(R)M\_{2 \\times2} (\\mathbb{R})M2×2​(R) is the set {\[1000\]\\left \\{\\begin{bmatrix} 1 & 0\\\\ 0 & 0 \\end{bmatrix}\\right .{\[10​00​\], \[0100\]\\begin{bmatrix} 0 & 1\\\\ 0 & 0 \\end{bmatrix}\[00​10​\], \[0010\]\\begin{bmatrix} 0 & 0\\\\ 1 & 0 \\end{bmatrix}\[01​00​\], \[0001\]}\\left .\\begin{bmatrix} 0 & 0\\\\ 0 & 1 \\end{bmatrix}\\right \\}\[00​01​\]}
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider the following sets:  
+  
+
+*   V1\={A∣A∈M2×2(R) and A is a symmetric matrix, i.e., A\=AT}V\_1 = \\lbrace A \\mid A \\in M\_{2 \\times2}(\\mathbb{R}) \\text{ and } A \\text{ is a symmetric matrix, i.e., } A= A^T \\rbraceV1​\={A∣A∈M2×2​(R) and A is a symmetric matrix, i.e., A\=AT}
+*   V2\={A∣A∈M2×2(R) and A is a scalar matrix}V\_2 = \\lbrace A \\mid A \\in M\_{2 \\times2}(\\mathbb{R}) \\text{ and } A \\text{ is a scalar matrix} \\rbraceV2​\={A∣A∈M2×2​(R) and A is a scalar matrix}
+*   V3\={A∣A∈M2×2(R) and A is a diagonal matrix}V\_3 = \\lbrace A \\mid A \\in M\_{2 \\times2}(\\mathbb{R}) \\text{ and } A \\text{ is a diagonal matrix} \\rbraceV3​\={A∣A∈M2×2​(R) and A is a diagonal matrix}
+*   V4\={A∣A∈M2×2(R) and A is an upper triangular matrix}V\_4 = \\lbrace A \\mid A \\in M\_{2 \\times2}(\\mathbb{R}) \\text{ and } A \\text{ is an upper triangular matrix}\\rbraceV4​\={A∣A∈M2×2​(R) and A is an upper triangular matrix}
+*   V5\={A∣A∈M2×2(R) and A is a lower triangular matrix}V\_5 = \\lbrace A \\mid A \\in M\_{2 \\times2}(\\mathbb{R}) \\text{ and } A \\text{ is a lower triangular matrix} \\rbraceV5​\={A∣A∈M2×2​(R) and A is a lower triangular matrix} 
+
+All Vi,i\=1,2,3,4,5V\_i, i = 1, 2, 3, 4, 5Vi​,i\=1,2,3,4,5 are subspaces of the vector space M2×2(R)M\_{2 \\times2}(\\mathbb{R})M2×2​(R).  
+Choose the set of correct options.
+
+The dimension of V1V\_1V1​ is 3.
+
+The dimension of V2V\_2V2​ is 3.
+
+The dimension of V3V\_3V3​ is 1.
+
+The dimension of V4V\_4V4​ is 3.
+
+The dimension of V5V\_5V5​ is 3.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+The dimension of V1V\_1V1​ is 3.
+
+The dimension of V4V\_4V4​ is 3.
+
+The dimension of V5V\_5V5​ is 3.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider the following two matrices M1M\_1M1​ and M2M\_2M2​.  
+  
+            M1\=\[143223143421\],M2\=\[100010100101\] M\_1= \\begin{bmatrix} 1 & 4 & 3 & 2 \\\\ 2 & 3 & 1 & 4 \\\\ 3 & 4 & 2 & 1 \\end{bmatrix}, M\_2= \\begin{bmatrix} 1 & 0 & 0 & 0 \\\\ 1 & 0 & 1 & 0 \\\\ 0 & 1 & 0 & 1 \\end{bmatrix} M1​\=​123​434​312​241​​,M2​\=​110​001​010​001​​  
+  
+Choose the correct set of options.
+
+The row rank of both the matrices, M1M\_1M1​ and M2M\_2M2​, is 2.
+
+The row rank of both the matrices, M1M\_1M1​ and M2M\_2M2​, is 3.
+
+The column rank of M1M\_1M1​ is 4, but the column rank of M2M\_2M2​ is 3.
+
+The column rank of M2M\_2M2​ is 4, but the column rank of M1M\_1M1​ is 3.
+
+The column rank of both the matrices, M1M\_1M1​ and M2M\_2M2​, is 4.
+
+The column rank of both the matrices, M1M\_1M1​ and M2M\_2M2​, is 3.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+The row rank of both the matrices, M1M\_1M1​ and M2M\_2M2​, is 3.
+
+The column rank of both the matrices, M1M\_1M1​ and M2M\_2M2​, is 3.
+
+  
+**Level 2  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+Find the dimension of the vector space V\={A∣ sum of entries in each row is 0, and A∈M3×2(R)}.V = \\{ A \\mid \\text{ sum of entries in each row is 0, and } A \\in M\_{3 \\times 2} (\\mathbb{R})\\}.V\={A∣ sum of entries in each row is 0, and A∈M3×2​(R)}.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 3
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+Find the dimension of the vector space V\={(x,y,z,w)∣x+y\=z+w,x+w\=y+z, and x,y,z,w∈R}.V = \\{ (x,y,z,w) \\mid x+y=z+w, x+w=y+z, \\text{ and } x,y,z,w \\in \\mathbb{R}\\}.V\={(x,y,z,w)∣x+y\=z+w,x+w\=y+z, and x,y,z,w∈R}.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 2
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Choose the set of correct options.
+
+If S⊂R2S \\subset \\mathbb{R}^2S⊂R2 contains three vectors, then vectors in SSS must be linearly independent.
+
+If S⊂R3S \\subset \\mathbb{R}^3S⊂R3 contains three vectors, then vectors in SSS may or may not be linearly independent.
+
+If S⊂R4S \\subset \\mathbb{R}^4S⊂R4 contains five vectors, then vectors in SSS must be linearly dependent.
+
+If S⊂RS \\subset \\mathbb{R}S⊂R contains one vector, then the vector in SSS must be linearly dependent.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+If S⊂R3S \\subset \\mathbb{R}^3S⊂R3 contains three vectors, then vectors in SSS may or may not be linearly independent.
+
+If S⊂R4S \\subset \\mathbb{R}^4S⊂R4 contains five vectors, then vectors in SSS must be linearly dependent.
+
+JavaScript should be enabled to grade this question.
+
+Find the dimension of the vector space V\={A∈M3×3(R):A\=AT}V=\\{A\\in M\_{3\\times 3}(\\mathbb{R}): A=A^T\\}V\={A∈M3×3​(R):A\=AT}.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 6
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+Find the dimension of the vector space V\={A∈M3×3(R):A\=−AT}V=\\{A\\in M\_{3\\times 3}(\\mathbb{R}): A=-A^T\\}V\={A∈M3×3​(R):A\=−AT}.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 3
+
+_1 point_
+
+Check Answers
+
+Your score is: 0/10
+
+Please enable JavaScript to continue using this application.
