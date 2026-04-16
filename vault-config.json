@@ -2,6 +2,7 @@
   "excludePatterns": [
     "^L[0-9].*",
     "^Lesson.*",
+    "^Week.*Tutorial.*",
     "\\.pdf$",
     "\\.zip$"
   ],
