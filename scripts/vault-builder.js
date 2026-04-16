@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 
 /**
- * 🏛️ IITM Vault Builder (Definitive Edition)
+ * 🏛️ IITM Vault Builder (Universal Edition)
  * ─────────────────────────────────────────────────────────────────────────────
- * Simplifies the Reading Vault to match the home-page pattern.
+ * Fix: Looks for BOTH archives (.u.zip.html) and unzipped folders (index.html),
+ * making it compatible with the 'optimize-for-prod.js' script.
  */
 
 const fs = require('fs');
@@ -11,7 +12,7 @@ const path = require('path');
 const { JSDOM } = require('jsdom');
 const TurndownService = require('turndown');
 
-// 1. Setup paths relative to the script location
+// 1. Setup paths
 const SCRIPTS_DIR = __dirname;
 const ROOT_DIR = path.resolve(SCRIPTS_DIR, '..');
 const CONTENT_DIR = path.resolve(ROOT_DIR, 'content');
@@ -23,53 +24,69 @@ const INDEX_HTML = path.resolve(VAULT_DIR, 'index.html');
 const turndown = new TurndownService({ headingStyle: 'atx', codeBlockStyle: 'fenced' });
 
 /**
- * 🛠️ Step 1: Atomic Extraction
+ * 🛠️ Step 1: Smart Content Discovery
+ * Finds both raw archives and folders that were already unzipped.
  */
 function runExtraction() {
-    console.log('--- Phase 1: Extraction ---');
+    console.log('--- Phase 1: Smart Discovery & Extraction ---');
     if (fs.existsSync(EXTRACTED_DIR)) fs.rmSync(EXTRACTED_DIR, { recursive: true, force: true });
     fs.mkdirSync(EXTRACTED_DIR, { recursive: true });
 
-    function findArchives(dir) {
-        let files = [];
-        if (!fs.existsSync(dir)) return files;
+    function findSources(dir) {
+        let sources = [];
+        if (!fs.existsSync(dir)) return sources;
         const list = fs.readdirSync(dir, { withFileTypes: true });
+
+        // Is this a folder that was JUST unzipped by optimize-for-prod?
+        if (fs.existsSync(path.join(dir, 'index.html'))) {
+            // Only count it if it's NOT the root or a top-level category
+            if (dir !== CONTENT_DIR) {
+                sources.push({ type: 'folder', path: path.join(dir, 'index.html'), id: dir });
+                return sources; // Stop recursion here, we found the leaf
+            }
+        }
+
         for (const item of list) {
             const full = path.join(dir, item.name);
-            if (item.isDirectory()) files = files.concat(findArchives(full));
-            else if (item.name.toLowerCase().endsWith('.u.zip.html')) files.push(full);
+            if (item.isDirectory()) {
+                sources = sources.concat(findSources(full));
+            } else if (item.name.toLowerCase().endsWith('.u.zip.html')) {
+                sources.push({ type: 'archive', path: full, id: full });
+            }
         }
-        return files;
+        return sources;
     }
 
-    const archives = findArchives(CONTENT_DIR);
-    console.log(`📦 Found ${archives.length} archives in 'content/'.`);
+    const sources = findSources(CONTENT_DIR);
+    console.log(`📦 Found ${sources.length} content sources in 'content/'.`);
 
-    archives.forEach(archive => {
+    sources.forEach(source => {
         try {
-            const html = fs.readFileSync(archive, 'utf-8');
+            const html = fs.readFileSync(source.path, 'utf-8');
             const dom = new JSDOM(html);
             const doc = dom.window.document;
             const main = doc.querySelector('.content-wrapper') || doc.body;
             
-            // Clean content
             main.querySelectorAll('.no-print, nav, footer, script').forEach(el => el.remove());
             const md = turndown.turndown(main.innerHTML);
             const title = doc.title.replace(/_ IITM Online Degree.*$/, '').trim();
 
-            const relPath = path.relative(CONTENT_DIR, archive).replace(/\.u\.zip\.html$/i, '.md');
-            const dest = path.join(EXTRACTED_DIR, relPath);
+            const relPath = path.relative(CONTENT_DIR, source.id)
+                .replace(/\.u\.zip\.html$/i, '')
+                .replace(/\.html$/i, '') + '.md';
             
+            const dest = path.join(EXTRACTED_DIR, relPath);
             fs.mkdirSync(path.dirname(dest), { recursive: true });
             fs.writeFileSync(dest, `---\ntitle: "${title}"\n---\n\n# ${title}\n\n${md}`);
+            // console.log(`✅ Extracted: ${title}`);
         } catch (e) {
-            console.error(`❌ Export failed: ${path.basename(archive)}`);
+            console.error(`❌ Export failed: ${source.path} - ${e.message}`);
         }
     });
 }
 
 /**
- * 🌲 Step 2: Recursive Sidebar Generation (Simpler)
+ * 🌲 Step 2: Recursive Sidebar Generation
  */
 function buildNav(dir, source, relativePath = '') {
     if (!fs.existsSync(dir)) return [];
@@ -109,17 +126,13 @@ function buildNav(dir, source, relativePath = '') {
     return nodes.sort((a,b) => (a.type === b.type ? a.name.localeCompare(b.name) : (a.type === 'folder' ? -1 : 1)));
 }
 
-/**
- * 🚀 Build Runner
- */
 async function build() {
     runExtraction();
 
-    const extractedTree = buildNav(EXTRACTED_DIR, 'extracted');
-    const manualTree = buildNav(MANUAL_DIR, 'manual');
+    const extractedTree = buildNav(EXTRACTED_DIR, 'extracted') || [];
+    const manualTree = buildNav(MANUAL_DIR, 'manual') || [];
     const fullNavigation = [...extractedTree, ...manualTree];
 
-    // Compute simple breadcrumbs map
     const breadcrumbs = {};
     const map = (nodes, trail = []) => {
         nodes.forEach(n => {
@@ -140,14 +153,13 @@ async function build() {
 
     const payload = JSON.stringify({ stats, navigation: fullNavigation, breadcrumbs }, null, 2);
     
-    // Inject into index.html
     let html = fs.readFileSync(INDEX_HTML, 'utf-8');
     const regex = /(<!-- SIDEBAR-DATA-START -->)[\s\S]*?(<!-- SIDEBAR-DATA-END -->)/;
     const replacement = `$1\n    <script id="vault-data" type="application/json">\n    ${payload}\n    </script>\n    $2`;
     
     fs.writeFileSync(INDEX_HTML, html.replace(regex, replacement));
 
-    console.log(`✅ Build Complete! Injected ${stats.totalFiles} documents into Reading Vault.`);
+    console.log(`✅ Build Complete! Injected ${stats.totalFiles} documents.`);
     console.log(`📊 Build ID: ${stats.buildId}`);
 }
 
