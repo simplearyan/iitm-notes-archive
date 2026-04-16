@@ -96,10 +96,7 @@ async function build() {
             const md = turndown.turndown(main.innerHTML);
             const title = doc.title.replace(/_ IITM Online Degree.*$/, '').trim();
 
-            const relPath = path.relative(CONTENT_DIR, source.htmlPath)
-                .replace(/\.u\.zip\.html$/i, '')
-                .replace(/\.html$/i, '') + '.md';
-            
+            const relPath = path.relative(CONTENT_DIR, source.baseDir) + '.md';
             const dest = path.join(EXTRACTED_DIR, relPath);
             fs.mkdirSync(path.dirname(dest), { recursive: true });
             fs.writeFileSync(dest, `---\ntitle: "${title}"\n---\n\n# ${title}\n\n${md}`);
