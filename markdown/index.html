@@ -37,16 +37,7 @@
         body { font-family: var(--font-main); }
         code, pre { font-family: var(--font-mono) !important; }
 
-        /* Custom Scrollbar */
-        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
-        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
-        .custom-scrollbar::-webkit-scrollbar-thumb { 
-            background: rgba(203, 213, 225, 0.2); 
-            border-radius: 10px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(203, 213, 225, 0.4); }
-
-            .katex-display { margin: 1.5rem 0; overflow-x: auto; padding: 1rem 0; }
+        .katex-display { margin: 1.5rem 0; overflow-x: auto; padding: 1rem 0; }
         
         /* 🧠 Smart Header & Progress */
         .smart-header { transition:all 0.4s cubic-bezier(0.4, 0, 0.2, 1); height: 73px; overflow: hidden; }
@@ -144,7 +135,7 @@
             </div>
         </div>
 
-        <nav id="nav-tree" class="flex-1 overflow-y-auto custom-scrollbar px-4 py-4">
+        <nav id="nav-tree" class="flex-1 overflow-y-auto px-4 py-4">
             <div class="flex flex-col items-center justify-center h-full text-slate-300 opacity-50" id="nav-loader">
                 <div class="w-8 h-8 border-2 border-slate-200 border-t-indigo-500 rounded-full animate-spin mb-4"></div>
             </div>
@@ -171,7 +162,7 @@
     <div id="sidebar-overlay" class="fixed inset-0 bg-slate-900/10 backdrop-blur-sm z-30 hidden"></div>
 
     <!-- Main Content Area -->
-    <main id="main-content" class="flex-1 overflow-y-auto custom-scrollbar bg-white md:bg-[#f8fafc] flex flex-col relative">
+    <main id="main-content" class="flex-1 overflow-y-auto bg-white md:bg-[#f8fafc] flex flex-col relative">
         
         <!-- Reading Header (Desktop) -->
         <header id="reading-header" class="hidden md:flex bg-white/90 backdrop-blur-xl border-b border-slate-200 px-12 py-5 items-center justify-between z-20 smart-header sticky top-0 shrink-0 shadow-sm shadow-slate-200/20">
@@ -277,9 +268,9 @@
     <script id="vault-data" type="application/json">
     {
   "stats": {
-    "buildId": "VAULT-1776313640221",
+    "buildId": "VAULT-1776313799441",
     "totalFiles": 125,
-    "timestamp": "2026-04-16T04:27:20.221Z"
+    "timestamp": "2026-04-16T04:29:59.441Z"
   },
   "navigation": [
     {
