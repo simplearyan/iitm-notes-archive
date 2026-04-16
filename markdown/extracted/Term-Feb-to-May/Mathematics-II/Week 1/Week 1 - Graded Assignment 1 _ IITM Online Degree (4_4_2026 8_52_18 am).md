@@ -29,7 +29,7 @@ _1 point_
 
 Match the matrices in column A with their properties in column B and answer the following question.  
   
-![](images/16.jpg)  
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 1/Week 1 - Graded Assignment 1 _ IITM Online Degree \(4_4_2026 8_52_18 am\)/images/16.jpg>)  
 Which of the following are true?  
 
 a) →\\rightarrow→ iii)
@@ -67,7 +67,7 @@ _1 point_
 
 Match the systems of linear equations in Column A with their number of solutions in column B and their geometric representation in Column C and answer the following question.  
   
-![](images/17.jpg)  
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 1/Week 1 - Graded Assignment 1 _ IITM Online Degree \(4_4_2026 8_52_18 am\)/images/17.jpg>)  
   
 Which of the following are true?  
 

@@ -327,20 +327,20 @@ Which of the following represents an augmented matrix of the system?
   
 \[Hint: First try to write down the coefficient matrix AAA and the corresponding vector bbb.\]
 
- ![](images/16.jpg)
+ ![](<../content/Term-Feb-to-May/Mathematics-II/Week 2/Solve with us 2.2 - Not Graded _ IITM Online Degree \(4_4_2026 9_01_40 am\)/images/16.jpg>)
 
- ![](images/17.jpg)
+ ![](<../content/Term-Feb-to-May/Mathematics-II/Week 2/Solve with us 2.2 - Not Graded _ IITM Online Degree \(4_4_2026 9_01_40 am\)/images/17.jpg>)
 
- ![](images/18.jpg)
+ ![](<../content/Term-Feb-to-May/Mathematics-II/Week 2/Solve with us 2.2 - Not Graded _ IITM Online Degree \(4_4_2026 9_01_40 am\)/images/18.jpg>)
 
- ![](images/19.jpg)
+ ![](<../content/Term-Feb-to-May/Mathematics-II/Week 2/Solve with us 2.2 - Not Graded _ IITM Online Degree \(4_4_2026 9_01_40 am\)/images/19.jpg>)
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-![](images/17.jpg)
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 2/Solve with us 2.2 - Not Graded _ IITM Online Degree \(4_4_2026 9_01_40 am\)/images/17.jpg>)
 
 JavaScript should be enabled to grade this question.
 
@@ -348,20 +348,20 @@ _1 point_
 
 What will be the matrix \[R∣c\]\[R|c\]\[R∣c\] obtained by performing the operations that transform AAA to its reduced row echelon form RRR on the augmented matrix?
 
- ![](images/20.jpg)
+ ![](<../content/Term-Feb-to-May/Mathematics-II/Week 2/Solve with us 2.2 - Not Graded _ IITM Online Degree \(4_4_2026 9_01_40 am\)/images/20.jpg>)
 
- ![](images/21.jpg)
+ ![](<../content/Term-Feb-to-May/Mathematics-II/Week 2/Solve with us 2.2 - Not Graded _ IITM Online Degree \(4_4_2026 9_01_40 am\)/images/21.jpg>)
 
- ![](images/22.jpg)
+ ![](<../content/Term-Feb-to-May/Mathematics-II/Week 2/Solve with us 2.2 - Not Graded _ IITM Online Degree \(4_4_2026 9_01_40 am\)/images/22.jpg>)
 
- ![](images/23.jpg)
+ ![](<../content/Term-Feb-to-May/Mathematics-II/Week 2/Solve with us 2.2 - Not Graded _ IITM Online Degree \(4_4_2026 9_01_40 am\)/images/23.jpg>)
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-![](images/23.jpg)
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 2/Solve with us 2.2 - Not Graded _ IITM Online Degree \(4_4_2026 9_01_40 am\)/images/23.jpg>)
 
 JavaScript should be enabled to grade this question.
 

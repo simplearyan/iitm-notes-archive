@@ -21,7 +21,7 @@ JavaScript should be enabled to grade this question.
 _1 point_
 
 Match the vector spaces (with the usual scalar multiplication and vector addition as in M3×3(R)M\_{3\\times 3}(\\mathbb{R})M3×3​(R) ) in column A with their bases in column B in Table : M2W4AQ2.  
-![](images/19.jpg)  
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 4/AQ4.2_ Activity Questions 2 - Not Graded _ IITM Online Degree \(5_4_2026 5_04_49 pm\)/images/19.jpg>)  
 Choose the correct option.
 
 a →\\rightarrow→ ii

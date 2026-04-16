@@ -200,7 +200,7 @@ Score: 0
 
 ### Feedback:
 
-![](images/26.jpg)
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 6/Solve with us 6.1 - Not Graded _ IITM Online Degree \(13_4_2026 7_15_49 am\)/images/26.jpg>)
 
 ### Accepted Answers:
 

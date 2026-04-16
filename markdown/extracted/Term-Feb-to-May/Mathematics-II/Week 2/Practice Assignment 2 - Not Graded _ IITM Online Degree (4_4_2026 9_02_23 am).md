@@ -93,7 +93,7 @@ _1 point_
 
 Choose the correct set of options based on the matrices given in Table M2W2PT1.  
   
-![](images/17.jpg)  
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 2/Practice Assignment 2 - Not Graded _ IITM Online Degree \(4_4_2026 9_02_23 am\)/images/17.jpg>)  
   
   
 
@@ -193,7 +193,7 @@ Comprehension Type Question:
   
 In genetics, a classic example of dominance is the inheritance of seed shape (pea shape) in peas. Peas may be round (associated with genotype R) or wrinkled (associated with genotype r). In this case, three combinations of genotypes are possible: RR, rr, and Rr. The RR individuals have round peas and the rr individuals have wrinkled peas. In Rr individuals the R genotype masks the presence of the r genotype, so these individuals also have round peas. Thus, the genotype R is completely dominant to genotype r, and genotype r is recessive to genotype R. First, assume the crossing of RR with RR. This always gives the genotype RR, therefore the probabilities of an offspring to be RR, Rr, and rr respectively are equal to 1, 0, and 0. Second, assume crossing of Rr with RR. The offspring will have equal chances to be of genotype RR and genotype Rr, therefore the probabilities of RR, Rr, and rr repectively are 1/2, 1/2, and 0. Third, consider crossing of rr with RR. This always results in genotype Rr. Therefore, the probabilities of genotypes RR, Rr, and rr repectively are 0, 1, and 0, respectively. This can be veiwed as the following Table: M2W2PT2  
   
-                                                         ![](images/18.jpg)  
+                                                         ![](<../content/Term-Feb-to-May/Mathematics-II/Week 2/Practice Assignment 2 - Not Graded _ IITM Online Degree \(4_4_2026 9_02_23 am\)/images/18.jpg>)  
   
 The matrix representing this observation is given by P\=\[11/2001/21000\]P=\\begin{bmatrix} 1 & 1/2 & 0 \\\\ 0 & 1/2 & 1 \\\\ 0 & 0 & 0 \\end{bmatrix}P\=​100​1/21/20​010​​. Let the probabilities of RR, Rr, and rr in the initial (i.e., at t\=0t=0t\=0) sample space be X01,X02, and X03X\_0^1, X\_0^2, \\text{ and } X\_0^3X01​,X02​, and X03​, respectively. This is represented by the initial distribution vector (3×13\\times 13×1 matrix) is denoted by X0\=\[X01X02X03\]X\_0=\\begin{bmatrix} X\_0^1\\\\ X\_0^2\\\\ X\_0^3 \\end{bmatrix}X0​\=​X01​X02​X03​​​.  
 For any positive integer nnn, the distribution vector after nnn generations (i.e., at t\=nt=nt\=n) is denoted by XnX\_nXn​ and given by the equation PXn−1\=XnPX\_{n-1}=X\_nPXn−1​\=Xn​.  

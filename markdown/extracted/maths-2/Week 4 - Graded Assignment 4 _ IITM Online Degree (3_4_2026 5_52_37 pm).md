@@ -53,7 +53,7 @@ _1 point_
 
 Match the vector spaces (with the usual scalar multiplication and vector addition as in M3×3(R)M\_{3\\times 3}(\\mathbb{R})M3×3​(R) ) in column A with their bases in column B and the dimensions of the vector spaces in column C in Table : M2W4GA1.  
   
-![](images/31.jpg)  
+![](<../content/maths-2/Week 4 - Graded Assignment 4 _ IITM Online Degree \(3_4_2026 5_52_37 pm\)/images/31.jpg>)  
   
 Choose the correct option.  
 

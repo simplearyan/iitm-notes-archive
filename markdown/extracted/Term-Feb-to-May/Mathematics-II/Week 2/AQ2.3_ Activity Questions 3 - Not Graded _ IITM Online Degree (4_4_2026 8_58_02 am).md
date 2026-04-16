@@ -19,7 +19,7 @@ JavaScript should be enabled to grade this question.
 _1 point_
 
 Match the matrices in Column A with their inverses in Column B.  
-![](images/16.jpg)  
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 2/AQ2.3_ Activity Questions 3 - Not Graded _ IITM Online Degree \(4_4_2026 8_58_02 am\)/images/16.jpg>)  
 
 a →\\rightarrow→ iii
 

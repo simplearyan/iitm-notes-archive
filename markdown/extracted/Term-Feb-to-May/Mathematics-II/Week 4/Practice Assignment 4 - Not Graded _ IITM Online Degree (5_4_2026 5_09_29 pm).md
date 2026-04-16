@@ -22,7 +22,7 @@ _1 point_
 
 Match the vector spaces (with the usual scalar multiplication and vector addition as in M3×3(R)M\_{3\\times 3}(\\mathbb{R})M3×3​(R) ) in column A with their bases in column B in Table : M2W4P1.  
   
-![](images/18.jpg)  
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 4/Practice Assignment 4 - Not Graded _ IITM Online Degree \(5_4_2026 5_09_29 pm\)/images/18.jpg>)  
 Choose the correct option.  
 
 a →\\rightarrow→ i
@@ -52,7 +52,7 @@ _1 point_
 
 Match the sets of vectors in column A with their properties of linear dependence or independence in column B and the dimension of the vector spaces in column C spanned by the sets.  
   
-![](images/19.jpg)  
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 4/Practice Assignment 4 - Not Graded _ IITM Online Degree \(5_4_2026 5_09_29 pm\)/images/19.jpg>)  
 
 a →\\rightarrow→ ii →\\rightarrow→ 4, b →\\rightarrow→ i →\\rightarrow→ 3
 

@@ -34,7 +34,7 @@ TTT is a linear transformation.
 TTT is both one-one and onto.
 
   
-              ![](images/25.jpg)  
+              ![](<../content/Term-Feb-to-May/Mathematics-II/Week 5/Reflect with us - Week 5 _ IITM Online Degree \(13_4_2026 7_09_23 am\)/images/25.jpg>)  
   
 
 *   Step 1:\\textbf{Step 1:}Step 1: 
@@ -114,7 +114,7 @@ TTT is both one-one and onto.
 *   Hence TTT is linear transformation. So Option 1 is true.
 
   
-                ![](images/26.jpg)  
+                ![](<../content/Term-Feb-to-May/Mathematics-II/Week 5/Reflect with us - Week 5 _ IITM Online Degree \(13_4_2026 7_09_23 am\)/images/26.jpg>)  
   
 Now in the given problem T(v)\=0T(v)=0T(v)\=0, implies Av\=0Av=0Av\=0. This is the matrix representation of the system of linear equations:  
                                   ax+by\=0cx+dy\=0\\begin{aligned} ax+by &= 0 \\\\ cx+dy &=0 \\end{aligned} ax+bycx+dy​\=0\=0​  

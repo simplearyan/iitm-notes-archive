@@ -39,7 +39,7 @@ f(x,y,z)\=(x−2z+2,z,x−z+1)f(x, y, z) = (x-2z+2, z, x-z+1)f(x,y,z)\=(x−2z+2
 
   
 Solution:  
-![](images/22.jpg)  
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 7/Reflect with us - Week 7 _ IITM Online Degree \(13_4_2026 7_22_26 am\)/images/22.jpg>)  
   
   
 Discussion on Option 1:\\textbf{Discussion on Option 1:}Discussion on Option 1: It is given that L1\=UL\_1=UL1​\=U and {(2,0,1),(1,1,0),(0,1,0)}\\{(2,0,1),(1,1,0),(0,1,0)\\}{(2,0,1),(1,1,0),(0,1,0)} is a basis of the vector subspace UUU.  
@@ -80,7 +80,7 @@ Score: 0
 
 ### Feedback:
 
-![](images/23.jpg)
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 7/Reflect with us - Week 7 _ IITM Online Degree \(13_4_2026 7_22_26 am\)/images/23.jpg>)
 
 ### Accepted Answers:
 
@@ -110,7 +110,7 @@ Score: 0
 
 ### Feedback:
 
-![](images/24.jpg)
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 7/Reflect with us - Week 7 _ IITM Online Degree \(13_4_2026 7_22_26 am\)/images/24.jpg>)
 
 ### Accepted Answers:
 
@@ -133,7 +133,7 @@ Score: 0
 
 ### Feedback:
 
-![](images/25.jpg)
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 7/Reflect with us - Week 7 _ IITM Online Degree \(13_4_2026 7_22_26 am\)/images/25.jpg>)
 
 ### Accepted Answers:
 
@@ -163,7 +163,7 @@ Score: 0
 
 ### Feedback:
 
-![](images/26.jpg)
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 7/Reflect with us - Week 7 _ IITM Online Degree \(13_4_2026 7_22_26 am\)/images/26.jpg>)
 
 ### Accepted Answers:
 
@@ -195,7 +195,7 @@ Score: 0
 
 ### Feedback:
 
-![](images/27.jpg)
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 7/Reflect with us - Week 7 _ IITM Online Degree \(13_4_2026 7_22_26 am\)/images/27.jpg>)
 
 ### Accepted Answers:
 

@@ -21,7 +21,7 @@ _1 point_
 
 Match the systems of linear equations in Column A with their number of solutions in Column B and their geometric representation in Column C.  
   
-![](images/17.jpg)  
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 1/Practice assignment 1 - Not Graded _ IITM Online Degree \(4_4_2026 8_51_49 am\)/images/17.jpg>)  
 
 i) →\\rightarrow→ c) →\\rightarrow → 2)
 
@@ -129,11 +129,11 @@ _1 point_
 
 The marks obtained by Safina, Ram and Pratiksha in Quiz 1, Quiz 2 and End sem (with the maximum marks for each exam being 100) are shown in Table W1PT2.  
   
-                     ![](images/18.jpg)  
+                     ![](<../content/Term-Feb-to-May/Mathematics-II/Week 1/Practice assignment 1 - Not Graded _ IITM Online Degree \(4_4_2026 8_51_49 am\)/images/18.jpg>)  
   
 The weightage of marks in final grade(in percent) of Quiz 1, Quiz 2, and End sem is shown in Table W1PT3.  
   
-                                       ![](images/19.jpg)  
+                                       ![](<../content/Term-Feb-to-May/Mathematics-II/Week 1/Practice assignment 1 - Not Graded _ IITM Online Degree \(4_4_2026 8_51_49 am\)/images/19.jpg>)  
 Choose the set of correct options.
 
 Final grades (in 100) of Safina, Ram and Pratiksha can be represented by the matrix:  

@@ -50,7 +50,7 @@ JavaScript should be enabled to grade this question.
 _1 point_
 
 Choose the set of correct options using Figure M2W1SWU1.  
-![](images/23.jpg)  
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 1/Solve with us 1.1 - Not Graded _ IITM Online Degree \(4_4_2026 8_51_23 am\)/images/23.jpg>)  
 
 \[Hint: Recall that vector addition and scalar multiplication are done coordinate-
 

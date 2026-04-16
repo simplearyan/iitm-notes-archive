@@ -207,7 +207,7 @@ Let \[A∣b\]\[A|b\]\[A∣b\] denote the augmented matrix of the system of linea
   
 where, A\=\[2113\]A=\\begin{bmatrix} 2 & 1 \\\\ 1 & 3 \\end{bmatrix}A\=\[21​13​\], and b\=\[34\]b=\\begin{bmatrix} 3 \\\\ 4 \\end{bmatrix}b\=\[34​\]. Let the matrix  
   
-                                       ![](images/19.jpg)  
+                                       ![](<../content/Term-Feb-to-May/Mathematics-II/Week 2/AQ2.4_ Activity Questions 4 - Not Graded _ IITM Online Degree \(4_4_2026 8_58_59 am\)/images/19.jpg>)  
   
 denote the reduced row echelon form of the augmented matrix corresponding to the system of linear equations above. Which of the following option(s) is (are) correct?
 

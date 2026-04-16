@@ -29,7 +29,7 @@ _1 point_
 
 The marks obtained by Karthika, Romy and Farzana in Quiz 1, Quiz 2 and End sem (with the maximum marks for each exam being 100) are shown in Table M2W5G1.  
   
-                     ![](images/25.jpg)  
+                     ![](<../content/Term-Feb-to-May/Mathematics-II/Week 5/Week 5 - Graded Assignment - 5 _ IITM Online Degree \(13_4_2026 7_11_03 am\)/images/25.jpg>)  
   
   
 If x1%x\_1 \\%x1​% of Quiz 1, x2%x\_2 \\%x2​% of Quiz 2, and x3%x\_3 \\%x3​% of End sem is taken to calculate the total marks T1(x1,x2,x3),T2(x1,x2,x3), and T3(x1,x2,x3)T\_1(x\_1,x\_2,x\_3), T\_2(x\_1,x\_2,x\_3), \\text{ and } T\_3(x\_1,x\_2,x\_3)T1​(x1​,x2​,x3​),T2​(x1​,x2​,x3​), and T3​(x1​,x2​,x3​) of Karthika, Romy, and Farzana, respectively, then choose the correct set of options.
@@ -265,7 +265,7 @@ _1 point_
 Shubham, Poulami, Asrifa, Raphael, and Vicky bought the same type of pen drives from a shop. The shopkeeper asked them to give ratings on the quality of the pen drives, 1-star being the lowest denoting not satisfied\\textit{not satisfied}not satisfied and 5-stars being the highest denoting extremely satisfied.\\textit{extremely satisfied}.extremely satisfied. Whenever a customer gives a rating, say 3-stars rating, then the vector we consider corresponding to that rating is (0,0,1,0,0)(0,0,1,0,0)(0,0,1,0,0). Note that one customer can rate only once and the same rating can be given by more than one customer.   
 Example:\\textbf{Example:}Example: Table M2W5G2 shows an example of the rating given by the customers mentioned above as: Shubham gave 2-stars rating, Poulami gave 1-star rating, Asrifa gave 1-star rating, Raphael gave 5-stars rating, and Vicky did not give any rating.  
   
-![](images/26.jpg)  
+![](<../content/Term-Feb-to-May/Mathematics-II/Week 5/Week 5 - Graded Assignment - 5 _ IITM Online Degree \(13_4_2026 7_11_03 am\)/images/26.jpg>)  
   
 Based on the above information answer the following questions.  
   
