@@ -1,0 +1,58 @@
+name: "🤖 Automatic Content Sync (24h)"
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Every night at midnight UTC
+  repository_dispatch:
+    types: [content_updated]
+  workflow_dispatch: # Keep manual trigger just in case
+
+jobs:
+  auto-sync:
+    name: 🔄 Auto-Sync Engine
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: 📦 Install Dependencies
+        run: npm install
+
+      - name: 📂 Checkout Content Repository
+        uses: actions/checkout@v4
+        with:
+          repository: simplearyan/iitm-notes-archive-content
+          path: content
+
+      - name: "🏗️ Build Reading Vault (Atomic Sync)"
+        run: node --expose-gc --max-old-space-size=6144 scripts/vault-builder.js
+        env:
+          NODE_OPTIONS: "--expose-gc"
+          CLEAN_ASSETS: "true" # Always clean in auto-mode for safety
+
+      - name: 🔓 Bypass Ignore Rules
+        run: |
+          rm -f .gitignore
+          echo "" > markdown/.gitignore
+
+      - name: "🚀 Deploy to gh-pages"
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./markdown
+          publish_branch: gh-pages
+          destination_dir: markdown
+          commit_message: "🤖 Auto: Sync external content vault [skip ci]"
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          keep_files: true
