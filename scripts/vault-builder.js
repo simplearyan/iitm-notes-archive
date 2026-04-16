@@ -1,12 +1,9 @@
 #!/usr/bin/env node
 
 /**
- * 🛠️ Reading Vault Builder (Project Simplified)
+ * 🛠️ Ultra-Simple Reading Vault Builder
  * ─────────────────────────────────────────────────────────────────────────────
- * 1. Extracts course materials to Markdown.
- * 2. Scans manually written notes.
- * 3. Builds a master navigation tree.
- * 4. INJECTS the tree directly into 'markdown/index.html'.
+ * Mirroring the logic of 'generate-sidebar.js' for maximum stability.
  */
 
 const fs = require('fs');
@@ -14,149 +11,139 @@ const path = require('path');
 const { JSDOM } = require('jsdom');
 const TurndownService = require('turndown');
 
-// ============ CONFIGURATION ============
-const CWD = process.cwd();
-const INPUT_DIR = path.resolve(CWD, 'content');
-const VAULT_ROOT = path.resolve(CWD, 'markdown');
-const EXTRACTED_DIR = path.resolve(VAULT_ROOT, 'extracted');
-const MANUAL_DIR = path.resolve(VAULT_ROOT, 'manual');
-const UI_PATH = path.resolve(VAULT_ROOT, 'index.html');
+// 1. Absolute Paths (Relative to this script)
+const SCRIPTS_DIR = __dirname;
+const ROOT_DIR = path.join(SCRIPTS_DIR, '..');
+const CONTENT_DIR = path.join(ROOT_DIR, 'content');
+const VAULT_DIR = path.join(ROOT_DIR, 'markdown');
+const EXTRACTED_DIR = path.join(VAULT_DIR, 'extracted');
+const MANUAL_DIR = path.join(VAULT_DIR, 'manual');
+const UI_PATH = path.join(VAULT_DIR, 'index.html');
 
-const turndownService = new TurndownService({
-    headingStyle: 'atx',
-    codeBlockStyle: 'fenced'
-});
-
-// ============ UTILITIES ============
-
-function cleanName(name) {
-    return name
-        .replace(/_+/g, ' ')
-        .replace(/\s*\(\d{1,2}_\d{1,2}_\d{4}.*?\)/, '') // remove timestamps
-        .replace(/\.u\.zip$/, '')
-        .replace(/\.md$/, '')
-        .trim();
-}
+const turndown = new TurndownService({ headingStyle: 'atx', codeBlockStyle: 'fenced' });
 
 /**
- * 🕵️ Recursively find files
+ * 🕵️ Phase 1: Heavy-Duty Archive Extraction
  */
-function walk(dir, extension) {
-    let results = [];
-    if (!fs.existsSync(dir)) return results;
-    const list = fs.readdirSync(dir, { withFileTypes: true });
-    for (const entry of list) {
-        const fullPath = path.join(dir, entry.name);
-        if (entry.isDirectory()) {
-            results = results.concat(walk(fullPath, extension));
-        } else if (entry.name.toLowerCase().endsWith(extension)) {
-            results.push(fullPath);
-        }
-    }
-    return results;
-}
-
-// ============ EXTRACTION ============
-
-function extractModule(sourcePath) {
-    try {
-        const html = fs.readFileSync(sourcePath, 'utf-8');
-        const dom = new JSDOM(html);
-        const doc = dom.window.document;
-
-        const mainContent = doc.querySelector('.content-wrapper') || doc.body;
-        if (!mainContent) return null;
-
-        // Clean UI noise
-        mainContent.querySelectorAll('.no-print, nav, footer, script').forEach(el => el.remove());
-
-        const markdown = turndownService.turndown(mainContent.innerHTML);
-        const title = doc.title.replace(/_ IITM Online Degree.*$/, '').trim();
-
-        // Build path mirroring structure
-        const relPath = path.relative(INPUT_DIR, sourcePath).replace(/\.u\.zip\.html$/i, '.md');
-        const destPath = path.join(EXTRACTED_DIR, relPath);
-
-        fs.mkdirSync(path.dirname(destPath), { recursive: true });
-        
-        const fileContent = `---\ntitle: "${title}"\nsource: "extracted"\n---\n\n# ${title}\n\n${markdown}`;
-        fs.writeFileSync(destPath, fileContent);
-
-        return {
-            type: 'file',
-            name: title,
-            path: relPath.replace(/\.md$/, ''),
-            source: 'extracted'
-        };
-    } catch (err) {
-        console.error(`❌ Skip ${path.basename(sourcePath)}: ${err.message}`);
-        return null;
-    }
-}
-
-// ============ BUILD & INJECT ============
-
-function buildNavTree(dir, source, relativeRoot = '') {
-    if (!fs.existsSync(dir)) return [];
+function extractAll() {
+    console.log(`📂 Searching for course materials in: ${CONTENT_DIR}`);
     
-    const entries = fs.readdirSync(dir, { withFileTypes: true });
-    const nodes = [];
-
-    for (const entry of entries) {
-        if (entry.name.startsWith('.') || ['assets', 'node_modules'].includes(entry.name)) continue;
-        
-        const fullPath = path.join(dir, entry.name);
-        const relPath = relativeRoot ? `${relativeRoot}/${entry.name}` : entry.name;
-
-        if (entry.isDirectory()) {
-            const children = buildNavTree(fullPath, source, relPath);
-            if (children.length > 0) {
-                nodes.push({
-                    type: 'folder',
-                    name: cleanName(entry.name),
-                    path: relPath,
-                    children
-                });
-            }
-        } else if (entry.name.endsWith('.md')) {
-            // Read title from file if possible, otherwise clean name
-            const content = fs.readFileSync(fullPath, 'utf-8');
-            const titleMatch = content.match(/^title:\s*"(.*)"/m) || content.match(/^#+\s*(.*)/m);
-            const title = titleMatch ? titleMatch[1].trim() : cleanName(entry.name);
-            
-            nodes.push({
-                type: 'file',
-                name: title,
-                path: relPath.replace(/\.md$/, ''),
-                source: source
-            });
+    function findZips(dir) {
+        let results = [];
+        if (!fs.existsSync(dir)) return results;
+        const items = fs.readdirSync(dir, { withFileTypes: true });
+        for (const item of items) {
+            const full = path.join(dir, item.name);
+            if (item.isDirectory()) results = results.concat(findZips(full));
+            else if (item.name.toLowerCase().endsWith('.u.zip.html')) results.push(full);
         }
+        return results;
     }
 
-    return nodes.sort((a, b) => {
-        if (a.type !== b.type) return a.type === 'folder' ? -1 : 1;
-        return a.name.localeCompare(b.name);
+    const zips = findZips(CONTENT_DIR);
+    console.log(`📦 Found ${zips.length} archives.`);
+
+    zips.forEach((zipPath) => {
+        try {
+            const html = fs.readFileSync(zipPath, 'utf-8');
+            const dom = new JSDOM(html);
+            const doc = dom.window.document;
+            const main = doc.querySelector('.content-wrapper') || doc.body;
+            if (!main) return;
+
+            main.querySelectorAll('.no-print, nav, footer, script').forEach(el => el.remove());
+            const md = turndown.turndown(main.innerHTML);
+            const title = doc.title.replace(/_ IITM Online Degree.*$/, '').trim();
+
+            const relPath = path.relative(CONTENT_DIR, zipPath).replace(/\.u\.zip\.html$/i, '.md');
+            const target = path.join(EXTRACTED_DIR, relPath);
+            
+            fs.mkdirSync(path.dirname(target), { recursive: true });
+            fs.writeFileSync(target, `---\ntitle: "${title}"\n---\n\n# ${title}\n\n${md}`);
+            console.log(`✅ Extracted: ${title}`);
+        } catch (e) {
+            console.error(`❌ Failed ${path.basename(zipPath)}: ${e.message}`);
+        }
     });
 }
 
-function runBuild() {
-    console.log('🚀 Building Reading Vault...');
+/**
+ * 🌲 Phase 2: Simple Tree Building (Mirroring generate-sidebar.js)
+ */
+function buildTree(currentPath, source, relativePath = '') {
+    if (!fs.existsSync(currentPath)) return null;
+    const stats = fs.statSync(currentPath);
 
-    // 1. Extractions
-    const zips = walk(INPUT_DIR, '.u.zip.html');
-    console.log(`📦 Found ${zips.length} modules to extract.`);
-    zips.forEach(zip => extractModule(zip));
+    if (stats.isDirectory()) {
+        const children = fs.readdirSync(currentPath)
+            .filter(child => !child.startsWith('.') && child !== 'assets')
+            .map(child => buildTree(path.join(currentPath, child), source, relativePath ? `${relativePath}/${child}` : child))
+            .filter(Boolean);
 
-    // 2. Scan both hierarchies
-    const extractedNav = buildNavTree(EXTRACTED_DIR, 'extracted');
-    const manualNav = buildNavTree(MANUAL_DIR, 'manual');
-    const fullNav = [...extractedNav, ...manualNav];
+        if (children.length === 0) return null;
+
+        return {
+            type: 'folder',
+            name: path.basename(currentPath).replace(/_+/g, ' ').replace(/\s*\(\d{1,2}_\d{1,2}_\d{4}.*?\)/, '').trim(),
+            path: relativePath,
+            children: children.sort((a,b) => {
+                if (a.type !== b.type) return a.type === 'folder' ? -1 : 1;
+                return a.name.localeCompare(b.name);
+            })
+        };
+    } else if (currentPath.endsWith('.md')) {
+        // Read title from frontmatter or first H1
+        const content = fs.readFileSync(currentPath, 'utf-8');
+        const titleMatch = content.match(/^title:\s*"(.*)"/m) || content.match(/^#+\s*(.*)/m);
+        const name = titleMatch ? titleMatch[1].trim() : path.basename(currentPath, '.md');
+
+        return {
+            type: 'file',
+            name: name,
+            path: relativePath.replace(/\.md$/, ''),
+            source: source
+        };
+    }
+    return null;
+}
+
+/**
+ * 🚀 Build & Inject
+ */
+function main() {
+    console.log('🏛️ --- VAULT MASTER BUILD ---');
+    
+    // 1. Cleanup & Extract
+    if (fs.existsSync(EXTRACTED_DIR)) fs.rmSync(EXTRACTED_DIR, { recursive: true, force: true });
+    extractAll();
+
+    // 2. Build Nav
+    const extractedNavNodes = buildTree(EXTRACTED_DIR, 'extracted') || { children: [] };
+    const manualNavNodes = buildTree(MANUAL_DIR, 'manual') || { children: [] };
+    
+    // Flatten the roots so we don't have "extracted" as a top-level accordion
+    const finalNavigation = [
+        ...(extractedNavNodes.children || (extractedNavNodes.type === 'folder' ? extractedNavNodes.children : [extractedNavNodes])),
+        ...(manualNavNodes.children || (manualNavNodes.type === 'folder' ? manualNavNodes.children : [manualNavNodes]))
+    ].filter(Boolean);
 
     // 3. Stats & Breadcrumbs
+    const allMarkdownFiles = (dir) => {
+        let results = [];
+        if (!fs.existsSync(dir)) return results;
+        const list = fs.readdirSync(dir, { withFileTypes: true });
+        for (const item of list) {
+            const full = path.join(dir, item.name);
+            if (item.isDirectory()) results = results.concat(allMarkdownFiles(full));
+            else if (item.name.endsWith('.md')) results.push(full);
+        }
+        return results;
+    };
+
     const stats = {
-        totalFiles: walk(EXTRACTED_DIR, '.md').length + walk(MANUAL_DIR, '.md').length,
-        extractedFiles: walk(EXTRACTED_DIR, '.md').length,
-        manualFiles: walk(MANUAL_DIR, '.md').length
+        totalFiles: allMarkdownFiles(EXTRACTED_DIR).length + allMarkdownFiles(MANUAL_DIR).length,
+        extractedFiles: allMarkdownFiles(EXTRACTED_DIR).length,
+        manualFiles: allMarkdownFiles(MANUAL_DIR).length
     };
 
     const breadcrumbs = {};
@@ -167,25 +154,16 @@ function runBuild() {
             if (n.children) mapper(n.children, currentTrail);
         });
     };
-    mapper(fullNav);
+    mapper(finalNavigation);
 
-    // 4. Inject
-    const jsonData = JSON.stringify({ stats, navigation: fullNav, breadcrumbs }, null, 2);
+    // 4. Atomic Injection
+    const jsonData = JSON.stringify({ stats, navigation: finalNavigation, breadcrumbs }, null, 2);
     let html = fs.readFileSync(UI_PATH, 'utf-8');
-    
     const regex = /(<!-- SIDEBAR-DATA-START -->)[\s\S]*?(<!-- SIDEBAR-DATA-END -->)/;
-    const replacement = `$1\n    <script id="vault-data" type="application/json">\n    ${jsonData}\n    </script>\n    $2`;
-    
-    const newHtml = html.replace(regex, replacement);
+    const newHtml = html.replace(regex, `$1\n    <script id="vault-data" type="application/json">\n    ${jsonData}\n    </script>\n    $2`);
     fs.writeFileSync(UI_PATH, newHtml);
 
-    console.log('✅ Vault built and sidebar injected successfully!');
-    console.log(`📊 Stats: ${stats.totalFiles} documents, ${stats.extractedFiles} extracted.`);
+    console.log(`✅ VAULT COMPLETE: ${stats.totalFiles} documents injected.`);
 }
 
-try {
-    runBuild();
-} catch (err) {
-    console.error('💥 Build Failed:', err);
-    process.exit(1);
-}
+main();
