@@ -57,31 +57,48 @@ function collectFiles(dir) {
 /**
  * Clean up HTML formatting for Markdown conversion
  */
+/**
+ * Clean up HTML formatting for Markdown conversion
+ * FIX: Improved whitespace handling and Math Protection
+ */
 function htmlToMd(node) {
-  if (node.nodeType === 3) return node.textContent; // Text node
+  if (node.nodeType === 3) {
+    // Standardize whitespace: collapse multiple spaces but keep single natural space
+    return node.textContent.replace(/\s+/g, ' '); 
+  }
   if (node.nodeType !== 1) return ''; // Skip other types
 
-  let content = '';
-  node.childNodes.forEach(child => { content += htmlToMd(child); });
-
   const tag = node.tagName.toLowerCase();
+  
+  // 🛡️ Special Case: Protected LaTeX Math
+  if (tag === 'latex-blob') {
+    const tex = node.getAttribute('data-tex');
+    const isDisplay = node.getAttribute('data-display') === 'true';
+    return isDisplay ? `\n\n$$\n${tex}\n$$\n\n` : `$${tex}$`;
+  }
+
+  let content = '';
+  node.childNodes.forEach(child => {
+    content += htmlToMd(child);
+  });
+
   switch (tag) {
-    case 'b': case 'strong': return `**${content}**`;
-    case 'i': case 'em': return `*${content}*`;
+    case 'b': case 'strong': return ` **${content.trim()}** `;
+    case 'i': case 'em': return ` *${content.trim()}* `;
     case 'h1': return `\n# ${content}\n`;
-    case 'h2': return `\n## ${content}\n`;
-    case 'h3': return `\n### ${content}\n`;
-    case 'p': return `\n${content}\n`;
+    case 'h2': return `\n## ${content.trim()}\n`;
+    case 'h3': return `\n### ${content.trim()}\n`;
+    case 'p': case 'div': return `\n\n${content}\n\n`;
     case 'br': return '\n';
-    case 'li': return `- ${content}\n`;
+    case 'li': return `- ${content.trim()}\n`;
     case 'ul': return `\n${content}\n`;
     case 'img': 
       const alt = node.getAttribute('alt') || 'image';
       const src = node.getAttribute('src');
-      return `\n![${alt}](${src})\n`;
+      return `\n\n![${alt}](${src})\n\n`;
     case 'a':
       const href = node.getAttribute('href');
-      return `[${content}](${href})`;
+      return ` [${content.trim()}](${href}) `;
     default: return content;
   }
 }
@@ -116,16 +133,17 @@ async function processArchive(filePath) {
     const document = dom.window.document;
 
     // 1. MATH CONVERSION: KaTeX -> LaTeX
+    // 🛡️ High-Fidelity Protection: Wrap in a custom tag to prevent HTML-cleaning artifacts
     const katexBlocks = document.querySelectorAll('.katex');
     katexBlocks.forEach(k => {
       const annotation = k.querySelector('annotation[encoding="application/x-tex"]');
       if (annotation) {
         const tex = annotation.textContent.trim();
         const isDisplay = k.closest('.katex-display') !== null;
-        const replacement = isDisplay ? `\n$$\n${tex}\n$$\n` : `$${tex}$`;
-        const span = document.createElement('span');
-        span.textContent = replacement;
-        k.parentNode.replaceChild(span, k);
+        const blob = document.createElement('latex-blob');
+        blob.setAttribute('data-tex', tex);
+        blob.setAttribute('data-display', isDisplay ? 'true' : 'false');
+        k.parentNode.replaceChild(blob, k);
       }
     });
 
@@ -157,7 +175,15 @@ async function processArchive(filePath) {
 
     let markdown = `# ${baseName}\n\n`;
     contentArea.childNodes.forEach(child => { markdown += htmlToMd(child); });
-    markdown = markdown.replace(/\n{3,}/g, '\n\n').trim();
+    
+    // 🪄 Post-Processing: Fix spacing, collapsing words, and double punctuation
+    markdown = markdown
+      .replace(/[ \t]+/g, ' ')           // Collapse horizontal spaces
+      .replace(/\n[ ]+/g, '\n')          // Remove spaces at start of lines
+      .replace(/[ ]+\n/g, '\n')          // Remove spaces at end of lines
+      .replace(/\n{3,}/g, '\n\n')        // Collapse triple newlines
+      .replace(/\$ \$/g, '$$')           // Fix accidentally spaced delimiters
+      .trim();
 
     fs.writeFileSync(outFile, markdown);
     

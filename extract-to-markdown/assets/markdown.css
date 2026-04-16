@@ -1,0 +1,329 @@
+/**
+ * Markdown Content Styles
+ * Tailwind prose-like styles for markdown-rendered content
+ */
+
+#markdown-content {
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+/* Headings */
+#markdown-content h1,
+#markdown-content h2,
+#markdown-content h3,
+#markdown-content h4,
+#markdown-content h5,
+#markdown-content h6 {
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.25;
+}
+
+#markdown-content h1 {
+    font-size: 2.25rem;
+    color: #f1f5f9;
+}
+
+#markdown-content h2 {
+    font-size: 1.875rem;
+    color: #e2e8f0;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.3);
+    padding-bottom: 0.5rem;
+}
+
+#markdown-content h3 {
+    font-size: 1.5rem;
+    color: #cbd5e1;
+}
+
+#markdown-content h4 {
+    font-size: 1.25rem;
+    color: #cbd5e1;
+}
+
+#markdown-content h5 {
+    font-size: 1.125rem;
+    color: #cbd5e1;
+}
+
+#markdown-content h6 {
+    font-size: 1rem;
+    color: #cbd5e1;
+}
+
+/* Paragraphs & General Text */
+#markdown-content p {
+    margin-bottom: 1.25rem;
+    color: #e2e8f0;
+}
+
+#markdown-content strong {
+    font-weight: 700;
+    color: #f1f5f9;
+}
+
+#markdown-content em {
+    font-style: italic;
+    color: #cbd5e1;
+}
+
+/* Links */
+#markdown-content a {
+    color: #6366f1;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+#markdown-content a:hover {
+    color: #818cf8;
+}
+
+/* Lists */
+#markdown-content ul,
+#markdown-content ol {
+    margin-left: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+#markdown-content li {
+    margin-bottom: 0.5rem;
+    color: #e2e8f0;
+}
+
+#markdown-content ul li {
+    list-style-type: disc;
+}
+
+#markdown-content ol li {
+    list-style-type: decimal;
+}
+
+#markdown-content ul ul,
+#markdown-content ol ul {
+    list-style-type: circle;
+    margin-left: 2rem;
+}
+
+#markdown-content ol ol,
+#markdown-content ul ol {
+    list-style-type: lower-latin;
+    margin-left: 2rem;
+}
+
+/* Code */
+#markdown-content code {
+    background-color: rgba(51, 65, 85, 0.5);
+    color: #f1d5d5;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-size: 0.875rem;
+}
+
+#markdown-content pre {
+    background-color: #1e293b;
+    border: 1px solid rgba(51, 65, 85, 0.5);
+    border-radius: 0.5rem;
+    margin-bottom: 1.25rem;
+    overflow-x: auto;
+}
+
+#markdown-content pre code {
+    background-color: transparent;
+    color: #e2e8f0;
+    padding: 0;
+    border-radius: 0;
+}
+
+/* Code blocks with language identifier background */
+#markdown-content .code-block {
+    position: relative;
+}
+
+#markdown-content .code-block-label {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    background: rgba(99, 102, 241, 0.2);
+    color: #818cf8;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0 0 0.25rem 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Blockquotes */
+#markdown-content blockquote {
+    border-left: 4px solid #6366f1;
+    padding-left: 1.5rem;
+    margin-left: 0;
+    margin-bottom: 1.25rem;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+#markdown-content blockquote p {
+    margin-bottom: 0.5rem;
+}
+
+/* Tables */
+#markdown-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.25rem;
+    font-size: 0.9rem;
+}
+
+#markdown-content table thead {
+    background-color: rgba(99, 102, 241, 0.1);
+    border-bottom: 2px solid rgba(99, 102, 241, 0.3);
+}
+
+#markdown-content table th {
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 700;
+    color: #cbd5e1;
+}
+
+#markdown-content table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.3);
+    color: #e2e8f0;
+}
+
+#markdown-content table tbody tr:hover {
+    background-color: rgba(99, 102, 241, 0.05);
+}
+
+/* Horizontal Rule */
+#markdown-content hr {
+    border: none;
+    border-top: 2px solid rgba(51, 65, 85, 0.3);
+    margin: 2rem 0;
+}
+
+/* Images */
+#markdown-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* KaTeX Math */
+.katex {
+    font-size: 1em;
+    color: #e2e8f0;
+}
+
+.katex-display {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+/* Emphasis/Highlights */
+#markdown-content mark {
+    background-color: rgba(245, 158, 11, 0.2);
+    color: #fcd34d;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.2rem;
+}
+
+/* Line Numbers for code (optional - depends on syntax highlighter) */
+.line-numbers {
+    color: #64748b;
+    font-size: 0.85em;
+    user-select: none;
+    padding-right: 1rem;
+}
+
+/* Definition Lists (if used) */
+#markdown-content dt {
+    font-weight: 700;
+    margin-top: 0.75rem;
+    color: #cbd5e1;
+}
+
+#markdown-content dd {
+    margin-left: 2rem;
+    margin-bottom: 0.75rem;
+    color: #94a3b8;
+}
+
+/* Abbreviations */
+#markdown-content abbr {
+    border-bottom: 1px dotted rgba(148, 163, 184, 0.5);
+    cursor: help;
+}
+
+/* Footnotes (if used) */
+#markdown-content .footnote-ref a {
+    color: #818cf8;
+    font-size: 0.85em;
+    vertical-align: super;
+}
+
+#markdown-content .footnote-backref a {
+    color: #818cf8;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #markdown-content {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    #markdown-content h1 {
+        font-size: 1.875rem;
+    }
+    
+    #markdown-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    #markdown-content h3 {
+        font-size: 1.25rem;
+    }
+    
+    #markdown-content table {
+        font-size: 0.8rem;
+    }
+    
+    #markdown-content table th,
+    #markdown-content table td {
+        padding: 0.5rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    #markdown-content {
+        color: #000;
+    }
+    
+    #markdown-content a {
+        color: #0066cc;
+    }
+    
+    #markdown-content code,
+    #markdown-content pre {
+        background-color: #f5f5f5;
+        color: #000;
+        border-radius: 0;
+    }
+    
+    #markdown-content blockquote {
+        border-left-color: #ccc;
+        color: #666;
+    }
+}

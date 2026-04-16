@@ -301,9 +301,9 @@
     <script id="vault-data" type="application/json">
     {
   "stats": {
-    "buildId": "HANDOUTS-1776320344090",
+    "buildId": "HANDOUTS-1776321237814",
     "totalFiles": 177,
-    "timestamp": "2026-04-16T06:19:04.091Z"
+    "timestamp": "2026-04-16T06:33:57.815Z"
   },
   "navigation": [
     {
@@ -2823,7 +2823,8 @@
                 renderer.image = (token) => {
                     let src = token.href;
                     if (!src.startsWith('http')) {
-                        src = `extracted/assets/${src.split('/').pop()}`;
+                        // Force assets to load from the central handouts assets folder
+                        src = `../handouts/assets/${src.split('/').pop()}`;
                     }
                     return `<div class="my-10 flex flex-col items-center">
                         <img src="${src}" alt="${token.text || 'Image'}" class="max-w-full">
