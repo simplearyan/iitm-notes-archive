@@ -77,6 +77,19 @@ async function build() {
             
             main.querySelectorAll('.no-print, nav, footer, script').forEach(el => el.remove());
 
+            // 🎓 Handle KaTeX (HTML to Markdown-Safe LaTeX)
+            main.querySelectorAll('.katex').forEach(k => {
+                const annotation = k.querySelector('annotation[encoding="application/x-tex"]');
+                if (annotation) {
+                    const tex = annotation.textContent.trim();
+                    const isDisplay = k.closest('.katex-display') !== null;
+                    const replacement = isDisplay ? `\n$$\n${tex}\n$$\n` : `$${tex}$`;
+                    const span = doc.createElement('span');
+                    span.textContent = replacement;
+                    k.parentNode.replaceChild(span, k);
+                }
+            });
+
             // 📸 Centralize Images
             const courseId = path.relative(CONTENT_DIR, source.baseDir).replace(/[\\/]/g, '_');
             
