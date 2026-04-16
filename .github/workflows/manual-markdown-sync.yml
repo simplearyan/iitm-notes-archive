@@ -53,8 +53,8 @@ jobs:
             exit 1
           fi
 
-      - name: "🏗️ Build Reading Vault (Atomic Sync)"
-        run: node --expose-gc --max-old-space-size=6144 scripts/generate-markdown-vault.js
+      - name: "🏗️ Build Reading Vault (Injected Sync)"
+        run: node --expose-gc --max-old-space-size=6144 scripts/vault-builder.js
         env:
           NODE_OPTIONS: "--expose-gc"
 

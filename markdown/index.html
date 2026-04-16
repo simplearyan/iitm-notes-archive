@@ -184,6 +184,16 @@
         <div class="hidden xl:block fixed right-8 top-32 w-48" id="toc-container"></div>
     </main>
 
+    <!-- SIDEBAR-DATA-START -->
+    <script id="vault-data" type="application/json">
+    {
+      "stats": { "totalFiles": 1, "extractedFiles": 0, "manualFiles": 1 },
+      "navigation": [ { "type": "file", "name": "Getting Started with Markdown", "path": "manual/GETTING_STARTED", "source": "manual" } ],
+      "breadcrumbs": { "manual/GETTING_STARTED": ["Getting Started with Markdown"] }
+    }
+    </script>
+    <!-- SIDEBAR-DATA-END -->
+
     <script>
         /**
          * IITM Markdown Vault Core Engine
@@ -243,22 +253,22 @@
 
             async function loadIndex() {
                 try {
-                    // Force fresh index load after every deployment
-                    const bust = `?v=${new Date().getTime()}`;
-                    const res = await fetch(MD_CONFIG.INDEX_FILE + bust);
-                    if (!res.ok) throw new Error("Index file missing");
-                    STATE.index = await res.json();
+                    // NEW: Read from injected DOM instead of fetching a file
+                    const dataEl = document.getElementById('vault-data');
+                    if (!dataEl) throw new Error("Sidebar data missing from HTML");
+                    
+                    STATE.index = JSON.parse(dataEl.textContent);
                     
                     // Diagnostic Log
-                    console.log("📂 Reading Vault Index Loaded:", STATE.index);
+                    console.log("📂 Reading Vault Index (Injected):", STATE.index);
                     
                     document.getElementById('stats-label').innerText = `${STATE.index.stats.totalFiles} Documents Loaded`;
                     renderNav(STATE.index.navigation);
                 } catch (err) {
                     console.error("Critical Load Error:", err);
                     document.getElementById('nav-loader').innerHTML = `
-                        <p class="text-xs text-rose-400 font-bold">FAILED TO LOAD INDEX</p>
-                        <p class="text-[9px] text-slate-400 mt-2">Run 'npm run markdown:all'</p>
+                        <p class="text-xs text-rose-400 font-bold">FAILED TO LOAD DATA</p>
+                        <p class="text-[9px] text-slate-400 mt-2">Check console for injection status</p>
                     `;
                 }
             }

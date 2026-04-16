@@ -44,8 +44,8 @@ jobs:
           rm -rf markdown/extracted/*
           mkdir -p markdown/extracted/assets
 
-      - name: "🏗️ Build Reading Vault (Atomic)"
-        run: node --expose-gc --max-old-space-size=6144 scripts/generate-markdown-vault.js
+      - name: "🏗️ Build Reading Vault (Atomic Injection)"
+        run: node --expose-gc --max-old-space-size=6144 scripts/vault-builder.js
         env:
           NODE_OPTIONS: "--expose-gc"
 
