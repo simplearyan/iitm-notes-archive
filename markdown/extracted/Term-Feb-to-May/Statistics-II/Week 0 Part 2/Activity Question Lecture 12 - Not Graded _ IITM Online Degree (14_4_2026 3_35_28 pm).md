@@ -1,119 +1,15 @@
 ---
-title: "Activity Question Lecture 12 - Not Graded :: IITM Online Degree"
+title: ""
 ---
 
-# Activity Question Lecture 12 - Not Graded :: IITM Online Degree
+# 
 
-Activity Question Lecture 12 - Not Graded
+Please wait...
 
-# Activity Question Lecture 12 - Not Graded
+**Error**: Cannot open the page from the filesystem.
 
-This assignment will not be graded and is only for practice.
+*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
+*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
+*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
 
-Note : This activity is only for practice purpose and it will not be counted towards the Final score  
-  
-**(Use the below information for question 1 and 2)  
-  
-**If **AAA** and **BBB** be two events with P(A)\>0P(A) > 0P(A)\>0 and P(B)\>0P(B) > 0P(B)\>0.
-
-JavaScript should be enabled to grade this question.
-
-JavaScript should be enabled to grade this question.
-
-_1 point_
-
-Which of the following is/are equal to P(A∩B)P(A ∩ B)P(A∩B)?
-
-P(B)×P(A∣B)P(B) × P(A|B)P(B)×P(A∣B)
-
-P(A)×P(B∣A)P(A) × P(B|A)P(A)×P(B∣A)
-
-P(B)×P(B∣A)P(B) × P(B|A)P(B)×P(B∣A)
-
-P(A)×P(A∣B)P(A) × P(A|B)P(A)×P(A∣B)
-
-### No, the answer is incorrect.  
-Score: 0
-
-### Accepted Answers:
-
-P(B)×P(A∣B)P(B) × P(A|B)P(B)×P(A∣B)
-
-P(A)×P(B∣A)P(A) × P(B|A)P(A)×P(B∣A)
-
-JavaScript should be enabled to grade this question.
-
-_1 point_
-
-Which of the following is/are equal to P(B∣A)P(B|A)P(B∣A)?
-
-P(B)×P(A∣B)P(A)\\displaystyle\\frac{P(B)×P(A|B)}{P(A)} P(A)P(B)×P(A∣B)​
-
-P(A)×P(A∣B)P(A)\\displaystyle\\frac{P(A)×P(A|B)}{P(A)} P(A)P(A)×P(A∣B)​
-
-P(A)×P(A∣B)P(B)\\displaystyle\\frac{P(A)×P(A|B)}{P(B)} P(B)P(A)×P(A∣B)​
-
-P(B)×P(B∣A)P(A)\\displaystyle\\frac{P(B)×P(B|A)}{P(A)} P(A)P(B)×P(B∣A)​
-
-### No, the answer is incorrect.  
-Score: 0
-
-### Accepted Answers:
-
-P(B)×P(A∣B)P(A)\\displaystyle\\frac{P(B)×P(A|B)}{P(A)} P(A)P(B)×P(A∣B)​
-
-  
-
-JavaScript should be enabled to grade this question.
-
-JavaScript should be enabled to grade this question.
-
-_1 point_
-
-A student is writing IAS prelims. In that prelims paper, all the questions are multiple choice questions. For each question there are four possible choices and only one is correct. The probability that the student knows the answer to a question is 909090%.If he does not know the answer, he will select one choice at random. Given that he answers a question correctly, what is the conditional probability that he was guessing?
-
-137\\displaystyle\\frac{1}{37}371​
-
-537\\displaystyle\\frac{5}{37}375​
-
-237\\displaystyle\\frac{2}{37}372​
-
-737\\displaystyle\\frac{7}{37}377​
-
-### No, the answer is incorrect.  
-Score: 0
-
-### Accepted Answers:
-
-137\\displaystyle\\frac{1}{37}371​
-
-JavaScript should be enabled to grade this question.
-
-_1 point_
-
-Three companies Kookabura, Dukes and SG supply 252525%, 353535% and 404040% of the cricket balls to the international cricket respectively. Past experience show that 555%, 444% and 222% of the cricket balls produced by these companies respectively are defective, respectively. If a cricket ball was found to be defective, what is the conditional probability that the cricket ball was supplied by Kookabura?
-
-4479\\displaystyle\\frac{44}{79} 7944​
-
-2569\\displaystyle\\frac{25}{69} 6925​
-
-2279\\displaystyle\\frac{22}{79} 7922​
-
-1124\\displaystyle\\frac{11}{24} 2411​
-
-### No, the answer is incorrect.  
-Score: 0
-
-### Accepted Answers:
-
-2569\\displaystyle\\frac{25}{69} 6925​
-
-  
-  
-  
-
-Check Answers
-
-Your score is: 0/4
-
-Please enable JavaScript to continue using this application.
+3F0CAA==,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

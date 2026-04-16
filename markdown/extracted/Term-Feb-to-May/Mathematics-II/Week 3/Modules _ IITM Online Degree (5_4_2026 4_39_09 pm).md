@@ -1,40 +1,15 @@
 ---
-title: "Modules :: IITM Online Degree"
+title: ""
 ---
 
-# Modules :: IITM Online Degree
+# 
 
-Overview Question Test Cases Code
+Please wait...
 
-This Assignment will not be considered for Course participation Marks after 16th Oct 2022
+**Error**: Cannot open the page from the filesystem.
 
-## Instructions for Extended Match Questions
+*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
+*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
+*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
 
-[Use this slide to understand how to answer an EMQ](https://slides.com/ishaanpod/how-to-answer-emq)  
-  
-**_Instructions:  
-_**1. For each question, enter all the options which you find is the answer to that question as "**comma separated values**".  
-2. Enter the options in **ascending order** of option number.  
-3. An option can also be an answer to more than one question, or may not be an answer to any of the questions.  
-4. [Please click here to view a sample template file for answering.](https://backend.seek.study.iitm.ac.in/22q1_ma1002/assets/img/EMQ_sample_file.txt)  
-5. Please note that if you give an incorrect answer there will be a negative marking for the incorrect option.  
-  
-**_List of Options:  
-_**1.Linearly independent set.  
-2.Linearly dependent set.  
-3.If we remove any one of the vectors from the set, then it will be linearly independent.  
-4.If we put the vector (1,1,1)(1,1,1)(1,1,1) in the set, then it will be linearly dependent.  
-5.There exist one vector in the set, if we remove that vector from the set, then it will be linearly independent.  
-6.If we remove any two vectors from the set, then the set will be linearly independent.  
-  
-  
-**_List of Questions:  
-_**  
-**Q1.**Consider the set S1\={(1,0,1),(1,0,0),(1,1,0),(0,1,0)}S\_1=\\{(1,0,1), (1,0,0), (1,1,0), (0,1,0)\\}S1​\={(1,0,1),(1,0,0),(1,1,0),(0,1,0)}. Which of the above options is(are) true for S1S\_1S1​?  
-  
-**Q2.**Consider the set S2\={(1,1,0),(1,1,0)+(0,1,1),(1,1,0)−(0,1,0)}S\_2=\\{(1,1,0), (1,1,0)+(0,1,1), (1,1,0)-(0,1,0) \\}S2​\={(1,1,0),(1,1,0)+(0,1,1),(1,1,0)−(0,1,0)} with usual coordinate-wise addition and scalar multiplication. Which of the above options is(are) true for S2S\_2S2​?  
-  
-**Q3.**Consider the set of all points on XXX\-axis, each one treated as a different vectors in R3\\mathbb{R}^3R3, with usual addition and scalar multiplication. Which of the above options is(are) true for this set  
-  
-
-Please enable JavaScript to continue using this application.
+zDsCAA==,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

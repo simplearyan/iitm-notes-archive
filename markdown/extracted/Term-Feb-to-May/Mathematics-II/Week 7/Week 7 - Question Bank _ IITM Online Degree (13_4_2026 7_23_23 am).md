@@ -1,11 +1,15 @@
 ---
-title: "Week 7 - Question Bank :: IITM Online Degree"
+title: ""
 ---
 
-# Week 7 - Question Bank :: IITM Online Degree
+# 
 
-Week 7 - Question Bank
+Please wait...
 
-[Click here to view](https://drive.google.com/file/d/1WXMf35cJGqubTEq9Gvo4btyY7Aw-lySo/view?usp=sharing) 
+**Error**: Cannot open the page from the filesystem.
 
-Please enable JavaScript to continue using this application.
+*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
+*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
+*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+
+,OAEAAN0CAADDBQAAGQYAAP8GAAAXBwAA2wcAAIEIAAAgCQAALAkAADkLAABjDgAAiA4AAHMPAACMEQAAAxIAACMSAADpEgAA+hIAAPkUAADDFQAA2xgAAEIZAACoHAAA1RwAALMiAACrIwAA4yMAAF8kAACbJQAAzSYAAJInAACoKQAArSoAAK8rAAABLAAAdi0AANguAADtLgAAnDAAAKQxAAAkMgAAdDIAAI4zAADJNAAApjUAAHw4AAB8OQAAiToAAMw6AADzOgAAQz0AAIg9AAC1PgAAGkAAALFDAADsRAAAtkUAAA5HAABGSAAAeEkAAGNKAAAKSwAAS0sAAGNNAABiUQAAg1EAAJNRAADlUgAA/VIAAPtTAAAUVAAAWlQAAAtWAAC8WAAAzFkAADVaAABtWgAArFoAACBbAAD9WwAAF1wAAMxcAAAkYAAAVmAAAGVgAAARYQAANGQAALZkAABSZgAAn2YAAC5pAAAxaQAAIGoAAAZtAABFbQAAoW0AAJtuAADrbgAAgG8AAChxAABTcgAAknQAALF0AABadQAAonUAAP51AACPdgAAZXcAAD54AAC2eAAA9HgAALN9AAC1fgAAIX8AAMd/AAAfgAAAJYAAAL6AAAAJgQAAIIMAAPCEAABvhQAAtIUAAJyGAACkhgAA8oYAAAeHAAD0hwAAB4gAACCJAAAkigAALYoAAC2MAACUjAAA+IwAACuPAABTkAAAPJMAAFSWAACulgAAyJcAAAuYAABOmAAAh5gAAMKZAAD0mQAAHpoAAACbAABJnAAAqZwAANOcAADynAAArZ0AAFOeAACcngAAwp8AAAygAAA7oAAAkKAAAGWlAAA9pgAA66YAAMWnAAAcqgAAA6sAAAqrAAA/rQAAK68AAC2wAADNsAAAUbEAAAWzAACOswAAnbMAAL+zAAAJtAAAY7QAACW1AAD/tQAAcrcAAFK4AAAeuQAAZ7oAAKa6AAAJvQAA4b4AAB/BAAB/wQAAesIAAHzCAACbxAAAAMYAAHrGAAApxwAARcoAAHbKAAB2ywAAkc0AAIPQAADg0gAA3tMAAG3UAABi1QAA39UAAPrVAABC2QAAY9oAANnbAAAG3AAA4dwAAObcAADl3QAAv98AADjgAAD04AAAouEAAHriAACm4gAAQ+MAAFjjAACj5QAA++UAAO3mAAAT6AAAv+gAAOnoAABy6QAAx+kAAOXpAACP6wAAF+0AALjvAAAz8QAAavQAAMf3AADV+AAAWPkAAOX5AAAz+gAAX/wAAKz8AADu/AAAGP0AAHH9AAAc/gAA9f4AAIv/AACWBgEARQgBABQJAQBICQEAywkBADYMAQCeDQEARA8BACMQAQB6EgEAtBIBAIEYAQCLGQEAiBoBAF8bAQC3HQEAFB4BAG8eAQC9HwEA5B8BABohAQAEIgEA2CUBAEYmAQCBJgEA/CgBAAQqAQByLAEALi0BAGQtAQBALgEAGi8BADUvAQAaMQEAVDMBAJ8zAQATNQEA4TUBAMY4AQAsOQEAjzkBAGU6AQCEOgEAdz8BAKM/AQBrQQEAmEEBAIlCAQASRAEAekQBADdFAQA=

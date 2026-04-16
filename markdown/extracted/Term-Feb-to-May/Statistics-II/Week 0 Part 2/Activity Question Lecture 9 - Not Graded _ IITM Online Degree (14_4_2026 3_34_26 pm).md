@@ -1,81 +1,15 @@
 ---
-title: "Activity Question Lecture 9 - Not Graded :: IITM Online Degree"
+title: ""
 ---
 
-# Activity Question Lecture 9 - Not Graded :: IITM Online Degree
+# 
 
-Activity Question Lecture 9 - Not Graded
+Please wait...
 
-# Activity Question Lecture 9 - Not Graded
+**Error**: Cannot open the page from the filesystem.
 
-This assignment will not be graded and is only for practice.
+*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
+*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
+*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
 
-**Note : This activity is only for practice purpose and it will not be counted towards the Final score  
-  
-**
-
-JavaScript should be enabled to grade this question.
-
-JavaScript should be enabled to grade this question.
-
-What is the value of P(A∣A)P(A|A)P(A∣A)?
-
-### No, the answer is incorrect.  
-Score: 0
-
-### Accepted Answers:
-
-(Type: Numeric) 1
-
-_1 point_
-
-JavaScript should be enabled to grade this question.
-
-_1 point_
-
-Given that events A1A\_{1}A1​ and A2A\_{2}A2​ are disjoint, which of the following is equal to P((A1∪A2)∣B)P((A1 ∪ A2)|B)P((A1∪A2)∣B)?
-
-P(A1∣B)+P(A2∣B)P(A\_{1} |B) + P(A\_{2}|B)P(A1​∣B)+P(A2​∣B)
-
-P(A1∣B)∗P(A2∣B)P(A\_{1}|B) ∗ P(A\_{2}|B)P(A1​∣B)∗P(A2​∣B)
-
-P(A1∣B)−P(A2∣B)P(A\_{1}|B) − P(A\_{2}|B)P(A1​∣B)−P(A2​∣B)
-
-### No, the answer is incorrect.  
-Score: 0
-
-### Accepted Answers:
-
-P(A1∣B)+P(A2∣B)P(A\_{1} |B) + P(A\_{2}|B)P(A1​∣B)+P(A2​∣B)
-
-JavaScript should be enabled to grade this question.
-
-Given 2P(A)\=P(B)\=5132P(A) = P(B) = \\frac{5}{13} 2P(A)\=P(B)\=135​, P(A∣B)\=25P(A|B) = \\frac{2}{5} P(A∣B)\=52​, evaluate P(A∪B)P(A∪B)P(A∪B). (Answer the question correct upto two decimal points.)
-
-### No, the answer is incorrect.  
-Score: 0
-
-### Accepted Answers:
-
-(Type: Range) 0.40,0.45
-
-_1 point_
-
-JavaScript should be enabled to grade this question.
-
-Dhoni played two balls in a cricket match. In each ball, he is equally likely to score any number of runs between 111 and 666. The runs scored in the two balls are independent. What is the probability that the product of the runs scored by Dhoni is a perfect square? (Answer the question correct upto two decimal points.)
-
-### No, the answer is incorrect.  
-Score: 0
-
-### Accepted Answers:
-
-(Type: Range) 0.20,0.24
-
-_1 point_
-
-Check Answers
-
-Your score is: 0/4
-
-Please enable JavaScript to continue using this application.
+5VwCAA==,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

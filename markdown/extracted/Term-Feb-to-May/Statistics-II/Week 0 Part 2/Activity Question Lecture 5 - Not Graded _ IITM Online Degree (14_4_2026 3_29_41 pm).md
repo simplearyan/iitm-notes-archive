@@ -1,71 +1,15 @@
 ---
-title: "Activity Question Lecture 5 - Not Graded :: IITM Online Degree"
+title: ""
 ---
 
-# Activity Question Lecture 5 - Not Graded :: IITM Online Degree
+# 
 
-Activity Question Lecture 5 - Not Graded
+Please wait...
 
-# Activity Question Lecture 5 - Not Graded
+**Error**: Cannot open the page from the filesystem.
 
-This assignment will not be graded and is only for practice.
+*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
+*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
+*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
 
-**Note : This activity is only for practice purpose and it will not be counted towards the Final score  
-  
-**
-
-JavaScript should be enabled to grade this question.
-
-JavaScript should be enabled to grade this question.
-
-_1 point_
-
-The entire probability space (sample space, events, and probability function) satisfy some axioms. Which of the following are those axioms?
-
-The probability of an event is a real number greater than or equal to 0.0.0.
-
-The probability of the entire sample space is 1.1.1.
-
-If E1E\_1E1​ and E2E\_2E2​ are two mutually exclusive events, meaning that they have an empty intersection and we use ∪∪∪ to denote the union, then P(E1∪E2)P(E1 ∪ E2)P(E1∪E2) = P(E1)P(E1)P(E1) + P(E2).P(E2).P(E2).
-
-The probability of an impossible event is always 1.1.1.
-
-### No, the answer is incorrect.  
-Score: 0
-
-### Accepted Answers:
-
-The probability of an event is a real number greater than or equal to 0.0.0.
-
-The probability of the entire sample space is 1.1.1.
-
-If E1E\_1E1​ and E2E\_2E2​ are two mutually exclusive events, meaning that they have an empty intersection and we use ∪∪∪ to denote the union, then P(E1∪E2)P(E1 ∪ E2)P(E1∪E2) = P(E1)P(E1)P(E1) + P(E2).P(E2).P(E2).
-
-JavaScript should be enabled to grade this question.
-
-_1 point_
-
-Consider a session of the parliament. The event that the Rajya sabha successfully passes a bill is denoted AAA and the event that the Lok sabha successfully passes a bill is denoted BBB. Suppose P(A)P(A)P(A) = 101010% and P(B)P(B)P(B) = 131313%, then what is the chance that either AAA or BBB occurs? (select all that apply)
-
-232323%
-
-at most 232323%
-
-at least 131313%
-
-100100100%
-
-### No, the answer is incorrect.  
-Score: 0
-
-### Accepted Answers:
-
-at most 232323%
-
-at least 131313%
-
-Check Answers
-
-Your score is: 0/2
-
-Please enable JavaScript to continue using this application.
+zx4BAA==,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

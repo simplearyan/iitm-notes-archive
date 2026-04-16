@@ -1,103 +1,15 @@
 ---
-title: "AQW02.16: Activity Question 16 - Not Graded :: IITM Online Degree"
+title: ""
 ---
 
-# AQW02.16: Activity Question 16 - Not Graded :: IITM Online Degree
+# 
 
-AQW02.16: Activity Question 16 - Not Graded
+Please wait...
 
-# AQW02.16: Activity Question 16 - Not Graded
+**Error**: Cannot open the page from the filesystem.
 
-This assignment will not be graded and is only for practice.
+*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
+*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
+*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
 
-**Note : This activity is only for practice purpose and it will not be counted towards the Final score  
-**
-
-JavaScript should be enabled to grade this question.
-
-JavaScript should be enabled to grade this question.
-
-Suppose that the number of runs scored of a delivery is uniform in {1,2,3,4,5,61, 2, 3, 4, 5, 61,2,3,4,5,6} independent of what happens in other deliveries. A batsman needs to bat till he hits a six. What is the probability that he needs fewer than 6 66 deliveries to do so? (Answer the question correct to two decimal points.)
-
-### No, the answer is incorrect.  
-Score: 0
-
-### Accepted Answers:
-
-(Type: Range) 0.58,0.62
-
-_1 point_
-
-  
-**(Use the below information for question 2 and 3)  
-**  
-
-A football match between Argentina and Portugal is going on and till the last minute
-
-none of the teams has scored a single goal so the match referee decided to go for penalty
-
-shoot. From Argentina, Messi will go for penalty all the time and from Portugal, Ronaldo  
-
-will go for penalty each time. There is 404040% chance that Messi can convert penalty into
-
-goal whereas 707070% chance that Ronaldo can convert penalty into goal. Each penalty
-
-shoot is totally independent of previous one. The two player will go for penalty shoot
-
-alternatively and Ronaldo will start the penalty. If Ronaldo hits the penalty first then
-
-portugal will win and messi will not be allowed to do the penalty. (Assuming no boundation
-
-on number of penalty)  
-
-JavaScript should be enabled to grade this question.
-
-JavaScript should be enabled to grade this question.
-
-What is the probability that Messi wins before third round of penalty? (Answer the question correct to two decimal points.)
-
-### No, the answer is incorrect.  
-Score: 0
-
-### Accepted Answers:
-
-(Type: Range) 0.12,0.16
-
-_1 point_
-
-JavaScript should be enabled to grade this question.
-
-What is the probability that Ronaldo will win? (Answer the question correct to two decimal points.)
-
-### No, the answer is incorrect.  
-Score: 0
-
-### Accepted Answers:
-
-(Type: Range) 0.84,0.87
-
-_1 point_
-
-JavaScript should be enabled to grade this question.
-
-In Ludo, Prashant needs to repeatedly throw a unbiased die till he gets a 666. What is the probability than he needs fewer than 444 throws? (Answer the question correct upto two decimal points.)
-
-### No, the answer is incorrect.  
-Score: 0
-
-### Accepted Answers:
-
-(Type: Range) 0.40,0.44
-
-_1 point_
-
-  
-  
-
-  
-
-Check Answers
-
-Your score is: 0/4
-
-Please enable JavaScript to continue using this application.
+,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

@@ -1,86 +1,15 @@
 ---
-title: "AQW02.14: Activity Question 14 - Not Graded :: IITM Online Degree"
+title: ""
 ---
 
-# AQW02.14: Activity Question 14 - Not Graded :: IITM Online Degree
+# 
 
-AQW02.14: Activity Question 14 - Not Graded
+Please wait...
 
-# AQW02.14: Activity Question 14 - Not Graded
+**Error**: Cannot open the page from the filesystem.
 
-This assignment will not be graded and is only for practice.
+*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
+*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
+*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
 
-**Note : This activity is only for practice purpose and it will not be counted towards the Final score  
-  
-**
-
-JavaScript should be enabled to grade this question.
-
-JavaScript should be enabled to grade this question.
-
-_1 point_
-
-How many outcomes are possible for a Bernoulli trial?
-
-Exactly 333
-
-Exactly 111
-
-Exactly 222
-
-Exactly 444
-
-### No, the answer is incorrect.  
-Score: 0
-
-### Accepted Answers:
-
-Exactly 222
-
-JavaScript should be enabled to grade this question.
-
-_1 point_
-
-A fair coin is tossed 121212 times independently. What is the probability of getting 777 tails?
-
-0.190.190.19
-
-0.820.820.82
-
-0.570.570.57
-
-0.380.380.38
-
-### No, the answer is incorrect.  
-Score: 0
-
-### Accepted Answers:
-
-0.190.190.19
-
-JavaScript should be enabled to grade this question.
-
-_1 point_
-
-Upcoming T20 series between India and England consists of 555 matches. Here only two outcomes are possible either one team will win or the other team. Assuming both team are having equal chance of winning each game, what is the probability that India will whitewash(Win all the matches) England?
-
-132\\displaystyle\\frac{1}{32} 321​
-
-332\\displaystyle\\frac{3}{32} 323​
-
-532\\displaystyle\\frac{5}{32} 325​
-
-732\\displaystyle\\frac{7}{32} 327​
-
-### No, the answer is incorrect.  
-Score: 0
-
-### Accepted Answers:
-
-132\\displaystyle\\frac{1}{32} 321​
-
-Check Answers
-
-Your score is: 0/3
-
-Please enable JavaScript to continue using this application.
+,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

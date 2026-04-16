@@ -1,11 +1,15 @@
 ---
-title: "Solve with Instructor Session Slides :: IITM Online Degree"
+title: ""
 ---
 
-# Solve with Instructor Session Slides :: IITM Online Degree
+# 
 
-Solve with Instructor Session Slides
+Please wait...
 
-[Click here to view the PDF Session Slides](https://drive.google.com/file/d/1PMcuaKW8icPYYu1R1q_t9DK9ILFwzeKf/view?usp=sharing)
+**Error**: Cannot open the page from the filesystem.
 
-Please enable JavaScript to continue using this application.
+*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
+*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
+*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+
+,GgAAAAEBAAAIAQAAPQMAACkFAAArBgAAywYAAE8HAAADCQAAjAkAAJsJAAC9CQAABwoAAGEKAAAjCwAA/QsAAHANAABQDgAAHA8AAGUQAACkEAAABxMAAN8UAAAdFwAAfRcAAHgYAAB6GAAAmRoAAP4bAAB4HAAAJx0AAEMgAAB0IAAAdCEAAI8jAACBJgAA3igAANwpAABrKgAAYCsAAN0rAAD4KwAAQC8AAGEwAADXMQAABDIAAN8yAADkMgAA4zMAAL01AAA2NgAA8jYAAKA3AAB4OAAApDgAAEE5AABWOQAAoTsAAPk7AADrPAAAET4AAL0+AADnPgAAcD8AAMU/AADjPwAAjUEAABVDAAC2RQAAMUcAAGhKAADFTQAA004AAFZPAADjTwAAMVAAABRRAADAUgAAT1MAAMxTAADoUwAAJlQAAEtUAABsVAAA91QAAPtUAAAqVQAAMlcAAHVXAAD/VwAAslgAAMNYAAB5WgAAGFsAAAdcAADuXQAAOF4AAHxeAACLXwAAcmAAANdgAABlYgAAJ2MAAMxkAACyZwAACGgAAO5oAAAGaQAAymkAAHBqAAAPawAAG2sAAChtAABScAAAd3AAAGJxAAB7cwAA8nMAABJ0AADYdAAA6XQAAOh2AACydwAAynoAADF7AACXfgAAxH4AAKKEAACahQAA0oUAAE6GAACKhwAAvIgAAIGJAACXiwAAnIwAAJ6NAADwjQAAZY8AAMeQAADckAAAi5IAAJOTAAATlAAAY5QAAH2VAAC4lgAAlZcAAGuaAABrmwAAeJwAALucAADinAAAMp8AAHefAACkoAAACaIAAKClAADbpgAApacAAP2oAAA1qgAAZ6sAAFKsAAD5rAAAOq0AAFKvAABRswAAcrMAAIKzAADUtAAA7LQAAOq1AAADtgAASbYAAPq3AACrugAAu7sAACS8AABcvAAAm7wAAA+9AADsvQAABr4AALu+AAATwgAARcIAAFTCAAAAwwAAI8YAAKXGAABByAAAjsgAAB3LAAAgywAAD8wAAPXOAAA0zwAAkM8AAIrQAADa0AAAb9EAABfTAABC1AAAgdYAAKDWAABJ1wAAkdcAAO3XAAB+2AAAVNkAAC3aAACl2gAA49oAAKLfAACk4AAAEOEAALbhAAAO4gAAFOIAAK3iAAD44gAAD+UAAN/mAABe5wAAo+cAAIvoAACT6AAA4egAAPboAADj6QAA9ukAAA/rAAAT7AAAHOwAABzuAACD7gAA5+4AABrxAABC8gAAK/UAAEP4AACd+AAAt/kAAPr5AAA9+gAAdvoAALH7AADj+wAADfwAAO/8AAA4/gAAmP4AAML+AADh/gAAnP8AAEIAAQCLAAEAsQEBAPsBAQAqAgEAfwIBAFQHAQAsCAEA2ggBALQJAQDiDwEA6hABAFgTAQAUFAEAShQBACYVAQAAFgEAGxYBAAAYAQA6GgEAhRoBAPkbAQDHHAEArB8BABIgAQB1IAEASyEBAGohAQBdJgEAiSYBAFEoAQB+KAEAbykBANErAQCwLAEABy8BAEEvAQAONQEAGDYBABU3AQDsNwEARDoBAKE6AQD8OgEASjwBAHE8AQCnPQEAkT4BAGpEAQDSRAEAj0UBAA==
