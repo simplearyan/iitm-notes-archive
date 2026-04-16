@@ -213,8 +213,13 @@ const ANN = {
         
         const main = document.getElementById('main-content');
         if (main) {
-            this.canvas.setAttribute('height', Math.max(main.scrollHeight, window.innerHeight));
-            this.canvas.setAttribute('width', main.scrollWidth);
+            // Force a height recalculation to match the full scrollable area
+            const scrollH = main.scrollHeight;
+            const scrollW = main.scrollWidth;
+            this.canvas.setAttribute('height', scrollH);
+            this.canvas.setAttribute('width', scrollW);
+            this.canvas.style.height = `${scrollH}px`;
+            this.canvas.style.width = `${scrollW}px`;
         }
 
         this.shapes.forEach(s => {
