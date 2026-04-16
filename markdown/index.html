@@ -221,7 +221,8 @@
             const STATE = {
                 index: null,
                 currentPath: null,
-                isSidebarOpen: false
+                isSidebarOpen: false,
+                expandedFolders: new Set()
             };
 
             // Initialize
@@ -230,6 +231,7 @@
             async function init() {
                 if (typeof lucide !== 'undefined') lucide.createIcons();
                 setupEventListeners();
+                loadSidebarState(); // 📥 Restore from local storage
                 await loadIndex();
                 handleRouting();
             }
@@ -269,6 +271,19 @@
                     
                     STATE.index = JSON.parse(dataEl.textContent);
                     console.log("📂 Reading Vault Index (Injected):", STATE.index);
+                    
+                    // Auto-expand parents for deep links
+                    const hash = window.location.hash.substring(1);
+                    if (hash) {
+                        const pathParts = decodeURIComponent(hash).split('/');
+                        let current = '';
+                        pathParts.forEach((part, i) => {
+                            if (i < pathParts.length - 1) { // Skip the file itself
+                                current = current ? `${current}/${part}` : part;
+                                STATE.expandedFolders.add(current);
+                            }
+                        });
+                    }
                     
                     document.getElementById('stats-label').innerText = `${STATE.index.stats.totalFiles} Documents Loaded`;
                     
@@ -438,16 +453,45 @@
                     <i data-lucide="folder" class="w-3.5 h-3.5 mr-2 opacity-40"></i>
                     <span class="truncate">${item.name}</span>
                 `;
+                const isExpanded = STATE.expandedFolders.has(item.path);
                 const content = document.createElement('div');
-                content.className = 'hidden flex flex-col mt-0.5';
+                content.className = `${isExpanded ? '' : 'hidden'} flex flex-col mt-0.5`;
+                
                 btn.onclick = () => {
                     const isHidden = content.classList.toggle('hidden');
                     btn.querySelector('.chevron').classList.toggle('rotate-90', !isHidden);
+                    
+                    if (isHidden) STATE.expandedFolders.delete(item.path);
+                    else STATE.expandedFolders.add(item.path);
+                    saveSidebarState();
                 };
+                
+                // Set initial arrow state
+                if (isExpanded) {
+                    setTimeout(() => {
+                        const chevron = btn.querySelector('.chevron');
+                        if (chevron) chevron.classList.add('rotate-90');
+                    }, 0);
+                }
+
                 div.appendChild(btn);
                 div.appendChild(content);
                 setTimeout(() => lucide.createIcons({ scope: div }), 0);
                 return { el: div, contentEl: content };
+            }
+
+            // Persistence
+            function saveSidebarState() {
+                localStorage.setItem('iitm_vault_expanded', JSON.stringify([...STATE.expandedFolders]));
+            }
+
+            function loadSidebarState() {
+                try {
+                    const saved = localStorage.getItem('iitm_vault_expanded');
+                    if (saved) JSON.parse(saved).forEach(path => STATE.expandedFolders.add(path));
+                } catch (e) {
+                    console.warn("Failed to restore sidebar state");
+                }
             }
 
             function createFileEl(item, level) {
