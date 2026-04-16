@@ -241,13 +241,11 @@ const ANN = {
     },
 
     clear() {
-        if (confirm("Clear all annotations for this page?")) {
-            this.shapes = [];
-            this.redraw();
-            this.save();
-        }
+        this.shapes = [];
+        this.redraw();
+        this.save();
     }
-};
+}
 
 // Expose to window for global access
 window.ANN = ANN;
