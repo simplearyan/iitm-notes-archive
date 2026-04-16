@@ -88,4 +88,4 @@ jobs:
           commit_message: "🛠️ Manual: Sync Markdown Vault Content [skip ci]"
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
-          keep_files: true
+          keep_files: ${{ github.event.inputs.force_clean != 'true' }}
