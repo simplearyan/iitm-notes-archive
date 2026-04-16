@@ -44,13 +44,10 @@ jobs:
           rm -rf markdown/extracted/*
           mkdir -p markdown/extracted/assets
 
-      - name: Extract Markdown Reading Vault
-        run: node --expose-gc --max-old-space-size=6144 scripts/extract-to-markdown.js
+      - name: "🏗️ Build Reading Vault (Atomic)"
+        run: node --expose-gc --max-old-space-size=6144 scripts/generate-markdown-vault.js
         env:
           NODE_OPTIONS: "--expose-gc"
-
-      - name: Generate Reading Vault Index
-        run: node --max-old-space-size=2048 scripts/generate-markdown-index.js
 
       - name: Prep Deployment Artifact (Bypass ignores)
         run: |
