@@ -241,7 +241,7 @@
         <div id="anno-toolbar" class="fixed bottom-8 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-2xl border border-slate-200 px-4 py-2 rounded-2xl shadow-2xl z-50 flex items-center gap-4 transition-all transform translate-y-24 opacity-0 pointer-events-none overflow-x-auto no-scrollbar">
             <div class="flex items-center gap-1.5 pr-4 border-r border-slate-100 flex-nowrap">
                 <button onclick="ANN.setTool('pen')" id="tool-pen" class="tool-btn p-2 rounded-xl text-slate-400 hover:text-indigo-600 active:scale-95" title="Pen Tool">
-                    <i data-lucide="pen" class="w-5 h-5"></i>
+                    <i data-lucide="pen-tool" class="w-5 h-5"></i>
                 </button>
                 <button onclick="ANN.setTool('line')" id="tool-line" class="tool-btn p-2 rounded-xl text-slate-400 hover:text-indigo-600 active:scale-95" title="Line Tool">
                     <i data-lucide="minus" class="w-5 h-5"></i>
@@ -294,9 +294,9 @@
     <script id="vault-data" type="application/json">
     {
   "stats": {
-    "buildId": "VAULT-1776314265431",
+    "buildId": "VAULT-1776314450578",
     "totalFiles": 125,
-    "timestamp": "2026-04-16T04:37:45.431Z"
+    "timestamp": "2026-04-16T04:40:50.578Z"
   },
   "navigation": [
     {
@@ -2189,20 +2189,33 @@
                     let startX, startY;
                     let isDrawing = false;
 
-                    this.canvas.addEventListener('mousedown', (e) => {
-                        if (!this.active) return;
-                        isDrawing = true;
+                    const getCoords = (e) => {
                         const rect = this.canvas.getBoundingClientRect();
-                        startX = e.clientX - rect.left;
-                        startY = e.clientY - rect.top;
-                        this.penPoints = [[startX, startY]];
-                    });
+                        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+                        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+                        return {
+                            x: clientX - rect.left,
+                            y: clientY - rect.top
+                        };
+                    };
 
-                    this.canvas.addEventListener('mousemove', (e) => {
+                    const handleStart = (e) => {
+                        if (!this.active) return;
+                        if (e.touches && this.active) e.preventDefault();
+                        isDrawing = true;
+                        const coords = getCoords(e);
+                        startX = coords.x;
+                        startY = coords.y;
+                        this.penPoints = [[startX, startY]];
+                    };
+
+                    const handleMove = (e) => {
                         if (!isDrawing) return;
-                        const rect = this.canvas.getBoundingClientRect();
-                        const x = e.clientX - rect.left;
-                        const y = e.clientY - rect.top;
+                        if (e.touches && this.active) e.preventDefault();
+                        
+                        const coords = getCoords(e);
+                        const x = coords.x;
+                        const y = coords.y;
 
                         if (this.currentPath) {
                             if (Array.isArray(this.currentPath)) this.currentPath.forEach(n => n.remove());
@@ -2224,14 +2237,53 @@
 
                         if (Array.isArray(this.currentPath)) this.currentPath.forEach(n => this.canvas.appendChild(n));
                         else this.canvas.appendChild(this.currentPath);
-                    });
+                    };
 
-                    this.canvas.addEventListener('mouseup', (e) => {
+                    const handleEnd = (e) => {
                         if (!isDrawing) return;
                         isDrawing = false;
-                        const rect = this.canvas.getBoundingClientRect();
-                        const x = e.clientX - rect.left;
-                        const y = e.clientY - rect.top;
+                        
+                        // For touch, we need the last known points since touchend doesn't have coordinates
+                        const lastPoint = this.penPoints[this.penPoints.length - 1];
+                        const x = lastPoint ? lastPoint[0] : startX;
+                        const y = lastPoint ? lastPoint[1] : startY;
+
+                        if (this.tool === 'pen' && this.penPoints.length > 2) {
+                            this.shapes.push({
+                                tool: 'pen',
+                                points: [...this.penPoints],
+                                options: { stroke: this.color, strokeWidth: this.size, roughness: 1.2, seed: Math.random() }
+                            });
+                            this.save();
+                        } else if (Math.abs(x - startX) > 2 || Math.abs(y - startY) > 2) {
+                            this.shapes.push({
+                                tool: this.tool,
+                                start: [startX, startY],
+                                end: [x, y],
+                                options: { stroke: this.color, strokeWidth: this.size, roughness: 1.5, seed: Math.floor(Math.random() * 1000) }
+                            });
+                            this.save();
+                        }
+                        
+                        if (this.currentPath) {
+                            if (Array.isArray(this.currentPath)) this.currentPath.forEach(n => n.remove());
+                            else this.currentPath.remove();
+                        }
+                        this.penPoints = [];
+                        this.redraw();
+                    };
+
+                    // Mouse Events
+                    this.canvas.addEventListener('mousedown', handleStart);
+                    this.canvas.addEventListener('mousemove', handleMove);
+                    this.canvas.addEventListener('mouseup', handleEnd);
+
+                    // Touch Events
+                    this.canvas.addEventListener('touchstart', handleStart, { passive: false });
+                    this.canvas.addEventListener('touchmove', handleMove, { passive: false });
+                    this.canvas.addEventListener('touchend', handleEnd, { passive: false });
+                    this.canvas.addEventListener('touchcancel', handleEnd, { passive: false });
+                },
 
                         if (this.tool === 'pen' && this.penPoints.length > 2) {
                             this.shapes.push({
