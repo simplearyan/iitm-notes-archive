@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
     <script src="https://unpkg.com/roughjs@latest/bundled/rough.js"></script>
+    <script src="annotator.js"></script>
     
     <!-- Prism Engine (Modular) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
@@ -550,13 +551,13 @@
 }
     </script>
     <!-- SIDEBAR-DATA-END -->
+    <script src="annotator.js"></script>
 
     <script>
         /**
          * IITM Markdown Vault Core Engine
          * ─────────────────────────────────────────────────────────────────────────────
          */
-        let ANN; // Global Reference
 
         (function() {
             'use strict';
@@ -582,7 +583,7 @@
                 setupEventListeners();
                 setupScrollMonitor(); // 🛰️ Smart Header & Progress
                 loadSidebarState(); // 📥 Restore from local storage
-                ANN.init(); // 🖋️ Start Rough-Board
+                if (typeof ANN !== 'undefined') ANN.init(); // 🖋️ Start Rough-Board
                 await loadIndex();
                 handleRouting();
             }
@@ -665,239 +666,6 @@
                 }
             }
 
-            // -- Annotation Engine --
-            ANN = {
-                active: false,
-                tool: 'pen',
-                color: '#6366f1',
-                size: 3.5,
-                canvas: null,
-                rc: null,
-                shapes: [],
-                currentPath: null,
-                currentDoc: '',
-                penPoints: [], // Points for freehand tool
-
-                init() {
-                    this.canvas = document.getElementById('annotation-layer');
-                    if (!this.canvas) return;
-                    this.rc = rough.svg(this.canvas);
-                    this.setupEvents();
-                    console.log("🖋️ Rough-Board Initialized");
-                    
-                    // Initial tool state
-                    this.setTool('pen');
-                    this.setColor(this.color);
-                    this.setSize(this.size);
-                },
-
-                toggle() {
-                    this.active = !this.active;
-                    this.canvas.classList.toggle('active', this.active);
-                    document.body.classList.toggle('drawing-mode', this.active);
-                    const toolbar = document.getElementById('anno-toolbar');
-                    const toggleBtn = document.getElementById('toggle-anno');
-                    
-                    if (this.active) {
-                        toolbar.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
-                        toggleBtn.classList.add('bg-indigo-600', 'rotate-45');
-                    } else {
-                        toolbar.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
-                        toggleBtn.classList.remove('bg-indigo-600', 'rotate-45');
-                    }
-                },
-
-                setTool(t) {
-                    this.tool = t;
-                    document.querySelectorAll('.tool-btn').forEach(b => b.classList.remove('active'));
-                    const btn = document.getElementById(`tool-${t}`);
-                    if (btn) btn.classList.add('active');
-                },
-
-                setColor(c) { 
-                    this.color = c; 
-                    document.querySelectorAll('.color-dot').forEach(d => d.classList.remove('active'));
-                    const activeDot = Array.from(document.querySelectorAll('.color-dot')).find(d => d.getAttribute('onclick').includes(c));
-                    if (activeDot) activeDot.classList.add('active');
-                },
-
-                setSize(s) { 
-                    this.size = s; 
-                    document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
-                    const activeBtn = document.getElementById(`size-${s}`);
-                    if (activeBtn) activeBtn.classList.add('active');
-                },
-
-                setupEvents() {
-                    let startX, startY;
-                    let isDrawing = false;
-
-                    const getCoords = (e) => {
-                        const rect = this.canvas.getBoundingClientRect();
-                        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-                        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-                        return {
-                            x: clientX - rect.left,
-                            y: clientY - rect.top
-                        };
-                    };
-
-                    const handleStart = (e) => {
-                        if (!this.active) return;
-                        if (e.touches && this.active) e.preventDefault();
-                        isDrawing = true;
-                        const coords = getCoords(e);
-                        startX = coords.x;
-                        startY = coords.y;
-                        this.penPoints = [[startX, startY]];
-                    };
-
-                    const handleMove = (e) => {
-                        if (!isDrawing) return;
-                        if (e.touches && this.active) e.preventDefault();
-                        
-                        const coords = getCoords(e);
-                        const x = coords.x;
-                        const y = coords.y;
-
-                        if (this.currentPath) {
-                            if (Array.isArray(this.currentPath)) this.currentPath.forEach(n => n.remove());
-                            else this.currentPath.remove();
-                        }
-                        
-                        const options = { stroke: this.color, strokeWidth: this.size, roughness: 1.2, seed: 42 };
-                        
-                        if (this.tool === 'pen') {
-                            this.penPoints.push([x, y]);
-                            this.currentPath = this.rc.linearPath(this.penPoints, options);
-                        } else if (this.tool === 'line') {
-                            this.currentPath = this.rc.line(startX, startY, x, y, options);
-                        } else if (this.tool === 'arrow') {
-                            this.currentPath = this.createArrow(startX, startY, x, y, options);
-                        } else {
-                            this.currentPath = this.rc.rectangle(startX, startY, x - startX, y - startY, options);
-                        }
-
-                        if (Array.isArray(this.currentPath)) this.currentPath.forEach(n => this.canvas.appendChild(n));
-                        else this.canvas.appendChild(this.currentPath);
-                    };
-
-                    const handleEnd = (e) => {
-                        if (!isDrawing) return;
-                        isDrawing = false;
-                        
-                        // For touch, we need the last known points since touchend doesn't have coordinates
-                        const lastPoint = this.penPoints[this.penPoints.length - 1];
-                        const x = lastPoint ? lastPoint[0] : startX;
-                        const y = lastPoint ? lastPoint[1] : startY;
-
-                        // Create a stable persistent seed (must be an integer)
-                        const persistentSeed = Math.floor(Math.random() * 999999);
-
-                        if (this.tool === 'pen' && this.penPoints.length > 2) {
-                            this.shapes.push({
-                                tool: 'pen',
-                                points: [...this.penPoints],
-                                options: { stroke: this.color, strokeWidth: this.size, roughness: 1.2, seed: persistentSeed }
-                            });
-                            this.save();
-                        } else if (Math.abs(x - startX) > 2 || Math.abs(y - startY) > 2) {
-                            this.shapes.push({
-                                tool: this.tool,
-                                start: [startX, startY],
-                                end: [x, y],
-                                options: { stroke: this.color, strokeWidth: this.size, roughness: 1.5, seed: persistentSeed }
-                            });
-                            this.save();
-                        }
-                        
-                        // Clean up live preview
-                        if (this.currentPath) {
-                            if (Array.isArray(this.currentPath)) this.currentPath.forEach(n => n.remove());
-                            else this.currentPath.remove();
-                        }
-                        this.currentPath = null;
-                        this.penPoints = [];
-                        this.redraw();
-                    };
-
-                    // Mouse Events
-                    this.canvas.addEventListener('mousedown', handleStart);
-                    this.canvas.addEventListener('mousemove', handleMove);
-                    this.canvas.addEventListener('mouseup', handleEnd);
-
-                    // Touch Events
-                    this.canvas.addEventListener('touchstart', handleStart, { passive: false });
-                    this.canvas.addEventListener('touchmove', handleMove, { passive: false });
-                    this.canvas.addEventListener('touchend', handleEnd, { passive: false });
-                    this.canvas.addEventListener('touchcancel', handleEnd, { passive: false });
-                },
-
-                createArrow(x1, y1, x2, y2, options) {
-                    const line = this.rc.line(x1, y1, x2, y2, options);
-                    const angle = Math.atan2(y2 - y1, x2 - x1);
-                    const headLen = 15;
-                    const x3 = x2 - headLen * Math.cos(angle - Math.PI / 6);
-                    const y3 = y2 - headLen * Math.sin(angle - Math.PI / 6);
-                    const x4 = x2 - headLen * Math.cos(angle + Math.PI / 6);
-                    const y4 = y2 - headLen * Math.sin(angle + Math.PI / 6);
-                    const head = this.rc.linearPath([[x3, y3], [x2, y2], [x4, y4]], options);
-                    return [line, head];
-                },
-
-                save() {
-                    if (!this.currentDoc) return;
-                    localStorage.setItem(`iitm_anno_${this.currentDoc}`, JSON.stringify(this.shapes));
-                },
-
-                load(docPath) {
-                    this.currentDoc = docPath;
-                    this.shapes = JSON.parse(localStorage.getItem(`iitm_anno_${docPath}`) || '[]');
-                    this.redraw();
-                },
-
-                redraw() {
-                    if (!this.canvas) return;
-                    this.canvas.innerHTML = '';
-                    
-                    // Match height of content
-                    const viewer = document.getElementById('md-viewer');
-                    if (viewer) {
-                        this.canvas.setAttribute('height', viewer.scrollHeight);
-                        this.canvas.setAttribute('width', viewer.scrollWidth);
-                    }
-
-                    this.shapes.forEach(s => {
-                        let node;
-                        if (s.tool === 'pen') {
-                            node = this.rc.linearPath(s.points, s.options);
-                        } else if (s.tool === 'line') {
-                            node = this.rc.line(s.start[0], s.start[1], s.end[0], s.end[1], s.options);
-                        } else if (s.tool === 'arrow') {
-                            const arrowParts = this.createArrow(s.start[0], s.start[1], s.end[0], s.end[1], s.options);
-                            arrowParts.forEach(n => this.canvas.appendChild(n));
-                            return;
-                        } else {
-                            node = this.rc.rectangle(s.start[0], s.start[1], s.end[0] - s.start[0], s.end[1] - s.start[1], s.options);
-                        }
-                        this.canvas.appendChild(node);
-                    });
-                },
-
-                undo() {
-                    this.shapes.pop();
-                    this.redraw();
-                    this.save();
-                },
-
-                clear() {
-                    if (confirm("Clear all annotations for this page?")) {
-                        this.shapes = [];
-                        this.redraw();
-                        this.save();
-                    }
-                }
-            };
 
             function handleRouting() {
                 const rawHash = window.location.hash.substring(1);
@@ -1205,7 +973,7 @@
                     l.classList.toggle('active', l.getAttribute('data-path') === node.path);
                 });
                 if (typeof lucide !== 'undefined') lucide.createIcons();
-                ANN.load(node.path); // 🖋️ Refresh Annotations
+                // ANN.load is called from renderMarkdown
             }
 
             function handleSearch(query) {
