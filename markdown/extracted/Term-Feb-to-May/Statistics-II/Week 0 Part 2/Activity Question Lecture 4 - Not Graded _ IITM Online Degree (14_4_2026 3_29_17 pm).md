@@ -8,7 +8,7 @@ Note : This activity is only for practice purpose and it will not be counted tow
 Consider a sample space $S$ and three events $A, B,$ and $C$ as shown in Figure $1.4.1.$ Answer the following questions from figure given below:
 
                                                       
-![image](../../../assets/img_1z4n2grd0.jpg)
+![image](../../../assets/img_vgube16vt.jpg)
 
     
 

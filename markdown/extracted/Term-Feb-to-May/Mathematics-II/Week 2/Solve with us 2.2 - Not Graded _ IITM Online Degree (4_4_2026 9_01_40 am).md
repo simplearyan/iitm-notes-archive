@@ -879,7 +879,7 @@ Which of the following represents an augmented matrix of the system?
  
  
  
-![image](../../../assets/img_kl716hmwk.jpg)
+![image](../../../assets/img_ep6ticp14.jpg)
 
  
  
@@ -888,7 +888,7 @@ Which of the following represents an augmented matrix of the system?
  
  
  
-![image](../../../assets/img_hj2exwadf.jpg)
+![image](../../../assets/img_fh9c6p0yw.jpg)
 
  
  
@@ -897,7 +897,7 @@ Which of the following represents an augmented matrix of the system?
  
  
  
-![image](../../../assets/img_jbmkp5oyn.jpg)
+![image](../../../assets/img_dcp0wxlms.jpg)
 
  
  
@@ -906,7 +906,7 @@ Which of the following represents an augmented matrix of the system?
  
  
  
-![image](../../../assets/img_38zfkr0co.jpg)
+![image](../../../assets/img_nlimojtr0.jpg)
 
  
  
@@ -919,7 +919,7 @@ Score: 0
 ### Accepted Answers:
 
  
-![image](../../../assets/img_zju4unbx0.jpg)
+![image](../../../assets/img_mv25d0ah3.jpg)
 
  
  
@@ -948,7 +948,7 @@ What will be the matrix $[R|c]$ obtained by performing the operations that trans
  
  
  
-![image](../../../assets/img_20fjnkxx5.jpg)
+![image](../../../assets/img_cubp2ep1x.jpg)
 
  
  
@@ -957,7 +957,7 @@ What will be the matrix $[R|c]$ obtained by performing the operations that trans
  
  
  
-![image](../../../assets/img_0g8iq09w3.jpg)
+![image](../../../assets/img_jyj7laxg7.jpg)
 
  
  
@@ -966,7 +966,7 @@ What will be the matrix $[R|c]$ obtained by performing the operations that trans
  
  
  
-![image](../../../assets/img_eq2qb16hc.jpg)
+![image](../../../assets/img_fxhe09xpt.jpg)
 
  
  
@@ -975,7 +975,7 @@ What will be the matrix $[R|c]$ obtained by performing the operations that trans
  
  
  
-![image](../../../assets/img_ihzcgrqzd.jpg)
+![image](../../../assets/img_j6v1cdze9.jpg)
 
  
  
@@ -988,7 +988,7 @@ Score: 0
 ### Accepted Answers:
 
  
-![image](../../../assets/img_5v1o8t14f.jpg)
+![image](../../../assets/img_fl49x6sg4.jpg)
 
  
  

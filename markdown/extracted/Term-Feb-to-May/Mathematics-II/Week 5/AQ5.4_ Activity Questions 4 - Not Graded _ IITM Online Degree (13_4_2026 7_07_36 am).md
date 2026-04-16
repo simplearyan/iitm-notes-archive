@@ -6,7 +6,7 @@ Let $T(x,y,z)=mx+ny+pz$ denote the total amount of money a multiplex made from a
 In the multiplex, 2 Malayalam movies, 1 Hindi movie, 1 Bengali movie, and 1 English movie are running parallelly in one week. Suppose there are 3 shows (Morning, Evening, Night) per day for each of the Malayalam movies and the English movie, whereas 2 shows (Evening, Night) per day for the Hindi and the Bengali movie. Ticket price (irrespective of morning, evening, and night shows) for each Malayalam movie is **₹**200, Hindi movie is **₹**250, Bengali movie is **₹**250, and English movie is **₹**300. The number of tickets sold in a particular day is given in Table M2W5AQ2: 
 
                                             
-![image](../../../assets/img_y15cjcuwc.jpg)
+![image](../../../assets/img_zz1t9g72e.jpg)
 
 Answer questions 1 to 8 using the given data above.
 

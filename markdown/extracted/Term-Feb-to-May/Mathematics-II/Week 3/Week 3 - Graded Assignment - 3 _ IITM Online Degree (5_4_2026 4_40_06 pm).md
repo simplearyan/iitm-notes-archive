@@ -472,7 +472,7 @@ Consider the crossing of RR with RR. This always gives the genotype RR, therefor
 The following table summarizes these facts :
 
                                                   
-![image](../../../assets/img_vioee6akm.jpg)
+![image](../../../assets/img_ftd62hxk4.jpg)
 
 The matrix representing this observation is given by $P=\begin{bmatrix}
 1 & 0 & 0 \\

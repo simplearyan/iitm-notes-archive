@@ -157,7 +157,7 @@ $V_5$ is a vector space.
  The marks obtained by Karthika, Romy and Farzana in Quiz 1, Quiz 2 and End sem (with the maximum marks for each exam being 100) are shown in Table M2W3P1. Let Quiz 1, Quiz 2 and End sem marks obatined by Karthika, Romy and Farzana be represented by vectors. Use the above information, to choose the correct option(s). 
 
                 
-![image](../../../assets/img_murdv3z4u.jpg)
+![image](../../../assets/img_lz8fgnnzy.jpg)
 
  
  
