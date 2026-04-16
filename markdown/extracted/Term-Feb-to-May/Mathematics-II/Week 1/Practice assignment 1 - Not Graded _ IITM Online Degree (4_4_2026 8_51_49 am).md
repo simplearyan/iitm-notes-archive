@@ -21,7 +21,7 @@ _1 point_
 
 Match the systems of linear equations in Column A with their number of solutions in Column B and their geometric representation in Column C.  
   
-![](assets/Term-Feb-to-May_Mathematics-II_Week1_Practiceassignment1-NotGraded_IITMOnlineDegree4_4_20268_51_49am_17.jpg)  
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week1_Practiceassignment1-NotGraded_IITMOnlineDegree4_4_20268_51_49am_17.jpg)  
 
 i) →\\rightarrow→ c) →\\rightarrow → 2)
 
@@ -129,11 +129,11 @@ _1 point_
 
 The marks obtained by Safina, Ram and Pratiksha in Quiz 1, Quiz 2 and End sem (with the maximum marks for each exam being 100) are shown in Table W1PT2.  
   
-                     ![](assets/Term-Feb-to-May_Mathematics-II_Week1_Practiceassignment1-NotGraded_IITMOnlineDegree4_4_20268_51_49am_18.jpg)  
+                     ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week1_Practiceassignment1-NotGraded_IITMOnlineDegree4_4_20268_51_49am_18.jpg)  
   
 The weightage of marks in final grade(in percent) of Quiz 1, Quiz 2, and End sem is shown in Table W1PT3.  
   
-                                       ![](assets/Term-Feb-to-May_Mathematics-II_Week1_Practiceassignment1-NotGraded_IITMOnlineDegree4_4_20268_51_49am_19.jpg)  
+                                       ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week1_Practiceassignment1-NotGraded_IITMOnlineDegree4_4_20268_51_49am_19.jpg)  
 Choose the set of correct options.
 
 Final grades (in 100) of Safina, Ram and Pratiksha can be represented by the matrix:  

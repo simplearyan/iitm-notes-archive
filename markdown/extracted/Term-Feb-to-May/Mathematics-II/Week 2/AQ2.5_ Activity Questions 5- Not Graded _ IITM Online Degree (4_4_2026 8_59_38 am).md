@@ -21,7 +21,7 @@ _1 point_
 Match the matrices in Column A with their row operation steps (in the exact sequence given) in Column B, and their corresponding reduced row Echelon forms in Column C of Table M2W2AQ2.  
   
   
-![](assets/Term-Feb-to-May_Mathematics-II_Week2_AQ25_ActivityQuestions5-NotGraded_IITMOnlineDegree4_4_20268_59_38am_25.jpg)  
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week2_AQ25_ActivityQuestions5-NotGraded_IITMOnlineDegree4_4_20268_59_38am_25.jpg)  
   
   
 Find the correct option.

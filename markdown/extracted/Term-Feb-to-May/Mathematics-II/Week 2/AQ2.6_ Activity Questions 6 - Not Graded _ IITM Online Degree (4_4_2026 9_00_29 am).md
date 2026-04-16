@@ -42,7 +42,7 @@ If the system Rx\=cRx = cRx\=c has a unique solution, then the system Ax\=bAx = 
   
 Consider a system of linear equations 2x1+x2\=1−x1+x3+x4\=−1x1+x2−x3+x4\=2−x1+x3+x4\=1.\\begin{aligned} 2x\_1 +x\_2 = 1\\\\ -x\_1 +x\_3 + x\_4 = -1\\\\ x\_1 +x\_2 -x\_3 +x\_4 = 2\\\\ -x\_1 +x\_3 +x\_4 = 1. \\end{aligned}2x1​+x2​\=1−x1​+x3​+x4​\=−1x1​+x2​−x3​+x4​\=2−x1​+x3​+x4​\=1.​ If the following matrix represents the augmented matrix of the system, then answer the questions 2,3 and 4.  
   
-                                                ![](assets/Term-Feb-to-May_Mathematics-II_Week2_AQ26_ActivityQuestions6-NotGraded_IITMOnlineDegree4_4_20269_00_29am_13.jpg)  
+                                                ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week2_AQ26_ActivityQuestions6-NotGraded_IITMOnlineDegree4_4_20269_00_29am_13.jpg)  
 
 JavaScript should be enabled to grade this question.
 

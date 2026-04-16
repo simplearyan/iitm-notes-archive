@@ -4,7 +4,7 @@ title: "AQ1.1: Activity Questions 1 - Not Graded :: IITM Online Degree"
 
 # AQ1.1: Activity Questions 1 - Not Graded :: IITM Online Degree
 
-![Logo](assets/maths-2_AQ11_ActivityQuestions1-NotGraded_IITMOnlineDegree3_4_20265_53_17pm_16.png)
+![Logo](extracted/assets/maths-2_AQ11_ActivityQuestions1-NotGraded_IITMOnlineDegree3_4_20265_53_17pm_16.png)
 
 Jan 2026 - Mathematics II
 
@@ -917,7 +917,7 @@ JavaScript should be enabled to grade this question.
 _1 point_
 
 Choose the set of correct options using Figure M2W1AQ1.  
-![](assets/maths-2_AQ11_ActivityQuestions1-NotGraded_IITMOnlineDegree3_4_20265_53_17pm_17.jpg)  
+![](extracted/assets/maths-2_AQ11_ActivityQuestions1-NotGraded_IITMOnlineDegree3_4_20265_53_17pm_17.jpg)  
 \[Hint: Recall that, vector addition and scalar multiplication are done coordinatewise.\]
 
 2A2A2A is the vector (2,4)(2,4)(2,4).
@@ -944,7 +944,7 @@ Let V1\=(1,1)V\_1=(1,1)V1​\=(1,1), V2\=(1,0)V\_2=(1,0)V2​\=(1,0), and V3\=(0
 
   
   
-![](assets/maths-2_AQ11_ActivityQuestions1-NotGraded_IITMOnlineDegree3_4_20265_53_17pm_18.jpg)  
+![](extracted/assets/maths-2_AQ11_ActivityQuestions1-NotGraded_IITMOnlineDegree3_4_20265_53_17pm_18.jpg)  
   
   
 The marks obtained by Karthika, Romy and Farzana in Quiz 1, Quiz 2 and End sem (with the maximum marks for each exam being 100) are shown in Table M2W1AQ1.  
@@ -1036,7 +1036,7 @@ JavaScript should be enabled to grade this question.
 _1 point_
 
 Consider vectors A(−1,2)A(-1, 2)A(−1,2) and B(2,−2)B(2, -2)B(2,−2) in R2\\mathbb{R}^2R2 as shown in Figure M2W1AQ2.  
-![](assets/maths-2_AQ11_ActivityQuestions1-NotGraded_IITMOnlineDegree3_4_20265_53_17pm_19.jpg)  
+![](extracted/assets/maths-2_AQ11_ActivityQuestions1-NotGraded_IITMOnlineDegree3_4_20265_53_17pm_19.jpg)  
   
 Choose the set of correct options.  
 \[Hint: Recall the geometric representation of vectors, scalar multiplication and vectors addition.\]

@@ -47,7 +47,7 @@ _1 point_
 
 Match the sets of vectors in column A with their properties of linear dependence or independence in column B and the dimension of the vector spaces in column C spanned by the sets.  
   
-![](assets/Term-Feb-to-May_Mathematics-II_Week4_AQ43_ActivityQuestions3-NotGraded_IITMOnlineDegree5_4_20265_06_48pm_19.jpg)  
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week4_AQ43_ActivityQuestions3-NotGraded_IITMOnlineDegree5_4_20265_06_48pm_19.jpg)  
 
 a →\\rightarrow→ ii →\\rightarrow→ 3, b →\\rightarrow→ iii →\\rightarrow→ 2
 

@@ -157,7 +157,7 @@ Consider the crossing of RR with RR. This always gives the genotype RR, therefor
   
 The following table summarizes these facts :  
   
-                                                  ![](assets/Term-Feb-to-May_Mathematics-II_Week3_Week3-GradedAssignment-3_IITMOnlineDegree5_4_20264_40_06pm_23.jpg)  
+                                                  ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week3_Week3-GradedAssignment-3_IITMOnlineDegree5_4_20264_40_06pm_23.jpg)  
   
 The matrix representing this observation is given by P\=\[10012120010\]P=\\begin{bmatrix} 1 & 0 & 0 \\\\ \\frac{1}{2} & \\frac{1}{2} & 0 \\\\ 0 & 1 & 0 \\end{bmatrix}P\=​121​0​021​1​000​​, and the initial distribution vector (1×31\\times 31×3 matrix) is denoted by X0\=(X01,X02,X03)X\_0=( X\_0^1, X\_0^2, X\_0^3)X0​\=(X01​,X02​,X03​), where X01X\_0^1X01​ denotes the distribution of RR, X02X\_0^2X02​ denotes the distribution of Rr, and X03X\_0^3X03​ denotes the distribution of rr. For any positive integer nnn, the distribution vector after nnn generations (i.e., at t\=nt=nt\=n) is denoted by XnX\_nXn​ and is given by the equation Xn−1P\=XnX\_{n-1}P=X\_nXn−1​P\=Xn​.  
   

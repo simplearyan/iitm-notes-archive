@@ -25,7 +25,7 @@ d. det(A)\=1det(A) = 1det(A)\=1
 e. det(A)\=−1det(A) = -1det(A)\=−1  
 f. \[001010−101\]\\begin{bmatrix} 0 & 0 & 1 \\\\ 0 & 1 & 0 \\\\ -1 & 0 & 1 \\end{bmatrix}​00−1​010​101​​  
  Solution:  
-![](assets/Term-Feb-to-May_Mathematics-II_Week6_Reflectwithus-Week6_IITMOnlineDegree13_4_20267_17_32am_23.jpg)  
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week6_Reflectwithus-Week6_IITMOnlineDegree13_4_20267_17_32am_23.jpg)  
   
 Observe that, in question, you are asked to find the matrix representation of TTT with respect to the standard ordered bases of R3\\mathbb{R}^3R3 for both domain and range. So you have to find the image of each element of the standard ordered basis of R2\\mathbb{R}^2R2 via the linear transformation TTT.   
   

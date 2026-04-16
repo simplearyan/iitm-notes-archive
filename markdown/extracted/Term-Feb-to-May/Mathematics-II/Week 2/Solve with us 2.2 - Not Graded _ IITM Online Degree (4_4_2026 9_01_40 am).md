@@ -327,20 +327,20 @@ Which of the following represents an augmented matrix of the system?
   
 \[Hint: First try to write down the coefficient matrix AAA and the corresponding vector bbb.\]
 
- ![](assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_16.jpg)
+ ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_16.jpg)
 
- ![](assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_17.jpg)
+ ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_17.jpg)
 
- ![](assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_18.jpg)
+ ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_18.jpg)
 
- ![](assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_19.jpg)
+ ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_19.jpg)
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-![](assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_17.jpg)
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_17.jpg)
 
 JavaScript should be enabled to grade this question.
 
@@ -348,20 +348,20 @@ _1 point_
 
 What will be the matrix \[R∣c\]\[R|c\]\[R∣c\] obtained by performing the operations that transform AAA to its reduced row echelon form RRR on the augmented matrix?
 
- ![](assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_20.jpg)
+ ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_20.jpg)
 
- ![](assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_21.jpg)
+ ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_21.jpg)
 
- ![](assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_22.jpg)
+ ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_22.jpg)
 
- ![](assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_23.jpg)
+ ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_23.jpg)
 
 ### No, the answer is incorrect.  
 Score: 0
 
 ### Accepted Answers:
 
-![](assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_23.jpg)
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week2_Solvewithus22-NotGraded_IITMOnlineDegree4_4_20269_01_40am_23.jpg)
 
 JavaScript should be enabled to grade this question.
 

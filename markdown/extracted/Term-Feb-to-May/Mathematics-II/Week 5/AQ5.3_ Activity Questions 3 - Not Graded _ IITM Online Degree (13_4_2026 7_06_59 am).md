@@ -12,7 +12,7 @@ This assignment will not be graded and is only for practice.
 
 A book shop is organizing an year end sale. Price of any Bengali, Hindi, Tamil, and Urdu book is fixed as **₹**200, **₹**180, **₹**230, and **₹**250, respectively. Let T(x,y,z,w)T(x,y,z,w)T(x,y,z,w) denote the total price of xxx number of Bengali books, yyy number of Hindi books, zzz number of Tamil books, and www number of Urdu books. Table M2W5AQ1 shows the numbers of books of different languages purchased by some customers.  
   
-                                                        ![](assets/Term-Feb-to-May_Mathematics-II_Week5_AQ53_ActivityQuestions3-NotGraded_IITMOnlineDegree13_4_20267_06_59am_14.jpg)  
+                                                        ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week5_AQ53_ActivityQuestions3-NotGraded_IITMOnlineDegree13_4_20267_06_59am_14.jpg)  
   
 Answer Questions 1 to 8 from the given data.  
   

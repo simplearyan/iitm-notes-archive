@@ -61,7 +61,7 @@ _1 point_
 
 The marks obtained by Karthika, Romy and Farzana in Quiz 1, Quiz 2 and End sem (with the maximum marks for each exam being 100) are shown in Table M2W3P1. Let Quiz 1, Quiz 2 and End sem marks obatined by Karthika, Romy and Farzana be represented by vectors. Use the above information, to choose the correct option(s).  
   
-                ![](assets/Term-Feb-to-May_Mathematics-II_Week3_PracticeAssignment3-NotGraded_IITMOnlineDegree5_4_20264_38_21pm_25.jpg)  
+                ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week3_PracticeAssignment3-NotGraded_IITMOnlineDegree5_4_20264_38_21pm_25.jpg)  
 
 If Farzana obtained 90 marks in End sem (i.e c\=90c = 90c\=90), then the marks in Quiz 1, Quiz 2 and End sem represent linearly independent vectors.
 

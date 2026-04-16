@@ -25,7 +25,7 @@ JavaScript should be enabled to grade this question.
 _1 point_
 
 Choose the set of correct options using Figure M2W1AQ1.  
-![](assets/Term-Feb-to-May_Mathematics-II_Week1_AQ11_ActivityQuestions1-NotGraded_IITMOnlineDegree4_4_20268_44_18am_15.jpg)  
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week1_AQ11_ActivityQuestions1-NotGraded_IITMOnlineDegree4_4_20268_44_18am_15.jpg)  
 \[Hint: Recall that, vector addition and scalar multiplication are done coordinatewise.\]
 
 2A2A2A is the vector (2,4)(2,4)(2,4).
@@ -74,7 +74,7 @@ Score: 1
 
   
   
-![](assets/Term-Feb-to-May_Mathematics-II_Week1_AQ11_ActivityQuestions1-NotGraded_IITMOnlineDegree4_4_20268_44_18am_16.jpg)  
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week1_AQ11_ActivityQuestions1-NotGraded_IITMOnlineDegree4_4_20268_44_18am_16.jpg)  
   
   
 The marks obtained by Karthika, Romy and Farzana in Quiz 1, Quiz 2 and End sem (with the maximum marks for each exam being 100) are shown in Table M2W1AQ1.  
@@ -211,7 +211,7 @@ JavaScript should be enabled to grade this question.
 _1 point_
 
 Consider vectors A(−1,2)A(-1, 2)A(−1,2) and B(2,−2)B(2, -2)B(2,−2) in R2\\mathbb{R}^2R2 as shown in Figure M2W1AQ2.  
-![](assets/Term-Feb-to-May_Mathematics-II_Week1_AQ11_ActivityQuestions1-NotGraded_IITMOnlineDegree4_4_20268_44_18am_17.jpg)  
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week1_AQ11_ActivityQuestions1-NotGraded_IITMOnlineDegree4_4_20268_44_18am_17.jpg)  
   
 Choose the set of correct options.  
 \[Hint: Recall the geometric representation of vectors, scalar multiplication and vectors addition.\]

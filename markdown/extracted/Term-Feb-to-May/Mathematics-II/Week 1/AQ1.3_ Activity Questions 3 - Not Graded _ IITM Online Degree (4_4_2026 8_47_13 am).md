@@ -107,7 +107,7 @@ JavaScript should be enabled to grade this question.
 _1 point_
 
 The Plane 1 and Plane 2 in Figure M2W1AQ3, correspond to two different linear equations, which form a system of linear equations.  
-![](assets/Term-Feb-to-May_Mathematics-II_Week1_AQ13_ActivityQuestions3-NotGraded_IITMOnlineDegree4_4_20268_47_13am_19.jpg)  
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week1_AQ13_ActivityQuestions3-NotGraded_IITMOnlineDegree4_4_20268_47_13am_19.jpg)  
   
 The above system of linear equations has  
 \[Hint: If a system of linear equations has a solution, then the point corresponding to the solution must lie on each plane corresponding to each linear equation of the given system.\]
@@ -132,8 +132,8 @@ JavaScript should be enabled to grade this question.
 _1 point_
 
 Consider the geometric representations (Figures (a),(b),(a),(b),(a),(b), and (c(c(c)) of three systems of linear equations.  
-![](assets/Term-Feb-to-May_Mathematics-II_Week1_AQ13_ActivityQuestions3-NotGraded_IITMOnlineDegree4_4_20268_47_13am_20.jpg)  
-![](assets/Term-Feb-to-May_Mathematics-II_Week1_AQ13_ActivityQuestions3-NotGraded_IITMOnlineDegree4_4_20268_47_13am_21.jpg)  
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week1_AQ13_ActivityQuestions3-NotGraded_IITMOnlineDegree4_4_20268_47_13am_20.jpg)  
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week1_AQ13_ActivityQuestions3-NotGraded_IITMOnlineDegree4_4_20268_47_13am_21.jpg)  
 Choose the set of correct options.  
 
 Figure (a)(a)(a) represents a system of linear equations which has no solution.

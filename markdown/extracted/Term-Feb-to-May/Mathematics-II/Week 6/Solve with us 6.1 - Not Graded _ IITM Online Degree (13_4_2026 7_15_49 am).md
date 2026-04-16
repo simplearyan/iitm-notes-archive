@@ -200,7 +200,7 @@ Score: 0
 
 ### Feedback:
 
-![](assets/Term-Feb-to-May_Mathematics-II_Week6_Solvewithus61-NotGraded_IITMOnlineDegree13_4_20267_15_49am_26.jpg)
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week6_Solvewithus61-NotGraded_IITMOnlineDegree13_4_20267_15_49am_26.jpg)
 
 ### Accepted Answers:
 

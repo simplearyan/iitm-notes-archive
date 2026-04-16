@@ -21,7 +21,7 @@ Note : This activity is only for practice purpose and it will not be counted tow
 
 Consider a sample space SSS and three events A,B,A, B,A,B, and CCC as shown in Figure 1.4.1.1.4.1.1.4.1. Answer the following questions from figure given below:  
   
-                                                      ![](assets/Term-Feb-to-May_Statistics-II_Week0Part2_ActivityQuestionLecture4-NotGraded_IITMOnlineDegree14_4_20263_29_17pm_14.jpg)  
+                                                      ![](extracted/assets/Term-Feb-to-May_Statistics-II_Week0Part2_ActivityQuestionLecture4-NotGraded_IITMOnlineDegree14_4_20263_29_17pm_14.jpg)  
   
 
 JavaScript should be enabled to grade this question.

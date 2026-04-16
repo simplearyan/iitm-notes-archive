@@ -39,7 +39,7 @@ f(x,y,z)\=(x−2z+2,z,x−z+1)f(x, y, z) = (x-2z+2, z, x-z+1)f(x,y,z)\=(x−2z+2
 
   
 Solution:  
-![](assets/Term-Feb-to-May_Mathematics-II_Week7_Reflectwithus-Week7_IITMOnlineDegree13_4_20267_22_26am_22.jpg)  
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week7_Reflectwithus-Week7_IITMOnlineDegree13_4_20267_22_26am_22.jpg)  
   
   
 Discussion on Option 1:\\textbf{Discussion on Option 1:}Discussion on Option 1: It is given that L1\=UL\_1=UL1​\=U and {(2,0,1),(1,1,0),(0,1,0)}\\{(2,0,1),(1,1,0),(0,1,0)\\}{(2,0,1),(1,1,0),(0,1,0)} is a basis of the vector subspace UUU.  
@@ -80,7 +80,7 @@ Score: 0
 
 ### Feedback:
 
-![](assets/Term-Feb-to-May_Mathematics-II_Week7_Reflectwithus-Week7_IITMOnlineDegree13_4_20267_22_26am_23.jpg)
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week7_Reflectwithus-Week7_IITMOnlineDegree13_4_20267_22_26am_23.jpg)
 
 ### Accepted Answers:
 
@@ -110,7 +110,7 @@ Score: 0
 
 ### Feedback:
 
-![](assets/Term-Feb-to-May_Mathematics-II_Week7_Reflectwithus-Week7_IITMOnlineDegree13_4_20267_22_26am_24.jpg)
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week7_Reflectwithus-Week7_IITMOnlineDegree13_4_20267_22_26am_24.jpg)
 
 ### Accepted Answers:
 
@@ -133,7 +133,7 @@ Score: 0
 
 ### Feedback:
 
-![](assets/Term-Feb-to-May_Mathematics-II_Week7_Reflectwithus-Week7_IITMOnlineDegree13_4_20267_22_26am_25.jpg)
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week7_Reflectwithus-Week7_IITMOnlineDegree13_4_20267_22_26am_25.jpg)
 
 ### Accepted Answers:
 
@@ -163,7 +163,7 @@ Score: 0
 
 ### Feedback:
 
-![](assets/Term-Feb-to-May_Mathematics-II_Week7_Reflectwithus-Week7_IITMOnlineDegree13_4_20267_22_26am_26.jpg)
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week7_Reflectwithus-Week7_IITMOnlineDegree13_4_20267_22_26am_26.jpg)
 
 ### Accepted Answers:
 
@@ -195,7 +195,7 @@ Score: 0
 
 ### Feedback:
 
-![](assets/Term-Feb-to-May_Mathematics-II_Week7_Reflectwithus-Week7_IITMOnlineDegree13_4_20267_22_26am_27.jpg)
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week7_Reflectwithus-Week7_IITMOnlineDegree13_4_20267_22_26am_27.jpg)
 
 ### Accepted Answers:
 

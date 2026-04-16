@@ -91,7 +91,7 @@ _1 point_
 
 Match the linear transformations and sets of vectors in column A with the images of those sets under the linear transformation in column B and the geometric representations of both sets in column C.  
   
-![](assets/Term-Feb-to-May_Mathematics-II_Week6_Week6-GradedAssignment6_IITMOnlineDegree13_4_20267_17_49am_32.jpg)  
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week6_Week6-GradedAssignment6_IITMOnlineDegree13_4_20267_17_49am_32.jpg)  
   
 Choose the correct option from the following.  
 

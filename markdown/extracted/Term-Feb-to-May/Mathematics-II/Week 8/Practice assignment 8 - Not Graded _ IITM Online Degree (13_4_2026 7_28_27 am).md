@@ -35,7 +35,7 @@ An inner product on R3\\mathbb{R}^3R3 is defined as:
   
   
   
-![](assets/Term-Feb-to-May_Mathematics-II_Week8_Practiceassignment8-NotGraded_IITMOnlineDegree13_4_20267_28_27am_23.png)  
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week8_Practiceassignment8-NotGraded_IITMOnlineDegree13_4_20267_28_27am_23.png)  
 Which of the following option are true?  
   
 

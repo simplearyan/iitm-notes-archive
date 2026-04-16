@@ -39,7 +39,7 @@ If PWP\_WPW​ denotes the linear transformation which projects the vectors of a
 
   
 **Solution:  
-**![](assets/Term-Feb-to-May_Mathematics-II_Week8_Reflectwithus-Week8_IITMOnlineDegree13_4_20267_28_06am_32.jpg)  
+**![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week8_Reflectwithus-Week8_IITMOnlineDegree13_4_20267_28_06am_32.jpg)  
   
   
 Option 1:\\textbf{Option 1:}Option 1:  

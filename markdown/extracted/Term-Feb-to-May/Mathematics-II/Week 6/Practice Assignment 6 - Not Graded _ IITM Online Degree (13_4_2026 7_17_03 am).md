@@ -47,7 +47,7 @@ _1 point_
 Consider the following set S\={(x,y)∣x+y\=1,x,y∈R}S=\\lbrace(x,y)\\mid x+y=1, x,y \\in \\mathbb{R}\\rbraceS\={(x,y)∣x+y\=1,x,y∈R}. In column A the matrix representation of some linear transformations are given with respect to the standard ordered bases. Match the entries in column A with the set T(S)T(S)T(S) given in column B and the geometric representations of SSS and T(S)T(S)T(S) in column C.  
   
   
-![](assets/Term-Feb-to-May_Mathematics-II_Week6_PracticeAssignment6-NotGraded_IITMOnlineDegree13_4_20267_17_03am_23.jpg)  
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week6_PracticeAssignment6-NotGraded_IITMOnlineDegree13_4_20267_17_03am_23.jpg)  
 
 i →\\rightarrow→ b →\\rightarrow→ 2.
 
@@ -240,7 +240,7 @@ Comprehension Type Question:
 For each video on YouTube, consider the vector (Number of comments in thousands, Number of shares in thousands, Number of views in thousands) and consider the subset SSS of R3\\mathbb{ R}^3R3 consisting of these vectors. It is known that the ranking of a YouTube video can be thought of as the restriction of a linear transformation T:R3→RT:\\mathbb{R}^3 \\to \\mathbb{R}T:R3→R to SSS where R3\\mathbb{R}^3R3 comes with usual addition and scalar multiplication. (assume ranking 0 (zero) is possible and in practice negative rankings can be ignored).  
 The following data in Table M2W6P2 shows the correlation between comments, shares, and views - with YouTube rankings of a video.  
   
-                             ![](assets/Term-Feb-to-May_Mathematics-II_Week6_PracticeAssignment6-NotGraded_IITMOnlineDegree13_4_20267_17_03am_24.jpg)  
+                             ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week6_PracticeAssignment6-NotGraded_IITMOnlineDegree13_4_20267_17_03am_24.jpg)  
 Use the above information to answer questions 8, 9 and 10.  
   
 

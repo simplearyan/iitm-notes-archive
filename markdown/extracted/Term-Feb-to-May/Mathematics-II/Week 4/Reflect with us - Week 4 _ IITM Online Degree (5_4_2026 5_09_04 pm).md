@@ -15,7 +15,7 @@ Find the dimension of the vector space
                   V\={(x,y,z)∣x,y,z∈R,x+y+z\=0,z\=0}Addition: (x1,y1,z1)+(x2,y2,z2)\=(x1+x2,y1+y2,z1+z2);(x1,y1,z1),(x2,y2,z2)∈VScalar multiplication: c(x,y,z)\=(cx,cy,cz); (x,y,z)∈V, c∈R\\begin{aligned} & V = \\lbrace (x,y,z) \\mid x,y,z\\in \\mathbb{R}, x+y+z = 0, z=0 \\rbrace \\\\ & \\textit{Addition: } (x\_1,y\_1,z\_1)+(x\_2,y\_2,z\_2)=(x\_1+x\_2, y\_1+y\_2,z\_1+z\_2); \\\\ &\\hspace{5cm} (x\_1,y\_1,z\_1), (x\_2,y\_2,z\_2)\\in V \\\\ & \\textit{Scalar multiplication: } c(x,y,z)=(cx,cy,cz);~ (x,y,z)\\in V, ~ c\\in \\mathbb{R} \\end{aligned}​V\={(x,y,z)∣x,y,z∈R,x+y+z\=0,z\=0}Addition: (x1​,y1​,z1​)+(x2​,y2​,z2​)\=(x1​+x2​,y1​+y2​,z1​+z2​);(x1​,y1​,z1​),(x2​,y2​,z2​)∈VScalar multiplication: c(x,y,z)\=(cx,cy,cz); (x,y,z)∈V, c∈R​  
 Solution:\\textbf{Solution:}Solution:  
   
-![](assets/Term-Feb-to-May_Mathematics-II_Week4_Reflectwithus-Week4_IITMOnlineDegree5_4_20265_09_04pm_23.jpg)  
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week4_Reflectwithus-Week4_IITMOnlineDegree5_4_20265_09_04pm_23.jpg)  
 Observe that, in question, you are asked to find the dimension of the vector space . So first you have to find a basis of the vector space.  
 Note:\\textbf{Note:}Note: Consider the system of linear equations  
                                                  x+y+z\=0z\=0 \\begin{aligned} x+y+z &=0 \\\\ z &=0 \\end{aligned}x+y+zz​\=0\=0​  

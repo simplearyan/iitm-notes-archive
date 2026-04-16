@@ -36,7 +36,7 @@ An inner product on R3\\mathbb{R}^3R3 is defined as:
 Match the sets of vectors in column A with their properties of orthogonality or orthonormality in column B with respect to the above inner product.  
   
   
-![](assets/Term-Feb-to-May_Mathematics-II_Week8_Week8-GradedAssignment8_IITMOnlineDegree13_4_20267_28_45am_20.jpg)  
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week8_Week8-GradedAssignment8_IITMOnlineDegree13_4_20267_28_45am_20.jpg)  
   
 Choose the set of correct options.   
   

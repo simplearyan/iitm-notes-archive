@@ -294,7 +294,7 @@ Comprehension Type Question:
   
 The network in Figure: M2W2GA1 shows a proposed plan for flow of traffic around a park. All the streets are assumed to be one-way and the arrows denote the direction of flow of traffic. The plan calls for a computerized traffic light at the South Street. Let 2x1,3x2,2x3, and x42x\_1, 3x\_2, 2x\_3, \\text{ and } x\_42x1​,3x2​,2x3​, and x4​ denote the average number (per hour) of vehicles expected to pass through the connecting streets (e.g., 2x12x\_12x1​ denote the average number (per hour) of vehicles expected to pass through the street connecting the North Street and West Street as shown in Figure: M2W2GA1). 400, 1000, 900, and ccc denote the average number (per hour) of vehicles expected to pass through West, North, East, and South Streets respectively.  
   
-                                              ![](assets/Term-Feb-to-May_Mathematics-II_Week2_Week2GradedAssignment2_IITMOnlineDegree4_4_20269_02_47am_23.jpg)  
+                                              ![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week2_Week2GradedAssignment2_IITMOnlineDegree4_4_20269_02_47am_23.jpg)  
   
 
 JavaScript should be enabled to grade this question.
@@ -353,7 +353,7 @@ _1 point_
 
 Match the names of the street in Column A with the maximum and minimum number of vehicles expected to pass through the street on an average (per hour) in Column B and Column C, respectively; in Table M2W2GA1.  
   
-![](assets/Term-Feb-to-May_Mathematics-II_Week2_Week2GradedAssignment2_IITMOnlineDegree4_4_20269_02_47am_24.jpg)  
+![](extracted/assets/Term-Feb-to-May_Mathematics-II_Week2_Week2GradedAssignment2_IITMOnlineDegree4_4_20269_02_47am_24.jpg)  
   
 
 d →\\rightarrow→ i →\\rightarrow→ 2
