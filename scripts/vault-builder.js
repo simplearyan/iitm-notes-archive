@@ -67,7 +67,17 @@ function runExtraction() {
             const doc = dom.window.document;
             const main = doc.querySelector('.content-wrapper') || doc.body;
             
-            main.querySelectorAll('.no-print, nav, footer, script').forEach(el => el.remove());
+            // 📸 Rewrite image paths relative to the content directory
+            const baseRel = path.relative(CONTENT_DIR, source.id).replace(/\.u\.zip\.html$/i, '').replace(/\.html$/i, '');
+            main.querySelectorAll('img').forEach(img => {
+                const src = img.getAttribute('src');
+                if (src && !src.startsWith('http') && !src.startsWith('data:')) {
+                    // Make it relative to the vault root: ../content/course-name/lesson-name/image.png
+                    const newSrc = `../content/${baseRel}/${src}`;
+                    img.setAttribute('src', newSrc);
+                }
+            });
+
             const md = turndown.turndown(main.innerHTML);
             const title = doc.title.replace(/_ IITM Online Degree.*$/, '').trim();
 
