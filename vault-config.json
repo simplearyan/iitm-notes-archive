@@ -1,0 +1,10 @@
+{
+  "excludePatterns": [
+    "^L[0-9].*",
+    "^Lesson.*",
+    "\\.pdf$",
+    "\\.zip$"
+  ],
+  "hideExtensions": true,
+  "prettyNames": true
+}

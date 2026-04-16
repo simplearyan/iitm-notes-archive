@@ -17,10 +17,18 @@ const SCRIPTS_DIR = __dirname;
 const ROOT_DIR = path.resolve(SCRIPTS_DIR, '..');
 const CONTENT_DIR = path.resolve(ROOT_DIR, 'content');
 const VAULT_DIR = path.resolve(ROOT_DIR, 'markdown');
+const CONFIG_PATH = path.resolve(ROOT_DIR, 'vault-config.json');
 const EXTRACTED_DIR = path.resolve(VAULT_DIR, 'extracted');
 const MANUAL_DIR = path.resolve(VAULT_DIR, 'manual');
-const ASSETS_DIR = path.resolve(EXTRACTED_DIR, 'assets'); // Unified path
+const ASSETS_DIR = path.resolve(EXTRACTED_DIR, 'assets');
 const INDEX_HTML = path.resolve(VAULT_DIR, 'index.html');
+
+// 2. Load Config
+let CONFIG = { excludePatterns: [], hideExtensions: true };
+if (fs.existsSync(CONFIG_PATH)) {
+    try { CONFIG = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf-8')); }
+    catch (e) { console.warn("⚠️ Failed to load vault-config.json, using defaults."); }
+}
 
 const turndown = new TurndownService({ headingStyle: 'atx', codeBlockStyle: 'fenced' });
 
@@ -132,20 +140,35 @@ async function build() {
         const nodes = [];
         for (const item of items) {
             if (item.name.startsWith('.') || item.name === 'assets') continue;
+            
+            // 🛡️ Smart Exclusion Logic
+            const isExcluded = CONFIG.excludePatterns.some(pattern => new RegExp(pattern).test(item.name));
+            if (isExcluded) continue;
+
             const full = path.join(dir, item.name);
             const rel = relativePathSuffix ? `${relativePathSuffix}/${item.name}` : item.name;
             if (item.isDirectory()) {
                 const kids = buildNodeTree(full, source, rel);
-                if (kids.length > 0) nodes.push({
-                    type: 'folder',
-                    name: item.name.replace(/_+/g, ' ').replace(/\s*\(\d{1,2}_\d{1,2}_\d{4}.*?\)/, '').trim(),
-                    path: rel,
-                    children: kids.sort((a,b) => (a.type === b.type ? a.name.localeCompare(b.name) : (a.type === 'folder' ? -1 : 1)))
-                });
+                if (kids.length > 0) {
+                    let folderName = item.name.replace(/_+/g, ' ').replace(/\s*\(\d{1,2}_\d{1,2}_\d{4}.*?\)/, '').trim();
+                    nodes.push({
+                        type: 'folder',
+                        name: folderName,
+                        path: rel,
+                        children: kids.sort((a,b) => (a.type === b.type ? a.name.localeCompare(b.name) : (a.type === 'folder' ? -1 : 1)))
+                    });
+                }
             } else if (item.name.endsWith('.md')) {
                 const content = fs.readFileSync(full, 'utf-8');
                 const titleMatch = content.match(/^title:\s*"(.*)"/m) || content.match(/^#+\s*(.*)/m);
-                nodes.push({ type: 'file', name: titleMatch ? titleMatch[1].trim() : item.name, path: rel.replace('.md', ''), source });
+                let fileName = titleMatch ? titleMatch[1].trim() : item.name;
+                
+                // Pretty Titles: Remove extension
+                if (CONFIG.hideExtensions) {
+                    fileName = fileName.replace(/\.md$/, '');
+                }
+
+                nodes.push({ type: 'file', name: fileName, path: rel.replace('.md', ''), source });
             }
         }
         return nodes.sort((a,b) => (a.type === b.type ? a.name.localeCompare(b.name) : (a.type === 'folder' ? -1 : 1)));
