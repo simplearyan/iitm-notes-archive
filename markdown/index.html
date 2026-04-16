@@ -103,6 +103,12 @@
         }
         .size-dot { transition: transform 0.2s; }
         .size-btn.active .size-dot { background-color: #4f46e5; }
+
+        /* Disable selection in drawing mode */
+        body.drawing-mode { 
+            user-select: none; 
+            -webkit-user-select: none;
+        }
     </style>
 </head>
 <body class="bg-[#f8fafc] text-slate-800 overflow-hidden h-screen flex flex-col md:flex-row">
@@ -688,6 +694,7 @@
                 toggle() {
                     this.active = !this.active;
                     this.canvas.classList.toggle('active', this.active);
+                    document.body.classList.toggle('drawing-mode', this.active);
                     const toolbar = document.getElementById('anno-toolbar');
                     const toggleBtn = document.getElementById('toggle-anno');
                     
