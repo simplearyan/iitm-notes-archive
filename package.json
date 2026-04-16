@@ -39,6 +39,7 @@
     "tailwindcss": "^3.4.17"
   },
   "dependencies": {
-    "jsdom": "^29.0.2"
+    "jsdom": "^29.0.2",
+    "turndown": "^7.2.4"
   }
 }
