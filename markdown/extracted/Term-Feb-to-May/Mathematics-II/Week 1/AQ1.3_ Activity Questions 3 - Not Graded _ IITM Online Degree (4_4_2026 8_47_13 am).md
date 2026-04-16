@@ -290,7 +290,7 @@ If $Ax = b$ is a system of linear equations which has a solution, then $\frac{1}
  
  The Plane 1 and Plane 2 in Figure M2W1AQ3, correspond to two different linear equations, which form a system of linear equations.
 
-![image](../../../assets/img_rdqjt6b7u.jpg)
+![image](../../../assets/img_v3w08ynpc.jpg)
 
 The above system of linear equations has
 
@@ -358,9 +358,9 @@ Score: 0
 Consider the geometric representations (Figures $(a),(b),$ and $(c$)) of three systems of
 linear equations.
 
-![image](../../../assets/img_xj3g0abyc.jpg)
+![image](../../../assets/img_41l3fkie5.jpg)
 
-![image](../../../assets/img_736ltzii3.jpg)
+![image](../../../assets/img_ksdjzjo8p.jpg)
 
 Choose the set of correct options.
 

@@ -43,7 +43,7 @@ An inner product on $\mathbb{R}^3$ is defined as:
 
  Match a set $S$ in Column A with the set $T$ given in column B, so that $T \subset Span(S)^{\perp}$. Match a set in column B with the property it satisfies in column C.
 
-![image](../../../assets/img_m9jsd4qc4.png)
+![image](../../../assets/img_l8rw6ffvg.png)
 
 Which of the following option are true?
 

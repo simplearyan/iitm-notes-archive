@@ -110,7 +110,7 @@ $v_1+2v_2=(0,0)$
  
  Choose the set of correct options using Figure M2W1SWU1.
 
-![image](../../../assets/img_4f3xbtd17.jpg)
+![image](../../../assets/img_v3zqas925.jpg)
 
 [Hint: Recall that vector addition and scalar multiplication are done coordinate-wise.]
  

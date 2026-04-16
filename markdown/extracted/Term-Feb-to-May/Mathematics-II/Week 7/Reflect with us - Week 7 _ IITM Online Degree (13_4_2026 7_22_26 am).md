@@ -89,7 +89,7 @@ $f(x, y, z) = (x-2z+2, z, x-z+1)$
 
 Solution:
 
-![image](../../../assets/img_act61j5uy.jpg)
+![image](../../../assets/img_wy22zp9x9.jpg)
 
 $\textbf{Discussion on Option 1:}$ It is given that $L_1=U$ and $\{(2,0,1),(1,1,0),(0,1,0)\}$ is a basis of the vector subspace $U$. 
 
@@ -169,7 +169,7 @@ Score: 0
 
 ### Feedback:
 
-![image](../../../assets/img_v7rx3bbbg.jpg)
+![image](../../../assets/img_ajpx8y7js.jpg)
 
 ### Accepted Answers:
 
@@ -229,7 +229,7 @@ Score: 0
 
 ### Feedback:
 
-![image](../../../assets/img_7t2iz5aeg.jpg)
+![image](../../../assets/img_qc00506b3.jpg)
 
 ### Accepted Answers:
 
@@ -276,7 +276,7 @@ Score: 0
 
 ### Feedback:
 
-![image](../../../assets/img_xgtmxhkew.jpg)
+![image](../../../assets/img_o2etxht1a.jpg)
 
 ### Accepted Answers:
 
@@ -331,7 +331,7 @@ Score: 0
 
 ### Feedback:
 
-![image](../../../assets/img_sv3oawwkd.jpg)
+![image](../../../assets/img_dz5s69juk.jpg)
 
 ### Accepted Answers:
 
@@ -391,7 +391,7 @@ Score: 0
 
 ### Feedback:
 
-![image](../../../assets/img_rx16nxvb0.jpg)
+![image](../../../assets/img_lj57pqcwa.jpg)
 
 ### Accepted Answers:
 

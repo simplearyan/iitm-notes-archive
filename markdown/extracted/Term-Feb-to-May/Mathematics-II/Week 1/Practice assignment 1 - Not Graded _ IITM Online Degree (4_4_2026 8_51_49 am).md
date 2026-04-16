@@ -29,7 +29,7 @@ Multiple Select Questions (MSQ):
  
  Match the systems of linear equations in Column A with their number of solutions in Column B and their geometric representation in Column C.
 
-![image](../../../assets/img_lkirpu2cs.jpg)
+![image](../../../assets/img_1iyznpjem.jpg)
 
  
  
@@ -410,12 +410,12 @@ If Mahesh tries to find the price of 1 kg potato and 1 kg dal using the appropri
  The marks obtained by Safina, Ram and Pratiksha in Quiz 1, Quiz 2 and End sem (with the maximum marks for each exam being 100) are shown in Table W1PT2.
 
                      
-![image](../../../assets/img_jszc7ssxm.jpg)
+![image](../../../assets/img_h0yb595pf.jpg)
 
 The weightage of marks in final grade(in percent) of Quiz 1, Quiz 2, and End sem is shown in Table W1PT3.
 
                                        
-![image](../../../assets/img_c6mz80ah9.jpg)
+![image](../../../assets/img_hdfg0hwm6.jpg)
 
 Choose the set of correct options.
  

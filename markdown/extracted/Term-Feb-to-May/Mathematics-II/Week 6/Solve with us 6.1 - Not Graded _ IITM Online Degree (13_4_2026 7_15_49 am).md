@@ -502,7 +502,7 @@ Score: 0
 
 ### Feedback:
 
-![image](../../../assets/img_joovdwyvq.jpg)
+![image](../../../assets/img_7p49mkygw.jpg)
 
 ### Accepted Answers:
 

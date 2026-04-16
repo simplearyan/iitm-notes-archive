@@ -80,7 +80,7 @@ $\begin{bmatrix} 1 & -1 \\ 0 & 1 \end{bmatrix}$ cannot represent a matrix corres
 
 **Solution:
 **
-![image](../../../assets/img_is4vwe1ls.jpg)
+![image](../../../assets/img_lsy5wcn89.jpg)
 
 $\textbf{Option 1:}$ 
 $\beta = \{v_1, v_2, \ldots, v_n\}$ is an orthonormal basis of the inner product space $V$.

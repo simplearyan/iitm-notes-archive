@@ -93,7 +93,7 @@ Score: 0
  
  Match the sets of vectors in column A with their properties of linear dependence or independence in column B and the dimension of the vector spaces in column C spanned by the sets.
 
-![image](../../../assets/img_86za8rxht.jpg)
+![image](../../../assets/img_dm8ea3oby.jpg)
 
  
  

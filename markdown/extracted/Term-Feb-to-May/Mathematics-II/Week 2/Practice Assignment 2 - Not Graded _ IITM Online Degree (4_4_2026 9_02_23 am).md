@@ -251,7 +251,7 @@ If $A$ is an invertible upper triangular $3 \times 3$ matrix, then the inverse m
  
  Choose the correct set of options based on the matrices given in Table M2W2PT1.
 
-![image](../../../assets/img_kuyx7ufbg.jpg)
+![image](../../../assets/img_nbapqjdww.jpg)
 
  
  
@@ -536,7 +536,7 @@ First, assume the crossing of RR with RR. This always gives the genotype RR, the
 This can be veiwed as the following Table: M2W2PT2
 
                                                          
-![image](../../../assets/img_3erykx1r0.jpg)
+![image](../../../assets/img_trqamjv8i.jpg)
 
 The matrix representing this observation is given by $P=\begin{bmatrix}
 1 & 1/2 & 0 \\

@@ -81,7 +81,7 @@ Consider a system of linear equations $\begin{aligned}
 If the following matrix represents the augmented matrix of the system, then answer the questions 2,3 and 4. 
 
                                                 
-![image](../../../assets/img_4dg60qwt8.jpg)
+![image](../../../assets/img_ah8nowkil.jpg)
 
 **
 **

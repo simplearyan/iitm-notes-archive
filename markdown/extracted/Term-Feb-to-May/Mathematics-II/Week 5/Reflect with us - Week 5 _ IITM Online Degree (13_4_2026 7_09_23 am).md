@@ -80,7 +80,7 @@ $T$ is both one-one and onto.
  
 
               
-![image](../../../assets/img_dibzxf56z.jpg)
+![image](../../../assets/img_4up4j6gwi.jpg)
 
 - $\textbf{Step 1:}$ 
 
@@ -245,7 +245,7 @@ Score: 0
 - Hence $T$ is linear transformation. So Option 1 is true.
 
                 
-![image](../../../assets/img_c62r2ll0m.jpg)
+![image](../../../assets/img_4545cmvzv.jpg)
 
 Now in the given problem $T(v)=0$, implies $Av=0$. This is the matrix representation of the system of linear equations:
                                   $\begin{aligned}
