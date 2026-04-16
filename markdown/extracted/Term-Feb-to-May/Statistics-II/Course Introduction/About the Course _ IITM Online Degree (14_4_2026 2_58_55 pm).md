@@ -1,6 +1,5 @@
 ---
 title: ""
-source: "extracted"
 ---
 
 # 
