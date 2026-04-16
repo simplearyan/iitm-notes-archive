@@ -48,12 +48,12 @@
             .katex-display { margin: 1.5rem 0; overflow-x: auto; padding: 1rem 0; }
         
         /* 🧠 Smart Header & Progress */
-        .smart-header { transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .header-hidden { transform: translateY(-100%) !important; }
+        .smart-header { transition:all 0.4s cubic-bezier(0.4, 0, 0.2, 1); height: 73px; overflow: hidden; }
+        .header-hidden { height: 0 !important; border-bottom-width: 0 !important; opacity: 0; }
         .progress-bar { 
-            position: absolute; bottom: -1px; left: 0; height: 3px; 
+            position: fixed; top: 0; left: 0; height: 3px; 
             background: linear-gradient(to right, #6366f1, #a855f7); 
-            transition: width 0.1s ease; z-index: 60;
+            transition: width 0.1s ease; z-index: 100;
         }
 
         /* 📱 Mobile Sidebar Upgrade */
@@ -81,9 +81,11 @@
 </head>
 <body class="bg-[#f8fafc] text-slate-800 overflow-hidden h-screen flex flex-col md:flex-row">
 
+    <!-- Progress Bar (Fixed Top) -->
+    <div id="master-progress" class="progress-bar w-0"></div>
+
     <!-- Mobile Header -->
-    <header id="mobile-header" class="md:hidden flex items-center justify-between px-6 py-4 bg-white border-b border-slate-200 z-50 smart-header sticky top-0">
-        <div id="mobile-progress" class="progress-bar w-0"></div>
+    <header id="mobile-header" class="md:hidden flex items-center justify-between px-6 bg-white border-b border-slate-200 z-50 smart-header sticky top-0 shrink-0">
         <div class="flex items-center gap-3">
             <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white">
                 <i data-lucide="book-open" class="w-5 h-5"></i>
@@ -151,8 +153,7 @@
     <main id="main-content" class="flex-1 overflow-y-auto custom-scrollbar bg-white md:bg-[#f8fafc] flex flex-col relative">
         
         <!-- Reading Header (Desktop) -->
-        <header id="reading-header" class="hidden md:flex sticky top-0 bg-white/90 backdrop-blur-xl border-b border-slate-200 px-12 py-5 items-center justify-between z-20 smart-header shadow-sm shadow-slate-200/20">
-            <div id="desktop-progress" class="progress-bar w-0"></div>
+        <header id="reading-header" class="hidden md:flex bg-white/90 backdrop-blur-xl border-b border-slate-200 px-12 py-5 items-center justify-between z-20 smart-header sticky top-0 shrink-0 shadow-sm shadow-slate-200/20">
             <div class="flex items-center gap-3 text-[10px] font-bold text-slate-400 uppercase tracking-widest" id="breadcrumb">
                 <div class="w-6 h-6 rounded bg-slate-100 flex items-center justify-center hover:bg-indigo-100 hover:text-indigo-600 transition-colors cursor-pointer" onclick="location.hash=''">
                     <i data-lucide="home" class="w-3 h-3"></i>
@@ -216,10 +217,255 @@
     <!-- SIDEBAR-DATA-START -->
     <script id="vault-data" type="application/json">
     {
-      "stats": { "totalFiles": 1, "extractedFiles": 0, "manualFiles": 1 },
-      "navigation": [ { "type": "file", "name": "Getting Started with Markdown", "path": "manual/GETTING_STARTED", "source": "manual" } ],
-      "breadcrumbs": { "manual/GETTING_STARTED": ["Getting Started with Markdown"] }
+  "stats": {
+    "buildId": "VAULT-1776311299737",
+    "totalFiles": 18,
+    "timestamp": "2026-04-16T03:48:19.737Z"
+  },
+  "navigation": [
+    {
+      "type": "folder",
+      "name": "Term-Feb-to-May",
+      "path": "Term-Feb-to-May",
+      "children": [
+        {
+          "type": "folder",
+          "name": "Mathematics-II",
+          "path": "Term-Feb-to-May/Mathematics-II",
+          "children": [
+            {
+              "type": "folder",
+              "name": "Malpractice Rules",
+              "path": "Term-Feb-to-May/Mathematics-II/Malpractice Rules",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "Punishment for malpractice: 170+students: U grade in all subjects AND 1 Term ban in course registration :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Mathematics-II/Malpractice Rules/Punishment for malpractice_ 170_students_ U grade in all subjects AND 1 Term ban in course registration _ IITM Online Degree (4_4_2026 8_38_54 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "file",
+              "name": "",
+              "path": "Term-Feb-to-May/Mathematics-II/Course Introduction",
+              "source": "extracted"
+            },
+            {
+              "type": "file",
+              "name": "",
+              "path": "Term-Feb-to-May/Mathematics-II/Week 0",
+              "source": "extracted"
+            },
+            {
+              "type": "file",
+              "name": "",
+              "path": "Term-Feb-to-May/Mathematics-II/Week 1",
+              "source": "extracted"
+            },
+            {
+              "type": "file",
+              "name": "",
+              "path": "Term-Feb-to-May/Mathematics-II/Week 2",
+              "source": "extracted"
+            },
+            {
+              "type": "file",
+              "name": "",
+              "path": "Term-Feb-to-May/Mathematics-II/Week 3",
+              "source": "extracted"
+            },
+            {
+              "type": "file",
+              "name": "",
+              "path": "Term-Feb-to-May/Mathematics-II/Week 4",
+              "source": "extracted"
+            },
+            {
+              "type": "file",
+              "name": "",
+              "path": "Term-Feb-to-May/Mathematics-II/Week 5",
+              "source": "extracted"
+            },
+            {
+              "type": "file",
+              "name": "",
+              "path": "Term-Feb-to-May/Mathematics-II/Week 6",
+              "source": "extracted"
+            },
+            {
+              "type": "file",
+              "name": "",
+              "path": "Term-Feb-to-May/Mathematics-II/Week 7",
+              "source": "extracted"
+            },
+            {
+              "type": "file",
+              "name": "",
+              "path": "Term-Feb-to-May/Mathematics-II/Week 8",
+              "source": "extracted"
+            }
+          ]
+        },
+        {
+          "type": "folder",
+          "name": "Statistics-II",
+          "path": "Term-Feb-to-May/Statistics-II",
+          "children": [
+            {
+              "type": "file",
+              "name": "",
+              "path": "Term-Feb-to-May/Statistics-II/Course Introduction",
+              "source": "extracted"
+            },
+            {
+              "type": "file",
+              "name": "",
+              "path": "Term-Feb-to-May/Statistics-II/Course Resources",
+              "source": "extracted"
+            },
+            {
+              "type": "file",
+              "name": "",
+              "path": "Term-Feb-to-May/Statistics-II/Malpractice Rules",
+              "source": "extracted"
+            },
+            {
+              "type": "file",
+              "name": "",
+              "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 1",
+              "source": "extracted"
+            },
+            {
+              "type": "file",
+              "name": "",
+              "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 2",
+              "source": "extracted"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "",
+      "path": "maths-2",
+      "source": "extracted"
+    },
+    {
+      "type": "file",
+      "name": "Getting Started with Markdown Format",
+      "path": "GETTING_STARTED",
+      "source": "manual"
     }
+  ],
+  "breadcrumbs": {
+    "Term-Feb-to-May": [
+      "Term-Feb-to-May"
+    ],
+    "Term-Feb-to-May/Mathematics-II": [
+      "Term-Feb-to-May",
+      "Mathematics-II"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Malpractice Rules": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Malpractice Rules"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Malpractice Rules/Punishment for malpractice_ 170_students_ U grade in all subjects AND 1 Term ban in course registration _ IITM Online Degree (4_4_2026 8_38_54 am)": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Malpractice Rules",
+      "Punishment for malpractice: 170+students: U grade in all subjects AND 1 Term ban in course registration :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Course Introduction": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      ""
+    ],
+    "Term-Feb-to-May/Mathematics-II/Week 0": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      ""
+    ],
+    "Term-Feb-to-May/Mathematics-II/Week 1": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      ""
+    ],
+    "Term-Feb-to-May/Mathematics-II/Week 2": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      ""
+    ],
+    "Term-Feb-to-May/Mathematics-II/Week 3": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      ""
+    ],
+    "Term-Feb-to-May/Mathematics-II/Week 4": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      ""
+    ],
+    "Term-Feb-to-May/Mathematics-II/Week 5": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      ""
+    ],
+    "Term-Feb-to-May/Mathematics-II/Week 6": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      ""
+    ],
+    "Term-Feb-to-May/Mathematics-II/Week 7": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      ""
+    ],
+    "Term-Feb-to-May/Mathematics-II/Week 8": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      ""
+    ],
+    "Term-Feb-to-May/Statistics-II": [
+      "Term-Feb-to-May",
+      "Statistics-II"
+    ],
+    "Term-Feb-to-May/Statistics-II/Course Introduction": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      ""
+    ],
+    "Term-Feb-to-May/Statistics-II/Course Resources": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      ""
+    ],
+    "Term-Feb-to-May/Statistics-II/Malpractice Rules": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      ""
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 0 Part 1": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      ""
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 0 Part 2": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      ""
+    ],
+    "maths-2": [
+      ""
+    ],
+    "GETTING_STARTED": [
+      "Getting Started with Markdown Format"
+    ]
+  }
+}
     </script>
     <!-- SIDEBAR-DATA-END -->
 
@@ -464,8 +710,7 @@
                 const main = document.getElementById('main-content');
                 const desktopHeader = document.getElementById('reading-header');
                 const mobileHeader = document.getElementById('mobile-header');
-                const dProgress = document.getElementById('desktop-progress');
-                const mProgress = document.getElementById('mobile-progress');
+                const progressBar = document.getElementById('master-progress');
                 
                 let lastScroll = 0;
                 
@@ -474,16 +719,22 @@
                     const height = main.scrollHeight - main.clientHeight;
                     const progress = (top / height) * 100;
                     
-                    // Update Progress Bars
-                    if (dProgress) dProgress.style.width = `${progress}%`;
-                    if (mProgress) mProgress.style.width = `${progress}%`;
+                    // Update Progress Bar
+                    if (progressBar) progressBar.style.width = `${progress}%`;
                     
                     // Smart Header Hide/Show
                     const isScrollingDown = top > lastScroll;
                     const shouldHide = isScrollingDown && top > 120;
                     
-                    if (desktopHeader) desktopHeader.classList.toggle('header-hidden', shouldHide);
-                    if (mobileHeader) mobileHeader.classList.toggle('header-hidden', shouldHide);
+                    if (desktopHeader) {
+                        if (shouldHide) desktopHeader.classList.add('header-hidden');
+                        else desktopHeader.classList.remove('header-hidden');
+                    }
+                    
+                    if (mobileHeader) {
+                        if (shouldHide) mobileHeader.classList.add('header-hidden');
+                        else mobileHeader.classList.remove('header-hidden');
+                    }
                     
                     lastScroll = top;
                 }, { passive: true });
