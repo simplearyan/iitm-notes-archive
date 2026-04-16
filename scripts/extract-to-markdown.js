@@ -19,12 +19,13 @@ const { JSDOM } = require('jsdom');
 
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
 const IS_CI = process.env.GITHUB_ACTIONS === 'true';
-const INPUT_DIR = path.resolve(__dirname, '../content');
+const CWD = process.cwd();
+const INPUT_DIR = path.resolve(CWD, 'content');
 
 // Dynamic Output: Locally use 'handouts/', in CI use 'markdown/extracted/' for web sync
 const OUTPUT_DIR = IS_CI 
-  ? path.resolve(__dirname, '../markdown/extracted')
-  : path.resolve(__dirname, '../handouts');
+  ? path.resolve(CWD, 'markdown', 'extracted')
+  : path.resolve(CWD, 'handouts');
 
 const ASSETS_DIR = path.join(OUTPUT_DIR, 'assets');
 
@@ -37,12 +38,18 @@ const ASSETS_DIR = path.join(OUTPUT_DIR, 'assets');
 
 function collectFiles(dir) {
   const results = [];
-  if (!fs.existsSync(dir)) return results;
+  if (!fs.existsSync(dir)) {
+    console.log(`⚠️  Warning: Directory not found: ${dir}`);
+    return results;
+  }
   const entries = fs.readdirSync(dir, { withFileTypes: true });
   for (const entry of entries) {
     const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) results.push(...collectFiles(full));
-    else if (entry.isFile() && entry.name.endsWith('.u.zip.html')) results.push(full);
+    if (entry.isDirectory()) {
+      results.push(...collectFiles(full));
+    } else if (entry.isFile() && entry.name.toLowerCase().endsWith('.u.zip.html')) {
+      results.push(full);
+    }
   }
   return results;
 }

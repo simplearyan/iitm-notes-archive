@@ -41,6 +41,18 @@ jobs:
           fi
           mkdir -p markdown/extracted/assets
 
+      - name: 🕵️ File System Audit
+        run: |
+          echo "📂 Auditing root directory..."
+          ls -F
+          echo "📁 Auditing 'content' folder..."
+          if [ -d "content" ]; then
+            ls -R content | head -n 50
+          else
+            echo "❌ ERROR: 'content' folder is NOT present in the workspace!"
+            exit 1
+          fi
+
       - name: "📦 Step 1: Extract & Pre-Index Course Materials"
         run: node --expose-gc --max-old-space-size=6144 scripts/extract-to-markdown.js
         env:
