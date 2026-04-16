@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markdown Vault | IITM Archive</title>
     
+    <!-- Cache Busting -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
@@ -110,13 +115,19 @@
         </nav>
 
         <div class="p-6 border-t border-slate-100 bg-slate-50/50">
-            <div class="flex items-center gap-3">
-                <div class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 text-xs font-bold">V1</div>
-                <div>
-                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Storage Status</p>
-                    <p class="text-xs font-bold text-slate-700" id="stats-label">Loading Index...</p>
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 text-xs font-bold">V1</div>
+                    <div>
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Storage Status</p>
+                        <p class="text-xs font-bold text-slate-700" id="stats-label">Loading Index...</p>
+                    </div>
                 </div>
+                <button onclick="purgeVaultCache()" class="p-2 text-slate-400 hover:text-indigo-600 transition-colors" title="Force Refresh Data">
+                    <i data-lucide="refresh-cw" class="w-4 h-4"></i>
+                </button>
             </div>
+            <p id="build-id" class="text-[8px] text-slate-300 font-mono mt-2 text-center uppercase tracking-tighter"></p>
         </div>
     </aside>
 
@@ -253,16 +264,20 @@
 
             async function loadIndex() {
                 try {
-                    // NEW: Read from injected DOM instead of fetching a file
                     const dataEl = document.getElementById('vault-data');
                     if (!dataEl) throw new Error("Sidebar data missing from HTML");
                     
                     STATE.index = JSON.parse(dataEl.textContent);
-                    
-                    // Diagnostic Log
                     console.log("📂 Reading Vault Index (Injected):", STATE.index);
                     
                     document.getElementById('stats-label').innerText = `${STATE.index.stats.totalFiles} Documents Loaded`;
+                    
+                    // Display Build ID
+                    const buildEl = document.getElementById('build-id');
+                    if (buildEl && STATE.index.stats.buildId) {
+                        buildEl.innerText = `Build: ${STATE.index.stats.buildId}`;
+                    }
+                    
                     renderNav(STATE.index.navigation);
                 } catch (err) {
                     console.error("Critical Load Error:", err);
@@ -510,6 +525,24 @@
                 lucide.createIcons({ scope: viewer });
             }
         })();
+
+        async function purgeVaultCache() {
+            if ('serviceWorker' in navigator) {
+                const registrations = await navigator.serviceWorker.getRegistrations();
+                for (let reg of registrations) {
+                    await reg.unregister();
+                }
+            }
+            
+            // Clear all caches
+            if ('caches' in window) {
+                const keys = await caches.keys();
+                await Promise.all(keys.map(key => caches.delete(key)));
+            }
+            
+            // Force reload
+            window.location.reload(true);
+        }
     </script>
 </body>
 </html>

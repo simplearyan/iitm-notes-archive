@@ -141,6 +141,7 @@ function main() {
     };
 
     const stats = {
+        buildId: new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19),
         totalFiles: allMarkdownFiles(EXTRACTED_DIR).length + allMarkdownFiles(MANUAL_DIR).length,
         extractedFiles: allMarkdownFiles(EXTRACTED_DIR).length,
         manualFiles: allMarkdownFiles(MANUAL_DIR).length
