@@ -1,15 +1,126 @@
 ---
-title: ""
+title: "Activity Question Lecture 1 - Not Graded :: IITM Online Degree"
 ---
 
-# 
+# Activity Question Lecture 1 - Not Graded :: IITM Online Degree
 
-Please wait...
+Activity Question Lecture 1 - Not Graded
 
-**Error**: Cannot open the page from the filesystem.
+# Activity Question Lecture 1 - Not Graded
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+This assignment will not be graded and is only for practice.
 
-z7wAAA==,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
+**Note : This activity is only for practice purpose and it will not be counted towards the Final score  
+  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Process or phenomenon that we wish to study statistically are commonly known as
+
+ Outcome
+
+ Experiment
+
+ Events
+
+ Sample space
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Experiment
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+The set of all possible outcomes or results of any experiment is said to be
+
+ Outcome
+
+ Sample space
+
+ Events
+
+ Subset
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Sample space
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Which of the following is a random experiment?
+
+ Rolling a dice.
+
+ Tossing a coin.
+
+ Observe the number of goals in a soccer match.
+
+ Observe the number of phones sold by a ”ABC” store in Chennai in different years.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Rolling a dice.
+
+Tossing a coin.
+
+Observe the number of goals in a soccer match.
+
+Observe the number of phones sold by a ”ABC” store in Chennai in different years.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Suppose there are N1N\_1N1​ doors to enter a stadium and N2N\_2N2​doors to exit the same stadium. One can enter the stadium through an entry gate and exit from an exit gate only. In an experiment, let the outcomes be the gate of entry and gate of exit. Then, what will be the cardinality of the sample space?
+
+N1+N2N\_1 + N\_2N1​+N2​
+
+N1×N2N\_1 \\times N\_2N1​×N2​
+
+N1−N2N\_1 - N\_2N1​−N2​
+
+N2−N1N\_2 - N\_1N2​−N1​
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+N1×N2N\_1 \\times N\_2N1​×N2​
+
+JavaScript should be enabled to grade this question.
+
+Consider the experiment of possibilities of runs scored by a batsman on facing pair of balls. How many sample points are there in the sample space when a pair of balls is being faced by a batsman(Assuming any run from 000 to 666 can be scored of a single ball)?
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 49
+
+_1 point_
+
+Check Answers
+
+Your score is: 0/5
+
+Please enable JavaScript to continue using this application.

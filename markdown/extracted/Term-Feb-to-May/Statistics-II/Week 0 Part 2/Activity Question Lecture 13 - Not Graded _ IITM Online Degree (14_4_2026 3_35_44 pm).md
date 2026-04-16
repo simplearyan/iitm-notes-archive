@@ -1,15 +1,86 @@
 ---
-title: ""
+title: "Activity Question Lecture 13 - Not Graded :: IITM Online Degree"
 ---
 
-# 
+# Activity Question Lecture 13 - Not Graded :: IITM Online Degree
 
-Please wait...
+Activity Question Lecture 13 - Not Graded
 
-**Error**: Cannot open the page from the filesystem.
+# Activity Question Lecture 13 - Not Graded
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+This assignment will not be graded and is only for practice.
 
-J/IBAA==,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
+**Note : This activity is only for practice purpose and it will not be counted towards the Final score  
+  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Let AAA and BBB are two independent events.Choose the correct statements.
+
+P(A∩B)\=P(A)×P(B)P(A ∩ B) = P(A) × P(B)P(A∩B)\=P(A)×P(B)
+
+P(A∪B)\=P(A)+P(B)P(A ∪ B) = P(A) + P(B)P(A∪B)\=P(A)+P(B)
+
+P(A∣B)\=P(A),P(A|B) = P(A), P(A∣B)\=P(A), if P(B)\>0 P(B) > 0P(B)\>0
+
+P(B∣A)\=P(B),P(B|A) = P(B),P(B∣A)\=P(B), if P(A)\>0P(A) > 0P(A)\>0
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+P(A∩B)\=P(A)×P(B)P(A ∩ B) = P(A) × P(B)P(A∩B)\=P(A)×P(B)
+
+P(A∣B)\=P(A),P(A|B) = P(A), P(A∣B)\=P(A), if P(B)\>0 P(B) > 0P(B)\>0
+
+P(B∣A)\=P(B),P(B|A) = P(B),P(B∣A)\=P(B), if P(A)\>0P(A) > 0P(A)\>0
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Which of the following statements are correct?
+
+ Disjoint non-empty events are never independent.
+
+ Disjoint non empty events may be independent in some cases.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Disjoint non-empty events are never independent.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Each set of a 333\-set badminton match between Himanshu and Tapasi is won with equal probability by either player. Let AAA be the event that all the three sets are won by one player. Let BBB be the event that at least two sets are won by Tapasi, and let CCC denote the event that at most two sets are won by Tapasi. Which of the two events are independent?
+
+AAA and BBB
+
+BBB and CCC
+
+CCC and AAA
+
+ None of the above.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+AAA and BBB
+
+Check Answers
+
+Your score is: 0/3
+
+Please enable JavaScript to continue using this application.

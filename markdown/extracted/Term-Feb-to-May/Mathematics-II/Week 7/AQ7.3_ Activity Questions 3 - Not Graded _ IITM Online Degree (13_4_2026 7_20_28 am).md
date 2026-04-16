@@ -1,15 +1,202 @@
 ---
-title: ""
+title: "AQ7.3: Activity Questions 3 - Not Graded :: IITM Online Degree"
 ---
 
-# 
+# AQ7.3: Activity Questions 3 - Not Graded :: IITM Online Degree
 
-Please wait...
+AQ7.3: Activity Questions 3 - Not Graded
 
-**Error**: Cannot open the page from the filesystem.
+# AQ7.3: Activity Questions 3 - Not Graded
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+This assignment will not be graded and is only for practice.
 
-LVsCAA==,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
+**Level 1  
+  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+If ∣∣a∣∣\=3||a||=3∣∣a∣∣\=3, ∣∣b∣∣\=22||b||=2 \\sqrt{2}∣∣b∣∣\=22​ and angle between aaa and bbb is 45∘45^\\circ45∘, then the value of a.ba.ba.b is
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 6
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Given that ∥a∥\=3\\left \\| a \\right \\| = 3∥a∥\=3 and ∥b∥\=5\\left \\| b \\right \\| =5∥b∥\=5 and a⋅b\=7.5a\\cdot b =7.5a⋅b\=7.5, for two vectors aaa and bbb in Rn\\mathbb{R}^nRn. Find the angle (in degrees) between the two vectors a,ba,ba,b. Note: cos⁡60∘\=1/2,cos⁡30∘\=3/2\\cos{60}^\\circ = 1/2, \\cos{30}^\\circ = \\sqrt{3}/2cos60∘\=1/2,cos30∘\=3​/2.
+
+30∘30^\\circ 30∘
+
+60∘60^\\circ 60∘
+
+120∘120^\\circ 120∘
+
+150∘150^\\circ 150∘
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+60∘60^\\circ 60∘
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider two vectors a\=(3,4,−1),b\=(2,−1,2)a=(3,4,-1), b=(2,-1,2)a\=(3,4,−1),b\=(2,−1,2) in R3\\mathbb{R}^3R3. Choose the correct options.
+
+Length/Norm of aaa is 26\\sqrt{26}26​ and that of bbb is 333.
+
+Length/Norm of aaa is 555 and that of bbb is 333.
+
+Length/Norm of aaa is 24\\sqrt{24}24​ and that of bbb is 7\\sqrt{7}7​.
+
+Angle between the two vectors is 909090 degrees.
+
+Angle between the two vectors is approximately 000 degrees.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Length/Norm of aaa is 26\\sqrt{26}26​ and that of bbb is 333.
+
+Angle between the two vectors is 909090 degrees.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+If the dot product of two vectors is zero, then choose the correct option.
+
+ The two vectors are perpendicular to each other.
+
+ The two vectors are parallel to each other.
+
+ The two vectors are exactly the same.
+
+ The length of the two vectors must be the same.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+The two vectors are perpendicular to each other.
+
+  
+**Level 2  
+  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+If a\=(6,−1,3),b\=(4,c,2)a= (6,-1,3), b=(4,c,2)a\=(6,−1,3),b\=(4,c,2) where a,b∈R3a,b \\in \\mathbb{R}^3a,b∈R3 and aaa and bbb are perpendicular to each other, then find the value of ccc?
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 30
+
+_1 point_
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider two vectors a\=(1,2),b\=(2,2)a=(1,2), b=(2,2)a\=(1,2),b\=(2,2) and θ\\thetaθ is the angle between them. The sum of the two vectors is given by c\=a+bc=a + bc\=a+b. Choose the correct options.
+
+Length/Norm of ccc is 555.
+
+Length/Norm of ccc is 252525.
+
+Length/Norm of ccc is 444.
+
+cos⁡θ\=310\\cos{\\theta}=\\frac{3}{\\sqrt{10}}cosθ\=10​3​.
+
+cos⁡θ\=35\\cos{\\theta}=\\frac{3}{\\sqrt{5}}cosθ\=5​3​.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Length/Norm of ccc is 555.
+
+cos⁡θ\=310\\cos{\\theta}=\\frac{3}{\\sqrt{10}}cosθ\=10​3​.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider 333 vectors a,b,ca,b,ca,b,c in R3\\mathbb{R}^3R3 and a scalar λ\\lambdaλ in R\\mathbb{R}R. Choose the set of correct options. Note: (.)(.)(.) represents the dot product.
+
+λ(a⋅b)\=(λa)⋅b\\lambda (a\\cdot b)= (\\lambda a)\\cdot b λ(a⋅b)\=(λa)⋅b
+
+λ(a⋅b)\=(λb)⋅a\\lambda (a\\cdot b)= (\\lambda b)\\cdot aλ(a⋅b)\=(λb)⋅a
+
+λ(a⋅b)\=(λa)⋅(λb)\\lambda (a\\cdot b)= (\\lambda a)\\cdot (\\lambda b) λ(a⋅b)\=(λa)⋅(λb)
+
+(a+c)⋅b\=a⋅b+c⋅b(a+c)\\cdot b = a\\cdot b + c\\cdot b(a+c)⋅b\=a⋅b+c⋅b
+
+(a+c)⋅b\=a⋅c+c⋅b(a+c)\\cdot b = a\\cdot c + c\\cdot b(a+c)⋅b\=a⋅c+c⋅b
+
+a⋅a\=0,b⋅b\=0a\\cdot a =0, b\\cdot b=0a⋅a\=0,b⋅b\=0 if and only if a,ba,ba,b are null vectors.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+λ(a⋅b)\=(λa)⋅b\\lambda (a\\cdot b)= (\\lambda a)\\cdot b λ(a⋅b)\=(λa)⋅b
+
+λ(a⋅b)\=(λb)⋅a\\lambda (a\\cdot b)= (\\lambda b)\\cdot aλ(a⋅b)\=(λb)⋅a
+
+(a+c)⋅b\=a⋅b+c⋅b(a+c)\\cdot b = a\\cdot b + c\\cdot b(a+c)⋅b\=a⋅b+c⋅b
+
+a⋅a\=0,b⋅b\=0a\\cdot a =0, b\\cdot b=0a⋅a\=0,b⋅b\=0 if and only if a,ba,ba,b are null vectors.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider two vectors a\=(1,3,5,7,9)a= (1,3,5,7,9)a\=(1,3,5,7,9) and b\=(2,4,6,8,10)b=(2,4,6,8,10)b\=(2,4,6,8,10). Choose the set of correct options.
+
+The length of bbb is more than aaa.
+
+The length of aaa is more than bbb.
+
+The length of (a−b)(a-b)(a−b) is 5\\sqrt{5}5​.
+
+The length of (a−b)(a-b)(a−b) is 50\\sqrt{50}50​.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+The length of bbb is more than aaa.
+
+The length of (a−b)(a-b)(a−b) is 5\\sqrt{5}5​.
+
+Check Answers
+
+Your score is: 0/8
+
+Please enable JavaScript to continue using this application.

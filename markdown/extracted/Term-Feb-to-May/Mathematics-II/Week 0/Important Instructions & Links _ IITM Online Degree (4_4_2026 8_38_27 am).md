@@ -1,15 +1,29 @@
 ---
-title: ""
+title: "Important Instructions & Links :: IITM Online Degree"
 ---
 
-# 
+# Important Instructions & Links :: IITM Online Degree
 
-Please wait...
+Important Instructions & Links
 
-**Error**: Cannot open the page from the filesystem.
+# Course Resources
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+## Policy & Guidelines Documents
 
-2QIBAA==,GgAAAAEBAAAIAQAAPQMAACkFAAArBgAAywYAAE8HAAADCQAAjAkAAJsJAAC9CQAABwoAAGEKAAAjCwAA/QsAAHANAABQDgAAHA8AAGUQAACkEAAABxMAAN8UAAAdFwAAfRcAAHgYAAB6GAAAmRoAAP4bAAB4HAAAJx0AAEMgAAB0IAAAdCEAAI8jAACBJgAA3igAANwpAABrKgAAYCsAAN0rAAD4KwAAQC8AAGEwAADXMQAABDIAAN8yAADkMgAA4zMAAL01AAA2NgAA8jYAAKA3AAB4OAAApDgAAEE5AABWOQAAoTsAAPk7AADrPAAAET4AAL0+AADnPgAAcD8AAMU/AADjPwAAjUEAABVDAAC2RQAAMUcAAGhKAADFTQAA004AAFZPAADjTwAAMVAAAMpQAABvUgAAVVUAAKtVAACRVgAAqVYAAG1XAAATWAAAslgAAL5YAADLWgAA9V0AABpeAAAFXwAAHmEAAJVhAAC1YQAAe2IAAIxiAACLZAAAVWUAAG1oAADUaAAAOmwAAGdsAABFcgAAPXMAAHVzAADxcwAALXUAAF92AAAkdwAAOnkAAD96AABBewAAk3sAAAh9AABqfgAAf34AAC6AAAA2gQAAtoEAAAaCAAAggwAAW4QAADiFAAAOiAAADokAABuKAABeigAAhYoAANWMAAAajQAAR44AAKyPAABDkwAAfpQAAEiVAACglgAA2JcAAAqZAAD1mQAAnJoAAN2aAAD1nAAA9KAAABWhAAAloQAAd6IAAI+iAACNowAApqMAAOyjAACdpQAATqgAAF6pAADHqQAA/6kAAD6qAACyqgAAj6sAAKmrAABerAAAtq8AAOivAAD3rwAAo7AAAMazAABItAAA5LUAADG2AADAuAAAw7gAALK5AACYvAAA17wAADO9AAAtvgAAfb4AABK/AAC6wAAA5cEAACTEAABDxAAA7MQAADTFAACQxQAAIcYAAPfGAADQxwAASMgAAIbIAABFzQAAR84AALPOAABZzwAAsc8AALfPAABQ0AAAm9AAALLSAACC1AAAAdUAAEbVAAAu1gAANtYAAITWAACZ1gAAhtcAAJnXAACy2AAAttkAAL/ZAAC/2wAAJtwAAIrcAAC93gAA5d8AAM7iAADm5QAAQOYAAFrnAACd5wAA4OcAABnoAABU6QAAhukAALDpAACS6gAA2+sAADvsAABl7AAAhOwAAD/tAADl7QAALu4AAFTvAACe7wAAze8AACLwAAD39AAAz/UAAH32AABX9wAAlvoAAN/8AABq/QAA2P0AABf+AAAv/wAAqQABAKsAAQCuAgEAEwQBAGkEAQByBgEAxAcBAJ0JAQCqCQEA7gkBABUPAQBjDwEAjBIBAJQTAQACFgEAvhYBAPQWAQDQFwEAqhgBAMUYAQCqGgEA5BwBAC8dAQCjHgEAcR8BAFYiAQC8IgEAHyMBAPUjAQAUJAEABykBADMpAQD7KgEAKCsBABksAQADLgEAQy8BAA8wAQAqMAEAQzABAGUzAQCvMwEAuzUBADE2AQBWNgEARDgBAGo5AQDPOgEAVjsBALw7AQDoOwEA6TwBAFg9AQDvPQEAwT4BADBBAQCKQQEAOEIBAEBCAQB3QgEAZUMBAEhFAQDXRQEA6UUBAPpHAQBiSAEAH0kBAA==
+*   [Grading Document](https://docs.google.com/document/d/e/2PACX-1vSUvKzH7yIXNVwUgRYSIT8M0x1jhFSkslEtj9UPo3dtWI_sJ38Hh_PzbBygpF0vIOo8K7lTy-uYkqdu/pub#h.3rdcrjn) Assignment deadlines and eligibility rules.
+*   [Student Handbook](https://docs.google.com/document/d/e/2PACX-1vRxGnnDCVAO3KX2CGtMIcJQuDrAasVk2JHbDxkjsGrTP5ShhZK8N6ZSPX89lexKx86QPAUswSzGLsOA/pub) Program structure, academic guidelines, and progression.
+
+## Communication & Calendar
+
+*   [Announcement Group](https://groups.google.com/a/study.iitm.ac.in/g/26t1-ma1003-announce) Updates: content releases, deadlines, exam notifications.
+*   [Course Calendar](https://calendar.google.com/calendar/u/0?cid=Y19oZmRqa2tqZjFlNGxqNzJqYzI2bXYwaTM1NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t) Schedule for live sessions, events, and deadlines. [▶ How to add Calendar](https://youtu.be/s3YJTM1UTlU)
+*   **Discourse Forum** Platform for discussions between students and instructors (link to be shared).
+
+## Orientations and Playlist
+
+*   [Course Playlist](https://www.youtube.com/playlist?list=PLZ2ps__7DhBboGlwPVSsWP8loAJCLrKc8) Weekly recorded course content.
+*   [Course Orientation](https://www.youtube.com/watch?v=9rlc2g1NZjg) Overview of the course structure.
+*   [Jan 2026 Level Orientation](https://youtube.com/live/KgyehGij16o?feature=share)
+*   [Level Orientation](https://youtu.be/vLQQi5RgmPs) Specific level including structure, timelines, and expectations.
+
+Please enable JavaScript to continue using this application.

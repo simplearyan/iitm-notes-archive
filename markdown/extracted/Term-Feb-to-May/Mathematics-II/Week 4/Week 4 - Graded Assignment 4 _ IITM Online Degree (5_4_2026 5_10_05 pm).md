@@ -1,15 +1,271 @@
 ---
-title: ""
+title: "Week 4 - Graded Assignment 4 :: IITM Online Degree"
 ---
 
-# 
+# Week 4 - Graded Assignment 4 :: IITM Online Degree
 
-Please wait...
+Week 4 - Graded Assignment 4
 
-**Error**: Cannot open the page from the filesystem.
+# Week 4 - Graded Assignment 4
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+**The due date for submitting this assignment has passed.**
 
-LwkDAN6bAwCmoAMA,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
+Due on 2026-03-11, 23:59 IST.
+
+You may submit any number of times before the due date. The final submission will be considered for grading.
+
+### You have last submitted on: 2026-03-11, 08:07 IST
+
+Note: This assignment will be evaluated after the deadline passes. You will get your score 48 hrs after the deadline. Until then the score will be shown as Zero.  
+  
+Multiple Select Questions (MSQ)  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Which of the following statements are correct?
+
+If AAA and BBB are two square matrices, then Rank(AB)(AB)(AB)\=Rank(BA)(BA)(BA).
+
+If AAA and BBB are two 2×22\\times22×2 square matrices, then Rank(AB)≤(AB) \\leq(AB)≤ Rank(B)(B)(B).
+
+If AAA and BBB are two 2×22\\times22×2 square matrices, then Rank(AB)≤(AB) \\leq(AB)≤ Rank(A)(A)(A).
+
+If AAA and BBB are n×nn \\times nn×n matrices of rank nnn, then ABABAB has rank nnn.
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+If AAA and BBB are two 2×22\\times22×2 square matrices, then Rank(AB)≤(AB) \\leq(AB)≤ Rank(B)(B)(B).
+
+If AAA and BBB are two 2×22\\times22×2 square matrices, then Rank(AB)≤(AB) \\leq(AB)≤ Rank(A)(A)(A).
+
+If AAA and BBB are n×nn \\times nn×n matrices of rank nnn, then ABABAB has rank nnn.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Match the vector spaces (with the usual scalar multiplication and vector addition as in M3×3(R)M\_{3\\times 3}(\\mathbb{R})M3×3​(R) ) in column A with their bases in column B and the dimensions of the vector spaces in column C in Table : M2W4GA1.  
+  
+![](images/31.jpg)  
+  
+Choose the correct option.  
+
+a →\\rightarrow→ i →\\rightarrow→ 2.
+
+b →\\rightarrow→ i →\\rightarrow→ 2.
+
+a →\\rightarrow→ ii →\\rightarrow→ 3.
+
+c →\\rightarrow→ iii →\\rightarrow→ 1
+
+b →\\rightarrow→ iii →\\rightarrow→ 2.
+
+c →\\rightarrow→ i →\\rightarrow→ 1.
+
+### Partially Correct.  
+Score: 0.33
+
+### Accepted Answers:
+
+a →\\rightarrow→ ii →\\rightarrow→ 3.
+
+b →\\rightarrow→ iii →\\rightarrow→ 2.
+
+c →\\rightarrow→ i →\\rightarrow→ 1.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider the vector space V\={\[abbc\] | a,b,c∈R}V =\\left\\{\\begin{bmatrix}a & b \\\\b & c \\end{bmatrix} \\:\\middle |\\: a, b, c ∈ \\mathbb{R}\\right\\} V\={\[ab​bc​\]​a,b,c∈R}. The subset S\={\[2113\],\[1001\]}S =\\left\\{\\begin{bmatrix}2 & 1 \\\\1 & 3 \\end{bmatrix} , \\begin{bmatrix}1 & 0 \\\\0 & 1 \\end{bmatrix}\\right\\}S\={\[21​13​\],\[10​01​\]} is a linearly independent subset of VVV . Which of the following matrices AAA are vectors in VVV such that S∪{A}S ∪ \\big\\{A\\big\\}S∪{A} is a basis for VVV ?
+
+\[1011\]\\begin{bmatrix}1 & 0 \\\\1 & 1 \\end{bmatrix}\[11​01​\]
+
+\[0110\]\\begin{bmatrix}0 & 1 \\\\1 & 0 \\end{bmatrix}\[01​10​\]
+
+\[2003\]\\begin{bmatrix}2 & 0 \\\\0 & 3 \\end{bmatrix}\[20​03​\]
+
+\[0111\]\\begin{bmatrix}0 & 1 \\\\1 & 1 \\end{bmatrix}\[01​11​\]
+
+\[1−1−11\]\\begin{bmatrix}1 & -1 \\\\-1 & 1 \\end{bmatrix}\[1−1​−11​\]
+
+\[1−1−10\]\\begin{bmatrix}1 & -1 \\\\-1 & 0 \\end{bmatrix}\[1−1​−10​\]
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+\[0110\]\\begin{bmatrix}0 & 1 \\\\1 & 0 \\end{bmatrix}\[01​10​\]
+
+\[2003\]\\begin{bmatrix}2 & 0 \\\\0 & 3 \\end{bmatrix}\[20​03​\]
+
+\[1−1−11\]\\begin{bmatrix}1 & -1 \\\\-1 & 1 \\end{bmatrix}\[1−1​−11​\]
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Let S\={v1,v2,v3}S = \\{v\_1, v\_2, v\_3\\}S\={v1​,v2​,v3​} be a set of three vectors in R4\\mathbb{R}^4R4. In order to determine the linear dependence/independence of SSS, we construct a matrix AAA whose ithi^{th}ith column is given by viv\_ivi​, for i∈{1,2,3}i ∈ \\{1, 2, 3\\}i∈{1,2,3}. Let RRR denote the reduced row echelon form (RREF) of AAA, and let rijr\_{ij}rij​ denote the (i,j)th(i, j)^{th}(i,j)th entry of RRR. Choose the correct statements from the following.
+
+RRR does not have any row comprising entirely of zeros if SSS is linearly independent.
+
+If kkk is the number of rows in RRR comprising entirely of zeros, then the dimension of Span(S)(S)(S) is given by 4−k4 − k4−k.
+
+If r11r\_{11}r11​ and r23r\_{23}r23​ are the pivots, then {v1,v2}\\{v\_1, v\_2\\}{v1​,v2​} is a basis for Span(S)(S)(S).
+
+If r11r\_{11}r11​ and r23r\_{23}r23​ are the pivots, then {v1,v3}\\{v\_1, v\_3\\}{v1​,v3​} is a basis for Span(S)(S)(S).
+
+rank(A)(A)(A) = rank(R)(R)(R), i.e., row operations do not alter the rank of a matrix.
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+If kkk is the number of rows in RRR comprising entirely of zeros, then the dimension of Span(S)(S)(S) is given by 4−k4 − k4−k.
+
+If r11r\_{11}r11​ and r23r\_{23}r23​ are the pivots, then {v1,v3}\\{v\_1, v\_3\\}{v1​,v3​} is a basis for Span(S)(S)(S).
+
+rank(A)(A)(A) = rank(R)(R)(R), i.e., row operations do not alter the rank of a matrix.
+
+  
+Numerical Answer Type (NAT):  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+Find the rank of the matrix AAA, where A\=\[aij\]A = \[a\_{ij}\]A\=\[aij​\] is of order 2021×20212021\\times 20212021×2021 and ai,j\=min{i,j}a\_{i,j} = \\text{min}\\{i, j\\}ai,j​\=min{i,j}, i,j\=1,2,…2021i, j = 1, 2, \\ldots 2021i,j\=1,2,…2021  
+ \[Hint:\\textbf{Hint:}Hint: First do it for smaller matrices, such as 3×33\\times 33×3 or 4×44\\times 44×4.\]
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+(Type: Numeric) 2021
+
+_1 point_
+
+  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+Consider a subspace W\={(x1,x2,x3,x4,x5) ∣ 8x1+10x5\=0 and 9x2+6x4\=0}W= \\{(x\_1, x\_2, x\_3, x\_4, x\_5) ~ | ~8x\_1+10x\_5=0 ~ \\text{and} ~ 9x\_2+6x\_4=0 \\}W\={(x1​,x2​,x3​,x4​,x5​) ∣ 8x1​+10x5​\=0 and 9x2​+6x4​\=0} of R5\\mathbb{R}^5R5. The dimension of WWW is
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+(Type: Numeric) 3
+
+_1 point_
+
+  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+Consider a matrix A\=\[2−4111−31−43−723\]A=\\begin{bmatrix} 2 & -4 & 1 & 1 \\\\ 1 & -3 & 1 & -4 \\\\ 3 & -7 & 2 & 3 \\end{bmatrix}A\=​213​−4−3−7​112​1−43​​. The rank of the matrix is
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+(Type: Numeric) 3
+
+_1 point_
+
+  
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+Consider two matrices A\=\[398−7−10−926−7\]A=\\begin{bmatrix} 3 & 9 & 8 \\\\ -7 & -10 & -9 \\\\ 2 & 6 & -7 \\\\ \\end{bmatrix}A\=​3−72​9−106​8−9−7​​ and B\=\[3−729−1068−9−7\]B=\\begin{bmatrix} 3 & -7 & 2 \\\\ 9 & -10 & 6 \\\\ 8 & -9 & -7 \\end{bmatrix}B\=​398​−7−10−9​26−7​​. Then Rank(A)(A)(A) - Rank (B)(B)(B) is
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+(Type: Numeric) 0
+
+_1 point_
+
+  
+
+JavaScript should be enabled to grade this question.
+
+  
+
+JavaScript should be enabled to grade this question.
+
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+Consider the subspace V\={(x,y,z) ∣ z\=7x+5y, where x,y,z∈R}V = \\{ (x,y,z)~ | ~z = 7x + 5y,~\\text{where}~ x,y,z \\in \\mathbb{R}\\}V\={(x,y,z) ∣ z\=7x+5y, where x,y,z∈R} of R3\\mathbb{R}^3R3 and span({(p,0,1),(0,q,1)}\\{(p,0,1), (0,q,1)\\}{(p,0,1),(0,q,1)}) = VVV. Find the value of 1pq\\frac{1}{pq}pq1​.
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+(Type: Numeric) 35
+
+_1 point_
+
+  
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+Suppose VVV is a vector space defined as V\={A∣A∈M4×4(R), AV = \\{ A \\mid A \\in M\_{4 \\times 4}(\\mathbb{R}),~AV\={A∣A∈M4×4​(R), A is an upper triangular matrix, and the sum of the diagonal entries is zero }\\}}. What is the cardinality of a basis of VVV?
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+(Type: Numeric) 9.0
+
+_1 point_
+
+  
+
+JavaScript should be enabled to grade this question.
+
+U\\mathcal{U}U is the vector space of all upper triangular matrices of order 3. V\\mathcal{V}V is the vector space of all lower triangular matrices of order 3. The dimensions of the vector spaces U,V,U∩V\\mathcal{U}, \\mathcal{V}, \\mathcal{U} \\cap \\mathcal{V}U,V,U∩V are a,b,ca, b, ca,b,c respectively. Find a+b+ca + b + ca+b+c. The usual rules of addition and scalar multiplication apply for all three spaces.
+
+### Yes, the answer is correct.  
+Score: 1
+
+### Accepted Answers:
+
+(Type: Numeric) 15
+
+_1 point_
+
+  
+
+Please enable JavaScript to continue using this application.

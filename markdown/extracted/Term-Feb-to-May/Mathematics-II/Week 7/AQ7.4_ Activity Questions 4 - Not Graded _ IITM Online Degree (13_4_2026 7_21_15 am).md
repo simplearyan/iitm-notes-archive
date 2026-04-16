@@ -1,15 +1,189 @@
 ---
-title: ""
+title: "AQ7.4: Activity Questions 4 - Not Graded :: IITM Online Degree"
 ---
 
-# 
+# AQ7.4: Activity Questions 4 - Not Graded :: IITM Online Degree
 
-Please wait...
+AQ7.4: Activity Questions 4 - Not Graded
 
-**Error**: Cannot open the page from the filesystem.
+# AQ7.4: Activity Questions 4 - Not Graded
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+This assignment will not be graded and is only for practice.
 
-k2YAAA==,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
+**Level 1  
+  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider a function f:V×V→Rf: V \\times V \\rightarrow \\mathbb{R}f:V×V→R where V⊆R2V \\subseteq \\mathbb{R}^2V⊆R2 defined by f(v,w)\=2v1w1+5v2w2f(v,w)=2v\_1 w\_1 + 5v\_2 w\_2f(v,w)\=2v1​w1​+5v2​w2​, where v\=(v1,v2),w\=(w1,w2)v= (v\_1,v\_2), w=(w\_1,w\_2)v\=(v1​,v2​),w\=(w1​,w2​). Choose the set of correct options.
+
+fff satisfies the symmetry condition of the inner product.
+
+fff satisfies the bilinearity condition of the inner product.
+
+fff satisfies the positivity condition of the inner product.
+
+fff is an inner product.
+
+fff is not an inner product.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+fff satisfies the symmetry condition of the inner product.
+
+fff satisfies the bilinearity condition of the inner product.
+
+fff satisfies the positivity condition of the inner product.
+
+fff is an inner product.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider a function f:V×V→Rf: V \\times V \\rightarrow \\mathbb{R}f:V×V→R where V⊆R2V \\subseteq \\mathbb{R}^2V⊆R2 defined by f(v,w)\=v1w1−v1w2−v2w1+4v2w2f(v,w)=v\_1 w\_1 -v\_1 w\_2 -v\_2 w\_1 +4v\_2 w\_2 f(v,w)\=v1​w1​−v1​w2​−v2​w1​+4v2​w2​, where v\=(v1,v2),w\=(w1,w2)v= (v\_1,v\_2), w=(w\_1,w\_2)v\=(v1​,v2​),w\=(w1​,w2​). Choose the set of correct options.
+
+fff satisfies the symmetry condition of the inner product.
+
+fff satisfies the bilinearity condition of the inner product.
+
+fff satisfies the positivity condition of the inner product.
+
+fff is an inner product.
+
+fff is not an inner product.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+fff satisfies the symmetry condition of the inner product.
+
+fff satisfies the bilinearity condition of the inner product.
+
+fff satisfies the positivity condition of the inner product.
+
+fff is an inner product.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider two vectors a\=(0.4,1.3,−2.2),b\=(2,3,−5)a=(0.4, 1.3, -2.2), b=(2, 3,-5)a\=(0.4,1.3,−2.2),b\=(2,3,−5) in R3\\mathbb{R}^3R3. Choose the set of correct options.
+
+The two vectors satisfy the triangle inequality given by  
+∥a+b∥≤∥a∥+∥b∥.\\left \\| a+b \\right \\| \\leq \\left \\| a \\right \\| + \\left \\| b \\right \\|. ∥a+b∥≤∥a∥+∥b∥.
+
+ The two vectors do not satisfy the triangle inequality.
+
+The two vectors satisfy the Cauchy-Schwarz inequality given by  
+∣<a,b\>∣≤∥a∥∥b∥. | < a ,b > | \\leq \\left \\| a \\right \\| \\left \\| b \\right \\|. ∣<a,b\>∣≤∥a∥∥b∥.  
+  
+
+ The two vectors do not satisfy the Cauchy-Schwarz inequality.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+The two vectors satisfy the triangle inequality given by  
+∥a+b∥≤∥a∥+∥b∥.\\left \\| a+b \\right \\| \\leq \\left \\| a \\right \\| + \\left \\| b \\right \\|. ∥a+b∥≤∥a∥+∥b∥.
+
+The two vectors satisfy the Cauchy-Schwarz inequality given by  
+∣<a,b\>∣≤∥a∥∥b∥. | < a ,b > | \\leq \\left \\| a \\right \\| \\left \\| b \\right \\|. ∣<a,b\>∣≤∥a∥∥b∥.  
+  
+
+**Level 2  
+  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider a function f:V×V→Rf: V \\times V \\rightarrow \\mathbb{R}f:V×V→R where V⊆R2V \\subseteq \\mathbb{R}^2V⊆R2 defined by f(v,w)\=v12w12+v1w22+v22w1f(v,w)=v\_1^2 w\_1^2 +v\_1 w\_2^2 + v\_2^2 w\_1 f(v,w)\=v12​w12​+v1​w22​+v22​w1​, where v\=(v1,v2),w\=(w1,w2)v= (v\_1,v\_2), w=(w\_1,w\_2)v\=(v1​,v2​),w\=(w1​,w2​). Choose the set of correct options.
+
+fff satisfies the symmetry condition of the inner product.
+
+fff satisfies the positivity condition of the inner product.
+
+fff is an inner product.
+
+fff is not an inner product.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+fff satisfies the symmetry condition of the inner product.
+
+fff is not an inner product.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider a vector a\=(a1,b1,c1)a=(a\_1,b\_1,c\_1)a\=(a1​,b1​,c1​) in R3\\mathbb{R}^3R3. Which of these is (are) possible candidates for a norm?
+
+a12+b12+c12\\sqrt{a\_1^2 +b\_1^2 +c\_1^2}a12​+b12​+c12​​
+
+a1−b1a\_1 - b\_1a1​−b1​
+
+a1+b1+c1a\_1 + b\_1 + c\_1a1​+b1​+c1​
+
+max{a1,b1,c1}max\\{a\_1,b\_1,c\_1\\}max{a1​,b1​,c1​}
+
+min{a1,b1,c1}min\\{a\_1,b\_1,c\_1\\}min{a1​,b1​,c1​}
+
+max⁡{∣a1∣,∣b1∣,∣c1∣}\\max \\{|a\_1|,|b\_1|,|c\_1| \\}max{∣a1​∣,∣b1​∣,∣c1​∣}
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+a12+b12+c12\\sqrt{a\_1^2 +b\_1^2 +c\_1^2}a12​+b12​+c12​​
+
+max⁡{∣a1∣,∣b1∣,∣c1∣}\\max \\{|a\_1|,|b\_1|,|c\_1| \\}max{∣a1​∣,∣b1​∣,∣c1​∣}
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Choose the set of correct statements.
+
+V\=R2V=\\mathbb{R}^2V\=R2 and the function <.,.\>:V×V⟶R<. , .>: V \\times V \\longrightarrow \\mathbb{R} <.,.\>:V×V⟶R defined as <(x1,x2),(y1,y2)\><(x\_1,x\_2),(y\_1,y\_2)><(x1​,x2​),(y1​,y2​)\> = 5x1y1+8x2y2−6x1y2−6x2y15x\_1 y\_1 +8 x\_2 y\_2 -6x\_1 y\_2 - 6x\_2 y\_15x1​y1​+8x2​y2​−6x1​y2​−6x2​y1​ is an inner product on VVV.
+
+V\=R2V=\\mathbb{R}^2V\=R2 and the function <.,.\>:V×V⟶R<. , .>: V \\times V \\longrightarrow \\mathbb{R}<.,.\>:V×V⟶R defined as <(x1,x2),(y1,y2)\><(x\_1,x\_2),(y\_1,y\_2)><(x1​,x2​),(y1​,y2​)\> = ∣x1∣+2∣y2∣|x\_1|+2 |y\_2|∣x1​∣+2∣y2​∣ is an inner product on VVV.
+
+V\=R2V=\\mathbb{R}^2V\=R2 and the function <.,.\>:V×V⟶R<. , .>: V \\times V \\longrightarrow \\mathbb{R}<.,.\>:V×V⟶R defined as <(x1,x2),(y1,y2)\><(x\_1,x\_2),(y\_1,y\_2)><(x1​,x2​),(y1​,y2​)\> =3x1y1+5x2y2 3x\_1 y\_1 +5 x\_2 y\_2 3x1​y1​+5x2​y2​ is an inner product on VVV.
+
+V\=R2V=\\mathbb{R}^2V\=R2 and the function <.,.\>:V×V⟶R<. , .>: V \\times V \\longrightarrow \\mathbb{R}<.,.\>:V×V⟶R defined as <(x1,x2),(y1,y2)\><(x\_1,x\_2),(y\_1,y\_2)><(x1​,x2​),(y1​,y2​)\> =3x1y1−5x2y2 3x\_1 y\_1 -5 x\_2 y\_2 3x1​y1​−5x2​y2​ is an inner product on VVV.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+V\=R2V=\\mathbb{R}^2V\=R2 and the function <.,.\>:V×V⟶R<. , .>: V \\times V \\longrightarrow \\mathbb{R} <.,.\>:V×V⟶R defined as <(x1,x2),(y1,y2)\><(x\_1,x\_2),(y\_1,y\_2)><(x1​,x2​),(y1​,y2​)\> = 5x1y1+8x2y2−6x1y2−6x2y15x\_1 y\_1 +8 x\_2 y\_2 -6x\_1 y\_2 - 6x\_2 y\_15x1​y1​+8x2​y2​−6x1​y2​−6x2​y1​ is an inner product on VVV.
+
+V\=R2V=\\mathbb{R}^2V\=R2 and the function <.,.\>:V×V⟶R<. , .>: V \\times V \\longrightarrow \\mathbb{R}<.,.\>:V×V⟶R defined as <(x1,x2),(y1,y2)\><(x\_1,x\_2),(y\_1,y\_2)><(x1​,x2​),(y1​,y2​)\> =3x1y1+5x2y2 3x\_1 y\_1 +5 x\_2 y\_2 3x1​y1​+5x2​y2​ is an inner product on VVV.
+
+Check Answers
+
+Your score is: 0/6
+
+Please enable JavaScript to continue using this application.

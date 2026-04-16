@@ -1,15 +1,139 @@
 ---
-title: ""
+title: "AQ2.2: Activity Questions 2- Not Graded :: IITM Online Degree"
 ---
 
-# 
+# AQ2.2: Activity Questions 2- Not Graded :: IITM Online Degree
 
-Please wait...
+AQ2.2: Activity Questions 2- Not Graded
 
-**Error**: Cannot open the page from the filesystem.
+# AQ2.2: Activity Questions 2- Not Graded
 
-*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
-*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
-*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
+This assignment will not be graded and is only for practice.
 
-tWkCAA==,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
+**Level 1:  
+**
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Consider a system of linear equations as follows:  
+  
+                     a11x1+a12x2+a13x3\=b1a21x1+a22x2+a23x3\=b2a31x1+a32x2+a33x3\=b3\\begin{aligned} a\_{11}x\_1+ a\_{12}x\_2+ a\_{13}x\_3 = b\_1\\\\ a\_{21}x\_1+ a\_{22}x\_2+ a\_{23}x\_3 = b\_2\\\\ a\_{31}x\_1+ a\_{32}x\_2+ a\_{33}x\_3 = b\_3 \\end{aligned}a11​x1​+a12​x2​+a13​x3​\=b1​a21​x1​+a22​x2​+a23​x3​\=b2​a31​x1​+a32​x2​+a33​x3​\=b3​​  
+  
+ Let the matrix representation of the above system be Ax\=bAx=bAx\=b, where A\=\[a11a12a13a21a22a23a31a32a33\]A=\\begin{bmatrix} a\_{11} & a\_{12} & a\_{13} \\\\ a\_{21} & a\_{22} & a\_{23} \\\\ a\_{31} & a\_{32} & a\_{33} \\end{bmatrix}A\=​a11​a21​a31​​a12​a22​a32​​a13​a23​a33​​​, x\=\[x1x2x3\]x=\\begin{bmatrix} x\_1 \\\\ x\_2 \\\\ x\_3 \\end{bmatrix}x\=​x1​x2​x3​​​, and b\=\[b1b2b3\]b=\\begin{bmatrix} b\_1 \\\\ b\_2 \\\\ b\_3 \\end{bmatrix}b\=​b1​b2​b3​​​. Let AxiA\_{x\_i}Axi​​ be the matrix obtained by replacing the iii\-th column of AAA (i.e.,\[a1ia2ia3i\])\\Bigg(i.e.,\\begin{bmatrix} a\_{1i} \\\\ a\_{2i} \\\\ a\_{3i} \\end{bmatrix}\\Bigg)(i.e.,​a1i​a2i​a3i​​​)by bbb, for i\=1,2,3i=1,2,3i\=1,2,3. If det(Axi)\=0det(A\_{x\_i})=0det(Axi​​)\=0 for i\=1,2,3i=1,2,3i\=1,2,3, then which of the following is (are) true?
+
+x\=\[000\]x=\\begin{bmatrix} 0\\\\ 0\\\\ 0 \\end{bmatrix}x\=​000​​ must be a solution.
+
+x\=\[000\]x=\\begin{bmatrix} 0\\\\ 0\\\\ 0 \\end{bmatrix}x\=​000​​ is a solution if det(A)≠0det(A)\\neq 0det(A)\=0.
+
+If det(A)\=0det(A)=0det(A)\=0, then we cannot conclude about the solution using Cramer's rule.
+
+If det(A)≠0det(A)\\neq 0det(A)\=0, then b\=\[000\]b=\\begin{bmatrix} 0\\\\ 0\\\\ 0 \\end{bmatrix}b\=​000​​.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+x\=\[000\]x=\\begin{bmatrix} 0\\\\ 0\\\\ 0 \\end{bmatrix}x\=​000​​ is a solution if det(A)≠0det(A)\\neq 0det(A)\=0.
+
+If det(A)\=0det(A)=0det(A)\=0, then we cannot conclude about the solution using Cramer's rule.
+
+If det(A)≠0det(A)\\neq 0det(A)\=0, then b\=\[000\]b=\\begin{bmatrix} 0\\\\ 0\\\\ 0 \\end{bmatrix}b\=​000​​.
+
+Consider a system of linear equations  
+  
+                   x1+x3\=1−x1+x2−x3\=1−x2+x3\=1\\begin{aligned} x\_1+ x\_3 = 1\\\\ -x\_1+ x\_2- x\_3 = 1\\\\ -x\_2+ x\_3 = 1 \\end{aligned}x1​+x3​\=1−x1​+x2​−x3​\=1−x2​+x3​\=1​  
+ Let matrix representation of the above system be Ax\=bAx=bAx\=b, where A\=\[101−11−10−11\]A = \\begin{bmatrix} 1 & 0 & 1\\\\ -1 & 1 & -1\\\\ 0 & -1 & 1 \\end{bmatrix}A\=​1−10​01−1​1−11​​, x\=\[x1x2x3\]x = \\begin{bmatrix} x\_1\\\\ x\_2\\\\ x\_3 \\end{bmatrix}x\=​x1​x2​x3​​​, and b\=\[111\]b=\\begin{bmatrix} 1\\\\ 1\\\\ 1 \\end{bmatrix}b\=​111​​. Let AxiA\_{x\_i}Axi​​ be the matrix obtained by replacing the iii\-th column of AAA (i.e., \[a1ia2ia3i\]\\begin{bmatrix} a\_{1i} \\\\ a\_{2i} \\\\ a\_{3i} \\end{bmatrix}​a1i​a2i​a3i​​​) by bbb, for i\=1,2,3i=1,2,3i\=1,2,3.  
+  
+**(Use the above information to answer questions 2 and 3)  
+**
+
+JavaScript should be enabled to grade this question.
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Choose the set of correct options
+
+Ax1\=\[110−11−10−11\]A\_{x\_1} = \\begin{bmatrix} 1 & 1 & 0\\\\ -1 & 1 & -1\\\\ 0 & -1 & 1 \\end{bmatrix}Ax1​​\=​1−10​11−1​0−11​​
+
+Ax1\=\[10111−11−11\]A\_{x\_1} = \\begin{bmatrix} 1 & 0 & 1\\\\ 1 & 1 & -1\\\\ 1 & -1 & 1 \\end{bmatrix} Ax1​​\=​111​01−1​1−11​​
+
+Ax2\=\[101−11−10−11\]A\_{x\_2} = \\begin{bmatrix} 1 & 0 & 1\\\\ -1 & 1 & -1\\\\ 0 & -1 & 1 \\end{bmatrix}Ax2​​\=​1−10​01−1​1−11​​
+
+Ax3\=\[101−1110−11\]A\_{x\_3} = \\begin{bmatrix} 1 & 0 & 1\\\\ -1 & 1 & 1\\\\ 0 & -1 & 1 \\end{bmatrix}Ax3​​\=​1−10​01−1​111​​
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+Ax1\=\[10111−11−11\]A\_{x\_1} = \\begin{bmatrix} 1 & 0 & 1\\\\ 1 & 1 & -1\\\\ 1 & -1 & 1 \\end{bmatrix} Ax1​​\=​111​01−1​1−11​​
+
+Ax3\=\[101−1110−11\]A\_{x\_3} = \\begin{bmatrix} 1 & 0 & 1\\\\ -1 & 1 & 1\\\\ 0 & -1 & 1 \\end{bmatrix}Ax3​​\=​1−10​01−1​111​​
+
+JavaScript should be enabled to grade this question.
+
+_1 point_
+
+Choose the set of correct options.
+
+x1\=−2x\_1 = -2x1​\=−2.
+
+x2\=−2x\_2 = -2x2​\=−2.
+
+x3\=3x\_3 = 3x3​\=3.
+
+ None of the above.
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+x1\=−2x\_1 = -2x1​\=−2.
+
+x3\=3x\_3 = 3x3​\=3.
+
+  
+**Level 2:  
+**
+
+JavaScript should be enabled to grade this question.
+
+Consider the system of linear equations Ax\=bAx=bAx\=b, where A\=\[1a0a1210a\]A=\\begin{bmatrix} 1 & a & 0 \\\\ a & 1 & 2 \\\\ 1 & 0 & a \\end{bmatrix}A\=​1a1​a10​02a​​, x\=\[x10x3\]x=\\begin{bmatrix} x\_1\\\\ 0\\\\ x\_3 \\end{bmatrix}x\=​x1​0x3​​​, and b\=\[100\]b=\\begin{bmatrix} 1 \\\\ 0 \\\\ 0 \\end{bmatrix}b\=​100​​, and the solution for xxx is partially known. What is the value of a2a^2a2, if a≠0,3,−3a\\neq 0, \\sqrt{3}, -\\sqrt{3}a\=0,3​,−3​ is given? \[Hint: Observe that the second row of the vector xxx is given as 000, which implies that x2x\_2x2​ is known, where x\=\[x1x2x3\]x=\\begin{bmatrix} x\_1 \\\\ x\_2 \\\\x\_3 \\end{bmatrix}x\=​x1​x2​x3​​​
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) 2
+
+_1 point_
+
+  
+
+JavaScript should be enabled to grade this question.
+
+Consider the system of linear equations Ax\=bAx=bAx\=b, where A\=\[12a+33a+21\]A=\\begin{bmatrix} 1 & 2a+3 \\\\ 3a+2 & 1 \\end{bmatrix}A\=\[13a+2​2a+31​\], x\=\[x10\]x=\\begin{bmatrix} x\_1\\\\ 0 \\end{bmatrix}x\=\[x1​0​\], and b\=\[11\]b=\\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix}b\=\[11​\], and the solution for xxx is partially known.  
+  
+What is the value of 3a3a3a, if det(A)≠0det(A)\\neq 0det(A)\=0 is given?
+
+### No, the answer is incorrect.  
+Score: 0
+
+### Accepted Answers:
+
+(Type: Numeric) -1
+
+_1 point_
+
+Check Answers
+
+Your score is: 0/5
+
+Please enable JavaScript to continue using this application.
