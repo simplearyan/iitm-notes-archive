@@ -1,43 +1,16 @@
-# Modules _ IITM Online Degree (5_4_2026 5_09_52 pm)
+---
+title: ""
+source: "IITM MultiThread"
+---
 
-This Assignment will not be considered for Course participation Marks after 24th march 2024
+# 
 
-## Instructions for Extended Match Questions
+Please wait...
 
-[Use this slide to understand how to answer an EMQ](https://slides.com/ishaanpod/how-to-answer-emq)
+**Error**: Cannot open the page from the filesystem.
 
-***Instructions:
-***1. For each question, enter all the options which you find is the answer to that question as "**comma separated values**". 
-2. Enter the options in **ascending order** of option number.
-3. An option can also be an answer to more than one question, or may not be an answer to any of the questions.
-4. [Please click here to view a sample template file for answering.](https://backend.seek.study.iitm.ac.in/22q1_ma1002/assets/img/EMQ_sample_file.txt)
-5. Please note that if you give an incorrect answer there will be a negative marking for the incorrect option.
+*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
+*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
+*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
 
-***List of Options:
-***
-1.$dim(V)=1$
-
-2.$dim(V)=2$
-
-3.$dim(V)=3$
-
-4.$V$ is not a vector space
-
-5.$V$ a vector subspace of $\mathbb{R}^3$
-
-6.$\{(1,0,1),(0,1,1)\}$ is a basis of $V$.
-
-7.$\{(1,0,1),(0,1,-1)\}$ is a basis of $V$.
-
-8.$\{(1,1,0),(1,0,1)\}$ is a basis of $V$.
-
-9.$\{(-1,1,0),(1,0,1)\}$ is a basis of $V$.
-
-***List of Questions:
-***
-
-**Q1.**Consider the set $V=\{(a,b,c) \mid a+b =c \text{ and } a,b, c \in \mathbb{R}\}$ with usual coordinate-wise addition and scalar multiplication. Which of the above options is(are) true for $V$?
-
-**Q2.**Consider the set $V=\{(a,b,c) \mid a =b+c \text{ and } a,b, c \in \mathbb{R}\}$ with usual coordinate-wise addition and scalar multiplication. Which of the above options is(are) true for $V$?
-
-**Q3.**Consider the set $V=\{(a,b,c) \mid a+b =1-c \text{ and } a,b, c \in \mathbb{R}\}$ with usual coordinate-wise addition and scalar multiplication. Which of the above options is(are) true for $V$?
+7BMAAA==,sAEAALoBAABHAgAAUQQAALIFAAC9BQAA4gUAAPkFAACdBgAAngYAAPIGAAD5BgAAwQcAAOcHAADbCwAAVA0AAK4OAACxDgAA4w4AAB8QAACeEAAA8BAAAKESAAAlFgAAORYAAAcYAABDGAAApBgAADUZAABQGQAAThoAAIEaAAAfHgAAdx4AAEwgAABtIAAANCIAAFQiAACtIgAAJSMAAE8jAABGJAAAaiQAAAklAACMJgAAEicAADMnAAA/KAAAMikAAMcpAABMKgAAcy0AANEuAACHLwAAjTAAANEwAADOMQAAwzIAAHUzAAAmNAAA1DYAAJw3AADFNwAARDkAAIw5AAC3QAAAeEEAAGFCAADJQgAAGEMAACJDAADRRwAAxEgAALFJAAAWSwAAS0sAAC1MAABKTAAA2UwAAFJNAAA5TgAAXVAAAFJRAADhUwAARVQAAAhWAACxVgAAC1cAADNYAAD7WAAA1FoAAERbAADRWwAASV0AAN9eAAAGXwAANGAAAFlgAABfYAAAtmAAACxhAAD9YQAAq2IAAO9jAAB9ZAAAhWUAAM1lAABFZgAAPGkAAGVpAAB4awAAEWwAAJxsAADobQAA+G0AAKNuAACubgAAyW4AAEFvAABKcAAAsnIAACZzAAAgdAAAi3QAAMF1AADRdgAAsXoAAKh7AADQfAAAIn8AAGt/AACHgQAAooEAAHOCAACmggAAGYMAAEqFAABniAAAYokAAF+KAACGigAAXIsAACqMAAAzjAAAZI0AAGWNAAA/jwAARZAAAEKRAACTkgAAfZUAAOOVAAD/lQAAuJYAADeZAABGmQAAb5oAAIKaAACHmwAA5pwAAHWdAADOngAAU58AAJ+fAAAhoAAAP6AAAOWgAAAioQAAIKIAAG6lAADYpQAAB6cAABKnAAC7pwAA0KoAAHqrAACYqwAAZawAAJOsAAAArQAAW60AAO2tAADKrgAAcbAAADaxAACBsQAAArIAACizAABhuQAAbLsAAJe8AAC/vQAAJ8IAAKbCAADkwgAASMUAACzIAABZygAAAcsAAKXLAADRzQAA7s4AADbPAACG0AAAvNAAAHrTAACA0wAAoNMAABTUAAAc1QAAvtUAAE7YAACz2AAA5NgAAN7ZAABB2gAAPtsAAGzcAACn3AAA99wAAG3eAAC/3gAADd8AAGTfAADL3wAABeAAAA7gAADs4AAASuEAAATiAAC15AAADOUAABvlAADE5wAAFOgAAPLoAAAl6QAAgukAACrqAABt6gAAqOsAALzrAACT7AAAyuwAAJLwAABO8QAA5vEAAFLyAAA29QAAd/UAABH2AAAn+AAA1/kAAOj7AABH/QAAKf4AACMAAQDWAAEAHQEBANYCAQBGAwEAjAQBAGEFAQC8BQEAugYBADkJAQBECQEATAkBAGUKAQBuDQEAgg0BAFAOAQCEDgEA/g4BAHcRAQByEgEAaxUBAN8VAQAaGAEAWxgBALYZAQC0GwEA9hwBAGodAQB2HQEAex0BAAseAQBGHgEADiABAKsgAQDZIAEA5yABAP8gAQA/IQEAciMBANgkAQD4JAEAtCUBAKgmAQBuKAEAdSgBAAYpAQDAKQEAySkBAFsqAQDqKwEAGiwBABItAQCILQEAcy4BABYvAQAaLwEAGjABACY0AQANNQEAxTUBAKk4AQD8OAEAcToBAII9AQD6PQEA2D4BAKE/AQCrPwEArkABAFBEAQA6RgEATkYBAHFGAQCWRgEAPUgBAKNJAQBISwEALk4BAIROAQBqTwEAgk8BAEZQAQDsUAEAi1EBAJdRAQCkUwEAzlYBAPNWAQDeVwEA91kBAG5aAQCOWgEAVFsBAGVbAQBkXQEALl4BAEZhAQCtYQEAE2UBAEBlAQAeawEAFmwBAE5sAQDKbAEABm4BADhvAQD9bwEAE3IBABhzAQAadAEAbHQBAOF1AQBDdwEAWHcBAAd5AQAPegEAj3oBAN96AQD5ewEANH0BABF+AQDngAEA54EBAPSCAQA3gwEAXoMBAK6FAQDzhQEAIIcBAIWIAQAcjAEAV40BACGOAQB5jwEAsZABAOORAQDOkgEAdZMBALaTAQDOlQEAzZkBAO6ZAQD+mQEAUJsBAGibAQBmnAEAf5wBAMWcAQB2ngEAJ6EBADeiAQCgogEA2KIBABejAQCLowEAaKQBAIKkAQA3pQEAj6gBAMGoAQDQqAEAfKkBAJ+sAQAhrQEAva4BAAqvAQCZsQEAnLEBAIuyAQBxtQEAsLUBAAy2AQAGtwEAVrcBAOu3AQCTuQEAvroBAP28AQAcvQEAxb0BAA2+AQBpvgEA+r4BANC/AQCpwAEAIcEBAF/BAQAexgEAIMcBAIzHAQAyyAEAisgBAJDIAQApyQEAdMkBAIvLAQBbzQEA2s0BAB/OAQAHzwEAD88BAF3PAQByzwEAX9ABAHLQAQCL0QEAj9IBAJjSAQCY1AEA/9QBAGPVAQCW1wEAvtgBAKfbAQC/3gEAGd8BADPgAQB24AEAueABAPLgAQAt4gEAX+IBAIniAQBr4wEAtOQBABTlAQA+5QEAXeUBABjmAQC+5gEAB+cBAC3oAQB36AEApugBAPvoAQDQ7QEAqO4BAFbvAQAw8AEAh/IBABnzAQBi9AEASfUBAFD1AQCF9wEAcfkBAHP6AQAT+wEAl/sBAEv9AQDU/QEA4/0BAAX+AQBP/gEAqf4BAGv/AQBFAAIAuAECAJgCAgBkAwIArQQCAOwEAgBPBwIAJwkCAGULAgDFCwIAwAwCAMIMAgDhDgIARhACAMAQAgBvEQIAixQCALwUAgC8FQIA1xcCAMkaAgAmHQIAJB4CALMeAgCoHwIAJSACAEAgAgCIIwIAqSQCAB8mAgBMJgIAJycCACwnAgArKAIABSoCAH4qAgA6KwIA6CsCAMAsAgDsLAIAiS0CAJ4tAgDpLwIAQTACADMxAgBZMgIABTMCAC8zAgC4MwIADTQCACs0AgDVNQIAXTcCAP45AgB5OwIAsD4CAA1CAgAbQwIAnkMCACtEAgB5RAIAEkUCAERGAgBWRwIA9UcCAHFIAgCuSAIAZUkCAMdJAgD2SQIAs0oCALZKAgDJSgIAuEsCAF1NAgCoTQIASU4CAMVOAgDVTgIAnE8CANNPAgDoTwIAt1ACAPVRAgCZUgIAclYCAEpXAgCsWAIAWVkCAHRZAgBHWgIAqlwCAKxdAgC2XQIAV14CADJfAgCPXwIA3mACAGhhAgAuYwIAkGUCAF5mAgB3ZgIAsmcCAIRoAgASaQIAb2kCAKhqAgDZagIAo28CAJ5xAgAvcgIAAHMCAD9zAgDtdQIAB3cCACB4AgC7eAIA03gCAPp4AgBlegIAT3sCAFZ7AgBZewIAsnsCAEZ8AgBPfAIAcnwCADt9AgBQfgIArH8CALKDAgClhQIAY4cCANKHAgBuigIAl4oCAGCLAgBojQIAJ44CAE+OAgCfjwIA0I8CAJOQAgCckQIAs5ECAF6SAgDMkgIA8JQCAIWVAgB8lwIAfpcCANWYAgCTmQIAqpsCAD2dAgCNngIAgKACAMehAgD6ogIABaQCAMWmAgAJqQIAYqkCAHCqAgCkqgIAs6wCANOsAgAOrgIAgK8CANuvAgDprwIAMrACAMOyAgAGswIAh7MCAMSzAgAatQIADLgCAFC4AgC9uwIADrwCALG9AgCVvgIAwL8CANe/AgDjvwIAwcACAAnDAgAkxAIAZ8QCAB/HAgBHyAIAYskCAI7JAgAJygIAf8oCAM3LAgDhzgIACs8CAPPPAgC40AIAlNICANPTAgCg1AIAR9gCAGbZAgA72wIAltsCALzcAgBl3QIAZt4CAIreAgDq3wIA9uACAMzmAgC05wIAO+gCAM3oAgCT6gIAqOoCANLqAgCL7AIAV+4CANvvAgBR8AIAdfACAH/wAgAz8QIA3PECACPyAgC59QIANfcCAAz4AgBW+AIA9/gCAFn6AgBW/AIAzvwCABT9AgDj/QIAzP8CAFUAAwAgAQMAbgEDAJsBAwBHAgMALwQDAOcGAwBrBwMAhgcDAFkLAwATDgMAUg4DAIAQAwBoEQMAphEDAPQSAwDhEwMAMBQDAEEWAwD+FgMA3BcDAOkXAwAAGQMAGRoDAEgaAwDLGgMAqRsDAD0cAwDoHAMAUx0DAGodAwDtHQMAVR4DAGkeAwDmHwMAeyADAI8jAwDKIwMARiQDAHImAwDMJwMAVSgDAFopAwBoKwMAbi4DADMwAwA7MQMAqTMDAGU0AwCbNAMAdzUDAFE2AwBsNgMAUTgDAIs6AwDWOgMASjwDABg9AwD9PwMAY0ADAMZAAwCcQQMAu0EDAK5GAwDaRgMAokgDAM9IAwDASQMASUsDALFLAwBuTAMAK00DAORNAwCfTgMAWE8DAE5TAwA=

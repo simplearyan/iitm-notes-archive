@@ -1,51 +1,16 @@
-# Modules _ IITM Online Degree (13_4_2026 7_10_35 am)
+---
+title: ""
+source: "IITM MultiThread"
+---
 
-## Instructions for Extended Match Questions
+# 
 
-[Use this slide to understand how to answer an EMQ](https://slides.com/ishaanpod/how-to-answer-emq)
+Please wait...
 
-***Instructions:
-***1. For each question, enter all the options which you find is the answer to that question as "**comma separated values**". 
-2. Enter the options in **ascending order** of option number.
-3. An option can also be an answer to more than one question, or may not be an answer to any of the questions.
-4. [Please click here to view a sample template file for answering.](https://backend.seek.study.iitm.ac.in/22q1_ma1002/assets/img/EMQ_sample_file.txt)
-5. Please note that if you give an incorrect answer there will be a negative marking for the incorrect option.
+**Error**: Cannot open the page from the filesystem.
 
-Consider the following matrices: 
-$R_1=\begin{bmatrix} 1 & 0 & \frac{5}{2} & 1 \\ 0 & 1 & \frac{3}{4} & 1 \\ 0 & 0 & 1 & 0 \end{bmatrix}$, $R_2=\begin{bmatrix} 1 & 0 & 0 & 1 \\ 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 0 \end{bmatrix}$, $R_3=\begin{bmatrix}1 & 0 & 1 & 0 \\ 0 & 1 & -\frac{1}{2} & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}$, $R_4=\begin{bmatrix} 1 & 0 & \frac{5}{2} & 1 \\ 0 & 1 & \frac{3}{4} & 1 \\ 0 & 0 & 0 & 0 \end{bmatrix}$
+*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
+*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
+*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
 
-***List of Options:
-***
-1. $R_1$ is a row echelon form of $A$.
-
-2. $R_1$ is the reduced row echelon form of $A$
-
-3. $R_2$ is the reduced row echelon form of $A$
-
-4. $R_3$ is the reduced row echelon form of $A$
-
-5. $R_4$ is the reduced row echelon form of $A$
-
-6. $Nullspace(A)=\{(-t, -t, 0, t) \mid t \in \mathbb{R} \}$
-
-7. $Nullspace(A)=\{(-t, \frac{t}{2}, t, 0) \mid t \in \mathbb{R} \}$
-8. $Nullspace(A)=\{(-\frac{5}{2}t_1-t_2, -\frac{3}{4}t_1-t_2, t_1, t_2) \mid t_1, t_2 \in \mathbb{R} \}$
-
-9. $nullity(A)=1$
-
-10. $nullity(A)=2$
-
-11. Basis of $Nullspace(A)=\{(-\frac{5}{2}, -\frac{3}{4}, 1,0), (-1,-1,0, 1) \}$
-
-12. Basis of $Nullspace(A)=\{ (1, -\frac{1}{2}, -1, 0) \}$
-
-13. Basis of $Nullspace(A)=\{ (1,1,0,-1) \}$
-
-***List of Questions:
-***
-
-**Q1** Consider the matrix $A= \begin{bmatrix} 2 & 0 & 5 & 2 \\ 1 & 2 & 4 & 3 \\ 2 & 0 & 7 & 2 \end{bmatrix}$, which of the above options are true for $A$?
-
-**Q2** Consider the matrix $A= \begin{bmatrix} 2 & 0 & 5 & 2 \\ 1 & 2 & 4 & 3 \\ 3 & 2 & 9 & 5 \end{bmatrix}$, which of the above options are true for $A$?
-
-**Q3** Consider the matrix $A= \begin{bmatrix} 2 & 0 & 2 & 2 \\ 1 & 2 & 0 & 0 \\ 2 & 0 & 2 & 1 \end{bmatrix}$, which of the above options are true for $A$?
+EmICAA==,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

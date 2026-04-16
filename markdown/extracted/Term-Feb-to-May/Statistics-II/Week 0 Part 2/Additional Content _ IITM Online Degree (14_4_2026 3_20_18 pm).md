@@ -1,27 +1,16 @@
-# Additional Content _ IITM Online Degree (14_4_2026 3_20_18 pm)
+---
+title: ""
+source: "IITM MultiThread"
+---
 
- Additional Content [Additional Lecture 1](https://www.youtube.com/watch?v=0Ryws96sJC0)
+# 
 
-[Additional Lecture 2](https://www.youtube.com/watch?v=QvhnR4g6SKo)
-[
-Additional Lecture 3](https://www.youtube.com/watch?v=E7VhAVeKUk8)
+Please wait...
 
-[Additional Lecture 4](https://www.youtube.com/watch?v=AngkZkkcE0w)
+**Error**: Cannot open the page from the filesystem.
 
-[Additional Lecture 5](https://www.youtube.com/watch?v=Wt26Z6fnTn0)
+*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
+*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
+*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
 
-[Additional Lecture 6](https://www.youtube.com/watch?v=jvo3MBMmLgE)
-
-[Additional Lecture 7](https://www.youtube.com/watch?v=RQJ3DICglYU)
-
-[Additional Lecture 8](https://www.youtube.com/watch?v=5sjOZRtEbOI)
-
-[Additional Lecture 9](https://www.youtube.com/watch?v=E-A8dfr9zgA)
-
-[Additional Lecture 10](https://www.youtube.com/watch?v=b2bBLAxqcKM)
-[
-Additional Lecture 11](https://www.youtube.com/watch?v=MWQzYq8TBSA)
-[
-Additional Lecture 12](https://www.youtube.com/watch?v=edZs_X1YCAY)
-[
-Additional Lecture 13](https://www.youtube.com/watch?v=LDMEzJDAf7w)
+,GgAAADEAAAABAQAACAEAAD0DAAApBQAAKwYAAMsGAABPBwAAAwkAAIwJAACbCQAAvQkAAAcKAABhCgAAIwsAAP0LAABwDQAAUA4AABwPAABlEAAApBAAAAcTAADfFAAAHRcAAH0XAAB4GAAAehgAAJkaAAD+GwAAeBwAACcdAABDIAAAdCAAAHQhAACPIwAAgSYAAN4oAADcKQAAayoAAGArAADdKwAA+CsAAEAvAABhMAAA1zEAAAQyAADfMgAA5DIAAOMzAAC9NQAANjYAAPI2AACgNwAAeDgAAKQ4AABBOQAAVjkAAKE7AAD5OwAA6zwAABE+AAC9PgAA5z4AAHA/AADFPwAA4z8AAI1BAAAVQwAAtkUAADFHAABoSgAAxU0AANNOAABWTwAA408AADFQAADkUAAAJlEAAOhRAAD/UQAASFIAAHVSAACWUgAAS1MAAItTAADaUwAA8VMAAH9VAABlWAAAu1gAAKFZAAC5WQAAfVoAACNbAADCWwAAzlsAANtdAAAFYQAAKmEAABViAAAuZAAApWQAAMVkAACLZQAAnGUAAJtnAABlaAAAfWsAAORrAABKbwAAd28AAFV1AABNdgAAhXYAAAF3AAA9eAAAb3kAADR6AABKfAAAT30AAFF+AACjfgAAGIAAAHqBAACPgQAAPoMAAEaEAADGhAAAFoUAADCGAABrhwAASIgAAB6LAAAejAAAK40AAG6NAACVjQAA5Y8AACqQAABXkQAAvJIAAFOWAACOlwAAWJgAALCZAADomgAAGpwAAAWdAACsnQAA7Z0AAAWgAAAEpAAAJaQAADWkAACHpQAAn6UAAJ2mAAC2pgAA/KYAAK2oAABeqwAAbqwAANesAAAPrQAATq0AAMKtAACfrgAAua4AAG6vAADGsgAA+LIAAAezAACzswAA1rYAAFi3AAD0uAAAQbkAANC7AADTuwAAwrwAAKi/AADnvwAAQ8AAAD3BAACNwQAAIsIAAMrDAAD1xAAANMcAAFPHAAD8xwAARMgAAKDIAAAxyQAAB8oAAODKAABYywAAlssAAFXQAABX0QAAw9EAAGnSAADB0gAAx9IAAGDTAACr0wAAwtUAAJLXAAAR2AAAVtgAAD7ZAABG2QAAlNkAAKnZAACW2gAAqdoAAMLbAADG3AAAz9wAAM/eAAA23wAAmt8AAM3hAAD14gAA3uUAAPboAABQ6QAAauoAAK3qAADw6gAAKesAAGTsAACW7AAAwOwAAKLtAADr7gAAS+8AAHXvAACU7wAAT/AAAPXwAAA+8QAAZPIAAK7yAADd8gAAMvMAAAf4AADf+AAAjfkAAGf6AADS/AAAI/0AACb+AACA/gAAHgABAJwBAQDOAwEA3wMBAAUFAQAPBQEAXwUBACwGAQD1BgEA7AgBAE4KAQDgCgEAVgsBADgMAQDEDAEA4g0BAJYOAQD7DwEA2hABADETAQBrEwEAOBkBAEIaAQA/GwEAFhwBAG4eAQDLHgEAJh8BAHQgAQCbIAEA0SEBALsiAQCPJgEA/SYBADgnAQAFKAEAsykBALsqAQApLQEA5S0BABsuAQD3LgEA0S8BAOwvAQDRMQEACzQBAFY0AQDKNQEAmDYBAH05AQDjOQEARjoBABw7AQA7OwEALkABAFpAAQAiQgEAT0IBAEBDAQBHRAEAvEQBAMhEAQDtRAEAMEUBAFVFAQDtRQEAEkYBANBGAQA7RwEApkcBABFIAQB8SAEA50gBAE5JAQA=

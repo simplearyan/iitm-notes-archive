@@ -1,154 +1,16 @@
-# Activity Question Lecture 7 - Not Graded _ IITM Online Degree (14_4_2026 3_33_26 pm)
+---
+title: ""
+source: "IITM MultiThread"
+---
 
- **Note : This activity is only for practice purpose and it will not be counted towards the Final score
+# 
 
-**
+Please wait...
 
-    
+**Error**: Cannot open the page from the filesystem.
 
- 
+*   **Chrome**: Install [SingleFileZ](https://chrome.google.com/webstore/detail/singlefilez/offkdfbbigofcgdokjemgjpdockaafjg) and enable the option "Allow access to file URLs" in the details page of the extension (chrome://extensions/?id=offkdfbbigofcgdokjemgjpdockaafjg).
+*   **Microsoft Edge**: Install [SingleFileZ](https://microsoftedge.microsoft.com/addons/detail/singlefilez/gofneaifncimeglaecpnanbnmnpfjekk) and enable the option "Allow access to file URLs" in the details page of the extension (edge://extensions/?id=gofneaifncimeglaecpnanbnmnpfjekk).
+*   **Safari**: Select "Security > Disable Local File Restrictions" in the "Develop > Developer settings" menu.
 
- 
- 
- 
- 
- 
- 
-
-    
-
- 
- 
- 
- 
- 
- 
-A fair coin is tossed $3$ times, then the probability that the difference between number of heads and number of tails equals to $0$ is
- 
- 
- 
- 
- 
- 
- 
- 
-###  No, the answer is incorrect. 
-Score: 0
-
-### Accepted Answers:
-(Type: Numeric) 0
- 
- 
- *
- 
- 
- 1 point
- 
- *
- 
-
- 
- 
-
-    
-
- 
- 
- 
- 
- *
- 
- 
- 1 point
- 
- *
- 
- 
-Ravi Anand went to buy fruits for himself from a shop. There was a basket of fruits containing $10$ apples and $20$ oranges, out of which $3$ apples and $5$ oranges are rotten. If he chooses two fruits randomly, what is the probability that either both are oranges or both are not rotten?
- 
- 
- 
- 
- 
- 
-$\displaystyle\frac{316}{485}$ 
- 
- 
- 
- 
- 
- 
- 
-$\displaystyle\frac{316}{435}$ 
- 
- 
- 
- 
- 
- 
- 
-$\displaystyle\frac{217}{485}$ 
- 
- 
- 
- 
- 
- 
- 
-$\displaystyle\frac{158}{435}$ 
- 
- 
- 
- 
- 
-###  No, the answer is incorrect. 
-Score: 0
-
-### Accepted Answers:
-
- 
-$\displaystyle\frac{316}{435}$ 
- 
- 
- 
- 
- 
-
-    
-
- 
- 
- 
- 
- 
- 
-During an IPL match, a batsman generally hits boundaries ( i.e., either he will score a $4$ or a $6$) whenever he will get a full toss delivery. He will duck the delivery (i.e., he won’t score any run) if he gets the bouncer. He will score $0$, if the ball is inswinger, however if he faces the outswinger, he will score either $1$ or $2$ run. If he faces a short pitch delivery, he will score either $3$ or $5$ runs. Consider this situation as a sample space whose outcome is the type of ball faced and the runs scored for that delivery ( i.e., (Bouncer, $0$) will be considered as one of the outcomes). Find the total number of outcomes in the sample
-space.
- 
- 
- 
- 
- 
- 
- 
- 
-###  No, the answer is incorrect. 
-Score: 0
-
-### Accepted Answers:
-(Type: Numeric) 8
- 
- 
- *
- 
- 
- 1 point
- 
- *
- 
-
- 
- 
- 
-**
-**
+,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
