@@ -103,6 +103,12 @@
         }
         .size-dot { transition: transform 0.2s; }
         .size-btn.active .size-dot { background-color: #4f46e5; }
+
+        /* Disable selection in drawing mode */
+        body.drawing-mode { 
+            user-select: none; 
+            -webkit-user-select: none;
+        }
     </style>
 </head>
 <body class="bg-[#f8fafc] text-slate-800 overflow-hidden h-screen flex flex-col md:flex-row">
@@ -294,9 +300,9 @@
     <script id="vault-data" type="application/json">
     {
   "stats": {
-    "buildId": "VAULT-1776314450578",
+    "buildId": "VAULT-1776314543145",
     "totalFiles": 125,
-    "timestamp": "2026-04-16T04:40:50.578Z"
+    "timestamp": "2026-04-16T04:42:23.145Z"
   },
   "navigation": [
     {
@@ -2152,6 +2158,7 @@
                 toggle() {
                     this.active = !this.active;
                     this.canvas.classList.toggle('active', this.active);
+                    document.body.classList.toggle('drawing-mode', this.active);
                     const toolbar = document.getElementById('anno-toolbar');
                     const toggleBtn = document.getElementById('toggle-anno');
                     
