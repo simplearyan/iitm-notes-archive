@@ -20,6 +20,7 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script src="https://unpkg.com/roughjs@latest/bundled/rough.js"></script>
     
     <!-- Prism Engine (Modular) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
@@ -76,6 +77,20 @@
             color: #4f46e5;
             font-weight: 600;
             box-shadow: inset 4px 0 0 -1px #4f46e5;
+        }
+
+        /* 🖋️ Annotation Layer */
+        #annotation-layer { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+            pointer-events: none; z-index: 10; 
+        }
+        #annotation-layer.active { pointer-events: auto; cursor: crosshair; }
+        .tool-btn { transition: all 0.2s; }
+        .tool-btn.active { 
+            background-color: #f1f5f9; 
+            color: #4f46e5; 
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
     </style>
 </head>
@@ -171,7 +186,8 @@
         </header>
 
         <!-- Markdown Container -->
-        <article class="flex-1 max-w-5xl mx-auto w-full px-6 md:px-20 py-12 md:py-24">
+        <article class="flex-1 max-w-5xl mx-auto w-full px-6 md:px-20 py-12 md:py-24 relative overflow-visible">
+            <svg id="annotation-layer"></svg>
             
             <!-- Dashboard View (Empty State) -->
             <div id="empty-state" class="flex flex-col items-center justify-center min-h-[60vh]">
@@ -210,6 +226,43 @@
             </footer>
         </article>
 
+        <!-- Floating Annotation Toolbar -->
+        <div id="anno-toolbar" class="fixed bottom-8 left-1/2 -translate-x-1/2 bg-white/80 backdrop-blur-xl border border-slate-200 px-6 py-3 rounded-2xl shadow-2xl z-50 flex items-center gap-6 transition-all transform translate-y-24 opacity-0 pointer-events-none">
+            <div class="flex items-center gap-2 pr-6 border-r border-slate-100">
+                <button onclick="ANN.setTool('line')" id="tool-line" class="tool-btn p-2 rounded-lg text-slate-400 hover:text-slate-600" title="Line Tool">
+                    <i data-lucide="minus" class="w-5 h-5"></i>
+                </button>
+                <button onclick="ANN.setTool('rect')" id="tool-rect" class="tool-btn p-2 rounded-lg text-slate-400 hover:text-slate-600" title="Rectangle Tool">
+                    <i data-lucide="square" class="w-5 h-5"></i>
+                </button>
+            </div>
+            
+            <div class="flex items-center gap-2 pr-6 border-r border-slate-100">
+                <button onclick="ANN.setColor('#6366f1')" class="w-4 h-4 rounded-full bg-indigo-500 hover:scale-125 transition-transform" id="color-indigo"></button>
+                <button onclick="ANN.setColor('#f43f5e')" class="w-4 h-4 rounded-full bg-rose-500 hover:scale-125 transition-transform" id="color-rose"></button>
+                <button onclick="ANN.setColor('#10b981')" class="w-4 h-4 rounded-full bg-emerald-500 hover:scale-125 transition-transform" id="color-emerald"></button>
+            </div>
+
+            <div class="flex items-center gap-2 pr-6 border-r border-slate-100">
+                <button onclick="ANN.setSize(1.5)" class="w-2 h-2 rounded-full bg-slate-300 hover:bg-slate-900"></button>
+                <button onclick="ANN.setSize(3.5)" class="w-3 h-3 rounded-full bg-slate-300 hover:bg-slate-900"></button>
+                <button onclick="ANN.setSize(6)" class="w-4 h-4 rounded-full bg-slate-300 hover:bg-slate-900"></button>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <button onclick="ANN.undo()" class="p-2 text-slate-400 hover:text-rose-500 rounded-lg">
+                    <i data-lucide="undo" class="w-4 h-4"></i>
+                </button>
+                <button onclick="ANN.clear()" class="p-2 text-slate-400 hover:text-rose-500 rounded-lg">
+                    <i data-lucide="trash-2" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+
+        <button id="toggle-anno" onclick="ANN.toggle()" class="fixed bottom-8 right-8 w-14 h-14 bg-slate-900 text-white rounded-full shadow-xl z-50 flex items-center justify-center hover:bg-indigo-600 transition-all active:scale-90">
+            <i data-lucide="pen-tool" class="w-6 h-6"></i>
+        </button>
+
         <!-- TOC Sidebar (Optional) -->
         <div class="hidden xl:block fixed right-8 top-32 w-48" id="toc-container"></div>
     </main>
@@ -218,9 +271,9 @@
     <script id="vault-data" type="application/json">
     {
   "stats": {
-    "buildId": "VAULT-1776312000320",
+    "buildId": "VAULT-1776313359333",
     "totalFiles": 125,
-    "timestamp": "2026-04-16T04:00:00.320Z"
+    "timestamp": "2026-04-16T04:22:39.333Z"
   },
   "navigation": [
     {
@@ -1938,6 +1991,8 @@
          * IITM Markdown Vault Core Engine
          * ─────────────────────────────────────────────────────────────────────────────
          */
+        let ANN; // Global Reference
+
         (function() {
             'use strict';
 
@@ -1962,6 +2017,7 @@
                 setupEventListeners();
                 setupScrollMonitor(); // 🛰️ Smart Header & Progress
                 loadSidebarState(); // 📥 Restore from local storage
+                ANN.init(); // 🖋️ Start Rough-Board
                 await loadIndex();
                 handleRouting();
             }
@@ -2043,6 +2099,144 @@
                     `;
                 }
             }
+
+            // -- Annotation Engine --
+            ANN = {
+                active: false,
+                tool: 'line',
+                color: '#6366f1',
+                size: 3.5,
+                canvas: null,
+                rc: null,
+                shapes: [],
+                currentPath: null,
+                currentDoc: '',
+
+                init() {
+                    this.canvas = document.getElementById('annotation-layer');
+                    if (!this.canvas) return;
+                    this.rc = rough.svg(this.canvas);
+                    this.setupEvents();
+                    console.log("🖋️ Rough-Board Initialized");
+                },
+
+                toggle() {
+                    this.active = !this.active;
+                    this.canvas.classList.toggle('active', this.active);
+                    const toolbar = document.getElementById('anno-toolbar');
+                    const toggleBtn = document.getElementById('toggle-anno');
+                    
+                    if (this.active) {
+                        toolbar.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+                        toggleBtn.classList.add('bg-indigo-600');
+                    } else {
+                        toolbar.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+                        toggleBtn.classList.remove('bg-indigo-600');
+                    }
+                },
+
+                setTool(t) {
+                    this.tool = t;
+                    document.querySelectorAll('.tool-btn').forEach(b => b.classList.remove('active'));
+                    const btn = document.getElementById(`tool-${t}`);
+                    if (btn) btn.classList.add('active');
+                },
+
+                setColor(c) { this.color = c; },
+                setSize(s) { this.size = s; },
+
+                setupEvents() {
+                    let startX, startY;
+                    let isDrawing = false;
+
+                    this.canvas.addEventListener('mousedown', (e) => {
+                        if (!this.active) return;
+                        isDrawing = true;
+                        const rect = this.canvas.getBoundingClientRect();
+                        startX = e.clientX - rect.left;
+                        startY = e.clientY - rect.top;
+                    });
+
+                    this.canvas.addEventListener('mousemove', (e) => {
+                        if (!isDrawing) return;
+                        const rect = this.canvas.getBoundingClientRect();
+                        const x = e.clientX - rect.left;
+                        const y = e.clientY - rect.top;
+
+                        if (this.currentPath) this.currentPath.remove();
+                        
+                        const options = { stroke: this.color, strokeWidth: this.size, roughness: 1.5 };
+                        if (this.tool === 'line') {
+                            this.currentPath = this.rc.line(startX, startY, x, y, options);
+                        } else {
+                            this.currentPath = this.rc.rectangle(startX, startY, x - startX, y - startY, options);
+                        }
+                        this.canvas.appendChild(this.currentPath);
+                    });
+
+                    this.canvas.addEventListener('mouseup', (e) => {
+                        if (!isDrawing) return;
+                        isDrawing = false;
+                        if (this.currentPath) {
+                            const rect = this.canvas.getBoundingClientRect();
+                            const x = e.clientX - rect.left;
+                            const y = e.clientY - rect.top;
+                            
+                            this.shapes.push({
+                                tool: this.tool,
+                                start: [startX, startY],
+                                end: [x, y],
+                                options: { stroke: this.color, strokeWidth: this.size, roughness: 1.5 }
+                            });
+                            this.currentPath = null;
+                            this.save();
+                        }
+                    });
+                },
+
+                save() {
+                    if (!this.currentDoc) return;
+                    localStorage.setItem(`iitm_anno_${this.currentDoc}`, JSON.stringify(this.shapes));
+                },
+
+                load(docPath) {
+                    this.currentDoc = docPath;
+                    this.shapes = JSON.parse(localStorage.getItem(`iitm_anno_${docPath}`) || '[]');
+                    this.redraw();
+                },
+
+                redraw() {
+                    if (!this.canvas) return;
+                    this.canvas.innerHTML = '';
+                    this.shapes.forEach(s => {
+                        let node;
+                        if (s.tool === 'line') {
+                            node = this.rc.line(s.start[0], s.start[1], s.end[0], s.end[1], s.options);
+                        } else {
+                            node = this.rc.rectangle(s.start[0], s.start[1], s.end[0] - s.start[0], s.end[1] - s.start[1], s.options);
+                        }
+                        this.canvas.appendChild(node);
+                    });
+                    
+                    // Match height of content
+                    const viewer = document.getElementById('md-viewer');
+                    if (viewer) this.canvas.setAttribute('height', viewer.scrollHeight);
+                },
+
+                undo() {
+                    this.shapes.pop();
+                    this.redraw();
+                    this.save();
+                },
+
+                clear() {
+                    if (confirm("Clear all annotations for this page?")) {
+                        this.shapes = [];
+                        this.redraw();
+                        this.save();
+                    }
+                }
+            };
 
             function handleRouting() {
                 const rawHash = window.location.hash.substring(1);
@@ -2129,6 +2323,7 @@
                 document.getElementById('reading-header').classList.remove('md:hidden');
                 
                 window.scrollTo({ top: 0, behavior: 'smooth' });
+                ANN.load(node.path);
             }
 
             function renderMath(container) {
@@ -2349,6 +2544,7 @@
                     l.classList.toggle('active', l.getAttribute('data-path') === node.path);
                 });
                 if (typeof lucide !== 'undefined') lucide.createIcons();
+                ANN.load(node.path); // 🖋️ Refresh Annotations
             }
 
             function handleSearch(query) {
