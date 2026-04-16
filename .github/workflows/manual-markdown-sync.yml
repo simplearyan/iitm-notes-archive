@@ -41,12 +41,12 @@ jobs:
           fi
           mkdir -p markdown/extracted/assets
 
-      - name: 📦 Step 1: Extract & Pre-Index Course Materials
+      - name: "📦 Step 1: Extract & Pre-Index Course Materials"
         run: node --expose-gc --max-old-space-size=6144 scripts/extract-to-markdown.js
         env:
           NODE_OPTIONS: "--expose-gc"
 
-      - name: 🔍 Step 2: Consolidate Navigation Index
+      - name: "🔍 Step 2: Consolidate Navigation Index"
         run: node --max-old-space-size=2048 scripts/generate-markdown-index.js
 
       - name: 🔓 Bypass Ignore Rules

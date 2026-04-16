@@ -266,8 +266,8 @@ const output = {
   version: '1.0',
   timestamp: new Date().toISOString(),
   stats: {
-    totalFiles: [...extractedDocs, ...manualDocs].length,
-    extractedFiles: extractedDocs.length,
+    totalFiles: [...consolidatedDocs, ...manualDocs].length,
+    extractedFiles: consolidatedDocs.length,
     manualFiles: manualDocs.length,
   },
   navigation: allItems,
