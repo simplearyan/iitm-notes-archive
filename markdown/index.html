@@ -791,11 +791,14 @@
                         const x = lastPoint ? lastPoint[0] : startX;
                         const y = lastPoint ? lastPoint[1] : startY;
 
+                        // Create a stable persistent seed (must be an integer)
+                        const persistentSeed = Math.floor(Math.random() * 999999);
+
                         if (this.tool === 'pen' && this.penPoints.length > 2) {
                             this.shapes.push({
                                 tool: 'pen',
                                 points: [...this.penPoints],
-                                options: { stroke: this.color, strokeWidth: this.size, roughness: 1.2, seed: Math.random() }
+                                options: { stroke: this.color, strokeWidth: this.size, roughness: 1.2, seed: persistentSeed }
                             });
                             this.save();
                         } else if (Math.abs(x - startX) > 2 || Math.abs(y - startY) > 2) {
@@ -803,15 +806,17 @@
                                 tool: this.tool,
                                 start: [startX, startY],
                                 end: [x, y],
-                                options: { stroke: this.color, strokeWidth: this.size, roughness: 1.5, seed: Math.floor(Math.random() * 1000) }
+                                options: { stroke: this.color, strokeWidth: this.size, roughness: 1.5, seed: persistentSeed }
                             });
                             this.save();
                         }
                         
+                        // Clean up live preview
                         if (this.currentPath) {
                             if (Array.isArray(this.currentPath)) this.currentPath.forEach(n => n.remove());
                             else this.currentPath.remove();
                         }
+                        this.currentPath = null;
                         this.penPoints = [];
                         this.redraw();
                     };
