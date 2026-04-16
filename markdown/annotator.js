@@ -211,11 +211,11 @@ const ANN = {
         if (!this.canvas) return;
         this.canvas.innerHTML = '';
         
-        const main = document.getElementById('main-content');
-        if (main) {
-            // Force a height recalculation to match the full scrollable area
-            const scrollH = main.scrollHeight;
-            const scrollW = main.scrollWidth;
+        // Target the article for sticky coordinate mapping
+        const article = document.querySelector('article');
+        if (article) {
+            const scrollH = article.scrollHeight;
+            const scrollW = article.scrollWidth;
             this.canvas.setAttribute('height', scrollH);
             this.canvas.setAttribute('width', scrollW);
             this.canvas.style.height = `${scrollH}px`;
