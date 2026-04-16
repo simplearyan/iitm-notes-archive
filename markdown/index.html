@@ -300,9 +300,9 @@
     <script id="vault-data" type="application/json">
     {
   "stats": {
-    "buildId": "VAULT-1776314543145",
+    "buildId": "VAULT-1776316525490",
     "totalFiles": 125,
-    "timestamp": "2026-04-16T04:42:23.145Z"
+    "timestamp": "2026-04-16T05:15:25.490Z"
   },
   "navigation": [
     {
@@ -2290,32 +2290,6 @@
                     this.canvas.addEventListener('touchmove', handleMove, { passive: false });
                     this.canvas.addEventListener('touchend', handleEnd, { passive: false });
                     this.canvas.addEventListener('touchcancel', handleEnd, { passive: false });
-                },
-
-                        if (this.tool === 'pen' && this.penPoints.length > 2) {
-                            this.shapes.push({
-                                tool: 'pen',
-                                points: [...this.penPoints],
-                                options: { stroke: this.color, strokeWidth: this.size, roughness: 1.2, seed: Math.random() }
-                            });
-                            this.save();
-                        } else if (Math.abs(x - startX) > 2 || Math.abs(y - startY) > 2) {
-                            this.shapes.push({
-                                tool: this.tool,
-                                start: [startX, startY],
-                                end: [x, y],
-                                options: { stroke: this.color, strokeWidth: this.size, roughness: 1.5, seed: Math.floor(Math.random() * 1000) }
-                            });
-                            this.save();
-                        }
-                        
-                        if (this.currentPath) {
-                            if (Array.isArray(this.currentPath)) this.currentPath.forEach(n => n.remove());
-                            else this.currentPath.remove();
-                        }
-                        this.penPoints = [];
-                        this.redraw();
-                    });
                 },
 
                 createArrow(x1, y1, x2, y2, options) {
