@@ -1,0 +1,15 @@
+---
+title: "Week 01 - Tutorial 02 :: IITM Online Degree"
+---
+
+# Week 01 - Tutorial 02 :: IITM Online Degree
+
+Week 01 - Tutorial 02
+
+Transcript Language
+
+English
+
+00:16Hi, all.00:17Welcome to the Mathematics for Data Science 2 Week 1 Tutorial.00:23So this is our second example of System of Linear Equations: Geometric Visualization.00:29So here again we will consider a system of linear equation and geometrically we will00:33try to see whether it has unique solution, infinitely many solutions or no solution.00:41So let us see the system of linear equations.00:44So this is our system of linear equation, where the first equation is x plus y plus00:48z equal to 8.00:50The second equation is x plus y minus 2 equal to, sorry, x plus y minus z equal to 2.00:57And the third equation is x plus y equal to 5.01:02So let us see how it looks geometrically.01:04So, again, we are considering this GeoGebra software and this red line is our x-axis,01:13this green line is our y-axis and this blue line is our z-axis.01:19So let us consider the first equation, which is x plus y plus z equal to 8.01:28So this is the plane, x plus y plus z equal to 8.01:35So you can see that this plane passing through the point 8 comma 0 comma 0 on x-axis.01:440 comma 8 comma 0 on y-axis and it will also pass through the point 0 comma 0 comma 8 on01:54z-axis.01:55So it will intersect all the three axis.01:57So this is our first plane.02:06Now, let us consider the second plane, which is x plus y minus z equal to 2.02:17So you can see that this is our plane.02:27So it will pass through the point 2 comma 0 comma 0 on x-axis, 0 comma 2 comma 0 on02:36y-axis and 0 comma 0 comma minus 2 on z-axis.02:44So it will intersect these three points as you can see from the figure.02:51So it will intersect z-axis on the negative direction.03:00So hope you can visualize this plane from this diagram.03:08Now we consider the third plane, which is x plus y equal to 5.03:13So this is the plane.03:16So this is basically parallel to z-axis.03:18It will not intersect z-axis as this equation does not involve any z.03:22So it will intersect the x-axis at the point 5 comma 0 comma 0 and it will intersect the03:28y-axis at the point 0 comma 5 comma 0.03:32So this is our third plane.03:37So let us go back to the first two equation and we can see that these two equation will03:45intersect at a line.03:48So this is the line where these two plane intersects.03:53So this is the line.03:58So geometrically we can visualize what is the line on this 3D plane where these two04:04planes are intersecting.04:12Now we introduce the third plane and see what is the solution.04:18So this is our third plane and we can see that third plane is also passing through this04:24line as you can see from this geometric diagram.04:35So this line is basically the intersection of these three planes.04:42And there are infinitely many points on this line, so these three equation have infinitely04:48many solution.04:50Thank you.
+
+Please enable JavaScript to continue using this application.
