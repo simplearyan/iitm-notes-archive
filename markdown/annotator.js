@@ -211,10 +211,10 @@ const ANN = {
         if (!this.canvas) return;
         this.canvas.innerHTML = '';
         
-        const viewer = document.getElementById('md-viewer');
-        if (viewer) {
-            this.canvas.setAttribute('height', Math.max(viewer.scrollHeight, 1000));
-            this.canvas.setAttribute('width', viewer.scrollWidth);
+        const main = document.getElementById('main-content');
+        if (main) {
+            this.canvas.setAttribute('height', Math.max(main.scrollHeight, window.innerHeight));
+            this.canvas.setAttribute('width', main.scrollWidth);
         }
 
         this.shapes.forEach(s => {
