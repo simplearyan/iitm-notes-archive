@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 /**
- * 🏛️ IITM Vault Builder (Image-Safe Edition)
+ * 🏛️ IITM Vault Builder (Asset-Sync Edition)
  * ─────────────────────────────────────────────────────────────────────────────
- * Fix: Extracts images from archives/folders and centralizes them in 'markdown/assets'
- * to avoid all path-resolution issues on GitHub Pages.
+ * Fix: Centralizes all images in 'markdown/extracted/assets' and performs
+ * automatic cleanup to eliminate legacy "Ghost Images".
  */
 
 const fs = require('fs');
@@ -19,13 +19,13 @@ const CONTENT_DIR = path.resolve(ROOT_DIR, 'content');
 const VAULT_DIR = path.resolve(ROOT_DIR, 'markdown');
 const EXTRACTED_DIR = path.resolve(VAULT_DIR, 'extracted');
 const MANUAL_DIR = path.resolve(VAULT_DIR, 'manual');
-const ASSETS_DIR = path.resolve(VAULT_DIR, 'assets');
+const ASSETS_DIR = path.resolve(EXTRACTED_DIR, 'assets'); // Unified path
 const INDEX_HTML = path.resolve(VAULT_DIR, 'index.html');
 
 const turndown = new TurndownService({ headingStyle: 'atx', codeBlockStyle: 'fenced' });
 
 /**
- * 🛠️ Phase 1: Heavy-Duty Archive Discovery
+ * 🕵️ Phase 1: Heavy-Duty Discovery
  */
 function findSources(dir) {
     let sources = [];
@@ -51,16 +51,22 @@ function findSources(dir) {
  * 🚀 Build Runner
  */
 async function build() {
-    console.log('🏛️ --- VAULT MASTER BUILD (ASSET-SAFE) ---');
+    console.log('🏛️ --- READING VAULT ASSET SYNC ---');
     
-    // Cleanup
-    if (fs.existsSync(EXTRACTED_DIR)) fs.rmSync(EXTRACTED_DIR, { recursive: true, force: true });
-    // Note: We keep the assets folder to avoid massive churn, but we'll overwrite as needed
+    // Cleanup Logic
+    const shouldClean = process.env.CLEAN_ASSETS === 'true';
+    if (shouldClean) {
+        console.log('🧹 Cleanup Triggered: Clearing extracted folder and assets...');
+        if (fs.existsSync(EXTRACTED_DIR)) fs.rmSync(EXTRACTED_DIR, { recursive: true, force: true });
+    }
+    
+    if (!fs.existsSync(EXTRACTED_DIR)) fs.mkdirSync(EXTRACTED_DIR, { recursive: true });
     if (!fs.existsSync(ASSETS_DIR)) fs.mkdirSync(ASSETS_DIR, { recursive: true });
-    fs.mkdirSync(EXTRACTED_DIR, { recursive: true });
 
     const sources = findSources(CONTENT_DIR);
     console.log(`📦 Found ${sources.length} content sources.`);
+
+    let imageCount = 0;
 
     sources.forEach(source => {
         try {
@@ -71,24 +77,23 @@ async function build() {
             
             main.querySelectorAll('.no-print, nav, footer, script').forEach(el => el.remove());
 
-            // 📸 Handle Images (Centralization)
-            const courseId = path.relative(CONTENT_DIR, source.baseDir).replace(/[\\/]/g, '_').replace(/\.u\.zip\.html$/i, '');
+            // 📸 Centralize Images
+            const courseId = path.relative(CONTENT_DIR, source.baseDir).replace(/[\\/]/g, '_');
             
             main.querySelectorAll('img').forEach(img => {
                 const src = img.getAttribute('src');
                 if (src && !src.startsWith('http') && !src.startsWith('data:')) {
-                    // Find actual image on disk
                     const imgSourcePath = path.resolve(source.baseDir, src);
                     if (fs.existsSync(imgSourcePath)) {
                         const imgExt = path.extname(src) || '.png';
                         const safeFileName = `${courseId}_${path.basename(src, imgExt)}`.replace(/[^a-zA-Z0-9_-]/g, '') + imgExt;
                         const imgDestPath = path.join(ASSETS_DIR, safeFileName);
                         
-                        // Copy to central assets
                         fs.copyFileSync(imgSourcePath, imgDestPath);
+                        imageCount++;
                         
-                        // Update link to be relative to the markdown/ index.html
-                        img.setAttribute('src', `assets/${safeFileName}`);
+                        // Path relative to markdown/index.html is 'extracted/assets/...'
+                        img.setAttribute('src', `extracted/assets/${safeFileName}`);
                     }
                 }
             });
@@ -105,15 +110,17 @@ async function build() {
         }
     });
 
-    // Generate Nav Tree
-    function buildNodeTree(dir, source, relativePath = '') {
+    console.log(`📷 Sync complete! Processed ${imageCount} unique images.`);
+
+    // Navigation Tree Logic
+    function buildNodeTree(dir, source, relativePathSuffix = '') {
         if (!fs.existsSync(dir)) return [];
         const items = fs.readdirSync(dir, { withFileTypes: true });
         const nodes = [];
         for (const item of items) {
             if (item.name.startsWith('.') || item.name === 'assets') continue;
             const full = path.join(dir, item.name);
-            const rel = relativePath ? `${relativePath}/${item.name}` : item.name;
+            const rel = relativePathSuffix ? `${relativePathSuffix}/${item.name}` : item.name;
             if (item.isDirectory()) {
                 const kids = buildNodeTree(full, source, rel);
                 if (kids.length > 0) nodes.push({
@@ -153,7 +160,7 @@ async function build() {
     const regex = /(<!-- SIDEBAR-DATA-START -->)[\s\S]*?(<!-- SIDEBAR-DATA-END -->)/;
     fs.writeFileSync(INDEX_HTML, html.replace(regex, `$1\n    <script id="vault-data" type="application/json">\n    ${payload}\n    </script>\n    $2`));
 
-    console.log(`✅ Build Complete! Injected ${stats.totalFiles} documents.`);
+    console.log(`✅ Build Complete! Injected ${stats.totalFiles} documents into Vault.`);
 }
 
 build();

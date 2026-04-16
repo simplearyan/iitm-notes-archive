@@ -57,6 +57,7 @@ jobs:
         run: node --expose-gc --max-old-space-size=6144 scripts/vault-builder.js
         env:
           NODE_OPTIONS: "--expose-gc"
+          CLEAN_ASSETS: "${{ github.event.inputs.force_clean }}"
 
       - name: 🔓 Bypass Ignore Rules
         run: |
