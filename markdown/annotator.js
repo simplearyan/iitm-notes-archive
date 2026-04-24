@@ -75,11 +75,22 @@ const ANN = {
 
         const getCoords = (e) => {
             const rect = this.canvas.getBoundingClientRect();
-            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+            let clientX, clientY;
+            
+            if (e.touches && e.touches.length > 0) {
+                clientX = e.touches[0].clientX;
+                clientY = e.touches[0].clientY;
+            } else if (e.changedTouches && e.changedTouches.length > 0) {
+                clientX = e.changedTouches[0].clientX;
+                clientY = e.changedTouches[0].clientY;
+            } else {
+                clientX = e.clientX;
+                clientY = e.clientY;
+            }
+            
             return {
-                x: clientX - rect.left,
-                y: clientY - rect.top
+                x: clientX !== undefined ? clientX - rect.left : undefined,
+                y: clientY !== undefined ? clientY - rect.top : undefined
             };
         };
 
@@ -129,8 +140,8 @@ const ANN = {
             isDrawing = false;
             
             const coords = getCoords(e);
-            const endX = coords.x || (this.penPoints.length ? this.penPoints[this.penPoints.length-1][0] : startX);
-            const endY = coords.y || (this.penPoints.length ? this.penPoints[this.penPoints.length-1][1] : startY);
+            const endX = coords.x !== undefined ? coords.x : (this.penPoints.length ? this.penPoints[this.penPoints.length-1][0] : startX);
+            const endY = coords.y !== undefined ? coords.y : (this.penPoints.length ? this.penPoints[this.penPoints.length-1][1] : startY);
 
             const persistentSeed = Math.floor(Math.random() * 999999);
 
