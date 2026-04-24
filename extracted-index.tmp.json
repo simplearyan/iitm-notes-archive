@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-16T06:33:48.331Z",
+  "timestamp": "2026-04-16T07:03:01.364Z",
   "extractedDocs": [
     {
       "id": "maths-2/AQ1.1_ Activity Questions 1 - Not Graded _ IITM Online Degree (3_4_2026 5_53_17 pm).md",
       "title": "AQ1.1_ Activity Questions 1 - Not Graded _ IITM Online Degree (3_4_2026 5_53_17 pm)",
-      "snippet": "# AQ1.1_ Activity Questions 1 - Not Graded _ IITM Online Degree (3_4_2026 5_53_17 pm)  **Instructions:** • $(i, j)^{th}$ entry in each given matrix is...",
+      "snippet": "# AQ1.1_ Activity Questions 1 - Not Graded _ IITM Online Degree (3_4_2026 5_53_17 pm)  **Instructions:**  • $(i, j)^{th}$ entry in each given matrix i...",
       "source": "extracted",
       "path": "maths-2/AQ1.1_ Activity Questions 1 - Not Graded _ IITM Online Degree (3_4_2026 5_53_17 pm)"
     },
@@ -25,7 +25,7 @@
     {
       "id": "Term-Feb-to-May/Mathematics-II/Course Introduction/Grading policy _ IITM Online Degree (4_4_2026 8_37_40 am).md",
       "title": "Grading policy _ IITM Online Degree (4_4_2026 8_37_40 am)",
-      "snippet": "# Grading policy _ IITM Online Degree (4_4_2026 8_37_40 am)  Grading policy  ## Mathematics for data science 2  ## Quiz 1: March 15 2026 Quiz 2: April...",
+      "snippet": "# Grading policy _ IITM Online Degree (4_4_2026 8_37_40 am)  Grading policy  ## Mathematics for data science 2  ## Quiz 1: March 15 2026          Quiz...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Course Introduction/Grading policy _ IITM Online Degree (4_4_2026 8_37_40 am)"
     },
@@ -39,14 +39,14 @@
     {
       "id": "Term-Feb-to-May/Mathematics-II/Week 1/AQ1.1_ Activity Questions 1 - Not Graded _ IITM Online Degree (4_4_2026 8_44_18 am).md",
       "title": "AQ1.1_ Activity Questions 1 - Not Graded _ IITM Online Degree (4_4_2026 8_44_18 am)",
-      "snippet": "# AQ1.1_ Activity Questions 1 - Not Graded _ IITM Online Degree (4_4_2026 8_44_18 am)  **Instructions:** • $(i, j)^{th}$ entry in each given matrix is...",
+      "snippet": "# AQ1.1_ Activity Questions 1 - Not Graded _ IITM Online Degree (4_4_2026 8_44_18 am)  **Instructions:**  • $(i, j)^{th}$ entry in each given matrix i...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Week 1/AQ1.1_ Activity Questions 1 - Not Graded _ IITM Online Degree (4_4_2026 8_44_18 am)"
     },
     {
       "id": "Term-Feb-to-May/Mathematics-II/Week 1/AQ1.2_ Activity Questions 2 - Not Graded _ IITM Online Degree (4_4_2026 8_45_01 am).md",
       "title": "AQ1.2_ Activity Questions 2 - Not Graded _ IITM Online Degree (4_4_2026 8_45_01 am)",
-      "snippet": "# AQ1.2_ Activity Questions 2 - Not Graded _ IITM Online Degree (4_4_2026 8_45_01 am)  2.1 Level 1:  *1 point*  Suppose $A = \\begin{bmatrix} 2 & 4 & 5...",
+      "snippet": "# AQ1.2_ Activity Questions 2 - Not Graded _ IITM Online Degree (4_4_2026 8_45_01 am)  2.1 Level 1:  *1 point*  Suppose  $$ A = \\begin{bmatrix} 2 & 4 ...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Week 1/AQ1.2_ Activity Questions 2 - Not Graded _ IITM Online Degree (4_4_2026 8_45_01 am)"
     },
@@ -193,7 +193,7 @@
     {
       "id": "Term-Feb-to-May/Mathematics-II/Week 2/AQ2.1_ Activity Questions 1 - Not Graded _ IITM Online Degree (4_4_2026 8_56_02 am).md",
       "title": "AQ2.1_ Activity Questions 1 - Not Graded _ IITM Online Degree (4_4_2026 8_56_02 am)",
-      "snippet": "# AQ2.1_ Activity Questions 1 - Not Graded _ IITM Online Degree (4_4_2026 8_56_02 am)  **Level 1:**  *1 point*  Consider a square matrix $A = \\begin{b...",
+      "snippet": "# AQ2.1_ Activity Questions 1 - Not Graded _ IITM Online Degree (4_4_2026 8_56_02 am)  **Level 1:**  *1 point*  Consider a square matrix  $$ A = \\begi...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Week 2/AQ2.1_ Activity Questions 1 - Not Graded _ IITM Online Degree (4_4_2026 8_56_02 am)"
     },
@@ -214,7 +214,7 @@
     {
       "id": "Term-Feb-to-May/Mathematics-II/Week 2/AQ2.4_ Activity Questions 4 - Not Graded _ IITM Online Degree (4_4_2026 8_58_59 am).md",
       "title": "AQ2.4_ Activity Questions 4 - Not Graded _ IITM Online Degree (4_4_2026 8_58_59 am)",
-      "snippet": "# AQ2.4_ Activity Questions 4 - Not Graded _ IITM Online Degree (4_4_2026 8_58_59 am)  **Level 1:**  *1 point*  Let $A = \\begin{bmatrix} 0 & 1 & 3\\\\ 1...",
+      "snippet": "# AQ2.4_ Activity Questions 4 - Not Graded _ IITM Online Degree (4_4_2026 8_58_59 am)  **Level 1:**  *1 point*  Let  $$ A = \\begin{bmatrix} 0 & 1 & 3\\...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Week 2/AQ2.4_ Activity Questions 4 - Not Graded _ IITM Online Degree (4_4_2026 8_58_59 am)"
     },
@@ -284,7 +284,7 @@
     {
       "id": "Term-Feb-to-May/Mathematics-II/Week 2/Solve with us 2.1 - Not Graded _ IITM Online Degree (4_4_2026 9_01_07 am).md",
       "title": "Solve with us 2.1 - Not Graded _ IITM Online Degree (4_4_2026 9_01_07 am)",
-      "snippet": "# Solve with us 2.1 - Not Graded _ IITM Online Degree (4_4_2026 9_01_07 am)  **1. Key Points:  Calculating minors and cofactors of a matrix:** - If $A...",
+      "snippet": "# Solve with us 2.1 - Not Graded _ IITM Online Degree (4_4_2026 9_01_07 am)  **1. Key Points:  Calculating minors and cofactors of a matrix:**  - If $...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Week 2/Solve with us 2.1 - Not Graded _ IITM Online Degree (4_4_2026 9_01_07 am)"
     },
@@ -459,7 +459,7 @@
     {
       "id": "Term-Feb-to-May/Mathematics-II/Week 4/AQ4.4_ Activity Questions 4 - Not Graded _ IITM Online Degree (5_4_2026 5_07_41 pm).md",
       "title": "AQ4.4_ Activity Questions 4 - Not Graded _ IITM Online Degree (5_4_2026 5_07_41 pm)",
-      "snippet": "# AQ4.4_ Activity Questions 4 - Not Graded _ IITM Online Degree (5_4_2026 5_07_41 pm)  **Level 1**  Find the rank of the following matrix: $\\begin{bma...",
+      "snippet": "# AQ4.4_ Activity Questions 4 - Not Graded _ IITM Online Degree (5_4_2026 5_07_41 pm)  **Level 1**  Find the rank of the following matrix:  $$ \\begin{...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Week 4/AQ4.4_ Activity Questions 4 - Not Graded _ IITM Online Degree (5_4_2026 5_07_41 pm)"
     },
@@ -487,7 +487,7 @@
     {
       "id": "Term-Feb-to-May/Mathematics-II/Week 4/Modules _ IITM Online Degree (5_4_2026 5_03_54 pm).md",
       "title": "Modules _ IITM Online Degree (5_4_2026 5_03_54 pm)",
-      "snippet": "# Modules _ IITM Online Degree (5_4_2026 5_03_54 pm)  L4.1 What is a basis for a vector space?  Transcript Language...",
+      "snippet": "# Modules _ IITM Online Degree (5_4_2026 5_03_54 pm)  L4.1 What is a basis for a vector space•  Transcript Language...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Week 4/Modules _ IITM Online Degree (5_4_2026 5_03_54 pm)"
     },
@@ -508,7 +508,7 @@
     {
       "id": "Term-Feb-to-May/Mathematics-II/Week 4/Reflect with us - Week 4 _ IITM Online Degree (5_4_2026 5_09_04 pm).md",
       "title": "Reflect with us - Week 4 _ IITM Online Degree (5_4_2026 5_09_04 pm)",
-      "snippet": "# Reflect with us - Week 4 _ IITM Online Degree (5_4_2026 5_09_04 pm)  Find the dimension of the vector space  $\\begin{aligned} & V = \\lbrace (x,y,z) ...",
+      "snippet": "# Reflect with us - Week 4 _ IITM Online Degree (5_4_2026 5_09_04 pm)  Find the dimension of the vector space                      $$ \\begin{aligned} ...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Week 4/Reflect with us - Week 4 _ IITM Online Degree (5_4_2026 5_09_04 pm)"
     },
@@ -571,7 +571,7 @@
     {
       "id": "Term-Feb-to-May/Mathematics-II/Week 5/AQ5.5_ Activity Questions 5 - Not Graded _ IITM Online Degree (13_4_2026 7_08_15 am).md",
       "title": "AQ5.5_ Activity Questions 5 - Not Graded _ IITM Online Degree (13_4_2026 7_08_15 am)",
-      "snippet": "# AQ5.5_ Activity Questions 5 - Not Graded _ IITM Online Degree (13_4_2026 7_08_15 am)  Level 1  *1 point*  Consider a function $T: V \\to W$, where $V...",
+      "snippet": "# AQ5.5_ Activity Questions 5 - Not Graded _ IITM Online Degree (13_4_2026 7_08_15 am)  Level 1  *1 point*  Consider a function $T: V \\to W$ , where $...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Week 5/AQ5.5_ Activity Questions 5 - Not Graded _ IITM Online Degree (13_4_2026 7_08_15 am)"
     },
@@ -613,14 +613,14 @@
     {
       "id": "Term-Feb-to-May/Mathematics-II/Week 5/Modules _ IITM Online Degree (13_4_2026 7_10_35 am).md",
       "title": "Modules _ IITM Online Degree (13_4_2026 7_10_35 am)",
-      "snippet": "# Modules _ IITM Online Degree (13_4_2026 7_10_35 am)  ## Instructions for Extended Match Questions [Use this slide to understand how to answer an EMQ...",
+      "snippet": "# Modules _ IITM Online Degree (13_4_2026 7_10_35 am)  ## Instructions for Extended Match Questions  [Use this slide to understand how to answer an EM...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Week 5/Modules _ IITM Online Degree (13_4_2026 7_10_35 am)"
     },
     {
       "id": "Term-Feb-to-May/Mathematics-II/Week 5/Practice Assignment 5 - Not Graded _ IITM Online Degree (13_4_2026 7_10_08 am).md",
       "title": "Practice Assignment 5 - Not Graded _ IITM Online Degree (13_4_2026 7_10_08 am)",
-      "snippet": "# Practice Assignment 5 - Not Graded _ IITM Online Degree (13_4_2026 7_10_08 am)  Multiple Choice Questions (MCQ):  *1 point*  Let $A$ and $B$ be squa...",
+      "snippet": "# Practice Assignment 5 - Not Graded _ IITM Online Degree (13_4_2026 7_10_08 am)  Multiple Choice Questions (MCQ):  *1 point*  Let $A$ and $B$ be squa...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Week 5/Practice Assignment 5 - Not Graded _ IITM Online Degree (13_4_2026 7_10_08 am)"
     },
@@ -634,7 +634,7 @@
     {
       "id": "Term-Feb-to-May/Mathematics-II/Week 5/Solve with us 5 - Not Graded _ IITM Online Degree (13_4_2026 7_08_54 am).md",
       "title": "Solve with us 5 - Not Graded _ IITM Online Degree (13_4_2026 7_08_54 am)",
-      "snippet": "# Solve with us 5 - Not Graded _ IITM Online Degree (13_4_2026 7_08_54 am)  $\\textbf{1. Key points:}$  - Rank of a matrix:  - Maximum number of linear...",
+      "snippet": "# Solve with us 5 - Not Graded _ IITM Online Degree (13_4_2026 7_08_54 am)  $\\textbf{1. Key points:}$  - Rank of a matrix:                - Maximum nu...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Week 5/Solve with us 5 - Not Graded _ IITM Online Degree (13_4_2026 7_08_54 am)"
     },
@@ -704,7 +704,7 @@
     {
       "id": "Term-Feb-to-May/Mathematics-II/Week 6/Modules _ IITM Online Degree (13_4_2026 7_18_17 am).md",
       "title": "Modules _ IITM Online Degree (13_4_2026 7_18_17 am)",
-      "snippet": "# Modules _ IITM Online Degree (13_4_2026 7_18_17 am)  ## Instructions for Extended Match Questions [Use this slide to understand how to answer an EMQ...",
+      "snippet": "# Modules _ IITM Online Degree (13_4_2026 7_18_17 am)  ## Instructions for Extended Match Questions  [Use this slide to understand how to answer an EM...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Week 6/Modules _ IITM Online Degree (13_4_2026 7_18_17 am)"
     },
@@ -732,7 +732,7 @@
     {
       "id": "Term-Feb-to-May/Mathematics-II/Week 6/Solve with us 6.2 - Not Graded _ IITM Online Degree (13_4_2026 7_16_38 am).md",
       "title": "Solve with us 6.2 - Not Graded _ IITM Online Degree (13_4_2026 7_16_38 am)",
-      "snippet": "# Solve with us 6.2 - Not Graded _ IITM Online Degree (13_4_2026 7_16_38 am)  $\\textbf{Key Points: 1}$  - Let $T: V\\rightarrow W$ be a linear transfor...",
+      "snippet": "# Solve with us 6.2 - Not Graded _ IITM Online Degree (13_4_2026 7_16_38 am)  $\\textbf{Key Points: 1}$    - Let $T: V\\rightarrow W$ be a linear transf...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Week 6/Solve with us 6.2 - Not Graded _ IITM Online Degree (13_4_2026 7_16_38 am)"
     },
@@ -781,7 +781,7 @@
     {
       "id": "Term-Feb-to-May/Mathematics-II/Week 7/AQ7.3_ Activity Questions 3 - Not Graded _ IITM Online Degree (13_4_2026 7_20_28 am).md",
       "title": "AQ7.3_ Activity Questions 3 - Not Graded _ IITM Online Degree (13_4_2026 7_20_28 am)",
-      "snippet": "# AQ7.3_ Activity Questions 3 - Not Graded _ IITM Online Degree (13_4_2026 7_20_28 am)  **Level 1**  If $||a||=3$, $||b||=2 \\sqrt{2}$ and angle betwee...",
+      "snippet": "# AQ7.3_ Activity Questions 3 - Not Graded _ IITM Online Degree (13_4_2026 7_20_28 am)  **Level 1**  If $||a||=3$ , $||b||=2 \\sqrt{2}$ and angle betwe...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Week 7/AQ7.3_ Activity Questions 3 - Not Graded _ IITM Online Degree (13_4_2026 7_20_28 am)"
     },
@@ -830,7 +830,7 @@
     {
       "id": "Term-Feb-to-May/Mathematics-II/Week 7/Reflect with us - Week 7 _ IITM Online Degree (13_4_2026 7_22_26 am).md",
       "title": "Reflect with us - Week 7 _ IITM Online Degree (13_4_2026 7_22_26 am)",
-      "snippet": "# Reflect with us - Week 7 _ IITM Online Degree (13_4_2026 7_22_26 am)  *1 point*  Let $L_1$ and $L_2$ be affine subspaces of $\\mathbb{R}^3$, where $L...",
+      "snippet": "# Reflect with us - Week 7 _ IITM Online Degree (13_4_2026 7_22_26 am)  *1 point*  Let $L_1$ and $L_2$ be affine subspaces of $\\mathbb{R}^3$ , where $...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Week 7/Reflect with us - Week 7 _ IITM Online Degree (13_4_2026 7_22_26 am)"
     },
@@ -907,7 +907,7 @@
     {
       "id": "Term-Feb-to-May/Mathematics-II/Week 8/L8.2_ What is an orthonormal basis_ _ IITM Online Degree (13_4_2026 7_24_44 am).md",
       "title": "L8.2_ What is an orthonormal basis_ _ IITM Online Degree (13_4_2026 7_24_44 am)",
-      "snippet": "# L8.2_ What is an orthonormal basis_ _ IITM Online Degree (13_4_2026 7_24_44 am)  L8.2: What is an orthonormal basis?  Transcript Language...",
+      "snippet": "# L8.2_ What is an orthonormal basis_ _ IITM Online Degree (13_4_2026 7_24_44 am)  L8.2: What is an orthonormal basis•  Transcript Language...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Mathematics-II/Week 8/L8.2_ What is an orthonormal basis_ _ IITM Online Degree (13_4_2026 7_24_44 am)"
     },
@@ -984,7 +984,7 @@
     {
       "id": "Term-Feb-to-May/Statistics-II/Course Introduction/Grading Policy _ IITM Online Degree (14_4_2026 2_59_12 pm).md",
       "title": "Grading Policy _ IITM Online Degree (14_4_2026 2_59_12 pm)",
-      "snippet": "# Grading Policy _ IITM Online Degree (14_4_2026 2_59_12 pm)  Grading Policy  ## Statistics for data science 2  ## Quiz 1: March 15 2026 Quiz 2: April...",
+      "snippet": "# Grading Policy _ IITM Online Degree (14_4_2026 2_59_12 pm)  Grading Policy  ## Statistics for data science 2  ## Quiz 1: March 15 2026          Quiz...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Statistics-II/Course Introduction/Grading Policy _ IITM Online Degree (14_4_2026 2_59_12 pm)"
     },
@@ -1082,7 +1082,7 @@
     {
       "id": "Term-Feb-to-May/Statistics-II/Week 0 Part 2/Activity Question Lecture 16 - Not Graded _ IITM Online Degree (14_4_2026 3_36_49 pm).md",
       "title": "Activity Question Lecture 16 - Not Graded _ IITM Online Degree (14_4_2026 3_36_49 pm)",
-      "snippet": "# Activity Question Lecture 16 - Not Graded _ IITM Online Degree (14_4_2026 3_36_49 pm)  Toss a fair coin three times. What is the probability of gett...",
+      "snippet": "# Activity Question Lecture 16 - Not Graded _ IITM Online Degree (14_4_2026 3_36_49 pm)  Toss a fair coin three times.  What is the probability of get...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 2/Activity Question Lecture 16 - Not Graded _ IITM Online Degree (14_4_2026 3_36_49 pm)"
     },
@@ -1145,7 +1145,7 @@
     {
       "id": "Term-Feb-to-May/Statistics-II/Week 0 Part 2/Additional Content _ IITM Online Degree (14_4_2026 3_20_18 pm).md",
       "title": "Additional Content _ IITM Online Degree (14_4_2026 3_20_18 pm)",
-      "snippet": "# Additional Content _ IITM Online Degree (14_4_2026 3_20_18 pm)  Additional Content  [Additional Lecture 1](https://www.youtube.com/watch?v=0Ryws96sJ...",
+      "snippet": "# Additional Content _ IITM Online Degree (14_4_2026 3_20_18 pm)  Additional Content  [Additional Lecture 1](https://www.youtube.com/watch• v=0Ryws96s...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 2/Additional Content _ IITM Online Degree (14_4_2026 3_20_18 pm)"
     },
@@ -1236,7 +1236,7 @@
     {
       "id": "Term-Feb-to-May/Statistics-II/Week 0 Part 2/Week 0.2 - Tutorial 1 - Non graded _ IITM Online Degree (14_4_2026 3_18_39 pm).md",
       "title": "Week 0.2 - Tutorial 1 - Non graded _ IITM Online Degree (14_4_2026 3_18_39 pm)",
-      "snippet": "# Week 0.2 - Tutorial 1 - Non graded _ IITM Online Degree (14_4_2026 3_18_39 pm)  **Key Point:1** Occurrence of Event $A$ in a sample space is conside...",
+      "snippet": "# Week 0.2 - Tutorial 1 - Non graded _ IITM Online Degree (14_4_2026 3_18_39 pm)  **Key Point:1**  Occurrence of Event $A$ in a sample space is consid...",
       "source": "extracted",
       "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 2/Week 0.2 - Tutorial 1 - Non graded _ IITM Online Degree (14_4_2026 3_18_39 pm)"
     }

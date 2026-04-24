@@ -50,6 +50,14 @@ const ANN = {
         document.querySelectorAll('.tool-btn').forEach(b => b.classList.remove('active'));
         const btn = document.getElementById(`tool-${t}`);
         if (btn) btn.classList.add('active');
+
+        if (this.canvas) {
+            if (t === 'cursor') {
+                this.canvas.style.pointerEvents = 'none';
+            } else {
+                this.canvas.style.pointerEvents = 'auto';
+            }
+        }
     },
 
     setColor(c) { 
@@ -118,7 +126,12 @@ const ANN = {
                 else this.currentPath.remove();
             }
             
-            const options = { stroke: this.color, strokeWidth: this.size, roughness: 1.2, seed: 42 };
+            const options = { 
+                stroke: this.color, 
+                strokeWidth: this.size, 
+                roughness: this.tool === 'pen' ? 0 : 1.2, 
+                seed: this.tool === 'pen' ? 1 : 42 
+            };
             
             if (this.tool === 'pen') {
                 this.penPoints.push([x, y]);
@@ -143,13 +156,13 @@ const ANN = {
             const endX = coords.x !== undefined ? coords.x : (this.penPoints.length ? this.penPoints[this.penPoints.length-1][0] : startX);
             const endY = coords.y !== undefined ? coords.y : (this.penPoints.length ? this.penPoints[this.penPoints.length-1][1] : startY);
 
-            const persistentSeed = Math.floor(Math.random() * 999999);
+            const persistentSeed = this.tool === 'pen' ? 1 : Math.floor(Math.random() * 999999);
 
             if (this.tool === 'pen' && this.penPoints.length > 2) {
                 this.shapes.push({
                     tool: 'pen',
                     points: [...this.penPoints],
-                    options: { stroke: this.color, strokeWidth: this.size, roughness: 1.2, seed: persistentSeed }
+                    options: { stroke: this.color, strokeWidth: this.size, roughness: 0, seed: persistentSeed }
                 });
             } else if (Math.abs(endX - startX) > 2 || Math.abs(endY - startY) > 2) {
                 this.shapes.push({

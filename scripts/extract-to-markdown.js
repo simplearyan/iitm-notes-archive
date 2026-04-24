@@ -64,7 +64,8 @@ function collectFiles(dir) {
 function htmlToMd(node) {
   if (node.nodeType === 3) {
     // Standardize whitespace: collapse multiple spaces but keep single natural space
-    return node.textContent.replace(/\s+/g, ' '); 
+    // FIX: Preserve newlines for structural safety
+    return node.textContent.replace(/[ \t]+/g, ' ').replace(/\n\s*\n/g, '\n\n'); 
   }
   if (node.nodeType !== 1) return ''; // Skip other types
 
@@ -73,8 +74,13 @@ function htmlToMd(node) {
   // 🛡️ Special Case: Protected LaTeX Math
   if (tag === 'latex-blob') {
     const tex = node.getAttribute('data-tex');
-    const isDisplay = node.getAttribute('data-display') === 'true';
-    return isDisplay ? `\n\n$$\n${tex}\n$$\n\n` : `$${tex}$`;
+    const isDisplay = node.getAttribute('data-display') === 'true' || tex.includes('\\begin{');
+    
+    // Premium Formatting: Force complex environments to display math for readability
+    if (isDisplay) {
+        return `\n\n$$\n${tex}\n$$\n\n`;
+    }
+    return ` $${tex}$ `; // Added buffer spaces to avoid "sticking" to text
   }
 
   let content = '';
@@ -82,15 +88,17 @@ function htmlToMd(node) {
     content += htmlToMd(child);
   });
 
+  const trimmed = content.trim();
+
   switch (tag) {
-    case 'b': case 'strong': return ` **${content.trim()}** `;
-    case 'i': case 'em': return ` *${content.trim()}* `;
-    case 'h1': return `\n# ${content}\n`;
-    case 'h2': return `\n## ${content.trim()}\n`;
-    case 'h3': return `\n### ${content.trim()}\n`;
-    case 'p': case 'div': return `\n\n${content}\n\n`;
+    case 'b': case 'strong': return ` **${trimmed}** `;
+    case 'i': case 'em': return ` *${trimmed}* `;
+    case 'h1': return `\n# ${trimmed}\n`;
+    case 'h2': return `\n## ${trimmed}\n`;
+    case 'h3': return `\n### ${trimmed}\n`;
+    case 'p': case 'div': return trimmed ? `\n\n${trimmed}\n\n` : '';
     case 'br': return '\n';
-    case 'li': return `- ${content.trim()}\n`;
+    case 'li': return `- ${trimmed}\n`;
     case 'ul': return `\n${content}\n`;
     case 'img': 
       const alt = node.getAttribute('alt') || 'image';
@@ -98,7 +106,7 @@ function htmlToMd(node) {
       return `\n\n![${alt}](${src})\n\n`;
     case 'a':
       const href = node.getAttribute('href');
-      return ` [${content.trim()}](${href}) `;
+      return ` [${trimmed}](${href}) `;
     default: return content;
   }
 }
@@ -131,6 +139,9 @@ async function processArchive(filePath) {
     const html = htmlEntry.getData().toString('utf8');
     const dom = new JSDOM(html);
     const document = dom.window.document;
+    
+    // 🧹 PRE-CLEAN: Remove navigation and noise (from vault-builder inspiration)
+    document.querySelectorAll('.no-print, nav, footer, script, .header, .footer').forEach(el => el.remove());
 
     // 1. MATH CONVERSION: KaTeX -> LaTeX
     // 🛡️ High-Fidelity Protection: Wrap in a custom tag to prevent HTML-cleaning artifacts
@@ -138,8 +149,19 @@ async function processArchive(filePath) {
     katexBlocks.forEach(k => {
       const annotation = k.querySelector('annotation[encoding="application/x-tex"]');
       if (annotation) {
-        const tex = annotation.textContent.trim();
-        const isDisplay = k.closest('.katex-display') !== null;
+        // FIX: Use innerHTML to prevent the DOM parser from unescaping \\ into \
+        let tex = annotation.innerHTML.trim();
+        
+        // Unescape common HTML entities that might appear in innerHTML
+        tex = tex.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+        
+        // 🛡️ MATRIX GUARD: Ensure environments like bmatrix/pmatrix have double backslashes
+        // If we find single slashes followed by newlines in an environment, double them.
+        if (tex.includes('\\begin')) {
+             tex = tex.replace(/([^\\])\\(\n|\s|$)/g, '$1\\\\$2');
+        }
+
+        const isDisplay = k.closest('.katex-display') !== null || tex.includes('\\begin{');
         const blob = document.createElement('latex-blob');
         blob.setAttribute('data-tex', tex);
         blob.setAttribute('data-display', isDisplay ? 'true' : 'false');
@@ -177,12 +199,19 @@ async function processArchive(filePath) {
     contentArea.childNodes.forEach(child => { markdown += htmlToMd(child); });
     
     // 🪄 Post-Processing: Fix spacing, collapsing words, and double punctuation
+    // Resolve academic encoding artifacts (e.g., symbols stored in 8-bit as ? or broken strings)
     markdown = markdown
-      .replace(/[ \t]+/g, ' ')           // Collapse horizontal spaces
-      .replace(/\n[ ]+/g, '\n')          // Remove spaces at start of lines
-      .replace(/[ ]+\n/g, '\n')          // Remove spaces at end of lines
-      .replace(/\n{3,}/g, '\n\n')        // Collapse triple newlines
-      .replace(/\$ \$/g, '$$')           // Fix accidentally spaced delimiters
+      .replace(/[\?]\s?/g, '• ')                       // Fix bullets
+      .replace(/\^\^/g, ' \\in ')                     // Fix ∈ (belongs to)
+      .replace(/\^\//g, ' \\cup ')                    // Fix ∪ (union)
+      .replace(/\^'/g, ' - ')                         // Fix minus/difference
+      .replace(/\?/g, '?')                           // Fix question marks
+      .replace(/[ \t]+/g, ' ')                         // Collapse horizontal spaces
+      .replace(/\n[ ]+/g, '\n')                        // Remove spaces at start of lines
+      .replace(/[ ]+\n/g, '\n')                        // Remove spaces at end of lines
+      .replace(/\n{3,}/g, '\n\n')                      // Collapse triple newlines
+      .replace(/\$ \$/g, '$$')                         // Fix accidentally spaced delimiters
+      .replace(/(\!\[.*?\])\s*\(/g, '$1(')             // Fix spacing in images
       .trim();
 
     fs.writeFileSync(outFile, markdown);

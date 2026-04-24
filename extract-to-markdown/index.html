@@ -247,6 +247,9 @@
         <!-- Floating Annotation Toolbar -->
         <div id="anno-toolbar" class="fixed bottom-8 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-2xl border border-slate-200 px-4 py-2 rounded-2xl shadow-2xl z-50 flex items-center gap-4 transition-all transform translate-y-24 opacity-0 pointer-events-none overflow-x-auto no-scrollbar">
             <div class="flex items-center gap-1.5 pr-4 border-r border-slate-100 flex-nowrap">
+                <button onclick="ANN.setTool('cursor')" id="tool-cursor" class="tool-btn p-2 rounded-xl text-slate-400 hover:text-indigo-600 active:scale-95" title="Cursor (Scroll/Click UI)">
+                    <i data-lucide="mouse-pointer-2" class="w-5 h-5"></i>
+                </button>
                 <button onclick="ANN.setTool('pen')" id="tool-pen" class="tool-btn p-2 rounded-xl text-slate-400 hover:text-indigo-600 active:scale-95" title="Pen Tool">
                     <i data-lucide="pen-tool" class="w-5 h-5"></i>
                 </button>
@@ -301,9 +304,9 @@
     <script id="vault-data" type="application/json">
     {
   "stats": {
-    "buildId": "HANDOUTS-1776321237814",
+    "buildId": "HANDOUTS-1776322981731",
     "totalFiles": 177,
-    "timestamp": "2026-04-16T06:33:57.815Z"
+    "timestamp": "2026-04-16T07:03:01.731Z"
   },
   "navigation": [
     {
@@ -2879,11 +2882,22 @@
                         if (m.index > lastIdx) {
                             frag.appendChild(document.createTextNode(text.slice(lastIdx, m.index)));
                         }
-                        const math = m[1] || m[2];
+                        let math = m[1] || m[2];
                         const isDisplay = !!m[1];
+                        
+                        // 💉 PRE-RENDER PATCH: Fix broken matrix syntax from legacy exports
+                        if (math.includes('\\begin') && !math.includes('\\\\')) {
+                            math = math.replace(/([^\\])\\(\n|\s|$)/g, '$1\\\\$2');
+                        }
+
                         const span = document.createElement('span');
                         try {
-                            katex.render(math, span, { displayMode: isDisplay, throwOnError: false });
+                            katex.render(math, span, { 
+                                displayMode: isDisplay, 
+                                throwOnError: false,
+                                trust: true,
+                                strict: false
+                            });
                         } catch (e) {
                             span.textContent = m[0];
                         }
