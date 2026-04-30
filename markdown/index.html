@@ -28,7 +28,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500&display=swap');
         
         :root {
             --font-main: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
@@ -58,7 +58,17 @@
         .prose {
             max-width: 80ch; color: #334155; line-height: 1.7; font-size: 1.1rem; margin: 0 auto;
         }
-        .prose h1 { margin-top: 0; font-size: 3rem; font-weight: 800; letter-spacing: -0.05em; line-height: 1; color: #0f172a; margin-bottom: 2rem; }
+        .prose h1 { 
+            margin-top: 0; 
+            font-size: 2.25rem; 
+            font-weight: 800; 
+            letter-spacing: -0.04em; 
+            line-height: 1.2; 
+            color: #0f172a; 
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #f8fafc;
+        }
         .prose h2 { margin-top: 4rem; font-size: 1.5rem; font-weight: 700; border-bottom: 1px solid #f1f5f9; padding-bottom: 0.75rem; color: #1e293b; margin-bottom: 1.5rem; }
         .prose p { margin-bottom: 1.5rem; }
         .prose strong { color: #0f172a; font-weight: 700; }
@@ -173,12 +183,23 @@
 
         /* KaTeX Enhancements */
         .katex-display { 
-            margin: 3rem 0 !important; 
+            margin: 2.5rem 0 !important; 
             padding: 1.5rem 0 !important;
-            border-top: 1px solid #f8fafc;
-            border-bottom: 1px solid #f8fafc;
+            border-top: 1px solid #f1f5f9;
+            border-bottom: 1px solid #f1f5f9;
+            background: linear-gradient(to right, #fcfcfd, #ffffff);
         }
-        .katex { font-size: 1.1em !important; color: #1e293b; }
+        .katex { 
+            font-family: "STIX Two Text", serif !important; 
+            font-size: 1.15em !important; 
+            color: #0f172a; 
+        }
+        .katex .mathrm { font-family: "STIX Two Text", serif !important; }
+        .katex .mathit { font-family: "STIX Two Text", serif !important; font-style: italic; }
+        
+        /* Premium Font Styles for Math */
+        .katex .mord { letter-spacing: 0.01em; }
+        .katex .mbin, .katex .mrel { padding: 0 0.2em; }
     </style>
 </head>
 <body class="bg-[#f8fafc] text-slate-800 overflow-hidden h-screen flex flex-col md:flex-row">
@@ -2890,6 +2911,9 @@
 
             function renderMarkdown(raw, node) {
                 let content = raw.replace(/^---[\s\S]*?---/, '').trim();
+                
+                // --- 🧹 Clean up Placeholders ---
+                content = content.replace(/JavaScript should be enabled to grade this question\./g, '');
                 
                 // --- 🎓 Minimalist Semantic Injection ---
                 // Points Badge
