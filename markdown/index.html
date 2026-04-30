@@ -205,6 +205,30 @@
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
+
+        .level-tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.4rem 0.8rem;
+            background: #f1f5f9;
+            color: #475569;
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-radius: 8px;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            border: 1px solid #e2e8f0;
+        }
+        .level-tag::before {
+            content: ' ';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #cbd5e1;
+            margin-right: 8px;
+        }
         .ans-correct {
             color: #10b981;
             border-left-color: #10b981;
@@ -3003,6 +3027,9 @@
                 
                 // --- 🧹 Clean up Placeholders ---
                 content = content.replace(/JavaScript should be enabled to grade this question\./g, '');
+                
+                // --- 🏷️ Level Tag Injection ---
+                content = content.replace(/\*\*?Level\s+(\d+):?\*\*?/gi, '<div class="level-tag">Level $1</div>');
                 
                 // --- 🎓 Robust Semantic Injection ---
                 // 1. Points Badge Injection (Handles '1point', '*1 point*', etc.)
