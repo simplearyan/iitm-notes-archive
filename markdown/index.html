@@ -483,9 +483,9 @@
     <script id="vault-data" type="application/json">
     {
   "stats": {
-    "buildId": "VAULT-1777519854746",
+    "buildId": "VAULT-1777520557061",
     "totalFiles": 152,
-    "timestamp": "2026-04-30T03:30:54.746Z"
+    "timestamp": "2026-04-30T03:42:37.061Z"
   },
   "navigation": [
     {
@@ -2801,27 +2801,45 @@
             }
 
             function postProcessMarkdown(container) {
-                // 1. Identify Questions & Options relative to points-badges
-                const badges = container.querySelectorAll('.points-badge');
-                badges.forEach((badge, i) => {
-                    // Add divider before badge (except first)
-                    if (i > 0) {
-                        const hr = document.createElement('hr');
-                        hr.className = 'question-divider';
-                        badge.closest('p')?.before(hr);
+                // 1. Identify Boundaries & Apply Classes
+                const children = Array.from(container.children);
+                let currentType = null; // 'question', 'option', or null
+                let questionStarted = false;
+
+                children.forEach((el, idx) => {
+                    // Check for markers
+                    const hasBadge = el.querySelector('.points-badge');
+                    const isFeedback = el.classList.contains('ans-feedback') || el.querySelector('.ans-feedback');
+                    const isHeader = el.classList.contains('ans-header') || el.querySelector('.ans-header');
+                    
+                    if (hasBadge) {
+                        // Start of a new question
+                        questionStarted = true;
+                        currentType = 'question';
+                        
+                        // Add divider before if not first question
+                        const previousBadges = container.querySelectorAll('.points-badge');
+                        if (Array.from(previousBadges).indexOf(hasBadge) > 0) {
+                            const hr = document.createElement('hr');
+                            hr.className = 'question-divider';
+                            el.before(hr);
+                        }
+                        return; // Badge is usually in a paragraph, we'll style the NEXT paragraph as question-text
                     }
 
-                    const parentP = badge.closest('p');
-                    if (!parentP) return;
+                    if (isFeedback || isHeader) {
+                        questionStarted = false;
+                        currentType = null;
+                        return;
+                    }
 
-                    let next = parentP.nextElementSibling;
-                    let isFirst = true;
-                    while (next && next.tagName === 'P' && !next.querySelector('.points-badge') && !next.querySelector('.ans-header')) {
-                        if (next.textContent.trim().length > 0) {
-                            next.classList.add(isFirst ? 'question-text' : 'option-text');
-                            isFirst = false;
+                    if (questionStarted && el.tagName === 'P') {
+                        if (currentType === 'question') {
+                            el.classList.add('question-text');
+                            currentType = 'option'; // Subsequent paragraphs are options
+                        } else if (currentType === 'option') {
+                            el.classList.add('option-text');
                         }
-                        next = next.nextElementSibling;
                     }
                 });
 
