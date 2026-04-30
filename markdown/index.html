@@ -139,8 +139,8 @@
 
         .ans-feedback {
             margin: 1.5rem 0;
-            padding: 0.5rem 1.25rem;
-            border-left: 2px solid transparent;
+            /* padding: 0.5rem 1.25rem; */
+            /* border-left: 2px solid transparent; */
             font-weight: 800;
             font-size: 0.85rem;
             text-transform: uppercase;
@@ -199,13 +199,31 @@
         .katex .mathit { font-family: "STIX Two Text", serif !important; font-style: italic; font-weight: 500; }
         
         /* High-Contrast Question Text */
-        .question-text {
+        .question-text, .option-text {
             font-weight: 800 !important;
             color: #0f172a !important;
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             line-height: 1.6;
-            margin-bottom: 2rem;
-            display: block;
+            margin-bottom: 1.2rem !important;
+        }
+
+        .question-divider {
+            margin: 4rem 0;
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #f1f5f9, transparent);
+            position: relative;
+        }
+        .question-divider::after {
+            content: '✦';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: #ffffff;
+            padding: 0 1rem;
+            color: #cbd5e1;
+            font-size: 0.75rem;
         }
 
         /* Premium Font Styles for Math */
@@ -405,9 +423,9 @@
     <script id="vault-data" type="application/json">
     {
   "stats": {
-    "buildId": "VAULT-1777517233468",
+    "buildId": "VAULT-1777518680156",
     "totalFiles": 152,
-    "timestamp": "2026-04-30T02:47:13.468Z"
+    "timestamp": "2026-04-30T03:11:20.157Z"
   },
   "navigation": [
     {
@@ -2659,22 +2677,26 @@
                 // --- 🧹 Clean up Placeholders ---
                 content = content.replace(/JavaScript should be enabled to grade this question\./g, '');
                 
-                // --- 🎓 Minimalist Semantic Injection ---
-                // Points Badge
-                content = content.replace(/\*(\d+ point)\*/g, '<span class="points-badge">$1</span>');
-                
-                // --- 🎯 High-Contrast Question Detection ---
-                // Wrap the paragraph immediately following a points badge in .question-text
-                // We use a temporary marker and then replace it
-                content = content.replace(/(<span class="points-badge">.*?<\/span>)\s*\n+([^#\*\n][\s\S]+?)(?=\n\n|\n[#\*]|$)/g, 
-                    '$1\n\n<div class="question-text">$2</div>\n\n');
-                
-                // Feedback blocks
+                // --- 🎓 Robust Semantic Injection ---
+                // 1. Points Badge Injection (Handles '1point', '*1 point*', etc.)
+                content = content.replace(/\*?(\d+\s*point)\*?/gi, '<span class="points-badge">$1</span>');
+
+                // 2. Question & Option Wrapping (Pre-parsing injection)
+                // This targets the structure: [Badge] -> [Question Paragraph] -> [Option Paragraphs]
+                content = content.replace(/(<span class="points-badge">.*?<\/span>)\s*\n+([^#<][\s\S]+?)(?=\n[#\*]|\n<span|$)/g, 
+                    (match, badge, text) => {
+                        const paragraphs = text.split(/\n\s*\n/).filter(p => p.trim());
+                        const styled = paragraphs.map((p, i) => {
+                            const cls = i === 0 ? 'question-text' : 'option-text';
+                            return `<div class="${cls}">${p.trim()}</div>`;
+                        }).join('\n\n');
+                        return `${badge}\n\n${styled}\n\n`;
+                    });
+
+                // 3. Feedback & Headers
                 content = content.replace(/### Yes, the answer is correct\./g, '<div class="ans-feedback ans-correct">✓ Correct</div>');
                 content = content.replace(/### Partially Correct\./g, '<div class="ans-feedback ans-partial">⚠ Partially Correct</div>');
                 content = content.replace(/### No, the answer is incorrect\./g, '<div class="ans-feedback ans-incorrect">✗ Incorrect</div>');
-                
-                // Accepted Answers
                 content = content.replace(/### Accepted Answers:/g, '<div class="ans-header">Accepted Answers</div>');
 
                 const renderer = new marked.Renderer();
@@ -2706,6 +2728,7 @@
                 viewer.innerHTML = html;
 
                 renderMath(viewer);
+                postProcessMarkdown(viewer); // 🛠️ Apply dynamic styling
                 renderPagination(node); // 🏎️ Next/Prev Buttons
 
                 viewer.classList.remove('hidden');
@@ -2715,6 +2738,39 @@
                 
                 window.scrollTo({ top: 0, behavior: 'smooth' });
                 ANN.load(node.path);
+            }
+
+            function postProcessMarkdown(container) {
+                // 1. Identify Questions & Options relative to points-badges
+                const badges = container.querySelectorAll('.points-badge');
+                badges.forEach((badge, i) => {
+                    // Add divider before badge (except first)
+                    if (i > 0) {
+                        const hr = document.createElement('hr');
+                        hr.className = 'question-divider';
+                        badge.closest('p')?.before(hr);
+                    }
+
+                    const parentP = badge.closest('p');
+                    if (!parentP) return;
+
+                    let next = parentP.nextElementSibling;
+                    let isFirst = true;
+                    while (next && next.tagName === 'P' && !next.querySelector('.points-badge') && !next.querySelector('.ans-header')) {
+                        if (next.textContent.trim().length > 0) {
+                            next.classList.add(isFirst ? 'question-text' : 'option-text');
+                            isFirst = false;
+                        }
+                        next = next.nextElementSibling;
+                    }
+                });
+
+                // 2. Fix nested DIVs inside P tags (marked sometimes does this)
+                container.querySelectorAll('p > div').forEach(div => {
+                    const p = div.parentNode;
+                    p.parentNode.insertBefore(div, p);
+                    if (p.textContent.trim() === '') p.remove();
+                });
             }
 
             function renderMath(container) {
