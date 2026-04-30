@@ -258,9 +258,14 @@
         .katex .mathit { font-family: "STIX Two Text", serif !important; font-style: italic; font-weight: 500; }
         
         /* High-Contrast Question Text */
-        .question-text, .option-text {
+        .question-text {
+            font-family: 'Inter', sans-serif !important;
             font-weight: 800 !important;
             color: #0f172a !important;
+            font-size: 1.3rem;
+            margin-bottom: 1.2rem !important;
+        }
+        .option-text {
             font-size: 1.1rem;
             line-height: 1.6;
             margin-bottom: 1.2rem !important;
@@ -310,19 +315,19 @@
 
     <!-- Sidebar Navigation -->
     <aside id="sidebar" class="fixed inset-y-0 left-0 z-[60] w-80 bg-[#fbfcfd] border-r border-slate-100 transform -translate-x-full md:relative md:translate-x-0 transition-transform duration-300 flex flex-col shadow-2xl md:shadow-none">
-        <div class="p-8 pb-4">
-            <div class="flex items-center justify-between mb-8">
+        <div class="p-6 pb-2">
+            <div class="flex items-center justify-between mb-6">
                 <a href="../" class="flex items-center group">
-                    <div class="w-10 h-10 rounded-2xl bg-indigo-600 flex items-center justify-center text-white mr-3 group-hover:rotate-6 transition-all duration-300 shadow-indigo-100 shadow-xl">
-                        <i data-lucide="shield-check" class="w-5 h-5"></i>
+                    <div class="w-9 h-9 rounded-xl bg-slate-100 flex items-center justify-center text-slate-600 mr-3 group-hover:bg-slate-200 transition-all duration-300">
+                        <i data-lucide="shield" class="w-5 h-5"></i>
                     </div>
                     <div>
-                        <h2 class="font-extrabold text-base text-slate-900 tracking-tight leading-none">IITM Vault</h2>
-                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest mt-1 inline-block opacity-60">Knowledge Engine</span>
+                        <h2 class="font-bold text-[15px] text-slate-800 tracking-tight leading-none">IITM Vault</h2>
+                        <span class="text-[9px] font-medium text-slate-400 uppercase tracking-widest mt-1 inline-block opacity-70">Archive</span>
                     </div>
                 </a>
-                <button id="sidebar-close" class="md:hidden p-2 text-slate-400 hover:bg-slate-50 rounded-full transition-colors">
-                    <i data-lucide="x" class="w-5 h-5"></i>
+                <button id="sidebar-close" class="md:hidden p-2 text-slate-400 hover:bg-slate-50 rounded-lg transition-colors">
+                    <i data-lucide="x" class="w-4.5 h-4.5"></i>
                 </button>
             </div>
 
@@ -340,20 +345,16 @@
             </div>
         </nav>
 
-        <div class="p-6 border-t border-black/[0.03] bg-black/[0.02] backdrop-blur-md">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <div class="w-9 h-9 rounded-xl bg-white shadow-sm border border-black/[0.05] flex items-center justify-center text-blue-600 text-xs font-black">V1</div>
-                    <div>
-                        <p class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">Vault Status</p>
-                        <p class="text-[11px] font-bold text-slate-700 tracking-tight" id="stats-label">Loading Index...</p>
-                    </div>
+        <div class="px-6 py-4 border-t border-slate-50 bg-slate-50/30 backdrop-blur-sm">
+            <div class="flex items-center justify-between text-slate-400">
+                <div class="flex items-center gap-2">
+                    <div class="w-1.5 h-1.5 rounded-full bg-slate-300"></div>
+                    <span class="text-[11px] font-medium tracking-tight" id="stats-label">Loading Index...</span>
                 </div>
-                <button onclick="purgeVaultCache()" class="p-2.5 rounded-xl bg-white shadow-sm border border-black/[0.05] text-slate-400 hover:text-blue-600 hover:shadow-md transition-all active:scale-95" title="Force Refresh Data">
-                    <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+                <button onclick="purgeVaultCache()" class="p-1.5 hover:bg-slate-100 rounded-lg transition-colors group" title="Refresh">
+                    <i data-lucide="refresh-cw" class="w-3.5 h-3.5 group-hover:rotate-45 transition-transform"></i>
                 </button>
             </div>
-            <p id="build-id" class="text-[7px] text-slate-300 font-mono mt-3 text-center uppercase tracking-tighter opacity-50"></p>
         </div>
     </aside>
 
