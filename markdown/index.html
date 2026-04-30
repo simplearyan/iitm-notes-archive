@@ -191,15 +191,26 @@
         }
         .katex { 
             font-family: "STIX Two Text", serif !important; 
-            font-size: 1.15em !important; 
+            font-size: 1.2em !important; 
             color: #0f172a; 
+            font-weight: 500;
         }
-        .katex .mathrm { font-family: "STIX Two Text", serif !important; }
-        .katex .mathit { font-family: "STIX Two Text", serif !important; font-style: italic; }
+        .katex .mathrm { font-family: "STIX Two Text", serif !important; font-weight: 500; }
+        .katex .mathit { font-family: "STIX Two Text", serif !important; font-style: italic; font-weight: 500; }
         
+        /* High-Contrast Question Text */
+        .question-text {
+            font-weight: 800 !important;
+            color: #0f172a !important;
+            font-size: 1.15rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            display: block;
+        }
+
         /* Premium Font Styles for Math */
         .katex .mord { letter-spacing: 0.01em; }
-        .katex .mbin, .katex .mrel { padding: 0 0.2em; }
+        .katex .mbin, .katex .mrel { padding: 0 0.25em; }
     </style>
 </head>
 <body class="bg-[#f8fafc] text-slate-800 overflow-hidden h-screen flex flex-col md:flex-row">
@@ -2918,6 +2929,12 @@
                 // --- 🎓 Minimalist Semantic Injection ---
                 // Points Badge
                 content = content.replace(/\*(\d+ point)\*/g, '<span class="points-badge">$1</span>');
+                
+                // --- 🎯 High-Contrast Question Detection ---
+                // Wrap the paragraph immediately following a points badge in .question-text
+                // We use a temporary marker and then replace it
+                content = content.replace(/(<span class="points-badge">.*?<\/span>)\s*\n+([^#\*\n][\s\S]+?)(?=\n\n|\n[#\*]|$)/g, 
+                    '$1\n\n<div class="question-text">$2</div>\n\n');
                 
                 // Feedback blocks
                 content = content.replace(/### Yes, the answer is correct\./g, '<div class="ans-feedback ans-correct">✓ Correct</div>');
