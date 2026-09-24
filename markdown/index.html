@@ -388,19 +388,17 @@
     <!-- Main Content Area -->
     <main id="main-content" class="flex-1 overflow-y-auto bg-white md:bg-[#f8fafc] flex flex-col relative">
         
-        <!-- Reading Header (Desktop) -->
-        <header id="reading-header" class="hidden md:flex bg-white/90 backdrop-blur-xl border-b border-slate-200 px-12 py-5 items-center justify-between z-20 smart-header sticky top-0 shrink-0 shadow-sm shadow-slate-200/20">
-            <div class="flex items-center gap-3 text-[10px] font-bold text-slate-400 uppercase tracking-widest" id="breadcrumb">
-                <div class="w-6 h-6 rounded bg-slate-100 flex items-center justify-center hover:bg-indigo-100 hover:text-indigo-600 transition-colors cursor-pointer" onclick="location.hash=''">
-                    <i data-lucide="home" class="w-3 h-3"></i>
-                </div>
-                <i data-lucide="chevron-right" class="w-3 h-3 opacity-30"></i>
-                <span class="text-slate-500 font-extrabold">Reading Mode</span>
+        <header id="reading-header" class="hidden md:flex bg-white/80 backdrop-blur-xl border-b border-slate-100 px-8 py-3.5 items-center justify-between z-20 smart-header sticky top-0 shrink-0">
+            <div class="flex items-center gap-2 text-[11px] font-medium text-slate-400 tracking-tight" id="breadcrumb">
+                <button onclick="location.hash=''" class="p-1.5 hover:bg-slate-100 rounded-lg transition-colors group">
+                    <i data-lucide="home" class="w-3.5 h-3.5 group-hover:text-slate-900 transition-colors"></i>
+                </button>
+                <i data-lucide="chevron-right" class="w-3 h-3 opacity-20"></i>
+                <span class="text-slate-900 font-bold tracking-tight">Vault Content</span>
             </div>
-            <div class="flex items-center gap-4">
-                <div class="h-6 w-px bg-slate-200 mx-2"></div>
-                <button onclick="window.print()" class="flex items-center gap-2 px-4 py-2 bg-slate-900 text-white rounded-lg text-[10px] font-bold uppercase tracking-widest hover:bg-indigo-600 transition-all shadow-lg shadow-slate-900/10 active:scale-95" title="Print/Save as PDF">
-                    <i data-lucide="printer" class="w-3.5 h-3.5"></i>
+            <div class="flex items-center gap-3">
+                <button onclick="window.print()" class="flex items-center gap-2 px-4 py-1.5 bg-white border border-slate-200 shadow-sm rounded-full text-[12px] font-bold text-slate-700 hover:bg-slate-50 transition-all active:scale-95 group">
+                    <i data-lucide="printer" class="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 transition-colors"></i>
                     Save as PDF
                 </button>
             </div>
@@ -507,9 +505,9 @@
     <script id="vault-data" type="application/json">
     {
   "stats": {
-    "buildId": "VAULT-1777521113850",
-    "totalFiles": 152,
-    "timestamp": "2026-04-30T03:51:53.850Z"
+    "buildId": "VAULT-1790235723102",
+    "totalFiles": 317,
+    "timestamp": "2026-09-24T07:42:03.102Z"
   },
   "navigation": [
     {
@@ -543,6 +541,49 @@
           "children": [
             {
               "type": "folder",
+              "name": "Answer Key for Exam",
+              "path": "Term-Feb-to-May/Mathematics-II/Answer Key for Exam",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "End Term - Question Paper and Answer key :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Mathematics-II/Answer Key for Exam/End Term - Question Paper and Answer key _ IITM Online Degree (15_5_2026 11_01_45 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Feedback for End Term :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Mathematics-II/Answer Key for Exam/Feedback for End Term _ IITM Online Degree (15_5_2026 11_01_53 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Feedback for Quiz2 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Mathematics-II/Answer Key for Exam/Feedback for Quiz2 _ IITM Online Degree (15_5_2026 11_01_35 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Quiz 1 - Question Paper and Answer key :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Mathematics-II/Answer Key for Exam/Quiz 1 - Question Paper and Answer key _ IITM Online Degree (15_5_2026 11_01_07 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Quiz 2 - Question Paper and Answer key :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Mathematics-II/Answer Key for Exam/Quiz 2 - Question Paper and Answer key _ IITM Online Degree (15_5_2026 11_01_23 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Quiz1 Feedback :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Mathematics-II/Answer Key for Exam/Quiz1 Feedback _ IITM Online Degree (15_5_2026 11_01_15 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
               "name": "Course Introduction",
               "path": "Term-Feb-to-May/Mathematics-II/Course Introduction",
               "children": [
@@ -556,6 +597,81 @@
                   "type": "file",
                   "name": "Grading policy :: IITM Online Degree",
                   "path": "Term-Feb-to-May/Mathematics-II/Course Introduction/Grading policy _ IITM Online Degree (4_4_2026 8_37_40 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Extra Activity Assignment",
+              "path": "Term-Feb-to-May/Mathematics-II/Extra Activity Assignment",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "Extra Activity - 2 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Mathematics-II/Extra Activity Assignment/Extra Activity - 2 _ IITM Online Degree (15_5_2026 10_59_07 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Extra Activity - 3 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Mathematics-II/Extra Activity Assignment/Extra Activity - 3 _ IITM Online Degree (15_5_2026 10_59_40 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Extra Activity 1 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Mathematics-II/Extra Activity Assignment/Extra Activity 1 _ IITM Online Degree (15_5_2026 10_59_25 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Mock tests and Quizzes",
+              "path": "Term-Feb-to-May/Mathematics-II/Mock tests and Quizzes",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "Mock for End Term :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Mathematics-II/Mock tests and Quizzes/Mock for End Term _ IITM Online Degree (15_5_2026 11_00_56 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Mock for Quiz1 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Mathematics-II/Mock tests and Quizzes/Mock for Quiz1 _ IITM Online Degree (15_5_2026 11_00_26 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Mock for Quiz2 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Mathematics-II/Mock tests and Quizzes/Mock for Quiz2 _ IITM Online Degree (15_5_2026 11_00_41 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Supplementary Contents",
+              "path": "Term-Feb-to-May/Mathematics-II/Supplementary Contents",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "Graded Assignment Solution - MA1003 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Mathematics-II/Supplementary Contents/Graded Assignment Solution - MA1003 _ IITM Online Degree (15_5_2026 11_00_07 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Lecture PPT'sSlides :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Mathematics-II/Supplementary Contents/Lecture PPT'sSlides _ IITM Online Degree (15_5_2026 10_59_50 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Lecture Transcripts :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Mathematics-II/Supplementary Contents/Lecture Transcripts _ IITM Online Degree (15_5_2026 10_59_59 am)",
                   "source": "extracted"
                 }
               ]
@@ -1326,6 +1442,49 @@
           "children": [
             {
               "type": "folder",
+              "name": "Answer Key for Exams",
+              "path": "Term-Feb-to-May/Statistics-II/Answer Key for Exams",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "End term Answer Key :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Answer Key for Exams/End term Answer Key _ IITM Online Degree (15_5_2026 11_13_32 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "End term Feedback form :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Answer Key for Exams/End term Feedback form _ IITM Online Degree (15_5_2026 11_13_40 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Feedback for Quiz 1 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Answer Key for Exams/Feedback for Quiz 1 _ IITM Online Degree (15_5_2026 11_13_04 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Feedback for Quiz2 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Answer Key for Exams/Feedback for Quiz2 _ IITM Online Degree (15_5_2026 11_13_25 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Quiz 1 - Question Paper and Answer key :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Answer Key for Exams/Quiz 1 - Question Paper and Answer key _ IITM Online Degree (15_5_2026 11_12_57 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Quiz 2 - Question Paper and Answer key :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Answer Key for Exams/Quiz 2 - Question Paper and Answer key _ IITM Online Degree (15_5_2026 11_13_15 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
               "name": "Course Introduction",
               "path": "Term-Feb-to-May/Statistics-II/Course Introduction",
               "children": [
@@ -1352,6 +1511,105 @@
                   "type": "file",
                   "name": "Important Instructions & Links :: IITM Online Degree",
                   "path": "Term-Feb-to-May/Statistics-II/Course Resources/Important Instructions & Links _ IITM Online Degree (14_4_2026 3_00_00 pm)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Mock Tests and Quizzes",
+              "path": "Term-Feb-to-May/Statistics-II/Mock Tests and Quizzes",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "Mock for End Term :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Mock Tests and Quizzes/Mock for End Term _ IITM Online Degree (15_5_2026 11_11_23 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Mock For Quiz 1 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Mock Tests and Quizzes/Mock For Quiz 1 _ IITM Online Degree (15_5_2026 11_10_36 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "MOCK FOR QUIZ 2 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Mock Tests and Quizzes/MOCK FOR QUIZ 2 _ IITM Online Degree (15_5_2026 11_11_07 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Solutions Recordings",
+              "path": "Term-Feb-to-May/Statistics-II/Solutions Recordings",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "Week 1_Practice Assignment Solution :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Solutions Recordings/Week 1_Practice Assignment Solution _ IITM Online Degree (15_5_2026 11_14_22 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 2_Practice Assignment Solution :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Solutions Recordings/Week 2_Practice Assignment Solution _ IITM Online Degree (15_5_2026 11_14_34 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Supplementary Contents",
+              "path": "Term-Feb-to-May/Statistics-II/Supplementary Contents",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "Google Colab File :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Supplementary Contents/Google Colab File _ IITM Online Degree (15_5_2026 11_09_02 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Graded assignment solution :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Supplementary Contents/Graded assignment solution _ IITM Online Degree (15_5_2026 11_09_29 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Lecture PPTs/Slides :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Supplementary Contents/Lecture PPTs_Slides _ IITM Online Degree (15_5_2026 11_08_42 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Lecture Transcripts :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Supplementary Contents/Lecture Transcripts _ IITM Online Degree (15_5_2026 11_08_52 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Live Session Notes Jan_26 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Supplementary Contents/Live Session Notes Jan_26 _ IITM Online Degree (15_5_2026 11_09_44 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice Assignment Solution :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Supplementary Contents/Practice Assignment Solution _ IITM Online Degree (15_5_2026 11_09_13 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice book :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Supplementary Contents/Practice book _ IITM Online Degree (15_5_2026 11_09_22 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "weekly notes :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Supplementary Contents/weekly notes _ IITM Online Degree (15_5_2026 11_09_37 am)",
                   "source": "extracted"
                 }
               ]
@@ -1567,6 +1825,897 @@
                   "source": "extracted"
                 }
               ]
+            },
+            {
+              "type": "folder",
+              "name": "Week 0 Part 3",
+              "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 3",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "Activity Question Lecture 1 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Activity Question Lecture 1 - Not Graded _ IITM Online Degree (13_5_2026 7_26_08 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Activity Question Lecture 2 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Activity Question Lecture 2 - Not Graded _ IITM Online Degree (13_5_2026 7_26_30 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Activity Question Lecture 3 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Activity Question Lecture 3 - Not Graded _ IITM Online Degree (13_5_2026 7_26_59 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Activity Question Lecture 4 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Activity Question Lecture 4 - Not Graded _ IITM Online Degree (13_5_2026 7_27_22 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQW03.4: Activity Question 4 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 3/AQW03.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 7_21_38 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQW03.6: Activity Question 6 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 3/AQW03.6_ Activity Question 6 - Not Graded _ IITM Online Degree (13_5_2026 7_23_06 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Common distributions :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Common distributions _ IITM Online Degree (13_5_2026 7_21_02 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Functions of one random variable :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Functions of one random variable _ IITM Online Degree (13_5_2026 7_22_38 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Poisson random variable :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Poisson random variable _ IITM Online Degree (13_5_2026 7_21_58 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice assignment 0.3.1 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Practice assignment 0.3.1 - Not Graded _ IITM Online Degree (13_5_2026 7_24_43 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice assignment 0.3.1 - Solution :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Practice assignment 0.3.1 - Solution _ IITM Online Degree (13_5_2026 7_25_31 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice assignment 0.3.2 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Practice assignment 0.3.2 - Not Graded _ IITM Online Degree (13_5_2026 7_25_13 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice assignment 0.3.2 - Solution :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Practice assignment 0.3.2 - Solution _ IITM Online Degree (13_5_2026 7_25_49 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Week 1",
+              "path": "Term-Feb-to-May/Statistics-II/Week 1",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "AQ1.1: Activity Question 1 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 1/AQ1.1_ Activity Question 1 - Not Graded _ IITM Online Degree (13_5_2026 7_29_26 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ1.2: Activity Question 2 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 1/AQ1.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 7_30_04 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ1.3: Activity Question 3 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 1/AQ1.3_ Activity Question 3 - Not Graded _ IITM Online Degree (13_5_2026 7_31_18 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ1.4: Activity Question 4 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 1/AQ1.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 7_30_50 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ1.5: Activity Question 5 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 1/AQ1.5_ Activity Question 5 - Not Graded _ IITM Online Degree (13_5_2026 7_31_47 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ1.6: Activity Question 6 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 1/AQ1.6_ Activity Question 6 - Not Graded _ IITM Online Degree (13_5_2026 7_32_28 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ1.7: Activity Question 7 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 1/AQ1.7_ Activity Question 7 - Not Graded _ IITM Online Degree (13_5_2026 7_33_03 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Graded Assignment - 1 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 1/Graded Assignment - 1 _ IITM Online Degree (13_5_2026 7_34_49 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Orientation Session for Statistics II Course :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 1/Orientation Session for Statistics II Course _ IITM Online Degree (13_5_2026 7_27_55 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice Assignment 1 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 1/Practice Assignment 1 - Not Graded _ IITM Online Degree (13_5_2026 7_34_23 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 1 - Practice Questions :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 1/Week 1 - Practice Questions _ IITM Online Degree (13_5_2026 7_35_02 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Week 10",
+              "path": "Term-Feb-to-May/Statistics-II/Week 10",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "Activity Question Lecture 1 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 10/Activity Question Lecture 1 - Not Graded _ IITM Online Degree (13_5_2026 8_27_15 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Additional Content :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 10/Additional Content _ IITM Online Degree (13_5_2026 8_26_58 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ10.1: Activity Question 1 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 10/AQ10.1_ Activity Question 1 - Not Graded _ IITM Online Degree (13_5_2026 8_23_45 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ10.2: Activity Question 2 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 10/AQ10.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 8_24_17 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ10.3: Activity Question 3 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 10/AQ10.3_ Activity Question 3 - Not Graded _ IITM Online Degree (13_5_2026 8_25_03 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ10.4: Activity Question 4 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 10/AQ10.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 8_25_39 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Graded Assignment 10 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 10/Graded Assignment 10 _ IITM Online Degree (13_5_2026 8_27_35 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice assignment 10 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 10/Practice assignment 10 - Not Graded _ IITM Online Degree (13_5_2026 8_26_49 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 10 - Practice Question :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 10/Week 10 - Practice Question _ IITM Online Degree (13_5_2026 8_27_47 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Week 11",
+              "path": "Term-Feb-to-May/Statistics-II/Week 11",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "AQ11.1: Activity Question 1 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 11/AQ11.1_ Activity Question 1 - Not Graded _ IITM Online Degree (13_5_2026 8_29_20 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ11.2: Activity Question 2 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 11/AQ11.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 8_30_02 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ11.5: Activity Question 5 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 11/AQ11.5_ Activity Question 5 - Not Graded _ IITM Online Degree (13_5_2026 8_33_26 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ11.6: Activity Question 6 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 11/AQ11.6_ Activity Question 6 - Not Graded _ IITM Online Degree (13_5_2026 8_33_55 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ11.7: Activity Question 7 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 11/AQ11.7_ Activity Question 7 - Not Graded _ IITM Online Degree (13_5_2026 8_34_35 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ11.8: Activity Question 8 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 11/AQ11.8_ Activity Question 8 - Not Graded _ IITM Online Degree (13_5_2026 8_35_10 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice assignment 11 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 11/Practice assignment 11 - Not Graded _ IITM Online Degree (13_5_2026 8_38_43 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 11 - Graded Assignment 11 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 11/Week 11 - Graded Assignment 11 _ IITM Online Degree (13_5_2026 8_39_20 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 11 - Practice Question :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 11/Week 11 - Practice Question _ IITM Online Degree (13_5_2026 8_39_30 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Week 12",
+              "path": "Term-Feb-to-May/Statistics-II/Week 12",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "Activity Question Lecture 1 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 12/Activity Question Lecture 1 - Not Graded _ IITM Online Degree (13_5_2026 8_45_14 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Activity Question Lecture 2 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 12/Activity Question Lecture 2 - Not Graded _ IITM Online Degree (13_5_2026 8_45_39 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Activity Question Lecture 3 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 12/Activity Question Lecture 3 - Not Graded _ IITM Online Degree (13_5_2026 8_45_52 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ12.6: Activity Question 6 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 12/AQ12.6_ Activity Question 6 - Not Graded _ IITM Online Degree (13_5_2026 8_43_10 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice assignment 12 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 12/Practice assignment 12 - Not Graded _ IITM Online Degree (13_5_2026 8_44_51 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 12 - Graded Assignment 12 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 12/Week 12 - Graded Assignment 12 _ IITM Online Degree (13_5_2026 8_46_06 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 12 - Practice Question :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 12/Week 12 - Practice Question _ IITM Online Degree (13_5_2026 8_46_15 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Week 2",
+              "path": "Term-Feb-to-May/Statistics-II/Week 2",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "AQ2.1: Activity Question 1 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 2/AQ2.1_ Activity Question 1 - Not Graded _ IITM Online Degree (13_5_2026 7_38_21 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ2.10: Activity Question 10 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 2/AQ2.10_ Activity Question 10 - Not Graded _ IITM Online Degree (13_5_2026 7_41_54 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ2.11: Activity Question 11 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 2/AQ2.11_ Activity Question 11 - Not Graded _ IITM Online Degree (13_5_2026 7_42_33 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ2.2: Activity Question 2 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 2/AQ2.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 7_38_52 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ2.4: Activity Question 4 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 2/AQ2.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 7_39_49 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ2.5: Activity Question 5 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 2/AQ2.5_ Activity Question 5 - Not Graded _ IITM Online Degree (13_5_2026 7_40_16 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice Assignment 2 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 2/Practice Assignment 2 - Not Graded _ IITM Online Degree (13_5_2026 7_43_51 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 2 - Graded Assignment 2 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 2/Week 2 - Graded Assignment 2 _ IITM Online Degree (13_5_2026 7_44_09 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Week 3",
+              "path": "Term-Feb-to-May/Statistics-II/Week 3",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "AQ3.1: Activity Question 1 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 3/AQ3.1_ Activity Question 1 - Not Graded _ IITM Online Degree (13_5_2026 7_44_53 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ3.2: Activity Question 2 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 3/AQ3.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 7_45_22 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ3.4: Activity Question 4 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 3/AQ3.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 7_46_17 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ3.5: Activity Question 5 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 3/AQ3.5_ Activity Question 5 - Not Graded _ IITM Online Degree (13_5_2026 7_46_53 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ3.6: Activity Question 6 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 3/AQ3.6_ Activity Question 6 - Not Graded _ IITM Online Degree (13_5_2026 7_47_32 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ3.7: Activity Question 7 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 3/AQ3.7_ Activity Question 7 - Not Graded _ IITM Online Degree (13_5_2026 7_48_00 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice Assignment 3 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 3/Practice Assignment 3 - Not Graded _ IITM Online Degree (13_5_2026 7_49_26 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 3 - Graded Assignment 3 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 3/Week 3 - Graded Assignment 3 _ IITM Online Degree (13_5_2026 7_49_46 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 3 - Practice Questions :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 3/Week 3 - Practice Questions _ IITM Online Degree (13_5_2026 7_49_59 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Week 4",
+              "path": "Term-Feb-to-May/Statistics-II/Week 4",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "AQ4.2: Activity Question 2 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 4/AQ4.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 7_50_36 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ4.3: Activity Question 3 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 4/AQ4.3_ Activity Question 3 - Not Graded _ IITM Online Degree (13_5_2026 7_51_13 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ4.4: Activity Question 4 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 4/AQ4.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 7_52_00 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ4.5: Activity Question 5 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 4/AQ4.5_ Activity Question 5 - Not Graded _ IITM Online Degree (13_5_2026 7_52_31 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ4.6: Activity Question 6 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 4/AQ4.6_ Activity Question 6 - Not Graded _ IITM Online Degree (13_5_2026 7_53_28 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice assignment 4 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 4/Practice assignment 4 - Not Graded _ IITM Online Degree (13_5_2026 7_54_46 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 4 - Graded Assignment 4 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 4/Week 4 - Graded Assignment 4 _ IITM Online Degree (13_5_2026 7_55_05 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 4 Practice Question :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 4/Week 4 Practice Question _ IITM Online Degree (13_5_2026 7_55_21 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Week 5",
+              "path": "Term-Feb-to-May/Statistics-II/Week 5",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "AQ5.1: Activity Question 1 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 5/AQ5.1_ Activity Question 1 - Not Graded _ IITM Online Degree (13_5_2026 7_57_03 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ5.2: Activity Question 2 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 5/AQ5.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 7_57_30 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ5.4: Activity Question 4 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 5/AQ5.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 7_58_28 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice assignment 5 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 5/Practice assignment 5 - Not Graded _ IITM Online Degree (13_5_2026 8_00_10 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 5 - Graded Assignment 5 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 5/Week 5 - Graded Assignment 5 _ IITM Online Degree (13_5_2026 8_00_24 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 5 - Practice Questions :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 5/Week 5 - Practice Questions _ IITM Online Degree (13_5_2026 8_00_35 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Week 6",
+              "path": "Term-Feb-to-May/Statistics-II/Week 6",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "AQ6.1: Activity Question 1 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 6/AQ6.1_ Activity Question 1 - Not Graded _ IITM Online Degree (13_5_2026 8_01_00 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ6.2: Activity Question 2 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 6/AQ6.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 8_01_29 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ6.3: Activity Question 3 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 6/AQ6.3_ Activity Question 3 - Not Graded _ IITM Online Degree (13_5_2026 8_02_01 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ6.4: Activity Question 4 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 6/AQ6.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 8_02_30 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice assignment 6 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 6/Practice assignment 6 - Not Graded _ IITM Online Degree (13_5_2026 8_04_43 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 6 - Graded Assignment 6 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 6/Week 6 - Graded Assignment 6 _ IITM Online Degree (13_5_2026 8_05_04 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 6 - Practice Question :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 6/Week 6 - Practice Question _ IITM Online Degree (13_5_2026 8_05_18 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Week 7",
+              "path": "Term-Feb-to-May/Statistics-II/Week 7",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "Additional Content :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 7/Additional Content _ IITM Online Degree (13_5_2026 8_08_39 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ7.2: Activity Question 2 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 7/AQ7.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 8_06_48 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ7.4: Activity Question 4 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 7/AQ7.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 8_07_01 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Data Set - Week 7 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 7/Data Set - Week 7 _ IITM Online Degree (13_5_2026 8_05_34 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Graded Assignment 7 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 7/Graded Assignment 7 _ IITM Online Degree (13_5_2026 8_08_20 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice assignment 7 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 7/Practice assignment 7 - Not Graded _ IITM Online Degree (13_5_2026 8_07_58 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 7 - Practice Question :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 7/Week 7 - Practice Question _ IITM Online Degree (13_5_2026 8_09_03 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Week 8",
+              "path": "Term-Feb-to-May/Statistics-II/Week 8",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "AQ 8.2: Activity Question 2 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 8/AQ 8.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 8_12_41 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ 8.3 : Activity Question 3 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 8/AQ 8.3 _ Activity Question 3 - Not Graded _ IITM Online Degree (13_5_2026 8_13_11 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ 8.4 : Activity Question 4 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 8/AQ 8.4 _ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 8_13_42 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ8.1: Activity Question 1 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 8/AQ8.1_ Activity Question 1 - Not Graded _ IITM Online Degree (13_5_2026 8_11_25 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice assignment 8 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 8/Practice assignment 8 - Not Graded _ IITM Online Degree (13_5_2026 8_14_44 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "week 8 - Graded Assignment 8 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 8/week 8 - Graded Assignment 8 _ IITM Online Degree (13_5_2026 8_15_03 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "week 8 - Graded Assignment 8 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 8/week 8 - Graded Assignment 8 _ IITM Online Degree (13_5_2026 8_15_17 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 8 - Practice Question :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 8/Week 8 - Practice Question _ IITM Online Degree (13_5_2026 8_15_30 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Week 9",
+              "path": "Term-Feb-to-May/Statistics-II/Week 9",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "Activity Question Lecture 1 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 9/Activity Question Lecture 1 - Not Graded _ IITM Online Degree (13_5_2026 8_22_29 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Activity Question Lecture 2 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 9/Activity Question Lecture 2 - Not Graded _ IITM Online Degree (13_5_2026 8_22_46 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Additional Content :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 9/Additional Content _ IITM Online Degree (13_5_2026 8_22_13 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ9.2: Activity Question 2 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 9/AQ9.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 8_16_26 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ9.3: Activity Question 3 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 9/AQ9.3_ Activity Question 3 - Not Graded _ IITM Online Degree (13_5_2026 8_17_33 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ9.4: Activity Question 4 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 9/AQ9.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 8_18_04 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ9.5: Activity Question 5 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 9/AQ9.5_ Activity Question 5 - Not Graded _ IITM Online Degree (13_5_2026 8_18_42 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ9.6: Activity Question 6 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 9/AQ9.6_ Activity Question 6 - Not Graded _ IITM Online Degree (13_5_2026 8_19_30 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ9.7: Activity Question 7 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 9/AQ9.7_ Activity Question 7 - Not Graded _ IITM Online Degree (13_5_2026 8_20_09 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "AQ9.8: Activity Question 8 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 9/AQ9.8_ Activity Question 8 - Not Graded _ IITM Online Degree (13_5_2026 8_21_00 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Practice assignment 9 - Not Graded :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 9/Practice assignment 9 - Not Graded _ IITM Online Degree (13_5_2026 8_22_01 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 9 - Graded Assignment 9 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 9/Week 9 - Graded Assignment 9 _ IITM Online Degree (13_5_2026 8_23_03 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Week 9 - Practice Question :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Week 9/Week 9 - Practice Question _ IITM Online Degree (13_5_2026 8_23_15 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Weekly Extra Activity",
+              "path": "Term-Feb-to-May/Statistics-II/Weekly Extra Activity",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "Extra Activity - 1 (Description) :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity - 1 (Description) _ IITM Online Degree (15_5_2026 11_05_43 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Extra Activity - 2 (Submission) :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity - 2 (Submission) _ IITM Online Degree (15_5_2026 11_06_26 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Extra Activity - 3 (Description) :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity - 3 (Description) _ IITM Online Degree (15_5_2026 11_06_49 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Extra Activity - 4 (Submission) :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity - 4 (Submission) _ IITM Online Degree (15_5_2026 11_07_25 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Extra Activity - 5 Submission :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity - 5 Submission _ IITM Online Degree (15_5_2026 11_07_57 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Extra Activity - Activity 1 (Submission) :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity - Activity 1 (Submission) _ IITM Online Degree (15_5_2026 11_05_58 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Extra Activity - Activity 3(Submission) :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity - Activity 3(Submission) _ IITM Online Degree (15_5_2026 11_07_00 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Extra activity 2 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra activity 2 _ IITM Online Degree (15_5_2026 11_06_09 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Extra Activity 4 (Description) :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity 4 (Description) _ IITM Online Degree (15_5_2026 11_07_12 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Extra Activity 5 : Description :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity 5 _ Description _ IITM Online Degree (15_5_2026 11_07_44 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Extra Activity for the course :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity for the course _ IITM Online Degree (15_5_2026 11_05_21 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Instruction Slide for Extra Activity :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Instruction Slide for Extra Activity _ IITM Online Degree (15_5_2026 11_05_35 am)",
+                  "source": "extracted"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "Weekly Mock",
+              "path": "Term-Feb-to-May/Statistics-II/Weekly Mock",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "Mock for Week 1 and 2 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Weekly Mock/Mock for Week 1 and 2 _ IITM Online Degree (15_5_2026 11_12_04 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Mock for Week 5 and 6 :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Weekly Mock/Mock for Week 5 and 6 _ IITM Online Degree (15_5_2026 11_12_25 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Solutions for Week 1 and Week 2 Mock. :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Weekly Mock/Solutions for Week 1 and Week 2 Mock. _ IITM Online Degree (15_5_2026 11_12_13 am)",
+                  "source": "extracted"
+                },
+                {
+                  "type": "file",
+                  "name": "Solutions for Week 5 and Week 6 Mock. :: IITM Online Degree",
+                  "path": "Term-Feb-to-May/Statistics-II/Weekly Mock/Solutions for Week 5 and Week 6 Mock. _ IITM Online Degree (15_5_2026 11_12_33 am)",
+                  "source": "extracted"
+                }
+              ]
             }
           ]
         }
@@ -1598,6 +2747,47 @@
       "Term-Feb-to-May",
       "Mathematics-II"
     ],
+    "Term-Feb-to-May/Mathematics-II/Answer Key for Exam": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Answer Key for Exam"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Answer Key for Exam/End Term - Question Paper and Answer key _ IITM Online Degree (15_5_2026 11_01_45 am)": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Answer Key for Exam",
+      "End Term - Question Paper and Answer key :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Answer Key for Exam/Feedback for End Term _ IITM Online Degree (15_5_2026 11_01_53 am)": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Answer Key for Exam",
+      "Feedback for End Term :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Answer Key for Exam/Feedback for Quiz2 _ IITM Online Degree (15_5_2026 11_01_35 am)": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Answer Key for Exam",
+      "Feedback for Quiz2 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Answer Key for Exam/Quiz 1 - Question Paper and Answer key _ IITM Online Degree (15_5_2026 11_01_07 am)": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Answer Key for Exam",
+      "Quiz 1 - Question Paper and Answer key :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Answer Key for Exam/Quiz 2 - Question Paper and Answer key _ IITM Online Degree (15_5_2026 11_01_23 am)": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Answer Key for Exam",
+      "Quiz 2 - Question Paper and Answer key :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Answer Key for Exam/Quiz1 Feedback _ IITM Online Degree (15_5_2026 11_01_15 am)": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Answer Key for Exam",
+      "Quiz1 Feedback :: IITM Online Degree"
+    ],
     "Term-Feb-to-May/Mathematics-II/Course Introduction": [
       "Term-Feb-to-May",
       "Mathematics-II",
@@ -1614,6 +2804,75 @@
       "Mathematics-II",
       "Course Introduction",
       "Grading policy :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Extra Activity Assignment": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Extra Activity Assignment"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Extra Activity Assignment/Extra Activity - 2 _ IITM Online Degree (15_5_2026 10_59_07 am)": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Extra Activity Assignment",
+      "Extra Activity - 2 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Extra Activity Assignment/Extra Activity - 3 _ IITM Online Degree (15_5_2026 10_59_40 am)": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Extra Activity Assignment",
+      "Extra Activity - 3 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Extra Activity Assignment/Extra Activity 1 _ IITM Online Degree (15_5_2026 10_59_25 am)": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Extra Activity Assignment",
+      "Extra Activity 1 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Mock tests and Quizzes": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Mock tests and Quizzes"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Mock tests and Quizzes/Mock for End Term _ IITM Online Degree (15_5_2026 11_00_56 am)": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Mock tests and Quizzes",
+      "Mock for End Term :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Mock tests and Quizzes/Mock for Quiz1 _ IITM Online Degree (15_5_2026 11_00_26 am)": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Mock tests and Quizzes",
+      "Mock for Quiz1 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Mock tests and Quizzes/Mock for Quiz2 _ IITM Online Degree (15_5_2026 11_00_41 am)": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Mock tests and Quizzes",
+      "Mock for Quiz2 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Supplementary Contents": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Supplementary Contents"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Supplementary Contents/Graded Assignment Solution - MA1003 _ IITM Online Degree (15_5_2026 11_00_07 am)": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Supplementary Contents",
+      "Graded Assignment Solution - MA1003 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Supplementary Contents/Lecture PPT'sSlides _ IITM Online Degree (15_5_2026 10_59_50 am)": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Supplementary Contents",
+      "Lecture PPT'sSlides :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Mathematics-II/Supplementary Contents/Lecture Transcripts _ IITM Online Degree (15_5_2026 10_59_59 am)": [
+      "Term-Feb-to-May",
+      "Mathematics-II",
+      "Supplementary Contents",
+      "Lecture Transcripts :: IITM Online Degree"
     ],
     "Term-Feb-to-May/Mathematics-II/Week 0": [
       "Term-Feb-to-May",
@@ -2350,6 +3609,47 @@
       "Term-Feb-to-May",
       "Statistics-II"
     ],
+    "Term-Feb-to-May/Statistics-II/Answer Key for Exams": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Answer Key for Exams"
+    ],
+    "Term-Feb-to-May/Statistics-II/Answer Key for Exams/End term Answer Key _ IITM Online Degree (15_5_2026 11_13_32 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Answer Key for Exams",
+      "End term Answer Key :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Answer Key for Exams/End term Feedback form _ IITM Online Degree (15_5_2026 11_13_40 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Answer Key for Exams",
+      "End term Feedback form :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Answer Key for Exams/Feedback for Quiz 1 _ IITM Online Degree (15_5_2026 11_13_04 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Answer Key for Exams",
+      "Feedback for Quiz 1 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Answer Key for Exams/Feedback for Quiz2 _ IITM Online Degree (15_5_2026 11_13_25 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Answer Key for Exams",
+      "Feedback for Quiz2 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Answer Key for Exams/Quiz 1 - Question Paper and Answer key _ IITM Online Degree (15_5_2026 11_12_57 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Answer Key for Exams",
+      "Quiz 1 - Question Paper and Answer key :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Answer Key for Exams/Quiz 2 - Question Paper and Answer key _ IITM Online Degree (15_5_2026 11_13_15 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Answer Key for Exams",
+      "Quiz 2 - Question Paper and Answer key :: IITM Online Degree"
+    ],
     "Term-Feb-to-May/Statistics-II/Course Introduction": [
       "Term-Feb-to-May",
       "Statistics-II",
@@ -2377,6 +3677,99 @@
       "Statistics-II",
       "Course Resources",
       "Important Instructions & Links :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Mock Tests and Quizzes": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Mock Tests and Quizzes"
+    ],
+    "Term-Feb-to-May/Statistics-II/Mock Tests and Quizzes/Mock for End Term _ IITM Online Degree (15_5_2026 11_11_23 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Mock Tests and Quizzes",
+      "Mock for End Term :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Mock Tests and Quizzes/Mock For Quiz 1 _ IITM Online Degree (15_5_2026 11_10_36 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Mock Tests and Quizzes",
+      "Mock For Quiz 1 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Mock Tests and Quizzes/MOCK FOR QUIZ 2 _ IITM Online Degree (15_5_2026 11_11_07 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Mock Tests and Quizzes",
+      "MOCK FOR QUIZ 2 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Solutions Recordings": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Solutions Recordings"
+    ],
+    "Term-Feb-to-May/Statistics-II/Solutions Recordings/Week 1_Practice Assignment Solution _ IITM Online Degree (15_5_2026 11_14_22 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Solutions Recordings",
+      "Week 1_Practice Assignment Solution :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Solutions Recordings/Week 2_Practice Assignment Solution _ IITM Online Degree (15_5_2026 11_14_34 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Solutions Recordings",
+      "Week 2_Practice Assignment Solution :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Supplementary Contents": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Supplementary Contents"
+    ],
+    "Term-Feb-to-May/Statistics-II/Supplementary Contents/Google Colab File _ IITM Online Degree (15_5_2026 11_09_02 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Supplementary Contents",
+      "Google Colab File :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Supplementary Contents/Graded assignment solution _ IITM Online Degree (15_5_2026 11_09_29 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Supplementary Contents",
+      "Graded assignment solution :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Supplementary Contents/Lecture PPTs_Slides _ IITM Online Degree (15_5_2026 11_08_42 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Supplementary Contents",
+      "Lecture PPTs/Slides :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Supplementary Contents/Lecture Transcripts _ IITM Online Degree (15_5_2026 11_08_52 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Supplementary Contents",
+      "Lecture Transcripts :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Supplementary Contents/Live Session Notes Jan_26 _ IITM Online Degree (15_5_2026 11_09_44 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Supplementary Contents",
+      "Live Session Notes Jan_26 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Supplementary Contents/Practice Assignment Solution _ IITM Online Degree (15_5_2026 11_09_13 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Supplementary Contents",
+      "Practice Assignment Solution :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Supplementary Contents/Practice book _ IITM Online Degree (15_5_2026 11_09_22 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Supplementary Contents",
+      "Practice book :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Supplementary Contents/weekly notes _ IITM Online Degree (15_5_2026 11_09_37 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Supplementary Contents",
+      "weekly notes :: IITM Online Degree"
     ],
     "Term-Feb-to-May/Statistics-II/Week 0 Part 1": [
       "Term-Feb-to-May",
@@ -2585,6 +3978,867 @@
       "Statistics-II",
       "Week 0 Part 2",
       "Repeated indepedent trial and Bernoulli distribution :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 0 Part 3": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 0 Part 3"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Activity Question Lecture 1 - Not Graded _ IITM Online Degree (13_5_2026 7_26_08 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 0 Part 3",
+      "Activity Question Lecture 1 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Activity Question Lecture 2 - Not Graded _ IITM Online Degree (13_5_2026 7_26_30 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 0 Part 3",
+      "Activity Question Lecture 2 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Activity Question Lecture 3 - Not Graded _ IITM Online Degree (13_5_2026 7_26_59 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 0 Part 3",
+      "Activity Question Lecture 3 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Activity Question Lecture 4 - Not Graded _ IITM Online Degree (13_5_2026 7_27_22 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 0 Part 3",
+      "Activity Question Lecture 4 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 0 Part 3/AQW03.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 7_21_38 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 0 Part 3",
+      "AQW03.4: Activity Question 4 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 0 Part 3/AQW03.6_ Activity Question 6 - Not Graded _ IITM Online Degree (13_5_2026 7_23_06 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 0 Part 3",
+      "AQW03.6: Activity Question 6 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Common distributions _ IITM Online Degree (13_5_2026 7_21_02 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 0 Part 3",
+      "Common distributions :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Functions of one random variable _ IITM Online Degree (13_5_2026 7_22_38 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 0 Part 3",
+      "Functions of one random variable :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Poisson random variable _ IITM Online Degree (13_5_2026 7_21_58 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 0 Part 3",
+      "Poisson random variable :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Practice assignment 0.3.1 - Not Graded _ IITM Online Degree (13_5_2026 7_24_43 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 0 Part 3",
+      "Practice assignment 0.3.1 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Practice assignment 0.3.1 - Solution _ IITM Online Degree (13_5_2026 7_25_31 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 0 Part 3",
+      "Practice assignment 0.3.1 - Solution :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Practice assignment 0.3.2 - Not Graded _ IITM Online Degree (13_5_2026 7_25_13 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 0 Part 3",
+      "Practice assignment 0.3.2 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 0 Part 3/Practice assignment 0.3.2 - Solution _ IITM Online Degree (13_5_2026 7_25_49 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 0 Part 3",
+      "Practice assignment 0.3.2 - Solution :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 1": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 1"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 1/AQ1.1_ Activity Question 1 - Not Graded _ IITM Online Degree (13_5_2026 7_29_26 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 1",
+      "AQ1.1: Activity Question 1 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 1/AQ1.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 7_30_04 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 1",
+      "AQ1.2: Activity Question 2 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 1/AQ1.3_ Activity Question 3 - Not Graded _ IITM Online Degree (13_5_2026 7_31_18 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 1",
+      "AQ1.3: Activity Question 3 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 1/AQ1.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 7_30_50 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 1",
+      "AQ1.4: Activity Question 4 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 1/AQ1.5_ Activity Question 5 - Not Graded _ IITM Online Degree (13_5_2026 7_31_47 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 1",
+      "AQ1.5: Activity Question 5 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 1/AQ1.6_ Activity Question 6 - Not Graded _ IITM Online Degree (13_5_2026 7_32_28 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 1",
+      "AQ1.6: Activity Question 6 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 1/AQ1.7_ Activity Question 7 - Not Graded _ IITM Online Degree (13_5_2026 7_33_03 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 1",
+      "AQ1.7: Activity Question 7 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 1/Graded Assignment - 1 _ IITM Online Degree (13_5_2026 7_34_49 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 1",
+      "Graded Assignment - 1 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 1/Orientation Session for Statistics II Course _ IITM Online Degree (13_5_2026 7_27_55 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 1",
+      "Orientation Session for Statistics II Course :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 1/Practice Assignment 1 - Not Graded _ IITM Online Degree (13_5_2026 7_34_23 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 1",
+      "Practice Assignment 1 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 1/Week 1 - Practice Questions _ IITM Online Degree (13_5_2026 7_35_02 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 1",
+      "Week 1 - Practice Questions :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 10": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 10"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 10/Activity Question Lecture 1 - Not Graded _ IITM Online Degree (13_5_2026 8_27_15 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 10",
+      "Activity Question Lecture 1 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 10/Additional Content _ IITM Online Degree (13_5_2026 8_26_58 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 10",
+      "Additional Content :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 10/AQ10.1_ Activity Question 1 - Not Graded _ IITM Online Degree (13_5_2026 8_23_45 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 10",
+      "AQ10.1: Activity Question 1 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 10/AQ10.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 8_24_17 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 10",
+      "AQ10.2: Activity Question 2 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 10/AQ10.3_ Activity Question 3 - Not Graded _ IITM Online Degree (13_5_2026 8_25_03 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 10",
+      "AQ10.3: Activity Question 3 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 10/AQ10.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 8_25_39 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 10",
+      "AQ10.4: Activity Question 4 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 10/Graded Assignment 10 _ IITM Online Degree (13_5_2026 8_27_35 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 10",
+      "Graded Assignment 10 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 10/Practice assignment 10 - Not Graded _ IITM Online Degree (13_5_2026 8_26_49 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 10",
+      "Practice assignment 10 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 10/Week 10 - Practice Question _ IITM Online Degree (13_5_2026 8_27_47 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 10",
+      "Week 10 - Practice Question :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 11": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 11"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 11/AQ11.1_ Activity Question 1 - Not Graded _ IITM Online Degree (13_5_2026 8_29_20 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 11",
+      "AQ11.1: Activity Question 1 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 11/AQ11.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 8_30_02 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 11",
+      "AQ11.2: Activity Question 2 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 11/AQ11.5_ Activity Question 5 - Not Graded _ IITM Online Degree (13_5_2026 8_33_26 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 11",
+      "AQ11.5: Activity Question 5 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 11/AQ11.6_ Activity Question 6 - Not Graded _ IITM Online Degree (13_5_2026 8_33_55 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 11",
+      "AQ11.6: Activity Question 6 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 11/AQ11.7_ Activity Question 7 - Not Graded _ IITM Online Degree (13_5_2026 8_34_35 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 11",
+      "AQ11.7: Activity Question 7 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 11/AQ11.8_ Activity Question 8 - Not Graded _ IITM Online Degree (13_5_2026 8_35_10 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 11",
+      "AQ11.8: Activity Question 8 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 11/Practice assignment 11 - Not Graded _ IITM Online Degree (13_5_2026 8_38_43 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 11",
+      "Practice assignment 11 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 11/Week 11 - Graded Assignment 11 _ IITM Online Degree (13_5_2026 8_39_20 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 11",
+      "Week 11 - Graded Assignment 11 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 11/Week 11 - Practice Question _ IITM Online Degree (13_5_2026 8_39_30 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 11",
+      "Week 11 - Practice Question :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 12": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 12"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 12/Activity Question Lecture 1 - Not Graded _ IITM Online Degree (13_5_2026 8_45_14 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 12",
+      "Activity Question Lecture 1 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 12/Activity Question Lecture 2 - Not Graded _ IITM Online Degree (13_5_2026 8_45_39 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 12",
+      "Activity Question Lecture 2 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 12/Activity Question Lecture 3 - Not Graded _ IITM Online Degree (13_5_2026 8_45_52 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 12",
+      "Activity Question Lecture 3 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 12/AQ12.6_ Activity Question 6 - Not Graded _ IITM Online Degree (13_5_2026 8_43_10 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 12",
+      "AQ12.6: Activity Question 6 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 12/Practice assignment 12 - Not Graded _ IITM Online Degree (13_5_2026 8_44_51 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 12",
+      "Practice assignment 12 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 12/Week 12 - Graded Assignment 12 _ IITM Online Degree (13_5_2026 8_46_06 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 12",
+      "Week 12 - Graded Assignment 12 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 12/Week 12 - Practice Question _ IITM Online Degree (13_5_2026 8_46_15 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 12",
+      "Week 12 - Practice Question :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 2": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 2"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 2/AQ2.1_ Activity Question 1 - Not Graded _ IITM Online Degree (13_5_2026 7_38_21 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 2",
+      "AQ2.1: Activity Question 1 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 2/AQ2.10_ Activity Question 10 - Not Graded _ IITM Online Degree (13_5_2026 7_41_54 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 2",
+      "AQ2.10: Activity Question 10 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 2/AQ2.11_ Activity Question 11 - Not Graded _ IITM Online Degree (13_5_2026 7_42_33 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 2",
+      "AQ2.11: Activity Question 11 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 2/AQ2.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 7_38_52 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 2",
+      "AQ2.2: Activity Question 2 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 2/AQ2.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 7_39_49 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 2",
+      "AQ2.4: Activity Question 4 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 2/AQ2.5_ Activity Question 5 - Not Graded _ IITM Online Degree (13_5_2026 7_40_16 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 2",
+      "AQ2.5: Activity Question 5 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 2/Practice Assignment 2 - Not Graded _ IITM Online Degree (13_5_2026 7_43_51 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 2",
+      "Practice Assignment 2 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 2/Week 2 - Graded Assignment 2 _ IITM Online Degree (13_5_2026 7_44_09 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 2",
+      "Week 2 - Graded Assignment 2 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 3": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 3"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 3/AQ3.1_ Activity Question 1 - Not Graded _ IITM Online Degree (13_5_2026 7_44_53 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 3",
+      "AQ3.1: Activity Question 1 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 3/AQ3.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 7_45_22 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 3",
+      "AQ3.2: Activity Question 2 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 3/AQ3.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 7_46_17 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 3",
+      "AQ3.4: Activity Question 4 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 3/AQ3.5_ Activity Question 5 - Not Graded _ IITM Online Degree (13_5_2026 7_46_53 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 3",
+      "AQ3.5: Activity Question 5 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 3/AQ3.6_ Activity Question 6 - Not Graded _ IITM Online Degree (13_5_2026 7_47_32 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 3",
+      "AQ3.6: Activity Question 6 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 3/AQ3.7_ Activity Question 7 - Not Graded _ IITM Online Degree (13_5_2026 7_48_00 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 3",
+      "AQ3.7: Activity Question 7 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 3/Practice Assignment 3 - Not Graded _ IITM Online Degree (13_5_2026 7_49_26 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 3",
+      "Practice Assignment 3 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 3/Week 3 - Graded Assignment 3 _ IITM Online Degree (13_5_2026 7_49_46 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 3",
+      "Week 3 - Graded Assignment 3 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 3/Week 3 - Practice Questions _ IITM Online Degree (13_5_2026 7_49_59 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 3",
+      "Week 3 - Practice Questions :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 4": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 4"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 4/AQ4.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 7_50_36 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 4",
+      "AQ4.2: Activity Question 2 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 4/AQ4.3_ Activity Question 3 - Not Graded _ IITM Online Degree (13_5_2026 7_51_13 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 4",
+      "AQ4.3: Activity Question 3 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 4/AQ4.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 7_52_00 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 4",
+      "AQ4.4: Activity Question 4 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 4/AQ4.5_ Activity Question 5 - Not Graded _ IITM Online Degree (13_5_2026 7_52_31 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 4",
+      "AQ4.5: Activity Question 5 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 4/AQ4.6_ Activity Question 6 - Not Graded _ IITM Online Degree (13_5_2026 7_53_28 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 4",
+      "AQ4.6: Activity Question 6 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 4/Practice assignment 4 - Not Graded _ IITM Online Degree (13_5_2026 7_54_46 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 4",
+      "Practice assignment 4 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 4/Week 4 - Graded Assignment 4 _ IITM Online Degree (13_5_2026 7_55_05 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 4",
+      "Week 4 - Graded Assignment 4 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 4/Week 4 Practice Question _ IITM Online Degree (13_5_2026 7_55_21 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 4",
+      "Week 4 Practice Question :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 5": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 5"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 5/AQ5.1_ Activity Question 1 - Not Graded _ IITM Online Degree (13_5_2026 7_57_03 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 5",
+      "AQ5.1: Activity Question 1 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 5/AQ5.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 7_57_30 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 5",
+      "AQ5.2: Activity Question 2 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 5/AQ5.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 7_58_28 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 5",
+      "AQ5.4: Activity Question 4 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 5/Practice assignment 5 - Not Graded _ IITM Online Degree (13_5_2026 8_00_10 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 5",
+      "Practice assignment 5 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 5/Week 5 - Graded Assignment 5 _ IITM Online Degree (13_5_2026 8_00_24 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 5",
+      "Week 5 - Graded Assignment 5 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 5/Week 5 - Practice Questions _ IITM Online Degree (13_5_2026 8_00_35 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 5",
+      "Week 5 - Practice Questions :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 6": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 6"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 6/AQ6.1_ Activity Question 1 - Not Graded _ IITM Online Degree (13_5_2026 8_01_00 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 6",
+      "AQ6.1: Activity Question 1 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 6/AQ6.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 8_01_29 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 6",
+      "AQ6.2: Activity Question 2 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 6/AQ6.3_ Activity Question 3 - Not Graded _ IITM Online Degree (13_5_2026 8_02_01 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 6",
+      "AQ6.3: Activity Question 3 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 6/AQ6.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 8_02_30 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 6",
+      "AQ6.4: Activity Question 4 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 6/Practice assignment 6 - Not Graded _ IITM Online Degree (13_5_2026 8_04_43 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 6",
+      "Practice assignment 6 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 6/Week 6 - Graded Assignment 6 _ IITM Online Degree (13_5_2026 8_05_04 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 6",
+      "Week 6 - Graded Assignment 6 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 6/Week 6 - Practice Question _ IITM Online Degree (13_5_2026 8_05_18 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 6",
+      "Week 6 - Practice Question :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 7": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 7"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 7/Additional Content _ IITM Online Degree (13_5_2026 8_08_39 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 7",
+      "Additional Content :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 7/AQ7.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 8_06_48 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 7",
+      "AQ7.2: Activity Question 2 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 7/AQ7.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 8_07_01 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 7",
+      "AQ7.4: Activity Question 4 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 7/Data Set - Week 7 _ IITM Online Degree (13_5_2026 8_05_34 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 7",
+      "Data Set - Week 7 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 7/Graded Assignment 7 _ IITM Online Degree (13_5_2026 8_08_20 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 7",
+      "Graded Assignment 7 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 7/Practice assignment 7 - Not Graded _ IITM Online Degree (13_5_2026 8_07_58 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 7",
+      "Practice assignment 7 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 7/Week 7 - Practice Question _ IITM Online Degree (13_5_2026 8_09_03 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 7",
+      "Week 7 - Practice Question :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 8": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 8"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 8/AQ 8.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 8_12_41 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 8",
+      "AQ 8.2: Activity Question 2 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 8/AQ 8.3 _ Activity Question 3 - Not Graded _ IITM Online Degree (13_5_2026 8_13_11 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 8",
+      "AQ 8.3 : Activity Question 3 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 8/AQ 8.4 _ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 8_13_42 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 8",
+      "AQ 8.4 : Activity Question 4 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 8/AQ8.1_ Activity Question 1 - Not Graded _ IITM Online Degree (13_5_2026 8_11_25 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 8",
+      "AQ8.1: Activity Question 1 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 8/Practice assignment 8 - Not Graded _ IITM Online Degree (13_5_2026 8_14_44 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 8",
+      "Practice assignment 8 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 8/week 8 - Graded Assignment 8 _ IITM Online Degree (13_5_2026 8_15_03 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 8",
+      "week 8 - Graded Assignment 8 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 8/week 8 - Graded Assignment 8 _ IITM Online Degree (13_5_2026 8_15_17 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 8",
+      "week 8 - Graded Assignment 8 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 8/Week 8 - Practice Question _ IITM Online Degree (13_5_2026 8_15_30 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 8",
+      "Week 8 - Practice Question :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 9": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 9"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 9/Activity Question Lecture 1 - Not Graded _ IITM Online Degree (13_5_2026 8_22_29 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 9",
+      "Activity Question Lecture 1 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 9/Activity Question Lecture 2 - Not Graded _ IITM Online Degree (13_5_2026 8_22_46 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 9",
+      "Activity Question Lecture 2 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 9/Additional Content _ IITM Online Degree (13_5_2026 8_22_13 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 9",
+      "Additional Content :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 9/AQ9.2_ Activity Question 2 - Not Graded _ IITM Online Degree (13_5_2026 8_16_26 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 9",
+      "AQ9.2: Activity Question 2 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 9/AQ9.3_ Activity Question 3 - Not Graded _ IITM Online Degree (13_5_2026 8_17_33 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 9",
+      "AQ9.3: Activity Question 3 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 9/AQ9.4_ Activity Question 4 - Not Graded _ IITM Online Degree (13_5_2026 8_18_04 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 9",
+      "AQ9.4: Activity Question 4 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 9/AQ9.5_ Activity Question 5 - Not Graded _ IITM Online Degree (13_5_2026 8_18_42 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 9",
+      "AQ9.5: Activity Question 5 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 9/AQ9.6_ Activity Question 6 - Not Graded _ IITM Online Degree (13_5_2026 8_19_30 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 9",
+      "AQ9.6: Activity Question 6 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 9/AQ9.7_ Activity Question 7 - Not Graded _ IITM Online Degree (13_5_2026 8_20_09 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 9",
+      "AQ9.7: Activity Question 7 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 9/AQ9.8_ Activity Question 8 - Not Graded _ IITM Online Degree (13_5_2026 8_21_00 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 9",
+      "AQ9.8: Activity Question 8 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 9/Practice assignment 9 - Not Graded _ IITM Online Degree (13_5_2026 8_22_01 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 9",
+      "Practice assignment 9 - Not Graded :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 9/Week 9 - Graded Assignment 9 _ IITM Online Degree (13_5_2026 8_23_03 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 9",
+      "Week 9 - Graded Assignment 9 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Week 9/Week 9 - Practice Question _ IITM Online Degree (13_5_2026 8_23_15 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Week 9",
+      "Week 9 - Practice Question :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Extra Activity": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Extra Activity"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity - 1 (Description) _ IITM Online Degree (15_5_2026 11_05_43 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Extra Activity",
+      "Extra Activity - 1 (Description) :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity - 2 (Submission) _ IITM Online Degree (15_5_2026 11_06_26 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Extra Activity",
+      "Extra Activity - 2 (Submission) :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity - 3 (Description) _ IITM Online Degree (15_5_2026 11_06_49 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Extra Activity",
+      "Extra Activity - 3 (Description) :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity - 4 (Submission) _ IITM Online Degree (15_5_2026 11_07_25 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Extra Activity",
+      "Extra Activity - 4 (Submission) :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity - 5 Submission _ IITM Online Degree (15_5_2026 11_07_57 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Extra Activity",
+      "Extra Activity - 5 Submission :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity - Activity 1 (Submission) _ IITM Online Degree (15_5_2026 11_05_58 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Extra Activity",
+      "Extra Activity - Activity 1 (Submission) :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity - Activity 3(Submission) _ IITM Online Degree (15_5_2026 11_07_00 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Extra Activity",
+      "Extra Activity - Activity 3(Submission) :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra activity 2 _ IITM Online Degree (15_5_2026 11_06_09 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Extra Activity",
+      "Extra activity 2 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity 4 (Description) _ IITM Online Degree (15_5_2026 11_07_12 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Extra Activity",
+      "Extra Activity 4 (Description) :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity 5 _ Description _ IITM Online Degree (15_5_2026 11_07_44 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Extra Activity",
+      "Extra Activity 5 : Description :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Extra Activity for the course _ IITM Online Degree (15_5_2026 11_05_21 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Extra Activity",
+      "Extra Activity for the course :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Extra Activity/Instruction Slide for Extra Activity _ IITM Online Degree (15_5_2026 11_05_35 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Extra Activity",
+      "Instruction Slide for Extra Activity :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Mock": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Mock"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Mock/Mock for Week 1 and 2 _ IITM Online Degree (15_5_2026 11_12_04 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Mock",
+      "Mock for Week 1 and 2 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Mock/Mock for Week 5 and 6 _ IITM Online Degree (15_5_2026 11_12_25 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Mock",
+      "Mock for Week 5 and 6 :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Mock/Solutions for Week 1 and Week 2 Mock. _ IITM Online Degree (15_5_2026 11_12_13 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Mock",
+      "Solutions for Week 1 and Week 2 Mock. :: IITM Online Degree"
+    ],
+    "Term-Feb-to-May/Statistics-II/Weekly Mock/Solutions for Week 5 and Week 6 Mock. _ IITM Online Degree (15_5_2026 11_12_33 am)": [
+      "Term-Feb-to-May",
+      "Statistics-II",
+      "Weekly Mock",
+      "Solutions for Week 5 and Week 6 Mock. :: IITM Online Degree"
     ],
     "GETTING_STARTED": [
       "Getting Started with Markdown Format"
@@ -3114,9 +5368,11 @@
 
             function updateUIForNewDoc(node) {
                 document.getElementById('breadcrumb').innerHTML = `
-                    <i data-lucide="home" class="w-3 h-3 cursor-pointer" onclick="location.hash=''"></i>
-                    <span class="mx-1">/</span>
-                    <span class="text-indigo-600 font-bold">${node.name}</span>
+                    <button onclick="location.hash=''" class="p-1.5 hover:bg-slate-100 rounded-lg transition-colors group">
+                        <i data-lucide="home" class="w-3.5 h-3.5 group-hover:text-slate-900 transition-colors"></i>
+                    </button>
+                    <i data-lucide="chevron-right" class="w-3 h-3 opacity-20"></i>
+                    <span class="text-slate-400 truncate max-w-[200px]">${node.name}</span>
                 `;
                 document.getElementById('footer-path').innerText = `${node.source}/${node.path}.md`;
                 document.getElementById('footer-date').innerText = `MODIFIED 2026-04-15`;
