@@ -1,0 +1,487 @@
+<!DOCTYPE html> <html lang=en data-critters-container><!--
+ Page saved with SingleFileZ 
+ url: https://seek.onlinedegree.iitm.ac.in/courses/ns_26t1_ma1004/335 
+ saved date: Wed May 13 2026 08:43:52 GMT+0530 (India Standard Time)
+--><meta charset=utf-8>
+<title>Week 12 - Tutorial 1 - Non graded :: IITM Online Degree</title>
+
+<meta name=viewport content="width=device-width, initial-scale=1">
+<link rel=stylesheet href=stylesheet_5.css>
+<style>@font-face{font-family:"Roboto";font-style:normal;font-weight:300;font-stretch:100%;src:url(fonts/0.woff2)format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:"Roboto";font-style:normal;font-weight:300;font-stretch:100%;src:url(fonts/1.woff2)format("woff2");unicode-range:U+0302-0303,U+0305,U+0307-0308,U+0310,U+0312,U+0315,U+031A,U+0326-0327,U+032C,U+032F-0330,U+0332-0333,U+0338,U+033A,U+0346,U+034D,U+0391-03A1,U+03A3-03A9,U+03B1-03C9,U+03D1,U+03D5-03D6,U+03F0-03F1,U+03F4-03F5,U+2016-2017,U+2034-2038,U+203C,U+2040,U+2043,U+2047,U+2050,U+2057,U+205F,U+2070-2071,U+2074-208E,U+2090-209C,U+20D0-20DC,U+20E1,U+20E5-20EF,U+2100-2112,U+2114-2115,U+2117-2121,U+2123-214F,U+2190,U+2192,U+2194-21AE,U+21B0-21E5,U+21F1-21F2,U+21F4-2211,U+2213-2214,U+2216-22FF,U+2308-230B,U+2310,U+2319,U+231C-2321,U+2336-237A,U+237C,U+2395,U+239B-23B7,U+23D0,U+23DC-23E1,U+2474-2475,U+25AF,U+25B3,U+25B7,U+25BD,U+25C1,U+25CA,U+25CC,U+25FB,U+266D-266F,U+27C0-27FF,U+2900-2AFF,U+2B0E-2B11,U+2B30-2B4C,U+2BFE,U+3030,U+FF5B,U+FF5D,U+1D400-1D7FF,U+1EE00-1EEFF}@font-face{font-family:"Roboto";font-style:normal;font-weight:300;font-stretch:100%;src:url(fonts/2.woff2)format("woff2");unicode-range:U+0001-000C,U+000E-001F,U+007F-009F,U+20DD-20E0,U+20E2-20E4,U+2150-218F,U+2190,U+2192,U+2194-2199,U+21AF,U+21E6-21F0,U+21F3,U+2218-2219,U+2299,U+22C4-22C6,U+2300-243F,U+2440-244A,U+2460-24FF,U+25A0-27BF,U+2800-28FF,U+2921-2922,U+2981,U+29BF,U+29EB,U+2B00-2BFF,U+4DC0-4DFF,U+FFF9-FFFB,U+10140-1018E,U+10190-1019C,U+101A0,U+101D0-101FD,U+102E0-102FB,U+10E60-10E7E,U+1D2C0-1D2D3,U+1D2E0-1D37F,U+1F000-1F0FF,U+1F100-1F1AD,U+1F1E6-1F1FF,U+1F30D-1F30F,U+1F315,U+1F31C,U+1F31E,U+1F320-1F32C,U+1F336,U+1F378,U+1F37D,U+1F382,U+1F393-1F39F,U+1F3A7-1F3A8,U+1F3AC-1F3AF,U+1F3C2,U+1F3C4-1F3C6,U+1F3CA-1F3CE,U+1F3D4-1F3E0,U+1F3ED,U+1F3F1-1F3F3,U+1F3F5-1F3F7,U+1F408,U+1F415,U+1F41F,U+1F426,U+1F43F,U+1F441-1F442,U+1F444,U+1F446-1F449,U+1F44C-1F44E,U+1F453,U+1F46A,U+1F47D,U+1F4A3,U+1F4B0,U+1F4B3,U+1F4B9,U+1F4BB,U+1F4BF,U+1F4C8-1F4CB,U+1F4D6,U+1F4DA,U+1F4DF,U+1F4E3-1F4E6,U+1F4EA-1F4ED,U+1F4F7,U+1F4F9-1F4FB,U+1F4FD-1F4FE,U+1F503,U+1F507-1F50B,U+1F50D,U+1F512-1F513,U+1F53E-1F54A,U+1F54F-1F5FA,U+1F610,U+1F650-1F67F,U+1F687,U+1F68D,U+1F691,U+1F694,U+1F698,U+1F6AD,U+1F6B2,U+1F6B9-1F6BA,U+1F6BC,U+1F6C6-1F6CF,U+1F6D3-1F6D7,U+1F6E0-1F6EA,U+1F6F0-1F6F3,U+1F6F7-1F6FC,U+1F700-1F7FF,U+1F800-1F80B,U+1F810-1F847,U+1F850-1F859,U+1F860-1F887,U+1F890-1F8AD,U+1F8B0-1F8BB,U+1F8C0-1F8C1,U+1F900-1F90B,U+1F93B,U+1F946,U+1F984,U+1F996,U+1F9E9,U+1FA00-1FA6F,U+1FA70-1FA7C,U+1FA80-1FA89,U+1FA8F-1FAC6,U+1FACE-1FADC,U+1FADF-1FAE9,U+1FAF0-1FAF8,U+1FB00-1FBFF}@font-face{font-family:"Roboto";font-style:normal;font-weight:300;font-stretch:100%;src:url(fonts/3.woff2)format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"Roboto";font-style:normal;font-weight:400;font-stretch:100%;src:url(fonts/0.woff2)format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:"Roboto";font-style:normal;font-weight:400;font-stretch:100%;src:url(fonts/1.woff2)format("woff2");unicode-range:U+0302-0303,U+0305,U+0307-0308,U+0310,U+0312,U+0315,U+031A,U+0326-0327,U+032C,U+032F-0330,U+0332-0333,U+0338,U+033A,U+0346,U+034D,U+0391-03A1,U+03A3-03A9,U+03B1-03C9,U+03D1,U+03D5-03D6,U+03F0-03F1,U+03F4-03F5,U+2016-2017,U+2034-2038,U+203C,U+2040,U+2043,U+2047,U+2050,U+2057,U+205F,U+2070-2071,U+2074-208E,U+2090-209C,U+20D0-20DC,U+20E1,U+20E5-20EF,U+2100-2112,U+2114-2115,U+2117-2121,U+2123-214F,U+2190,U+2192,U+2194-21AE,U+21B0-21E5,U+21F1-21F2,U+21F4-2211,U+2213-2214,U+2216-22FF,U+2308-230B,U+2310,U+2319,U+231C-2321,U+2336-237A,U+237C,U+2395,U+239B-23B7,U+23D0,U+23DC-23E1,U+2474-2475,U+25AF,U+25B3,U+25B7,U+25BD,U+25C1,U+25CA,U+25CC,U+25FB,U+266D-266F,U+27C0-27FF,U+2900-2AFF,U+2B0E-2B11,U+2B30-2B4C,U+2BFE,U+3030,U+FF5B,U+FF5D,U+1D400-1D7FF,U+1EE00-1EEFF}@font-face{font-family:"Roboto";font-style:normal;font-weight:400;font-stretch:100%;src:url(fonts/2.woff2)format("woff2");unicode-range:U+0001-000C,U+000E-001F,U+007F-009F,U+20DD-20E0,U+20E2-20E4,U+2150-218F,U+2190,U+2192,U+2194-2199,U+21AF,U+21E6-21F0,U+21F3,U+2218-2219,U+2299,U+22C4-22C6,U+2300-243F,U+2440-244A,U+2460-24FF,U+25A0-27BF,U+2800-28FF,U+2921-2922,U+2981,U+29BF,U+29EB,U+2B00-2BFF,U+4DC0-4DFF,U+FFF9-FFFB,U+10140-1018E,U+10190-1019C,U+101A0,U+101D0-101FD,U+102E0-102FB,U+10E60-10E7E,U+1D2C0-1D2D3,U+1D2E0-1D37F,U+1F000-1F0FF,U+1F100-1F1AD,U+1F1E6-1F1FF,U+1F30D-1F30F,U+1F315,U+1F31C,U+1F31E,U+1F320-1F32C,U+1F336,U+1F378,U+1F37D,U+1F382,U+1F393-1F39F,U+1F3A7-1F3A8,U+1F3AC-1F3AF,U+1F3C2,U+1F3C4-1F3C6,U+1F3CA-1F3CE,U+1F3D4-1F3E0,U+1F3ED,U+1F3F1-1F3F3,U+1F3F5-1F3F7,U+1F408,U+1F415,U+1F41F,U+1F426,U+1F43F,U+1F441-1F442,U+1F444,U+1F446-1F449,U+1F44C-1F44E,U+1F453,U+1F46A,U+1F47D,U+1F4A3,U+1F4B0,U+1F4B3,U+1F4B9,U+1F4BB,U+1F4BF,U+1F4C8-1F4CB,U+1F4D6,U+1F4DA,U+1F4DF,U+1F4E3-1F4E6,U+1F4EA-1F4ED,U+1F4F7,U+1F4F9-1F4FB,U+1F4FD-1F4FE,U+1F503,U+1F507-1F50B,U+1F50D,U+1F512-1F513,U+1F53E-1F54A,U+1F54F-1F5FA,U+1F610,U+1F650-1F67F,U+1F687,U+1F68D,U+1F691,U+1F694,U+1F698,U+1F6AD,U+1F6B2,U+1F6B9-1F6BA,U+1F6BC,U+1F6C6-1F6CF,U+1F6D3-1F6D7,U+1F6E0-1F6EA,U+1F6F0-1F6F3,U+1F6F7-1F6FC,U+1F700-1F7FF,U+1F800-1F80B,U+1F810-1F847,U+1F850-1F859,U+1F860-1F887,U+1F890-1F8AD,U+1F8B0-1F8BB,U+1F8C0-1F8C1,U+1F900-1F90B,U+1F93B,U+1F946,U+1F984,U+1F996,U+1F9E9,U+1FA00-1FA6F,U+1FA70-1FA7C,U+1FA80-1FA89,U+1FA8F-1FAC6,U+1FACE-1FADC,U+1FADF-1FAE9,U+1FAF0-1FAF8,U+1FB00-1FBFF}@font-face{font-family:"Roboto";font-style:normal;font-weight:400;font-stretch:100%;src:url(fonts/3.woff2)format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"Roboto";font-style:normal;font-weight:500;font-stretch:100%;src:url(fonts/0.woff2)format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:"Roboto";font-style:normal;font-weight:500;font-stretch:100%;src:url(fonts/1.woff2)format("woff2");unicode-range:U+0302-0303,U+0305,U+0307-0308,U+0310,U+0312,U+0315,U+031A,U+0326-0327,U+032C,U+032F-0330,U+0332-0333,U+0338,U+033A,U+0346,U+034D,U+0391-03A1,U+03A3-03A9,U+03B1-03C9,U+03D1,U+03D5-03D6,U+03F0-03F1,U+03F4-03F5,U+2016-2017,U+2034-2038,U+203C,U+2040,U+2043,U+2047,U+2050,U+2057,U+205F,U+2070-2071,U+2074-208E,U+2090-209C,U+20D0-20DC,U+20E1,U+20E5-20EF,U+2100-2112,U+2114-2115,U+2117-2121,U+2123-214F,U+2190,U+2192,U+2194-21AE,U+21B0-21E5,U+21F1-21F2,U+21F4-2211,U+2213-2214,U+2216-22FF,U+2308-230B,U+2310,U+2319,U+231C-2321,U+2336-237A,U+237C,U+2395,U+239B-23B7,U+23D0,U+23DC-23E1,U+2474-2475,U+25AF,U+25B3,U+25B7,U+25BD,U+25C1,U+25CA,U+25CC,U+25FB,U+266D-266F,U+27C0-27FF,U+2900-2AFF,U+2B0E-2B11,U+2B30-2B4C,U+2BFE,U+3030,U+FF5B,U+FF5D,U+1D400-1D7FF,U+1EE00-1EEFF}@font-face{font-family:"Roboto";font-style:normal;font-weight:500;font-stretch:100%;src:url(fonts/2.woff2)format("woff2");unicode-range:U+0001-000C,U+000E-001F,U+007F-009F,U+20DD-20E0,U+20E2-20E4,U+2150-218F,U+2190,U+2192,U+2194-2199,U+21AF,U+21E6-21F0,U+21F3,U+2218-2219,U+2299,U+22C4-22C6,U+2300-243F,U+2440-244A,U+2460-24FF,U+25A0-27BF,U+2800-28FF,U+2921-2922,U+2981,U+29BF,U+29EB,U+2B00-2BFF,U+4DC0-4DFF,U+FFF9-FFFB,U+10140-1018E,U+10190-1019C,U+101A0,U+101D0-101FD,U+102E0-102FB,U+10E60-10E7E,U+1D2C0-1D2D3,U+1D2E0-1D37F,U+1F000-1F0FF,U+1F100-1F1AD,U+1F1E6-1F1FF,U+1F30D-1F30F,U+1F315,U+1F31C,U+1F31E,U+1F320-1F32C,U+1F336,U+1F378,U+1F37D,U+1F382,U+1F393-1F39F,U+1F3A7-1F3A8,U+1F3AC-1F3AF,U+1F3C2,U+1F3C4-1F3C6,U+1F3CA-1F3CE,U+1F3D4-1F3E0,U+1F3ED,U+1F3F1-1F3F3,U+1F3F5-1F3F7,U+1F408,U+1F415,U+1F41F,U+1F426,U+1F43F,U+1F441-1F442,U+1F444,U+1F446-1F449,U+1F44C-1F44E,U+1F453,U+1F46A,U+1F47D,U+1F4A3,U+1F4B0,U+1F4B3,U+1F4B9,U+1F4BB,U+1F4BF,U+1F4C8-1F4CB,U+1F4D6,U+1F4DA,U+1F4DF,U+1F4E3-1F4E6,U+1F4EA-1F4ED,U+1F4F7,U+1F4F9-1F4FB,U+1F4FD-1F4FE,U+1F503,U+1F507-1F50B,U+1F50D,U+1F512-1F513,U+1F53E-1F54A,U+1F54F-1F5FA,U+1F610,U+1F650-1F67F,U+1F687,U+1F68D,U+1F691,U+1F694,U+1F698,U+1F6AD,U+1F6B2,U+1F6B9-1F6BA,U+1F6BC,U+1F6C6-1F6CF,U+1F6D3-1F6D7,U+1F6E0-1F6EA,U+1F6F0-1F6F3,U+1F6F7-1F6FC,U+1F700-1F7FF,U+1F800-1F80B,U+1F810-1F847,U+1F850-1F859,U+1F860-1F887,U+1F890-1F8AD,U+1F8B0-1F8BB,U+1F8C0-1F8C1,U+1F900-1F90B,U+1F93B,U+1F946,U+1F984,U+1F996,U+1F9E9,U+1FA00-1FA6F,U+1FA70-1FA7C,U+1FA80-1FA89,U+1FA8F-1FAC6,U+1FACE-1FADC,U+1FADF-1FAE9,U+1FAF0-1FAF8,U+1FB00-1FBFF}@font-face{font-family:"Roboto";font-style:normal;font-weight:500;font-stretch:100%;src:url(fonts/3.woff2)format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
+<link rel=stylesheet href=stylesheet_4.css crossorigin=anonymous referrerpolicy=no-referrer>
+<link rel=stylesheet href=stylesheet_3.css crossorigin=anonymous referrerpolicy=no-referrer>
+<style>@-webkit-keyframes blink{0%{}50%{background-color:transparent}100%{}}</style><link rel=stylesheet href=stylesheet_2.css>
+<link rel=stylesheet href=stylesheet_1.css>
+<style>*,*:before,*:after{box-sizing:border-box}:root{--item-bottom-border:1px solid rgba(0,0,0,.12)}*,*:before,*:after{margin:0;padding:0;box-sizing:border-box}body{-webkit-tap-highlight-color:transparent}</style><link rel=stylesheet href=stylesheet_0.css><style>@keyframes _ngcontent-ng-c3498936893_spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}</style><style>.toast-wrapper[_ngcontent-ng-c34341094]{position:fixed;z-index:1090;pointer-events:none;display:flex}.toast-wrapper.pos-top-left[_ngcontent-ng-c34341094],.toast-wrapper.pos-top-center[_ngcontent-ng-c34341094],.toast-wrapper.pos-top-right[_ngcontent-ng-c34341094]{top:80px;flex-direction:column-reverse}.toast-wrapper.pos-bottom-left[_ngcontent-ng-c34341094],.toast-wrapper.pos-bottom-center[_ngcontent-ng-c34341094],.toast-wrapper.pos-bottom-right[_ngcontent-ng-c34341094]{bottom:80px;flex-direction:column}.toast-wrapper.pos-top-left[_ngcontent-ng-c34341094],.toast-wrapper.pos-bottom-left[_ngcontent-ng-c34341094]{left:2vw}.toast-wrapper.pos-top-right[_ngcontent-ng-c34341094],.toast-wrapper.pos-bottom-right[_ngcontent-ng-c34341094]{right:2vw}.toast-wrapper.pos-top-center[_ngcontent-ng-c34341094],.toast-wrapper.pos-bottom-center[_ngcontent-ng-c34341094]{left:50%;transform:translate(-50%)}</style><style>@media (max-width:767.98px){}@media (max-width:767.98px){}@media (max-width:767.98px){}@media (max-width:767.98px){}@media (max-width:767.98px){}@media (max-width:767.98px){}</style><style>@media (max-width:767.98px){}@media (max-width:767.98px){}@media (max-width:767.98px){}@media (max-width:767.98px){}@media (max-width:767.98px){}@media (max-width:767.98px){}@media (max-width:767.98px){}@media (max-width:767.98px){}@media (max-width:767.98px){}@media (max-width:767.98px){}</style><style>[_nghost-ng-c3980789515]{display:inline-flex;align-items:center;justify-content:center;line-height:0;vertical-align:middle}.color-primary[_nghost-ng-c3980789515]{color:#494f69}.color-white[_nghost-ng-c3980789515]{color:#fff}.icon-svg[_ngcontent-ng-c3980789515]{display:block}</style><style>[_nghost-ng-c2442480797]{display:block;height:100%}.modules[_ngcontent-ng-c2442480797]{display:flex;position:relative;height:100%;overflow:hidden}@media (min-width:992px){}.modules__content[_ngcontent-ng-c2442480797]{transition:transform .3s ease-in-out;display:flex;flex-direction:column;height:100%;flex:1;min-width:0;margin-left:12px}@media (max-width:991.98px){.modules__content[_ngcontent-ng-c2442480797]{width:100%;margin-left:0}}.modules__content-head[_ngcontent-ng-c2442480797]{display:flex;align-items:center}@media (min-width:992px){.modules__content-head[_ngcontent-ng-c2442480797]{align-items:center;position:relative}}.modules__content-head-menu[_ngcontent-ng-c2442480797]{padding:20px 12px;background-color:#49516c}@media (min-width:992px){.modules__content-head-menu[_ngcontent-ng-c2442480797]{display:none}}.modules__content-head-title[_ngcontent-ng-c2442480797]{padding:0 8px;font-size:1.4rem;line-height:1.71;color:#1c1c28;flex:1 1 auto}@media (min-width:992px){.modules__content-head-title[_ngcontent-ng-c2442480797]{padding:0;font-size:2.1rem;line-height:1.5}}.modules__content-head-close[_ngcontent-ng-c2442480797]{padding:16px;cursor:pointer}@media (min-width:992px){.modules__content-head-close[_ngcontent-ng-c2442480797]{display:none}}.modules__content-main[_ngcontent-ng-c2442480797]{width:100%;flex:1;min-height:0;overflow:auto}@media (min-width:992px){.modules__content-main[_ngcontent-ng-c2442480797]{transform:none;height:100%}}.floating-calc-btn[_ngcontent-ng-c2442480797]{right:5vw;bottom:20px;position:fixed;z-index:999;width:48px;height:48px;display:flex;justify-content:center;align-items:center;background-color:#fff;border-radius:4px;box-shadow:0 4px 8px #0003,0 6px 20px #00000030}@media (min-width:992px){.floating-calc-btn[_ngcontent-ng-c2442480797]{display:none}}</style><style>.assignment-content[_ngcontent-ng-c3208804584]{height:100%;padding:16px;background-color:#f7f7fa}.assignment-content[_ngcontent-ng-c3208804584]>*[_ngcontent-ng-c3208804584]{margin-bottom:2rem}</style><meta name=referrer content=no-referrer><link rel=icon type=image/x-icon href=images/13.ico><style>.sf-hidden{display:none!important}</style><link rel=canonical href=https://seek.onlinedegree.iitm.ac.in/courses/ns_26t1_ma1004/335><meta http-equiv=content-security-policy content="default-src 'none'; connect-src 'self' data: blob:; font-src 'self' data: blob:; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline' data: blob:; frame-src 'self' data: blob:; media-src 'self' data: blob:; script-src 'self' 'unsafe-inline' data: blob:; object-src 'self' data: blob:;"><style>img[src="data:,"],source[src="data:,"]{display:none!important}</style><noscript><link rel="stylesheet" href="assets/css/codemirror.css"></noscript><noscript><link rel="stylesheet" href="assets/css/questions.css"></noscript><noscript><link rel="stylesheet" href="styles.320310538b9d4313.css"></noscript><style type="text/css">/* CUSTOM-IFRAME-STYLE-START */
+/* Overrides for IITM Course Content */
+.modules__content-head {
+    display: none !important;
+}
+
+/* Specifically hiding titles just in case they are outside the head container in some versions */
+.modules__content-head-title, .floating-calc-btn, .floating-calc-btn.ng-star-inserted {
+    display: none !important;
+}
+
+/* Restore Normal Browser Scrollbar */
+html, body {
+    overflow: auto !important;
+    height: auto !important;
+    scrollbar-width: auto !important; /* Firefox: revert to default wide scrollbar */
+    -ms-overflow-style: auto !important; /* IE/Edge legacy */
+}
+
+/* For Google Chrome / Webkit: ensure scrollbars are not suppressed or customized */
+::-webkit-scrollbar {
+    width: initial !important;
+    height: initial !important;
+    display: block !important;
+}
+
+::-webkit-scrollbar-track, 
+::-webkit-scrollbar-thumb {
+    background: initial !important;
+    border: initial !important;
+}
+
+
+
+
+/* CUSTOM-IFRAME-STYLE-END */</style>
+</head>
+ <body class=mat-typography>
+ <app-root _nghost-ng-c3258226952 ng-version=18.2.14><div _ngcontent-ng-c3258226952 id=main-block><router-outlet _ngcontent-ng-c3258226952></router-outlet><app-courses _nghost-ng-c3958913957 class=ng-star-inserted><div _ngcontent-ng-c3958913957 class="page ng-star-inserted"><header _ngcontent-ng-c3958913957><app-header _ngcontent-ng-c3958913957 _nghost-ng-c1855141425 class="ng-tns-c1855141425-1 ng-star-inserted"></app-header></header><content _ngcontent-ng-c3958913957><router-outlet _ngcontent-ng-c3958913957></router-outlet><app-course-modules _nghost-ng-c2442480797 class=ng-star-inserted><div _ngcontent-ng-c2442480797 class=modules><div _ngcontent-ng-c2442480797 class=modules__content><div _ngcontent-ng-c2442480797 class=modules__content-head><button _ngcontent-ng-c2442480797 class=modules__content-head-menu aria-label="Show Menu"><app-icon _ngcontent-ng-c2442480797 class="app-icon color-white" _nghost-ng-c3980789515 aria-hidden=true><svg _ngcontent-ng-c3980789515 aria-hidden=true xmlns=http://www.w3.org/2000/svg class=icon-svg viewBox="0 0 24 24" height=24><path d="M0 0h24v24H0z" fill=none></path><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-1 9H9V9h10zm-4 4H9v-2h6zm4-8H9V5h10z" fill=currentColor></path></svg></app-icon></button><div _ngcontent-ng-c2442480797 class=modules__content-head-title> Week 12 - Tutorial 1 - Non graded </div><button _ngcontent-ng-c2442480797 aria-label=Close class=modules__content-head-close><app-icon _ngcontent-ng-c2442480797 class="app-icon color-primary" _nghost-ng-c3980789515 role=img aria-label=Close><svg _ngcontent-ng-c3980789515 aria-hidden=true xmlns=http://www.w3.org/2000/svg class=icon-svg viewBox="0 0 14 14" width=16 height=16><path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill=currentColor></path></svg></app-icon></button></div><div _ngcontent-ng-c2442480797 class=modules__content-main><app-assessments _ngcontent-ng-c2442480797 _nghost-ng-c3208804584 class=ng-star-inserted><div _ngcontent-ng-c3208804584 class="assignment-content ng-star-inserted"><div _ngcontent-ng-c3208804584 id=target appmath><div class=gcb-assessment-contents>
+ <h1 class="gcb-assessment-title sf-hidden">
+ Week 12 - Tutorial 1 - Non graded
+ 
+ </h1>
+ 
+ 
+ 
+ <div class=assessment-top-info>
+ 
+ 
+ This assignment will not be graded and is only for practice.
+ 
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ <div id=assessmentContents></div>
+ 
+ 
+<div data-xsrf-token="1778642013/4eGEc4bA70qajCIMm-wxYbuJLaA=" data-unit-id=335 data-question-batch-id=A335 data-scored=True>
+ 
+ <div class=gcb-assessment-body>
+ <div>
+</div><b>Note : This activity is only for practice purpose and it will not be counted towards the Final score.<br><br></b><div>
+<noscript>
+    <div class="qt-warning">
+        
+         JavaScript should be enabled to grade this question. 
+    </div>
+</noscript>
+<div class="gcb-progress-icon-holder gcb-pull-right">
+ 
+</div>
+ <div class=qt-question-group id=GHKnB5a49NN1>
+ <div class=qt-introduction>
+ 
+ </div>
+ 
+ 
+<noscript>
+    <div class="qt-warning">
+        
+         JavaScript should be enabled to grade this question. 
+    </div>
+</noscript>
+ <div class="gcb-cols gcb-question-counter-increment gcb-question-row">
+ <div class="gcb-col-counters gcb-show-question-counter"></div>
+ <div class="qt-mc-question qt-embedded" id=GHKnB5a49NN1.0.6386965947613184>
+ <div class=qt-points>
+ <em>
+ 
+ 
+ 1 point
+ 
+ </em>
+ </div>
+ <div class=qt-question><div>
+</div>In the past the standard deviation of weights (in grams) of salt packages filled by a machine was 50. To decrease the standard deviation of weights, a new machine is introduced. A random sample of <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mn>20</mn></mrow><annotation encoding=application/x-tex>20</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6444em></span><span class=mord>20</span></span></span></span></span> packages from the new machine showed a standard deviation of <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mn>40</mn></mrow><annotation encoding=application/x-tex>40</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6444em></span><span class=mord>40</span></span></span></span></span>. Based on this data, what is your conclusion, at a significance level of <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mn>0.05</mn></mrow><annotation encoding=application/x-tex>0.05</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6444em></span><span class=mord>0.05</span></span></span></span></span>, on the standard deviation of weights of salt packages filled by the new machine?<br>
+(Use <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msubsup><mi>F</mi><msubsup><mi>χ</mi><mn>19</mn><mn>2</mn></msubsup><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo stretchy=false>(</mo><mn>0.05</mn><mo stretchy=false>)</mo><mo>=</mo><mn>10.11</mn></mrow><annotation encoding=application/x-tex>F_{\chi_{19}^2}^{-1}(0.05) = 10.11</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1.4511em;vertical-align:-0.5968em></span><span class=mord><span style=margin-right:0.1389em class="mord mathnormal">F</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.8542em><span style=top:-2.3212em;margin-left:-0.1389em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight">χ</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.8051em><span style=top:-2.1885em;margin-left:0em;margin-right:0.0714em><span class=pstrut style=height:2.5em></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">19</span></span></span></span><span style=top:-2.8448em;margin-right:0.0714em><span class=pstrut style=height:2.5em></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.3115em><span></span></span></span></span></span></span></span></span></span><span style=top:-3.1031em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.5968em><span></span></span></span></span></span></span><span class=mopen>(</span><span class=mord>0.05</span><span class=mclose>)</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>10.11</span></span></span></span></span>)
+ <div></div></div>
+ <div class=qt-choices>
+ 
+ <div class=gcb-mcq-choice>
+ <input data-index=0 id=GHKnB5a49NN1.0.6386965947613184.0 name=GHKnB5a49NN1.0.6386965947613184 type=radio>
+ <label for=GHKnB5a49NN1.0.6386965947613184.0>
+ Standard deviation of weights is 50.
+ </label>
+ </div>
+ 
+ <div class=gcb-mcq-choice>
+ <input data-index=1 id=GHKnB5a49NN1.0.6386965947613184.1 name=GHKnB5a49NN1.0.6386965947613184 type=radio>
+ <label for=GHKnB5a49NN1.0.6386965947613184.1>
+ Standard deviation of weights is less than 50.
+ </label>
+ </div>
+ 
+ </div>
+ <div class=qt-feedback role=alert><div><h3 class=feedback-header><span class=incorrect> No, the answer is incorrect. </span><br><span class=incorrect>Score: 0</span></h3><h3 class=feedback-header>Feedback:</h3><div><img src=images/14.png class="yui-img selected" title alt><br><img src=images/15.png class=yui-img title alt><br></div><h3 class="feedback-header faculty-answer">Accepted Answers:</h3><div class=faculty-answer><div><div><label for=GHKnB5a49NN1.0.6386965947613184.0>
+ Standard deviation of weights is 50.
+ </label></div></div></div></div></div>
+ </div>
+ </div>
+ 
+ 
+<noscript>
+    <div class="qt-warning">
+        
+         JavaScript should be enabled to grade this question. 
+    </div>
+</noscript>
+<div class="gcb-cols gcb-question-counter-increment gcb-question-row">
+ 
+ <div class="gcb-col-counters gcb-show-question-counter"></div>
+ 
+ <div class="qt-sa-question qt-embedded" id=GHKnB5a49NN1.1.5882757859246080>
+ 
+ <div class=qt-question><div>
+</div>Past experience indicates that the time required for high school seniors to complete a standardized
+test is a normal random variable with a mean of 35 minutes. A random sample of 20 high school seniors took an average of 33.1 minutes to complete this test with a standard deviation of 4.3 minutes. Find the <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>P</mi></mrow><annotation encoding=application/x-tex>P</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6833em></span><span style=margin-right:0.1389em class="mord mathnormal">P</span></span></span></span></span>-value of the test that <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>μ</mi><mo>=</mo><mn>35</mn></mrow><annotation encoding=application/x-tex>\mu = 35</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.625em;vertical-align:-0.1944em></span><span class="mord mathnormal">μ</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>35</span></span></span></span></span> against the alternative that <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>μ</mi><mo>&lt;</mo><mn>35</mn></mrow><annotation encoding=application/x-tex>\mu &lt; 35</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.7335em;vertical-align:-0.1944em></span><span class="mord mathnormal">μ</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>&lt;</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>35</span></span></span></span></span>. Write your answer correct to two decimal places.<br>
+(Use <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>P</mi><mo stretchy=false>(</mo><msub><mi>t</mi><mn>19</mn></msub><mo>&lt;</mo><mo>−</mo><mn>1.976</mn><mo stretchy=false>)</mo><mo>=</mo><mn>0.03</mn></mrow><annotation encoding=application/x-tex>P(t_{19}&lt; -1.976)= 0.03</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1em;vertical-align:-0.25em></span><span style=margin-right:0.1389em class="mord mathnormal">P</span><span class=mopen>(</span><span class=mord><span class="mord mathnormal">t</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3011em><span style=top:-2.55em;margin-left:0em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">19</span></span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.15em><span></span></span></span></span></span></span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>&lt;</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:1em;vertical-align:-0.25em></span><span class=mord>−</span><span class=mord>1.976</span><span class=mclose>)</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>0.03</span></span></span></span></span>)<div></div></div>
+ 
+ <div class=qt-response>
+ 
+ <input id=qt-response-num-id-GHKnB5a49NN1.1.5882757859246080 step=any type=number value><template shadowrootmode=closed><div></div><div aria-hidden=true><div aria-hidden=true></div><div aria-hidden=true></div></div></template>
+ 
+ </div>
+ 
+ <div class=qt-feedback role=alert><div><h3 class=feedback-header><span class=incorrect> No, the answer is incorrect. </span><br><span class=incorrect>Score: 0</span></h3><h3 class=feedback-header>Feedback:</h3><div><img src=images/16.png class="yui-img selected" title alt><br><img src=images/17.png class=yui-img title alt><br></div><div><h3 class="feedback-header faculty-answer">Accepted Answers:</h3><div class=faculty-answer>(Type: Range) 0.02,0.04</div></div></div></div>
+ </div>
+ <div class=qt-points>
+ <em>
+ 
+ 
+ 1 point
+ 
+ </em>
+ </div>
+</div>
+ 
+ 
+<noscript>
+    <div class="qt-warning">
+        
+         JavaScript should be enabled to grade this question. 
+    </div>
+</noscript>
+ <div class="gcb-cols gcb-question-counter-increment gcb-question-row">
+ <div class="gcb-col-counters gcb-show-question-counter"></div>
+ <div class="qt-mc-question qt-embedded" id=GHKnB5a49NN1.2.6267970925887488>
+ <div class=qt-points>
+ <em>
+ 
+ 
+ 1 point
+ 
+ </em>
+ </div>
+ <div class=qt-question><div>
+</div>The average diameter of pipes manufactured by a company is reported to be 25 mm, which you suspect to be too low. You observe a random sample of diameters of 10 pipes (in mm) as <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mn>24.58</mn><mo separator=true>,</mo><mn>24.67</mn><mo separator=true>,</mo><mn>24.99</mn><mo separator=true>,</mo><mn>25.22</mn><mo separator=true>,</mo><mn>25.32</mn><mo separator=true>,</mo><mn>25.25</mn><mo separator=true>,</mo><mn>24.96</mn><mo separator=true>,</mo><mn>24.87</mn><mo separator=true>,</mo><mn>25.52</mn><mo separator=true>,</mo><mn>24.85.</mn></mrow><annotation encoding=application/x-tex>24.58, 24.67, 24.99, 25.22, 25.32, 25.25, 24.96, 24.87, 25.52, 24.85.</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8389em;vertical-align:-0.1944em></span><span class=mord>24.58</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>24.67</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>24.99</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>25.22</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>25.32</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>25.25</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>24.96</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>24.87</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>25.52</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>24.85.</span></span></span></span></span> Based on this information, what conclusion can you reach about your suspicion?<br>
+ (Take significance level to be 0.05)<br>
+ Use <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msubsup><mi>F</mi><msub><mi>t</mi><mn>9</mn></msub><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo stretchy=false>(</mo><mn>0.95</mn><mo stretchy=false>)</mo><mo>=</mo><mn>1.8331129</mn></mrow><annotation encoding=application/x-tex>F_{t_9}^{-1}(0.95) = 1.8331129</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1.2001em;vertical-align:-0.3459em></span><span class=mord><span style=margin-right:0.1389em class="mord mathnormal">F</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.8542em><span style=top:-2.4542em;margin-left:-0.1389em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3173em><span style=top:-2.357em;margin-left:0em;margin-right:0.0714em><span class=pstrut style=height:2.5em></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">9</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.143em><span></span></span></span></span></span></span></span></span></span><span style=top:-3.1031em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.3459em><span></span></span></span></span></span></span><span class=mopen>(</span><span class=mord>0.95</span><span class=mclose>)</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>1.8331129</span></span></span></span></span><div></div></div>
+ <div class=qt-choices>
+ 
+ <div class=gcb-mcq-choice>
+ <input data-index=0 id=GHKnB5a49NN1.2.6267970925887488.0 name=GHKnB5a49NN1.2.6267970925887488 type=radio>
+ <label for=GHKnB5a49NN1.2.6267970925887488.0>
+ <div>
+</div>Accept<span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>H</mi><mn>0</mn></msub></mrow><annotation encoding=application/x-tex>H_0</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8333em;vertical-align:-0.15em></span><span class=mord><span style=margin-right:0.0813em class="mord mathnormal">H</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3011em><span style=top:-2.55em;margin-left:-0.0813em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.15em><span></span></span></span></span></span></span></span></span></span></span><div></div>
+ </label>
+ </div>
+ 
+ <div class=gcb-mcq-choice>
+ <input data-index=1 id=GHKnB5a49NN1.2.6267970925887488.1 name=GHKnB5a49NN1.2.6267970925887488 type=radio>
+ <label for=GHKnB5a49NN1.2.6267970925887488.1>
+ <div>
+</div>Reject<span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>H</mi><mn>0</mn></msub></mrow><annotation encoding=application/x-tex>H_0</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8333em;vertical-align:-0.15em></span><span class=mord><span style=margin-right:0.0813em class="mord mathnormal">H</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3011em><span style=top:-2.55em;margin-left:-0.0813em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.15em><span></span></span></span></span></span></span></span></span></span></span><div></div>
+ </label>
+ </div>
+ 
+ </div>
+ <div class=qt-feedback role=alert><div><h3 class=feedback-header><span class=incorrect> No, the answer is incorrect. </span><br><span class=incorrect>Score: 0</span></h3><h3 class=feedback-header>Feedback:</h3><div><img src=images/18.png class="yui-img selected" title alt><br><br><img src=images/19.png class=yui-img><br></div><h3 class="feedback-header faculty-answer">Accepted Answers:</h3><div class=faculty-answer><div><div><label for=GHKnB5a49NN1.2.6267970925887488.0>
+ <div>
+</div>Accept<span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>H</mi><mn>0</mn></msub></mrow><annotation encoding=application/x-tex>H_0</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8333em;vertical-align:-0.15em></span><span class=mord><span style=margin-right:0.0813em class="mord mathnormal">H</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3011em><span style=top:-2.55em;margin-left:-0.0813em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.15em><span></span></span></span></span></span></span></span></span></span></span><div></div>
+ </label></div></div></div></div></div>
+ </div>
+ </div>
+ 
+ 
+<noscript>
+    <div class="qt-warning">
+        
+         JavaScript should be enabled to grade this question. 
+    </div>
+</noscript>
+ <div class="gcb-cols gcb-question-counter-increment gcb-question-row">
+ <div class="gcb-col-counters gcb-show-question-counter"></div>
+ <div class="qt-mc-question qt-embedded" id=GHKnB5a49NN1.3.5558704858464256>
+ <div class=qt-points>
+ <em>
+ 
+ 
+ 1 point
+ 
+ </em>
+ </div>
+ <div class=qt-question><div>
+</div>The weight of new born babies in a town is reported to have a standard deviation of 0.25 kg, which you suspect is too low. A sample of 10 newborn babies had weights(in kg)<br><span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mn>2.25</mn><mo separator=true>,</mo><mn>2.5</mn><mo separator=true>,</mo><mn>3.0</mn><mo separator=true>,</mo><mn>2.75</mn><mo separator=true>,</mo><mn>2.40</mn><mo separator=true>,</mo><mn>2.20</mn><mo separator=true>,</mo><mn>3.10</mn><mo separator=true>,</mo><mn>2.50</mn><mo separator=true>,</mo><mn>2.80</mn><mo separator=true>,</mo><mn>2.75.</mn></mrow><annotation encoding=application/x-tex> 2.25, 2.5, 3.0, 2.75, 2.40, 2.20, 3.10, 2.50, 2.80, 2.75.</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8389em;vertical-align:-0.1944em></span><span class=mord>2.25</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>2.5</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>3.0</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>2.75</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>2.40</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>2.20</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>3.10</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>2.50</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>2.80</span><span class=mpunct>,</span><span class=mspace style=margin-right:0.1667em></span><span class=mord>2.75.</span></span></span></span></span> <br>Based on this information, what conclusion can you reach about your suspicion?<br>
+ (Take significance level to be 0.05)<br>
+ 
+ Use <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msubsup><mi>F</mi><msubsup><mi>χ</mi><mn>9</mn><mn>2</mn></msubsup><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo stretchy=false>(</mo><mn>0.95</mn><mo stretchy=false>)</mo><mo>=</mo><mn>16.918977</mn></mrow><annotation encoding=application/x-tex>F_{\chi^2_9}^{-1}(0.95) = 16.918977</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1.4511em;vertical-align:-0.5968em></span><span class=mord><span style=margin-right:0.1389em class="mord mathnormal">F</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.8542em><span style=top:-2.3212em;margin-left:-0.1389em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight">χ</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.8051em><span style=top:-2.1885em;margin-left:0em;margin-right:0.0714em><span class=pstrut style=height:2.5em></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">9</span></span></span><span style=top:-2.8448em;margin-right:0.0714em><span class=pstrut style=height:2.5em></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.3115em><span></span></span></span></span></span></span></span></span></span><span style=top:-3.1031em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.5968em><span></span></span></span></span></span></span><span class=mopen>(</span><span class=mord>0.95</span><span class=mclose>)</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>16.918977</span></span></span></span></span>
+ <div></div></div>
+ <div class=qt-choices>
+ 
+ <div class=gcb-mcq-choice>
+ <input data-index=0 id=GHKnB5a49NN1.3.5558704858464256.0 name=GHKnB5a49NN1.3.5558704858464256 type=radio>
+ <label for=GHKnB5a49NN1.3.5558704858464256.0>
+ <div>
+</div>Accept <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>H</mi><mn>0</mn></msub></mrow><annotation encoding=application/x-tex>H_0</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8333em;vertical-align:-0.15em></span><span class=mord><span style=margin-right:0.0813em class="mord mathnormal">H</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3011em><span style=top:-2.55em;margin-left:-0.0813em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.15em><span></span></span></span></span></span></span></span></span></span></span><div></div>
+ </label>
+ </div>
+ 
+ <div class=gcb-mcq-choice>
+ <input data-index=1 id=GHKnB5a49NN1.3.5558704858464256.1 name=GHKnB5a49NN1.3.5558704858464256 type=radio>
+ <label for=GHKnB5a49NN1.3.5558704858464256.1>
+ <div>
+</div>Reject <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>H</mi><mn>0</mn></msub></mrow><annotation encoding=application/x-tex>H_0</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8333em;vertical-align:-0.15em></span><span class=mord><span style=margin-right:0.0813em class="mord mathnormal">H</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3011em><span style=top:-2.55em;margin-left:-0.0813em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.15em><span></span></span></span></span></span></span></span></span></span></span><div></div>
+ </label>
+ </div>
+ 
+ </div>
+ <div class=qt-feedback role=alert><div><h3 class=feedback-header><span class=incorrect> No, the answer is incorrect. </span><br><span class=incorrect>Score: 0</span></h3><h3 class=feedback-header>Feedback:</h3><div><img src=images/20.png class="yui-img selected" title alt><br><img src=images/21.png class=yui-img><br></div><h3 class="feedback-header faculty-answer">Accepted Answers:</h3><div class=faculty-answer><div><div><label for=GHKnB5a49NN1.3.5558704858464256.0>
+ <div>
+</div>Accept <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>H</mi><mn>0</mn></msub></mrow><annotation encoding=application/x-tex>H_0</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8333em;vertical-align:-0.15em></span><span class=mord><span style=margin-right:0.0813em class="mord mathnormal">H</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3011em><span style=top:-2.55em;margin-left:-0.0813em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.15em><span></span></span></span></span></span></span></span></span></span></span><div></div>
+ </label></div></div></div></div></div>
+ </div>
+ </div>
+ 
+ <div class="qt-feedback qt-hidden" role=alert></div>
+ </div>
+</div><br><b>Use the below information for Question (5 and 6)<br></b>A chemical company produces a certain drug whose weight has a
+standard deviation of <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mn>5</mn></mrow><annotation encoding=application/x-tex>5</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6444em></span><span class=mord>5</span></span></span></span></span> mg. A new method for the production of
+the drug is introduced involving some additional costs.
+Management will authorize the change in the production technique
+only if the standard deviation of weights in the new process is less
+than <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mn>5</mn></mrow><annotation encoding=application/x-tex>5</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6444em></span><span class=mord>5</span></span></span></span></span> mg. A sample of <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mn>10</mn></mrow><annotation encoding=application/x-tex>10</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6444em></span><span class=mord>10</span></span></span></span></span> drugs for the same is chosen and the
+standard deviation in the weight is found to be <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mn>3.83</mn></mrow><annotation encoding=application/x-tex>3.83</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6444em></span><span class=mord>3.83</span></span></span></span></span> mg.<br><div>
+<noscript>
+    <div class="qt-warning">
+        
+         JavaScript should be enabled to grade this question. 
+    </div>
+</noscript>
+ <div class="gcb-cols gcb-question-counter-increment gcb-question-row">
+ <div class="gcb-col-counters gcb-show-question-counter"></div>
+ <div class="qt-mc-question qt-standalone" id=AziU4DRnCrWI>
+ <div class=qt-points>
+ <em>
+ 
+ 
+ 1 point
+ 
+ </em>
+ </div>
+ <div class=qt-question>Identify the null and alternative hypothesis:
+</div>
+ <div class=qt-choices>
+ 
+ <div class=gcb-mcq-choice>
+ <input data-index=0 id=AziU4DRnCrWI.0 name=AziU4DRnCrWI type=radio>
+ <label for=AziU4DRnCrWI.0>
+ <div>
+</div><span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo><mi>σ</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding=application/x-tex>H_0: \sigma = 5</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8333em;vertical-align:-0.15em></span><span class=mord><span style=margin-right:0.0813em class="mord mathnormal">H</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3011em><span style=top:-2.55em;margin-left:-0.0813em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.15em><span></span></span></span></span></span></span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>:</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.4306em></span><span style=margin-right:0.0359em class="mord mathnormal">σ</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>5</span></span></span></span></span> mg, <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>H</mi><mi>A</mi></msub><mo>:</mo><mi>σ</mi><mo>&gt;</mo><mn>5</mn></mrow><annotation encoding=application/x-tex> H_A: \sigma &gt; 5</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8333em;vertical-align:-0.15em></span><span class=mord><span style=margin-right:0.0813em class="mord mathnormal">H</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3283em><span style=top:-2.55em;margin-left:-0.0813em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">A</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.15em><span></span></span></span></span></span></span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>:</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.5782em;vertical-align:-0.0391em></span><span style=margin-right:0.0359em class="mord mathnormal">σ</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>&gt;</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>5</span></span></span></span></span> mg<div></div>
+ </label>
+ </div>
+ 
+ <div class=gcb-mcq-choice>
+ <input data-index=1 id=AziU4DRnCrWI.1 name=AziU4DRnCrWI type=radio>
+ <label for=AziU4DRnCrWI.1>
+ <div>
+</div><span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo><mi>σ</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding=application/x-tex>H_0: \sigma = 5</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8333em;vertical-align:-0.15em></span><span class=mord><span style=margin-right:0.0813em class="mord mathnormal">H</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3011em><span style=top:-2.55em;margin-left:-0.0813em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.15em><span></span></span></span></span></span></span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>:</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.4306em></span><span style=margin-right:0.0359em class="mord mathnormal">σ</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>5</span></span></span></span></span> mg, <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>H</mi><mi>A</mi></msub><mo>:</mo><mi>σ</mi><mo>=</mo><mn>3.83</mn></mrow><annotation encoding=application/x-tex> H_A: \sigma = 3.83 </annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8333em;vertical-align:-0.15em></span><span class=mord><span style=margin-right:0.0813em class="mord mathnormal">H</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3283em><span style=top:-2.55em;margin-left:-0.0813em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">A</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.15em><span></span></span></span></span></span></span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>:</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.4306em></span><span style=margin-right:0.0359em class="mord mathnormal">σ</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>3.83</span></span></span></span></span> mg<div></div>
+ </label>
+ </div>
+ 
+ <div class=gcb-mcq-choice>
+ <input data-index=2 id=AziU4DRnCrWI.2 name=AziU4DRnCrWI type=radio>
+ <label for=AziU4DRnCrWI.2>
+ <div>
+</div><span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo><mi>σ</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding=application/x-tex>H_0: \sigma = 5</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8333em;vertical-align:-0.15em></span><span class=mord><span style=margin-right:0.0813em class="mord mathnormal">H</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3011em><span style=top:-2.55em;margin-left:-0.0813em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.15em><span></span></span></span></span></span></span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>:</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.4306em></span><span style=margin-right:0.0359em class="mord mathnormal">σ</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>5</span></span></span></span></span> mg, <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>H</mi><mi>A</mi></msub><mo>:</mo><mi>σ</mi><mo>&lt;</mo><mn>5</mn></mrow><annotation encoding=application/x-tex> H_A: \sigma &lt; 5 </annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8333em;vertical-align:-0.15em></span><span class=mord><span style=margin-right:0.0813em class="mord mathnormal">H</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3283em><span style=top:-2.55em;margin-left:-0.0813em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">A</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.15em><span></span></span></span></span></span></span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>:</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.5782em;vertical-align:-0.0391em></span><span style=margin-right:0.0359em class="mord mathnormal">σ</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>&lt;</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>5</span></span></span></span></span>} mg<div></div>
+ </label>
+ </div>
+ 
+ <div class=gcb-mcq-choice>
+ <input data-index=3 id=AziU4DRnCrWI.3 name=AziU4DRnCrWI type=radio>
+ <label for=AziU4DRnCrWI.3>
+ <div>
+</div><span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo><mi>σ</mi><mo>=</mo><mn>3.83</mn></mrow><annotation encoding=application/x-tex>H_0: \sigma = 3.83</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8333em;vertical-align:-0.15em></span><span class=mord><span style=margin-right:0.0813em class="mord mathnormal">H</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3011em><span style=top:-2.55em;margin-left:-0.0813em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.15em><span></span></span></span></span></span></span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>:</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.4306em></span><span style=margin-right:0.0359em class="mord mathnormal">σ</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>3.83</span></span></span></span></span> mg, <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>H</mi><mi>A</mi></msub><mo>:</mo><mi>σ</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding=application/x-tex> H_A: \sigma = 5</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8333em;vertical-align:-0.15em></span><span class=mord><span style=margin-right:0.0813em class="mord mathnormal">H</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3283em><span style=top:-2.55em;margin-left:-0.0813em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">A</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.15em><span></span></span></span></span></span></span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>:</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.4306em></span><span style=margin-right:0.0359em class="mord mathnormal">σ</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>5</span></span></span></span></span> mg<div></div>
+ </label>
+ </div>
+ 
+ </div>
+ <div class=qt-feedback role=alert><div><h3 class=feedback-header><span class=incorrect> No, the answer is incorrect. </span><br><span class=incorrect>Score: 0</span></h3><h3 class=feedback-header>Feedback:</h3><div>Since, we want to check if the new production method produces
+the drugs with the standard deviation of weights less than 5 mg,
+therefore, (c) is the correct option.</div><h3 class="feedback-header faculty-answer">Accepted Answers:</h3><div class=faculty-answer><div><div><label for=AziU4DRnCrWI.2>
+ <div>
+</div><span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo><mi>σ</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding=application/x-tex>H_0: \sigma = 5</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8333em;vertical-align:-0.15em></span><span class=mord><span style=margin-right:0.0813em class="mord mathnormal">H</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3011em><span style=top:-2.55em;margin-left:-0.0813em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.15em><span></span></span></span></span></span></span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>:</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.4306em></span><span style=margin-right:0.0359em class="mord mathnormal">σ</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>5</span></span></span></span></span> mg, <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>H</mi><mi>A</mi></msub><mo>:</mo><mi>σ</mi><mo>&lt;</mo><mn>5</mn></mrow><annotation encoding=application/x-tex> H_A: \sigma &lt; 5 </annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8333em;vertical-align:-0.15em></span><span class=mord><span style=margin-right:0.0813em class="mord mathnormal">H</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3283em><span style=top:-2.55em;margin-left:-0.0813em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">A</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.15em><span></span></span></span></span></span></span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>:</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.5782em;vertical-align:-0.0391em></span><span style=margin-right:0.0359em class="mord mathnormal">σ</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>&lt;</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>5</span></span></span></span></span>} mg<div></div>
+ </label></div></div></div></div></div>
+ </div>
+ </div>
+</div><br><div>
+<noscript>
+    <div class="qt-warning">
+        
+         JavaScript should be enabled to grade this question. 
+    </div>
+</noscript>
+ <div class="gcb-cols gcb-question-counter-increment gcb-question-row">
+ <div class="gcb-col-counters gcb-show-question-counter"></div>
+ <div class="qt-mc-question qt-standalone" id=NrJSpr9m7Zrs>
+ <div class=qt-points>
+ <em>
+ 
+ 
+ 1 point
+ 
+ </em>
+ </div>
+ <div class=qt-question><div>
+</div>Would the company like to switch to the new production method (assuming the weights to be normally distributed and <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>α</mi><mo>=</mo><mn>0.05</mn></mrow><annotation encoding=application/x-tex>\alpha = 0.05</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.4306em></span><span style=margin-right:0.0037em class="mord mathnormal">α</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>0.05</span></span></span></span></span>)?<br>
+ Hint: Use <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msubsup><mi>F</mi><msubsup><mi>χ</mi><mn>9</mn><mn>2</mn></msubsup><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo stretchy=false>(</mo><mn>0.05</mn><mo stretchy=false>)</mo><mo>=</mo><mn>3.325</mn></mrow><annotation encoding=application/x-tex>F_{\chi^2_9}^{-1}(0.05) = 3.325</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1.4511em;vertical-align:-0.5968em></span><span class=mord><span style=margin-right:0.1389em class="mord mathnormal">F</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.8542em><span style=top:-2.3212em;margin-left:-0.1389em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight">χ</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.8051em><span style=top:-2.1885em;margin-left:0em;margin-right:0.0714em><span class=pstrut style=height:2.5em></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">9</span></span></span><span style=top:-2.8448em;margin-right:0.0714em><span class=pstrut style=height:2.5em></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.3115em><span></span></span></span></span></span></span></span></span></span><span style=top:-3.1031em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.5968em><span></span></span></span></span></span></span><span class=mopen>(</span><span class=mord>0.05</span><span class=mclose>)</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>3.325</span></span></span></span></span>
+ <div></div></div>
+ <div class=qt-choices>
+ 
+ <div class=gcb-mcq-choice>
+ <input data-index=0 id=NrJSpr9m7Zrs.0 name=NrJSpr9m7Zrs type=radio>
+ <label for=NrJSpr9m7Zrs.0>
+ Yes
+ </label>
+ </div>
+ 
+ <div class=gcb-mcq-choice>
+ <input data-index=1 id=NrJSpr9m7Zrs.1 name=NrJSpr9m7Zrs type=radio>
+ <label for=NrJSpr9m7Zrs.1>
+ No
+ </label>
+ </div>
+ 
+ </div>
+ <div class=qt-feedback role=alert><div><h3 class=feedback-header><span class=incorrect> No, the answer is incorrect. </span><br><span class=incorrect>Score: 0</span></h3><h3 class=feedback-header>Feedback:</h3><div><img src=images/22.png class="yui-img selected" title alt><br><img src=images/23.png class=yui-img title alt><br></div><h3 class="feedback-header faculty-answer">Accepted Answers:</h3><div class=faculty-answer><div><div><label for=NrJSpr9m7Zrs.1>
+ No
+ </label></div></div></div></div></div>
+ </div>
+ </div>
+</div><br><br><br><br><b>Use the below information for Question (7 and 8)<br></b>A dairy farm reported that the average amount of milk supplied by the vendors is 4 <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>l</mi><mi>i</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi></mrow><annotation encoding=application/x-tex>litres</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6944em></span><span style=margin-right:0.0197em class="mord mathnormal">l</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">res</span></span></span></span></span>. You suspect that the average is higher, possibly 5 <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>l</mi><mi>i</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi></mrow><annotation encoding=application/x-tex>litres</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6944em></span><span style=margin-right:0.0197em class="mord mathnormal">l</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">res</span></span></span></span></span>, and decide to sample vendors to find the amount of milk they supply. You found that the sample standard deviation is 0.8 <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>l</mi><mi>i</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi></mrow><annotation encoding=application/x-tex>litres</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6944em></span><span style=margin-right:0.0197em class="mord mathnormal">l</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">res</span></span></span></span></span>. <br><div>
+<noscript>
+    <div class="qt-warning">
+        
+         JavaScript should be enabled to grade this question. 
+    </div>
+</noscript>
+<div class="gcb-cols gcb-question-counter-increment gcb-question-row">
+ 
+ <div class="gcb-col-counters gcb-show-question-counter"></div>
+ 
+ <div class="qt-sa-question qt-standalone" id=0vhTscnF899L>
+ 
+ <div class=qt-question><div>
+</div>What will be the critical value at a significance level of <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mn>0.05</mn></mrow><annotation encoding=application/x-tex>0.05</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6444em></span><span class=mord>0.05</span></span></span></span></span> for a sample size of <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mn>15</mn></mrow><annotation encoding=application/x-tex>15</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6444em></span><span class=mord>15</span></span></span></span></span>?(Enter your answer correct to two decimal places<br>
+ Use <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>F</mi><msub><mi>t</mi><mn>14</mn></msub></msub><mo stretchy=false>(</mo><mn>0.95</mn><mo stretchy=false>)</mo><mo>=</mo><mn>1.761310</mn></mrow><annotation encoding=application/x-tex>F_{t_{14}}(0.95) = 1.761310</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1.0001em;vertical-align:-0.2501em></span><span class=mord><span style=margin-right:0.1389em class="mord mathnormal">F</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.2806em><span style=top:-2.55em;margin-left:-0.1389em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3173em><span style=top:-2.357em;margin-left:0em;margin-right:0.0714em><span class=pstrut style=height:2.5em></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">14</span></span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.143em><span></span></span></span></span></span></span></span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.2501em><span></span></span></span></span></span></span><span class=mopen>(</span><span class=mord>0.95</span><span class=mclose>)</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>1.761310</span></span></span></span></span><br>
+ <div></div></div>
+ 
+ <div class=qt-response>
+ 
+ <input id=qt-response-num-id-0vhTscnF899L step=any type=number value><template shadowrootmode=closed><div></div><div aria-hidden=true><div aria-hidden=true></div><div aria-hidden=true></div></div></template>
+ 
+ </div>
+ 
+ <div class=qt-feedback role=alert><div><h3 class=feedback-header><span class=incorrect> No, the answer is incorrect. </span><br><span class=incorrect>Score: 0</span></h3><h3 class=feedback-header>Feedback:</h3><div><img src=images/24.png class="yui-img selected" title alt><br><img src=images/25.png class=yui-img title alt><br></div><div><h3 class="feedback-header faculty-answer">Accepted Answers:</h3><div class=faculty-answer>(Type: Range) 4.30,4.40</div></div></div></div>
+ </div>
+ <div class=qt-points>
+ <em>
+ 
+ 
+ 1 point
+ 
+ </em>
+ </div>
+</div>
+</div><br><div>
+<noscript>
+    <div class="qt-warning">
+        
+         JavaScript should be enabled to grade this question. 
+    </div>
+</noscript>
+<div class="gcb-cols gcb-question-counter-increment gcb-question-row">
+ 
+ <div class="gcb-col-counters gcb-show-question-counter"></div>
+ 
+ <div class="qt-sa-question qt-standalone" id=pQISzuYOKlpc>
+ 
+ <div class=qt-question><div>
+</div>What will be the power of the above test against an alternative of 5 <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>l</mi><mi>i</mi><mi>t</mi><mi>r</mi><mi>e</mi><mi>s</mi></mrow><annotation encoding=application/x-tex>litres</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6944em></span><span style=margin-right:0.0197em class="mord mathnormal">l</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">res</span></span></span></span></span>?(Enter your answer correct to three decimal places)<br>
+ Use <span class=inline-equation><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msub><mi>F</mi><msub><mi>t</mi><mn>14</mn></msub></msub><mo stretchy=false>(</mo><mo>−</mo><mn>3.0799</mn><mo stretchy=false>)</mo><mo>=</mo><mn>0.004075</mn></mrow><annotation encoding=application/x-tex>F_{t_{14}}(-3.0799) = 0.004075</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1.0001em;vertical-align:-0.2501em></span><span class=mord><span style=margin-right:0.1389em class="mord mathnormal">F</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.2806em><span style=top:-2.55em;margin-left:-0.1389em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.3173em><span style=top:-2.357em;margin-left:0em;margin-right:0.0714em><span class=pstrut style=height:2.5em></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">14</span></span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.143em><span></span></span></span></span></span></span></span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.2501em><span></span></span></span></span></span></span><span class=mopen>(</span><span class=mord>−</span><span class=mord>3.0799</span><span class=mclose>)</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>0.004075</span></span></span></span></span>
+ <div></div></div>
+ 
+ <div class=qt-response>
+ 
+ <input id=qt-response-num-id-pQISzuYOKlpc step=any type=number value><template shadowrootmode=closed><div></div><div aria-hidden=true><div aria-hidden=true></div><div aria-hidden=true></div></div></template>
+ 
+ </div>
+ 
+ <div class=qt-feedback role=alert><div><h3 class=feedback-header><span class=incorrect> No, the answer is incorrect. </span><br><span class=incorrect>Score: 0</span></h3><h3 class=feedback-header>Feedback:</h3><div><img src=images/26.png class=yui-img title alt></div><div><h3 class="feedback-header faculty-answer">Accepted Answers:</h3><div class=faculty-answer>(Type: Range) 0.991,0.999</div></div></div></div>
+ </div>
+ <div class=qt-points>
+ <em>
+ 
+ 
+ 1 point
+ 
+ </em>
+ </div>
+</div>
+</div><div></div>
+ </div>
+ <div class=qt-assessment-button-bar>
+ 
+ 
+ 
+ 
+ <div class=qt-grade-scored-lesson>
+ <button class="gcb-button qt-check-answer-button">
+ Check Answers 
+ </button>
+ </div>
+ 
+ <div class=qt-grade-report data-question-batch-id=A335> Your score is: 0/8</div>
+ 
+ 
+ 
+ 
+ 
+ 
+ </div>
+</div>
+ 
+ 
+</div></div><div _ngcontent-ng-c3208804584 appcode></div></div></app-assessments></div></div><button _ngcontent-ng-c2442480797 class="floating-calc-btn ng-star-inserted"><app-icon _ngcontent-ng-c2442480797 class="app-icon color-primary" _nghost-ng-c3980789515 role=img aria-label=Calculator><svg _ngcontent-ng-c3980789515 aria-hidden=true xmlns=http://www.w3.org/2000/svg class=icon-svg viewBox="0 0 20 20" width=34 height=34><path fill=currentColor d="M2.292 0A2.29 2.29 0 0 0 0 2.292v7.291h9.583V0zm3.75 5.625h-.834v.833a.625.625 0 0 1-1.25 0v-.833h-.833a.625.625 0 0 1 0-1.25h.833v-.833a.625.625 0 0 1 1.25 0v.833h.834a.625.625 0 0 1 0 1.25M0 10.417v7.291A2.29 2.29 0 0 0 2.292 20h7.291v-9.583zm6.275 5.391a.625.625 0 0 1-.883.884l-.6-.6-.6.6a.627.627 0 0 1-.884 0 .626.626 0 0 1 0-.885l.6-.6-.6-.6a.625.625 0 1 1 .885-.884l.6.6.6-.6a.625.625 0 0 1 .884.884l-.6.6zM17.708 0h-7.291v9.583H20V2.292A2.29 2.29 0 0 0 17.708 0m-.416 5.417h-3.75a.625.625 0 0 1 0-1.25h3.75a.625.625 0 0 1 0 1.25"></path><path fill=#a0332d d="M10.417 10.417V20h7.291A2.29 2.29 0 0 0 20 17.708v-7.291zm6.666 6.666h-3.75a.625.625 0 0 1 0-1.25h3.75a.625.625 0 0 1 0 1.25m0-2.5h-3.75a.625.625 0 0 1 0-1.25h3.75a.625.625 0 0 1 0 1.25"></path></svg></app-icon></button></div></app-course-modules></content></div></app-courses><app-spinner _ngcontent-ng-c3258226952 _nghost-ng-c3498936893></app-spinner></div><app-toast-outlet _ngcontent-ng-c3258226952 _nghost-ng-c34341094 class=ng-tns-c34341094-0><div _ngcontent-ng-c34341094 class="ng-tns-c34341094-0 pos-top-left toast-wrapper ng-star-inserted"></div><div _ngcontent-ng-c34341094 class="ng-tns-c34341094-0 pos-top-center toast-wrapper ng-star-inserted"></div><div _ngcontent-ng-c34341094 class="ng-tns-c34341094-0 pos-top-right toast-wrapper ng-star-inserted"></div><div _ngcontent-ng-c34341094 class="ng-tns-c34341094-0 pos-bottom-left toast-wrapper ng-star-inserted"></div><div _ngcontent-ng-c34341094 class="ng-tns-c34341094-0 pos-bottom-center toast-wrapper ng-star-inserted"></div><div _ngcontent-ng-c34341094 class="ng-tns-c34341094-0 pos-bottom-right toast-wrapper ng-star-inserted"></div></app-toast-outlet><router-outlet _ngcontent-ng-c3258226952 name=popup></router-outlet></app-root>
+ 
+ <noscript>Please enable JavaScript to continue using this application.</noscript>
+ 
+<div class="cdk-overlay-container sf-hidden"></div><script data-template-shadow-root>(()=>{document.currentScript.remove();processNode(document);function processNode(node){node.querySelectorAll("template[shadowrootmode]").forEach(element=>{let shadowRoot = element.parentElement.shadowRoot;if (!shadowRoot) {try {shadowRoot=element.parentElement.attachShadow({mode:element.getAttribute("shadowrootmode")});shadowRoot.innerHTML=element.innerHTML;element.remove()} catch (error) {} if (shadowRoot) {processNode(shadowRoot)}}})}})()</script>

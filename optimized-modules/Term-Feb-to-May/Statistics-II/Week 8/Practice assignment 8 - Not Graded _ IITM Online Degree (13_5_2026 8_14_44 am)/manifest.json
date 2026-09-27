@@ -1,0 +1,27 @@
+{
+  "originalUrl": "https://seek.onlinedegree.iitm.ac.in/courses/ns_26t1_ma1004/248",
+  "title": "Practice assignment 8 - Not Graded :: IITM Online Degree",
+  "archiveTime": "2026-05-13T02:44:47.844Z",
+  "indexFilename": "index.html",
+  "resources": {
+    "fonts/2.woff2": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2",
+    "fonts/3.woff2": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+    "fonts/0.woff2": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2",
+    "fonts/1.woff2": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2",
+    "fonts/4.woff2": "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/fonts/KaTeX_Main-Italic.woff2",
+    "fonts/7.woff2": "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/fonts/KaTeX_Main-Regular.woff2",
+    "fonts/10.woff2": "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/fonts/KaTeX_Math-Italic.woff2",
+    "fonts/13.woff2": "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/fonts/KaTeX_Size3-Regular.woff2",
+    "images/16.ico": "https://seek.onlinedegree.iitm.ac.in/favicon.ico",
+    "images/17.jpg": "https://backend.seek.study.iitm.ac.in/21t2_ma1004/assets/img/1F30DEF4-C6D1-44CA-A02C-C39F5E1EC4ED_4_5005_c.jpeg",
+    "images/19.jpg": "https://backend.seek.study.iitm.ac.in/21t2_ma1004/assets/img/0D908D5F-B661-4EF2-8ACF-5BE8F302017A_4_5005_c.jpeg",
+    "images/18.jpg": "https://backend.seek.study.iitm.ac.in/21t2_ma1004/assets/img/9A8816E5-2250-49A7-8566-78C338163B97_4_5005_c.jpeg",
+    "images/20.jpg": "https://backend.seek.study.iitm.ac.in/21t2_ma1004/assets/img/FC5796FD-D8FB-4CED-B79E-F1A9B365A003_4_5005_c.jpeg",
+    "images/21.jpg": "https://backend.seek.study.iitm.ac.in/21t2_ma1004/assets/img/131D9D5F-F310-44E9-8936-5A4BE8DBAF7F.jpeg",
+    "images/22.jpg": "https://backend.seek.study.iitm.ac.in/21t2_ma1004/assets/img/E7CDD56E-9A0E-4F8D-90CD-27B64DE8CE9C_4_5005_c.jpeg",
+    "images/23.jpg": "https://backend.seek.study.iitm.ac.in/21t2_ma1004/assets/img/CE001415-6D08-4C85-9C62-982EC69CDA36_4_5005_c.jpeg",
+    "images/24.jpg": "https://backend.seek.study.iitm.ac.in/21t2_ma1004/assets/img/CC38B0B5-0BAD-486D-9AFD-F143CD3E4A1E_4_5005_c.jpeg",
+    "images/25.jpg": "https://backend.seek.study.iitm.ac.in/21t2_ma1004/assets/img/3FC73F01-9F72-4FD3-8F6E-52648EC12007_4_5005_c.jpeg",
+    "images/26.jpg": "https://backend.seek.study.iitm.ac.in/21t2_ma1004/assets/img/B30D5D46-BA57-43AE-B94E-4EED3E5F7D49_4_5005_c.jpeg"
+  }
+}

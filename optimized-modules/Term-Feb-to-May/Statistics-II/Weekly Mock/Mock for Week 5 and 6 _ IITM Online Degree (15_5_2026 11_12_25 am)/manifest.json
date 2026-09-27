@@ -1,0 +1,23 @@
+{
+  "originalUrl": "https://seek.onlinedegree.iitm.ac.in/courses/ns_26t1_ma1004/540",
+  "title": "Mock for Week 5 and 6 :: IITM Online Degree",
+  "archiveTime": "2026-05-15T05:42:26.767Z",
+  "indexFilename": "index.html",
+  "resources": {
+    "fonts/0.woff2": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2",
+    "fonts/2.woff2": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2",
+    "fonts/1.woff2": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2",
+    "fonts/3.woff2": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+    "fonts/4.woff2": "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/fonts/KaTeX_Main-Italic.woff2",
+    "fonts/7.woff2": "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/fonts/KaTeX_Main-Regular.woff2",
+    "fonts/10.woff2": "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/fonts/KaTeX_Math-Italic.woff2",
+    "fonts/13.woff2": "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/fonts/KaTeX_Size3-Regular.woff2",
+    "fonts/16.woff2": "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/fonts/KaTeX_Size4-Regular.woff2",
+    "images/23.png": "https://backend.seek.study.iitm.ac.in/22t3_ma1004/assets/img/CDF_4.png",
+    "images/20.png": "https://backend.seek.study.iitm.ac.in/22t3_ma1004/assets/img/CDF_1.png",
+    "images/21.png": "https://backend.seek.study.iitm.ac.in/22t3_ma1004/assets/img/CDF_2.png",
+    "images/24.png": "https://backend.seek.study.iitm.ac.in/22t3_ma1004/assets/img/Region_D.png",
+    "images/22.png": "https://backend.seek.study.iitm.ac.in/22t3_ma1004/assets/img/CDF_3.png",
+    "images/19.ico": "https://seek.onlinedegree.iitm.ac.in/favicon.ico"
+  }
+}
