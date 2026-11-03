@@ -332,9 +332,14 @@
             </div>
             <span class="font-extrabold text-slate-800 uppercase tracking-tighter">Reading Vault</span>
         </div>
-        <button id="mobile-toggle" class="p-2 text-slate-500 hover:bg-slate-50 rounded-lg">
-            <i data-lucide="menu" class="w-6 h-6"></i>
-        </button>
+        <div class="flex items-center gap-1">
+            <button id="copy-md-mobile" class="hidden p-2 text-slate-500 hover:bg-slate-50 rounded-lg" aria-label="Copy this page as Markdown" title="Copy Markdown">
+                <i data-lucide="copy" class="w-5 h-5"></i>
+            </button>
+            <button id="mobile-toggle" class="p-2 text-slate-500 hover:bg-slate-50 rounded-lg">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
     </header>
 
     <!-- Sidebar Navigation -->
@@ -397,6 +402,10 @@
                 <span class="text-slate-900 font-bold tracking-tight">Vault Content</span>
             </div>
             <div class="flex items-center gap-3">
+                <button id="copy-md" type="button" class="flex items-center gap-2 px-4 py-1.5 bg-white border border-slate-200 shadow-sm rounded-full text-[12px] font-bold text-slate-700 hover:bg-slate-50 transition-all active:scale-95 group" title="Copy this page as Markdown (Ctrl/Cmd+Shift+C)">
+                    <i data-lucide="copy" class="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 transition-colors"></i>
+                    Copy Markdown
+                </button>
                 <button onclick="window.print()" class="flex items-center gap-2 px-4 py-1.5 bg-white border border-slate-200 shadow-sm rounded-full text-[12px] font-bold text-slate-700 hover:bg-slate-50 transition-all active:scale-95 group">
                     <i data-lucide="printer" class="w-3.5 h-3.5 text-slate-400 group-hover:text-slate-600 transition-colors"></i>
                     Save as PDF
@@ -2877,6 +2886,7 @@
             const STATE = {
                 index: null,
                 currentPath: null,
+                rawMarkdown: '', // 📋 the document as fetched — what Copy Markdown emits
                 isSidebarOpen: false,
                 expandedFolders: new Set(),
                 flatNodes: [] // 📜 Flat list for Pagination
@@ -2913,11 +2923,21 @@
                 // Search
                 document.getElementById('search-bar')?.addEventListener('input', (e) => handleSearch(e.target.value));
 
+                // Copy the page you are reading as Markdown
+                document.getElementById('copy-md')?.addEventListener('click', copyCurrentMarkdown);
+                document.getElementById('copy-md-mobile')?.addEventListener('click', copyCurrentMarkdown);
+
                 // Shortcuts
                 document.addEventListener('keydown', (e) => {
                     if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
                         e.preventDefault();
                         document.getElementById('search-bar')?.focus();
+                    }
+                    // ⌘⇧C / Ctrl+Shift+C — the page, as Markdown
+                    if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'c' || e.key === 'C')) {
+                        if (/^(INPUT|TEXTAREA)$/.test(e.target.tagName)) return;
+                        e.preventDefault();
+                        copyCurrentMarkdown();
                     }
                 });
 
@@ -2986,10 +3006,12 @@
             }
 
             function showDashboard() {
+                STATE.rawMarkdown = '';
                 document.getElementById('empty-state').classList.remove('hidden');
                 document.getElementById('md-viewer').classList.add('hidden');
                 document.getElementById('md-footer').classList.add('hidden');
                 document.getElementById('reading-header').classList.add('md:hidden');
+                document.getElementById('copy-md-mobile')?.classList.add('hidden');
                 
                 document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
             }
@@ -3009,6 +3031,7 @@
                     if (!res.ok) throw new Error(`HTTP ${res.status}`);
                     
                     const text = await res.text();
+                    STATE.rawMarkdown = text;
                     renderMarkdown(text, node);
                     
                     STATE.currentPath = filePath;
@@ -3087,9 +3110,75 @@
                 document.getElementById('empty-state').classList.add('hidden');
                 document.getElementById('md-footer').classList.remove('hidden');
                 document.getElementById('reading-header').classList.remove('md:hidden');
+                document.getElementById('copy-md-mobile')?.classList.remove('hidden');
                 
                 window.scrollTo({ top: 0, behavior: 'smooth' });
                 ANN.load(node.path);
+            }
+
+            /** Copy the page as Markdown — the raw source of the document you are
+             *  reading, not the Vault's rendered HTML. The extracted files already
+             *  carry their frontmatter and image links, so nothing is rebuilt here. */
+            async function copyCurrentMarkdown() {
+                const raw = (STATE.rawMarkdown || '').trim();
+                if (!raw) { vaultToast('Open a document first'); return; }
+                const ok = await writeClipboard(raw);
+                vaultToast(ok
+                    ? `Markdown copied · ${raw.length < 1024 ? raw.length + ' B' : Math.round(raw.length / 1024) + ' KB'}`
+                    : 'Copy blocked — select the text and press Ctrl/Cmd+C');
+            }
+
+            /** `navigator.clipboard` needs a secure context and can hang while it
+             *  waits for permission (Safari, locked-down Chromium). Give it 1.2 s
+             *  and fall back, so the button always answers with a toast. */
+            function writeClipboard(text) {
+                const legacy = () => {
+                    const ta = document.createElement('textarea');
+                    ta.value = text;
+                    ta.setAttribute('readonly', '');
+                    ta.style.cssText = 'position:fixed;top:-1000px;left:-1000px;opacity:0';
+                    document.body.appendChild(ta);
+                    ta.select();
+                    let ok = false;
+                    try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+                    ta.remove();
+                    return ok;
+                };
+                if (!navigator.clipboard || !window.isSecureContext) return Promise.resolve(legacy());
+                return new Promise((resolve) => {
+                    let settled = false;
+                    const finish = (value) => { if (!settled) { settled = true; resolve(value); } };
+                    const timer = setTimeout(() => { clearTimeout(timer); finish(legacy()); }, 1200);
+                    navigator.clipboard.writeText(text).then(
+                        () => { clearTimeout(timer); finish(true); },
+                        () => { clearTimeout(timer); finish(legacy()); }
+                    );
+                });
+            }
+
+            let vaultToastTimer = null;
+            function vaultToast(message) {
+                let host = document.getElementById('vault-toast');
+                if (!host) {
+                    host = document.createElement('div');
+                    host.id = 'vault-toast';
+                    host.setAttribute('role', 'status');
+                    host.setAttribute('aria-live', 'polite');
+                    document.body.appendChild(host);
+                }
+                host.className = 'fixed left-1/2 bottom-8 z-[80] rounded-full bg-slate-900 px-5 py-2.5 text-[13px] font-bold text-white shadow-xl transition-all duration-200';
+                host.textContent = message;
+                host.style.opacity = '0';
+                host.style.transform = 'translate(-50%, 12px)';
+                requestAnimationFrame(() => {
+                    host.style.opacity = '1';
+                    host.style.transform = 'translate(-50%, 0)';
+                });
+                clearTimeout(vaultToastTimer);
+                vaultToastTimer = setTimeout(() => {
+                    host.style.opacity = '0';
+                    host.style.transform = 'translate(-50%, 12px)';
+                }, 2200);
             }
 
             function postProcessMarkdown(container) {

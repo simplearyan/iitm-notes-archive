@@ -8,249 +8,20 @@
     <link rel="canonical" href="https://simplearyan.github.io/iitm-notes-archive/">
     <title>IITM Notes Archive</title>
     
-    <!-- Link to statically compiled Tailwind CSS -->
+    <!-- Statically compiled Tailwind, then the design system -->
     <link href="assets/main.css" rel="stylesheet">
+    <link href="assets/tokens.css" rel="stylesheet">
+    <link href="assets/app.css" rel="stylesheet">
+    <link href="assets/print.css" rel="stylesheet" media="print">
 
-    <!-- Lucide Premium Icons -->
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <!-- Icons: self-hosted (was unpkg — no network needed, no CDN outage) -->
+    <script src="libs/lucide.min.js"></script>
 
     <!-- Annotation Engine -->
     <script src="libs/rough.js"></script>
     <script src="scripts/annotator.js"></script>
 
-    <style>
-        /* --- Premium Annotation Toolbar Styles (Direct Injection) --- */
-        #anno-toolbar {
-            position: fixed;
-            bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 0.375rem;
-            display: flex;
-            align-items: center;
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(25px);
-            -webkit-backdrop-filter: blur(25px);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            border-radius: 1.25rem;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            width: max-content;
-            max-width: 95vw;
-        }
-
-        @media (max-width: 640px) {
-            #anno-toolbar {
-                bottom: 1rem;
-                padding: 0.25rem;
-                border-radius: 1rem;
-            }
-            #anno-toolbar > div {
-                gap: 4px; /* Increased gap for finger spacing */
-            }
-            .anno-tool-btn {
-                min-width: 40px !important;
-                min-height: 40px !important;
-                padding: 0.5rem !important;
-            }
-            .anno-tool-btn i {
-                width: 1.25rem !important;
-                height: 1.25rem !important;
-            }
-            .anno-weight-btn {
-                width: 38px !important;
-                height: 38px !important;
-            }
-            .anno-color-dot {
-                width: 2rem !important;
-                height: 2rem !important;
-            }
-            .anno-divider {
-                height: 1.5rem !important;
-                margin: 0 0.375rem !important;
-            }
-        }
-
-
-        #anno-toolbar.hidden {
-            bottom: -5rem;
-            opacity: 0;
-            pointer-events: none;
-            display: none !important;
-        }
-
-        #anno-toolbar > div {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            padding: 0 4px;
-            overflow-x: auto;
-        }
-
-        .anno-divider {
-            width: 1px;
-            height: 1.5rem;
-            background: rgba(226, 232, 240, 0.6);
-            margin: 0 0.375rem;
-            flex-shrink: 0;
-        }
-
-        .anno-tool-btn {
-            padding: 0.625rem;
-            border-radius: 0.75rem;
-            color: #64748b;
-            transition: all 0.2s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 40px;
-            min-height: 40px;
-            border: none;
-            background: transparent;
-            cursor: pointer;
-        }
-
-        .anno-tool-btn:hover {
-            background: rgba(79, 70, 229, 0.05);
-            color: #4f46e5;
-        }
-
-        .anno-tool-btn.active-tool {
-            background: #4f46e5;
-            color: white;
-            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
-            transform: scale(1.05);
-        }
-
-        .anno-weight-btn {
-            width: 36px;
-            height: 36px;
-            border-radius: 0.75rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #64748b; /* Higher contrast slate */
-            transition: all 0.2s ease;
-            border: none;
-            background: transparent;
-            cursor: pointer;
-            position: relative;
-        }
-
-        .anno-weight-btn:hover {
-            background: #f8fafc;
-            color: #334155;
-        }
-
-        .anno-weight-btn.active-weight {
-            color: #4f46e5;
-            background: #f5f3ff;
-        }
-
-        /* 💎 Improved Visibility: Explicit Sizes and Always-on contrast */
-        .weight-indicator {
-            border-radius: 9999px;
-            background: currentColor;
-            display: block;
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 0 0 1px rgba(0,0,0,0.05); /* Subtle shadow for depth */
-        }
-
-        .anno-weight-btn[data-weight="2"] .weight-indicator { width: 4px; height: 4px; }
-        .anno-weight-btn[data-weight="4"] .weight-indicator { width: 8px; height: 8px; }
-        .anno-weight-btn[data-weight="8"] .weight-indicator { width: 14px; height: 14px; }
-
-        /* Active highlight for weight */
-        .anno-weight-btn.active-weight::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: inherit;
-            box-shadow: inset 0 0 0 2px #4f46e5;
-            opacity: 1;
-        }
-
-
-
-        .anno-color-dot {
-            width: 2rem;
-            height: 2rem;
-            border-radius: 9999px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            position: relative;
-        }
-
-        .anno-color-dot::before {
-            content: '';
-            width: 0.875rem;
-            height: 0.875rem;
-            border-radius: 9999px;
-            background: currentColor;
-            transition: all 0.3s ease;
-        }
-
-        .anno-color-dot.active-color {
-            background: #f8fafc;
-            box-shadow: 0 0 0 1px white, 0 0 0 2px currentColor; /* Tight, small-radius ring */
-        }
-
-
-        .anno-color-dot.active-color::before {
-            transform: scale(1.15); /* Slightly smaller inner dot */
-        }
-
-
-        #draw-toggle-btn {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            z-index: 1001;
-            width: 4rem;
-            height: 4rem;
-            background: #4f46e5;
-            color: white;
-            border-radius: 9999px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        #draw-toggle-btn:hover {
-            transform: scale(1.1);
-        }
-
-        #draw-toggle-btn.active-draw {
-            background: #f43f5e;
-        }
-
-        /* 🚩 Position FAB above toolbar on mobile when active (Right Corner) */
-        @media (max-width: 640px) {
-            #anno-toolbar:not(.hidden) ~ #draw-toggle-btn {
-                bottom: 5.25rem;
-                right: 1.5rem;
-                transform: none;
-                width: 3.5rem;
-                height: 3.5rem;
-            }
-        }
-
-
-
-
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-    </style>
-</head>
+    </head>
 
 <body class="flex h-screen overflow-hidden bg-[#f8f9fb] font-sans antialiased text-slate-900 relative">
 
@@ -271,7 +42,7 @@
         <!-- Sidebar Header Area -->
         <div class="px-6 pt-4 pb-2 hide-on-collapse">
             <!-- Dynamic Back Button -->
-            <button id="back-to-dash" onclick="window.location.hash = 'dashboard'" class="hidden flex items-center text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-4 hover:text-slate-200 transition-colors">
+            <button id="back-to-dash" onclick="window.location.hash = '/'" class="hidden flex items-center text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-4 hover:text-slate-200 transition-colors">
                 <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
                 Back to Dashboard
             </button>
@@ -579,30 +350,17 @@
 
         </header>
 
-        <!-- DASHBOARD HUB (Overlay) - Hidden by default to prevent flicker -->
-        <div id="home-dashboard" class="absolute inset-0 z-20 bg-slate-50 overflow-y-auto p-6 md:p-10 transition-opacity duration-300 hidden">
-            <div class="max-w-5xl mx-auto">
-                <div class="mb-10">
-                    <h1 class="text-3xl md:text-4xl font-extrabold text-slate-800 tracking-tight mb-3">Welcome to your Notes Archive</h1>
-                    <p class="text-slate-400 text-lg">Select a term or course to filter your sidebar, or browse everything at once.</p>
-                </div>
-                
-                <div id="dashboard-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Cards injected via JS -->
-                </div>
-            </div>
+        <!-- HOME — rendered from data/manifest.json by assets/app/syllabus.js -->
+        <div id="home-dashboard" class="absolute inset-0 z-20 overflow-y-auto p-5 md:p-10 hidden" style="background:var(--bg)">
+            <div id="home-root"></div>
         </div>
+
+        <!-- SYLLABUS / COURSE — same renderer, scoped to a course when routed -->
+        <div id="syllabus-view" class="absolute inset-0 z-20 overflow-y-auto p-5 md:p-10 hidden" style="background:var(--bg)"></div>
 
         <!-- Iframe Container - Hidden by default to prevent flicker -->
         <div id="iframe-container" class="flex-1 relative w-full h-full bg-[#f8f9fb] hidden">
-            <!-- Loading Spinner -->
-            <div id="iframe-loader" class="absolute inset-0 z-10 flex items-center justify-center bg-slate-50/80 backdrop-blur-[2px] transition-opacity duration-300">
-                <div class="flex flex-col items-center">
-                    <div class="w-12 h-12 border-4 border-slate-200 border-t-indigo-600 rounded-full animate-spin mb-4"></div>
-                    <p class="text-slate-500 font-medium animate-pulse">Loading Module...</p>
-                </div>
-            </div>
-            <iframe id="viewer" title="Assignment Viewer" onload="hideLoader()" src="about:blank" class="absolute inset-0 w-full h-full border-none shadow-inner bg-white"></iframe>
+            <iframe id="viewer" title="Assignment Viewer" src="about:blank" class="absolute inset-0 w-full h-full border-none shadow-inner bg-white"></iframe>
         </div>
     </main>
 
@@ -647,6 +405,14 @@
                 return;
             }
 
+            // New routes: #/  #/syllabus  #/c/<course>  #/p/<path>
+            // The app layer loads at the end of <body>; before that, just paint Home.
+            if (rawHash.charAt(0) === '/') {
+                if (window.IITMRouter) window.IITMRouter.go(rawHash);
+                else showDashboard();
+                return;
+            }
+
             // Decode the hash to safely match against the data-path attribute (which handles spaces)
             const decodedHash = decodeURIComponent(rawHash);
             const safeQueryPath = decodedHash.replace(/"/g, '\\"');
@@ -682,7 +448,6 @@
             }
             
             // Load iframe using the raw encoded hash so the browser fetches it correctly
-            showLoader();
             document.getElementById('viewer').src = rawHash;
         }
 
@@ -741,6 +506,7 @@
         function showDashboard() {
             // UI Toggles
             document.getElementById('iframe-container').classList.add('hidden');
+            document.getElementById('syllabus-view').classList.add('hidden');
             document.getElementById('home-dashboard').classList.remove('hidden');
             document.getElementById('mobile-title').innerText = "Dashboard";
             document.getElementById('viewer').src = 'about:blank';
@@ -760,55 +526,9 @@
                 </div>
             `;
 
-            // Render Dashboard Cards
-            const grid = document.getElementById('dashboard-grid');
-            let html = '';
-            
-            html += `
-                <div onclick="clickDashboardCard('all')" class="group cursor-pointer bg-gradient-to-br from-[#4d3cc9] to-indigo-500 rounded-2xl p-6 text-white shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 relative overflow-hidden">
-                    <div class="absolute -right-6 -top-6 text-white/10 group-hover:text-white/20 transition-colors">
-                        <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 20 20"><path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"></path></svg>
-                    </div>
-                    <div class="relative z-10">
-                        <h3 class="text-xl font-bold mb-2">Browse All Content</h3>
-                        <p class="text-indigo-100 text-sm">View the entire unfiltered archive tree.</p>
-                    </div>
-                </div>
-            `;
+            // Home is rendered from data/manifest.json
+            if (window.IITMScreens) window.IITMScreens.renderHome();
 
-            // ✨ NEW: Markdown Vault Portal
-            html += `
-                <a href="markdown/" class="group cursor-pointer bg-white border-2 border-dashed border-indigo-200 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:border-indigo-400 transition-all transform hover:-translate-y-1 relative flex flex-col justify-center overflow-hidden">
-                    <div class="absolute -right-4 -top-4 text-indigo-50 opacity-50 group-hover:opacity-100 transition-opacity">
-                        <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path></svg>
-                    </div>
-                    <div class="relative z-10">
-                        <div class="w-10 h-10 rounded-lg bg-indigo-600 text-white flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-800 mb-1">Markdown Vault</h3>
-                        <p class="text-slate-400 text-sm">Switch to high-performance Reading Mode.</p>
-                    </div>
-                </a>
-            `;
-
-
-            globalSiteData.forEach((node, index) => {
-                if (node.type === 'folder') {
-                    const itemCount = node.children ? node.children.length : 0;
-                    html += `
-                        <div onclick="clickDashboardCard('single', ${index})" class="cursor-pointer bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:border-indigo-300 transition-all transform hover:-translate-y-1">
-                            <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center mb-4">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
-                            </div>
-                            <h3 class="text-lg font-bold text-slate-800 mb-1 truncate" title="${node.name}">${node.name}</h3>
-                            <p class="text-slate-400 text-sm">${itemCount} Modules / Weeks</p>
-                        </div>
-                    `;
-                }
-            });
-            
-            grid.innerHTML = html;
 
             // Ensure sidebar is closed on mobile when returning to dash
             if (window.innerWidth < 768) {
@@ -869,13 +589,13 @@
                 if (node.type === 'folder') {
                     html += `
                         <div class="folder-wrapper mb-2">
-                            <div role="button" tabindex="0" aria-label="Toggle Folder" role="button" tabindex="0" aria-label="Toggle Folder" class="folder-header flex justify-between items-center px-3 py-3 cursor-pointer text-slate-200 hover:bg-white/5 bg-[#242528] border border-white/5 rounded-xl transition-colors shadow-sm" onclick="toggleFolder(this)">
+                            <button type="button" aria-expanded="false" aria-label="Toggle folder ${node.name}" class="folder-header w-full flex justify-between items-center px-3 py-3 cursor-pointer text-slate-200 hover:bg-white/5 bg-[#242528] border border-white/5 rounded-xl transition-colors shadow-sm" onclick="toggleFolder(this)">
                                 <div class="flex items-center truncate pr-2">
                                     <svg class="folder-icon w-4 h-4 mr-3 flex-shrink-0 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
                                     <span class="text-[13px] font-extrabold tracking-wide truncate hide-on-collapse" title="${node.name}">${node.name}</span>
                                 </div>
                                 <svg class="chevron-icon w-4 h-4 text-slate-400 transform transition-transform duration-200 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
-                            </div>
+                            </button>
                             <div class="folder-content hidden pl-1 pr-1 pt-2 border-l border-[#2b2c2f] ml-5 mt-1">
                                 ${renderTree(node.children || [])}
                             </div>
@@ -910,17 +630,6 @@
         }
 
         
-        // --- LOADER LOGIC ---
-        function showLoader() {
-            const loader = document.getElementById('iframe-loader');
-            if (loader) loader.classList.remove('opacity-0', 'pointer-events-none');
-        }
-
-        function hideLoader() {
-            const loader = document.getElementById('iframe-loader');
-            if (loader) loader.classList.add('opacity-0', 'pointer-events-none');
-        }
-
         // --- UI INTERACTION LOGIC ---
         function toggleFolder(element) {
             const chevron = element.querySelector('.chevron-icon');
@@ -929,6 +638,7 @@
             const content = element.nextElementSibling;
             if (content && content.classList.contains('folder-content')) {
                 content.classList.toggle('hidden');
+                element.setAttribute('aria-expanded', String(!content.classList.contains('hidden')));
             }
 
             const sidebar = document.getElementById('sidebar');
@@ -963,7 +673,10 @@
         window.addEventListener('hashchange', handleHashChange);
         
         // Process the very first frame correctly
-        if (window.location.hash && window.location.hash !== '#dashboard') {
+        if (window.location.hash.charAt(1) === '/') {
+            // Paint Home now; the app layer (end of body) routes this hash properly
+            showDashboard();
+        } else if (window.location.hash && window.location.hash !== '#dashboard') {
             handleHashChange(); // Go straight to the iframe file
         } else {
             showDashboard(); // Go straight to the dashboard
@@ -1047,8 +760,24 @@
         <i data-lucide="pencil" class="w-7 h-7"></i>
     </button>
 
+    <!-- App layer: manifest + screens (must load before the init below) -->
+    <script src="data/manifest.js"></script>
+    <script src="assets/app/export-syllabus.js"></script>
+    <script src="assets/app/ui.js"></script>
+    <script src="assets/app/syllabus.js"></script>
+    <script src="assets/app/router.js"></script>
     <script>
         if (typeof lucide !== 'undefined') lucide.createIcons();
+
+        // Bridge the new screens to the legacy sidebar shell
+        window.IITMHost = {
+            browseAll: function () { loadSidebarMode('all', null, false); }
+        };
+        if (window.__IITM_MANIFEST__ && window.IITMScreens) {
+            window.IITMScreens.init(window.__IITM_MANIFEST__);
+            window.IITMScreens.renderHome();
+            handleHashChange(); // now the router exists, route the real hash
+        }
     </script>
 </body>
 </html>

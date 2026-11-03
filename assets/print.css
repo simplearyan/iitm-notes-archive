@@ -1,0 +1,31 @@
+/* print.css — the syllabus/outline prints as a document, not a screenshot. */
+
+@media print {
+  @page { size: A4; margin: 14mm 12mm; }
+
+  body { background: #fff !important; color: #000 !important; }
+
+  /* chrome off */
+  aside, header, #anno-toolbar, #draw-toggle-btn, #mobile-overlay,
+  .syl-actions, .syl-index, .r-copywrap, .syl-item-acts, .home-actions,
+  #r-toast-host { display: none !important; }
+
+  main { display: block !important; height: auto !important; overflow: visible !important; }
+  #home-dashboard, #syllabus-view { position: static !important; overflow: visible !important; height: auto !important; }
+
+  .syl-wrap { max-width: none; margin: 0; padding: 0; }
+  .syl-layout { display: block; margin-top: 8px; }
+  .syl-course { break-inside: auto; margin-bottom: 16px; }
+  .syl-course-head { break-after: avoid; }
+
+  /* every week prints expanded */
+  .syl-items { display: block !important; }
+  .syl-chev { display: none !important; }
+  .syl-week { break-inside: avoid; border: 0; border-bottom: 1px solid #ddd; border-radius: 0; }
+  .syl-week-head { padding: 6px 0; }
+  .syl-week-name { font-size: 12pt; font-weight: 700; }
+  .syl-item { padding: 2px 0; border: 0; font-size: 10pt; }
+
+  .r-chip { border: 1px solid #bbb; background: #fff !important; color: #333 !important; }
+  a { color: #000; text-decoration: none; }
+}
